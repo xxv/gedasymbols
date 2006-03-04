@@ -1,0 +1,88 @@
+<!--#set var="title" value="CVS Access" -->
+<!--#include virtual="/header.html" -->
+
+<p>The gedasymbols.org web site uses CVS to manage its pages.  This
+allows for multiple admins as well as multiple contributors, and
+contributors need not wait for admins to post their files.  To obtain
+CVS clients or learn more about CVS, visit <a
+href="http://www.nongnu.org/cvs/"> the CVS page</a>.</p>
+
+<h2>Accessing the CVS repository without an account</h2>
+
+<p>This will allow you to download the contents of the web site
+without needing write access.  There's not a lot of reason for the
+general public to need this, but it comes with the system and the
+instructions are mostly the same as for those with accounts.</p>
+
+<p>To access the repository, you'll need to set the <tt>CVSROOT</tt>
+environment variable as in these examples (if you are using a
+different shell, you'll have to figure it out yourself):</p>
+
+<pre>
+95/NT	set    CVSROOT=:pserver:anonymous@cvs.gedasymbols.org:/cvs/gedasymbols
+bash	export CVSROOT=:pserver:anonymous@cvs.gedasymbols.org:/cvs/gedasymbols
+csh	setenv CVSROOT :pserver:anonymous@cvs.gedasymbols.org:/cvs/gedasymbols
+</pre>
+
+<p>Once you've done that, you need to tell your local cvs software
+what password to use.  The password is the word
+<tt>anonymous</tt>:</p>
+
+<pre>
+bash$ cvs login
+(Logging in to anonymous@cvs.gedasymbols.org)
+CVS password: <i>anonymous</i>
+</pre>
+
+<p><em>Note:</em> Windows users may need to make sure the
+<tt>HOME</tt> environment variable is set to something meaningful.</p>
+
+<p>After this, you shouldn't have to worry about passwords any more,
+as it will store your password in <tt>$HOME/.cvspass</tt>
+(semi-encoded).  In other words, don't type "<tt>cvs login</tt>"
+again.</p>
+
+<p>To get the web site files, do this:
+
+<pre>
+bash$ cvs get .
+</pre>
+
+<p>This will populate the CURRENT directory with the files.  You
+probably want to create an empty directory and "cd" to it before
+running this command.</p>
+
+<p>Once you have a "working copy" of the files, you can obtain any
+updates by running "cvs update", which will only download the files
+that have changed.  If you want to contribute changes to existing
+files, just make your changes locally and run "cvs diff" and mail the
+output to someone who can apply them.</p>
+
+<h2>Accessing the CVS repository with an account</h2>
+
+<p>This is for people who maintain portions of the web site.  The
+instructions are similar to those above, but you replace the word
+"anonymous" in CVSROOT with your cvs account name, and the password
+"anonymous" obviously gets replaced with your cvs account password.
+After checking out the files with "cvs get", you make your changes and
+run "cvs commit" to copy the changes back to the web site.  Please use
+a meaningful log message!  There's a mailing list where all the log
+messages and changes are sent, so at least a few words saying why
+you're changing it would be valuable.  To add a new file, use "cvs add
+<i>filename</i>" then "cvs commit".</p>
+
+<p>To get a cvs account, <a href="dj@delorie.com">email DJ</a>.
+Accounts will be given to those who have demonstrated good skill and
+judgement on the public gEDA mailing lists, and abuse of these
+priviledges will result in your account being cancelled.  We're still
+new at this, so these rules may change in the future.</p>
+
+<p>Please read <a href="style.html">The Page Editing Style Guide</a>
+before creating or committing any content.</p>
+
+<p>Note that CVS traffic is NOT encrypted in any way, so your password
+will be assigned and you won't be able to change it.  This keeps you
+from using the same password as some other one and possibly causing
+security problems.</p>
+
+<!--#include virtual="/trailer.html" -->

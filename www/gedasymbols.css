@@ -7,4 +7,20 @@ body {
 H1 {
   font-family: "Courier", sans;
   color: #506b9e;
+  text-align: center;
+}
+
+TT {
+  color: #003000;
+}
+
+pre {
+  border: 1px solid #999999;
+  color: #004000;
+  padding: 2px;
+  font-family: "Courier 10 pitch", "Courier", monospace;
+}
+
+a {
+  font-weight: bolder;
 }

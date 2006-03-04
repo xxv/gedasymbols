@@ -1,0 +1,106 @@
+<!--#set var="title" value="The Page Editing Style Guide" -->
+<!--#include virtual="/header.html" -->
+
+<p>Once you have <a href="cvs.html">a CVS account</a>, your area of
+the web site will be <tt>/user/<i>account</i>/</tt>.  For example,
+mine is <a href="/user/dj/"><tt>/user/dj/</tt></a>.  You will not be
+able to change files outside your area.  Of course, if you find that
+you *can*, let me know, because that's probably a bug.</p>
+
+<p>Anyway, the first thing you should do is create an index.html file
+that says who you are and how to contact you.  Any footprints you
+upload should end in <tt>.fp</tt> and if you link directly to them,
+the server does the right thing automatically.  Likewise, symbols end
+in <tt>.sym</tt> although I don't have an automatic symbol handler
+yet.  See below for how to encode author and copyright information
+into symbols and footprints.</p>
+
+<p>All html pages should use the global gedasymbols style.  Look at
+the sources to other pages to see how it's being done.  To use the
+global style, your html files should all start like this:
+
+<pre>
+&lt;!--#set var="title" value="Meaningful Title Goes Here" --&gt;
+&lt;!--#include virtual="/header.html" --&gt;
+
+</pre>
+
+The last line in your HTML files should be this:
+
+<pre>
+
+&lt;!--#include virtual="/trailer.html" --&gt;
+</pre>
+
+Other than that, you should avoid using HTML constructs that change
+the appearance of the page (i.e. <tt>&lt;P&gt;</tt> is OK, but don't use
+<tt>align=center</tt> or any <tt>font</tt> or <tt>color</tt> tags.).</p>
+
+<p>There are four basic types of files that are appropriate for gedasymbols.org:
+
+<ul>
+<li> symbol/footprint/conversion related tools
+<li> symbol/footprint/conversion related documentation
+<li> gschem symbols
+<li> pcb footprints
+</ul>
+
+To keep things consistent, please list your files in that order on
+your index page.  Also, the convention for subdirectories (if you have
+enough files to warrant them) is:
+
+<ul>
+<li> <tt>/user/<i>account</i>/tools/</tt> for tools
+<li> <tt>/user/<i>account</i>/docs/</tt> for documentation
+<li> <tt>/user/<i>account</i>/symbols/</tt> for symbols
+<li> <tt>/user/<i>account</i>/footprints/</tt> for footprints
+</ul>
+
+<h2>Copyrights</h2>
+
+<p>You, as the author, get to pick the terms under which your symbols
+are distributed and used.  Note that putting them on gedasymbols.org
+implies a license for gedasymbols.org to distribute them according to
+the way web servers (and clients, search engines, etc) work.</p>
+
+<p>For symbols, you should include invisible text attributes that
+specify your name, email, and distribution and licence terms.  For
+footprints, include comments (any line beginning with <tt>#</tt> is a
+comment).  Always use the keywords given below, so that in the future
+I can write an indexer of some sort (the automatic footprint web page
+handler already uses these).  Examples, showing appropriate keywords,
+for symbols and footprints respectively, follow:
+
+<pre>
+T . . .
+author=DJ Delorie
+T . . .
+email=dj@delorie.com
+T . . .
+dist-license=GPL
+T . . .
+use-license=unlimited
+</pre>
+
+<pre>
+# author: DJ Delorie
+# email: dj@delorie.com
+# dist-license: GPL 2
+# use-license: unlimited
+Element[ . . . ]
+</pre>
+
+<p>Note that "dist-license" is the license under which the files may
+be redistributed in some form whereby they can be used for other
+projects.  Since gEDA uses open formats, this includes distributing
+project files.  The "use-license" covers boards made using the
+symbols, so if you say "personal" here, that means the person can't
+sell those boards.</p>
+
+<p>For the automatic symbol and footprint handlers, if the first word
+in the license matches <a href="/licenses/">a license web page</a> a
+link will be created automatically (i.e. "GPL" above would link to
+GPL.html).  Also, the email address will be linked automatically, and
+http-style links will be automatically converted.</p>
+
+<!--#include virtual="/trailer.html" -->
