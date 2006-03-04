@@ -64,10 +64,10 @@ sub make_html {
 		s/>/&gt;/;
 		s@email: (.*)@email: <a href="mailto:$1">$1</a>@;
 		s@(http://\S+)@<a href="$1">$1</a>@;
-		if (/license: (.*)/) {
+		if (/license: (\S*)/) {
 		    $license = $1;
 		    if ( -f "/home/gedasymbols/www/licenses/$license.html") {
-			s@license: (.*)@license: <a href="/licenses/$license.html">$1</a>@;
+			s@license: (\S*)@license: <a href="/licenses/$license.html">$1</a>@;
 		    }
 		}
 		print;
@@ -76,6 +76,13 @@ sub make_html {
 	} else {
 	    print;
 	}
+    }
+    $year = (localtime($filetime))[5] + 1900;
+    open(TR, "../www/trailer.html");
+    while (<TR>) {
+	s@<!--#config timefmt="[^>]*" -->@@;
+	s@<!--#echo var="LAST_MODIFIED" -->@$year@;
+	print;
     }
     exit 0;
 }
