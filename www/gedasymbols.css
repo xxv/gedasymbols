@@ -1,0 +1,10 @@
+body {
+  background-color: white;
+  background-image: url(background.png);
+  padding-left: 40px;
+}
+
+H1 {
+  font-family: "Courier", sans;
+  color: #506b9e;
+}
