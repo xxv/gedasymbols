@@ -1,0 +1,112 @@
+#!/usr/bin/perl
+# -*- perl -*-
+
+# Copyright (C) 2006 DJ Delorie dj@delorie.com
+# Released under the terms of the GNU General Public License, version 2
+
+$infile = shift;
+$outfile = shift;
+
+if ($infile) {
+    open(IN, $infile);
+} else {
+    open(IN, "<&STDIN");
+}
+
+if ($outfile) {
+    open(OUT, ">$outfile");
+} else {
+    open(OUT, ">&STDOUT");
+}
+
+$names{"pinlabel"} = 1;
+$names{"pinnumber"} = 1;
+$names{"pinseq"} = 1;
+
+
+@in = <IN>;
+$inx = 0;
+
+for ($inx=0; $inx<@in; $inx++) {
+    $_ = $in[$inx];
+
+    if (/^P/) {
+	($p, $x1, $y1, $x2, $y2) = split(' ', $_);
+	&fixpin();
+	$pin = "$x1 $y1";
+	$pindir{$pin} = &pindir();
+	$pins{$pin} = 1;
+	if ($in[$inx+1] !~ /\{/) {
+	    $pin = undef;
+	}
+    }
+    if (/^\}/) {
+	$pin = undef;
+    }
+    if (/^T / && $pin) {
+	$attr = $in[++$inx];
+	($name, $value) = split(/=/, $attr, 2);
+	$value =~ s/[\r\n]+$//;
+	$names{$name} = 1;
+	$value =~ s/[\s\t]+/ /g;
+	$attr{"$pin\0$name"} = $value;
+	$pins{$pin} = 1;
+    }
+}
+
+@cols = sort keys %names;
+print OUT "\"X\",\"Y\",\"";
+print OUT join('","', @cols), "\"\n";
+
+$commas = "," x ($#cols+1);
+
+&printgroup("Left", "L");
+&printgroup("Right", "R");
+&printgroup("Top", "U");
+&printgroup("Bottom", "D");
+
+sub printgroup {
+    my ($label, $pdir) = @_;
+    print OUT "\"Side:\",\"$label\"$commas\n";
+    @rows = ();
+    for $pin (sort keys %pins) {
+	next unless $pindir{$pin} eq $pdir;
+	($x,$y) = split(' ', $pin);
+	$line = sprintf("%09d %09d", $x, 999999999-$y) . "\0";
+	$line .= "$x,$y";
+	for $col (@cols) {
+	    $a = $attr{"$pin\0$col"};
+	    if ($a =~ /^[0-9]*$/) {
+		$line .= ",$a";
+	    } else {
+		$line .= ",\"$a\"";
+	    }
+	}
+	$line .= "\n";
+	push (@rows, $line);
+    }
+    for $l (sort @rows) {
+	$l =~ s/.*\0//;
+	print OUT $l;
+    }
+}
+
+sub fixpin {
+    my($d) = ($x1 - $x2) + ($y1 - $y2);
+    if ($d == 200 || $d == -200) {
+	$x2 -= ($x1 - $x2) / 2;
+	$y2 -= ($y1 - $y2) / 2;
+    }
+}
+
+sub pindir {
+    my ($dir);
+    if ($x1 == $x2) {
+	$dir = ($y1 > $y2) ? "U" : "D";
+    } else {
+	$dir = ($x1 > $x2) ? "R" : "L";
+    }
+    return $dir;
+}
+
+exit 0;

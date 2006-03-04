@@ -1,0 +1,33 @@
+#!/usr/bin/perl
+# -*- perl -*-
+# Copyright 2006 DJ Delorie, licensed under the GPL v2.
+
+$min =  99999;
+$max = -99999;
+
+while (<>) {
+    s/[\r\n]+$//;
+    if (/^pinnumber=(.*)/) {
+	$pin{$1} ++;
+	$min = $1 if $min > $1;
+	$max = $1 if $max < $1;
+    }
+}
+
+for ($i=$min; $i<=$max; $i++)
+{
+    if ($pin{$i} != 1) {
+	if ($pin{$i} > 0) {
+	    print "Too many: $i\n";
+	} else {
+	    print "Missing: $i\n";
+	}
+	$bad = 1;
+    }
+}
+
+if ($bad) {
+    print "Pins $min .. $max present\n";
+} else {
+    print "Pins $min .. $max all present\n";
+}

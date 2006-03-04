@@ -1,0 +1,144 @@
+#!/usr/bin/perl
+# -*- perl -*-
+
+# Copyright (C) 2006 DJ Delorie dj@delorie.com
+# Released under the terms of the GNU General Public License, version 2
+
+use Text::CSV;
+$csv = Text::CSV->new();
+
+$csvfile = shift;
+$infile = shift;
+$outfile = shift;
+
+if (!$csvfile) {
+    print STDERR "Usage: csv2sym csvfile [infile] [outfile]\n";
+    exit 1;
+}
+
+open(CSV, $csvfile);
+
+if ($infile) {
+    open(IN, $infile);
+} else {
+    open(IN, "<&STDIN");
+}
+
+if ($outfile) {
+    open(OUT, ">$outfile");
+} elsif ($infile) {
+    open(OUT, ">$infile.new");
+} else {
+    open(OUT, ">&STDOUT");
+}
+
+$cols = <CSV>;
+$cols =~ s/[\r\n]+$//;
+$csv->parse($cols);
+@cols = $csv->fields();
+
+while (<CSV>) {
+    s/[\r\n]+$//;
+    $csv->parse($_);
+    @h = $csv->fields();
+    $x = $h[0];
+    next unless $x =~ /^[0-9]+$/;
+    $y = $h[1];
+    $pid = "$x $y";
+    for ($i=2; $i<=$#h; $i++) {
+	$attr{"$pid\0$cols[$i]"} = $h[$i];
+    }
+}
+
+shift @cols;
+shift @cols;
+
+@in = <IN>;
+$inx = 0;
+
+for ($inx=0; $inx<@in; $inx++) {
+    $_ = $in[$inx];
+    if (/^P/) {
+	($p, $x1, $y1, $x2, $y2) = split(' ', $_);
+	&fixpin();
+	$pin = "$x1 $y1";
+	%saw = ();
+	if ($in[$inx+1] !~ /^\{/) {
+	    print OUT;
+	    print OUT "{\n";
+	    &fill_in_missing_attributes();
+	    $pin = undef;
+	    print OUT "}\n";
+	    next;
+	}
+    } elsif (/^\}/) {
+	&fill_in_missing_attributes();
+	$pin = undef;
+    } elsif (/^T / && $pin) {
+	$attr = $in[$inx+1];
+	($name, $value) = split(/=/, $attr, 2);
+	$value =~ s/[\r\n]+$//;
+	$a = $attr{"$pin\0$name"};
+	if ($a =~ /\S/) {
+	    $inx++;
+	    next;
+	}
+    }
+
+    print OUT;
+}
+
+sub fill_in_missing_attributes {
+    for $col (@cols) {
+	next if $saw{$col};
+	$a = $attr{"$pin\0$col"};
+	if ($a =~ /\S/) {
+	    &add_attr($col,$a);
+	}
+    }
+}
+
+sub add_attr {
+    my ($name, $val) = @_;
+    $dir = &pindir();
+    $x = $x2;
+    $y = $y2;
+    $t = "$dir$name";
+    $points = $name eq "pinnumber" ? 8 : 10;
+    $color = $name eq "pinlabel" ? 9 : 5;
+    $vis = ($name =~ /^(pinnumber|pinlabel)$/) ? 1 : 0;
+    $align = 0;
+
+    if ($t eq "Upinlabel") {	$y -= 50;	$align = 5;    }
+    if ($t eq "Dpinlabel") {	$y += 50;	$align = 3;    }
+    if ($t eq "Lpinlabel") {	$x += 50;	$align = 1;    }
+    if ($t eq "Rpinlabel") {	$x -= 50;	$align = 7;    }
+
+    if ($t eq "Upinnumber") {	$x += 50;	$y += 100;	$align = 0;    }
+    if ($t eq "Dpinnumber") {	$x += 50;	$y -= 100;	$align = 2;    }
+    if ($t eq "Rpinnumber") {	$x += 100;	$y += 50;	$align = 0;    }
+    if ($t eq "Lpinnumber") {	$x -= 100;	$y += 50;	$align = 6;    }
+
+    print OUT "T $x $y $color $points $vis 1 0 $align 1\n";
+    print OUT "$name=$val\n";
+}
+
+sub fixpin {
+    my($d) = ($x1 - $x2) + ($y1 - $y2);
+    if ($d == 200 || $d == -200) {
+	$x2 -= ($x1 - $x2) / 2;
+	$y2 -= ($y1 - $y2) / 2;
+    }
+}
+
+sub pindir {
+    my ($dir);
+    if ($x1 == $x2) {
+	$dir = ($y1 > $y2) ? "U" : "D";
+    } else {
+	$dir = ($x1 > $x2) ? "R" : "L";
+    }
+    return $dir;
+}
+
+exit 0;
