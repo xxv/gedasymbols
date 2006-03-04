@@ -1,3 +1,8 @@
+# author: DJ Delorie
+# email: dj@delorie.com
+# dist-license: GPL
+# use-license: unlimited
+
 Element["" "MiniDIN-8" "J?" "" 100000 140000 -11186 -20956 0 200 ""]
 (
 	Pin[3937 10629 5543 1000 1000 3543 "1" "1" ""]
