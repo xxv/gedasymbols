@@ -222,7 +222,6 @@ scan_extents ()
 		    break;
 		  }
 		  len = ps_length(text, s);
-		  printf("T (%s) size %d len %d align %d\n", text, s, len, align);
 
 		  switch (align / 3) {
 		  case 0: xo = 0; break;
