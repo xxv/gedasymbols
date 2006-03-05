@@ -9,7 +9,15 @@ email: <a href="mailto:dj@delorie.com">dj@delorie.com</a> <br>
 <ul>
 <li> <a href="tools/scale-schematic">scale-schematic</a> - Perl script to scale a symbol or schematic
 <li> <a href="tools/sym2csv">sym2csv</a> - extract pin attributes to a comma seperated list (open with openoffice calc)
-<li> <a href="tools/csv2sym">csv2sym</a> - merge pin attributes back to symbol
+<li> <a href="tools/csv2sym">csv2sym</a> - merge pin attributes back to symbol.  To use these:
+
+<pre>
+$ ./sym2csv $SYM.sym foo.csv
+$ ooffice foo.csv
+$ ./csv2sym foo.csv $SYM.sym $SYM-new.sym
+</pre>
+</p>
+
 <li> <a href="tools/pincheck">pincheck</a> - make sure symbol[s] given provide exactly one of each pin number.
 <li> <a href="tools/sym2eps.cc">sym2eps.cc</a> - convert a symbol to EPS.
 </ul>
