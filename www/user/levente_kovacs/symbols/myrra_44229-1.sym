@@ -59,7 +59,7 @@ T 300 1700 8 10 0 0 0 0 1
 footprint=myrra_44000
 T 300 1900 8 10 0 0 0 0 1
 documentation=http://www.myrra.com/cgi-bin/gamme_44000.asp
-T 300 2100 8 10 1 0 0 0 1
+T 300 2100 8 10 0 0 0 0 1
 email=lekovacs@interware.hu
 T 300 2300 8 10 0 0 0 0 1
 author=Levente Kovacs
