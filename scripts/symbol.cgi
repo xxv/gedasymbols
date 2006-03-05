@@ -20,6 +20,7 @@ $| = 1;
 $file = $ENV{'PATH_TRANSLATED'};
 $symbol = $ENV{'PATH_INFO'};
 $symbol =~ s@.*/@@;
+$docroot = $ENV{'DOCUMENT_ROOT'};
 
 if ( ! -f $file ) {
     print "Content-type: text/html\n\n";
@@ -70,7 +71,7 @@ sub make_html {
 			s@(http://\S+)@<a href="$1">$1</a>@;
 			if (/license: (\S*)/) {
 			    $license = $1;
-			    if ( -f "/home/gedasymbols/www/licenses/$license.html") {
+			    if ( -f "$docroot/licenses/$license.html") {
 				s@license: (\S*)@license: <a href="/licenses/$license.html">$1</a>@;
 			    }
 			}
@@ -105,13 +106,24 @@ sub download {
     exit 0;
 }
 
+sub cachefile {
+    my ($name) = @_;
+    $name =~ s@$docroot/@@;
+    $name =~ s@/@_@g;
+    $name = "cache/$name";
+    return $name;
+}
+
 sub make_png {
 
     $eps = "/tmp/symbol$$.eps";
-    $png = "/tmp/symbol$$.png";
+    $png = &cachefile($file);
 
-    system "/home/gedasymbols/scripts/sym2eps $file $eps";
-    system "/home/gedasymbols/scripts/eps2png -o $png -resolution 100 $eps";
+    if (! -f $png || -M $png > -M $file) {
+	system "./sym2eps $file $eps";
+	system "./eps2png -o $png -resolution 100 $eps";
+	unlink $eps;
+    }
 
     $size = (stat($png))[7];
 
@@ -121,9 +133,6 @@ sub make_png {
     open (PNG, $png);
     print $v while read(PNG, $v, 4096) > 0;
     close PNG;
-
-    unlink $eps;
-    unlink $png;
 
     exit 0;
 }

@@ -154,7 +154,8 @@ sub make_png {
 	close PCB;
 	system "./eps2png -o $png -resolution 100 $eps";
 
-	($mtime, $atime) = (stat($file))[9,10];
+	unlink $tmp;
+	unlink $eps;
     }
 
     $size = (stat($png))[7];
