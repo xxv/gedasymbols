@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 # -*- perl -*-
 
-open(STDERR, ">&STDOUT");
+#open(STDERR, ">&STDOUT");
 $| = 1;
 
 if (0) {
@@ -12,14 +12,12 @@ if (0) {
     print "PWD: ", `pwd`;
     exit 0;
 }
-
-open(STDERR, ">&STDOUT");
-
 $| = 1;
 
 $file = $ENV{'PATH_TRANSLATED'};
 $footprint = $ENV{'PATH_INFO'};
 $footprint =~ s@.*/@@;
+$docroot = $ENV{'DOCUMENT_ROOT'};
 
 if ( ! -f $file ) {
     print "Content-type: text/html\n\n";
@@ -66,7 +64,7 @@ sub make_html {
 		s@(http://\S+)@<a href="$1">$1</a>@;
 		if (/license: (\S*)/) {
 		    $license = $1;
-		    if ( -f "/home/gedasymbols/www/licenses/$license.html") {
+		    if ( -f "$docroot/licenses/$license.html") {
 			s@license: (\S*)@license: <a href="/licenses/$license.html">$1</a>@;
 		    }
 		}
@@ -99,51 +97,65 @@ sub download {
     exit 0;
 }
 
+sub cachefile {
+    my ($name) = @_;
+    $name =~ s@$docroot/@@;
+    $name =~ s@/@_@g;
+    $name = "cache/$name";
+    return $name;
+}
+
 sub make_png {
 
-    $eps = "/tmp/footprint123.eps";
-    $png = "/tmp/footprint123.png";
-    $tmp = "/tmp/footprint123.pcb";
-    open(TMP, ">$tmp");
+    $tmp = "/tmp/footprint$$.pcb";
+    $eps = "/tmp/footprint$$.eps";
+    $png = &cachefile($file);
 
-    open(TEMPLATE, "footprint.pcb");
-    while (<TEMPLATE>) {
-	last if /ELEMENT/;
-	print TMP;
-    }
+    if (! -f $png || -M $png > -M $file) {
 
-    open(E, $file);
-    while (<E>) {
-	if (/Layer\(([12]) .*\)/) {
-	    $lno = $1;
-	    $paren = <E>;
-	    while (<E>) {
-		last if /^\s*\)/;
-		$layer{$lno} .= $_;
+	open(TMP, ">$tmp");
+
+	open(TEMPLATE, "footprint.pcb");
+	while (<TEMPLATE>) {
+	    last if /ELEMENT/;
+	    print TMP;
+	}
+
+	open(E, $file);
+	while (<E>) {
+	    if (/Layer\(([12]) .*\)/) {
+		$lno = $1;
+		$paren = <E>;
+		while (<E>) {
+		    last if /^\s*\)/;
+		    $layer{$lno} .= $_;
+		}
+	    } else {
+		print TMP;
 	    }
-	} else {
-	    print TMP;
 	}
-    }
-    close E;
+	close E;
 
-    while (<TEMPLATE>) {
-	if (/LAYER(\d)/) {
-	    print TMP $layer{$1};
-	} else {
-	    print TMP;
+	while (<TEMPLATE>) {
+	    if (/LAYER(\d)/) {
+		print TMP $layer{$1};
+	    } else {
+		print TMP;
+	    }
 	}
-    }
 
-    close TEMPLATE;
-    close TMP;
+	close TEMPLATE;
+	close TMP;
 
-    open (PCB, "/home/gedasymbols/scripts/pcb -x eps --eps-file $eps --only-visible $tmp 2>&1 |");
-    while (<PCB>) {
-	next if /unknown action/;
+	open (PCB, "./pcb -x eps --eps-file $eps --only-visible $tmp 2>&1 |");
+	while (<PCB>) {
+	    next if /unknown action/;
+	}
+	close PCB;
+	system "./eps2png -o $png -resolution 100 $eps";
+
+	($mtime, $atime) = (stat($file))[9,10];
     }
-    close PCB;
-    system "/home/gedasymbols/scripts/eps2png -o $png -resolution 100 $eps";
 
     $size = (stat($png))[7];
 
