@@ -388,7 +388,7 @@ write_eps (const char *filename, FILE *f)
 	    int sang, dang;
 	    sscanf(line, "%*c %d %d %d %d %d %d %d", &x, &y, &r, &sang, &dang, &c, &s);
 	    color_size(f, c, s);
-	    fprintf(f, "newpath %d %d %d %d %d arc stroke",
+	    fprintf(f, "newpath %d %d %d %d %d arc stroke\n",
 		    x, y, r, sang, sang+dang);
 	  }
 	  break;
