@@ -10,6 +10,10 @@ H1 {
   text-align: center;
 }
 
+H2 {
+  color: #28354f;
+}
+
 TT {
   color: #003000;
 }
@@ -24,3 +28,27 @@ pre {
 a {
   font-weight: bolder;
 }
+
+table {
+  border: 1px solid #999999;
+  margin: 0px;
+  padding: 0px;
+  border-collapse: collapse;
+}
+table td {
+  border: 1px solid #999999;
+  vertical-align: top;
+  padding: 5px;
+}
+table th {
+  border: 1px solid #999999;
+  vertical-align: top;
+  font-size: smaller;
+  font-weight: bolder;
+  color: #506b9e;
+}
+
+UL LI {
+  list-style-image: url(/icons/via.gif);
+  margin-left: -14px;
+  }
