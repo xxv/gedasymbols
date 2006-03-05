@@ -71,6 +71,7 @@ sub make_html {
 		    }
 		}
 		print;
+		print "<br>\n";
 	    }
 	    close F;
 	} else {
