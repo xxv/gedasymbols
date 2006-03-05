@@ -130,7 +130,6 @@ read_symfile (FILE *f)
 	line++;
       sym[nsym++] = strdup(line);
     }
-  fprintf(stderr, "%d lines read\n", nsym);
 }
 
 int minx=1<<30, maxx=-(1<<30), miny=1<<30, maxy=-(1<<30);
@@ -138,7 +137,6 @@ int minx=1<<30, maxx=-(1<<30), miny=1<<30, maxy=-(1<<30);
 void
 coord(int x, int y, int w)
 {
-  fprintf(stderr, "coord %d %d %d\n", x, y, w);
   w /= 2;
   if (minx > x - w) minx = x - w;
   if (maxx < x + w) maxx = x + w;
@@ -168,7 +166,6 @@ scan_extents ()
   for (i=0; i<nsym; i++)
     {
       char *line = sym[i];
-      fprintf(stderr, "sym[%d] `%s'\n", i, sym[i]);
       switch (line[0])
 	{
 	case 'L': /* pin */
@@ -205,7 +202,6 @@ scan_extents ()
 
 	case 'T':
 	  sscanf(line, "%*c %d %d %d %d %d %d %d %d %d", &x, &y, &c, &s, &v, &avc, &a, &align, &n);
-	  fprintf(stderr, "T n %d avc %d align %d\n", n, avc, align);
 	  save_sort('T', c, s, i);
 	  s = (int)(s * 1000.0 / 72.0 * 1.3);
 	  if (v)
@@ -272,7 +268,6 @@ scan_extents ()
 	}
     }
 
-  fprintf(stderr, "extents: %d,%d to %d,%d, %d sortables\n", minx, miny, maxx, maxy, nsort);
 }
 
 #define MARGIN 20
@@ -361,11 +356,8 @@ write_eps (const char *filename, FILE *f)
 
   for (si=0; si<nsort; si++)
     {
-      //fprintf(stderr, "sort[%d] %c %d %d %d\n", si,
-      //sort[si].type, sort[si].size, sort[si].color, sort[si].index);
       i = sort[si].index;
       char *line = sym[i];
-      //fprintf(stderr, "Line: %s\n", line);
       switch (line[0])
 	{
 	case 'L': /* line */
