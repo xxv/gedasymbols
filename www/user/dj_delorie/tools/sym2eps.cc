@@ -427,8 +427,7 @@ write_eps (const char *filename, FILE *f)
 		    {
 		      /* special case - text is never upside-down.  */
 		      align = 9 - align;
-		      x -= len;
-		      y -= s;
+		      y += (int)(s * 0.3);
 		      a = 0;
 		    }
 		  switch (align / 3) {
