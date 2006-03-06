@@ -24,6 +24,7 @@ $docroot = $ENV{'DOCUMENT_ROOT'};
 
 if ( ! -f $file ) {
     print "Content-type: text/html\n\n";
+    $file =~ s@$docroot@@;
     print "File <tt>$file</tt> not found.\n";
     exit 0;
 }
