@@ -210,7 +210,7 @@ scan_extents ()
 	      for (j=0; j<n; j++)
 		{
 		  int len;
-		  char *text = sym[++i];
+		  char *text = sym[j+i];
 		  switch (avc) {
 		  case 1:
 		    if (strchr(text, '='))
@@ -254,6 +254,7 @@ scan_extents ()
 		  }
 		}
 	    }
+	  i += n;
 	  break;
 
 	case 'N': /* net */
