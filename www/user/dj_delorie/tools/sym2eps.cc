@@ -426,8 +426,8 @@ write_eps (const char *filename, FILE *f)
 		  if (a == 180)
 		    {
 		      /* special case - text is never upside-down.  */
-		      align = 9 - align;
-		      y += (int)(s * 0.3);
+		      align = 8 - align;
+		      yo += (int)(s * 0.3);
 		      a = 0;
 		    }
 		  switch (align / 3) {
