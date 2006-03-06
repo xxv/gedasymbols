@@ -423,6 +423,14 @@ write_eps (const char *filename, FILE *f)
 		    break;
 		  }
 		  len = ps_length(text, s);
+		  if (a == 180)
+		    {
+		      /* special case - text is never upside-down.  */
+		      align = 9 - align;
+		      x -= len;
+		      y -= s;
+		      a = 0;
+		    }
 		  switch (align / 3) {
 		  case 0: xo = 0; break;
 		  case 1: xo = len/2; break;
