@@ -24,12 +24,15 @@ the sources to other pages to see how it's being done.  To use the
 global style, your html files should all start like this:
 
 <pre>
-&lt;!--#set var="title" value="Meaningful Title Goes Here" --&gt;
+&lt;!--#set var="title" value="Meaningful Title" --&gt;
 &lt;!--#include virtual="/header.html" --&gt;
 
 </pre>
 
-The last line in your HTML files should be this:
+Note that the index.html in your /user/ directory should have just
+your full name as the title, nothing else, as the server automatically
+reads those to generate the list of contributors.  The last line in
+your HTML files should be this:
 
 <pre>
 
