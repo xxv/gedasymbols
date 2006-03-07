@@ -140,7 +140,7 @@ sub make_png {
 	close E;
 
 	while (<TEMPLATE>) {
-	    if (/LAYER(\d)$/) {
+	    if (/LAYER(\d+)$/) {
 		print TMP $layer{$1};
 	    } else {
 		print TMP;
