@@ -112,7 +112,9 @@ sub make_png {
     $eps = "/tmp/footprint$$.eps";
     $png = &cachefile($file);
 
-    if (! -f $png || -M $png > -M $file) {
+    if (! -f $png
+	|| -M $png > -M $0
+	|| -M $png > -M $file) {
 
 	open(TMP, ">$tmp");
 
@@ -124,7 +126,7 @@ sub make_png {
 
 	open(E, $file);
 	while (<E>) {
-	    if (/Layer\(([12]) .*\)/) {
+	    if (/Layer\((\d+) .*\)/) {
 		$lno = $1;
 		$paren = <E>;
 		while (<E>) {
@@ -138,7 +140,7 @@ sub make_png {
 	close E;
 
 	while (<TEMPLATE>) {
-	    if (/LAYER(\d)/) {
+	    if (/LAYER(\d)$/) {
 		print TMP $layer{$1};
 	    } else {
 		print TMP;
