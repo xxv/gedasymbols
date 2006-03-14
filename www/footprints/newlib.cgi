@@ -15,6 +15,7 @@ if ($query eq "") {
     opendir(D, "$dir");
     for $d (sort readdir D) {
 	next if $d =~ /^\./;
+	next if $d =~ /^CVS/;
 	$d =~ s/[\r\n\s\t]+/ /g;
 	$esclib = $d;
 	$esclib =~ s/ /\%20/g;
@@ -40,6 +41,7 @@ if ($query eq "") {
     opendir(D, "$dir$query/");
     for $d (sort readdir D) {
 	next if $d =~ /^\./;
+	next if $d =~ /^CVS/;
 	$d =~ s/[\r\n\s\t]+/ /g;
 	$esclib = $d;
 	$esclib =~ s/ /\%20/g;
