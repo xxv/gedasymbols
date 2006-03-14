@@ -101,7 +101,7 @@ sub download {
 sub cachefile {
     my ($name) = @_;
     $name =~ s@$docroot/@@;
-    $name =~ s@/@_@g;
+    $name =~ s@[^a-zA-Z0-9-_\.]@_@g;
     $name = "cache/$name";
     return $name;
 }
@@ -150,12 +150,31 @@ sub make_png {
 	close TEMPLATE;
 	close TMP;
 
-	open (PCB, "./pcb -x eps --eps-file $eps --only-visible $tmp 2>&1 |");
+	$cmd = "./pcb -x eps --eps-file $eps --only-visible $tmp";
+	open (PCB, "$cmd 2>&1 |");
 	while (<PCB>) {
+	    $msg .= $_;
 	    next if /unknown action/;
 	}
 	close PCB;
-	system "./eps2png -o $png -resolution 100 $eps";
+	if ($?) {
+	    print "Content-type: text/plain\n\n";
+	    print "pcb conversion failed, command:\n$cmd\n\n";
+	    print $msg;
+	    print "\n";
+	    &dump_pcb();
+	    exit 0;
+	}
+	if (system "./eps2png -o $png -resolution 100 $eps") {
+	    print "Content-type: text/plain\n\n";
+	    print "EPS conversion failed\n";
+	    print $msg;
+	    open(EPS, $eps);
+	    print while <EPS>;
+	    close EPS;
+	    print "<hr>\n";
+	    &dump_pcb();
+	}
 
 	unlink $tmp;
 	unlink $eps;
@@ -172,4 +191,22 @@ sub make_png {
 
 
     exit 0;
+}
+
+sub dump_pcb {
+    open(PCB, $tmp);
+    $line = 0;
+    while (<PCB>) {
+	$line ++;
+	$skip = 1 if /^Symbol/;
+	if ($skip) {
+	    $skipped = 1;
+	} else {
+	    print "\n" if $skipped;
+	    $skipped = 0;
+	    printf("%4d: $_", $line);
+	}
+	$skip = 0 if /^\)/;
+    }
+    close PCB;
 }
