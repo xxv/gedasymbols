@@ -45,11 +45,11 @@ sub show_results {
     open(C, "cache/search.idx");
     $found = 0;
     while (<C>) {
-	next unless /$keyre/;
+	next unless /$keyre/i;
 	$line = $_;
 	$count = 0;
 	for ($i=0; $i<@words; $i++) {
-	    $count ++ if $line =~ /$words[$i]/;
+	    $count ++ if $line =~ /$words[$i]/i;
 	}
 	if ($count == $maxcount) {
 	    push(@allmatch, $line);
@@ -65,11 +65,11 @@ sub show_results {
 	if (/^TYPE=(.*)/) {
 	    $type = $1;
 	}
-	next unless /$keyre/;
+	next unless /$keyre/i;
 	$line = $_;
 	$count = 0;
 	for ($i=0; $i<@words; $i++) {
-	    $count ++ if $line =~ /$words[$i]/;
+	    $count ++ if $line =~ /$words[$i]/i;
 	}
 	($fp) = $line =~ m@\[(.*)\]$@;
 	if ($count == $maxcount) {
