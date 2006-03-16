@@ -1,0 +1,71 @@
+#!/usr/bin/perl
+# -*- perl -*-
+
+$docroot=$ENV{'DOCUMENT_ROOT'};
+exit unless $docroot && -d $docroot;
+
+$outdir = $0;
+$outdir =~ s@/[^/]*$@/cache@;
+open(IDX, ">$outdir/search.idx") || die;
+
+chdir $docroot;
+
+open(SYMD, "find * -name '*.sym' -print | sort |");
+while (<SYMD>) {
+    chomp;
+    $file = $_;
+    open(S, $file);
+    %words = ();
+    while (<S>) {
+	chomp;
+	$sub = 1 if /^{/;
+	$sub = 0 if /^}/;
+	next if $sub;
+	next if /^. /;
+	next unless /^([a-zA-Z0-9_-].*)=(.*)/;
+	($attr, $val) = ($1,$2);
+	next if $attr =~ /^(dist-license|use-license|net|numslots|refdes|pins|slotdef|tested|uref)$/;
+	&store($val);
+    }
+    $w = join(' ', sort keys %words);
+    print IDX "$file $w\n";
+    close(S);
+}
+close(SYMD);
+
+open(FPD, "find * -name '*.fp' -print | sort |");
+while (<FPD>) {
+    chomp;
+    $file = $_;
+    open(F, $file);
+    %words = ();
+    while (<F>) {
+	chomp;
+	if (/^\#\s*([^:]+):\s*(.*)/) {
+	    ($name, $val) = ($1,$2);
+	    next if $name =~ /^(use-license|dist-license)$/;
+	    &store($val);
+	}
+	if (/^\s*Element\s*[\(\[]/) {
+	    while (m@"([^\"]*)"@g) {
+		&store($1);
+	    }
+	}
+    }
+    $w = join(' ', sort keys %words);
+    print IDX "$file $w\n";
+    close(F);
+}
+close(FPD);
+
+close(IDX);
+
+sub store {
+    my ($val) = @_;
+    return unless $val =~ /\S/;
+    $val =~ s/[^a-zA-Z0-9]+/ /g;
+    $val =~ tr/A-Z/a-z/;
+    for $w (split(' ', $val)) {
+	$words{$w} = 1;
+    }
+}
