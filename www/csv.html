@@ -1,0 +1,97 @@
+<!--#set var="title" value="CSV Files" -->
+<!--#include virtual="/header.html" -->
+
+<p>Comma-separated files are gedasymbols' way of managing tabular
+data, specifically the mapping between symbols and footprints.  CSV
+files are readily importable into many spreadsheet and database
+programs.</p>
+
+<h2>How to use</h2>
+
+<p>First off, you must name your files with a <tt>.csv</tt> suffix.
+Doing so causes the web server to read the CSV file and format it for
+web viewing.  Within the CSV file, there are four types of lines, which,
+if present, must be in this order:
+
+<ol>
+
+<li> If the first line of the file has neither a comma nor an equals
+     sign, it is the title of the file and is used as the title of the
+     web page.
+
+<li> Next, any lines which do not have commas yet have equals signs
+     are parsed as name/value pairs, and are assumed to be "constant
+     value columns".  This means you don't have to repeat the same
+     value over and over, for each row.
+
+<li> The remaining lines are true CSV lines.  The first such line must
+     contain the column headers.  See below for standard column names.
+
+<li> All remaining lines are CSV data rows.  Each row is assumed to
+correspond to one specific part, tying together the symbol, footprint,
+value, manufacturer, mfg part number, vendor, vendor part number, pdf
+file, etc.
+
+
+</ol>
+
+<h2>Standard Column Names</h2>
+
+<p>There are a couple of column names which have special meaning to
+the web server, or are defined specially so that we can have some
+consistency.  These are:
+
+<dl>
+
+<dt> <b>Symbol</b> <dd> The value in this column is a symbol file name,
+normally one present in your area.  If it ends in <tt>.sym</tt>, it is
+printed without it.  If it does not end in <tt>.sym</tt>, the file in
+your area is assumed to end in it.  Thus, you can add the
+<tt>.sym</tt> or not, and you get the same results.  If the file
+referred to by this symbol exists in your area, a hyperlink to that
+symbol will be created for this value.
+
+<dt> <b>Footprint</b> <dd> Likewise, for footprints, and <tt>.fp</tt>.
+
+<dt> <b>Value</b> <dd> The value of the part, like 1k or 0.47uF.  This
+corresponds to the "value" field in the footprints.
+
+<dt> <b>Description</b> <dd> A description of the part.  Watch out for
+commas in the description; use double quotes around the description if
+you need to include a comma.
+
+<dt> <b>Manufacturer</b> <dd> Manufacturer
+
+<dt> <b>Mfg Number</b> <dd> Manufacturer part number, if it isn't already
+in value or description.
+
+<dt> <b>Vendor</b> <dd> Where this part can be ordered from; usually
+used in conjunction with the Part Number (below).
+
+<dt> <b>Part Number</b> <dd> The part number, usually for the vendor
+(Digikey, for example).
+
+<dt> <b>Author</b> <dd> Your name.  This is usually a constant-value
+column.
+
+<dt> <b>Email</b> <dd> Your email.
+
+<dt> <tt>Price</tt> <dd> I don't expect people to use this field in
+public files, but I'm reserving this name (vs "Cost" or some other
+name) for utilities to use to tally project costs.
+
+</dl>
+
+<h2>Planning for the Future</h2>
+
+<p>My thoughts on this are, at some point these tables might get used
+to provide <tt>gattrib</tt> or <tt>gsch2pcb</tt> with the information
+they need to help you match up symbols, footprints, and real parts.
+So, keep this in mind, and make sure your information is consistent
+enough to server this purpose (i.e. if your 1k resistors are always
+"1k", you may only get one copy of that value in a menu choice).</p>
+
+<p>Just a thought ;-)</p>
+
+
+<!--#include virtual="/trailer.html" -->
