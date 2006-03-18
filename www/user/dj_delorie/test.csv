@@ -1,0 +1,10 @@
+DJ's Symbol and Footprint Library
+author = DJ Delorie
+email = dj@delorie.com
+vendor = Digikey
+Symbol,Footprint,"Part Number",Description
+cs8900a-cpu,tqfp100.fp,CS8900A-LQ,"10Mbit Ethernet, cpu side"
+cs8900a-net.sym,tqfp100.fp,CS8900A-LQ,"10Mbit Ethernet, net side"
+m32c-cpu.sym,minidin-8.fp,REJ83A-FJ,m32c/84 - cpu side
+m32c-io.sym,tqfp100.fp,REJ83A-FJ,m32c/84 - I/O side
+resistor.sym,603.fp,123456,1K 603 resistor.
