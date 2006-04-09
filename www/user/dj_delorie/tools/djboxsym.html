@@ -1,0 +1,98 @@
+<!--#set var="title" value="djboxsym" -->
+<!--#include virtual="/header.html" -->
+
+The <tt>djboxsym</tt> program is a tool for quickly producing a gschem
+symbol from a minimal description.  Yes, it's like tragesym,
+with a few differences:
+
+<ul>
+<li> You don't use gnumeric (or any other spreadsheet).
+<li> the symbols are in my "compromise" format.
+<li> No DRC support (use my <a href="sym2csv">sym2csv</a>/<a href="csv2sym">csv2sym</a> programs for that).
+<li> Supports packed bus pins.
+<li> It's in perl instead of python<tt> ;-)</tt>
+</ul>
+
+<p>Download: <tt><a href="djboxsym">djboxsym</a></tt></p>
+
+<h2>Usage</h2>
+
+<pre>
+$ djboxsym myfile.symdef > myfile.sym
+</pre>
+
+<p>A table of all pin information will be printed to stderr.  Note
+that labels are assigned negative pins internally, and show up in the
+table that way.</p>
+
+<p>The symdef file is a simple text file, with sections denoted by
+<tt>[section]</tt> markers.  Here's <a href="sample.symdef">a sample
+file</a> and <a href="sample.sym">the symbol it generates</a> (note:
+the edge triggers were added for demonstration purposes).  Each
+section will be documented separately, but the program doesn't care
+what order the sections are in, and you can list each section multiple
+times - the program will treat it as if the contents of each section
+were concatenated.
+
+<p>Any line that begins with <tt>#</tt> (pound/hash symbol) is
+ignored.  Otherwise, leading and trailing spaces are trimmed, and
+other whitespace is treated as if it were a single space.
+
+<h2><tt>[labels]</tt></h2>
+
+<p>The labels section is for textual labels and attributes that aren't
+associated with any pins.  Each line in this section corresponds to a
+single label.  The label may be preceeded by a <tt>!</tt> (exclamation
+mark) to make the label invisible by default.</p>
+
+<p>If the label is of the form <tt>name=value</tt> it is assumed to be
+an attribute, and the <tt>name=</tt> portion will be hidden.  Visible
+labels are placed in the center of the symbol.  Invisible labels are
+placed outside the upper right corner of the symbol.
+
+<h2><tt>[left]</tt></h2>
+
+One line per pin on the left side of the symbol.  Each pin line is
+of the form:
+
+<pre>
+pinnumber [opt-flags] pinlabel
+</pre>
+
+<p>The optional flags may be <tt>!</tt> (exclamation point) to include an
+inversion bubble on the pin, and/or <tt>&gt;</tt> (greater than) to
+include an edge-trigger on the pin.</p>
+
+<p>In addition to pin lines, there are two "special" lines.  First,
+any blank line between pins causes a gap to be included between those
+pins in the symbol.  Second, a line with only <tt>.bus</tt> on it
+causes the next group of pins (up to the next line) to be spaced
+closer together (bus spacing).
+
+<p>Pins should be listed in the order you want them to appear on the
+symbol, from top to bottom.</p>
+
+<h2><tt>[right]</tt></h2>
+
+Like for the left side, but for the right side.
+
+<h2><tt>[top]</tt></h2>
+
+Like for the left side, but for the top.  Note that <tt>.bus</tt> is
+not allowed here.  Pins should be listed in left to right order.
+Blank lines are ignored, as pins are spaced according to the width of
+their labels.
+
+<h2><tt>[bottom]</tt></h2>
+
+Like for the top, but for the bottom.
+
+<h2><tt>[nc]</tt></h2>
+
+<p>List any pins that have no connection here; one pin number per line
+(no flags or labels).  The program will ensure that all pins are
+listed exactly once each; this section lets you list pins that would
+otherwise be considered missing.</p>
+
+
+<!--#include virtual="/trailer.html" -->
