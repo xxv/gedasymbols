@@ -92,11 +92,16 @@ while (<>) {
 	} else {
 	    $pinlabel{$pin} = $rest;
 	}
-	$rlen{$pin} = &textlen($rest);
+	$rlen{$pin} = &textlen($pinlabel{$pin});
 
 	if ($side =~ /left|right/) {
 	    $y = $piny{$pin} = $y{$side};
 	    $y{$side} += ($busmode ? 200 : 400);
+	}
+	if ($side =~ /top|bottom/) {
+	    $tw = &alignpin((200 + $rlen{$pin}) / 2);
+	    $pinx{$pin} = $w{$side} + $tw;
+	    $w{$side} += $tw + $tw;
 	}
 
     }
@@ -111,7 +116,7 @@ $boxwidth = 0;
 # width is used up by the left, middle, and right labels.
 for $lp ($minpin..$maxpin) {
     next unless $pinside{$lp} =~ /left|right|label/;
-    $yb = int($piny{$lp}/100)*100;
+    $yb = &alignpin($piny{$lp});
     for ($y=$yb-100; $y<=$yb+100; $y+=100) {
 	if ($bw{$y}{$pinside{$lp}} < $rlen{$lp}) {
 	    $bw{$y}{$pinside{$lp}} = $rlen{$lp};
@@ -150,13 +155,6 @@ for ($i=0; $i<$maxy; $i+=100) {
     }
 }
 
-# Compute the positions of the top/bottom labels.
-for $p (1..$maxpin) {
-    next unless $pinside{$p} =~ /top|bottom/;
-    $tw = 200 + &textlen($pinlabel{$p});
-    $pinx{$p} = $w{$pinside{$p}} + $tw/2;
-    $w{$pinside{$p}} += $tw;
-}
 $boxwidth = $w{top} if $boxwidth < $w{top};
 $boxwidth = $w{bottom} if $boxwidth < $w{bottom};
 
@@ -167,19 +165,19 @@ for $p ($minpin..$maxpin) {
     $piny{$p} = $maxy - $piny{$p} + 300;
 }
 
-$boxwidth = int(($boxwidth + 99) / 100) * 100;
+$boxwidth = &alignpin($boxwidth);
 $boxwidth += 200;
 
 # Adjust the position of the top/bottom pins so that, as a group,
 # they're centered.
 for $p ($minpin..$maxpin) {
     next unless $pinside{$p} =~ /top|bottom/;
-    $pinx{$p} += ($boxwidth - $w{$pinside{$p}})/2 + 300;
+    $pinx{$p} += &alignpin(($boxwidth - $w{$pinside{$p}})/2) + 300;
 }
 
 # Labels are centered in the box.
 for $lp ($minpin..-1) {
-    $pinx{$lp} = $boxwidth/2 + 300;
+    $pinx{$lp} = &alignpin($boxwidth/2) + 300;
 }
 
 # Version.
@@ -328,6 +326,11 @@ sub textlen {
     my($t) = @_;
     $t =~ s/^[^=]*=//;
     return length($t) * 110;
+}
+
+sub alignpin {
+    my($v) = @_;
+    return int(($v + 99) / 100) * 100;
 }
 
 exit $errors;
