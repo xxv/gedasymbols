@@ -372,17 +372,17 @@ T 300 5200 5 10 0 0 0 0 1
 device=FT232BM
 T 300 5400 5 10 0 0 0 0 1
 footprint=LQFP32_7
-T 300 5600 5 10 0 0 0 0 1
-author=Levente Kovacs
 T 300 5800 5 10 0 0 0 0 1
 documentation=http://www.ftdichip.com/Documents/DataSheets/ds232b18.pdf
 T 300 6000 5 10 0 0 0 0 1
 description=USB2SERIAL
-T 300 6200 5 10 0 0 0 0 1
+T 300 5600 5 10 0 0 0 0 1
 numslots=0
-T 300 6400 8 10 0 0 0 0 1
-email=lekovacs@interware.hu
-T 300 6600 8 10 0 0 0 0 1
+T 300 5800 5 10 0 0 0 0 1
+author=Levente Kovacs
+T 300 6000 5 10 0 0 0 0 1
+email=levente.kovacs@interware.hu
+T 300 6200 5 10 0 0 0 0 1
 dist-license=GPL
-T 300 6800 8 10 0 0 0 0 1
+T 300 6400 5 10 0 0 0 0 1
 use-license=unlimited

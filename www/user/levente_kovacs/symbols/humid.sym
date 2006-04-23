@@ -1,0 +1,18 @@
+v 20010304
+B 300 0 800 600 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+P 300 100 0 100 1
+P 300 400 0 400 1
+T 400 400 9 10 1 0 0 0
+DATA
+T 400 100 9 10 1 0 0 0
+GND
+T 500 700 8 10 1 1 0 0
+uref=HT?
+T 500 900 5 10 0 0 0 0 1
+author=Levente Kovacs
+T 500 1100 5 10 0 0 0 0 1
+email=levente.kovacs@interware.hu
+T 500 1300 5 10 0 0 0 0 1
+dist-license=GPL
+T 500 1500 5 10 0 0 0 0 1
+use-license=unlimited
