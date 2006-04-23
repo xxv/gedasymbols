@@ -1,0 +1,21 @@
+# author: Levente Kovacs
+# email: lekovacs@interware.hu
+# dist-license: GPL 2
+# use-license: unlimited
+
+Element[0x00000000 "" "U1" "" 995000 535000 0 10000 0 100 0x00000000]
+(
+	Pin[0 0 8000 6000 8000 4200 "" "1" 0x00004101]
+	Pin[10000 0 8000 6000 8000 4200 "" "2" 0x00004001]
+	Pin[20000 0 8000 6000 8000 4200 "" "3" 0x00004001]
+	ElementLine [-10000 -12000 30000 -12000 500]
+	ElementLine [30000 -12000 30000 6000 500]
+	ElementLine [30000 6000 -10000 6000 500]
+	ElementLine [-10000 6000 -10000 -12000 500]
+	ElementLine [30000 -12000 30000 -6000 500]
+	ElementLine [30000 -6000 -10000 -6000 500]
+	ElementLine [-10000 -6000 -10000 -12000 500]
+	ElementLine [3000 -12000 3000 -6000 500]
+	ElementLine [17000 -12000 17000 -6000 500]
+
+	)
