@@ -1,14 +1,31 @@
+#!/bin/env python
 import os
-filenames = os.listdir('symbols')
-
-symbol_section = []
-for file in filenames:
-	if file[-1] == 'm':
-		symbol_section.append('<li><a href="symbols/'+file+'">'+file+'</a></li>')
-		#print file
-print symbol_section
+######
+# Regenerating symbols
+######
+filenames = []
+for filename in os.listdir('symbols'):
+	if filename[-1] == 'm':
+		filenames.append(filename)
 
 file = open("symlist.html", "w")
-for entry in symbol_section:
-	file.write(entry)
+file.write("<ul>\n")
+for filename in filenames:
+		file.write(' <li><a href="symbols/'+filename+'">'+filename+"</a></li>\n")
+file.write("</ul>\n")
+file.close()
+
+######
+# Regenerating footprints
+######
+filenames = []
+for filename in os.listdir('footprints'):
+	if filename[-1] == 'p':
+		filenames.append(filename)
+
+file = open("fplist.html", "w")
+file.write("<ul>\n")
+for filename in filenames:
+		file.write(' <li><a href="footprints/'+filename+'">'+filename+"</a></li>\n")
+file.write("</ul>\n")
 file.close()
