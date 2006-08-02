@@ -39,11 +39,11 @@ file, etc.
 
 <p>There are a couple of column names which have special meaning to
 the web server, or are defined specially so that we can have some
-consistency.  Names are case insensitive.  These are:
+consistency.  Names are case sensitive.  These are:
 
 <dl>
 
-<dt> <b>Symbol</b> <dd> The value in this column is a symbol file name,
+<dt> <b>symbol</b> <dd> The value in this column is a symbol file name,
 normally one present in your area.  If it ends in <tt>.sym</tt>, it is
 printed without it.  If it does not end in <tt>.sym</tt>, the file in
 your area is assumed to end in it.  Thus, you can add the
@@ -51,32 +51,32 @@ your area is assumed to end in it.  Thus, you can add the
 referred to by this symbol exists in your area, a hyperlink to that
 symbol will be created for this value.
 
-<dt> <b>Footprint</b> <dd> Likewise, for footprints, and <tt>.fp</tt>.
+<dt> <b>footprint</b> <dd> Likewise, for footprints, and <tt>.fp</tt>.
 
-<dt> <b>Value</b> <dd> The value of the part, like 1k or 0.47uF.  This
+<dt> <b>value</b> <dd> The value of the part, like 1k or 0.47uF.  This
 corresponds to the "value" field in the footprints.
 
-<dt> <b>Description</b> <dd> A description of the part.  Watch out for
+<dt> <b>description</b> <dd> A description of the part.  Watch out for
 commas in the description; use double quotes around the description if
 you need to include a comma.
 
-<dt> <b>Manufacturer</b> <dd> Manufacturer
+<dt> <b>manufacturer</b> <dd> Manufacturer
 
-<dt> <b>Manufacturer_Part_Number</b> <dd> Manufacturer part number, if it isn't already
+<dt> <b>manufacturer_part_number</b> <dd> Manufacturer part number, if it isn't already
 in value or description.
 
-<dt> <b>Vendor</b> <dd> Where this part can be ordered from; usually
+<dt> <b>vendor</b> <dd> Where this part can be ordered from; usually
 used in conjunction with the Part Number (below).
 
-<dt> <b>Vendor_Part_Number</b> <dd> The part number, usually for the vendor
+<dt> <b>vendor_part_number</b> <dd> The part number, usually for the vendor
 (Digikey, for example).
 
-<dt> <b>Author</b> <dd> Your name.  This is usually a constant-value
+<dt> <b>author</b> <dd> Your name.  This is usually a constant-value
 column.
 
-<dt> <b>Email</b> <dd> Your email.
+<dt> <b>email</b> <dd> Your email.
 
-<dt> <b>Price</b> <dd> I don't expect people to use this field in
+<dt> <b>price</b> <dd> I don't expect people to use this field in
 public files, but I'm reserving this name (vs "Cost" or some other
 name) for utilities to use to tally project costs.
 
