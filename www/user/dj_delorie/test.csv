@@ -2,7 +2,7 @@ DJ's Symbol and Footprint Library
 author = DJ Delorie
 email = dj@delorie.com
 vendor = Digikey
-Symbol,Footprint,"Part Number",Description
+Symbol,Footprint,Vendor_Part_Number,Description
 cs8900a-cpu,tqfp100.fp,CS8900A-LQ,"10Mbit Ethernet, cpu side"
 cs8900a-net.sym,tqfp100.fp,CS8900A-LQ,"10Mbit Ethernet, net side"
 m32c-cpu.sym,minidin-8.fp,REJ83A-FJ,m32c/84 - cpu side
