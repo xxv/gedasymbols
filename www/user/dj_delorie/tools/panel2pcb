@@ -1,0 +1,83 @@
+#!/usr/bin/perl
+# -*- perl -*-
+
+# Copyright 2006 DJ Delorie <dj@delorie.com>
+# Released under the terms of the GNU General Public License, version 2
+
+if (! @ARGV) {
+    print "Usage: pcb2panel board1.pcb board2.pcb board3.pcb > boards.pcb";
+    print "Then edit boards.pcb, putting each outline where you want it\n";
+    print "and sizing the board.  Then:\n";
+    print "panel2pcb boards.pcb\n";
+    print "and edit/print boards.panel.pcb\n";
+    exit 0;
+}
+
+$mydir = $0;
+if ($mydir =~ m@/@) {
+    $mydir =~ s@[^/]*$@@;
+} else {
+    $mydir = ".";
+}
+    require "$mydir/panel.pl";
+
+$panel = shift;
+
+open(P, $panel);
+while (<P>) {
+    if (/PCB\[.* (\d+) (\d+)\]/) {
+	$panel_width = $1;
+	$panel_height = $2;
+    }
+    if (/Element\[\"[^\"]*\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" (\d+) (\d+)/) {
+	$pcb = $1;
+	$base = $2;
+	$value = $3;
+	$mx = $4;
+	$my = $5;
+	%pinx = ();
+	%piny = ();
+    }
+    if (/Pin\[([\d-]+) ([\d-]+) \d+ \d+ \d+ \d+ \"(\d)\"/) {
+	$pinx{$3} = $1;
+	$piny{$3} = $2;
+    }
+    if ($pcb && /\)/) {
+	if ($pinx{'1'} < $pinx{'2'}) {
+	    $rot = 0;
+	} elsif ($pinx{'1'} > $pinx{'2'}) {
+	    $rot = 2;
+	} elsif ($piny{'1'} < $piny{'2'}) {
+	    $rot = 3;
+	} elsif ($piny{'1'} > $piny{'2'}) {
+	    $rot = 1;
+	}
+	push (@paste, "$pcb\0$rot\0$mx\0$my");
+	$pcb = undef;
+    }
+}
+
+$tmp = "/tmp/panel$$.pcb";
+
+$start = $paste[0];
+$start =~ s/\0.*//;
+
+$panel =~ s/\.pcb$//;
+&baseboard($start, $panel_width, $panel_height, $panel);
+
+$lastboard = undef;
+for $paste (sort @paste) {
+    ($pcb, $rot, $mx, $my) = split(/\0/, $paste);
+    if ($lastboard ne $pcb) {
+	&loadboard ($pcb);
+	$lastboard = $pcb;
+	$lastrot = 0;
+    }
+    while ($lastrot != $rot) {
+	print PS "PasteBuffer(Rotate,1)\n";
+	$lastrot = ($lastrot+1) % 4;
+    }
+    print PS "PasteBuffer(ToLayout,$mx,$my)\n";
+}
+
+&done();

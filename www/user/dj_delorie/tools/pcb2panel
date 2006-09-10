@@ -1,0 +1,66 @@
+#!/usr/bin/perl
+# -*- perl -*-
+
+# Copyright 2006 DJ Delorie <dj@delorie.com>
+# Released under the terms of the GNU General Public License, version 2
+
+if (! @ARGV) {
+    print "Usage: pcb2panel board1.pcb board2.pcb board3.pcb > boards.pcb";
+    print "Then edit boards.pcb, putting each outline where you want it\n";
+    print "and sizing the board.  Then:\n";
+    print "panel2pcb boards.pcb\n";
+    print "and edit/print boards.panel.pcb\n";
+    exit 0;
+}
+
+for $pcb (@ARGV) {
+    $base = $pcb;
+    $base =~ s@.*/@@;
+    $base =~ s@\.pcb$@@;
+    $base{$pcb} = $base;
+    push (@pcbs, $pcb);
+    open(PCB, $pcb);
+    while (<PCB>) {
+	if (/^PCB\["" (\d+) (\d+)\]/) {
+	    $width{$pcb} = $1;
+	    $height{$pcb} = $2;
+	    break;
+	}
+    }
+    close PCB;
+}
+
+$pw = 10000;
+$ph = 0;
+for $pcb (@pcbs) {
+    $pw += 10000;
+    $pw += $width{$pcb};
+    $ph = $height{$pcb} if $ph < $height{$pcb};
+}
+$ph += 20000;
+
+print "PCB[\"\" $pw $ph]\n";
+print "Grid[10000.0 0 0 1]\n";
+
+$x = 10000;
+$y = 10000;
+for $pcb (@pcbs) {
+    $desc = $pcb;
+    $name = $base{$pcb};
+    $value = "$width{$pcb} x $height{$pcb}";
+    $w = $width{$pcb};
+    $h = $height{$pcb};
+    print "Element[\"\" \"$desc\" \"$name\" \"$value\" $x $y 2000 2000 0 50 \"\"] (\n";
+    print "  Pin[0 0 300 0 0 100 \"1\" \"1\" \"\"]\n";
+    print "  Pin[$w 0 300 0 0 100 \"2\" \"2\" \"\"]\n";
+    print "  ElementLine[0 0 $w 0 100]\n";
+    print "  ElementLine[0 0 0 $h 100]\n";
+    print "  ElementLine[$w 0 $w $h 100]\n";
+    print "  ElementLine[0 $h $w $h 100]\n";
+    print ")\n";
+    $x += $w + 10000;
+}
+
+print "Layer(1 \"component\")()\n";
+print "Layer(2 \"silk\")()\n";
+print "Layer(3 \"silk\")()\n";
