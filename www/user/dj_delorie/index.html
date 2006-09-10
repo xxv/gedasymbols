@@ -27,6 +27,14 @@ href="tools/panel2pcb">panel2pcb</a> - tools to aggregate multiple
 boards into a single panel.  You'll also need <a
 href="tools/panel.pl">panel.pl</a>, a panelization library.
 
+<pre>
+$ ./pcb2panel board1.pcb board2.pcb board3.pcb > boards.pcb
+$ pcb boards.pcb
+$ ./panel2pcb boards.pcb
+$ pcb boards.panel.pcb
+</pre>
+</p>
+
 </ul>
 
 <h2>Documentation</h2>
