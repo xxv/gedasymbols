@@ -27,7 +27,7 @@ sub baseboard {
 	next if /\b(Via|Pin|Pad|ElementLine|Line|Arc|ElementArc)/;
 	if (/Polygon|Element/) {
 	    while (<S>) {
-		last if /\)/;
+		last if /\)\s*$/;
 	    }
 	    next;
 	}
