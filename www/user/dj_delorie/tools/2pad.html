@@ -1,0 +1,51 @@
+<!--#set var="title" value="Footprint Generator: Dual Pads" -->
+<!--#include virtual="/header.html" -->
+
+<form action=/scripts/2pad.cgi>
+
+<p align=center>Default units:
+<label><input type=radio name=units value=mm checked=1> mm</label>
+<label><input type=radio name=units value=mil> mil</label>
+(you may override this by adding "mil" or "mm" to your values below)</p>
+
+<table border=0 cellspacing=0 cellpadding=0>
+
+<tr>
+<td valign=center><img src="2pad.png" width=381 height=357></td>
+<td><tt>&nbsp;</tt></td>
+<td valign=top>
+
+<p>Enter whatever data you have, as long as it's sufficient to
+describe the footprint: </p>
+
+<table border=0 cellspacing=0 cellpadding=3>
+<tr><td>C: </td><td><input size=10 name=c> (clearance) </td></tr>
+<tr><td>CL: </td><td><input size=10 name=cl> (component length) </td></tr>
+<tr><td>CW: </td><td><input size=10 name=cw> (component width) </td></tr>
+<tr><td> </td><td><input type=checkbox name=pol> Draw physical outline too?</td></tr>
+<tr><td>G: </td><td><input size=10 name=g> (gap) </td></tr>
+<tr><td>M: </td><td><input size=10 name=m> (mask) </td></tr>
+<tr><td>PL: </td><td><input size=10 name=pl> (pad length) </td></tr>
+<tr><td>PLC: </td><td><input size=10 name=plc> (pad length, center-center) </td></tr>
+<tr><td>PLE: </td><td><input size=10 name=ple> (pad length extension) </td></tr>
+<tr><td>PT: </td><td><input size=10 name=pt> (pad thickness) </td></tr>
+<tr><td>PW: </td><td><input size=10 name=pw> (pad width) </td></tr>
+<tr><td>PWE: </td><td><input size=10 name=pwe> (pad width extension) </td></tr>
+<tr><td>SO: </td><td><input size=10 name=so> (silk offset) </td></tr>
+<tr><td>SOC: </td><td><input size=10 name=soc> (silk offset to center) </td></tr>
+<tr><td>SW: </td><td><input size=10 name=sw> (silk width) </td></tr>
+
+<tr><td></td><td><input type=submit value="Create Footprint"></td></tr>
+</table>
+</form>
+
+</td></tr><table>
+
+<p>Note that M (mask) is the distance between the copper and the mask.
+It can be a percent, which is a percent of G (gap) by appending
+<tt>%</tt> (example: <tt>25%</tt> instead of <tt>6mil</tt>).
+Likewise, C is the distance between the copper and any polygons, with
+a percent being a percent of G.  PWE and PLE can be percentages of CW
+and CL, respectively, and G can be a percent of CL.</p>
+
+<!--#include virtual="/trailer.html" -->
