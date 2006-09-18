@@ -579,5 +579,3 @@ T -100 13150 5 10 0 0 0 0 1
 description=ARM920T based Microcontroller from ATMEL
 T -100 13350 5 10 0 0 0 0 1
 numslots=0
-T -100 13550 5 10 0 0 0 0 1
-slot=1
