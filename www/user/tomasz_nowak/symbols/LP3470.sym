@@ -1,4 +1,4 @@
-v 20060123 1
+v 20060824 1
 P 300 100 0 100 1 0 1
 {
 T 100 150 5 8 1 1 0 0 1
@@ -64,9 +64,9 @@ refdes=U?
 T 576 2070 8 10 0 0 0 0 1
 description=Tiny Power On Reset Circuit
 T 576 2300 8 10 0 0 0 0 1
-footprint=SOT23-5
+footprint=SC70_5
 T 576 2500 8 10 0 1 0 0 1
-source=http://www.national.com/ds/LP/LP3470.pdf
+documentation=http://www.national.com/ds/LP/LP3470.pdf
 V 1950 900 51 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 576 2870 8 10 0 0 0 0 1
 author=Tomasz Nowak
@@ -76,3 +76,5 @@ T 576 1870 8 10 0 0 0 0 1
 dist-license=GPL
 T 576 1670 8 10 0 0 0 0 1
 use-license=unlimited
+T 576 1470 8 10 0 0 0 0 1
+symversion=1.0
