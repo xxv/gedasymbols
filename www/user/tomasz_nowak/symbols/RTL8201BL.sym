@@ -486,4 +486,4 @@ license=GPL
 T 4900 3100 8 10 0 0 0 0 1
 email=nowak2000@poczta.onet.pl
 T 4900 2900 8 10 0 0 0 0 1
-footprint=LQFP48_12
+footprint=LQFP48_7
