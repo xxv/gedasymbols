@@ -101,4 +101,4 @@ numslots=0
 T 300 3150 5 10 0 0 0 0 1
 documentation=http://acoustics.aau.dk/~fc/mikro/TL7705.pdf
 T 300 2150 3 10 1 0 0 0 1
-MAX663
+TL7705A
