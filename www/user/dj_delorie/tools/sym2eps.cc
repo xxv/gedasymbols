@@ -316,9 +316,9 @@ color_size (FILE *f, int c, int s)
     }
   if (os != s)
     {
-      if (s == 0)
+      if (s < LINESIZEPT)
 	s = LINESIZEPT;
-      fprintf(f, "%g setlinewidth\n", s * 1000.0/72.0);
+      fprintf(f, "%d setlinewidth\n", s);
       os = s;
     }
 }
