@@ -1,0 +1,46 @@
+[labels]
+
+R8C/17
+refdes=U?
+! copyright=2006 DJ Delorie
+! author=DJ Delorie
+! use-license=unlimited
+! dist-license=GPL
+! device=r8c-17
+
+[left]
+
+3 ! RESET
+
+8 MODE
+
+1 SCL
+20 SDA
+
+4 XOUT
+6 XIN
+
+[right]
+
+19 P3_3
+2 P3_7
+9 P4_5
+
+.bus
+18 P1_0
+17 P1_1
+15 P1_2
+14 P1_3
+13 P1_4
+12 P1_5
+11 P1_6
+10 P1_7
+
+[top]
+
+7 VCC
+16 AVCC
+
+[bottom]
+
+5 VSS/AVSS

@@ -1,0 +1,65 @@
+[labels]
+
+CY7C1049B
+refdes=U?
+512Kx8
+! copyright=2006 DJ Delorie
+! author=DJ Delorie
+! use-license=unlimited
+! dist-license=GPL
+! device=CY7C1049B
+! description=512x by 8 SRAM
+! footprint=SOJ-36
+
+[left]
+
+.bus
+1 A0
+2 A1
+3 A2
+4 A3
+5 A4
+14 A5
+15 A6
+16 A7
+17 A8
+18 A9
+20 A10
+21 A11
+22 A12
+23 A13
+24 A14
+32 A15
+33 A16
+34 A17
+35 A18
+
+6 ! CE
+13 ! WE
+31 ! OE
+
+[right]
+
+.bus
+7 D0
+8 D1
+11 D2
+12 D3
+25 D4
+26 D5
+29 D6
+30 D7
+
+[top]
+
+9 Vcc1
+27 Vcc2
+
+[bottom]
+
+10 GND1
+28 GND2
+
+[nc]
+19 x
+36 x

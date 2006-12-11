@@ -1,0 +1,42 @@
+[labels]
+
+74138
+refdes=U?
+! copyright=2006 DJ Delorie
+! author=DJ Delorie
+! use-license=unlimited
+! dist-license=GPL
+! device=TC74HC138AFN
+! description=3:8 decoder
+! footprint=SO16
+
+[left]
+
+1 A
+2 B
+3 C
+
+4 ! G2A
+
+5 ! G2B
+
+6 G1
+
+[right]
+
+15 ! Y0
+14 ! Y1
+13 ! Y2
+12 ! Y3
+11 ! Y4
+10 ! Y5
+9 ! Y6
+7 ! Y7
+
+[top]
+
+16 Vcc
+
+[bottom]
+
+8 GND

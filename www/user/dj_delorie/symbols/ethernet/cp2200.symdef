@@ -1,0 +1,83 @@
+[labels]
+
+CP2200
+refdes=U?
+! copyright=2006 DJ Delorie
+! author=DJ Delorie
+! use-license=unlimited
+! dist-license=GPL
+! device=cp2200
+! description=ethernet controller
+! footprint=TQFP-48
+
+[left]
+
+41 ! CS
+
+.bus
+27 A0
+28 A1
+29 A2
+32 A3/ALE/AS
+33 A4
+34 A5
+37 A6
+38 A7
+
+.bus
+16 D0/AD0
+17 D1/AD1
+18 D2/AD2
+19 D3/AD3
+20 D4/AD4
+21 D5/AD5
+22 D6/AD6
+23 D7/AD7
+
+39 ! RD/DS
+40 ! WR/(R/!W)
+
+42 ! INT
+
+[right]
+
+15 ! RST
+44 MUXEN
+43 MOTEN
+
+3 LINK
+2 ACT
+
+9 TX+
+10 TX-
+
+7 RX+
+6 RX-
+
+46 XTAL1
+45 XTAL2
+
+[top]
+
+5 AV+
+13 VDD1
+30 VDD2
+
+[bottom]
+
+4 AGND
+14 DGND1
+31 DGND2
+
+[nc]
+1
+8
+11
+12
+24
+25
+26
+35
+36
+47
+48

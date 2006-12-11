@@ -1,0 +1,49 @@
+[labels]
+
+74154
+refdes=U?
+! copyright=2006 DJ Delorie
+! author=DJ Delorie
+! use-license=unlimited
+! dist-license=GPL
+! device=CD74HCT154
+! description=512x by 8 SRAM
+! footprint=SO24W
+
+[left]
+
+23 A0
+22 A1
+21 A2
+20 A3
+
+18 ! E1
+
+19 ! E2
+
+[right]
+
+1 ! Y0
+2 ! Y1
+3 ! Y2
+4 ! Y3
+5 ! Y4
+6 ! Y5
+7 ! Y6
+8 ! Y7
+9 ! Y8
+10 ! Y9
+11 ! Y10
+13 ! Y11
+14 ! Y12
+15 ! Y13
+16 ! Y14
+17 ! Y15
+
+[top]
+
+24 Vcc
+
+[bottom]
+
+12 GND

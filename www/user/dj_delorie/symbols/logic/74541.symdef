@@ -1,0 +1,44 @@
+[labels]
+
+74541
+refdes=U?
+! footprint=TSSOP20
+! copyright=2006 DJ Delorie
+! author=DJ Delorie
+! use-license=unlimited
+! dist-license=GPL
+! device=74541
+! description=octal noninverting buffer
+
+[left]
+
+2 A1
+3 A2
+4 A3
+5 A4
+6 A5
+7 A6
+8 A7
+9 A8
+
+1 ! OE1
+19 ! OE2
+
+[right]
+
+18 Y1
+17 Y2
+16 Y3
+15 Y4
+14 Y5
+13 Y6
+12 Y7
+11 Y8
+
+[top]
+
+20 Vcc
+
+[bottom]
+
+10 GND
