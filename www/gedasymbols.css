@@ -12,6 +12,7 @@ H1 {
 
 H2 {
   color: #28354f;
+  border-top: 1px solid #B87333;
 }
 
 TT {
@@ -38,6 +39,7 @@ table.lined td {
   border: 1px solid #999999;
   vertical-align: top;
   padding: 5px;
+  background-color: #ffffff;
 }
 table.lined th {
   border: 1px solid #999999;
