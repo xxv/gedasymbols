@@ -13,8 +13,4 @@ Element["" "" "" "" 0 0 0 0 0 100 ""]
 	Attribute("copyright" "2006 DJ Delorie")
 	Attribute("use-license" "Unlimited")
 	Attribute("dist-license" "GPL")
-	Attribute("author" "DJ Delorie")
-	Attribute("copyright" "2006 DJ Delorie")
-	Attribute("use-license" "Unlimited")
-	Attribute("dist-license" "GPL")
 )
