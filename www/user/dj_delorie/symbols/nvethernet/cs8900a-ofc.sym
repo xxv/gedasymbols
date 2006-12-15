@@ -703,7 +703,7 @@ pinnumber=96
 T 5200 20200 9 10 1 1 0 3 1
 device=CS8900A
 T 5200 19800 9 10 1 1 0 3 1
-description=All pins, official" style"
+description=All pins, "official" style
 T 5200 19400 5 10 1 1 0 3 1
 refdes=U?
 V 350 6600 50 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1

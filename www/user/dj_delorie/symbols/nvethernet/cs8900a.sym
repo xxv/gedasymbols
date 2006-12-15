@@ -703,7 +703,7 @@ pinnumber=96
 T 3100 13800 9 10 1 1 0 3 1
 device=CS8900A
 T 3100 13400 9 10 1 1 0 3 1
-description=All pins, DJ" style"
+description=All pins, "DJ" style
 T 3100 13000 5 10 1 1 0 3 1
 refdes=U?
 V 350 6800 50 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
