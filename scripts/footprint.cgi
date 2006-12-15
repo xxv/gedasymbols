@@ -69,10 +69,25 @@ sub make_html {
 			s@license: (\S*)@license: <a href="/licenses/$license.html">$1</a>@;
 		    }
 		}
-		print;
-		print "<br>\n";
+		push (@notes, "$_<br>\n");
+	    }
+	    while (<F>) {
+		if (/Attribute\("(.*)" "(.*)"\)/) {
+		    ($name, $value) = ($1,$2);
+		    if ($name =~ /license/) {
+			$license = $value;
+			if ( -f "$docroot/licenses/$license.html") {
+			    push(@notes, "$name: <a href=\"/licenses/$license.html\">$value</a><br>\n");
+			} else {
+			    push(@notes, "$name: $value<br>\n");
+			}
+		    } else {
+			push(@notes, "$name: $value<br>\n");
+		    }
+		}
 	    }
 	    close F;
+	    print sort @notes;
 	} else {
 	    print;
 	}
