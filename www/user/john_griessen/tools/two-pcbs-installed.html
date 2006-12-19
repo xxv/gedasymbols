@@ -1,0 +1,27 @@
+<!--#set var="title" value="two-pcbs-installed" -->
+<!--#include virtual="/header.html" -->
+I have two different pcb programs installed now.
+<br>
+
+For one, I used    <br>
+.configure --prefix=/opt/pcbhead  --enable-maintainer-mode    <br>
+make    <br>
+make install    <br> 
+
+
+and PATH leads to both /opt/pcb/bin:/opt/pcbhead/bin    <br>
+
+
+The other installed PCB was made with    <br>
+./configure --prefix=/opt/pcb  --disable-doc --with-gui=lesstif    <br>
+make    <br>
+make install    <br>
+
+
+Since the pcb executable is a script containing hard-coded paths to     <br>
+executable parts of PCB, I renamed /opt/pcbhead/bin/pcb to     <br>
+/opt/pcbhead/bin/pcbhead and now I can excute pcb or pcbhead     <br>
+from any dir on my workstation.     <br>
+
+
+<!--#include virtual="/trailer.html" -->
