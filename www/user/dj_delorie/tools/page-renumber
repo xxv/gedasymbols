@@ -1,0 +1,68 @@
+#!/usr/bin/perl
+# -*- perl -*-
+# Copyright 2006 DJ Delorie <dj@delorie.com>
+# Distributed under the GNU GPL, version 2 or higher.
+
+$start_number = 0;
+$end_number = 9999999999;
+$base_number = 0;
+$match = "^refdes=";
+
+while ($ARGV[0] =~ /^-(.*)/) {
+    $opt = shift;
+    if ($opt eq "-n") {
+	$name = shift;
+	$match = "^refdes=${name}[0-9]";
+    } elsif ($opt eq "-re") {
+	$match = shift;
+    } elsif ($opt eq "-s") {
+	$start_number = shift;
+    } elsif ($opt eq "-e") {
+	$end_number = shift;
+    } elsif ($opt eq "-b") {
+	$base_number = shift;
+    } else {
+	print '
+Usage: page-renumber [options] [infile] [outfile]
+  -n name   change refdes using that name
+  -re regex change lines matching that regex (like "netname=addr[0-9]")
+  -s num    start number - numbers lower than this remain unchanged
+  -e num    end number - numbers higher than this remain unchanged
+  -b num    base number - All numbers have "base-start" added to them.
+
+Note that infile and outfile may be missing or "-" to indicate stdin/stdout.
+';
+	exit;
+    }
+}
+
+$infile = shift;
+if ($infile && $infile ne "-") {
+    open(IN, $infile);
+} else {
+    open(IN, "<&STDIN");
+}
+
+$outfile = shift;
+if ($outfile && $outfile ne "-") {
+    open(OUT, ">$outfile");
+} else {
+    open(OUT, ">&STDOUT");
+}
+
+while (<IN>) {
+    if (/$match/) {
+	$num = '';
+	($name, $base, $num) = m@([^=]+)=(.*[^0-9])([0-9]+)@;
+	if ($num =~ /[0-9]/
+	    && $num >= $start_number
+	    && $num <= $end_number) {
+	    $num += ($base_number - $start_number);
+	    $_ = "$name=$base$num\n";
+	}
+    }
+    print OUT;
+}
+
+close IN;
+close OUT;
