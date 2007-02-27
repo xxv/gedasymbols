@@ -1,0 +1,25 @@
+[labels]
+Acon CX-V
+refdes=CX?
+! copyright=2006 DJ Delorie
+! author=DJ Delorie
+! use-license=unlimited
+! dist-license=GPL
+! device=acon-cx-v
+! description=dc-dc power converter
+! footprint=acon-cx-v.fp
+
+[left]
+
+1 Vin+
+3 Vin-
+
+2 Enable
+
+[right]
+
+7 Vout+
+8 Vout-
+9 Vout-
+
+10 Trim
