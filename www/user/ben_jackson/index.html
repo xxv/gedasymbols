@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>gedasymbols: The Page Editing Style Guide</title>
+<link rel="stylesheet" href="/gedasymbols.css" type="text/css">
+</head>
+
+<body>
+<h1>Ben Jackson</h1>
+Ben Jackson<br>
+Portland, OR<br>
+Software Engineer, Amateur Extra (AD7GD), Private Pilot<br>
+email: <a href="mailto:ben@ben.com">ben@ben.com</a><br>
+web: <a href="http://www.ben.com/">http://www.ben.com/</a>, with more
+electronics stuff at
+<a href="http://ad7gd.net/">http://ad7gd.net/</a><br>
+<h2>Tools</h2>
+<p>
+PCB Plugins (more detail coming soon):
+<ul>
+<li><a href="http://ad7gd.net/geda/autocrop.c">autocrop.c</a> provides <code>Autocrop()</code> which shrink-wraps your PCB down to just the existing elements.</li>
+<li><a href="http://ad7gd.net/geda/smartdisperse.c">smartdisperse.c</a> provides <code>SmartDisperse()</code> which improves on <code>DisperseElements()</code> by using the netlist as a hint.</li>
+<li><a href="http://ad7gd.net/geda/distalign.c">distalign.c</a> provides
+<code>Distribute()</code> and <code>Align()</code> which can evenly space or align elements using a variety of reference points.</li>
+</ul>
+</p>
+<p>
+Everyone has a boxsym script.  Mine is the result of starting to hack on
+djboxsym and then deciding to rewrite it.  It's not finished, but there are
+some really good bits.  Most interesting is probably the pseudo-PostScript
+<code>gaf</code> package that lets you render symbol primitives with
+translation, rotation and mirroring.  Eventually all boxsyms could be
+written as layout modules for this program.
+<ul>
+<li><a href="http://ad7gd.net/geda/bjjboxsym">bjjboxsym</a></li>
+</ul>
+</p>
+<h2>Samples</h2>
+<p>
+If you're considering gEDA/PCB, here are some sample projects I've done
+using the tools:
+<ul>
+<li><a href="http://ad7gd.net/xc9536/">A CPLD LED blinker based on XAPP078</a></li>
+</ul>
+</p>
+</body>
+</html>
