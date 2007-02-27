@@ -1,9 +1,9 @@
 v 20060123 1
 B 300 300 8100 4400 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 8400 4800 9 10 0 0 0 0 1
-use-licence=unlimited
+use-license=unlimited
 T 8400 5000 9 10 0 0 0 0 1
-dist-licence=GPL 2
+dist-license=GPL 2
 T 8400 5200 9 10 0 0 0 0 1
 author=Marc Moreau
 T 4400 2800 9 10 1 1 0 3 1

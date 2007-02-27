@@ -1,9 +1,9 @@
 v 20060123 1
 B 300 300 4400 3600 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 4700 4000 9 10 0 0 0 0 1
-use-licence=unlimited
+use-license=unlimited
 T 4700 4200 9 10 0 0 0 0 1
-dist-licence=GPL 2
+dist-license=GPL 2
 T 4700 4400 9 10 0 0 0 0 1
 footprint=SQFP-50P-1680L1-1680L2-100N
 T 4700 4600 9 10 0 0 0 0 1
