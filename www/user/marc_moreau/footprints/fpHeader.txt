@@ -1,0 +1,4 @@
+# author: Marc Moreau
+# email: lares.moreau@gmail.com
+# dist-license: GPL 2
+# use-license: unlimited
