@@ -1,16 +1,8 @@
-v 20041228 1
+v 20060906 1
 T -13500 6750 5 10 0 0 0 0 1
 device=MOS 6581
 T -13500 6950 5 10 0 0 0 0 1
 footprint=DIP28
-T -13500 7350 5 10 0 0 0 0 1
-description=MOS 6581 SID sound chip
-T -13500 7150 5 10 0 0 0 0 1
-numslots=0
-T -13500 7550 5 10 0 0 0 0 1
-documentation=http://sid.kubarth.com/
-T -13500 7750 5 10 0 0 0 0 1
-author=David Griffith <davidgriffith@acm.org>
 P 0 500 300 500 1 0 0
 {
 T 200 550 5 8 1 1 0 6 1
@@ -260,13 +252,15 @@ refdes=U?
 T 0 4850 5 10 0 0 0 0 1
 footprint=DIP28
 T 0 5250 5 10 0 0 0 0 1
-description=6581 Sound Interface Device (SID)
+description=MOS Technology 6581 Sound Interface Device (SID)
 T 0 5050 5 10 0 0 0 0 1
 numslots=0
 T 0 5450 5 10 0 0 0 0 1
 documentation=http://stud1.tuwien.ac.at/~e9426444/index.html
 T 0 5650 5 10 0 0 0 0 1
-author=David Griffith <dgriffi@cs.csubak.edu>
+documentation=http://sid.kubarth.com/
+T 0 5850 5 10 0 0 0 0 1
+author=David Griffith <davidgriffith@acm.org>
 T 300 4450 9 10 1 0 0 0 1
 6581
 P 2600 1100 2300 1100 1 0 0
