@@ -63,7 +63,7 @@ sub make_html {
 		    $ntext = $1;
 		    for ($tn=0; $tn<$ntext; $tn++) {
 			$_ = <F>;
-			next unless /^(author|email|use-license|dist-license)=/;
+			next unless /^(author|email|use-license|dist-license|description|documentation)=/;
 			s/=/: /;
 			s/&/&amp;/;
 			s/</&lt;/;
