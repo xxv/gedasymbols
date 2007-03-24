@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+
+# This program is licensed under the GNU GPL. See gpl.txt for full license.
 from string import atof
 
 class FpGenerator:
