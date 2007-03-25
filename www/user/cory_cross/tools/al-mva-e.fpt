@@ -1,0 +1,15 @@
+system=mm
+function=smt_polarized_cap
+MVA_D55`MVA smt electrolytic cap, D55 case`4`5.2`4.3`4.3`5.1`2`1
+MVA_E55`MVA smt electrolytic cap, E55 case`5`5.2`5.3`5.3`5.9`2`1.4
+MVA_F55`MVA smt electrolytic cap, F55 case`6.3`5.2`6.6`6.6`7.2`2`1.9
+MVA_F60`MVA smt electrolytic cap, F60 case`6.3`5.7`6.6`6.6`7.2`2`1.9
+MVA_F80`MVA smt electrolytic cap, F80 case`6.3`7.7`6.6`6.6`7.2`2`1.9
+MVA_HA0`MVA smt electrolytic cap, HA0 case`8`10.0`8.3`8.3`9.0`2.8`3.1
+MVA_JA0`MVA smt electrolytic cap, JA0 case`10`10.0`10.3`10.3`11.0`2.8`4.5
+MVA_KE0`MVA smt electrolytic cap, KE0 case`12.5`13.5`13.0`13.0`13.7`3.6`4.2
+MVA_KG5`MVA smt electrolytic cap, KG5 case`12.5`16.0`13.0`13.0`13.7`3.6`4.2
+MVA_LH0`MVA smt electrolytic cap, LH0 case`16`16.5`17.0`17.0`18.0`3.6`6.5
+MVA_LN0`MVA smt electrolytic cap, LN0 case`16`21.5`17.0`17.0`18.0`3.6`6.5
+MVA_MH0`MVA smt electrolytic cap, MH0 case`18`16.5`19.0`19.0`20.0`3.6`6.5
+MVA_MN0`MVA smt electrolytic cap, MN0 case`18`21.5`19.0`19.0`20.0`3.6`6.5
