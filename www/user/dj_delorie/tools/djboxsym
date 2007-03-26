@@ -137,18 +137,18 @@ $maxy += 400;
 for ($i=0; $i<$maxy; $i+=100) {
     $w = $bw{$i}{left} + $bw{$i}{labels} + $bw{$i}{right};
     if ($bw{$i}{labels}) {
-	$wl = ($bw{$i}{left} + $bw{$i}{labels}) * 2;
+	$wl = ($bw{$i}{left} + $bw{$i}{labels}/2) * 2;
 	$w = $wl if $w < $wl;
-	$wl = ($bw{$i}{right} + $bw{$i}{labels}) * 2;
+	$wl = ($bw{$i}{right} + $bw{$i}{labels}/2) * 2;
 	$w = $wl if $w < $wl;
     }
     if ($bw{$i}{left} && $bw{$i}{labels}) {
-	$w += 200;
+	$w += 100;
     } elsif ($bw{$i}{left} && $bw{$i}{right}) {
-	$w += 400;
+	$w += 200;
     }
     if ($bw{$i}{right} && $bw{$i}{labels}) {
-	$w += 200;
+	$w += 100;
     }
     if ($boxwidth < $w) {
 	$boxwidth = $w;
@@ -325,6 +325,7 @@ sub ltext {
 sub textlen {
     my($t) = @_;
     $t =~ s/^[^=]*=//;
+    $t =~ s@\\_@@g;
     return length($t) * 110;
 }
 
