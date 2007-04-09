@@ -1,0 +1,21 @@
+[labels]
+
+GUMSTIX
+refdes=CPU?
+! footprint=gumstix-netcf-stripped.fp
+! copyright=2006 DJ Delorie
+! author=DJ Delorie
+! use-license=unlimited
+! dist-license=GPL
+! device=gumstix-netcf-stripped
+
+
+[right]
+61	E1
+62	E2
+63	E3
+64	E4
+65	E5
+66	E6
+67	E7
+68	E8

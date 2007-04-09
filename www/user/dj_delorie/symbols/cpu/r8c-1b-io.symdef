@@ -1,0 +1,45 @@
+[labels]
+
+R8C/1B
+refdes=U?
+! copyright=2006 DJ Delorie
+! author=DJ Delorie
+! use-license=unlimited
+! dist-license=GPL
+! device=r8c-1b
+
+[left]
+
+3 \_RESET
+
+8 MODE
+9 RXD1
+2 TXD1
+
+20 SDA
+1 SCL
+
+4 XOUT
+6 XIN
+
+[right]
+
+19 P3_3
+16 P4_2
+
+18 P1_0
+17 P1_1
+15 P1_2
+14 P1_3
+13 P1_4/TXD0
+12 P1_5/RDX0
+11 P1_6
+10 P1_7
+
+[top]
+
+7 VCC
+
+[bottom]
+
+5 VSS

@@ -1,0 +1,74 @@
+[labels]
+
+GUMSTIX
+refdes=U?
+! footprint=gumstix-netcf-stripped.fp
+! copyright=2006 DJ Delorie
+! author=DJ Delorie
+! use-license=unlimited
+! dist-license=GPL
+! device=gumstix-netcf-stripped
+
+[left]
+60	GND 
+59	USB_N 
+58	28 BITCLK 
+57	76 L_PCLK 
+56	73 L_DD(15) 
+55	72 L_DD(14) 
+54	34 FFRXD 
+53	65 L_DD(7) 
+52	63 L_DD(5) 
+51	68 L_DD(10) 
+50	59 L_DD(1) 
+49	NACRESET 
+48	47 IR_TXD 
+47	62 L_DD(4) 
+46	31 SYNC 
+45	84 NSSP_RXD 
+44	82 NSSP_FRAME 
+43	29 SDATA_IN0 
+42	GND 
+41	74 L_FCLK 
+40	64 L_DD(6) 
+39	41 FFRTS 
+38	20 DRQ0 
+37	NRESET 
+36	16 PWM(0) 
+35	48 HWTXD 92
+34	51 HWRTS 92
+33	49 HWRXD 92
+32	50 HWCTS 92
+31	GND 
+
+[right]
+1	GND 
+2	L_DD(9) 67
+3	L_BIAS 77
+4	L_DD(3) 61
+5	SDATA_OUT 30
+6	L_DD(8) 66
+7	GND 
+8	L_DD(13) 71
+9	L_DD(12) 70
+10	L_DD(11) 69
+11	USB_P 
+12	IR_RXD 46
+13	L_DD(2) 60
+14	FFCTS 35
+15	SDATA_IN1 32
+16	L_LCLK 75
+17	PWM(1) 17
+18	L_DD(0) 58
+19	I2C_SDA 
+20	I2C_SCL 
+21	NSSP_CLK 81
+22	BT_RXD 42
+23	NSSP_TXD 83
+24	BT_CTS 44
+25	BT_TXD 43
+26	FFTXD 39
+27	BT_RTS 45
+28	V_BATT 
+29	V_BATT 
+30	V_BATT 

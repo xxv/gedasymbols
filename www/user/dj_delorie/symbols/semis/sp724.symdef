@@ -1,0 +1,24 @@
+[labels]
+
+SP724
+refdes=U?
+! copyright=2006 DJ Delorie
+! author=DJ Delorie
+! use-license=unlimited
+! dist-license=GPL
+! device=SP724 4-ESD
+! footprint=SOT26
+
+[left]
+1 A
+3 B
+
+[right]
+4 C
+6 D
+
+[top]
+5 V+
+
+[bottom]
+2 V-

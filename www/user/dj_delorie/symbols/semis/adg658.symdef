@@ -1,0 +1,39 @@
+[labels]
+
+ADG658
+refdes=U?
+! copyright=2006 DJ Delorie
+! author=DJ Delorie
+! use-license=unlimited
+! dist-license=GPL
+! device=ADG658 8:1 analog switch
+
+
+[left]
+
+11 A0
+10 A1
+9 A2
+
+3 D
+6 \_EN\_
+
+[right]
+
+13 S0
+14 S1
+15 S2
+12 S3
+1 S4
+5 S5
+2 S6
+4 S7
+
+[top]
+
+16 VDD
+
+[bottom]
+
+7 VSS
+8 GND
