@@ -15,7 +15,7 @@ class FpGenerator:
         f.write(self.LICENSE)
         f.write( self.element )
         f.close()
-        if __name__ == '__main__':
+        if __name__ == '__main__' or self.PrintSavedFiles:
             import sys
             sys.stderr.write('Saved to ' + self.SAVEDIR + self.filename + '\n' )
 
@@ -109,6 +109,12 @@ class FpGenerator:
     def smt_polarized_cap(self, line):
         ll = line.split('`')
         (diameter, height, width, length, pin_to_pin_length, pad_width, pin_spacing_length) = [self.getMilth(atof(inval.strip())) for inval in ll[2:]]
+        #For these descriptions, point of view is looking down at the component on
+        # a board sitting on a flat table, positive end facing you
+        #diameter=diameter of the can
+        #height=the dimension you can't see from this POV; how high the part comes off the board
+        #width=dimension of part left-to-right
+        #length=dimsion of part up-to-down
         self.filename = ll[0] + '.fp'
         #Set up the beginning of the element string, with description
         # and mark point of (0,0)
@@ -128,24 +134,62 @@ class FpGenerator:
             x_coord = pin_to_pin_length/2 + extra_pad_length - pad_width/2
             x2_coord = pin_spacing_length/2 + pad_width/2
             y_coord = 0
-        trace_width = min(pad_length,pad_width)
-        self.element += ph + ' '.join([str(i) for i in (-x_coord, y_coord, -x2_coord, -y_coord, trace_width, 1200, trace_width+1200)]) + ' "Positive" "1" "square"]'
-        self.element += ph + ' '.join([str(i) for i in (x_coord, y_coord, x2_coord, -y_coord, trace_width, 1200, trace_width+1200)]) + ' "Negative" "2" "square"]'
+        pad_trace_width = min(pad_length,pad_width)
+        self.element += ph + ' '.join([str(i) for i in (-x_coord, y_coord, -x2_coord, -y_coord, pad_trace_width, 1200, pad_trace_width+1200)]) + ' "Positive" "1" "square"]'
+        self.element += ph + ' '.join([str(i) for i in (x_coord, y_coord, x2_coord, -y_coord, pad_trace_width, 1200, pad_trace_width+1200)]) + ' "Negative" "2" "square"]'
             
         #Generate silkscreen outline
         sh = silk_header = '\n\tElementLine ['
         silk_line_space = 2000
-        ##Left line, 
-        self.element += sh + ' '.join([str(int(i)) for i in (-((pin_to_pin_length/2+extra_pad_length) + silk_line_space), .9*width/2, -((pin_to_pin_length/2+extra_pad_length) + silk_line_space), -.9*width/2, 1000)]) + ']'
+        #end lines (left & right)
+        def draw_line( x1_coord, y1_coord, x2_coord, y2_coord, X_MIRROR=False, Y_MIRROR=False, WIDTH=1000 ):
+            def do_line( xmul, ymul ):
+                self.element += sh + ' '.join([str(int(i)) for i in
+                                               (xmul*x1_coord,ymul*y1_coord,
+                                                xmul*x2_coord,ymul*y2_coord,
+                                                WIDTH)]) + ']'
+            if( X_MIRROR and not Y_MIRROR ):
+                for x in (1, -1): do_line(x, 1)
+            elif( not X_MIRROR and Y_MIRROR ):
+                for y in (1, -1): do_line(1, y)
+            elif( X_MIRROR and Y_MIRROR ):
+                for x in (1, -1):
+                    for y in (1, -1): do_line(x, y)
+            else:
+                do_line(1,1)
+
+        def draw_centered_vert_line( x_coord, length ):
+            draw_line( x_coord, length/2, x_coord, -length/2 )
+        
+        def draw_centered_vert_line_with_middle_gap( x_coord, length, gap ):
+            if( gap > length):
+                (gap, length) = (length, gap)
+            draw_line( x_coord, length/2,
+                       x_coord, gap/2,
+                       Y_MIRROR=True )
+
+        x_outside = length/2 + silk_line_space
+
+        ##Left line,
+        inside_mitered_corner_width = .9*width
+        draw_centered_vert_line_with_middle_gap( -x_outside, inside_mitered_corner_width, pad_width )
         ##Mitered corners
-        self.element += sh + ' '.join([str(int(i)) for i in (-((pin_to_pin_length/2+extra_pad_length) + silk_line_space), .9*width/2, -(pin_to_pin_length/2+extra_pad_length), width/2+silk_line_space, 1000)]) + ']'
-        self.element += sh + ' '.join([str(int(i)) for i in (-((pin_to_pin_length/2+extra_pad_length) + silk_line_space), -.9*width/2, -(pin_to_pin_length/2+extra_pad_length), -(width/2+silk_line_space), 1000)]) + ']'
+        mitered_length_inset = -.90*(length/2)
+        draw_line( -x_outside,inside_mitered_corner_width/2,
+                   mitered_length_inset, width/2+silk_line_space,
+                   Y_MIRROR=True )
         ##Sides
-        self.element += sh + ' '.join([str(int(i)) for i in (-(pin_to_pin_length/2+extra_pad_length), width/2+silk_line_space, (pin_to_pin_length/2+extra_pad_length)+silk_line_space, width/2+silk_line_space, 1000)]) + ']'
-        self.element += sh + ' '.join([str(int(i)) for i in (-(pin_to_pin_length/2+extra_pad_length), -(width/2+silk_line_space), (pin_to_pin_length/2+extra_pad_length)+silk_line_space, -(width/2+silk_line_space), 1000)]) + ']'
+        draw_line( mitered_length_inset, width/2+silk_line_space,
+                   x_outside, width/2+silk_line_space,
+                   Y_MIRROR=True )
         ##Negative End
-        self.element += sh + ' '.join([str(int(i)) for i in ((pin_to_pin_length/2+extra_pad_length)+silk_line_space, width/2+silk_line_space, (pin_to_pin_length/2+extra_pad_length)+silk_line_space, -(width/2+silk_line_space), 1000)]) + ']'
-        self.element += sh + ' '.join([str(int(i)) for i in ((pin_to_pin_length/2+extra_pad_length)+silk_line_space+1000, .5*(width/2+silk_line_space), (pin_to_pin_length/2+extra_pad_length)+silk_line_space+1000, -.5*(width/2+silk_line_space), 2000)]) + ']'
+        draw_centered_vert_line_with_middle_gap( x_outside, width+2*silk_line_space, pad_width)
+        #The outside negative bar
+        draw_line((pin_to_pin_length/2+extra_pad_length)+silk_line_space+1000,
+                  .5*(width/2+silk_line_space),
+                  (pin_to_pin_length/2+extra_pad_length)+silk_line_space+1000,
+                  -.5*(width/2+silk_line_space),
+                  WIDTH=2000)
         #Ending
         self.element += '\n)\n'
         #Successful creation!
@@ -175,6 +219,7 @@ class FpGenerator:
 
 """
     COPYRIGHT="#Copyright 2007 Cory Cross\n"
+    PrintSavedFiles=False
 
 if __name__ == '__main__':
     import sys
