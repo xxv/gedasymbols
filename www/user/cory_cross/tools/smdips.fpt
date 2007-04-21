@@ -1,10 +1,10 @@
 system=mil
 function=smt_dip
-SMDIP`Surface-mount version of DIP (number is pin count)`2`yes`60`140`100`380
-SMDIP`Surface-mount version of DIP (number is pin count)`4`yes`60`140`100`380
-SMDIP`Surface-mount version of DIP (number is pin count)`6`yes`60`140`100`380
-SMDIP`Surface-mount version of DIP (number is pin count)`8`yes`60`140`100`380
-SMDIP`Surface-mount version of DIP (number is pin count)`10`yes`60`140`100`380
-SMDIP`Surface-mount version of DIP (number is pin count)`12`yes`60`140`100`380
-SMDIP`Surface-mount version of DIP (number is pin count)`14`yes`60`140`100`380
-SMDIP`Surface-mount version of DIP (number is pin count)`16`yes`60`140`100`380
+SMDIP`Surface-mount version of DIP (number is pin count)`2`yes`60`100`100`380
+SMDIP`Surface-mount version of DIP (number is pin count)`4`yes`60`100`100`380
+SMDIP`Surface-mount version of DIP (number is pin count)`6`yes`60`100`100`380
+SMDIP`Surface-mount version of DIP (number is pin count)`8`yes`60`100`100`380
+SMDIP`Surface-mount version of DIP (number is pin count)`10`yes`60`100`100`380
+SMDIP`Surface-mount version of DIP (number is pin count)`12`yes`60`100`100`380
+SMDIP`Surface-mount version of DIP (number is pin count)`14`yes`60`100`100`380
+SMDIP`Surface-mount version of DIP (number is pin count)`16`yes`60`100`100`380
