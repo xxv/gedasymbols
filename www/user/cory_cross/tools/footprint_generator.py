@@ -195,6 +195,80 @@ class FpGenerator:
         #Successful creation!
         return True
 
+    def through_hole_connector(self, line):
+        ##Form is:
+        ##Prefix`Description`number_of_pins`right_angle(V or RA)`rows(#)`hole_diameter`pad_diameter`inter_pad_spacing`cross_pad_spacing(if multiple row)
+        ll = line.split('`')
+        try:
+            (hole_diameter, pad_diameter, inter_pad_spacing, cross_pad_spacing) = [self.getMilth(atof(inval.strip())) for inval in ll[5:]]
+        except ValueError, e:
+            print "Wrong number of arguments, got:", ll, '\n', e
+            return False
+
+        prefix = ll[0]
+        description = ll[1]
+        number_of_pins = int(atof(ll[2]))
+        right_angle_p = (ll[3]=='RA')
+        rows = int(atof(ll[4]))
+        
+        if(pad_diameter >= inter_pad_spacing+1000 or pad_diameter >= cross_pad_spacing+1000):
+            print "Warning: The pads will smash together when the pad diameter is larger than the pin spacing + a tolerance!", ll[0] + ll[2]
+
+        self.filename = prefix + '-' + ll[3] + '-' + str(number_of_pins) + '.fp'
+
+        if( number_of_pins % rows != 0 ):
+            print "Hey! Must have a rectangular number of pins, please. Aborting construction", prefix + str(number_of_pins)
+            return False
+
+        #Set up the beginning of the element string, with description
+        # and mark point of (0,0)
+        self.element = 'Element["" "' + description + '" "CONN" "" 0 0 '
+        #Calculate where to place the text, append to element string, and add rest of header
+        self.element += str( -cross_pad_spacing/2 ) + ' ' + str( int(-inter_pad_spacing*(number_of_pins/4.0)) - pad_diameter/2 - 2000 ) + ' 0 100 ""]\n('
+
+        ##Generate pads (square)
+        ph = pin_header = '\n\tPin['
+
+        def draw_pin( x_coord, y_coord, number ):
+            self.element += ph + ' '.join([str(i) for i in (x_coord,y_coord, pad_diameter, 1200, pad_diameter+1000, hole_diameter)]) + ' "" "'+str(number)+'" '
+            if(number==1):
+                a = '"square"'
+            else:
+                a = '""'
+            self.element += a + ']'
+
+        num_cols = number_of_pins/rows
+        if(num_cols%2 == 0):
+            first_x_coord = int(-(.5 + (num_cols/2-1))*inter_pad_spacing)
+        else: #odd
+            first_x_coord = -(num_cols-1)/2*inter_pad_spacing
+
+        if(rows%2 == 0):
+            first_y_coord = int(-(.5 + (rows/2-1))*cross_pad_spacing)
+        else: #odd
+            first_y_coord = -(rows-1)/2*cross_pad_spacing
+
+        for row in range(rows):
+            number_offset = num_cols*row
+            y = first_y_coord + row*cross_pad_spacing
+            for col in range(num_cols):
+                x = first_x_coord + col*inter_pad_spacing
+                draw_pin( x, y, number_offset+col+1 )
+        
+        ##Generate silkscreen outline
+        sh = silk_header = '\n\tElementLine ['
+        silk_line_space = 2000
+
+        #Go and draw it
+        for xm1,ym1 in [[1,1],[-1,-1]]:
+            for xm2,ym2 in [[-1,1],[1,-1]]:
+                pass #self.element += sh + ' '.join([str(int(i)) for i in (xm1*x_silk, ym1*y_silk, xm2*x_silk, ym2*y_silk, 1000)]) + ']'
+
+        #Ending
+        self.element += '\n)\n'
+        #Successful creation!
+        return True
+
     def load( self, fileptr ):
         self.system = fileptr.readline().split('=')[1][:-1]
         func = getattr(self, fileptr.readline().split('=')[1][:-1])
