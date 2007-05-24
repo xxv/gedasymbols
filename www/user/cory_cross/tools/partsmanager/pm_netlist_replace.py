@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 
 if __name__ == '__main__':
     import sys,os
@@ -13,10 +14,23 @@ if __name__ == '__main__':
     replacedictfile = open(sys.argv[1])
     replacedict = eval(replacedictfile.read())
 
-    sed_command = ( 'sed', '-e',
-                    (''.join([('s/'+str(key)+'/'+str(value)+'/;') for key,value in replacedict.items()]))[:-1] )
+    counter = 123
+    step1dict = {}
+    step2dict = {}
+    for key, value in replacedict.items():
+        counter = counter + 1
+        replacement = "NETREPLACE" + str(counter) + "NR"
+        step1dict[key] = replacement
+        step2dict[replacement] = value
 
-    (sed_stdin, sed_stdout) = os.popen2( sed_command )
-    sed_stdin.write(sys.stdin.read())
-    sed_stdin.close()
-    sys.stdout.write(sed_stdout.read())
+    def make_sed_command( replace_dictionary ):
+        return ( 'sed', '-e',
+                        (''.join([('s/'+str(key)+'/'+str(value)+'/;') for key,value in replace_dictionary.items()]))[:-1] )
+
+    (sed1_stdin, sed1_stdout) = os.popen2( make_sed_command(step1dict) )
+    sed1_stdin.write(sys.stdin.read())
+    sed1_stdin.close()
+    (sed2_stdin, sed2_stdout) = os.popen2( make_sed_command(step2dict) )
+    sed2_stdin.write(sed1_stdout.read())
+    sed2_stdin.close()
+    sys.stdout.write(sed2_stdout.read())
