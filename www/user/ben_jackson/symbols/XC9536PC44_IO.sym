@@ -13,7 +13,7 @@ uselicense=unlimited
 T 200 -50 5 10 0 0 0 8 1
 distlicense=GPL
 T 200 -250 5 10 0 0 0 8 1
-description=Altera Cyclone II
+description=Xilinx XC9536
 T 200 -450 5 10 0 0 0 8 1
 footprint=PLCC 44
 P 1000 7800 1300 7800 1 0 1
