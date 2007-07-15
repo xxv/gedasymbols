@@ -5,6 +5,11 @@
 
 from string import atof
 
+def myatof(string_in):
+    if(string_in==''):
+        return 0.0
+    return atof(string_in)
+
 class FpGenerator:
 
     # save method: override this if you wanted to, for example, insert the footprint
@@ -197,10 +202,13 @@ class FpGenerator:
 
     def through_hole_connector(self, line):
         ##Form is:
-        ##Prefix`Description`number_of_pins`right_angle(V or RA)`rows(#)`hole_diameter`pad_diameter`inter_pad_spacing`cross_pad_spacing(if multiple row)
+        ##Prefix`Description`number_of_pins`right_angle(V or RA)`rows(#)`hole_diameter`pad_diameter`inter_pad_spacing`cross_pad_spacing(if multiple row)`silk_x_dimension`silk_y_dimension`dimension_from_bottom_silk_edge_to_bottom_pincenter`peg_offset_x`peg_offset_y`peg_hole`where_pegs
+        ##dimension_along_connector_path is the y direction
+        ##where_pegs is a comma-deliminated list of compass directions i.e. NW,NE will place pegs in the upper-left and upper-right locations
+        if(line[0] == '#'): return False
         ll = line.split('`')
         try:
-            (hole_diameter, pad_diameter, inter_pad_spacing, cross_pad_spacing) = [self.getMilth(atof(inval.strip())) for inval in ll[5:]]
+            (hole_diameter, pad_diameter, inter_pad_spacing, cross_pad_spacing,silk_x_dimension,silk_y_dimension,dimension_from_bottom_silk_edge_to_bottom_pincenter,peg_offset_x,peg_offset_y,peg_hole) = [self.getMilth(myatof(inval.strip())) for inval in ll[5:15]]
         except ValueError, e:
             print "Wrong number of arguments, got:", ll, '\n', e
             return False
@@ -208,10 +216,12 @@ class FpGenerator:
         prefix = ll[0]
         description = ll[1]
         number_of_pins = int(atof(ll[2]))
-        right_angle_p = (ll[3]=='RA')
+        right_angle_p = lambda : (ll[3]=='RA')
         rows = int(atof(ll[4]))
+        where_pegs = ll[15]
+        pegs_p = lambda : (not (where_pegs==''))
         
-        if(pad_diameter >= inter_pad_spacing+1000 or pad_diameter >= cross_pad_spacing+1000):
+        if(pad_diameter >= inter_pad_spacing+1000 or (pad_diameter >= cross_pad_spacing+1000 and rows>1) ):
             print "Warning: The pads will smash together when the pad diameter is larger than the pin spacing + a tolerance!", ll[0] + ll[2]
 
         self.filename = prefix + '-' + ll[3] + '-' + str(number_of_pins) + '.fp'
@@ -220,33 +230,35 @@ class FpGenerator:
             print "Hey! Must have a rectangular number of pins, please. Aborting construction", prefix + str(number_of_pins)
             return False
 
+        self.element = ''
         #Set up the beginning of the element string, with description
         # and mark point of (0,0)
-        self.element = 'Element["" "' + description + '" "CONN" "" 0 0 '
-        #Calculate where to place the text, append to element string, and add rest of header
-        self.element += str( -cross_pad_spacing/2 ) + ' ' + str( int(-inter_pad_spacing*(number_of_pins/4.0)) - pad_diameter/2 - 2000 ) + ' 0 100 ""]\n('
+        elementheader = 'Element["" "' + description + '" "CONN" "" 0 0 '
 
         ##Generate pads (square)
         ph = pin_header = '\n\tPin['
 
-        def draw_pin( x_coord, y_coord, number ):
+        def draw_pin( x_coord, y_coord, number, hole=False ):
             self.element += ph + ' '.join([str(i) for i in (x_coord,y_coord, pad_diameter, 1200, pad_diameter+1000, hole_diameter)]) + ' "" "'+str(number)+'" '
+            a = []
             if(number==1):
-                a = '"square"'
-            else:
-                a = '""'
-            self.element += a + ']'
+                a.append('square')
+            if(hole):
+                a.append('hole')
+            self.element += '"' + ','.join(a) + '"]'
 
         num_cols = number_of_pins/rows
         if(num_cols%2 == 0):
             first_x_coord = int(-(.5 + (num_cols/2-1))*inter_pad_spacing)
         else: #odd
             first_x_coord = -(num_cols-1)/2*inter_pad_spacing
+        last_x_coord = -first_x_coord
 
         if(rows%2 == 0):
             first_y_coord = int(-(.5 + (rows/2-1))*cross_pad_spacing)
         else: #odd
             first_y_coord = -(rows-1)/2*cross_pad_spacing
+        last_y_coord = -first_y_coord
 
         for row in range(rows):
             number_offset = num_cols*row
@@ -254,15 +266,50 @@ class FpGenerator:
             for col in range(num_cols):
                 x = first_x_coord + col*inter_pad_spacing
                 draw_pin( x, y, number_offset+col+1 )
-        
+
+        ##Generate Pegs
+        for place in where_pegs.split(','):
+            if( len(place) == 0 ): continue
+            plen = len(place) > 1
+            if( place[0] == 'N' ):
+                y = first_y_coord - peg_offset_y
+                if(plen and place[1] == 'E'):
+                    x = last_x_coord + peg_offset_x
+                elif(plen and place[1] == 'W'):
+                    x = first_x_coord - peg_offset_x
+                else:
+                    x = 0
+            elif( place[0] == 'S' ):
+                y = last_y_coord + peg_offset_y
+                if(plen and place[1] == 'E'):
+                    x = last_x_coord + peg_offset_x
+                elif(plen and place[1] == 'W'):
+                    x = first_x_coord - peg_offset_x
+                else:
+                    x = 0
+            elif( place[0] == 'E' ):
+                x = last_x_coord + peg_offset_x
+                y = 0
+            elif( place[0] == 'W' ):
+                x = first_x_coord - peg_offset_x
+                y = 0
+            draw_pin(x,y,'',hole=True)
+                
         ##Generate silkscreen outline
         sh = silk_header = '\n\tElementLine ['
         silk_line_space = 2000
 
+        y_silk_bottom = last_y_coord + silk_line_space + dimension_from_bottom_silk_edge_to_bottom_pincenter
+
         #Go and draw it
-        for xm1,ym1 in [[1,1],[-1,-1]]:
-            for xm2,ym2 in [[-1,1],[1,-1]]:
-                pass #self.element += sh + ' '.join([str(int(i)) for i in (xm1*x_silk, ym1*y_silk, xm2*x_silk, ym2*y_silk, 1000)]) + ']'
+        for ya in (0,-silk_y_dimension):
+            self.element += sh + ' '.join([str(int(i)) for i in (-silk_x_dimension/2, ya+y_silk_bottom, silk_x_dimension/2, ya+y_silk_bottom, 1000)]) + ']'
+        for x_silk in (-silk_x_dimension/2,silk_x_dimension/2):
+            self.element += sh + ' '.join([str(int(i)) for i in (x_silk, y_silk_bottom, x_silk, y_silk_bottom-silk_y_dimension, 1000)]) + ']'
+
+        #Calculate where to place the text, append to element string, and add rest of header
+        elementheader += str( -cross_pad_spacing/2 ) + ' ' + str(y_silk_bottom-silk_y_dimension-10000 ) + ' 0 100 ""]\n('
+        self.element = elementheader + self.element
 
         #Ending
         self.element += '\n)\n'
