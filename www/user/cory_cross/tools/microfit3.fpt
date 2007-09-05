@@ -1,4 +1,4 @@
 system=mm
 function=through_hole_connector
-#Prefix`Description`number_of_pins`right_angle(V or RA)`rows(#)`hole_diameter`pad_diameter`inter_pad_spacing`cross_pad_spacing(if multiple row)`silk_x_dimension`silk_y_dimension`dimension_from_bottom_silk_edge_to_bottom_pincenter`peg_offset_x`peg_offset_y`peg_hole`where_pegs
-MICROFIT3`Molex Micro-Fit 3.0 Connector 43045`12`V`2`1.02`2.00`3`3`21.65`7.4`2`3`0.94`1.02`SE,SW
+#Prefix`Description`number_of_pins`right_angle(V or RA)`rows(#)`numbering_scheme('d' for DIP, 'r' for Ribbon Cable, or 'm' for Molex)`reversed_numbering(blank is false)`hole_diameter`pad_diameter`inter_pad_spacing`cross_pad_spacing(if multiple row)`silk_x_dimension`silk_y_dimension`dimension_from_bottom_silk_edge_to_bottom_pincenter`peg_offset_x`peg_offset_y`peg_hole`where_pegs
+MICROFIT3`Molex Micro-Fit 3.0 Connector 43045`12`V`2`r`r`1.02`2.00`3`3`21.65`7.4`2`3`0.94`1.02`SE,SW

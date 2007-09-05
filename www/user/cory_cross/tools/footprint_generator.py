@@ -202,13 +202,13 @@ class FpGenerator:
 
     def through_hole_connector(self, line):
         ##Form is:
-        ##Prefix`Description`number_of_pins`right_angle(V or RA)`rows(#)`hole_diameter`pad_diameter`inter_pad_spacing`cross_pad_spacing(if multiple row)`silk_x_dimension`silk_y_dimension`dimension_from_bottom_silk_edge_to_bottom_pincenter`peg_offset_x`peg_offset_y`peg_hole`where_pegs
+        ##Prefix`Description`number_of_pins`right_angle(V or RA)`rows(#)`numbering_scheme('d' for DIP, 'r' for Ribbon Cable, or 'm' for Molex)`reversed_numbering(blank is false)`hole_diameter`pad_diameter`inter_pad_spacing`cross_pad_spacing(if multiple row)`silk_x_dimension`silk_y_dimension`dimension_from_bottom_silk_edge_to_bottom_pincenter`peg_offset_x`peg_offset_y`peg_hole`where_pegs
         ##dimension_along_connector_path is the y direction
         ##where_pegs is a comma-deliminated list of compass directions i.e. NW,NE will place pegs in the upper-left and upper-right locations
         if(line[0] == '#'): return False
         ll = line.split('`')
         try:
-            (hole_diameter, pad_diameter, inter_pad_spacing, cross_pad_spacing,silk_x_dimension,silk_y_dimension,dimension_from_bottom_silk_edge_to_bottom_pincenter,peg_offset_x,peg_offset_y,peg_hole) = [self.getMilth(myatof(inval.strip())) for inval in ll[5:15]]
+            (hole_diameter, pad_diameter, inter_pad_spacing, cross_pad_spacing,silk_x_dimension,silk_y_dimension,dimension_from_bottom_silk_edge_to_bottom_pincenter,peg_offset_x,peg_offset_y,peg_hole) = [self.getMilth(myatof(inval.strip())) for inval in ll[7:17]]
         except ValueError, e:
             print "Wrong number of arguments, got:", ll, '\n', e
             return False
@@ -218,13 +218,19 @@ class FpGenerator:
         number_of_pins = int(atof(ll[2]))
         right_angle_p = lambda : (ll[3]=='RA')
         rows = int(atof(ll[4]))
-        where_pegs = ll[15]
+        numbering_scheme = ll[5]
+        reversed_numbering = ll[6]
+        where_pegs = ll[17]
         pegs_p = lambda : (not (where_pegs==''))
         
         if(pad_diameter >= inter_pad_spacing+1000 or (pad_diameter >= cross_pad_spacing+1000 and rows>1) ):
             print "Warning: The pads will smash together when the pad diameter is larger than the pin spacing + a tolerance!", ll[0] + ll[2]
 
-        self.filename = prefix + '-' + ll[3] + '-' + str(number_of_pins) + '.fp'
+        if( numbering_scheme != 'd' and numbering_scheme != 'r' and numbering_scheme != 'm'):
+            print 'Defaulting to Molex numbering scheme ', ll[0] + ll[2]
+            numbering_scheme = 'm'
+
+        self.filename = prefix + '-' + ll[3] + '-' + str(number_of_pins) + numbering_scheme + '.fp'
 
         if( number_of_pins % rows != 0 ):
             print "Hey! Must have a rectangular number of pins, please. Aborting construction", prefix + str(number_of_pins)
@@ -239,6 +245,8 @@ class FpGenerator:
         ph = pin_header = '\n\tPin['
 
         def draw_pin( x_coord, y_coord, number, hole=False ):
+            if( reversed_numbering == '' and number.__class__ == int):
+                number = number_of_pins - number + 1
             self.element += ph + ' '.join([str(i) for i in (x_coord,y_coord, pad_diameter, 1200, pad_diameter+1000, hole_diameter)]) + ' "" "'+str(number)+'" '
             a = []
             if(number==1):
@@ -260,12 +268,30 @@ class FpGenerator:
             first_y_coord = -(rows-1)/2*cross_pad_spacing
         last_y_coord = -first_y_coord
 
-        for row in range(rows):
-            number_offset = num_cols*row
-            y = first_y_coord + row*cross_pad_spacing
+        if( numbering_scheme == 'm' ):
+            for row in range(rows):
+                number_offset = num_cols*row
+                y = first_y_coord + row*cross_pad_spacing
+                for col in range(num_cols):
+                    x = first_x_coord + col*inter_pad_spacing
+                    draw_pin( x, y, number_offset+col+1 )
+        elif( numbering_scheme == 'r' ):
             for col in range(num_cols):
+                number_offset = rows*(num_cols-1-col)
                 x = first_x_coord + col*inter_pad_spacing
-                draw_pin( x, y, number_offset+col+1 )
+                for row in range(rows):
+                    y = first_y_coord + row*cross_pad_spacing
+                    draw_pin( x, y, number_offset+row+1 )
+        elif( numbering_scheme == 'd' ):
+            for row in range(rows):
+                number_offset = num_cols*row
+                y = first_y_coord + row*cross_pad_spacing
+                for col in range(num_cols):
+                    x = first_x_coord + col*inter_pad_spacing
+                    if( row % 2 == 0):
+                        draw_pin( x, y, number_offset+col+1 )
+                    else:
+                        draw_pin( x, y, number_offset+(num_cols-col) )
 
         ##Generate Pegs
         for place in where_pegs.split(','):
@@ -293,13 +319,16 @@ class FpGenerator:
             elif( place[0] == 'W' ):
                 x = first_x_coord - peg_offset_x
                 y = 0
+            else:
+                print "Invalid peg directions ", ll[0] + ll[2]
+                return False
             draw_pin(x,y,'',hole=True)
                 
         ##Generate silkscreen outline
         sh = silk_header = '\n\tElementLine ['
         silk_line_space = 2000
 
-        y_silk_bottom = last_y_coord + silk_line_space + dimension_from_bottom_silk_edge_to_bottom_pincenter
+        y_silk_bottom = last_y_coord + dimension_from_bottom_silk_edge_to_bottom_pincenter
 
         #Go and draw it
         for ya in (0,-silk_y_dimension):
@@ -316,9 +345,95 @@ class FpGenerator:
         #Successful creation!
         return True
 
+    def through_hole_capacitor(self, line):
+        ##Form is:
+        ##square caps: Prefix`Description`polarized?('p' or 'n')`'square'(no quotes)`pin_diameter`pin_copper_diameter`pin_spacing`silk_outline_length`silk_outline_width
+        ##round  caps: Prefix`Description`polarized?('p' or 'n')`'round' (no quotes)`pin_diameter`pin_copper_diameter`pin_spacing`silk_outline_diameter
+        if( line[0] == '#' ): return False
+        ll = line.split('`')
+        prefix = ll[0]
+        description = ll[1]
+        polarized = ll[2]
+        shape = ll[3]
+        self.filename = prefix + '.fp'
+
+        if( polarized != 'p' ):
+            polarized = 'n'
+
+        (pin_diameter, pin_copper_diameter, pin_spacing)= [self.getMilth(myatof(inval.strip())) for inval in ll[4:7]]
+
+        if( shape == 'square' ):
+            (silk_outline_length, silk_outline_width) = [self.getMilth(myatof(inval.strip())) for inval in ll[7:9]]
+        elif( shape == 'round' ):
+            silk_outline_diameter = self.getMilth(myatof(ll[7].strip()))
+        else:
+            print "Capacitor must be square or round;", ll[0] + ll[2]
+            return False
+            
+        self.element = 'Element["" "' + ll[1] + '" "" "" 0 0 '
+        self.element += '0' + ' ' + '0' + ' 0 100 ""]\n('
+        
+        ph = pin_header = '\n\tPin['
+
+        def draw_pin( x_coord, y_coord, number, hole=False ):
+            self.element += ph + ' '.join([str(i) for i in (x_coord,y_coord, pin_copper_diameter, 1200, pin_copper_diameter+1000, pin_diameter)]) + ' "" "'+str(number)+'" '
+            a = []
+            if(number==1 and polarized == 'p'):
+                a.append('square')
+            if(hole):
+                a.append('hole')
+            self.element += '"' + ','.join(a) + '"]'
+
+        count = 0
+        for x in [-pin_spacing/2,pin_spacing/2]:
+            count = count + 1
+            draw_pin(x,0,count)
+
+        ## Silk screen outline and polarized sign...
+        sh = silk_header = '\n\tElementLine ['
+        silk_line_space = 2000
+        #end lines (left & right)
+        def draw_line( x1_coord, y1_coord, x2_coord, y2_coord, X_MIRROR=False, Y_MIRROR=False, WIDTH=1000 ):
+            def do_line( xmul, ymul ):
+                self.element += sh + ' '.join([str(int(i)) for i in
+                                               (xmul*x1_coord,ymul*y1_coord,
+                                                xmul*x2_coord,ymul*y2_coord,
+                                                WIDTH)]) + ']'
+            if( X_MIRROR and not Y_MIRROR ):
+                for x in (1, -1): do_line(x, 1)
+            elif( not X_MIRROR and Y_MIRROR ):
+                for y in (1, -1): do_line(1, y)
+            elif( X_MIRROR and Y_MIRROR ):
+                for x in (1, -1):
+                    for y in (1, -1): do_line(x, y)
+            else:
+                do_line(1,1)
+
+        if( shape == 'square' ):
+            draw_line(-silk_outline_length/2,silk_outline_width/2,silk_outline_length/2,silk_outline_width/2,Y_MIRROR=True)
+            draw_line(silk_outline_length/2,-silk_outline_width/2,silk_outline_length/2,silk_outline_width/2,X_MIRROR=True)
+        else:
+            print "Circular outlines not programmed yet..."
+            return False
+
+        if( polarized == 'p' ):
+            print "Polarization symbol not programmed yet..."
+            return False
+
+        #Ending
+        self.element += '\n)\n'
+        #Successful creation!
+        return True
+
+
     def load( self, fileptr ):
-        self.system = fileptr.readline().split('=')[1][:-1]
-        func = getattr(self, fileptr.readline().split('=')[1][:-1])
+        try:
+            self.system = fileptr.readline().split('=')[1][:-1]
+            func = getattr(self, fileptr.readline().split('=')[1][:-1])
+        except Exception,e:
+            print "Missing either system= or function= at the beginning of the file"
+            print e
+            sys.exit(-1)
         for line in fileptr.readlines():
             if(func(line)):
                 self.save()
