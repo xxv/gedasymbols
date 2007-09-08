@@ -11,18 +11,34 @@ Element[0x00000000 "CTS-252-Joystick-Switched" "" "" 1000 1000 -20000 -41000 0 1
 (
 
 # Silk screen around package
-	ElementLine[ 31600  31600  31600 -31600 1000]
-	ElementLine[ 31600 -31600 -31600 -31600 1000]
-	ElementLine[-31600 -31600 -31600  31600 1000]
-	ElementLine[-31600  31600  31600  31600 1000]
+	ElementLine[ 31600  26500  31600  13000 1000]
+	ElementLine[ 31600   7050  31600   3000 1000]
+	ElementLine[ 31600  -7050  31600  -3000 1000]
+	ElementLine[ 31600 -26500  31600 -13000 1000]
+
+	ElementLine[ 20000 -31600 -20000 -31600 1000]
+	ElementLine[-31600 -26500 -31600  26500 1000]
+
+	ElementLine[-20000  31600 -13000  31600 1000]
+	ElementLine[ -7050  31600  -3000  31600 1000]
+	ElementLine[  7050  31600   3000  31600 1000]
+	ElementLine[ 20000  31600  13000  31600 1000]
 # Pot protrusion bottom
 	ElementLine[-18900  31600 -18900  43950 1000]
 	ElementLine[ 18900  31600  18900  43950 1000]
-	ElementLine[ 18900  43950 -18900  43950 1000]
+
+	ElementLine[ 18900  43950  13000  43950 1000]
+	ElementLine[  7050  43950   3000  43950 1000]
+	ElementLine[ -7050  43950  -3000  43950 1000]
+	ElementLine[-18900  43950 -13000  43950 1000]
 # Pot protrusion side
 	ElementLine[ 31600 -18900  43950 -18900 1000]
 	ElementLine[ 31600  18900  43950  18900 1000]
-	ElementLine[ 43950  18900  43950 -18900 1000]
+
+	ElementLine[ 43950  18900  43950  13000 1000]
+	ElementLine[ 43950   7050  43950   3000 1000]
+	ElementLine[ 43950  -7050  43950  -3000 1000]
+	ElementLine[ 43950 -18900  43950 -13000 1000]
 
 
 # Pad[X1, Y1, X2, Y3, width, clearance,
