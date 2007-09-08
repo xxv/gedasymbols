@@ -12,9 +12,13 @@ Element[0x00000000 "Sharp-GP1US30X-IR-Module" "" "" 1000 1000 -8000 -16000 0 100
 
 # Silk screen around package
 	ElementLine[ 8665  8370  8665 -8370 1000]
-	ElementLine[ 8665 -8370 -7665 -8370 1000]
+	ElementLine[-6500 -8370 -7665 -8370 1000]
+	ElementLine[ -850 -8370   850 -8370 1000]
+	ElementLine[ 6500 -8370  8665 -8370 1000]
 	ElementLine[-8665 -7370 -8665  7370 1000]
-	ElementLine[-7665  8370  8665  8370 1000]
+	ElementLine[-7665  8370 -6500  8370 1000]
+	ElementLine[ -850  8370   850  8370 1000]
+	ElementLine[ 6500  8370  8665  8370 1000]
 # Pin 1 end notches
 	ElementLine[-8665 -7370 -7665 -8370 1000]
 	ElementLine[-8665  7370 -7665  8370 1000]
