@@ -372,7 +372,7 @@ device=AT90PWM3-MLF
 T 400 7600 5 10 0 0 0 0 1
 footprint=QFN32_7_EP
 T 400 7800 5 10 0 0 0 0 1
-author=andrewm@thehacktory.com
+author=andrewmATthehacktoryDOTcom
 T 400 8000 5 10 0 0 0 0 1
 documentation=http://www.atmel.com/dyn/resources/prod_documents/doc4317.pdf
 T 400 8200 5 10 0 0 0 0 1

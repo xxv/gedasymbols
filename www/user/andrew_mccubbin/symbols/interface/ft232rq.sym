@@ -317,7 +317,7 @@ device=FT232RQ
 T 300 5600 5 10 0 0 0 0 1
 footprint=QFP32_5_EP
 T 300 5800 5 10 0 0 0 0 1
-author=andrewm@thehacktory.com
+author=andrewmATthehacktoryDOTcom
 T 300 6000 5 10 0 0 0 0 1
 documentation=http://www.ftdichip.com/Documents/DataSheets/DS_FT232R.pdf
 T 300 6200 5 10 0 0 0 0 1

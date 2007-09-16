@@ -317,7 +317,7 @@ device=FT232RL
 T 300 5300 5 10 0 0 0 0 1
 footprint=SSOP28
 T 300 5500 5 10 0 0 0 0 1
-author=andrewm@thehacktory.com
+author=andrewmATthehacktoryDOTcom
 T 300 5700 5 10 0 0 0 0 1
 documentation=http://www.ftdichip.com/Documents/DataSheets/DS_FT232R.pdf
 T 300 5900 5 10 0 0 0 0 1
