@@ -230,7 +230,7 @@ L 801 7832 138 7566 3 0 0 0 -1 -1
 T 200 8000 8 10 1 1 0 0 1
 refdes=CONN?
 T 200 8350 8 10 0 0 0 0 1
-description=DB25 with RS232 pin-out
+description=DB25 with RS232 DTE pin-out
 T 200 8550 8 10 0 0 0 0 1
 author=andrewmATthehacktoryDOTcom
 T 200 9200 8 10 0 0 0 0 1
