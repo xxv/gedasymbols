@@ -1,0 +1,14 @@
+system=mil
+function=through_hole_connector
+HEADER_BCS_HE_D`A double-height Box Connector Strip header with 100mil interpin spacing, 310mil spacing between sides, and DIP numbering`2`RA`2`d``38`70`100`310`100`410`50`````
+HEADER_BCS_HE_D`A double-height Box Connector Strip header with 100mil interpin spacing, 310mil spacing between sides, and DIP numbering`4`RA`2`d``38`70`100`310`200`410`50`````
+HEADER_BCS_HE_D`A double-height Box Connector Strip header with 100mil interpin spacing, 310mil spacing between sides, and DIP numbering`6`RA`2`d``38`70`100`310`300`410`50`````
+HEADER_BCS_HE_D`A double-height Box Connector Strip header with 100mil interpin spacing, 310mil spacing between sides, and DIP numbering`8`RA`2`d``38`70`100`310`400`410`50`````
+HEADER_BCS_HE_D`A double-height Box Connector Strip header with 100mil interpin spacing, 310mil spacing between sides, and DIP numbering`10`RA`2`d``38`70`100`310`500`410`50`````
+HEADER_BCS_HE_D`A double-height Box Connector Strip header with 100mil interpin spacing, 310mil spacing between sides, and DIP numbering`12`RA`2`d``38`70`100`310`600`410`50`````
+HEADER_BCS_HE_D`A double-height Box Connector Strip header with 100mil interpin spacing, 310mil spacing between sides, and DIP numbering`14`RA`2`d``38`70`100`310`700`410`50`````
+HEADER_BCS_HE_D`A double-height Box Connector Strip header with 100mil interpin spacing, 310mil spacing between sides, and DIP numbering`16`RA`2`d``38`70`100`310`800`410`50`````
+HEADER_BCS_HE_D`A double-height Box Connector Strip header with 100mil interpin spacing, 310mil spacing between sides, and DIP numbering`18`RA`2`d``38`70`100`310`900`410`50`````
+HEADER_BCS_HE_D`A double-height Box Connector Strip header with 100mil interpin spacing, 310mil spacing between sides, and DIP numbering`20`RA`2`d``38`70`100`310`1000`410`50`````
+HEADER_BCS_HE_D`A double-height Box Connector Strip header with 100mil interpin spacing, 310mil spacing between sides, and DIP numbering`22`RA`2`d``38`70`100`310`1100`410`50`````
+HEADER_BCS_HE_D`A double-height Box Connector Strip header with 100mil interpin spacing, 310mil spacing between sides, and DIP numbering`24`RA`2`d``38`70`100`310`1200`410`50`````

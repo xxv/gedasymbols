@@ -202,7 +202,7 @@ class FpGenerator:
 
     def through_hole_connector(self, line):
         ##Form is:
-        ##Prefix`Description`number_of_pins`right_angle(V or RA)`rows(#)`numbering_scheme('d' for DIP, 'r' for Ribbon Cable, or 'm' for Molex)`reversed_numbering(blank is false)`hole_diameter`pad_diameter`inter_pad_spacing`cross_pad_spacing(if multiple row)`silk_x_dimension`silk_y_dimension`dimension_from_bottom_silk_edge_to_bottom_pincenter`peg_offset_x`peg_offset_y`peg_hole`where_pegs
+        ##Prefix`Description`number_of_pins`right_angle(V or RA)`rows(#)`numbering_scheme('d' for DIP, 'r' for Ribbon Cable, 'm' for Molex, or 'D' for each row to share a number)`reversed_numbering(blank is false)`hole_diameter`pad_diameter`inter_pad_spacing`cross_pad_spacing(if multiple row)`silk_x_dimension`silk_y_dimension`dimension_from_bottom_silk_edge_to_bottom_pincenter`peg_offset_x`peg_offset_y`peg_hole`where_pegs
         ##dimension_along_connector_path is the y direction
         ##where_pegs is a comma-deliminated list of compass directions i.e. NW,NE will place pegs in the upper-left and upper-right locations
         if(line[0] == '#'): return False
@@ -226,7 +226,7 @@ class FpGenerator:
         if(pad_diameter >= inter_pad_spacing+1000 or (pad_diameter >= cross_pad_spacing+1000 and rows>1) ):
             print "Warning: The pads will smash together when the pad diameter is larger than the pin spacing + a tolerance!", ll[0] + ll[2]
 
-        if( numbering_scheme != 'd' and numbering_scheme != 'r' and numbering_scheme != 'm'):
+        if( numbering_scheme != 'd' and numbering_scheme != 'r' and numbering_scheme != 'm' and numbering_scheme != 'D' ):
             print 'Defaulting to Molex numbering scheme ', ll[0] + ll[2]
             numbering_scheme = 'm'
 
@@ -249,7 +249,7 @@ class FpGenerator:
                 number = number_of_pins - number + 1
             self.element += ph + ' '.join([str(i) for i in (x_coord,y_coord, pad_diameter, 1200, pad_diameter+1000, hole_diameter)]) + ' "" "'+str(number)+'" '
             a = []
-            if(number==1):
+            if(number==1 or number=='1'):
                 a.append('square')
             if(hole):
                 a.append('hole')
@@ -292,6 +292,12 @@ class FpGenerator:
                         draw_pin( x, y, number_offset+col+1 )
                     else:
                         draw_pin( x, y, number_offset+(num_cols-col) )
+        elif( numbering_scheme == 'D' ):
+            for row in range(rows):
+                y = first_y_coord + row*cross_pad_spacing
+                for col in range(num_cols):
+                    x = first_x_coord + col*inter_pad_spacing
+                    draw_pin( x, y, str(col+1) )
 
         ##Generate Pegs
         for place in where_pegs.split(','):
