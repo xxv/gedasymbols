@@ -181,7 +181,8 @@ $t = $v{'sw'};
 
 $l = &max($v{'bl'}, $v{'e'}*($np2-1)+$v{'pw'}+$s)/2;
 
-if ($v{'g'} < 3 * $v{'so'} + 2 * $v{'sw'}) {
+if ($v{'g'} < 3 * $v{'so'} + 2 * $v{'sw'}
+    || $v{'bw'} == 0 || $v{'bl'} == 0) {
     # Not enough space for silk in the middle, put it around the whole
     # footprint.
 
