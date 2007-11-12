@@ -454,7 +454,7 @@ numslots=0
 T 300 9450 5 10 0 0 0 0 1
 documentation=http://www.ionpool.net/arcade/atari_docs/pokey_datasheet.pdf
 T 300 8450 9 10 1 0 0 0 1
-C0912294 POKEY
+C012294 POKEY
 V 250 2000 52 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 300 9650 5 10 0 0 0 0 1
 author=David Griffith <davidgriffith@acm.org>
