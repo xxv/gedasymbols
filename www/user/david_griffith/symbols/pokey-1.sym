@@ -476,22 +476,6 @@ V 2850 3600 52 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 L 2450 3725 2733 3725 3 0 0 0 -1 -1
 L 2425 4125 2733 4125 3 0 0 0 -1 -1
 V 2850 4000 52 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 10900 7040 5 10 0 0 0 0 1
-device=74590
-T 10900 8250 5 10 0 0 0 0 1
-documentation=http://www.ti.com/lit/gpn/sn74hc590a
-T 10900 7250 5 10 0 0 0 0 1
-footprint=DIP16
-T 10900 8050 5 10 0 0 0 0 1
-description=8-bit binary counter with 3-state output register
-T 10900 8450 5 10 0 0 0 0 1
-author=David Griffith <davidgriffith@acm.org>
-T 10900 7450 5 10 0 0 0 0 1
-numslots=0
-T 10900 7650 5 10 0 0 0 0 1
-net=Vcc:16
-T 10900 7850 5 10 0 0 0 0 1
-net=GND:8
 L 400 5600 300 5675 3 0 0 0 -1 -1
 L 400 5600 300 5525 3 0 0 0 -1 -1
 L 2700 2400 2800 2475 3 0 0 0 -1 -1
