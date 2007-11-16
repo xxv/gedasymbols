@@ -5,8 +5,8 @@
 # changed spacings and orientations by adding variable $labelo, for label orientation
 # and using rlen{} followed by a divide by 1.5 to get vertical text position right.  John Griessen 7 sep 2006
 # Released under the terms of the GNU General Public License, version 2
-# added separate pinnumber as $3 line entry
-# Usage: jgboxsym2 sample.symdef > sample.sym
+# added separate pinnumber as $3 line entry JGriessen 16Nov2007 Copyright (C) 2007 John Griessen
+# Usage: jgbanksy2 sample.symdef > sample.sym
 
 $y{left} = 500;
 $y{right} = 500;
