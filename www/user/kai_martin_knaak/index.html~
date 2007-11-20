@@ -1,0 +1,29 @@
+<!--#set var="title" value="Kai-Martin Knaak" -->
+<!--#include virtual="/header.html" -->
+
+Kai-Martin Knaak <br>
+email: <a href="mailto:dj@delorie.com">kmk@familieknaak.de</a> <br>
+
+<h2>Tools</h2>
+
+<h2>Documentation</h2>
+
+<h2>Symbols</h2>
+
+<p>Note: All my symbols are licensed GPL3 for distribution, and unlimited 
+for use. See 
+<a href="http://www.gnu.org/licenses/gpl.txt">http://www.gnu.org/licenses.gpl.txt</a>
+for the details</p>
+
+<!--#include file="symbols.html" -->
+
+<h2>Footprints</h2>
+
+<p>Note: All my footprints are licensed GPL3 for distribution, and 
+unlimited for use. See 
+<a href="http://www.gnu.org/licenses/gpl.txt">http://www.gnu.org/licenses.gpl.txt</a>
+for the details</p>
+
+<!--#include file="footprints.html" -->
+
+<!--#include virtual="/trailer.html" -->
