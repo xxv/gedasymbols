@@ -294,15 +294,18 @@ char * colormap[] = {
   "0.0 0.0 1.0", /* blue */
   "0.5 0.5 0.0", /* yellow */
   "0.0 0.5 0.5", /* cyan */
+  "0.0 0.5 0.5", /* ? */
   "0.8 0.0 0.0", /* red */
   "0.0 0.5 0.0", /* green */
   "0.0 0.5 0.0", /* green */
   "0.9 0.4 0.0", /* orange */
   "0.9 0.4 0.0", /* orange */
   "0.0 0.5 0.5", /* cyan */
-  "0.5 0.5 0.5", /* grey90 */
+  "0.9 0.9 0.9", /* grey90 */
   "0.5 0.5 0.5", /* grey */
+  "0.6 0.0 0.6", /* "other" */
 };
+#define NUM_COLORS (sizeof(colormap)/sizeof(colormap[0]))
 
 void
 color_size (FILE *f, int c, int s)
@@ -311,6 +314,8 @@ color_size (FILE *f, int c, int s)
   static int os = -100;
   if (oc != c)
     {
+      if (c < 0 || c >= NUM_COLORS)
+	c = NUM_COLORS-1
       fprintf(f, "%s setrgbcolor\n", colormap[c]);
       oc = c;
     }
