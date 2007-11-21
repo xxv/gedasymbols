@@ -1,0 +1,31 @@
+v 20061020 1
+V 200 150 50 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+P 200 100 200 0 1 0 1
+{
+T 100 50 5 10 0 1 0 6 1
+pinnumber=1
+T 100 50 5 10 0 1 0 6 1
+pinseq=1
+T 100 50 5 10 0 1 0 6 1
+pinlabel=1
+T 300 50 5 10 0 1 0 0 1
+pintype=pwr
+}
+T 200 250 9 10 1 0 0 3 1
++5V
+T 100 2200 5 8 0 0 0 0 1
+description=5V supply voltage
+T 100 2000 5 8 0 0 0 0 1
+documentation=none
+T 100 1800 5 8 0 0 0 0 1
+author= Kai-Martin Knaak, kmk@lilalaser.de
+T 100 1200 5 8 0 0 0 0 1
+refdes=none
+T 100 800 5 8 0 0 0 0 1
+net=+5V:1
+T 100 1000 5 8 0 0 0 0 1
+numslots=0
+T 100 1400 5 8 0 0 0 0 1
+device=none
+T 100 1600 5 8 0 0 0 0 1
+license=GPL2

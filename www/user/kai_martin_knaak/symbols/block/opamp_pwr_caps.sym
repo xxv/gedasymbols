@@ -1,0 +1,36 @@
+v 20060824 1
+C 1300 1400 1 180 0 cap_SMD.sym
+{
+T -500 500 5 8 0 0 90 0 1
+device=capacitor
+T 500 300 5 10 1 1 0 1 1
+value=100n
+T 500 100 5 8 1 1 0 1 1
+footprint=0805
+T 500 500 5 10 1 1 0 1 1
+refdes=C?
+}
+C 1300 2300 1 180 0 cap_SMD.sym
+{
+T 700 2200 5 10 1 1 0 1 1
+value=100n
+T 700 2000 5 8 1 1 0 1 1
+footprint=0805
+T 700 2400 5 10 1 1 0 1 1
+refdes=C?
+T -500 2000 5 8 0 0 90 0 1
+device=capacitor
+}
+C 0 800 1 0 0 opamp_pwr.sym
+{
+T 700 1100 5 10 1 1 0 0 1
+refdes=U?
+T 90 3500 5 8 0 0 0 0 1
+device=opamp_pwr
+}
+C 0 100 1 0 0 Ub-.sym
+C 100 2100 1 0 0 Ub+.sym
+N 300 800 300 500 4
+C 1200 500 1 0 0 gnd.sym
+C 1200 1400 1 0 0 gnd.sym
+N 300 2100 300 1700 4

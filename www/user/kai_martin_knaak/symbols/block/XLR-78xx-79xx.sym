@@ -1,0 +1,150 @@
+v 20070902 1
+C 0 600 1 0 0 con_XLR3_power.sym
+{
+T 0 2100 5 10 1 1 0 0 1
+device=CON_XLR3
+T 0 2300 5 10 1 1 0 0 1
+refdes=CONN?
+T 0 1900 5 8 1 1 0 0 1
+footprint=XLR3_LAY
+}
+C 1500 900 1 0 0 7805.sym
+{
+T 1800 2100 5 10 1 1 0 0 1
+device=7805
+T 1800 2300 5 10 1 1 0 0 1
+refdes=U?
+T 1800 1900 5 8 1 1 0 0 1
+footprint=TO220
+}
+C 2200 0 1 0 0 gnd.sym
+C 800 1500 1 90 0 gnd.sym
+C 500 1400 1 270 0 15V+.sym
+{
+T 1900 1300 5 8 0 0 270 0 1
+device=none
+}
+C 900 600 1 90 0 15V-.sym
+{
+T -300 700 5 8 0 0 90 0 1
+device=none
+}
+C 1200 1600 1 0 0 15V+.sym
+{
+T 1300 3000 5 8 0 0 0 0 1
+device=none
+}
+C 4700 1100 1 0 0 15V-.sym
+{
+T 4800 2300 5 8 0 0 0 0 1
+device=none
+}
+C 5200 900 1 0 0 7905.sym
+{
+T 5500 2100 5 10 1 1 0 0 1
+device=7905
+T 5500 2300 5 10 1 1 0 0 1
+refdes=U?
+T 5500 1900 5 8 1 1 0 0 1
+footprint=TO220
+}
+C 3800 500 1 90 0 cap_SMD.sym
+{
+T 3600 2200 5 8 0 0 0 6 1
+device=capacitor
+T 3100 500 5 10 1 1 0 6 1
+value=10n
+T 3100 300 5 8 1 1 0 6 1
+footprint=0805
+T 3100 700 5 10 1 1 0 6 1
+refdes=C?
+}
+C 3600 500 1 0 0 elko.sym
+{
+T 3500 1600 5 10 0 0 0 0 1
+device=POLARIZED_CAPACITOR
+T 3900 700 5 10 1 1 0 0 1
+refdes=C?
+T 3900 300 5 8 1 1 0 0 1
+footprint=elko_RM5_D10
+T 3900 500 5 10 1 1 0 0 1
+value=100uF/16V
+}
+C 3100 0 1 0 0 gnd.sym
+N 2300 900 2300 300 4
+C 3700 0 1 0 0 gnd.sym
+N 3800 300 3800 500 4
+N 4000 1700 4000 1500 4
+N 3100 1500 4000 1500 4
+C 2100 400 1 90 0 cap_SMD.sym
+{
+T 1100 2100 5 8 0 0 0 0 1
+device=capacitor
+T 1600 400 5 10 1 1 0 0 1
+value=1u
+T 1600 200 5 8 1 1 0 0 1
+footprint=1206
+T 1600 600 5 10 1 1 0 0 1
+refdes=C?
+}
+C 1400 0 1 0 0 gnd.sym
+N 1400 1600 1400 1500 4
+N 1400 1500 1500 1500 4
+C 5900 0 1 0 0 gnd.sym
+C 7500 500 1 90 0 cap_SMD.sym
+{
+T 7300 2200 5 8 0 0 0 6 1
+device=capacitor
+T 6800 500 5 10 1 1 0 6 1
+value=10n
+T 6800 300 5 8 1 1 0 6 1
+footprint=0805
+T 6800 700 5 10 1 1 0 6 1
+refdes=C?
+}
+C 7700 1500 1 180 0 elko.sym
+{
+T 7100 1700 5 10 0 0 0 0 1
+device=POLARIZED_CAPACITOR
+T 7600 700 5 10 1 1 0 0 1
+refdes=C?
+T 7600 300 5 8 1 1 0 0 1
+footprint=elko_RM5_D10
+T 7600 500 5 10 1 1 0 0 1
+value=100uF/16V
+}
+C 6800 0 1 0 0 gnd.sym
+N 6000 900 6000 300 4
+C 7400 0 1 0 0 gnd.sym
+N 6800 1500 8200 1500 4
+C 5800 400 1 90 0 cap_SMD.sym
+{
+T 4800 2100 5 8 0 0 0 0 1
+device=capacitor
+T 5300 400 5 10 1 1 0 0 1
+value=1u
+T 5300 200 5 8 1 1 0 0 1
+footprint=1206
+T 5300 600 5 10 1 1 0 0 1
+refdes=C?
+}
+C 5100 0 1 0 0 gnd.sym
+N 4900 1500 5200 1500 4
+N 8200 1500 8200 1400 4
+N 5200 1400 5200 1500 4
+N 3200 500 3200 300 4
+N 5200 400 5200 300 4
+N 1500 400 1500 300 4
+N 6900 500 6900 300 4
+N 7500 500 7500 300 4
+N 1500 1400 1500 1500 4
+C 3800 1700 1 0 0 Ub+.sym
+{
+T 3900 3000 5 8 0 0 0 0 1
+device=none
+}
+C 7900 1000 1 0 0 Ub-.sym
+{
+T 8100 2400 5 8 0 0 0 0 1
+device=none
+}

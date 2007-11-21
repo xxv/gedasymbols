@@ -1,0 +1,49 @@
+v 20070216 1
+T 0 1500 8 10 1 1 0 0 1
+device=CON_XLR3
+T 0 2000 5 8 0 0 0 0 1
+numslots=0
+T 0 2600 5 8 0 0 0 0 1
+description=power connector, XLR 3 pin, horizontal position
+T 0 2400 5 8 0 0 0 0 1
+author=Kai-Martin Knaak
+T 0 2200 5 8 0 0 0 0 1
+license=GPL2, see http://www.gnu.org/licenses/gpl.txt
+T 0 1700 8 10 1 1 0 0 1
+refdes=CONN?
+T 0 1300 8 8 1 1 0 0 1
+footprint=XLR3_LAY
+P 500 1000 400 1000 1 0 0
+{
+T 500 1050 5 8 0 1 0 0 1
+pinnumber=1
+T 500 1050 5 8 0 1 0 0 1
+pinseq=1
+T 350 1000 9 8 1 1 0 6 1
+pinlabel=GND
+T 350 1000 5 8 0 1 0 8 1
+pintype=pas
+}
+P 500 600 400 600 1 0 0
+{
+T 500 650 5 8 0 1 0 0 1
+pinnumber=2
+T 500 650 5 8 0 1 0 0 1
+pinseq=2
+T 350 600 9 8 1 1 0 6 1
+pinlabel=+15
+T 350 600 5 8 0 1 0 8 1
+pintype=pas
+}
+B 0 0 400 1200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+P 500 200 400 200 1 0 0
+{
+T 500 250 5 8 0 1 0 0 1
+pinnumber=3
+T 500 250 5 8 0 1 0 0 1
+pinseq=3
+T 350 200 3 8 1 1 0 6 1
+pinlabel=-15
+T 350 200 5 8 0 1 0 8 1
+pintype=pas
+}
