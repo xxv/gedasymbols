@@ -301,8 +301,8 @@ char * colormap[] = {
   "0.9 0.4 0.0", /* orange */
   "0.9 0.4 0.0", /* orange */
   "0.0 0.5 0.5", /* cyan */
-  "0.9 0.9 0.9", /* grey90 */
-  "0.5 0.5 0.5", /* grey */
+  "0.6 0.6 0.6", /* grey90 */
+  "0.4 0.4 0.4", /* grey */
   "0.6 0.0 0.6", /* "other" */
 };
 #define NUM_COLORS (sizeof(colormap)/sizeof(colormap[0]))
