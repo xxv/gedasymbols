@@ -315,7 +315,7 @@ color_size (FILE *f, int c, int s)
   if (oc != c)
     {
       if (c < 0 || c >= NUM_COLORS)
-	c = NUM_COLORS-1
+	c = NUM_COLORS-1;
       fprintf(f, "%s setrgbcolor\n", colormap[c]);
       oc = c;
     }
