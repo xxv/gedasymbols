@@ -1,0 +1,47 @@
+v 20060123 1
+T 100 2400 5 8 0 1 0 0 1
+device=reference_resistor
+T 100 2200 5 8 0 0 0 0 1
+devicename=res-ref
+T 100 2000 5 8 0 0 0 0 1
+description=precision reference resistor, SMD 1812 
+T 300 300 5 10 1 1 0 1 1
+footprint=1812
+T 100 1800 5 8 0 0 0 0 1
+documentation=none
+T 100 1600 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+P 1000 500 700 500 1 0 0
+{
+T 850 550 5 8 0 1 0 0 1
+pinnumber=2
+T 850 550 5 8 0 1 0 0 1
+pinseq=2
+T 850 550 5 8 0 1 0 0 1
+pinlabel=2
+T 750 400 5 8 0 1 0 0 1
+pintype=pas
+}
+P 0 500 300 500 1 0 0
+{
+T 125 550 5 8 0 1 0 0 1
+pinnumber=1
+T 125 550 5 8 0 1 0 0 1
+pinseq=1
+T 125 550 5 8 0 1 0 0 1
+pinlabel=1
+T 25 400 5 8 0 1 0 0 1
+pintype=pas
+}
+B 300 400 400 200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+L 300 450 350 400 3 0 0 0 -1 -1
+T 300 900 8 10 1 1 0 1 1
+refdes=R?
+T 100 1200 5 8 0 0 0 0 1
+numslots=0
+T 300 700 8 10 1 1 0 1 1
+value=XXX
+T 320 440 9 10 1 0 0 0 1
+REF
+T 100 1400 5 8 0 0 0 0 1
+license=GPL 2
