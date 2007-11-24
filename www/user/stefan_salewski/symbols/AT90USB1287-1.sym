@@ -717,7 +717,7 @@ footprint=TQFP-64-14
 T 300 5850 5 10 0 0 0 0 1
 author=Stefan Salewski
 T 300 6050 5 10 0 0 0 0 1
-documentation=http://www.atmel.com
+documentation=http://www.atmel.com/dyn/resources/prod_documents/doc7593.pdf
 T 300 6250 5 10 0 0 0 0 1
 description=AT90USB 1287/1286/647/646 with QFN or TQFP footprint
 T 300 6450 5 10 0 0 0 0 1
