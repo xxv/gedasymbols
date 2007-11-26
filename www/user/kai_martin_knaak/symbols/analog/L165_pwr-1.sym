@@ -4,7 +4,7 @@ device=L165_power
 T 490 2100 8 10 0 0 0 0 1
 description=Power pins for L165
 T 890 300 8 10 0 0 0 0 1
-license=GPL2
+license=GPL 2
 T 890 100 8 8 0 0 0 0 1
 author=-<(kmk)>-
 T 500 300 8 10 1 1 0 0 1

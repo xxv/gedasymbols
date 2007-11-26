@@ -35,7 +35,7 @@ numslots=2
 T 90 2300 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
 T 90 2100 5 8 0 0 0 0 1
-license=GPL2
+license=GPL 2
 T 90 1700 5 8 0 0 0 0 1
 slotdef=1:4,7
 T 90 1500 5 8 0 0 0 0 1

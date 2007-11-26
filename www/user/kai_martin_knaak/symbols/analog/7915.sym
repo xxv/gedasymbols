@@ -46,6 +46,6 @@ footprint=TO220
 T 300 2300 5 8 0 0 0 0 1
 documentation=http://www.fairchildsemi.com/ds/KA/KA7915.pdf
 T 300 1700 5 8 0 0 0 0 1
-license=GPL, see http://www.gnu.org/licenses/gpl.txt
+license=GPL , see http://www.gnu.org/licenses/gpl.txt
 T 300 2100 5 8 0 0 0 0 1
 comment=Alternative footprint: D-PAK

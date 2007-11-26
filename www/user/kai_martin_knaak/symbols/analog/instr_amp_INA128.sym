@@ -14,7 +14,7 @@ refdes=U?
 T 300 1700 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
 T 300 1500 5 8 0 0 0 0 1
-license=GPL2
+license=GPL 2
 T 1100 900 8 10 1 1 0 0 1
 value=INA128
 T 1100 700 8 8 1 1 0 0 1

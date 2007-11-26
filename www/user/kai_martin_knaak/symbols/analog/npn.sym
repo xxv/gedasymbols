@@ -51,6 +51,6 @@ footprint=SOT23-BCE
 T 900 400 8 10 1 1 0 0 1
 value=BC847C
 T 100 1300 5 10 0 0 0 0 1
-license=GPL2
+license=GPL 2
 T 100 1100 5 10 0 0 0 0 1
 numslots=0

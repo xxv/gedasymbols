@@ -34,7 +34,7 @@ description=NTC temperature sensor
 T 300 1300 5 8 0 0 0 0 1
 author=Kai-Martin Knaak, kmk@lilalaser.de
 T 300 1100 5 8 0 0 0 0 1
-license=GPL2
+license=GPL 2
 T 300 500 8 10 1 1 0 0 1
 value=10k
 T 300 0 5 8 1 1 0 0 1

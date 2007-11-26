@@ -10,7 +10,7 @@ refdes=U?
 T 200 1800 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
 T 200 1600 5 8 0 0 0 0 1
-dist-license=GPL3, http://www.gnu.org/licenses/gpl-3.0.txt
+dist-license=GPL 3, http://www.gnu.org/licenses/gpl-3.0.txt
 T 1000 800 8 10 1 1 0 0 1
 value=XXX
 T 1000 600 8 8 1 1 0 0 1

@@ -6,7 +6,7 @@ description=potentiometer, wire soldered
 T 200 1800 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
 T 200 1600 5 8 0 0 0 0 1
-license=GPL2
+license=GPL 2
 T 200 1400 5 8 0 0 0 0 1
 numslots=0
 T 500 600 8 10 1 1 0 0 1

@@ -40,6 +40,6 @@ footprint=TO92
 T 300 2300 5 8 0 0 0 0 1
 documentation=http://www.st.com/stonline/products/literature/ds/2145/l78l05ab.pdf
 T 300 1700 5 8 0 0 0 0 1
-license=GPL, see http://www.gnu.org/licenses/gpl.txt
+license=GPL , see http://www.gnu.org/licenses/gpl.txt
 T 300 2100 5 8 0 0 0 0 1
 comment=alternative footprint: SOT89

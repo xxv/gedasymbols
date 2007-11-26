@@ -9,7 +9,10 @@ email: <a href="mailto:dj@delorie.com">kmk@familieknaak.de</a> <br>
 <h2>Documentation</h2>
 
 <h2>Symbols</h2>
-
+The symbols in this sections are rich ones. They contain a default 
+footprint attribute. The footprint attribute is visible on the
+schematic and printed with a smaller font size than the refdes and 
+the value. 
 <p>Note: All my symbols are licensed GPL3 for distribution, and unlimited 
 for use. See 
 <a href="http://www.gnu.org/licenses/gpl.txt">http://www.gnu.org/licenses.gpl.txt</a>

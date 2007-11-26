@@ -63,6 +63,6 @@ L 500 350 500 200 3 0 0 0 -1 -1
 T 200 1800 5 8 0 0 0 0 1
 author=Kai-Martin Knaak, kmk@lilalaser.de
 T 200 1600 5 8 0 0 0 0 1
-license=GPL2
+license=GPL 2
 T 200 2000 5 8 0 0 0 0 1
 documentation=http://www.irf.com/product-info/datasheets/data/irfi640g.pdf

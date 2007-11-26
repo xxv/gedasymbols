@@ -167,7 +167,7 @@ numslots=0
 T 300 3800 5 10 0 0 0 0 1
 documentation=http://www.hittite.com/product_info/product_specs/dividersdetectors/hmc439qs16g.pdf
 T 300 3600 5 10 0 0 0 0 1
-license=GPL, see http://www.gnu.org/licenses/gpl.txt
+license=GPL , see http://www.gnu.org/licenses/gpl.txt
 T 300 3400 5 10 0 0 0 0 1
 author=Kai-Martin Knaak
 P 0 400 300 400 1 0 0

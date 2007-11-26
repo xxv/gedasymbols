@@ -33,6 +33,6 @@ description=Power pins for single comparator
 T 90 1700 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
 T 90 1500 5 8 0 0 0 0 1
-license=GPL3, see http://www.gnu.org/licenses/gpl-3.0.txt
+license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
 T 90 1300 5 8 0 0 0 0 1
 numslots=1
