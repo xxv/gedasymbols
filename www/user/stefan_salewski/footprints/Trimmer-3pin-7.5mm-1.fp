@@ -2,6 +2,7 @@
 # email: mail@ssalewski.de
 # dist-license: GPL
 # use-license: unlimited
+
 # Pcb element (footprint/land pattern) for trimmer with 3 pins, 7.5mm diameter
 # S. Salewski, 09-NOV-2007
 # Distance pin1 to pin2 is 200mil, distance pin1 to pin 3 is sqrt(80000)=283mil
@@ -18,4 +19,3 @@ Element[0x0 "" "" "" 0 0 -10000 -2000 0 100 0x0]
    ElementArc[0 0 17500 17500 150 150 1000]
    ElementArc[0 0 17500 17500 330 60 1000]
 )
-
