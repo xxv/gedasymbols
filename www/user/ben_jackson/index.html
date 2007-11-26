@@ -9,7 +9,7 @@ electronics stuff at
 <a href="http://ad7gd.net/">http://ad7gd.net/</a><br>
 <h2>Tools</h2>
 <p>
-PCB Plugins (more detail coming soon):
+PCB Plugins (more detail coming eventually):
 <ul>
 <li><a href="http://ad7gd.net/geda/autocrop.c">autocrop.c</a> provides
 <code>Autocrop()</code> which shrink-wraps your PCB down to just the
@@ -26,6 +26,11 @@ Read <a href="geda-user/smartdisperse.txt">the original announcement</a>.
 or align elements using a variety of reference points.
 Read <a href="geda-user/distalign.txt">the original announcement</a> which
 includes many examples.
+</li>
+<li><a href="http://ad7gd.net/geda/jostle.c">jostle.c</a> is a first
+draft of a plugin which can move wires out of the way when you need
+space for something like a via.  It's not polished, but it can do some
+pretty impressive things, like open a hole in the middle of a wide bus.
 </li>
 </ul>
 </p>
@@ -45,6 +50,8 @@ written as layout modules for this program.
 If you're considering gEDA/PCB, here are some sample projects I've done
 using the tools:
 <ul>
+<li><a href="http://ad7gd.net/flex/">An Altera FLEX 6024A Protoboard</a>,
+which led me to fix many bugs with polygon handling.</li>
 <li><a href="http://ad7gd.net/xc9536/">A CPLD LED blinker based on XAPP078</a></li>
 <li><a href="http://ad7gd.net/tippy/">A MMA2260 Accelerometer Demo Board</a></li>
 </ul>
