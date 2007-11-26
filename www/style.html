@@ -11,10 +11,9 @@ bug.</p>
 <p>Anyway, the first thing you should do is create an index.html file
 that says who you are and how to contact you.  Any footprints you
 upload should end in <tt>.fp</tt> and if you link directly to them,
-the server does the right thing automatically.  Likewise, symbols end
-in <tt>.sym</tt> although I don't have an automatic symbol handler
-yet.  See below for how to encode author and copyright information
-into symbols and footprints.</p>
+the server does the right thing automatically.  Likewise, for symbols
+end in <tt>.sym</tt>.  See below for how to encode author and
+copyright information into symbols and footprints.</p>
 
 <p><a href="csv.html">Tables</a> should end in <tt>.csv</tt> .</p>
 
@@ -75,17 +74,16 @@ the way web servers (and clients, search engines, etc) work.</p>
 <p>For symbols, you should include invisible text attributes that
 specify your name, email (you may use any obvious anti-spam tricks you
 like), and distribution and licence terms.  For footprints, include
-comments (any line beginning with <tt>#</tt> is a comment).  Always
-use the keywords given below, so that in the future I can write an
-indexer of some sort (the automatic footprint web page handler already
-uses these).  Examples, showing appropriate keywords, for symbols and
-footprints respectively, follow:
+comments (any line beginning with <tt>#</tt> is a comment) or, for
+newer pcbs, a board-global Attribute() entry.  Always use the keywords
+given below, so that in the future I can write an indexer of some sort
+(the automatic footprint web page handler already uses these).
+Examples, showing appropriate keywords, for symbols and footprints
+respectively, follow:
 
 <pre>
 T . . .
-author=DJ Delorie
-T . . .
-email=dj@delorie.com
+author=DJ Delorie dj@delorie.com
 T . . .
 dist-license=GPL
 T . . .
