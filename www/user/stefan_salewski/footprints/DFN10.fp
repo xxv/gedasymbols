@@ -1,3 +1,7 @@
+# author: Stefan Salewski
+# email: mail@ssalewski.de
+# dist-license: GPL
+# use-license: unlimited
 Element[0x00000000 "" "" "" 0 0 0 0 0 100 0x00000000]
 (
 	Pad[-6397 -3938 -4725 -3938 984 2000 2984 "1" "1" 0x00000100]
