@@ -2,7 +2,9 @@
 # email: mail@ssalewski.de
 # dist-license: GPL
 # use-license: unlimited
-Element[0x0 "" "" "" 0 0 0 0 0 100 0x0]
+
+# Reed-Relay_Meder_DIPxx-1C90-51D
+Element[0x0 "Reed-Relay_Meder_DIPxx-1C90-51D" "" "" 0 0 -21000 -41500 0 100 0x0]
 (
    Pad[-16500 -30000 -13500 -30000 6000 2000 8000 "" "1" 0x0800]
    Pad[-16500 -30000 -13500 -30000 6000 2000 8000 "" "1" 0x0880]
@@ -36,3 +38,4 @@ Element[0x0 "" "" "" 0 0 0 0 0 100 0x0]
    ElementLine[0 -29250 -5250 -34500 1000]
    ElementLine[-5250 -34500 -21000 -34500 1000]
 )
+

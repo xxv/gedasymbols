@@ -2,7 +2,9 @@
 # email: mail@ssalewski.de
 # dist-license: GPL
 # use-license: unlimited
-Element[0x00000000 "" "" "" 0 0 0 0 0 100 0x00000000]
+
+# Push Button Schurter LSH1301xx
+Element[0x00000000 "Push Button Schurter LSH1301xx" "" "" 0 0 -14551 -19614 0 100 0x00000000]
 (
 	Pad[-21063 -8858 -18307 -8858 5512 2000 7512 "1" "1" 0x00000100]
 	Pad[-21063 8859 -18307 8859 5512 2000 7512 "2" "2" 0x00000100]

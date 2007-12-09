@@ -2,7 +2,9 @@
 # email: mail@ssalewski.de
 # dist-license: GPL
 # use-license: unlimited
-Element[0x00000000 "" "" "" 0 0 0 0 0 100 0x00000000]
+
+# DFN with center exposed thermal pad
+Element[0x00000000 "DFN with center pad" "" "" 0 0 -9086 -15399 0 100 0x00000000]
 (
 	Pad[-6594 -5907 -4822 -5907 984 2000 2984 "1" "1" 0x00000100]
 	Pad[-6594 -3938 -4822 -3938 984 2000 2984 "2" "2" 0x00000100]

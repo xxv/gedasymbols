@@ -2,7 +2,10 @@
 # email: mail@ssalewski.de
 # dist-license: GPL
 # use-license: unlimited
-Element[0x00000000 "" "" "" 0 0 0 0 0 100 0x00000000]
+
+# DFN with center exposed thermal pad
+# Enlarged pads optimized for Hand Soldering
+Element[0x00000000 "DFN with center pad" "" "" 0 0 -10070 -15399 0 100 0x00000000]
 (
 	Pad[-7578 -5907 -5020 -5907 984 2000 2984 "1" "1" 0x00000100]
 	Pad[-7578 -3938 -5020 -3938 984 2000 2984 "2" "2" 0x00000100]
