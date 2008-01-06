@@ -55,9 +55,9 @@ L 380 1040 340 1040 3 0 0 0 -1 -1
 T 200 2650 5 10 0 0 0 0 1
 symversion=0.1
 T 200 2850 5 10 0 0 0 0 1
-use-licence=unlimited
+use-license=unlimited
 T 200 3050 5 10 0 0 0 0 1
-dist-licence=GPL2
+dist-license=GPL2
 T 200 3250 5 10 0 0 0 0 1
 author=Werner Hoch <werner.ho@gmx.de>
 T 200 3450 5 10 0 0 0 0 1

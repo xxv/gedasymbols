@@ -99,9 +99,9 @@ numslots=0
 T 300 3000 5 10 0 0 0 0 1
 symversion=0.1
 T 300 3200 5 10 0 0 0 0 1
-use-licence=unlimited
+use-license=unlimited
 T 300 3400 5 10 0 0 0 0 1
-dist-licence=GPL2
+dist-license=GPL2
 T 300 3600 5 10 0 0 0 0 1
 author=Chris Jones; Werner Hoch <werner.ho@gmx.de>
 T 300 3800 5 10 0 0 0 0 1

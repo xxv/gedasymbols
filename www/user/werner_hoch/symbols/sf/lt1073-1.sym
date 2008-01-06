@@ -103,9 +103,9 @@ author=Onno Kortmann <onnoATgmx.net>; Werner Hoch <werner.ho@gmx.de>
 T 300 3800 5 10 0 0 0 0 1
 symversion=0.1
 T 300 4000 5 10 0 0 0 0 1
-use-licence=unlimited
+use-license=unlimited
 T 300 4200 5 10 0 0 0 0 1
-dist-licence=GPL2
+dist-license=GPL2
 T 300 4600 5 10 0 0 0 0 1
 documentation=http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C1031,C1060,P1272,D1661
 T 1300 2000 9 10 1 0 0 4 1

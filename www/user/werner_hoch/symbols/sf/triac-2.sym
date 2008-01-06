@@ -48,9 +48,9 @@ numslots=0
 T 0 1350 5 10 0 0 0 0 1
 symversion=0
 T 0 1550 5 10 0 0 0 0 1
-use-licence=unlimited
+use-license=unlimited
 T 0 1750 5 10 0 0 0 0 1
-dist-licence=GPL2
+dist-license=GPL2
 T 0 1950 5 10 0 0 0 0 1
 author=Werner Hoch <werner.ho@gmx.de>
 T 0 2150 5 10 0 0 0 0 1

@@ -230,8 +230,8 @@ def makenice(filename, outfile):
 
     ## add attribute templates of missing attributes
     ay = 250
-    for newattr in ["footprint", "numslots", "symversion", "use-licence",
-                    "dist-licence", "author", "description", "documentation"]:
+    for newattr in ["footprint", "numslots", "symversion", "use-license",
+                    "dist-license", "author", "description", "documentation"]:
         if not attr.has_key(newattr):
             outfile.write("T 4000 %d 5 10 0 0 0 0 1" % ay + "\n")
             outfile.write(newattr + "=X" + "\n")

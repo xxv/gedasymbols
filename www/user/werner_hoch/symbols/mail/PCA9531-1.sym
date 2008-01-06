@@ -189,9 +189,9 @@ pinlabel=\_RESET\_
 T 300 4050 5 10 0 0 0 0 1
 symversion=0.1
 T 300 4250 5 10 0 0 0 0 1
-use-licence=unlimited
+use-license=unlimited
 T 300 4450 5 10 0 0 0 0 1
-dist-licence=GPL2
+dist-license=GPL2
 T 300 4650 5 10 0 0 0 0 1
 author=Thomas Kohler <thomas.kohlerATmb.tu-chemnitz.de>, Werner Hoch <werner.hoATgmx.de>
 T 300 4850 5 10 0 0 0 0 1

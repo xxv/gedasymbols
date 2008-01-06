@@ -123,9 +123,9 @@ B 300 200 900 2000 3 0 0 0 -1 -1 0 0 -1 -1 -1 -1
 T 300 3050 5 10 0 0 0 0 1
 symversion=0.1
 T 300 3250 5 10 0 0 0 0 1
-use-licence=unlimited
+use-license=unlimited
 T 300 3450 5 10 0 0 0 0 1
-dist-licence=GPL2
+dist-license=GPL2
 T 300 3650 5 10 0 0 0 0 1
 author=Werner Hoch <werner.ho@gmx.de>
 T 300 0 9 10 1 0 0 0 1
