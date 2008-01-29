@@ -14,5 +14,4 @@ Element ["" "Fuse" "" "" 0 0 -43307 -24716 0 100 ""]
 	Attribute("copyright" "2008 S. Salewski")
 	Attribute("use-license" "unlimited")
 	Attribute("dist-license" "GPL")
-	Attribute("documentation" "http://www.wima.com")
 )
