@@ -1,0 +1,3 @@
+system=inch
+function=smt_dip
+HEADER_50mils_D`A 50 mils smt header`6`yes`0.025`0.1`0.05`0.14

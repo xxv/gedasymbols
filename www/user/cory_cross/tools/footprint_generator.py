@@ -96,6 +96,8 @@ class FpGenerator:
             y_silk = y_initial_offset + pad_height/2
         else:
             #Calculate exterior points...
+            print "Need to Calculate exterior points..."
+            return 0
             pass
         #Go and draw it
         for xm1,ym1 in [[1,1],[-1,-1]]:
