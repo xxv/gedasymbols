@@ -1,10 +1,10 @@
-v 20061020 1
+v 20080127 1
 B 0 100 600 700 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 300 450 9 8 1 0 0 4 1
 opamp
 P 300 900 300 800 1 0 0
 {
-T 300 1000 5 8 0 1 0 7 1
+T 200 1000 5 8 0 1 0 6 1
 pinseq=7
 T 200 1000 5 8 0 1 0 6 1
 pinnumber=7
@@ -31,14 +31,8 @@ device=opamp_pwr
 T 90 2500 5 8 0 0 0 0 1
 description=Power pins for single opamp
 T 90 1900 5 8 0 0 0 0 1
-numslots=2
+use-license=free, no restrictions
 T 90 2300 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
 T 90 2100 5 8 0 0 0 0 1
-license=GPL 2
-T 90 1700 5 8 0 0 0 0 1
-slotdef=1:4,7
-T 90 1500 5 8 0 0 0 0 1
-slotdef=2:4,7
-T 90 1300 5 8 0 0 0 0 1
-slot=2
+dist-license=GPL 3 (see http://www.gnu.org/licenses/licenses.html for the details)

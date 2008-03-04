@@ -1,13 +1,15 @@
-v 20070216 1
-T 500 1900 5 8 0 0 0 0 1
+v 20080127 1
+T 300 2200 5 8 0 0 0 0 1
 device=inductor
-T 500 1700 5 8 0 0 0 0 1
+T 300 2000 5 8 0 0 0 0 1
 description=inductor, wire soldered 
-T 500 1500 5 8 0 0 0 0 1
-author=Kai-Martin Knaak
-T 500 1300 5 8 0 0 0 0 1
-license=GPL , see http://www.gnu.org/licenses/gpl.txt
-T 500 1100 5 8 0 0 0 0 1
+T 300 1800 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@familieknaak.de
+T 300 1600 5 8 0 0 0 0 1
+dist-license=GPL , see http://www.gnu.org/licenses/gpl.txt
+T 300 1400 5 8 0 0 0 0 1
+use-license=free, no restrictions
+T 300 1200 5 8 0 0 0 0 1
 numslots=0
 T 500 800 8 10 1 1 0 0 1
 refdes=L?

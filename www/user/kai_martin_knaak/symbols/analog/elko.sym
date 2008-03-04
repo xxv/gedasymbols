@@ -1,4 +1,18 @@
-v 20070902 1
+v 20080127 1
+T 300 2200 5 8 0 0 0 0 1
+device=POLARIZED_CAPACITOR
+T 300 2000 5 8 0 0 0 0 1
+description=generic polarized capacitor
+T 300 1800 5 8 0 0 0 0 1
+author=K-M. Knaak, kmk@lilalaser.de
+T 300 1600 5 8 0 0 0 0 1
+dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
+T 300 1400 5 8 0 0 0 0 1
+use-license=free, no restrictions
+T 300 1200 5 8 0 0 0 0 1
+numslots=0
+T 500 300 8 8 1 1 0 0 1
+footprint=elko_RM5_D10
 P 200 1000 200 800 1 0 0
 {
 T 150 800 5 8 0 1 0 6 1
@@ -24,22 +38,8 @@ pintype=pas
 L 400 400 0 400 3 0 0 0 -1 -1
 L 200 200 200 400 3 0 0 0 -1 -1
 L 200 600 200 800 3 0 0 0 -1 -1
-T 0 2200 5 8 0 0 0 0 1
-device=POLARIZED_CAPACITOR
 T 500 700 8 10 1 1 0 0 1
 refdes=C?
 B 0 500 400 100 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 0 2000 5 8 0 0 0 0 1
-description=generic polarized capacitor
-T 0 1400 5 8 0 0 0 0 1
-author=K-M. Knaak, kmk@lilalaser.de
-T 0 1800 5 8 0 0 0 0 1
-dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
-T 500 300 8 8 1 1 0 0 1
-footprint=elko_RM5_D10
 T 500 500 8 10 1 1 0 0 1
 value=XXX
-T 0 1600 5 8 0 0 0 0 1
-use-license=free, no restrictions
-T 0 1200 5 8 0 0 0 0 1
-numslots=0

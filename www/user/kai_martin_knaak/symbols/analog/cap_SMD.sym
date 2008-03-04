@@ -12,7 +12,9 @@ documentation=none
 T 100 1300 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@familieknaak.de
 T 100 1100 5 8 0 0 0 0 1
-license=GPL 2
+dist-license=GPL , see http://www.gnu.org/licenses/gpl.txt
+T 100 1100 5 8 0 0 0 0 1
+use-license=free, no restrictions
 P 0 600 300 600 1 0 0
 {
 T 125 650 5 8 0 1 0 0 1

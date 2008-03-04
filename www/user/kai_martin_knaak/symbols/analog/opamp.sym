@@ -1,4 +1,4 @@
-v 20070902 1
+v 20080127 1
 T 325 3000 5 8 0 0 0 0 1
 device=opamp
 T 325 2800 5 8 0 0 0 0 1
@@ -55,3 +55,5 @@ pinlabel=Vout
 }
 T 300 1800 5 8 0 0 0 0 1
 use-license=free, no restrictions
+T 300 1600 5 8 0 0 0 0 1
+numslots=0

@@ -1,14 +1,16 @@
-v 20061020 1
+v 20080127 1
 T 90 2700 5 8 0 0 0 0 1
 device=opamp_dual_pwr
-T 90 2500 5 8 0 0 0 0 1
-description=Power pins for dual opamp
-T 90 2300 5 8 0 0 0 0 1
+T 100 2500 5 8 0 0 0 0 1
+description=power pins for dual opamp
+T 100 2300 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
-T 90 2100 5 8 0 0 0 0 1
-license=GPL 2
-T 90 1900 5 8 0 0 0 0 1
-numslots=3
+T 100 2100 5 8 0 0 0 0 1
+dist-license=GPL , see http://www.gnu.org/licenses/gpl.txt
+T 100 1900 5 8 0 0 0 0 1
+use-license=free, no restrictions
+T 100 1700 5 8 0 0 0 0 1
+numslots=0
 T 400 900 8 10 1 1 0 0 1
 refdes=U?
 B 0 100 600 700 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
@@ -20,18 +22,18 @@ T 200 1000 5 8 0 1 0 6 1
 pinseq=8
 T 200 1000 5 8 0 1 0 6 1
 pinnumber=8
-T 200 900 5 8 0 1 0 6 1
+T 300 900 5 8 0 1 0 6 1
 pintype=pwr
 T 300 700 5 8 1 1 0 4 1
 pinlabel=+V
 }
 P 300 0 300 100 1 0 0
 {
-T 200 -100 5 8 0 1 0 6 1
+T 300 0 5 8 0 1 0 6 1
 pinseq=4
-T 200 -100 5 8 0 1 0 6 1
+T 300 0 5 8 0 1 0 6 1
 pinnumber=4
-T 200 -200 5 8 0 1 0 6 1
+T 600 0 5 8 0 1 0 6 1
 pintype=pwr
 T 300 200 5 8 1 1 0 4 1
 pinlabel=-V
@@ -39,7 +41,3 @@ pinlabel=-V
 L 225 350 325 350 3 0 0 0 -1 -1
 L 325 350 325 550 3 0 0 0 -1 -1
 L 325 550 425 550 3 0 0 0 -1 -1
-T 90 1700 5 8 0 0 0 0 1
-slotdef=3:4,8
-T 90 1500 5 8 0 0 0 0 1
-slot=3

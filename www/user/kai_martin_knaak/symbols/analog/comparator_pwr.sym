@@ -1,4 +1,16 @@
-v 20070216 1
+v 20080127 1
+T 100 2200 5 8 0 0 0 0 1
+device=comparator_pwr
+T 100 2000 5 8 0 0 0 0 1
+description=power pins for single comparator
+T 100 1800 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 100 1600 5 8 0 0 0 0 1
+dist-license=GPL , see http://www.gnu.org/licenses/gpl.txt
+T 100 1400 5 8 0 0 0 0 1
+use-license=free, no restrictions
+T 90 1200 5 8 0 0 0 0 1
+numslots=0
 B 0 100 600 700 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 300 450 9 8 1 0 0 4 1
 comp.
@@ -15,7 +27,7 @@ pinlabel=+Ub
 }
 P 300 0 300 100 1 0 0
 {
-T 200 0 5 8 0 1 0 7 1
+T 200 0 5 8 0 1 0 6 1
 pinseq=4
 T 200 0 5 8 1 1 0 7 1
 pinnumber=4
@@ -26,13 +38,3 @@ pinlabel=-Ub
 }
 T 400 900 8 10 1 1 0 1 1
 refdes=U?
-T 90 2100 5 8 0 0 0 0 1
-device=comparator_pwr
-T 90 1900 5 8 0 0 0 0 1
-description=Power pins for single comparator
-T 90 1700 5 8 0 0 0 0 1
-author=Kai-Martin Knaak kmk@lilalaser.de
-T 90 1500 5 8 0 0 0 0 1
-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
-T 90 1300 5 8 0 0 0 0 1
-numslots=1
