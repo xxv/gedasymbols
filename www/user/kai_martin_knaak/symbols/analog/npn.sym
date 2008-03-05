@@ -1,4 +1,22 @@
-v 20060824 1
+v 20080127 1
+T 100 2200 5 10 0 0 0 0 1
+device=NPN_TRANSISTOR
+T 100 2000 5 10 0 0 0 0 1
+description=generic npn transistor, TUN
+T 100 1800 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 100 1600 5 8 0 0 0 0 1
+dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
+T 100 1400 5 8 0 0 0 0 1
+use-license=free, no restrictions
+T 100 1200 5 10 0 0 0 0 1
+numslots=0
+T 900 600 8 10 1 1 0 0 1
+refdes=Q?
+T 900 200 8 8 1 1 0 0 1
+footprint=SOT23-BCE
+T 900 400 8 10 1 1 0 0 1
+value=BC847C
 P 600 1000 600 800 1 0 0
 {
 T 500 850 5 6 1 1 0 0 1
@@ -22,12 +40,10 @@ T 700 50 5 6 0 1 0 0 1
 pintype=pas
 }
 V 500 501 316 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 100 1700 5 10 0 0 0 0 1
-device=NPN_TRANSISTOR
 L 600 200 400 400 3 0 0 0 -1 -1
 L 600 800 400 600 3 0 0 0 -1 -1
 L 400 700 400 300 3 0 0 0 -1 -1
-P 0 500 184 500 1 0 0
+P 0 500 200 500 1 0 0
 {
 T 100 550 5 6 1 1 0 0 1
 pinnumber=B
@@ -42,15 +58,3 @@ L 400 500 184 500 3 0 0 0 -1 -1
 L 600 200 564 272 3 0 0 0 -1 -1
 L 600 200 528 236 3 0 0 0 -1 -1
 L 528 236 564 272 3 0 0 0 -1 -1
-T 900 600 8 10 1 1 0 0 1
-refdes=Q?
-T 100 1500 5 10 0 0 0 0 1
-description=generic npn transistor, TUN
-T 900 200 8 8 1 1 0 0 1
-footprint=SOT23-BCE
-T 900 400 8 10 1 1 0 0 1
-value=BC847C
-T 100 1300 5 10 0 0 0 0 1
-license=GPL 2
-T 100 1100 5 10 0 0 0 0 1
-numslots=0

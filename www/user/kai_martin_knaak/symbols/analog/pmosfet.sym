@@ -1,14 +1,24 @@
-v 20060824 1
-T 600 400 8 10 1 1 0 0 1
-device=BSS84P
-T 200 1100 5 8 0 0 0 0 1
-numslots=0
-T 200 1900 5 8 0 0 0 0 1
+v 20080127 1
+T 200 2400 5 8 0 0 0 0 1
+device=pmosfet
+T 200 2200 5 8 0 0 0 0 1
 description=MOSFET, p-channel
+T 200 2000 5 8 0 0 0 0 1
+documentation=http://www.fairchildsemi.com/ds/BS/BSS84.pdf
+T 200 1800 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 200 1600 5 8 0 0 0 0 1
+dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
+T 200 1400 5 8 0 0 0 0 1
+use-license=free, no restrictions
+T 200 1200 5 8 0 0 0 0 1
+numslots=0
+T 600 600 8 10 1 1 0 0 1
+refdes=Q?
+T 600 400 8 10 1 1 0 0 1
+value=BSS84P
 T 600 200 8 8 1 1 0 0 1
 footprint=SOT23-GDS
-L 250 600 500 600 3 0 0 0 -1 -1
-L 250 200 500 200 3 0 0 0 -1 -1
 P 0 200 200 200 1 0 0
 {
 T 100 300 5 10 0 1 0 4 1
@@ -42,18 +52,12 @@ pinseq=3
 T 700 0 5 10 0 1 0 0 1
 pintype=pas
 }
-T 600 600 8 10 1 1 0 0 1
-refdes=Q?
+L 250 600 500 600 3 0 0 0 -1 -1
+L 250 200 500 200 3 0 0 0 -1 -1
 L 250 675 250 125 3 0 0 0 -1 -1
 L 200 600 200 200 3 0 0 0 -1 -1
 L 260 400 380 400 3 0 0 0 -1 -1
 L 500 400 500 200 3 0 0 0 -1 -1
-T 200 1500 5 8 0 0 0 0 1
-author=Kai-Martin Knaak, kmk@lilalaser.de
-T 200 1300 5 8 0 0 0 0 1
-license=GPL 2
-T 200 1700 5 8 0 0 0 0 1
-documentation=http://www.fairchildsemi.com/ds/BS/BSS84.pdf
 L 240 675 240 125 3 0 0 0 -1 -1
 L 260 675 260 125 3 0 0 0 -1 -1
 L 500 400 380 430 3 0 0 0 -1 -1

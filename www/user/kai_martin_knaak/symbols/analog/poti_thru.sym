@@ -1,13 +1,15 @@
-v 20061020 1
-T 200 2200 5 8 0 0 0 0 1
+v 20080127 1
+T 400 2600 5 8 0 0 0 0 1
 device=potentiometer
-T 200 2000 5 8 0 0 0 0 1
+T 400 2400 5 8 0 0 0 0 1
 description=potentiometer, wire soldered 
-T 200 1800 5 8 0 0 0 0 1
+T 400 2200 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
-T 200 1600 5 8 0 0 0 0 1
-license=GPL 2
-T 200 1400 5 8 0 0 0 0 1
+T 400 2000 5 8 0 0 0 0 1
+dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
+T 400 1800 5 8 0 0 0 0 1
+use-license=free, no restrictions
+T 400 1600 5 8 0 0 0 0 1
 numslots=0
 T 500 600 8 10 1 1 0 0 1
 refdes=R?
@@ -37,9 +39,7 @@ pinlabel=1
 T 225 800 5 8 0 1 0 0 1
 pintype=pas
 }
-B 500 800 400 200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-L 500 850 550 800 3 0 0 0 -1 -1
-P 700 1300 700 1075 1 0 0
+P 700 1300 700 1100 1 0 0
 {
 T 800 1100 5 8 0 1 0 0 1
 pintype=pas
@@ -50,7 +50,9 @@ pinnumber=2
 T 600 1100 5 8 0 1 0 0 1
 pinseq=2
 }
+B 500 800 400 200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+L 500 850 550 800 3 0 0 0 -1 -1
 L 700 1000 660 1080 3 0 0 0 -1 -1
 L 700 1000 740 1080 3 0 0 0 -1 -1
-L 700 1075 700 1000 3 0 0 0 -1 -1
+L 700 1100 700 1000 3 0 0 0 -1 -1
 L 660 1080 740 1080 3 0 0 0 -1 -1

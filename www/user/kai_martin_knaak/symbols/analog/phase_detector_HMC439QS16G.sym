@@ -1,4 +1,22 @@
-v 20070216 1
+v 20080127 1
+T 300 4400 5 8 0 0 0 0 1
+description=low noise phase detector, model HMC439S16G by Hittite
+T 300 3400 5 8 0 0 0 0 1
+numslots=0
+T 300 4200 5 8 0 0 0 0 1
+documentation=http://www.hittite.com/product_info/product_specs/dividersdetectors/hmc439qs16g.pdf
+T 300 4000 5 8 0 0 0 0 1
+dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
+T 300 3800 5 8 0 0 0 0 1
+use-license=free, no restrictions
+T 300 3600 5 8 0 0 0 0 1
+author=Kai-Martin Knaak
+T 300 2900 8 10 1 1 0 0 1
+refdes=U?
+T 840 2600 8 16 1 1 270 0 1
+device=HMC439QS16G
+T 300 0 8 8 1 1 0 0 1
+footprint=QSOP16
 P 0 2500 300 2500 1 0 0
 {
 T 200 2550 5 8 1 1 0 6 1
@@ -153,23 +171,6 @@ pinlabel=GND
 T 1650 400 5 8 0 1 0 8 1
 pintype=pas
 }
-B 300 200 1400 2600 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 300 2900 8 10 1 1 0 0 1
-refdes=U?
-T 840 2600 8 16 1 1 270 0 1
-device=HMC439QS16G
-T 300 0 8 8 1 1 0 0 1
-footprint=QSOP16
-T 300 4000 5 10 0 0 0 0 1
-description=low noise phase detector, model HMC439S16G by Hittite
-T 300 3200 5 10 0 0 0 0 1
-numslots=0
-T 300 3800 5 10 0 0 0 0 1
-documentation=http://www.hittite.com/product_info/product_specs/dividersdetectors/hmc439qs16g.pdf
-T 300 3600 5 10 0 0 0 0 1
-license=GPL , see http://www.gnu.org/licenses/gpl.txt
-T 300 3400 5 10 0 0 0 0 1
-author=Kai-Martin Knaak
 P 0 400 300 400 1 0 0
 {
 T 200 450 5 8 1 1 0 6 1
@@ -192,3 +193,4 @@ pinlabel=GND
 T 1650 2500 5 8 0 1 0 8 1
 pintype=pas
 }
+B 300 200 1400 2600 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
