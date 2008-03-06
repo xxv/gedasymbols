@@ -24,9 +24,9 @@ T 1000 1100 9 16 1 0 0 4 1
 P 1700 800 2000 800 1 0 1
 {
 T 1800 900 5 10 0 1 0 0 1
-pinnumber=1
+pinnumber=3
 T 1800 900 5 10 1 1 0 0 1
-pinseq=1
+pinseq=3
 T 1600 800 9 10 1 1 0 7 1
 pinlabel=Vout
 T 1800 600 5 10 0 1 0 0 1
@@ -46,9 +46,9 @@ pintype=in
 P 1000 0 1000 300 1 0 0
 {
 T 900 100 5 10 1 1 0 0 1
-pinnumber=3
+pinnumber=1
 T 900 100 5 10 0 1 0 0 1
-pinseq=3
+pinseq=1
 T 1000 400 9 10 1 1 0 3 1
 pinlabel=Adjust
 T 1100 100 5 10 0 1 0 0 1

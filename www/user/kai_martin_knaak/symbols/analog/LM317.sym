@@ -4,7 +4,7 @@ device=LM317
 T 300 3200 5 8 0 0 0 0 1
 description=variable negative voltage reference
 T 300 3000 5 8 0 0 0 0 1
-documentation=http://www.ti.com/lit/gpn/lm317
+documentation=http://focus.ti.com/lit/ds/symlink/lm317.pdf
 T 300 2800 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
 T 300 2600 5 8 0 0 0 0 1
@@ -35,9 +35,9 @@ pintype=out
 P 0 800 300 800 1 0 0
 {
 T 200 900 5 10 1 1 0 6 1
-pinnumber=1
+pinnumber=3
 T 200 900 5 10 0 1 0 6 1
-pinseq=1
+pinseq=3
 T 400 800 9 10 1 1 0 1 1
 pinlabel=Vin
 T 100 600 5 10 0 1 0 0 1
@@ -46,9 +46,9 @@ pintype=in
 P 1000 0 1000 300 1 0 0
 {
 T 900 100 5 10 1 1 0 0 1
-pinnumber=3
+pinnumber=1
 T 900 100 5 10 0 1 0 0 1
-pinseq=3
+pinseq=1
 T 1000 400 9 10 1 1 0 3 1
 pinlabel=Adjust
 T 1100 100 5 10 0 1 0 0 1

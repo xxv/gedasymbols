@@ -30,9 +30,9 @@ T 1430 650 5 8 1 1 0 0 1
 pinnumber=3
 T 1430 650 5 8 0 1 0 0 1
 pinseq=3
-T 1300 600 5 8 0 1 0 6 1
+T 1300 600 5 8 1 1 0 6 1
 pinlabel=OUT
-T 1500 500 5 10 1 1 0 5 1
+T 1500 500 5 10 0 1 0 5 1
 pintype=out
 }
 T 300 1400 8 10 1 1 0 0 1
@@ -44,7 +44,7 @@ description=voltage constant, 5V, 1A
 T 300 1000 8 8 1 1 0 0 1
 footprint=TO220
 T 300 2500 5 8 0 0 0 0 1
-documentation=http://www.analog.com/UploadedFiles/Data_Sheets/AD7804_7805_7808_7809.pdf
+documentation=http://www.datasheetcatalog.com/datasheets_pdf/7/8/0/5/7805.shtml
 T 300 1900 5 8 0 0 0 0 1
 dist-license=GPL , see http://www.gnu.org/licenses/gpl.txt
 T 300 2300 5 8 0 0 0 0 1
