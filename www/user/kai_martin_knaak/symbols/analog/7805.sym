@@ -33,7 +33,7 @@ pinseq=3
 T 1300 600 5 8 1 1 0 6 1
 pinlabel=OUT
 T 1500 500 5 10 0 1 0 5 1
-pintype=out
+pintype=pwr
 }
 T 300 1400 8 10 1 1 0 0 1
 refdes=U?
