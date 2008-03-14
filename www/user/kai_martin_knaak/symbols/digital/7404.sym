@@ -2,6 +2,18 @@ v 20070216 1
 L 300 1000 800 700 3 0 0 0 -1 -1
 T 300 200 8 10 1 1 0 0 1
 device=7404
+T 300 1100 8 10 1 1 0 0 1
+refdes=U?
+T 300 2800 5 8 0 0 0 0 1
+pins=14
+T 300 3000 5 8 0 0 0 0 1
+comment=Use 74_pwr.sym for supplies
+T 300 0 8 8 1 1 0 0 1
+footprint=DIP14
+T 300 3200 5 8 0 0 0 0 1
+description=6 NOT gates
+T 300 3400 5 8 0 0 0 0 1
+documentation=http://www-s.ti.com/sc/ds/sn74hc04.pdf
 T 900 200 8 10 1 0 0 0 1
 slot=1
 T 300 1400 5 8 0 0 0 0 1
@@ -44,15 +56,3 @@ pinlabel=Y
 T 750 700 5 8 0 1 0 8 1
 pintype=out
 }
-T 300 1100 8 10 1 1 0 0 1
-refdes=U?
-T 300 2800 5 8 0 0 0 0 1
-pins=14
-T 300 3000 5 8 0 0 0 0 1
-comment=Use 74_pwr.sch for supplies
-T 300 0 8 8 1 1 0 0 1
-footprint=DIP14
-T 300 3200 5 8 0 0 0 0 1
-description=6 NOT gates
-T 300 3400 5 8 0 0 0 0 1
-documentation=http://www-s.ti.com/sc/ds/sn74hc04.pdf
