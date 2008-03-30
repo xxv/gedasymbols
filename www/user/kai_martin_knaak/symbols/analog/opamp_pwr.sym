@@ -24,7 +24,7 @@ pintype=pwr
 T 300 200 5 8 1 1 0 4 1
 pinlabel=-Ub
 }
-T 400 900 8 10 1 1 0 0 1
+T 700 600 8 10 1 1 0 0 1
 refdes=U?
 T 90 2700 5 8 0 0 0 0 1
 device=opamp_pwr
@@ -40,3 +40,7 @@ T 90 1700 5 8 0 0 0 0 1
 use-license=free, no restrictions
 T 90 1500 5 8 0 0 0 0 1
 numslots=0
+T 700 400 8 10 1 1 0 0 1
+value=XXX
+T 700 200 8 8 1 1 0 0 1
+footprint=XXX
