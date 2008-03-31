@@ -2,11 +2,11 @@ v 20080127 1
 T 200 3500 5 8 0 0 0 0 1
 device=comparator_quad
 T 200 3300 5 8 0 0 0 0 1
-description=generic comparator, LM339, SO14
+description=generic comparator, TLV3494, SO14
 T 200 3100 5 8 0 0 0 0 1
-comment=Pin-out like LM339. Use comparator_quad_pwr.sym to connect power pins.
+comment=Pin-out like TLV3491. Use comparator_quad_pwr.sym to connect power pins.
 T 200 2900 5 8 0 0 0 0 1
-documentation=http://www.national.com/ds/LM/LM139.pdf
+documentation=http://focus.ti.com/lit/ds/symlink/tlv3494.pdf
 T 200 2700 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
 T 200 2500 5 8 0 0 0 0 1
@@ -16,19 +16,19 @@ use-license=free, no restrictions
 T 200 2100 5 8 0 0 0 0 1
 numslots=4
 T 200 1900 5 8 0 0 0 0 1
-slotdef=1:2,4,5
+slotdef=1:1,2,3
 T 200 1700 5 8 0 0 0 0 1
-slotdef=2:1,6,7
+slotdef=2:7,6,5
 T 200 1500 5 8 0 0 0 0 1
-slotdef=3:14,8,9
+slotdef=3:8,9,10
 T 200 1300 5 8 0 0 0 0 1
-slotdef=4:13,10,11
-T 1150 600 8 8 1 0 0 0 1
+slotdef=4:14,13,12
+T 1250 600 8 8 1 0 0 0 1
 slot=1
 T 775 1025 8 10 1 1 0 0 1
 refdes=U?
 T 800 800 8 10 1 1 0 0 1
-value=LM339
+value=TLV3494
 T 800 600 8 8 1 1 0 0 1
 footprint=SO14
 L 300 800 300 0 3 0 0 0 -1 -1
