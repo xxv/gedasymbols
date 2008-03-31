@@ -27,7 +27,7 @@ pinlabel=+Ub
 }
 P 300 0 300 100 1 0 0
 {
-T 200 0 5 8 0 1 0 6 1
+T 200 -50 5 8 0 1 0 6 1
 pinseq=4
 T 200 0 5 8 1 1 0 7 1
 pinnumber=4
@@ -36,9 +36,5 @@ pintype=pwr
 T 300 200 5 8 1 1 0 4 1
 pinlabel=-Ub
 }
-T 700 600 8 10 1 1 0 0 1
+T 400 900 8 10 1 1 0 1 1
 refdes=U?
-T 700 400 8 10 1 1 0 0 1
-value=XXX
-T 700 200 8 8 1 1 0 0 1
-footprint=XXX
