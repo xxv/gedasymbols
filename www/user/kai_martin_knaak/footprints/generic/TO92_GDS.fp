@@ -1,22 +1,29 @@
-Element(0x0 "semi-BJT-TO-92-EBC" "" "" -101 -102 0 100 0x0)
+
+Element["" "" "" "" 50000 50000 -8500 -15500 0 100 ""]
 (
-   Pin(-55 0 45 29 "G" "G" 0x01)
-   Pin(0 0 45 29 "D" "D" 0x01)
-   Pin(55 0 45 29 "S" "S" 0x01)
-   ElementLine(76 52 -76 52 10)
-   ElementLine(-45 72 -65 72 10)
-   ElementLine(-65 72 -65 112 10)
-   ElementLine(-65 112 -45 112 10)
-   ElementLine(-55 92 -65 92 10)
-   ElementLine(45 83 45 101 10)
-   ElementLine(0 72 -10 72 10)
-   ElementLine(-10 72 -10 112 10)
-   ElementLine(-10 112 0 112 10)
-   ElementLine(0 92 -10 92 10)
-   ElementArc(0 0 92 92 146 248 10)
-   ElementArc(55 82 10 10 230 130 10)
-   ElementArc(55 102 10 10 0 130 10)
-   ElementArc(0 102 10 10 90 180 10)
-   ElementArc(0 82 10 10 90 180 10)
-   Mark(0 0)
-)
+	Pin[-5500 0 4500 3000 5100 2900 "G" "G" ""]
+	Pin[0 0 4500 3000 5100 2900 "D" "D" ""]
+	Pin[5500 0 4500 3000 5100 2900 "S" "S" ""]
+	ElementLine [7600 5200 -7600 5200 1000]
+	ElementLine [-6000 7000 -5500 7000 1000]
+	ElementLine [-5500 10000 -4000 10000 1000]
+	ElementLine [500 7000 -1000 7000 1000]
+	ElementLine [-1000 7000 -1000 11500 1000]
+	ElementLine [-7500 10000 -7500 8500 1000]
+	ElementLine [2000 10000 2000 8500 1000]
+	ElementLine [-1000 11500 500 11500 1000]
+	ElementArc [0 0 9200 9200 146 248 1000]
+	ElementArc [-6000 8500 1500 1500 270 90 1000]
+	ElementArc [-5500 8000 1000 1000 180 90 1000]
+	ElementArc [5500 8000 1000 1000 180 90 1000]
+	ElementArc [5500 8000 1000 1000 270 90 1000]
+	ElementArc [5500 8000 1000 1000 0 90 1000]
+	ElementArc [500 8500 1500 1500 180 90 1000]
+	ElementArc [500 10000 1500 1500 90 90 1000]
+	ElementArc [-6001 10001 1499 1499 0 90 1000]
+	ElementArc [-6000 10000 1500 1500 90 90 1000]
+	ElementArc [5500 10500 1500 1500 180 90 1000]
+	ElementArc [5499 10499 1501 1501 90 90 1000]
+	ElementArc [5498 10502 1498 1498 0 90 1000]
+
+	)
