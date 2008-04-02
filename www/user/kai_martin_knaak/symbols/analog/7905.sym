@@ -51,3 +51,4 @@ T 300 2300 5 8 0 0 0 0 1
 comment=alternative footprint: D-PAK
 T 300 1700 5 8 0 0 0 0 1
 use-license=freee, no restrictions
+L 700 700 900 700 3 0 0 0 -1 -1
