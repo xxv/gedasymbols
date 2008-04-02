@@ -2,28 +2,25 @@ v 20080127 1
 T 125 2800 5 8 0 0 0 0 1
 device=comparator
 T 125 2600 5 8 0 0 0 0 1
-description=generic comparator, SO8
+description=generic comparator
 T 100 2400 5 8 0 0 0 0 1
 comment=use symbol comparator_pwr.sym to connect power pins.
 T 100 2200 5 8 0 0 0 0 1
 documentation=http://www.national.com/ds/LM/LM111.pdf
+T 100 2000 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 100 1800 5 8 0 0 0 0 1
+dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
+T 100 1600 5 8 0 0 0 0 1
+use-license=free, no restrictions
 T 100 1400 5 8 0 0 0 0 1
 numslots=0
 T 900 1000 8 10 1 1 0 0 1
 refdes=U?
-T 100 2000 5 8 0 0 0 0 1
-author=Kai-Martin Knaak kmk@lilalaser.de
-T 100 1800 5 8 0 0 0 0 1
-dist-license=GPL3, see http://www.gnu.org/licenses/gpl-3.0.txt
-T 100 1600 5 8 0 0 0 0 1
-use-license=free, no restrictions
 T 900 800 8 10 1 1 0 0 1
 value=LM311
 T 900 600 8 8 1 1 0 0 1
 footprint=SO8
-L 100 800 100 0 3 0 0 0 -1 -1
-L 100 800 900 400 3 0 0 0 -1 -1
-L 100 0 900 400 3 0 0 0 -1 -1
 P 0 200 100 200 1 0 0
 {
 T 0 250 5 8 1 1 0 0 1
@@ -90,3 +87,6 @@ pinlabel=balance
 T 550 650 5 8 0 1 0 0 1
 pintype=pas
 }
+L 100 800 100 0 3 0 0 0 -1 -1
+L 100 800 900 400 3 0 0 0 -1 -1
+L 100 0 900 400 3 0 0 0 -1 -1

@@ -1,103 +1,111 @@
 v 20080127 1
-P 0 1500 200 1500 1 0 0
-{
-T 200 1550 5 8 1 1 0 6 1
-pinnumber=1
-T 200 1450 5 8 0 1 0 8 1
-pinseq=1
-T 350 1500 9 8 1 1 0 0 1
-pinlabel=A
-T 350 1500 5 8 0 1 0 2 1
-pintype=in
-}
-P 2000 1500 1700 1500 1 0 0
-{
-T 1800 1550 5 8 1 1 0 0 1
-pinnumber=13
-T 1800 1450 5 8 0 1 0 2 1
-pinseq=2
-T 1650 1500 9 8 1 1 0 6 1
-pinlabel=Q
-T 1650 1500 5 8 0 1 0 8 1
-pintype=out
-}
-P 0 1100 300 1100 1 0 0
-{
-T 200 1150 5 8 1 1 0 6 1
-pinnumber=2
-T 200 1050 5 8 0 1 0 8 1
-pinseq=3
-T 350 1100 9 8 1 1 0 0 1
-pinlabel=B
-T 350 1100 5 8 0 1 0 2 1
-pintype=in
-}
-P 2000 700 1700 700 1 0 0
-{
-T 1800 750 5 8 1 1 0 0 1
-pinnumber=14
-T 1800 650 5 8 0 1 0 2 1
-pinseq=6
-T 1650 700 9 8 1 1 0 6 1
-pinlabel=Ce
-T 1650 700 5 8 0 1 0 8 1
-pintype=pas
-}
-P 0 700 200 700 1 0 0
-{
-T 200 750 5 8 1 1 0 6 1
-pinnumber=3
-T 200 650 5 8 0 1 0 8 1
-pinseq=5
-T 350 700 9 8 1 1 0 0 1
-pinlabel=CLR
-T 350 700 5 8 0 1 0 2 1
-pintype=in
-}
-P 2000 300 1700 300 1 0 0
-{
-T 1800 350 5 8 1 1 0 0 1
-pinnumber=15
-T 1800 250 5 8 0 1 0 2 1
-pinseq=7
-T 1650 300 9 8 1 1 0 6 1
-pinlabel=Re/Ce
-T 1650 300 5 8 0 1 0 8 1
-pintype=pas
-}
-B 300 200 1400 1600 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 300 1840 8 10 1 1 0 0 1
+T 300 4400 5 8 0 0 0 0 1
 device=74123
-T 300 40 8 10 1 1 0 0 1
-footprint=SO16
-T 300 2640 5 8 0 0 0 0 1
+T 300 4200 5 8 0 0 0 0 1
+description=2 retriggerable monoflops with clear
+T 300 4000 5 8 0 0 0 0 1
+documentation=http://www.semiconductors.philips.com/acrobat/datasheets/74HC_HCT123_CNV_2.pdf
+T 300 3800 5 8 0 0 0 0 1
+comment=Use 74_pwr16.sym for supplies
+T 300 3600 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 300 3400 5 8 0 0 0 0 1
+dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
+T 300 3200 5 8 0 0 0 0 1
+use-license=free, no restrictions
+T 300 3000 5 8 0 0 0 0 1
 numslots=2
-T 300 2440 5 8 0 0 0 0 1
+T 300 2800 5 8 0 0 0 0 1
 slotdef=1:1,13,2,4,3,14,15
-T 300 2240 5 8 0 0 0 0 1
+T 300 2600 5 8 0 0 0 0 1
 slotdef=2:9,5,10,12,11,6,7
-T 1700 1900 8 10 1 1 0 6 1
+T 200 2000 8 10 1 1 0 0 1
 refdes=U?
-P 2000 1100 1700 1100 1 0 0
+T 200 1800 8 10 1 1 0 0 1
+value=74HC123
+T 200 1600 8 8 1 1 0 0 1
+footprint=SO16
+T 700 1600 8 10 1 0 0 0 1
+slot=1
+P 100 1400 150 1400 1 0 0
 {
-T 1800 1150 5 8 1 1 0 0 1
-pinnumber=4
-T 1800 1050 5 8 0 1 0 2 1
-pinseq=4
-T 1650 1100 9 8 1 1 0 6 1
+T 150 1450 5 8 1 1 0 6 1
+pinnumber=1
+T 150 1350 5 8 0 1 0 8 1
+pinseq=1
+T 300 1400 9 8 1 1 0 1 1
+pinlabel=A
+T 250 1350 5 8 0 1 0 2 1
+pintype=in
+}
+P 1100 1400 1000 1400 1 0 0
+{
+T 1050 1450 5 8 1 1 0 0 1
+pinnumber=13
+T 1050 1350 5 8 0 1 0 2 1
+pinseq=2
+T 950 1400 9 8 1 1 0 7 1
 pinlabel=Q
-T 1650 1100 5 8 0 1 0 8 1
+T 950 1350 5 8 0 1 0 8 1
 pintype=out
 }
-T 300 2850 5 8 0 0 0 0 1
-description=2 retriggerable monoflops with clear
-L 350 825 625 825 3 0 0 0 -1 -1
-L 1550 1225 1650 1225 3 0 0 0 -1 -1
-V 250 1500 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 450 1640 8 10 1 0 0 0 1
-slot=1
-V 250 700 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 300 3250 5 8 0 0 0 0 1
-documentation=http://www.semiconductors.philips.com/acrobat/datasheets/74HC_HCT123_CNV_2.pdf
-T 300 3050 5 8 0 0 0 0 1
-comment=Use 74_pwr16.sym for supplies
+P 100 1000 200 1000 1 0 0
+{
+T 150 1050 5 8 1 1 0 6 1
+pinnumber=2
+T 150 950 5 8 0 1 0 8 1
+pinseq=3
+T 300 1000 9 8 1 1 0 1 1
+pinlabel=B
+T 250 950 5 8 0 1 0 2 1
+pintype=in
+}
+P 1100 600 1000 600 1 0 0
+{
+T 1050 650 5 8 1 1 0 0 1
+pinnumber=14
+T 1050 550 5 8 0 1 0 2 1
+pinseq=6
+T 950 600 9 8 1 1 0 7 1
+pinlabel=Ce
+T 950 550 5 8 0 1 0 8 1
+pintype=pas
+}
+P 100 600 150 600 1 0 0
+{
+T 150 650 5 8 1 1 0 6 1
+pinnumber=3
+T 150 550 5 8 0 1 0 8 1
+pinseq=5
+T 300 600 9 8 1 1 0 1 1
+pinlabel=CLR
+T 250 550 5 8 0 1 0 2 1
+pintype=in
+}
+P 1100 200 1000 200 1 0 0
+{
+T 1050 250 5 8 1 1 0 0 1
+pinnumber=15
+T 1050 150 5 8 0 1 0 2 1
+pinseq=7
+T 950 200 9 8 1 1 0 7 1
+pinlabel=Re/Ce
+T 950 400 5 8 0 1 0 8 1
+pintype=pas
+}
+P 1100 1000 1000 1000 1 0 0
+{
+T 1050 1050 5 8 1 1 0 0 1
+pinnumber=4
+T 1050 950 5 8 0 1 0 2 1
+pinseq=4
+T 950 1000 9 8 1 1 0 7 1
+pinlabel=Q
+T 950 950 5 8 0 1 0 8 1
+pintype=out
+}
+L 300 675 575 675 3 0 0 0 -1 -1
+L 825 1075 925 1075 3 0 0 0 -1 -1
+V 200 1400 48 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+V 200 600 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+B 200 100 800 1450 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
