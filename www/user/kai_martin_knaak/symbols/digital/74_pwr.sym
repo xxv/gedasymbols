@@ -1,5 +1,16 @@
-v 20070216 1
-B 100 100 600 700 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+v 20080127 1
+T 190 2200 5 8 0 0 0 0 1
+device=74_pwr
+T 190 2000 5 8 0 0 0 0 1
+description=power pins for 74** parts, 14  pin
+T 190 1800 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 190 1600 5 8 0 0 0 0 1
+dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
+T 190 1400 5 8 0 0 0 0 1
+use-license=free, no restrictions
+T 500 900 8 10 1 1 0 1 1
+refdes=U?
 T 400 450 9 8 1 0 0 4 1
 74XX
 P 400 900 400 800 1 0 0
@@ -8,7 +19,7 @@ T 300 900 5 8 0 1 0 7 1
 pinseq=14
 T 300 900 5 8 1 1 0 7 1
 pinnumber=14
-T 300 1100 5 8 0 1 0 7 1
+T 400 1100 5 8 0 1 0 7 1
 pintype=pwr
 T 350 700 5 8 1 1 0 4 1
 pinlabel=Vcc
@@ -24,19 +35,4 @@ pintype=pwr
 T 425 200 5 8 1 1 0 4 1
 pinlabel=GND
 }
-T 500 900 8 10 1 1 0 1 1
-refdes=U?
-T 90 2500 5 8 0 0 0 0 1
-device=74_pwr
-T 90 2300 5 8 0 0 0 0 1
-description=power pins for 74** parts
-T 90 1700 5 8 0 0 0 0 1
-numslots=5
-T 90 2100 5 8 0 0 0 0 1
-author=Kai-Martin Knaak kmk@lilalaser.de
-T 90 1900 5 8 0 0 0 0 1
-license=GPL2
-T 90 1500 5 8 0 0 0 0 1
-slotdef=5:7,14
-T 90 1300 5 8 0 0 0 0 1
-slot=5
+B 100 100 600 700 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
