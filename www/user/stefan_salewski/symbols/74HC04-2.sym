@@ -156,23 +156,23 @@ pintype=out
 B 300 300 1400 2100 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 1700 2500 8 10 1 1 0 6 1
 refdes=U?
-T 300 2450 9 10 1 0 0 0 1
+T 300 2500 9 10 1 0 0 0 1
 74HC04
-T 300 2650 5 10 0 0 0 0 1
+T 300 2750 5 10 0 0 0 0 1
 device=74HC04
-T 300 2850 5 10 0 0 0 0 1
+T 300 2950 5 10 0 0 0 0 1
 footprint=SO14
-T 300 3050 5 10 0 0 0 0 1
+T 300 3150 5 10 0 0 0 0 1
 author=Stefan Salewski
-T 300 3250 5 10 0 0 0 0 1
+T 300 3350 5 10 0 0 0 0 1
 documentation=http://www.onsemi.com/PowerSolutions/product.do?id=74HC04DTR2G
-T 300 3450 5 10 0 0 0 0 1
+T 300 3550 5 10 0 0 0 0 1
 description=74HC04 Hex Inverter
-T 300 3650 5 10 0 0 0 0 1
+T 300 3750 5 10 0 0 0 0 1
 numslots=0
-T 300 3850 5 10 0 0 0 0 1
+T 300 3950 5 10 0 0 0 0 1
 dist-license=GPL
-T 300 4050 5 10 0 0 0 0 1
+T 300 4150 5 10 0 0 0 0 1
 use-license=unlimited
-T 300 4250 5 10 0 0 0 0 1
+T 300 4350 5 10 0 0 0 0 1
 comment=generated with Python script tragesym
