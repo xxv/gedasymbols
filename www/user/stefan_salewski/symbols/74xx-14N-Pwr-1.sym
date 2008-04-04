@@ -1,0 +1,40 @@
+v 20080127 1
+P 400 0 400 200 1 0 0
+{
+T 450 150 5 8 1 1 0 2 1
+pinnumber=7
+T 450 -50 5 8 0 1 0 2 1
+pinseq=7
+T 400 275 9 8 1 1 0 4 1
+pinlabel=GND
+T 450 -250 5 8 0 1 0 3 1
+pintype=pwr
+}
+P 400 900 400 700 1 0 0
+{
+T 450 750 5 8 1 1 0 0 1
+pinnumber=14
+T 450 1050 5 8 0 1 0 2 1
+pinseq=14
+T 400 625 9 8 1 1 0 4 1
+pinlabel=Vcc
+T 450 1150 5 8 0 1 0 5 1
+pintype=pwr
+}
+T 650 750 8 10 1 1 0 0 1
+refdes=U?
+T 400 475 9 10 1 0 0 4 1
+74xx 14
+T 100 2200 5 10 0 0 0 0 1
+device=74xx_14
+T 100 1200 5 10 0 0 0 0 1
+author=Stefan Salewski
+T 100 1400 5 10 0 0 0 0 1
+description=Power Supply for 74xx Logic Gates, 14 Pin
+T 100 1600 5 10 0 0 0 0 1
+dist-license=GPL
+T 100 1800 5 10 0 0 0 0 1
+use-license=unlimited
+B 0 200 800 500 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 100 2000 5 10 0 0 0 0 1
+footprint=SO14

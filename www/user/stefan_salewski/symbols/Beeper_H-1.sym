@@ -1,0 +1,42 @@
+v 20080127 1
+P 0 300 200 300 1 0 0
+{
+T 150 350 5 8 1 1 0 6 1
+pinnumber=1
+T 150 250 5 8 0 1 0 8 1
+pinseq=1
+T 300 300 9 10 1 1 0 4 1
+pinlabel=+
+T -100 250 5 8 0 1 0 2 1
+pintype=pwr
+}
+P 1000 300 800 300 1 0 0
+{
+T 850 350 5 8 1 1 0 0 1
+pinnumber=2
+T 850 250 5 8 0 1 0 2 1
+pinseq=2
+T 700 300 9 10 1 1 0 4 1
+pinlabel=-
+T 1200 250 5 8 0 1 0 8 1
+pintype=pwr
+}
+T 750 550 8 10 1 1 0 0 1
+refdes=U?
+T 500 300 9 10 1 0 90 4 1
+Beep
+T 200 2200 5 10 0 0 0 0 1
+device=Beeper
+T 200 1000 5 10 0 0 0 0 1
+footprint=RCY300P
+T 200 1200 5 10 0 0 0 0 1
+author=Stefan Salewski
+T 200 1400 5 10 0 0 0 0 1
+description=(Warning) Sound Generator
+T 200 1600 5 10 0 0 0 0 1
+numslots=0
+T 200 1800 5 10 0 0 0 0 1
+dist-license=GPL
+T 200 2000 5 10 0 0 0 0 1
+use-license=unlimited
+V 500 300 300 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
