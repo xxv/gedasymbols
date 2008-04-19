@@ -1,8 +1,8 @@
 
 Element["" "" "" "" 59055 118110 -7874 7874 0 100 ""]
 (
-	Pad[7874 -1968 7874 1969 8480 2000 10480 "anode" "" "square,edge2"]
-	Pad[-7874 -1968 -7874 1969 8480 2000 10480 "cathode" "2" "square,edge2"]
+	Pad[-7874 -1968 -7874 1969 8480 2000 10480 "cathode" "1" "square,edge2"]
+	Pad[7874 -1968 7874 1969 8480 2000 10480 "anode" "2" "square,edge2"]
 	ElementLine [0 -984 0 985 800]
 	ElementLine [0 -984 984 -984 800]
 	ElementLine [0 985 984 985 800]

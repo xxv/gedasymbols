@@ -1,5 +1,5 @@
 # release: pcb 1.99x
-# date:    Mon Apr  7 04:11:41 2008
+# date:    Sat Apr 19 03:20:04 2008
 # user:    kmk (Kai-Martin,,,)
 # host:    kwak.localdomain
 
@@ -860,8 +860,8 @@ Element["" "" "" "" 59055 157480 2953 -6889 3 100 ""]
 
 Element["" "" "" "" 59055 118110 -7874 7874 0 100 ""]
 (
-	Pad[7874 -1968 7874 1969 8480 2000 10480 "anode" "" "square,edge2"]
-	Pad[-7874 -1968 -7874 1969 8480 2000 10480 "cathode" "2" "square,edge2"]
+	Pad[7874 -1968 7874 1969 8480 2000 10480 "anode" "2" "square,edge2"]
+	Pad[-7874 -1968 -7874 1969 8480 2000 10480 "cathode" "1" "square,edge2"]
 	ElementLine [-13779 -5905 -11811 -7874 800]
 	ElementLine [-13779 7874 -13779 -5905 800]
 	ElementLine [13780 7874 -13779 7874 800]
