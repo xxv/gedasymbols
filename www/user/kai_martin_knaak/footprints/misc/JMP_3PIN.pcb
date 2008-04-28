@@ -796,9 +796,9 @@ Symbol('~' 12)
 
 Element["selected" "" "" "" 30000 30000 0 0 0 100 "selected"]
 (
-	Pin[0 0 5200 2000 7200 3500 "1" "1" "selected,square,edge2"]
-	Pin[10000 0 5200 2000 7200 3500 "2" "2" "selected,edge2"]
-	Pin[20000 0 5200 2000 7200 3500 "3" "3" "selected,edge2"]
+	Pin[0 0 5200 2000 6000 3500 "1" "1" "selected,square,edge2"]
+	Pin[10000 0 5200 2000 6000 3500 "2" "2" "selected,edge2"]
+	Pin[20000 0 5200 2000 6000 3500 "3" "3" "selected,edge2"]
 	ElementLine [15750 0 14250 0 1300]
 	ElementLine [5750 0 4250 0 1300]
 
