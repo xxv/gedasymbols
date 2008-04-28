@@ -1,0 +1,13 @@
+system=mil
+function=through_hole_connector
+TERMBLOCK200`Terminal blocks with 200mil spacing`2`V`1`d`reverse`56`100`200`0`400`550`300`````
+TERMBLOCK200`Terminal blocks with 200mil spacing`3`V`1`d`reverse`56`100`200`0`600`550`300`````
+TERMBLOCK200`Terminal blocks with 200mil spacing`4`V`1`d`reverse`56`100`200`0`800`550`300`````
+TERMBLOCK200`Terminal blocks with 200mil spacing`5`V`1`d`reverse`56`100`200`0`1000`550`300`````
+TERMBLOCK200`Terminal blocks with 200mil spacing`6`V`1`d`reverse`56`100`200`0`1200`550`300`````
+TERMBLOCK200`Terminal blocks with 200mil spacing`7`V`1`d`reverse`56`100`200`0`1400`550`300`````
+TERMBLOCK200`Terminal blocks with 200mil spacing`8`V`1`d`reverse`56`100`200`0`1600`550`300`````
+TERMBLOCK200`Terminal blocks with 200mil spacing`9`V`1`d`reverse`56`100`200`0`1800`550`300`````
+TERMBLOCK200`Terminal blocks with 200mil spacing`10`V`1`d`reverse`56`100`200`0`2000`550`300`````
+TERMBLOCK200`Terminal blocks with 200mil spacing`11`V`1`d`reverse`56`100`200`0`2200`550`300`````
+TERMBLOCK200`Terminal blocks with 200mil spacing`12`V`1`d`reverse`56`100`200`0`2400`550`300`````

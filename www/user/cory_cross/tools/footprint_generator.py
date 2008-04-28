@@ -249,7 +249,7 @@ class FpGenerator:
         def draw_pin( x_coord, y_coord, number, hole=False ):
             if( reversed_numbering == '' and number.__class__ == int):
                 number = number_of_pins - number + 1
-            self.element += ph + ' '.join([str(i) for i in (x_coord,y_coord, pad_diameter, 1200, pad_diameter+1000, hole_diameter)]) + ' "" "'+str(number)+'" '
+            self.element += ph + ' '.join([str(i) for i in (x_coord,y_coord, pad_diameter, 2400, pad_diameter+1000, hole_diameter)]) + ' "" "'+str(number)+'" '
             a = []
             if(number==1 or number=='1'):
                 a.append('square')
