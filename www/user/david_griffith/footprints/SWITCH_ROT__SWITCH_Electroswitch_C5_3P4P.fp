@@ -19,4 +19,10 @@ Element[0x0 "TH" "" "" 0 0 0 0 0 100 0x0]
    ElementArc[0 0 53149 53149 0 360 2000]
    ElementArc[0 0 3937 3937 0 360 10000]
    ElementArc[70866 0 3937 3937 0 360 10000]
+
+   Attribute("author" "David Griffith")
+   Attribute("copyright" "2008 David Griffith")
+   Attribute("use-license" "Unlimited")
+   Attribute("dist-license" "GPL")
+   Attribute("description" "Electroswitch C5 / C6 series 3-pole rotary switch")
 )
