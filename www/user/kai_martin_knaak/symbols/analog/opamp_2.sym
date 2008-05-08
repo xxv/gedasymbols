@@ -1,0 +1,59 @@
+v 20080127 1
+T 225 3000 5 8 0 0 0 0 1
+device=opamp
+T 225 2800 5 8 0 0 0 0 1
+description=generic operational amplifier, SO8
+T 200 2600 5 8 0 0 0 0 1
+comment=Use symbol opamp_pwr.sym to connect power pins.
+T 200 2400 5 8 0 0 0 0 1
+documentation=http://www.ti.com/lit/gpn/ne5534
+T 675 1000 8 10 1 1 0 0 1
+refdes=U?
+T 200 2200 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 200 2000 5 8 0 0 0 0 1
+dist-license=GPL 3, http://www.gnu.org/licenses/gpl-3.0.txt
+T 700 800 8 10 1 1 0 0 1
+value=NE5534
+T 700 600 8 8 1 1 0 0 1
+footprint=SO8
+L 200 800 200 0 3 0 0 0 -1 -1
+L 200 800 1000 400 3 0 0 0 -1 -1
+L 200 0 1000 400 3 0 0 0 -1 -1
+P 100 200 200 200 1 0 0
+{
+T 50 250 5 8 0 1 0 0 1
+pinnumber=2
+T 50 250 5 8 0 1 0 0 1
+pinseq=2
+T 250 100 9 16 1 1 0 0 1
+pinlabel=-
+T 50 100 5 8 0 1 0 0 1
+pintype=in
+}
+P 100 600 200 600 1 0 0
+{
+T 100 650 5 8 0 1 0 0 1
+pinnumber=3
+T 100 650 5 8 0 1 0 0 1
+pinseq=3
+T 250 500 9 16 1 1 0 0 1
+pinlabel=+
+T 50 500 5 8 0 1 0 0 1
+pintype=in
+}
+P 1000 400 1100 400 1 0 1
+{
+T 1025 450 5 8 0 1 0 0 1
+pinnumber=6
+T 1025 450 5 8 0 1 0 0 1
+pinseq=6
+T 1000 250 5 8 0 1 0 0 1
+pintype=out
+T 1125 450 9 8 0 1 0 0 1
+pinlabel=Vout
+}
+T 200 1800 5 8 0 0 0 0 1
+use-license=free, no restrictions
+T 200 1600 5 8 0 0 0 0 1
+numslots=0

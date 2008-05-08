@@ -8,7 +8,7 @@ comment=Use symbol opamp_dual_pwr.sym to connect power pins.
 T 200 2325 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
 T 200 2500 5 8 0 0 0 0 1
-documentation=none
+documentation=http://www.national.com/ds.cgi/TL/TL082.pdf
 T 200 1700 5 8 0 0 0 0 1
 numslots=2
 T 200 1300 5 8 0 0 0 0 1
