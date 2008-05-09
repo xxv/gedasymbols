@@ -1,4 +1,4 @@
-v 20070818 1
+v 20080127 1
 A 1800 2200 200 180 180 3 0 0 0 -1 -1
 A 1400 2200 200 180 180 3 0 0 0 -1 -1
 A 1000 2200 200 180 180 3 0 0 0 -1 -1
@@ -72,7 +72,7 @@ device=RELAY-AXICON_FP2
 T 600 4000 5 8 0 0 0 0 1
 description=relay AXICOM FP2, 2x Um
 T 600 3800 5 8 0 0 0 0 1
-documentation=http://relays.tycoelectronics.com/datasheets/fp2.pdf 
+documentation=http://catalog.tycoelectronics.com/TE/bin/TE.Connect?C=1&M=BYPN&TCPN=1462033-5&RQPN=D3002
 T 600 3600 5 8 0 0 0 0 1
 author=Kai-Martin Knaak, kmk@lilalaser.de
 T 600 3200 5 8 0 0 0 0 1
