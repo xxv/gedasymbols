@@ -1,6 +1,6 @@
 v 20080127 1
 T 100 3700 5 8 0 0 0 0 1
-description=connector by JAE, IL-G series, 5 pins
+description=connector by JAE, IL-G series, 5 pins, model IL-G-3S-S3C2-SA
 T 100 3500 5 8 0 0 0 0 1
 documentation=http://jae-connector.com/en/general_en.cfm?series_code=IL%2DG
 T 100 3300 5 8 0 0 0 0 1

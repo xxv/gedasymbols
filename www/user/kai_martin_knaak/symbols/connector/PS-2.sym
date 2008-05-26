@@ -44,6 +44,6 @@ dist-license=GPL 3, see http://www.gnu.org/licenses/gpl.txt
 T 100 2000 5 8 0 0 0 0 1
 use-license=free, no restrictions
 T 100 2800 5 8 0 0 0 0 1
-description=connector by JAE, IL-G series, 2 pins
+description=connector by JAE, IL-G series, 2 pins, model IL-G-2S-S3C2-SA
 L 450 300 450 0 3 0 0 0 -1 -1
 L 450 500 450 800 3 0 0 0 -1 -1
