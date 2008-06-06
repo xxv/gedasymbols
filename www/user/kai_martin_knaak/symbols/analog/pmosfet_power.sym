@@ -14,7 +14,7 @@ use-license=free, no restrictions
 T 300 1200 5 8 0 0 0 0 1
 numslots=0
 T 600 200 8 8 1 1 0 0 1
-footprint=TO220-GDS
+footprint=TO220_GDS
 L 250 600 500 600 3 0 0 0 -1 -1
 L 250 200 500 200 3 0 0 0 -1 -1
 L 400 400 320 440 3 0 0 0 -1 -1

@@ -14,7 +14,7 @@ use-license=free, no restrictions
 T 100 1300 5 10 0 0 0 0 1
 numslots=0
 T 900 200 8 8 1 1 0 0 1
-footprint=SOT23-BCE
+footprint=SOT23_BCE
 T 900 400 8 10 1 1 0 0 1
 value=BC857C
 T 900 600 8 10 1 1 0 0 1

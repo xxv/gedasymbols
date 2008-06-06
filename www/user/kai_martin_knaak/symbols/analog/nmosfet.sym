@@ -18,7 +18,7 @@ refdes=Q?
 T 600 400 8 10 1 1 0 0 1
 value=BSS123
 T 600 200 8 8 1 1 0 0 1
-footprint=SOT23-GDS
+footprint=SOT23_GDS
 P 0 200 200 200 1 0 0
 {
 T 100 300 5 10 0 1 0 4 1
