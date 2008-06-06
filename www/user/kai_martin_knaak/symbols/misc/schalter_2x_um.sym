@@ -22,13 +22,13 @@ pinlabel=2A
 T 300 650 5 8 0 1 0 7 1
 pintype=pas
 }
-T 300 900 8 10 1 1 0 0 1
+T 400 1100 8 10 1 1 0 0 1
 refdes=S?
 V 200 400 20 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 V 400 300 20 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 300 700 8 10 1 1 0 0 1
+T 400 900 8 10 1 1 0 0 1
 value=APEM TL46WW
-T 300 500 8 8 1 1 0 0 1
+T 400 500 8 8 1 1 0 0 1
 footprint=APEM_TL46WW
 T 300 2500 5 8 0 0 0 0 1
 description=toggle switch, two pole
@@ -56,3 +56,5 @@ T 300 1500 5 8 0 0 0 0 1
 slotdef=1:1A,2A,3A
 T 300 1300 5 8 0 0 0 0 1
 slotdef=2:1B,2B,3B
+T 400 700 8 10 1 0 0 0 1
+slot=1
