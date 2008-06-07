@@ -1,0 +1,60 @@
+From: Ben Jackson <ben@ben.com>
+To: gEDA user mailing list <geda-user@moria.seul.org>
+Date: Thu, 5 Jun 2008 10:56:53 -0700
+Subject: Re: gEDA-user: Newbiw...with a question *shocker*
+
+On Thu, Jun 05, 2008 at 09:47:57AM -0400, Lombardi, Robert wrote:
+> 
+> The situation is thus:  I have 200 SMT LED's that i have to place in a
+> grid pattern.
+> 
+> Rather than placing these things one by one i was wondering if there
+> might be a way to automate the process using the Command Entry line?
+
+If you are comfortable editing the .pcb (which is a text file) that's
+what I'd do.
+
+To solve similar problems (but perhaps not of your magnitude) I wrote
+distalign, which can automate a lot of what you need to do.
+
+	http://www.gedasymbols.org/user/ben_jackson/
+
+You can bind these to keys or menus, but here's *one* way to do what you
+want:
+
+	(install the plugin, of course)
+
+	(set the grid to something appropriate, as everything will land on
+	the grid unless you explicitly request otherwise)
+
+	Move the upper right and upper left LEDs to their final locations.
+
+	Move the remainder of the top row of LEDs until they're somewhere
+	in between your hand-placed LEDs (exact coordinates don't matter,
+	you just need your hand-placed LEDs to be the leftmost and rightmost
+	of the top row).
+
+	Select all of the LEDs for the top row (including the ones you
+	placed) (there may be a pattern select available for this??)
+	:Align(Y) :Distribute(X)
+	That's short for :Align(Y,Marks,First) which means "align the
+	Y coordinates of the marks of the objects to the mark of the
+	first (leftmost) object" and :Distribute(X,Marks,First,Last)
+
+	Now place the lower left LED and ensure the others are somewhere
+	to the right of it, select ALL of the lower row LED and do
+	:Align(Y).
+
+	Select the upper right LED and the lower right LED and do
+	:Align(X)  (this will place the lower LED in its final location).
+
+	Ensure all the unplaced LEDs are roughly in the middle again and
+	select the entire bottom row.
+	:Align(Y) :Distribute(X)
+
+	at this point I think you get the idea...
+
+-- 
+Ben Jackson AD7GD
+<ben@ben.com>
+http://www.ben.com/
