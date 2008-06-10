@@ -1,21 +1,21 @@
-# release: pcb 20070912
-# date:    Mon Oct 22 12:14:05 2007
-# user:    kmk (Kai-Martin Knaak,,,)
+# release: pcb 1.99x
+# date:    Mon Jun  9 17:17:06 2008
+# user:    kmk (kai-martin,,,)
 # host:    bibo.iqo.uni-hannover.de
 
 # To read pcb files, the pcb version (or the cvs source date) must be >= the file version
 FileVersion[20070407]
 
-PCB["cap_RM5" 60000 60000]
+PCB["wire_poti.pcb" 400000 600000]
 
-Grid[10000.000000 0 0 0]
+Grid[5000.000000 0 0 1]
 Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
-DRC[699 400 800 599 1500 1000]
-Flags("nameonpcb,uniquename,clearnew,snappin")
-Groups("1,2,3,s:4,5,6,c:7:8")
-Styles["Signal,1000,3600,2000,1000:Power,2500,3937,2362,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
+DRC[600 400 800 599 1500 1000]
+Flags("rubberband,nameonpcb,uniquename,clearnew,snappin")
+Groups("1,s:2,c:3")
+Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
 Symbol(' ' 18)
 (
@@ -797,50 +797,62 @@ Symbol('~' 12)
 	SymbolLine(15 35 20 35 8)
 	SymbolLine(20 35 25 30 8)
 )
-Via[10000 20000 4700 2000 5902 3000 "1" ""]
-Via[30000 20000 4700 2000 5902 3000 "2" ""]
+Via[100000 80000 19000 2000 19600 14000 "3" ""]
+Via[100000 55000 19000 2000 19600 14000 "1" ""]
+Via[123000 33000 19000 2000 19600 14000 "2" ""]
 
-Element["" "" "" "" 10000 50000 0 0 0 100 ""]
+Element["selected" "" "Spectrol_534" "" 250000 100000 -45000 -85000 0 100 "selected"]
 (
-	Pin[0 0 4700 2000 5902 3000 "1" "1" "square,edge2"]
-	Pin[20000 0 4700 2000 5902 3000 "2" "2" "edge2"]
-	ElementLine [3500 0 8500 0 1000]
-	ElementLine [11500 0 16500 0 1000]
-	ElementLine [8500 5000 8500 -5000 1000]
-	ElementLine [11500 -5000 11500 5000 1000]
+	Pin[0 -20000 19000 2000 19600 14000 "3" "3" "selected"]
+	Pin[0 -45000 19000 2000 19600 14000 "1" "1" "selected"]
+	Pin[23000 -67000 19000 2000 19600 14000 "2" "2" "selected"]
+	ElementLine [30000 -76000 44000 -76000 2500]
+	ElementLine [-16500 6000 -16500 31000 2500]
+	ElementLine [-9500 80500 10000 80500 2500]
+	ElementLine [10000 80500 12500 78000 2500]
+	ElementLine [-12500 31000 -12500 77500 2500]
+	ElementLine [12500 78000 12500 31000 2500]
+	ElementLine [16500 31000 16500 6000 2500]
+	ElementLine [-16500 31000 16500 31000 2500]
+	ElementLine [-12500 77500 -9500 80500 2500]
+	ElementLine [20000 6000 20000 0 2500]
+	ElementLine [-20000 6000 20000 6000 2500]
+	ElementLine [-20000 0 -20000 6000 2500]
+	ElementLine [44000 -76000 44000 0 2500]
+	ElementLine [-44000 -76000 16000 -76000 2500]
+	ElementLine [-44000 0 -44000 -76000 2500]
+	ElementLine [-44000 0 44000 0 2500]
 
 	)
-Layer(1 "bottom")
+Layer(1 "top")
 (
 )
-Layer(2 "bott.-poly.")
+Layer(2 "bottom")
 (
 )
-Layer(3 "bott.-GND")
+Layer(3 "comment")
+(
+	Text[60000 190000 0 464 "SPECTROL_534.fp" ""]
+)
+Layer(4 "silk")
 (
 )
-Layer(4 "top")
+Layer(5 "silk")
 (
-)
-Layer(5 "top-polyg.")
-(
-)
-Layer(6 "top-GND")
-(
-)
-Layer(7 "unused")
-(
-)
-Layer(8 "lineout")
-(
-)
-Layer(9 "silk")
-(
-)
-Layer(10 "silk")
-(
-	Line[21500 15000 21500 25000 1000 0 ""]
-	Line[18500 25000 18500 15000 1000 0 ""]
-	Line[21500 20000 26500 20000 1000 0 ""]
-	Line[13500 20000 18500 20000 1000 0 ""]
+	Line[56000 100000 144000 100000 2500 0 ""]
+	Line[56000 100000 56000 24000 2500 0 ""]
+	Line[56000 24000 116000 24000 2500 0 ""]
+	Line[144000 24000 144000 100000 2500 0 ""]
+	Line[80000 100000 80000 106000 2500 0 ""]
+	Line[80000 106000 120000 106000 2500 0 ""]
+	Line[120000 106000 120000 100000 2500 0 ""]
+	Line[87500 177500 90500 180500 2500 0 ""]
+	Line[83500 131000 116500 131000 2500 0 ""]
+	Line[116500 131000 116500 106000 2500 0 ""]
+	Line[112500 178000 112500 131000 2500 0 ""]
+	Line[87500 131000 87500 177500 2500 0 ""]
+	Line[110000 180500 112500 178000 2500 0 ""]
+	Line[90500 180500 110000 180500 2500 0 ""]
+	Line[83500 106000 83500 131000 2500 0 ""]
+	Line[130000 24000 144000 24000 2500 0 ""]
 )

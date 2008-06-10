@@ -1,17 +1,21 @@
-# release: pcb-bin 20060822
-# date:    Fri Dec 22 01:45:47 2006
-# user:    kmk (Kai-Martin,,,)
-# host:    kwak.localdomain
+# release: pcb 1.99x
+# date:    Tue Jun 10 16:01:24 2008
+# user:    kmk (kai-martin,,,)
+# host:    bibo.iqo.uni-hannover.de
 
-PCB["" 200000 300000]
+# To read pcb files, the pcb version (or the cvs source date) must be >= the file version
+FileVersion[20070407]
 
-Grid[10000.000000 0 0 0]
+PCB["cap_RM5" 300000 300000]
+
+Grid[2500.000000 0 0 1]
 Cursor[0 0 0.000000]
+PolyArea[200000000.000000]
 Thermal[0.500000]
-DRC[600 400 800 599 1500 1000]
-Flags(0x0000000000001c50)
-Groups("1,2,3,s:4,5,6,c:7:8")
-Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
+DRC[699 400 800 599 1500 1000]
+Flags("nameonpcb,uniquename,clearnew,snappin")
+Groups("1,c:2,s:3")
+Styles["Signal,1000,3600,2000,1000:Power,2500,3937,2362,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
 Symbol(' ' 18)
 (
@@ -793,56 +797,51 @@ Symbol('~' 12)
 	SymbolLine(15 35 20 35 8)
 	SymbolLine(20 35 25 30 8)
 )
+Via[10000 20000 4700 2000 5902 3000 "1" ""]
+Via[30000 20000 4700 2000 5902 3000 "2" ""]
+Via[21653 78740 4700 2000 5902 3000 "1" ""]
+Via[41653 78740 4700 2000 5902 3000 "2" ""]
 
-Element["" "" "" "" 100000 100000 0 0 0 100 ""]
+Element["" "" "cap_RM5" "" 70000 20000 -5000 17000 0 100 ""]
 (
-	Pin[0 -12500 15000 2000 15600 12000 "" "3" ""]
-	Pin[0 -65000 15000 2000 15600 12000 "" "1" ""]
-	Pin[24000 -65500 15000 2000 15600 12000 "" "2" ""]
-	ElementLine [-16500 6000 -16500 31000 2500]
-	ElementLine [-9500 80500 10000 80500 2500]
-	ElementLine [10000 80500 12500 78000 2500]
-	ElementLine [-12500 31000 -12500 77500 2500]
-	ElementLine [12500 78000 12500 31000 2500]
-	ElementLine [16500 31000 16500 6000 2500]
-	ElementLine [-16500 31000 16500 31000 2500]
-	ElementLine [-12500 77500 -9500 80500 2500]
-	ElementLine [20000 6000 20000 0 2500]
-	ElementLine [-20000 6000 20000 6000 2500]
-	ElementLine [-20000 0 -20000 6000 2500]
-	ElementLine [44000 -75000 44000 0 2500]
-	ElementLine [-44000 -75000 44000 -75000 2500]
-	ElementLine [-44000 0 -44000 -75000 2500]
-	ElementLine [-44000 0 44000 0 2500]
+	Pin[0 0 4700 2000 5902 3000 "1" "1" "square"]
+	Pin[20000 0 4700 2000 5902 3000 "2" "2" ""]
+	ElementLine [-5000 15000 25000 15000 1000]
+	ElementLine [-5000 -15000 -5000 15000 1000]
+	ElementLine [25000 -15000 -5000 -15000 1000]
+	ElementLine [25000 15000 25000 -15000 1000]
+	ElementLine [3500 0 8500 0 1000]
+	ElementLine [11500 0 16500 0 1000]
+	ElementLine [8500 5000 8500 -5000 1000]
+	ElementLine [11500 -5000 11500 5000 1000]
 
 	)
-Layer(1 "bottom")
+Layer(1 "top")
 (
 )
-Layer(2 "bott.-poly.")
+Layer(2 "bottom")
 (
 )
-Layer(3 "bott.-GND")
+Layer(3 "comment")
 (
 )
-Layer(4 "top")
+Layer(4 "silk")
 (
 )
-Layer(5 "top-polyg.")
+Layer(5 "silk")
 (
-)
-Layer(6 "top-GND")
-(
-)
-Layer(7 "unused")
-(
-)
-Layer(8 "lineout")
-(
-)
-Layer(9 "silk")
-(
-)
-Layer(10 "silk")
-(
+	Line[21500 15000 21500 25000 1000 0 ""]
+	Line[18500 25000 18500 15000 1000 0 ""]
+	Line[21500 20000 26500 20000 1000 0 ""]
+	Line[13500 20000 18500 20000 1000 0 ""]
+	Line[35000 35000 35000 5000 1000 2000 "clearline"]
+	Line[35000 5000 5000 5000 1000 2000 "clearline"]
+	Line[5000 5000 5000 35000 1000 2000 "clearline"]
+	Line[5000 35000 35000 35000 1000 2000 "clearline"]
+	Line[33153 73740 33153 83740 1000 0 ""]
+	Line[30153 83740 30153 73740 1000 0 ""]
+	Line[33153 78740 38153 78740 1000 0 ""]
+	Line[25153 78740 30153 78740 1000 0 ""]
+	Arc[31496 78740 19685 19685 1000 2000 0 360 "clearline"]
+	Text[102000 18000 0 200 "cap_RM5" ""]
 )

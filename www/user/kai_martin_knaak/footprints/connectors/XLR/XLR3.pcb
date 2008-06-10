@@ -1,5 +1,5 @@
 # release: pcb 1.99x
-# date:    Tue Jun  3 14:38:36 2008
+# date:    Mon Jun  9 14:43:37 2008
 # user:    kmk (kai-martin,,,)
 # host:    bibo.iqo.uni-hannover.de
 
@@ -1492,7 +1492,6 @@ Layer(4 "top")
 (
 	Line[137795 94488 124016 94488 11509 2404 ""]
 	Line[137795 62992 124016 62992 11509 2404 ""]
-	Text[39370 354331 0 100 "Ein Text" ""]
 )
 Layer(5 "top_poly")
 (
@@ -2116,9 +2115,10 @@ Layer(10 "silk")
 	Arc[925197 25591 11811 11811 1181 2000 0 360 "clearline"]
 	Arc[925197 131889 5905 5905 1181 2000 0 360 "clearline"]
 	Arc[925197 131890 11811 11811 1181 2000 0 360 "clearline"]
-	Text[39370 338583 0 287 "XLR3_LAY" ""]
-	Text[216535 342520 0 265 "XLR3_4PIN" ""]
-	Text[354331 342520 0 276 "XLR3_3PIN" ""]
-	Text[492126 342520 0 276 "XLR3_3PIN_b" ""]
-	Text[872047 340552 0 276 "XLR3_vert" ""]
+	Text[39370 338583 0 287 "XLR3_LAY.fp" ""]
+	Text[216535 342520 0 265 "XLR3_4PIN.fp" ""]
+	Text[354331 342520 0 276 "XLR3_3PIN.fp" ""]
+	Text[492126 342520 0 276 "XLR3_3PIN_b.fp" ""]
+	Text[872047 340552 0 276 "XLR3_vert.fp" ""]
+	Text[625985 342520 0 276 "XLR3_3PIN_c.fp" ""]
 )
