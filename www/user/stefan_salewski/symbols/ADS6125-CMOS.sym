@@ -149,7 +149,7 @@ pinnumber=14
 T 2850 200 5 8 0 1 90 8 1
 pinseq=14
 T 2800 350 9 8 1 1 90 0 1
-pinlabel=CM
+pinlabel=VCM
 T 2800 350 5 8 0 1 90 2 1
 pintype=io
 }
