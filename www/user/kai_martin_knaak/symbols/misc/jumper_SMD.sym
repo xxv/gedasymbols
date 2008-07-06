@@ -41,3 +41,5 @@ T 100 1000 5 8 0 0 0 0 1
 nobom=1
 T 100 1800 5 8 0 0 0 0 1
 comment=use jumper_default.sym to mark a closed jumper
+T 100 800 5 8 0 0 0 0 1
+value=JMP

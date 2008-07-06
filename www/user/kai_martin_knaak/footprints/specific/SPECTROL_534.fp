@@ -20,7 +20,7 @@ Element["" "" "SPECTROL_534" "" 250000 100000 -45000 -85000 0 133 ""]
 	ElementLine [-9500 80500 10000 80500 2500]
 	ElementLine [-16500 6000 -16500 31000 2500]
 	ElementLine [20000 -75000 45000 -75000 2500]
-	ElementLine [0 0 0 10000 500]
-	ElementLine [0 -5000 0 -10000 600]
+	ElementLine [0 0 0 10000 1100]
+	ElementLine [0 -5000 0 -10000 1100]
 
 	)
