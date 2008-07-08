@@ -1,4 +1,4 @@
-v 20070902 1
+v 20080127 1
 P 100 700 100 600 1 0 0
 {
 T 150 650 5 8 0 1 0 0 1
@@ -34,7 +34,7 @@ description=SMD jumper
 T 100 1600 5 8 0 0 0 0 1
 author=K-M. Knaak kmk@lilalaser.de
 T 100 1400 5 8 0 0 0 0 1
-dist-license=GLPL3, see http://www.gnu.org/licenses/gpl-3.0.txt
+dist-license=GPL3, http://www.gnu.org/licenses/gpl-3.0.txt
 T 100 1200 5 8 0 0 0 0 1
 use-license=free, no restriction
 T 100 1000 5 8 0 0 0 0 1
