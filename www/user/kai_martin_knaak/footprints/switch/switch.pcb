@@ -817,7 +817,7 @@ Via[60000 360000 6600 2800 8200 4100 "1B" ""]
 Via[60000 370000 6600 2800 8200 4100 "3B" ""]
 Via[60000 350000 6600 2800 8200 4100 "2B" ""]
 
-Element["" "Eledis 2B11" "eledis 2B11" "Eledis 2B11" 100000 50000 -15000 4000 0 100 ""]
+Element["" "ELEDIS_2B11" "ELEDIS_2B11" "ELEDIS_2B11" 100000 50000 -15000 4000 0 100 ""]
 (
 	Pin[-10000 0 6600 2800 8200 4600 "2" "2" "edge2"]
 	Pin[0 0 6600 2800 8200 4600 "1" "1" "square,edge2"]
@@ -847,7 +847,7 @@ Element["" "Eledis 2B11" "eledis 2B11" "Eledis 2B11" 100000 50000 -15000 4000 0 
 
 	)
 
-Element["" "Eledis 2B11" "Eledis 2B11" "Eledis 2B11" 100000 100000 -15000 28500 0 100 ""]
+Element["" "ELEDIS_2B11" "ELEDIS_2B11" "ELEDIS_2B11" 100000 100000 -15000 28500 0 100 ""]
 (
 	Pin[-10000 0 6600 2800 8200 4600 "2" "2" ""]
 	Pin[0 0 6600 2800 8200 4600 "1" "1" "square"]
@@ -1048,7 +1048,7 @@ Layer(3 "comment")
 	Text[38866 204307 0 156 "TL36WW.fp" ""]
 	Text[36866 84307 0 156 "ELEDIS_2B11_LAY.fp" ""]
 	Text[36866 29307 0 156 "ELEDIS_2B11.fp" ""]
-	Text[36866 15307 0 200 "Eledis 2B11, vertical" ""]
+	Text[36866 15307 0 200 "ELEDIS_2B11, vertical" ""]
 )
 Layer(4 "bott.-GND")
 (
