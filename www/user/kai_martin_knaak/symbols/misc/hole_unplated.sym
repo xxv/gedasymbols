@@ -1,4 +1,4 @@
-v 20060824 1
+v 20080127 1
 V 300 500 200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 200 2200 5 8 0 0 0 0 1
 device=HOLE
@@ -17,4 +17,4 @@ value=D3mm
 T 200 1400 5 8 0 0 0 0 1
 numslots=0
 T 200 100 5 8 1 1 0 0 1
-footprint=HOLE_3MM
+footprint=hole_3mm
