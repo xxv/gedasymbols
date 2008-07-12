@@ -1,7 +1,7 @@
 # release: pcb 1.99x
-# date:    Fri Jun  6 14:35:56 2008
-# user:    kmk (kai-martin,,,)
-# host:    bibo.iqo.uni-hannover.de
+# date:    Sat Jul 12 17:27:21 2008
+# user:    kmk (Kai-Martin,,,)
+# host:    kwak.localdomain
 
 # To read pcb files, the pcb version (or the cvs source date) must be >= the file version
 FileVersion[20070407]
@@ -889,7 +889,7 @@ Element["" "ELEDIS_2B11" "ELEDIS_2B11" "ELEDIS_2B11" 100000 100000 -15000 28500 
 
 	)
 
-Element["" "switch" "switch" "switch" 100000 230000 -10000 38000 0 122 ""]
+Element["" "TL36WW" "switch" "switch" 100000 230000 -10000 38000 0 122 ""]
 (
 	Pin[0 0 6600 2800 8200 4100 "1" "1" ""]
 	Pin[0 10000 6600 2800 8200 4100 "3" "3" ""]
@@ -1045,7 +1045,7 @@ Layer(2 "bott.-poly.")
 Layer(3 "comment")
 (
 	Text[38866 334307 0 156 "APEM_TL46WW.fp" ""]
-	Text[38866 204307 0 156 "TL36WW.fp" ""]
+	Text[38866 204307 0 156 "APEM_TL36WW.fp" ""]
 	Text[36866 84307 0 156 "ELEDIS_2B11_LAY.fp" ""]
 	Text[36866 29307 0 156 "ELEDIS_2B11.fp" ""]
 	Text[36866 15307 0 200 "ELEDIS_2B11, vertical" ""]
