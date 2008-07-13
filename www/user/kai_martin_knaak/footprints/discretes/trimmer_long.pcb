@@ -1,16 +1,20 @@
-# release: pcb-bin 20060822
-# date:    Mon Jan  8 00:21:58 2007
+# release: pcb 1.99x
+# date:    Sun Jul 13 02:02:34 2008
 # user:    kmk (Kai-Martin,,,)
 # host:    kwak.localdomain
 
+# To read pcb files, the pcb version (or the cvs source date) must be >= the file version
+FileVersion[20070407]
+
 PCB["trimmer_long" 150000 150000]
 
-Grid[10000.000000 0 0 0]
+Grid[5000.000000 0 0 1]
 Cursor[0 0 0.000000]
+PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[699 400 800 599 1500 1000]
-Flags(0x0000000000001c40)
-Groups("1,2,3,s:4,5,6,c:7:8")
+Flags("nameonpcb,uniquename,clearnew,snappin")
+Groups("1,c:2,s:3")
 Styles["Signal,1000,3600,2000,1000:Power,2500,3937,2362,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
 Symbol(' ' 18)
@@ -797,7 +801,7 @@ Via[70000 40000 6200 2000 7200 3000 "1" ""]
 Via[70000 90000 6200 2000 7200 3000 "3" ""]
 Via[60000 70000 6200 2000 7200 3000 "2" ""]
 
-Element["" "" "" "" 100000 40000 0 0 0 100 ""]
+Element["" "" "trimmer_long" "" 100000 40000 -15000 -20000 0 100 ""]
 (
 	Pin[0 0 6200 2000 7200 3000 "1" "1" "square"]
 	Pin[0 50000 6200 2000 7200 3000 "3" "3" ""]
@@ -811,34 +815,19 @@ Element["" "" "" "" 100000 40000 0 0 0 100 ""]
 	ElementLine [-15000 -12500 5000 -12500 2500]
 
 	)
-Layer(1 "bottom")
+Layer(1 "top")
 (
 )
-Layer(2 "bott.-poly.")
+Layer(2 "bottom")
 (
 )
-Layer(3 "bott.-GND")
+Layer(3 "comment")
 (
 )
-Layer(4 "top")
+Layer(4 "silk")
 (
 )
-Layer(5 "top-polyg.")
-(
-)
-Layer(6 "top-GND")
-(
-)
-Layer(7 "unused")
-(
-)
-Layer(8 "lineout")
-(
-)
-Layer(9 "silk")
-(
-)
-Layer(10 "silk")
+Layer(5 "silk")
 (
 	Line[55000 27500 75000 27500 2500 2000 "clearline"]
 	Line[75000 27500 75000 102500 2500 2000 "clearline"]
