@@ -1,7 +1,7 @@
 # release: pcb 1.99x
-# date:    Fri Jul 11 18:57:50 2008
-# user:    kmk (kai-martin,,,)
-# host:    bibo.iqo.uni-hannover.de
+# date:    Mon Jul 14 03:01:04 2008
+# user:    kmk (Kai-Martin,,,)
+# host:    kwak.localdomain
 
 # To read pcb files, the pcb version (or the cvs source date) must be >= the file version
 FileVersion[20070407]
