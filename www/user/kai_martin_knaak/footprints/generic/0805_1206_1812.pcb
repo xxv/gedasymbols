@@ -1,19 +1,19 @@
 # release: pcb 1.99x
-# date:    Mon Jul 14 03:01:04 2008
-# user:    kmk (Kai-Martin,,,)
-# host:    kwak.localdomain
+# date:    Mon Jul 14 15:06:27 2008
+# user:    kmk (kai-martin,,,)
+# host:    bibo.iqo.uni-hannover.de
 
 # To read pcb files, the pcb version (or the cvs source date) must be >= the file version
 FileVersion[20070407]
 
 PCB["0805_1206_1812.pcb" 177165 177165]
 
-Grid[1968.503906 0 0 1]
+Grid[3937.007324 0 0 1]
 Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
-DRC[600 400 800 200 1500 1000]
-Flags("rubberband,nameonpcb,alldirection,clearnew,snappin,locknames")
+DRC[600 400 800 100 1500 1000]
+Flags("showdrc,rubberband,nameonpcb,autodrc,alldirection,clearnew,snappin,locknames")
 Groups("1,2,3,s:4,5,6,c:7:8")
 Styles["Signal,591,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
@@ -902,18 +902,18 @@ Element["" "" "dd" "" 55055 26291 -1000 -3000 0 100 ""]
 
 	)
 
-Element["" "" "0402r" "" 59055 3937 -2952 -1319 0 45 ""]
+Element["" "" "0402r" "" 59055 3937 -2559 -1378 0 45 ""]
 (
-	Pad[1930 0 1930 0 2000 2404 4404 "" "2" "square,edge2"]
-	Pad[-1968 1 -1968 1 2000 2404 4404 "" "1" "square"]
-	ElementLine [3543 -1772 3543 1772 591]
-	ElementLine [-3543 -1772 3543 -1772 591]
-	ElementLine [3543 1772 -3543 1772 591]
-	ElementLine [-3543 1772 -3543 -1772 591]
+	Pad[1771 -394 1771 394 1377 2000 3377 "1" "2" "square"]
+	Pad[-1771 -394 -1771 394 1377 2000 3377 "1" "1" "square"]
+	ElementLine [-3150 1575 -3150 -1575 591]
+	ElementLine [3150 -1575 -3150 -1575 591]
+	ElementLine [3150 1575 3150 -1575 591]
+	ElementLine [-3150 1575 3150 1575 591]
 
 	)
 
-Element["" "Standard SMT resistor, capacitor etc" "" "0402" 43307 9843 -3150 -3150 0 100 ""]
+Element["" "Standard SMT resistor, capacitor etc" "" "INDC1005N" 125984 17717 -3150 -3150 0 100 ""]
 (
 	Pad[-1574 -393 -1574 393 1968 2000 2568 "1" "1" "square"]
 	Pad[1574 -393 1574 393 1968 2000 2568 "2" "2" "square"]
@@ -932,25 +932,70 @@ Element["" "" "0805r" "" 59055 55118 -5512 -1969 0 78 ""]
 
 	)
 
-Element["" "" "0402" "" 59055 13780 -4332 -1574 0 56 ""]
+Element["" "" "0402" "" 59055 11811 -3543 -1575 0 56 ""]
 (
-	Pad[-3346 0 -2559 0 2755 2000 4755 "1" "1" "square"]
-	Pad[2362 0 3149 0 2755 2000 4755 "2" "2" "square,edge2"]
-	ElementLine [-5512 2165 -5512 -2166 600]
-	ElementLine [5315 2165 -5512 2165 600]
-	ElementLine [5315 -2166 5315 2165 600]
-	ElementLine [-5512 -2166 5315 -2166 600]
+	Pad[-2323 1 -2323 1 2500 2404 4904 "1" "1" "square"]
+	Pad[2362 0 2362 0 2500 2404 4904 "2" "2" "square,edge2"]
+	ElementLine [4173 1772 -4134 1772 591]
+	ElementLine [-4134 1772 -4134 -1772 591]
+	ElementLine [4173 -1772 4173 1772 591]
+	ElementLine [-4134 -1772 4173 -1772 591]
 
 	)
 
-Element["" "" "0402r" "" 53150 47244 -2952 -1319 0 45 ""]
+Element["" "Standard SMT resistor, capacitor etc" "" "INDC1005M" 125984 21654 -3150 -3150 0 100 ""]
 (
-	Pad[1930 0 1930 0 2000 2404 4404 "" "2" "square,edge2"]
-	Pad[-1968 1 -1968 1 2000 2404 4404 "" "1" "square"]
-	ElementLine [3543 -1772 3543 1772 591]
-	ElementLine [-3543 -1772 3543 -1772 591]
-	ElementLine [3543 1772 -3543 1772 591]
-	ElementLine [-3543 1772 -3543 -1772 591]
+	Pad[-1968 -197 -1968 197 2755 2000 3355 "1" "1" "square"]
+	Pad[1968 -197 1968 197 2755 2000 3355 "2" "2" "square"]
+
+	)
+
+Element["" "Standard SMT resistor, capacitor etc" "" "RESC1005L" 135827 13780 -3150 -3150 0 100 ""]
+(
+	Pad[-1771 -394 -1771 394 1377 2000 1977 "1" "1" "square"]
+	Pad[1771 -394 1771 394 1377 2000 1977 "2" "2" "square"]
+
+	)
+
+Element["" "Standard SMT resistor, capacitor etc" "" "RESC1005M" 135827 21654 -3150 -3150 0 100 ""]
+(
+	Pad[-2165 -393 -2165 393 2165 2000 2765 "1" "1" "square"]
+	Pad[2165 -393 2165 393 2165 2000 2765 "2" "2" "square"]
+
+	)
+
+Element["" "Standard SMT resistor, capacitor etc" "" "CAPC1005N" 145669 17717 -3150 -3150 0 100 ""]
+(
+	Pad[-1771 -295 -1771 295 1968 2000 2568 "1" "1" "square"]
+	Pad[1771 -295 1771 295 1968 2000 2568 "2" "2" "square"]
+
+	)
+
+Element["" "Standard SMT resistor, capacitor etc" "" "CAPC1005M" 145669 21654 -3150 -3150 0 100 ""]
+(
+	Pad[-1968 -295 -1968 295 2362 2000 2962 "1" "1" "square"]
+	Pad[1968 -295 1968 295 2362 2000 2962 "2" "2" "square"]
+
+	)
+
+Element["" "Standard SMT resistor, capacitor etc" "" "CAPC1005L" 145669 13780 -3150 -3150 0 100 ""]
+(
+	Pad[-1771 -295 -1771 295 1574 2000 2174 "1" "1" "square"]
+	Pad[1771 -295 1771 295 1574 2000 2174 "2" "2" "square"]
+
+	)
+
+Element["" "Standard SMT resistor, capacitor etc" "" "INDC1005L" 125984 13780 -3150 -3150 0 100 ""]
+(
+	Pad[-1574 -197 -1574 197 1968 2000 2568 "1" "1" "square"]
+	Pad[1574 -197 1574 197 1968 2000 2568 "2" "2" "square"]
+
+	)
+
+Element["" "Standard SMT resistor, capacitor etc" "" "RESC1005N" 135827 17717 -3150 -3150 0 100 ""]
+(
+	Pad[-1968 -394 -1968 394 1771 2000 2371 "1" "1" "square"]
+	Pad[1968 -394 1968 394 1771 2000 2371 "2" "2" "square"]
 
 	)
 Layer(1 "bottom")
@@ -980,10 +1025,10 @@ Layer(4 "top")
 	Line[14764 23622 14764 23622 6000 2404 ""]
 	Line[23622 53937 23622 56299 3000 2404 ""]
 	Line[15748 53937 15748 56299 3000 2404 ""]
-	Line[17756 3938 17756 3938 2000 2404 ""]
-	Line[16339 13780 17126 13780 2755 2000 ""]
-	Line[21654 3937 21654 3937 2000 2404 ""]
-	Line[22047 13780 22834 13780 2755 2000 ""]
+	Line[17362 11812 17362 11812 2500 2404 ""]
+	Line[22047 11811 22047 11811 2500 2404 ""]
+	Line[21456 3543 21456 4331 1377 2000 ""]
+	Line[17914 3543 17914 4331 1377 2000 ""]
 )
 Layer(5 "top-polyg.")
 (
@@ -1072,12 +1117,20 @@ Layer(10 "silk")
 	Line[13386 52756 14567 51575 591 2000 "clearline"]
 	Line[25984 58661 13386 58661 591 2000 "clearline"]
 	Line[14567 51575 25984 51575 591 2000 "clearline"]
-	Line[16181 2165 23267 2165 591 2000 "clearline"]
-	Line[23267 2165 23267 5709 591 2000 "clearline"]
-	Line[16181 5709 16181 2165 591 2000 "clearline"]
-	Line[23267 5709 16181 5709 591 2000 "clearline"]
-	Line[14173 11614 25000 11614 600 1200 "clearline"]
-	Line[25000 11614 25000 15945 600 1200 "clearline"]
-	Line[25000 15945 14173 15945 600 1200 "clearline"]
-	Line[14173 15945 14173 11614 600 1200 "clearline"]
+	Line[15551 10039 23858 10039 591 2000 "clearline"]
+	Line[23858 10039 23858 13583 591 2000 "clearline"]
+	Line[15551 13583 15551 10039 591 2000 "clearline"]
+	Line[23858 13583 15551 13583 591 2000 "clearline"]
+	Line[16535 5512 22835 5512 591 2000 "clearline"]
+	Line[22835 5512 22835 2362 591 2000 "clearline"]
+	Line[22835 2362 16535 2362 591 2000 "clearline"]
+	Line[16535 5512 16535 2362 591 2000 "clearline"]
+	Text[122047 23622 0 67 "IND" ""]
+	Text[131889 23622 0 67 "RES" ""]
+	Text[143700 23622 0 67 "CAP" ""]
+	Text[151575 19685 0 67 "M" ""]
+	Text[151575 11811 0 67 "L" ""]
+	Text[151574 15748 0 67 "N" ""]
+	Text[124015 1968 0 67 "*C1005* footprints" ""]
+	Text[124015 5905 0 67 "in the geda lib" ""]
 )
