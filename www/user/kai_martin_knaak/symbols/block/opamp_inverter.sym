@@ -1,5 +1,5 @@
 v 20080127 1
-C 2000 2200 1 180 1 opamp_2.sym
+C 2000 2200 1 180 1 opamp.sym
 {
 T 2325 3200 5 8 0 0 0 0 1
 device=opamp

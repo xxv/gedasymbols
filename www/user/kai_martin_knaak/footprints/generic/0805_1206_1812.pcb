@@ -1,20 +1,20 @@
 # release: pcb 1.99x
-# date:    Mon Jul 14 15:06:27 2008
+# date:    Tue Jul 29 17:17:56 2008
 # user:    kmk (kai-martin,,,)
 # host:    bibo.iqo.uni-hannover.de
 
 # To read pcb files, the pcb version (or the cvs source date) must be >= the file version
 FileVersion[20070407]
 
-PCB["0805_1206_1812.pcb" 177165 177165]
+PCB["0805_1206_1812.pcb" 177165 236220]
 
-Grid[3937.007324 0 0 1]
+Grid[3937.007568 0 0 1]
 Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[600 400 800 100 1500 1000]
-Flags("showdrc,rubberband,nameonpcb,autodrc,alldirection,clearnew,snappin,locknames")
-Groups("1,2,3,s:4,5,6,c:7:8")
+Flags("showdrc,rubberband,nameonpcb,autodrc,alldirection,clearnew,snappin")
+Groups("s:1,2,c:3:4")
 Styles["Signal,591,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
 Symbol(' ' 18)
@@ -998,16 +998,31 @@ Element["" "Standard SMT resistor, capacitor etc" "" "RESC1005N" 135827 17717 -3
 	Pad[1968 -394 1968 394 1771 2000 2371 "2" "2" "square"]
 
 	)
-Layer(1 "bottom")
+
+Element["" "" "" "" 59055 181102 0 0 0 100 ""]
 (
-)
-Layer(2 "bott.-poly.")
-(
-)
-Layer(3 "bott.-GND")
-(
-)
-Layer(4 "top")
+	Pad[-11811 -984 -11811 984 9843 2000 10843 "cathode" "1" "square"]
+	Pad[11811 -984 11811 985 9842 2000 10842 "anode" "2" "square,edge2"]
+	ElementLine [1575 -1968 1575 1969 800]
+	ElementLine [2953 -2952 2953 2953 800]
+	ElementLine [-5905 0 5906 0 800]
+	ElementLine [2953 2953 -1968 0 800]
+	ElementLine [984 -1574 984 1575 800]
+	ElementLine [-1968 0 2953 -2952 800]
+	ElementLine [-1968 -2952 -1968 2953 800]
+	ElementLine [-394 -787 -394 788 800]
+	ElementLine [394 -1181 394 788 800]
+	ElementLine [0 985 984 985 800]
+	ElementLine [0 -984 984 -984 800]
+	ElementLine [0 -984 0 985 800]
+	ElementLine [2362 -1968 2362 1969 800]
+	ElementLine [-17716 7874 -17716 -7874 800]
+	ElementLine [17717 7874 -17716 7874 800]
+	ElementLine [17717 -7874 17717 7874 800]
+	ElementLine [-17716 -7874 17717 -7874 800]
+
+	)
+Layer(1 "top")
 (
 	Line[24764 39370 24764 39370 6000 2404 ""]
 	Line[14764 39370 14764 39370 6000 2404 ""]
@@ -1029,14 +1044,19 @@ Layer(4 "top")
 	Line[22047 11811 22047 11811 2500 2404 ""]
 	Line[21456 3543 21456 4331 1377 2000 ""]
 	Line[17914 3543 17914 4331 1377 2000 ""]
+	Polygon("clearpoly")
+	(
+		[2953 175197] [12796 175197] [12796 187008] [2953 187008] 
+	)
+	Polygon("clearpoly")
+	(
+		[26575 175197] [36417 175197] [36417 187008] [26575 187008] 
+	)
 )
-Layer(5 "top-polyg.")
+Layer(2 "top-polyg.")
 (
 )
-Layer(6 "top-GND")
-(
-)
-Layer(7 "comment")
+Layer(3 "comment")
 (
 	Text[79252 34685 0 210 "0805.fp" ""]
 	Text[79252 70118 0 210 "1206.fp" ""]
@@ -1048,14 +1068,15 @@ Layer(7 "comment")
 	Text[71378 9095 0 111 "0402.fp" ""]
 	Text[72165 20513 0 177 "0805.fp" ""]
 	Text[68621 433 0 111 "0402r.fp" ""]
+	Text[83189 174448 0 210 "dio_1812.fp" ""]
 )
-Layer(8 "lineout")
+Layer(4 "lineout")
 (
 )
-Layer(9 "silk")
+Layer(5 "silk")
 (
 )
-Layer(10 "silk")
+Layer(6 "silk")
 (
 	Line[10764 43370 28764 43370 800 0 ""]
 	Line[28764 43370 28764 35370 800 0 ""]
@@ -1125,6 +1146,23 @@ Layer(10 "silk")
 	Line[22835 5512 22835 2362 591 2000 "clearline"]
 	Line[22835 2362 16535 2362 591 2000 "clearline"]
 	Line[16535 5512 16535 2362 591 2000 "clearline"]
+	Line[1969 173228 37402 173228 800 2000 "clearline"]
+	Line[37402 173228 37402 188976 800 2000 "clearline"]
+	Line[37402 188976 1969 188976 800 2000 "clearline"]
+	Line[1969 188976 1969 173228 800 2000 "clearline"]
+	Line[22047 179134 22047 183071 800 2000 "clearline"]
+	Line[19685 180118 19685 182087 800 2000 "clearline"]
+	Line[19685 180118 20669 180118 800 2000 "clearline"]
+	Line[19685 182087 20669 182087 800 2000 "clearline"]
+	Line[20079 179921 20079 181890 800 2000 "clearline"]
+	Line[19291 180315 19291 181890 800 2000 "clearline"]
+	Line[17717 178150 17717 184055 800 2000 "clearline"]
+	Line[17717 181102 22638 178150 800 2000 "clearline"]
+	Line[20669 179528 20669 182677 800 2000 "clearline"]
+	Line[22638 184055 17717 181102 800 2000 "clearline"]
+	Line[13780 181102 25591 181102 800 2000 "clearline"]
+	Line[22638 178150 22638 184055 800 2000 "clearline"]
+	Line[21260 179134 21260 183071 800 2000 "clearline"]
 	Text[122047 23622 0 67 "IND" ""]
 	Text[131889 23622 0 67 "RES" ""]
 	Text[143700 23622 0 67 "CAP" ""]
