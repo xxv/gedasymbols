@@ -7,6 +7,8 @@ T 0 100 5 8 0 1 180 2 1
 pinseq=1
 T 350 100 5 8 0 1 180 5 1
 pintype=out
+T 0 100 9 8 0 1 0 0 1
+pinlabel=1
 }
 T 0 350 5 10 0 0 0 0 1
 author=Stefan Salewski
