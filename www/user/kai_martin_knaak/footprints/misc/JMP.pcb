@@ -1,14 +1,14 @@
 # release: pcb 1.99x
-# date:    Sun Jul 13 01:45:09 2008
-# user:    kmk (Kai-Martin,,,)
-# host:    kwak.localdomain
+# date:    Wed Aug  6 19:23:22 2008
+# user:    kmk (kai-martin,,,)
+# host:    bibo.iqo.uni-hannover.de
 
 # To read pcb files, the pcb version (or the cvs source date) must be >= the file version
 FileVersion[20070407]
 
 PCB["Jumper" 250000 500000]
 
-Grid[10000.000000 0 0 1]
+Grid[2500.000000 0 0 1]
 Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
@@ -891,6 +891,12 @@ Element["" "" "JMP_3PIN_SMD" "" 50000 200000 -7000 -10000 0 100 ""]
 	ElementLine [-7874 -3938 7873 -3937 787]
 
 	)
+
+Element["" "" "default" "" 50000 250000 -2500 -2500 0 89 ""]
+(
+	ElementLine [0 0 10000 0 10000]
+
+	)
 Layer(1 "top")
 (
 	Line[7638 148425 7638 151575 3437 3200 ""]
@@ -903,6 +909,7 @@ Layer(1 "top")
 	Line[20787 198424 20787 201574 3437 3200 ""]
 	Line[25511 198425 25511 201575 3437 3200 ""]
 	Line[27086 198425 27086 201575 3437 3200 ""]
+	Line[20000 240000 30000 240000 1000 2000 "clearline"]
 )
 Layer(2 "bottom")
 (
@@ -916,6 +923,7 @@ Layer(3 "comment")
 	Text[90000 105000 0 244 "JMP_2x2PIN.fp" ""]
 	Text[80000 140000 0 244 "JMP_SMD.fp" ""]
 	Text[87000 193000 0 244 "JMP_3PIN_SMD.fp" ""]
+	Text[80000 240000 0 232 "JMP_default.fp" ""]
 )
 Layer(4 "silk")
 (
@@ -943,4 +951,5 @@ Layer(5 "silk")
 	Line[27873 196063 29448 197638 787 0 ""]
 	Line[29448 197638 29448 202362 787 0 ""]
 	Line[29448 202362 27873 203937 787 0 ""]
+	Line[20000 250000 30000 250000 10000 2000 "clearline"]
 )
