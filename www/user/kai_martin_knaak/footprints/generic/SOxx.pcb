@@ -1,5 +1,5 @@
 # release: pcb 1.99x
-# date:    Tue Jun  3 15:28:06 2008
+# date:    Thu Aug 14 21:21:08 2008
 # user:    kmk (kai-martin,,,)
 # host:    bibo.iqo.uni-hannover.de
 
@@ -8,12 +8,12 @@ FileVersion[20070407]
 
 PCB["SOxx.pcb" 300000 200000]
 
-Grid[1968.503662 0 0 1]
+Grid[1968.503906 0 0 1]
 Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[600 1000 600 600 1500 1000]
-Flags("nameonpcb,uniquename,clearnew,snappin")
+Flags("shownumber,nameonpcb,uniquename,clearnew,snappin")
 Groups("1,c:2,s:3")
 Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
@@ -816,11 +816,11 @@ Element["" "" "SO8" "" 78740 39370 3937 -6891 3 100 ""]
 
 	)
 
-Element["" "" "SOT23_GDS1" "" 75984 112992 -5906 -9843 0 100 ""]
+Element["" "" "SOT23_SDG" "" 74803 112205 -5906 -9843 0 100 ""]
 (
 	Pad[-1575 9844 -1575 10631 4724 2755 5724 "SOURCE" "S" "square,edge2"]
-	Pad[0 0 5511 0 5511 2755 6511 "GATE" "G" "square,edge2"]
 	Pad[7086 9844 7086 10631 4724 2755 5724 "DRAIN" "D" "square,edge2"]
+	Pad[0 0 5511 0 5511 2755 6511 "GATE" "G" "square,edge2"]
 	ElementLine [-5709 -3542 -5709 13781 787]
 	ElementLine [11220 -3542 11220 13781 787]
 	ElementLine [-5710 -3542 11219 -3542 787]
@@ -828,11 +828,35 @@ Element["" "" "SOT23_GDS1" "" 75984 112992 -5906 -9843 0 100 ""]
 
 	)
 
-Element["" "" "SOT23" "" 75984 73622 -5906 -9843 0 100 ""]
+Element["" "" "SOT23" "" 74803 72835 -5906 -9843 0 100 ""]
 (
 	Pad[-1575 9844 -1575 10631 4724 2755 5724 "1" "1" "square,edge2"]
-	Pad[0 0 5511 0 5511 2755 6511 "3" "3" "square,edge2"]
 	Pad[7086 9844 7086 10631 4724 2755 5724 "2" "2" "square,edge2"]
+	Pad[0 0 5511 0 5511 2755 6511 "3" "3" "square,edge2"]
+	ElementLine [-5709 -3542 -5709 13781 787]
+	ElementLine [11220 -3542 11220 13781 787]
+	ElementLine [-5710 -3542 11219 -3542 787]
+	ElementLine [-5709 13781 11220 13781 787]
+
+	)
+
+Element["" "" "SOT23_GSD" "" 74803 149606 -5905 -9842 0 100 ""]
+(
+	Pad[-1575 9844 -1575 10631 4724 2755 5724 "GATE" "G" "square,edge2"]
+	Pad[7086 9844 7086 10631 4724 2755 5724 "SOURCE" "S" "square,edge2"]
+	Pad[0 0 5511 0 5511 2755 6511 "DRAIN" "D" "square,edge2"]
+	ElementLine [-5709 -3542 -5709 13781 787]
+	ElementLine [11220 -3542 11220 13781 787]
+	ElementLine [-5710 -3542 11219 -3542 787]
+	ElementLine [-5709 13781 11220 13781 787]
+
+	)
+
+Element["" "" "SOT23_BEC" "" 74803 179134 0 0 0 100 ""]
+(
+	Pad[-1575 9844 -1575 10631 4724 2755 5724 "BASE" "B" "square,edge2"]
+	Pad[0 0 5511 0 5511 2755 6511 "COLLECTOR" "C" "square,edge2"]
+	Pad[7086 9844 7086 10631 4724 2755 5724 "EMITTER" "E" "square,edge2"]
 	ElementLine [-5709 -3542 -5709 13781 787]
 	ElementLine [11220 -3542 11220 13781 787]
 	ElementLine [-5710 -3542 11219 -3542 787]
@@ -862,9 +886,10 @@ Layer(2 "bottom")
 Layer(3 "comment")
 (
 	Text[110236 70867 0 288 "SOT23.fp" ""]
-	Text[110236 110237 0 288 "SOT23_GDS.fp" ""]
+	Text[110236 110237 0 288 "SOT23_SDG.fp" ""]
 	Text[110236 29528 0 288 "SO8.fp" ""]
 	Text[25590 1968 0 222 "grid is metric" ""]
+	Text[108267 143702 0 288 "SOT23_GSD.fp" ""]
 )
 Layer(4 "none")
 (
