@@ -7,8 +7,8 @@ email: <a href="mailto:werner.ho@gmx.de">werner.ho@gmx.de</a>
 <h2>Tools</h2>
     <ul>
       <li><a href="tools/nice_sym.py">nice_sym.py</a>: a script that
-      helps to beautify and repair gschem symbols. It creates the same
-      symbol style as tragesym
+	helps to beautify and repair gschem symbols. It creates the same
+	symbol style as tragesym
 	<ul>
 	  <li> set attribute colors</li>
 	  <li> add templates of missing attributs</li>
@@ -16,9 +16,31 @@ email: <a href="mailto:werner.ho@gmx.de">werner.ho@gmx.de</a>
 	  <li> add templates of missing pin attributes</li>
 	</ul>
       </li>
-      <li><a href="tools/subdir_gsymcheck.sh">subdir_gsymcheck.sh</a>:
-      a shell script that runs gsymcheck in all subdirectories that
-      contain one or more gEDA symbols.
+      <li>
+	<a href="tools/subdir_gsymcheck.sh">subdir_gsymcheck.sh</a>: a
+	shell script that runs gsymcheck in all subdirectories that
+	contain one or more gEDA symbols.
+      </li>
+      <li>
+	<a href="tools/index_symbols.py">index_symbols.py</a>: a
+	script that recursively collects all symbol from a given
+	directory and copies them to a new directory. The symbol names
+	is extended by a 8-character SHA1 hash. Thus symbol files
+	with the same filename can be stored at the new location. This
+	also helps to store different versions of a symbol. <br>
+	I'm currently using this script to collect all symbols from the 
+	gedasymbols CVS and to conntect them into gschem.
+      <li>
+      <li>
+	<a href="tools/connect_symbols.py">connect_symbols.py</a>: a
+	script that makes all symbols from a given directory available
+	for libgeda with the component-library-command. Every symbol
+	is checked with gsymcheck when selecting it in the component
+	dialog. <br> With this and the previous script I've connected
+	all symbols from gedasymbols into gschem. I can easily search
+	for a symbol in gschem and use it if it's in good shape. <br>
+	<b>Note:</b> I think the good symbols should still be copied
+	to a different location by the user.
       </li>
     </ul>
 
