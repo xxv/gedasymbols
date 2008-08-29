@@ -1,4 +1,4 @@
-v 20080127 1
+v 20080706 1
 T 100 3700 5 8 0 0 0 0 1
 description=connector by JAE, IL-G series, 5 pins, model IL-G-3S-S3C2-SA
 T 100 3500 5 8 0 0 0 0 1
@@ -14,7 +14,7 @@ refdes=CONN?
 T 100 2300 8 10 1 1 0 0 1
 value=PS-25/5G BR
 T 100 2100 8 8 1 1 0 0 1
-footprint=PS_1x5PIN_gerade
+footprint=PS_1x5PIN
 P 0 1400 200 1400 1 0 0
 {
 T 200 1450 5 8 0 1 0 6 1

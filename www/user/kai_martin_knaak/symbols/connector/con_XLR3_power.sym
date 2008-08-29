@@ -1,6 +1,6 @@
 v 20080127 1
 T 0 1500 8 10 1 1 0 0 1
-device=CON_XLR3
+value=XLR-3pin
 T 0 2000 5 8 0 0 0 0 1
 numslots=0
 T 0 2600 5 8 0 0 0 0 1

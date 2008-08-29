@@ -1,4 +1,4 @@
-v 20080127 1
+v 20080706 1
 T 100 4900 5 8 0 0 0 0 1
 description=connector by JAE, IL-G series, 8 pins, model IL-G-8S-S3C2-SA
 T 100 4700 5 8 0 0 0 0 1
@@ -14,7 +14,7 @@ refdes=CONN?
 T 100 3500 8 10 1 1 0 0 1
 value=PS-25/8G BR
 T 100 3300 8 8 1 1 0 0 1
-footprint=PS_1x8PIN_gerade
+footprint=PS_1x8PIN
 P 0 2600 200 2600 1 0 0
 {
 T 200 2650 5 8 0 1 0 6 1

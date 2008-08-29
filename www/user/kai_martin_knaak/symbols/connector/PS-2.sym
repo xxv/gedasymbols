@@ -1,4 +1,4 @@
-v 20080127 1
+v 20080706 1
 T 100 1800 5 8 0 0 0 0 1
 numslots=0
 T 100 2400 5 8 0 0 0 0 1
@@ -8,7 +8,7 @@ refdes=CONN?
 T 100 1000 8 10 1 1 0 0 1
 value=XXX
 T 100 850 8 8 1 1 0 0 1
-footprint=PS_1x2PIN_gerade
+footprint=PS_1x2PIN
 P 0 600 200 600 1 0 0
 {
 T 200 650 5 8 0 1 0 6 1
