@@ -51,6 +51,14 @@ while (<>) {
 	next;
     }
 
+    if (/^\.skip (\d+)/) {
+	$skip = $1;
+	$space = 0;
+	if ($side =~ /left|right/) {
+	    $y{$side} += $skip;
+	}
+    }
+
     # Hidden labels are stored separately, because we don't care how
     # big they are.
     if (/! (\S.*)/ && $side eq "labels") {
