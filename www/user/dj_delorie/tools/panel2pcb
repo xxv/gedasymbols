@@ -55,6 +55,16 @@ while (<P>) {
 	push (@paste, "$pcb\0$rot\0$mx\0$my");
 	$pcb = undef;
     }
+    if (/Via/) {
+	push (@panelvias, $_);
+    }
+    if (/^Layer\([^)]*\)$/) {
+	$junk = <P>; # The opening '('
+	while ($junk = <P>) {
+	    last if $junk =~ /^\)/;
+	    push (@panelcopper, $junk);
+	}
+    }
 }
 
 $tmp = "/tmp/panel$$.pcb";

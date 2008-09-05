@@ -18,25 +18,37 @@ sub baseboard {
     push(@files_to_remove, "$base.pscript");
 
     open(S, $file) || die("$file: $!");
-    open(O, ">$base.panel.pcb");
+    $outname = "$base.panel.pcb";
+    $outname =~ s/pnl\.panel\.pcb/pcb/;
+    open(O, ">$outname");
     while (<S>) {
 	if (/PCB\[.* (\d+) (\d+)\]/) {
 	    s/ (\d+) (\d+)\]/ $width $height\]/;
 	}
 	s/Cursor\[.*\]/Cursor[0 0 0.0]/;
-	next if /\b(Via|Pin|Pad|ElementLine|Line|Arc|ElementArc)/;
+	next if /\b(Via|Pin|Pad|ElementLine|Line|Arc|ElementArc|Text)/;
 	if (/Polygon|Element/) {
 	    while (<S>) {
-		last if /\)\s*$/;
+		last if /^\s*\)\s*$/;
 	    }
 	    next;
 	}
+	if (/Layer/) {
+	    if (@panelvias) {
+		print O @panelvias;
+		@panelvias = ();
+	    }
+	}
 	print O;
+	if (/Layer/) {
+	    print O scalar <S>;
+	    print O @panelcopper;
+	}
     }
     close O;
     close S;
 
-    print PS "LoadFrom(Layout,$base.panel.pcb)\n";
+    print PS "LoadFrom(Layout,$outname)\n";
 
     $ox = $oy = 0;
 }
@@ -75,14 +87,14 @@ sub vpaste {
 }
 
 sub done {
-    print PS "SaveTo(LayoutAs,$base.panel.pcb)\n";
+    print PS "SaveTo(LayoutAs,$outname)\n";
     print PS "Quit()\n";
 
     close PS;
 
-    system "pcb --action-script $pscript";
-    system "pcb -x ps $base.panel.pcb";
-    unlink @files_to_remove;
+    system "set -x; pcb --action-script $pscript";
+    #system "pcb -x ps $base.panel.pcb";
+    #unlink @files_to_remove;
 }
 
 1;

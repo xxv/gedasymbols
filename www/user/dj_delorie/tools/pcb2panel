@@ -41,6 +41,7 @@ $ph += 20000;
 
 print "PCB[\"\" $pw $ph]\n";
 print "Grid[10000.0 0 0 1]\n";
+print "Groups(\"1,c:2,s\")\n";
 
 $x = 10000;
 $y = 10000;
@@ -62,5 +63,8 @@ for $pcb (@pcbs) {
 }
 
 print "Layer(1 \"component\")()\n";
-print "Layer(2 \"silk\")()\n";
+print "Layer(2 \"solder\")()\n";
 print "Layer(3 \"silk\")()\n";
+print "Layer(4 \"silk\")()\n";
+
+exit 0;
