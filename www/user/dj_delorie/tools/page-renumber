@@ -8,7 +8,7 @@ $end_number = 9999999999;
 $base_number = 0;
 $match = "^refdes=";
 
-while ($ARGV[0] =~ /^-(.*)/) {
+while ($ARGV[0] =~ /^-(.+)/) {
     $opt = shift;
     if ($opt eq "-n") {
 	$name = shift;
