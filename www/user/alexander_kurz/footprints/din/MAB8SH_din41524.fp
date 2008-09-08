@@ -1,5 +1,5 @@
 # $Id$
-Element[0x0 "Hirschmann MAB 8 SH DIN 41524 Horizontal Socket" "Ux" "DIN41524" 26575 15000 -9843 -9500 0 100 ""]
+Element[0x0 "Hirschmann MAB 8 SH DIN 41524 Horizontal Socket" "Xx" "DIN41524" 26575 15000 -9843 -9500 0 100 ""]
 (
 	# signal pins
 	Pin[19685 19685 10000 2000 12000 5000 "1" "1" 0x0]

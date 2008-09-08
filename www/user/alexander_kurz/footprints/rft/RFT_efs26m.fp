@@ -1,5 +1,5 @@
 # $Id$
-Element[0x0 "RFT/Robotron EFS26 Socket" "Ux" "EFS10m" 26575 15000 5500 -16000 0 100 ""]
+Element[0x0 "RFT/Robotron EFS26 Socket" "Xx" "EFS10m" 26575 15000 5500 -16000 0 100 ""]
 (
 	# signal pins
 	Pin[19685 -59055 6600 3000 6600 4100 "A1" "A1" 0x101]
