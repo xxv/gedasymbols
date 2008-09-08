@@ -14,7 +14,7 @@ numslots=0
 T 100 3000 9 10 0 0 0 0 1
 footprint=MAB8SH_din41524.fp
 T 100 3200 9 10 0 0 0 0 1
-description=8 pin DIN41524, female
+description=8-pin 45-deg DIN41524 female
 V 1198 803 597 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 V 1198 1153 77 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 V 848 803 77 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
