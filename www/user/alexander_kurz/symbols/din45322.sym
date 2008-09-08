@@ -14,7 +14,7 @@ numslots=0
 T 100 3000 9 10 0 0 0 0 1
 footprint=MAB6H_din45322.fp
 T 100 3200 9 10 0 0 0 0 1
-description=6 pin DIN45322, female
+description=6-pin 60-deg DIN45322 female
 V 1198 803 597 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 V 1198 803 77 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 V 1198 1153 77 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
@@ -97,10 +97,10 @@ P 200 0 400 0 1 0 0
 {
 T 225 0 5 10 0 0 180 0 1
 pintype=unknown
-T 480 -5 5 10 1 1 0 0 1
+T 480 -5 5 10 0 1 0 0 1
 pinlabel=M1
-T 330 45 5 10 0 1 0 6 1
-pinnumber=7
+T 330 45 5 10 1 1 0 6 1
+pinnumber=M1
 T 225 0 5 10 0 0 180 0 1
 pinseq=7
 }
@@ -108,10 +108,10 @@ P 2200 0 2000 0 1 0 0
 {
 T 2200 0 5 10 0 0 0 0 1
 pintype=unknown
-T 1945 -5 5 10 1 1 0 6 1
+T 1945 -5 5 10 0 1 0 6 1
 pinlabel=M2
-T 2095 45 5 10 0 1 0 0 1
-pinnumber=8
+T 2095 45 5 10 1 1 0 0 1
+pinnumber=M2
 T 2200 0 5 10 0 0 0 0 1
 pinseq=8
 }

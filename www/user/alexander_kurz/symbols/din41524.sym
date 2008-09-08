@@ -84,10 +84,10 @@ P 200 0 400 0 1 0 0
 {
 T 225 0 5 10 0 0 180 0 1
 pintype=unknown
-T 480 -5 5 10 1 1 0 0 1
+T 480 -5 5 10 0 1 0 0 1
 pinlabel=M1
-T 330 45 5 10 0 1 0 6 1
-pinnumber=6
+T 330 45 5 10 1 1 0 6 1
+pinnumber=M1
 T 225 0 5 10 0 0 180 0 1
 pinseq=6
 }
@@ -95,10 +95,10 @@ P 2200 0 2000 0 1 0 0
 {
 T 2200 0 5 10 0 0 0 0 1
 pintype=unknown
-T 1945 -5 5 10 1 1 0 6 1
+T 1945 -5 5 10 0 1 0 6 1
 pinlabel=M2
-T 2095 45 5 10 0 1 0 0 1
-pinnumber=7
+T 2095 45 5 10 1 1 0 0 1
+pinnumber=M2
 T 2200 0 5 10 0 0 0 0 1
 pinseq=7
 }
