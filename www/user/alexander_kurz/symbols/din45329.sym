@@ -12,9 +12,9 @@ refdes=X?
 T 100 2800 9 10 0 0 0 0 1
 numslots=0
 T 100 3000 9 10 0 0 0 0 1
-footprint=MAB6H_din45322.fp
+footprint=MAB7SH_din45329.fp
 T 100 3200 9 10 0 0 0 0 1
-description=7 pin DIN45329, female
+description=7-pin 45-deg DIN45329 female
 V 1198 803 597 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 V 1198 1153 77 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 V 848 803 77 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
