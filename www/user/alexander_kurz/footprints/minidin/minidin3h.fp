@@ -1,5 +1,5 @@
 # $Id$
-Element[0x0 "Hosiden TCS7537-0121077 Mini-Din-3 Horizontal Socket" "Ux" "minidin3" 26575 15000 5500 -16000 0 100 ""]
+Element[0x0 "Hosiden TCS7537-0121077 Mini-Din-3 Horizontal Socket" "Xx" "minidin3" 26575 15000 5500 -16000 0 100 ""]
 (
 	# signal pins
 	Pin[29528 -13386 6000 3000 6600 3500 "1" "1" 0x0]
