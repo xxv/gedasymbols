@@ -34,8 +34,6 @@ pintype=out
 }
 T 950 550 8 10 1 1 0 0 1
 refdes=U?
-T 650 300 9 10 1 0 0 4 1
-7400
 T 300 3600 5 10 0 0 0 0 1
 device=7400
 T 300 800 5 10 0 0 0 0 1
@@ -66,8 +64,10 @@ slotdef=1:1,2,3
 T 300 1200 5 10 0 0 0 0 1
 comment=arcs of NOR: 400,15,75 and 425,-45,90
 L 300 0 300 600 3 0 0 0 -1 -1
-A 700 300 300 270 180 3 0 0 0 -1 -1
+A 700 300 299 270 180 3 0 0 0 -1 -1
 T 300 1400 5 10 0 0 0 0 1
 documentation=http://www.onsemi.com/PowerSolutions/product.do?id=74HC00
 T 300 1800 5 10 0 0 0 0 1
 comment=Vcc:14; GND:7; use 74xx-14N-Pwr-1.sym or net attributes
+T 650 300 5 10 1 1 0 4 1
+value=7400

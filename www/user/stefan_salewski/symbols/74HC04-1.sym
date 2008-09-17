@@ -156,8 +156,6 @@ pintype=out
 B 300 0 1400 2400 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 1700 2500 8 10 1 1 0 6 1
 refdes=U?
-T 300 2500 9 10 1 0 0 0 1
-74HC04
 T 300 2700 5 10 0 0 0 0 1
 device=74HC04
 T 300 2900 5 10 0 0 0 0 1
@@ -176,3 +174,5 @@ T 300 4100 5 10 0 0 0 0 1
 use-license=unlimited
 T 300 4300 5 10 0 0 0 0 1
 comment=generated with Python script tragesym
+T 300 2500 5 10 1 1 0 0 1
+value=74HC04

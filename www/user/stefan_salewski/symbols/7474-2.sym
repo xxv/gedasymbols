@@ -70,10 +70,8 @@ pintype=out
 B 300 0 1200 1500 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 1500 1600 8 10 1 1 0 6 1
 refdes=U?
-T 300 1600 9 10 1 0 0 0 1
-7474
 T 300 1800 5 10 0 0 0 0 1
-device=74HC74
+device=7474
 T 300 2000 5 10 0 0 0 0 1
 footprint=SO14
 T 300 2200 5 10 0 0 0 0 1
@@ -96,3 +94,5 @@ T 300 3800 5 10 0 0 0 0 1
 slotdef=2:13,12,11,10,9,8
 T 300 4000 5 10 0 0 0 0 1
 comment=generated with Python script tragesym
+T 300 1600 5 10 1 1 0 0 1
+value=7474
