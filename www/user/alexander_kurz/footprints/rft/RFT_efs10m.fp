@@ -34,11 +34,11 @@ Element[0x0 "RFT/Robotron EFS10 Socket" "Xx" "EFS10m" 26575 15000 5500 -16000 0 
 	ElementLine [-9843 39370 -9843 54134 2000]
 	ElementLine [-9843 -39370 -9843 -54134 2000]
 	# more helper lines
-	ElementLine [-49213 29035 -21654 29035 2000]
-	ElementLine [-49213 -29035 -21654 -29035 2000]
-	ElementLine [-21654 29035 -21654 -29035 2000]
-	ElementLine [-49213 4921 -21654 4921 2000]
-	ElementLine [-49213 14768 -21654 14768 2000]
+	ElementLine [-49213 29035 -21654 29035 1000]
+	ElementLine [-49213 -29035 -21654 -29035 1000]
+	ElementLine [-21654 29035 -21654 -29035 1000]
+	ElementLine [-49213 4921 -21654 4921 1000]
+	ElementLine [-49213 14768 -21654 14768 1000]
 	#
 	Attribute("author" "Alexander Kurz")
 	Attribute("copyright" "2008 Alexander Kurz")
