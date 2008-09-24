@@ -21,7 +21,7 @@ pinlabel=Vcc
 T 450 1150 5 8 0 1 0 5 1
 pintype=pwr
 }
-T 650 750 8 10 1 1 0 0 1
+T 600 800 8 10 1 1 0 0 1
 refdes=U?
 T 100 2200 5 10 0 0 0 0 1
 device=74xx_14

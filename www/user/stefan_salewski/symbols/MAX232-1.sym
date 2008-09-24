@@ -1,4 +1,4 @@
-v 20070902 1
+v 20080127 1
 P 0 2300 300 2300 1 0 0
 {
 T 200 2350 5 8 1 1 0 6 1
@@ -178,8 +178,6 @@ pintype=out
 B 300 0 1600 2500 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 1900 2600 8 10 1 1 0 6 1
 refdes=U?
-T 300 2600 9 10 1 0 0 0 1
-MAX232
 T 300 4500 5 10 0 0 0 0 1
 device=MAX232
 T 300 4300 5 10 0 0 0 0 1
@@ -198,3 +196,5 @@ T 300 4100 5 10 0 0 0 0 1
 comment=generated with Python script tragesym
 T 300 3300 5 10 0 0 0 0 1
 documentation=http://datasheets.maxim-ic.com/en/ds/MAX220-MAX249.pdf
+T 300 2600 5 10 1 1 0 0 1
+value=MAX232
