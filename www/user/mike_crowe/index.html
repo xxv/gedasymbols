@@ -1,0 +1,14 @@
+<!--#set var="title" value="XSLT to convert SVG to PCB" -->
+<!--#include virtual="/header.html" -->
+
+Here are some preliminary .xslt files and a bash script that converts an SVG
+to a PCB element list.  I use xsltproc as my tranforming engine, but any
+xslt tool should work.
+The bash script takes an input file and pipes it through the two xsl
+stylesheets.  The first sheet attempts to put the svg into a form containing
+jus the content type &lt;lines>.  The second xslt converts the &lt;lines> to
+a pcb element list.
+
+
+
+<!--#include virtual="/trailer.html" -->
