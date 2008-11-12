@@ -11,29 +11,34 @@ web: <a href="http://www.gcdataconcepts.com/xlr8r-1.html">http://www.gcdataconce
 <h2>Tools</h2>
 <p>
 Here are some preliminary .xslt files and a bash script that converts an SVG
-to a PCB element list.  I use xsltproc as my tranforming engine, but any
-xslt tool should work.
-The bash script takes an input file and pipes it through the two xsl
-stylesheets.  The first sheet attempts to put the svg into a form containing
-jus the content type &lt;lines>.  The second xslt converts the &lt;lines> to
-a pcb element list.
+to a PCB element list.  I use xsltproc as my transforming engine, but any
+xslt tool should work.<br/>
+The bash script takes an input file and runs it through two xsl
+stylesheets.  The first sheet attempts to put the SVG into a form containing
+just the content type &lt;lines>.  The second xslt converts the &lt;lines> to
+a PCB element list.
 <br/>
-While the xslt's process on the supplied .svg, the output is still wrong. 
-This code isn't even ready for wet testing yet~
-
-<a href="svg2svg_lines.xsl"> takes an svg containing paths and converts to
-lines</a><br/>
-<a href="svgpath2lines.xsl"> helper function for above stylesheet
-lines</a><br/>
-<a href="xsltmatrixtransform.xsl"> scales, rotates, and offsets as per svg
-matrix spec</a><br/>
-<a href="svg_lines2pcb.xsl"> takes an svg containing just lines to PCB
-format</a> NEEDS LOTS of WORK<br/>
-<a href="convert.sh"> script to process above xslt's</a> <br/>
+While the xslt's process the supplied .svg, the output is WRONG. 
+This code isn't even ready for wet testing yet!  Please feel free to help
+get it right.<br/>
+<p>
+To work with, download all the files below into the same directory.  Then
+run the script. PCB accepts the resulting output, but the resulting lines
+are all over the place.
+<p>
+<a href="svg2svg_lines.xsl">svg2svg_lines.xsl</a>, takes an svg containing paths and converts to
+lines<br/>
+<a href="svgpath2lines.xsl">svgpath2lines.xsl</a>, helper function for above stylesheet
+lines<br/>
+<a href="xsltmatrixtransform.xsl">xsltmatrixtransform.xsl</a>, scales, rotates, and offsets as per svg
+matrix spec<br/>
+<a href="svg_lines2pcb.xsl">svg_lines2pcb.xsl</a>, takes an svg containing just lines to PCB
+format, NEEDS LOTS of WORK<br/>
+<a href="convert.sh">convert.sh</a>, script to process above xslt's <br/>
 <br/>
 <br/>
-<a href="grb.svg"> example svg</a> created with gerbv --export=svg
---output=grb.svg <br/>
+<a href="grb.svg">grb.svg</a> is an example svg created with <code>gerbv --export=svg
+--output=grb.svg</code><br/>
 <br/>
 
 
