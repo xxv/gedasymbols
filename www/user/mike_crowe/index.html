@@ -1,6 +1,15 @@
 <!--#set var="title" value="XSLT to convert SVG to PCB" -->
 <!--#include virtual="/header.html" -->
 
+Mike Crowe<br>
+Waveland, MS<br>
+
+Occupation: Electrical Engineer, Software Developer, Owner, Head floor
+sweeper<br>
+email: <a href="mailto:mcrowe@gcdataconcepts.com">mcrowe@gcdataconcepts.com</a><br>
+web: <a href="http://www.gcdataconcepts.com/xlr8r-1.html">http://www.gcdataconcepts.com/</a>, 
+<h2>Tools</h2>
+<p>
 Here are some preliminary .xslt files and a bash script that converts an SVG
 to a PCB element list.  I use xsltproc as my tranforming engine, but any
 xslt tool should work.
@@ -8,6 +17,25 @@ The bash script takes an input file and pipes it through the two xsl
 stylesheets.  The first sheet attempts to put the svg into a form containing
 jus the content type &lt;lines>.  The second xslt converts the &lt;lines> to
 a pcb element list.
+<br/>
+While the xslt's process on the supplied .svg, the output is still wrong. 
+This code isn't even ready for wet testing yet~
+
+<a href="svg2svg_lines.xsl"> takes an svg containing paths and converts to
+lines</a><br/>
+<a href="svgpath2lines.xsl"> helper function for above stylesheet
+lines</a><br/>
+<a href="xsltmatrixtransform.xsl"> scales, rotates, and offsets as per svg
+matrix spec</a><br/>
+<a href="svg_lines2pcb.xsl"> takes an svg containing just lines to PCB
+format</a> NEEDS LOTS of WORK<br/>
+<a href="convert.sh"> script to process above xslt's</a> <br/>
+<br/>
+<br/>
+<a href="grb.svg"> example svg</a> created with gerbv --export=svg
+--output=grb.svg <br/>
+<br/>
+
 
 
 
