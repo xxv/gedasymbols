@@ -19,27 +19,42 @@ stylesheets.  The first sheet attempts to put the SVG into a form containing
 just the content type &lt;lines>.  The second xslt converts the &lt;lines> to
 a PCB element list.
 <br/>
-While the xslt's process the supplied .svg, the output is WRONG. 
-This code isn't even ready for wet testing yet!  Please feel free to help
-get it right.<br/>
+The xslt's process the supplied example .svg.  The output appears to be
+correct, .... but the general case of converting a generic svg isn't there
+yet.  Please feel free to help get it to work for the more general case.<br/>
+<p>
+TODO list
+<list>
+	<li>Handle other types of svg objects</li>
+	<li>Better handling of &lt;svg:path> objects, d attribute needs
+	work</li>
+	<li>Style attrib needs to be parsed to provide line end types</li>
+	<li>Line widths need work</li>
+	<li>Clearance widths are not correctly handled</li>
+	<li>Need to be handle output from other tools that output svg</li>
+</list>
 <p>
 To work with, download all the files below into the same directory.  Then
-run the script. PCB accepts the resulting output, but the resulting lines
-are all over the place.
-<p>
+run the script. The resulting output is suitable for "file->load element data
+to past buffer" in PCB<br/>
 <a href="svg2svg_lines.xsl">svg2svg_lines.xsl</a>, takes an svg containing paths and converts to
 lines<br/>
 <a href="svgpath2lines.xsl">svgpath2lines.xsl</a>, helper function for above stylesheet
 lines<br/>
-<a href="xsltmatrixtransform.xsl">xsltmatrixtransform.xsl</a>, scales, rotates, and offsets as per svg
-matrix spec<br/>
+<a href="xsltmatrixtransform.xsl">xsltmatrixtransform.xsl</a>, scales, rotates, and offsets as per
+the svg matrix spec.<br/>
 <a href="svg_lines2pcb.xsl">svg_lines2pcb.xsl</a>, takes an svg containing just lines to PCB
-format, NEEDS LOTS of WORK<br/>
+format<br/>
 <a href="convert.sh">convert.sh</a>, script to process above xslt's <br/>
 <br/>
 <br/>
 <a href="grb.svg">grb.svg</a> is an example svg created with <code>gerbv --export=svg
 --output=grb.svg</code><br/>
+It is a board outline 0.850 wide by 3.116 long.  There are two 45 degree
+miters on the left hand side and cutouts on the right hand side (see image
+below)<br/>
+<embed src="grb.svg" width="320" height="120" alt="Your browser does not
+support viewing .svg images"/>
 <br/>
 
 <h2>Documentation</h2>

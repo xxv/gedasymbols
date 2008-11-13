@@ -9,14 +9,17 @@ Layer(5 "<xsl:value-of select="@id"/>")
 	</xsl:template>
 
 	<xsl:template match="*[local-name()='line']"> 
-	<xsl:variable name="scale">10.0 </xsl:variable>
+	<xsl:variable name="xscale">72.0 </xsl:variable>
+	<xsl:variable name="yscale">-72.0 </xsl:variable>
+	<xsl:variable name="xoffset">-30.135599 </xsl:variable>
+	<xsl:variable name="yoffset">319.603601 </xsl:variable>
 	<xsl:variable name="width">
 	 <xsl:value-of select="substring-before(substring-after(concat(@style, ' '),'stroke-width:'), ';')"/>		
-	</xsl:variable>	Line[ <xsl:value-of select="floor(100000 * @x1 div $scale)"/> <xsl:text> </xsl:text> 
-<xsl:value-of select="floor(503.9996 * @y1 div $scale)"/>  <xsl:text> </xsl:text> 
-<xsl:value-of select="floor(503.99960 * @x2 div $scale)"/> <xsl:text> </xsl:text>  
-<xsl:value-of select="floor(503.99960 * @y2 div $scale)"/> <xsl:text> </xsl:text>  
-<xsl:value-of select="floor(50399.960 * $width div $scale)"/> <xsl:text> </xsl:text>  
-<xsl:value-of select="floor(2*50399.960 * $width div $scale)"/> <xsl:text> </xsl:text>""]</xsl:template>
+	</xsl:variable>	Line[ <xsl:value-of select="floor(100000 * (@x1 - $xoffset) div $xscale)"/> <xsl:text> </xsl:text> 
+<xsl:value-of select="floor(100000 * (@y1 - $yoffset) div $yscale)"/>  <xsl:text> </xsl:text> 
+<xsl:value-of select="floor(100000 * (@x2 - $xoffset) div $xscale)"/> <xsl:text> </xsl:text>  
+<xsl:value-of select="floor(100000 * (@y2 - $yoffset) div $yscale)"/> <xsl:text> </xsl:text>  
+<xsl:value-of select="floor(50399.960 * $width )"/> <xsl:text> </xsl:text>  
+<xsl:value-of select="floor(2*50399.960 * $width )"/> <xsl:text> </xsl:text>""]</xsl:template>
 
 </xsl:stylesheet>
