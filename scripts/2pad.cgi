@@ -29,14 +29,22 @@ print "<tt>\n" unless $quiet;
 $mm = 1000/25.4 * 100;
 $mil = 100;
 
+$comments = "";
+
 if ($in{'units'} eq "mm") {
     $defunits = $mm;
+    $comments .= "# units: MM\n";
 } else {
     $defunits = $mil;
+    $comments .= "# units: MIL\n";
 }
 
 for $v ('c', 'cl', 'cw', 'g', 'm', 'pl', 'plc', 'ple', 'pt', 'pw', 'pwe',
 	  'so', 'soc', 'sw') {
+    ($upv = $v) =~ tr/a-z/A-Z/;
+    if ($in{$v}) {
+	$comments .= "# $upv = $in{$v}\n";
+    }
     $in{$v} =~ s/\s+//;
     $in{$v} =~ tr/A-Z/a-z/;
     if ($in{$v} =~ /^([\d\.]+)(mil|mm|%)?/) {
@@ -117,6 +125,8 @@ if ($do eq "png") {
 	print;
     }
 }
+
+print $comments;
 
 print "Element[\"\" \"\" \"\" \"\" 0 0 0 0 0 100 \"\"]\n";
 print "(\n";
