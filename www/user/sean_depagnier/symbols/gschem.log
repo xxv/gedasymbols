@@ -1,0 +1,9 @@
+gEDA/gschem version 1.5.0.20080706
+gEDA/gschem comes with ABSOLUTELY NO WARRANTY; see COPYING for more details.
+This is free software, and you are welcome to redistribute it under certain
+conditions; please see the COPYING file for more details.
+
+Read system-gafrc file [/home/sean/geda/share/gEDA/system-gafrc]
+Read system-gschemrc file [/home/sean/geda/share/gEDA/system-gschemrc]
+Read init scm file [/home/sean/geda/share/gEDA/scheme/gschem.scm]
+Loading schematic [/home/sean/gedasymbols/www/user/sean_depagnier/symbols/wt12.sym]
