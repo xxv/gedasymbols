@@ -3,7 +3,7 @@
 
 print "Content-type: text/html\n\n";
 
-require "/home/apache/bin/cgi-lib.pl";
+require "./cgi-lib.pl";
 &ReadParse();
 
 $docroot = $ENV{'DOCUMENT_ROOT'};

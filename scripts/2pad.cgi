@@ -4,7 +4,7 @@
 require "./math.pl";
 
 push(@INC, split(':', $ENV{'PATH'}));
-require "cgi-lib.pl";
+require "./cgi-lib.pl";
 &ReadParse();
 
 $do = $in{'do'};
