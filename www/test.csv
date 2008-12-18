@@ -8,3 +8,4 @@ cs8900a-net.sym,tqfp100.fp,CS8900A-LQ,"10Mbit Ethernet, net side"
 m32c-cpu.sym,minidin-8.fp,REJ83A-FJ,m32c/84 - cpu side
 m32c-io.sym,tqfp100.fp,REJ83A-FJ,m32c/84 - I/O side
 resistor.sym,603.fp,123456,1K 603 resistor.
+resistor2.sym,0603.fp,1236,1K 0603 resistor.
