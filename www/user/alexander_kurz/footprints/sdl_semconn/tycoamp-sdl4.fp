@@ -1,5 +1,5 @@
 # $Id$
-Element[0x0 "TycoAmp SDL 4 connector" "Ux" "SDL4" 26575 15000 5500 -16000 0 100 ""]
+Element[0x0 "Tyco Amp SDL 4 connector" "Ux" "SDL4" 26575 15000 5500 -16000 0 100 ""]
 (
 	# signal pins
 	Pin[49700 7000 6600 3000 7000 4100 "1" "1" 0x01]
