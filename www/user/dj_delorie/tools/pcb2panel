@@ -5,7 +5,7 @@
 # Released under the terms of the GNU General Public License, version 2
 
 if (! @ARGV) {
-    print "Usage: pcb2panel board1.pcb board2.pcb board3.pcb > boards.pcb";
+    print "Usage: pcb2panel board1.pcb board2.pcb board3.pcb > boards.pcb\n";
     print "Then edit boards.pcb, putting each outline where you want it\n";
     print "and sizing the board.  Then:\n";
     print "panel2pcb boards.pcb\n";
@@ -21,7 +21,7 @@ for $pcb (@ARGV) {
     push (@pcbs, $pcb);
     open(PCB, $pcb);
     while (<PCB>) {
-	if (/^PCB\["" (\d+) (\d+)\]/) {
+	if (/^PCB\[".*" (\d+) (\d+)\]/) {
 	    $width{$pcb} = $1;
 	    $height{$pcb} = $2;
 	    break;
