@@ -196,6 +196,6 @@ T 300 4650 5 10 0 0 0 0 1
 author=Thomas Kohler <thomas.kohlerATmb.tu-chemnitz.de>, Werner Hoch <werner.hoATgmx.de>
 T 300 4850 5 10 0 0 0 0 1
 documentation=http://www.nxp.com/acrobat/datasheets/PCA9531_5.pdf
-T 1300 3200 9 10 1 1 0 0 1
+T 1300 3200 9 10 1 0 0 0 1
 PCA9531
 V 248 2002 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
