@@ -1,6 +1,6 @@
 v 20080127 1
 T 0 1700 5 10 0 0 0 0 1
-description=TRS connector / Klinkenstecker / Stereo Phone Jack 6.35mm with 6 pins
+description=TRS connector/Stereo Phone Jack/Klinkenbuchse 6.35mm with 6 pins
 T 0 1470 8 10 0 0 0 0 1
 footprint=TRS_6conn_6.35mm
 T 0 1300 8 10 1 1 0 0 1
