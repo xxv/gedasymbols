@@ -429,19 +429,23 @@ T 350 4200 5 8 0 1 0 2 1
 pintype=in
 }
 V 250 4200 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 300 11700 5 10 0 0 0 0 1
-device=Z80PIO
 T 300 11900 5 10 0 0 0 0 1
-footprint=DIP40
+device=Z80PIO
 T 300 12100 5 10 0 0 0 0 1
-author=Oliver Lehmann <lehmann@ans-netz.de>
+footprint=DIP40
 T 300 12300 5 10 0 0 0 0 1
-documentation=
-T 300 12500 5 10 0 0 0 0 1
 description=Z80 PIO
-T 300 12700 5 10 0 0 0 0 1
+T 300 12500 5 10 0 0 0 0 1
 numslots=0
-T 300 12900 5 10 0 0 0 0 1
+T 300 12700 5 10 0 0 0 0 1
 net=GND:11
-T 300 13100 5 10 0 0 0 0 1
+T 300 12900 5 10 0 0 0 0 1
 net=Vcc:26
+T 300 13500 5 10 0 0 0 0 1
+author=Oliver Lehmann <lehmann@ans-netz.de>
+T 300 13100 5 10 0 0 0 0 1
+dist-license=GPL
+T 300 13300 5 10 0 0 0 0 1
+use-license=unlimited
+T 300 13700 5 10 0 0 0 0 1
+documentation=http://www.zilog.com/docs/z80/um0081.pdf

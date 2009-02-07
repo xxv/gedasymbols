@@ -3,20 +3,18 @@ T 300 11050 9 10 1 0 0 0 1
 Z80 CTC
 T 2300 11100 8 10 1 1 0 6 1
 refdes=U?
-T 300 11350 5 10 0 0 0 0 1
-device=Z80CTC
 T 300 11550 5 10 0 0 0 0 1
-numslots=0
+device=Z80CTC
 T 300 11750 5 10 0 0 0 0 1
-footprint=DIP28
+numslots=0
 T 300 11950 5 10 0 0 0 0 1
-description=Z80 CTC
+footprint=DIP28
 T 300 12150 5 10 0 0 0 0 1
-net=Vcc:24
+description=Z80 CTC
 T 300 12350 5 10 0 0 0 0 1
-net=GND:5
+net=Vcc:24
 T 300 12550 5 10 0 0 0 0 1
-author=Oliver Lehmann <lehmann@ans-netz.de>
+net=GND:5
 B 300 0 2000 11000 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 P 300 10700 0 10700 1 0 1
 {
@@ -316,3 +314,11 @@ pinlabel=IEO
 T 350 300 5 8 0 1 0 2 1
 pintype=out
 }
+T 300 13150 5 10 0 0 0 0 1
+author=Oliver Lehmann <lehmann@ans-netz.de>
+T 300 12750 5 10 0 0 0 0 1
+dist-license=GPL
+T 300 12950 5 10 0 0 0 0 1
+use-license=unlimited
+T 300 13350 5 10 0 0 0 0 1
+documentation=http://www.zilog.com/docs/z80/um0081.pdf

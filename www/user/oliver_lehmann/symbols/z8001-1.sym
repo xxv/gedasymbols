@@ -516,19 +516,21 @@ T 2200 10600 8 10 1 1 0 6 1
 refdes=U?
 T 400 10600 9 10 1 0 0 0 1
 Z8001A
-T 400 10800 5 10 0 0 0 0 1
+T 400 11050 5 10 0 0 0 0 1
 device=Z8001
-T 400 11000 5 10 0 0 0 0 1
+T 400 11250 5 10 0 0 0 0 1
 footprint=DIP48
-T 400 11200 5 10 0 0 0 0 1
-author=Oliver Lehmann <lehmann@ans-netz.de>
-T 400 11400 5 10 0 0 0 0 1
-documentation=
-T 400 11600 5 10 0 0 0 0 1
+T 400 11450 5 10 0 0 0 0 1
 description=Z8001A SEGCPU
-T 400 11800 5 10 0 0 0 0 1
+T 400 11650 5 10 0 0 0 0 1
 numslots=0
-T 400 12000 5 10 0 0 0 0 1
+T 400 11850 5 10 0 0 0 0 1
 net=GND:36
-T 400 12200 5 10 0 0 0 0 1
+T 400 12050 5 10 0 0 0 0 1
 net=Vcc:11
+T 400 12650 5 10 0 0 0 0 1
+author=Oliver Lehmann <lehmann@ans-netz.de>
+T 400 12250 5 10 0 0 0 0 1
+dist-license=GPL
+T 400 12450 5 10 0 0 0 0 1
+use-license=unlimited

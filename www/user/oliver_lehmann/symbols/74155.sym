@@ -159,26 +159,30 @@ pintype=out
 }
 V 1750 200 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 B 300 0 1400 3700 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 300 4140 5 10 0 0 0 0 1
+T 300 4390 5 10 0 0 0 0 1
 device=74155
-T 300 3940 5 10 0 0 0 0 1
+T 300 4190 5 10 0 0 0 0 1
 footprint=DIP16
 T 1700 3800 8 10 1 1 0 6 1
 refdes=U?
-T 300 4350 5 10 0 0 0 0 1
+T 300 4600 5 10 0 0 0 0 1
 description=Dual 2-line to 4-line decoders/demultiplexers
-T 300 4950 5 10 0 0 0 0 1
+T 300 5200 5 10 0 0 0 0 1
 numslots=0
-T 300 4550 5 10 0 0 0 0 1
+T 300 4800 5 10 0 0 0 0 1
 net=Vcc:16
-T 300 4750 5 10 0 0 0 0 1
+T 300 5000 5 10 0 0 0 0 1
 net=GND:8
 T 300 3740 9 10 1 0 0 0 1
 74155
 L 350 3550 580 3550 3 0 0 0 -1 -1
 L 350 2750 580 2750 3 0 0 0 -1 -1
 L 350 2350 580 2350 3 0 0 0 -1 -1
-T 300 5150 5 10 0 0 0 0 1
+T 300 5400 5 10 0 0 0 0 1
 documentation=http://www.datasheetcatalog.org/datasheets/400/337836_DS.pdf
-T 300 5350 5 10 0 0 0 0 1
+T 300 6000 5 10 0 0 0 0 1
 author=Oliver Lehmann <lehmann@ans-netz.de>
+T 300 5600 5 10 0 0 0 0 1
+dist-license=GPL
+T 300 5800 5 10 0 0 0 0 1
+use-license=unlimited

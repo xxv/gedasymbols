@@ -1,4 +1,4 @@
-v 20090107 1
+v 20070216 1
 P 0 2700 300 2700 1 0 0
 {
 T 200 2750 5 8 1 1 0 6 1
@@ -199,23 +199,27 @@ T 1650 600 5 8 0 1 0 8 1
 pintype=tri
 }
 B 300 300 1400 2600 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 300 3150 5 10 0 0 0 0 1
+T 350 3350 5 10 0 0 0 0 1
 device=74241
 T 1700 3000 8 10 1 1 0 6 1
 refdes=U?
-T 300 3350 5 10 0 0 0 0 1
+T 350 3550 5 10 0 0 0 0 1
 footprint=DIP20
-T 300 3550 5 10 0 0 0 0 1
+T 350 3750 5 10 0 0 0 0 1
 description=octal buffer/line driver (tristate)
-T 300 4150 5 10 0 0 0 0 1
+T 350 4350 5 10 0 0 0 0 1
 numslots=0
-T 300 3750 5 10 0 0 0 0 1
+T 350 3950 5 10 0 0 0 0 1
 net=Vcc:20
-T 300 3950 5 10 0 0 0 0 1
+T 350 4150 5 10 0 0 0 0 1
 net=GND:10
-T 300 4550 5 10 0 0 0 0 1
-author=Oliver Lehmann <lehmann@ans-netz.de>
 T 300 2950 9 10 1 0 0 0 1
 74241
-T 300 4350 5 10 0 0 0 0 1
+T 350 4550 5 10 0 0 0 0 1
 documentation=http://www-s.ti.com/sc/ds/sn74hc241.pdf
+T 350 5150 5 10 0 0 0 0 1
+author=Oliver Lehmann <lehmann@ans-netz.de>
+T 350 4750 5 10 0 0 0 0 1
+dist-license=GPL
+T 350 4950 5 10 0 0 0 0 1
+use-license=unlimited

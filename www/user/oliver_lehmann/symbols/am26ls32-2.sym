@@ -48,25 +48,27 @@ T 1400 1800 8 10 1 1 0 6 1
 refdes=U?
 T 300 1740 9 10 1 0 0 0 1
 26ls32
-T 1500 1800 5 10 0 0 0 0 1
+T 300 2050 5 10 0 0 0 0 1
 device=am26ls32
-T 1500 2000 5 10 0 0 0 0 1
+T 300 2250 5 10 0 0 0 0 1
 slot=1
-T 1500 2200 5 10 0 0 0 0 1
-numslots=4
-T 1500 2600 5 10 0 0 0 0 1
+T 300 2450 5 10 0 0 0 0 1
+numslots=0
+T 300 2850 5 10 0 0 0 0 1
 pins=16
-T 1500 2400 5 10 0 0 0 0 1
+T 300 2650 5 10 0 0 0 0 1
 class=IC
-T 1500 3000 5 10 0 0 0 0 1
+T 300 3250 5 10 0 0 0 0 1
 net=GND:8
-T 1500 3200 5 10 0 0 0 0 1
+T 300 3450 5 10 0 0 0 0 1
 footprint=DIP16
-T 1500 3400 5 10 0 0 0 0 1
+T 300 3650 5 10 0 0 0 0 1
 description=4 line receiver with three-state outputs
-T 1500 3600 5 10 0 0 0 0 1
-documentation=
-T 1500 2800 5 10 0 0 0 0 1
+T 300 3050 5 10 0 0 0 0 1
 net=Vcc:16
-T 1500 3800 5 10 0 0 0 0 1
+T 300 4250 5 10 0 0 0 0 1
 author=Oliver Lehmann <lehmann@ans-netz.de>
+T 300 3850 5 10 0 0 0 0 1
+dist-license=GPL
+T 300 4050 5 10 0 0 0 0 1
+use-license=unlimited

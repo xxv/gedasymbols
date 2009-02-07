@@ -1,4 +1,4 @@
-v 20031231 1
+v 20070216 1
 B 300 600 1500 6000 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 P 300 6300 0 6300 1 0 1
 {
@@ -198,7 +198,7 @@ pinlabel=DB6
 T 350 1200 5 8 0 1 0 2 1
 pintype=in
 }
-P 300 900 0  900 1 0 1
+P 300 900 0 900 1 0 1
 {
 T 200 950 5 8 1 1 0 6 1
 pinnumber=19
@@ -428,8 +428,6 @@ T 300 8150 5 10 0 0 0 0 1
 description=programmable CRT controller
 T 300 7950 5 10 0 0 0 0 1
 numslots=0
-T 300 8350 5 10 0 0 0 0 1
-author=Oliver Lehmann <lehmann@ans-netz.de>
 T 300 7550 5 10 0 0 0 0 1
 net=Vcc:40
 T 300 7750 5 10 0 0 0 0 1
@@ -444,3 +442,9 @@ V 250 4800 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 V 250 3900 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 V 250 3600 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 V 1850 1200 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 300 8750 5 10 0 0 0 0 1
+author=Oliver Lehmann <lehmann@ans-netz.de>
+T 300 8350 5 10 0 0 0 0 1
+dist-license=GPL
+T 300 8550 5 10 0 0 0 0 1
+use-license=unlimited

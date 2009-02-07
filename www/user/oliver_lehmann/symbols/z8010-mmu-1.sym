@@ -507,19 +507,21 @@ T 2200 13600 8 10 1 1 0 6 1
 refdes=U?
 T 400 13600 9 10 1 0 0 0 1
 Z8010 MMU
-T 400 13800 5 10 0 0 0 0 1
+T 400 14050 5 10 0 0 0 0 1
 device=Z8010MMU
-T 400 14000 5 10 0 0 0 0 1
+T 400 14250 5 10 0 0 0 0 1
 footprint=DIP48
-T 400 14200 5 10 0 0 0 0 1
-author=Oliver Lehmann <lehmann@ans-netz.de>
-T 400 14400 5 10 0 0 0 0 1
-documentation=
-T 400 14600 5 10 0 0 0 0 1
+T 400 14500 5 10 0 0 0 0 1
 description=Z8010 MMU
-T 400 14800 5 10 0 0 0 0 1
+T 400 14700 5 10 0 0 0 0 1
 numslots=0
-T 400 15000 5 10 0 0 0 0 1
+T 400 14900 5 10 0 0 0 0 1
 net=Vcc:11
-T 400 15200 5 10 0 0 0 0 1
+T 400 15100 5 10 0 0 0 0 1
 net=GND:35
+T 400 15700 5 10 0 0 0 0 1
+author=Oliver Lehmann <lehmann@ans-netz.de>
+T 400 15300 5 10 0 0 0 0 1
+dist-license=GPL
+T 400 15500 5 10 0 0 0 0 1
+use-license=unlimited

@@ -47,15 +47,15 @@ T 600 3600 5 10 0 0 0 0 1
 pins=20
 T 600 3400 5 10 0 0 0 0 1
 class=IC
-T 600 4200 5 10 0 0 0 0 1
-net=GND:10
-T 600 4400 5 10 0 0 0 0 1
-footprint=DIP20
-T 600 4600 5 10 0 0 0 0 1
-description=octal inverting buffer (tristate)
-T 600 4800 5 10 0 0 0 0 1
-documentation=http://www-s.ti.com/sc/ds/sn74hc240.pdf
 T 600 4000 5 10 0 0 0 0 1
+net=GND:10
+T 600 4200 5 10 0 0 0 0 1
+footprint=DIP20
+T 600 4400 5 10 0 0 0 0 1
+description=octal inverting buffer (tristate)
+T 600 4600 5 10 0 0 0 0 1
+documentation=http://www-s.ti.com/sc/ds/sn74hc240.pdf
+T 600 3800 5 10 0 0 0 0 1
 net=Vcc:20
 P 500 0 500 200 1 0 0
 {
@@ -68,8 +68,6 @@ pinlabel=G
 T 500 350 5 8 0 1 270 8 1
 pintype=in
 }
-T 600 3800 5 10 0 0 0 0 1
-author=Oliver Lehmann <lehmann@ans-netz.de>
 V 250 500 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 V 500 250 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 600 2600 5 10 0 0 0 0 1
@@ -80,3 +78,9 @@ T 600 3000 5 10 0 0 0 0 1
 slotdef=7:5,15,19
 T 600 3200 5 10 0 0 0 0 1
 slotdef=8:3,17,19
+T 600 5200 5 10 0 0 0 0 1
+author=Oliver Lehmann <lehmann@ans-netz.de>
+T 600 4800 5 10 0 0 0 0 1
+dist-license=GPL
+T 600 5000 5 10 0 0 0 0 1
+use-license=unlimited

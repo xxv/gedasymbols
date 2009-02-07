@@ -169,19 +169,19 @@ T 350 2300 5 8 0 1 0 2 1
 pintype=in
 }
 B 300 0 1400 7000 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 300 7540 5 10 0 0 0 0 1
+T 300 7640 5 10 0 0 0 0 1
 device=Am8127
-T 300 7340 5 10 0 0 0 0 1
+T 300 7440 5 10 0 0 0 0 1
 footprint=DIP24
 T 1700 7100 8 10 1 1 0 6 1
 refdes=U?
-T 300 7750 5 10 0 0 0 0 1
+T 300 7850 5 10 0 0 0 0 1
 description=AmZ8000 Clock Generator
-T 300 8350 5 10 0 0 0 0 1
+T 300 8450 5 10 0 0 0 0 1
 numslots=0
-T 300 7950 5 10 0 0 0 0 1
+T 300 8050 5 10 0 0 0 0 1
 net=Vcc:24
-T 300 8150 5 10 0 0 0 0 1
+T 300 8250 5 10 0 0 0 0 1
 net=GND:12
 T 300 7040 9 10 1 0 0 0 1
 Am8127
@@ -264,5 +264,9 @@ pinlabel=OSC
 T 1650 5900 5 8 0 1 0 8 1
 pintype=out
 }
-T 300 8550 5 10 0 0 0 0 1
+T 300 9050 5 10 0 0 0 0 1
 author=Oliver Lehmann <lehmann@ans-netz.de>
+T 300 8650 5 10 0 0 0 0 1
+dist-license=GPL
+T 300 8850 5 10 0 0 0 0 1
+use-license=unlimited

@@ -51,8 +51,6 @@ T 300 2800 5 10 0 0 0 0 1
 footprint=DIP16
 T 300 3000 5 10 0 0 0 0 1
 description=quadruple line receiver
-T 300 3200 5 10 0 0 0 0 1
-author=Oliver Lehmann <lehmann@ans-netz.de>
 P 500 200 500 500 1 0 0
 {
 T 500 250 5 8 1 1 0 6 1
@@ -66,3 +64,9 @@ pintype=in
 }
 T 800 350 9 10 1 0 0 0 1
 75154
+T 300 3600 5 10 0 0 0 0 1
+author=Oliver Lehmann <lehmann@ans-netz.de>
+T 300 3200 5 10 0 0 0 0 1
+dist-license=GPL
+T 300 3400 5 10 0 0 0 0 1
+use-license=unlimited

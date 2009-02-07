@@ -93,11 +93,13 @@ T 300 2900 5 10 0 0 0 0 1
 description=2 NOR gates with 5 inputs
 T 300 4100 5 10 0 0 0 0 1
 numslots=2
-T 300 4300 5 10 0 0 0 0 1
-documentation=
 T 300 3900 5 10 0 0 0 0 1
 slotdef=1:3,2,1,13,12,6
 T 300 3700 5 10 0 0 0 0 1
 slotdef=2:4,11,10,9,8,5
-T 300 4500 5 10 0 0 0 0 1
+T 300 4700 5 10 0 0 0 0 1
 author=Oliver Lehmann <lehmann@ans-netz.de>
+T 300 4300 5 10 0 0 0 0 1
+dist-license=GPL
+T 300 4500 5 10 0 0 0 0 1
+use-license=unlimited

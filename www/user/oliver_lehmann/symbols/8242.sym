@@ -59,5 +59,9 @@ T 300 940 9 10 1 0 0 0 1
 8242
 T 300 3250 5 10 0 0 0 0 1
 documentation=http://www.ic-on-line.cn/IOL/datasheet/82S42_947714.pdf
-T 300 3450 5 10 0 0 0 0 1
+T 300 3850 5 10 0 0 0 0 1
 author=Oliver Lehmann <lehmann@ans-netz.de>
+T 300 3450 5 10 0 0 0 0 1
+dist-license=GPL
+T 300 3650 5 10 0 0 0 0 1
+use-license=unlimited

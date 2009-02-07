@@ -441,19 +441,23 @@ T 2200 9500 8 10 1 1 0 6 1
 refdes=U?
 T 400 9500 9 10 1 0 0 0 1
 Z80 SIO/0
-T 400 9700 5 10 0 0 0 0 1
+T 400 9950 5 10 0 0 0 0 1
 device=Z80SIO/0
-T 400 9900 5 10 0 0 0 0 1
+T 400 10150 5 10 0 0 0 0 1
 footprint=DIP40
-T 400 10100 5 10 0 0 0 0 1
-author=Oliver Lehmann <lehmann@ans-netz.de>
-T 400 10300 5 10 0 0 0 0 1
-documentation=
-T 400 10500 5 10 0 0 0 0 1
+T 400 10400 5 10 0 0 0 0 1
 description=Z80 SIO/0
-T 400 10700 5 10 0 0 0 0 1
+T 400 10600 5 10 0 0 0 0 1
 numslots=0
-T 400 10900 5 10 0 0 0 0 1
+T 400 10800 5 10 0 0 0 0 1
 net=GND:31
-T 400 11100 5 10 0 0 0 0 1
+T 400 11000 5 10 0 0 0 0 1
 net=Vcc:9
+T 400 11600 5 10 0 0 0 0 1
+author=Oliver Lehmann <lehmann@ans-netz.de>
+T 400 11200 5 10 0 0 0 0 1
+dist-license=GPL
+T 400 11400 5 10 0 0 0 0 1
+use-license=unlimited
+T 400 11800 5 10 0 0 0 0 1
+documentation=http://www.zilog.com/docs/z80/um0081.pdf

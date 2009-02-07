@@ -200,21 +200,25 @@ T 350 300 5 8 0 1 0 2 1
 pintype=in
 }
 L 350 725 550 725 3 0 0 0 -1 -1
-T 300 3850 5 10 0 0 0 0 1
+T 300 4100 5 10 0 0 0 0 1
 device=i8282
 T 1700 3700 8 10 1 1 0 6 1
 refdes=U?
-T 300 4050 5 10 0 0 0 0 1
+T 300 4300 5 10 0 0 0 0 1
 footprint=DIP20
-T 300 4250 5 10 0 0 0 0 1
+T 300 4500 5 10 0 0 0 0 1
 description=8-bit D-type latch with tristate outputs
-T 300 4850 5 10 0 0 0 0 1
+T 300 5100 5 10 0 0 0 0 1
 numslots=0
-T 300 4450 5 10 0 0 0 0 1
+T 300 4700 5 10 0 0 0 0 1
 net=Vcc:20
-T 300 4650 5 10 0 0 0 0 1
+T 300 4900 5 10 0 0 0 0 1
 net=GND:10
 T 300 3640 9 10 1 0 0 0 1
 i8282
-T 300 5000 5 10 0 0 0 0 1
+T 300 5700 5 10 0 0 0 0 1
 author=Oliver Lehmann <lehmann@ans-netz.de>
+T 300 5300 5 10 0 0 0 0 1
+dist-license=GPL
+T 300 5500 5 10 0 0 0 0 1
+use-license=unlimited

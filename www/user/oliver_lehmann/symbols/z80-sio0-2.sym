@@ -441,14 +441,10 @@ T 2200 12700 8 10 1 1 0 6 1
 refdes=U?
 T 400 12700 9 10 1 0 0 0 1
 Z80 SIO/0
-T 400 12900 5 10 0 0 0 0 1
+T 400 13250 5 10 0 0 0 0 1
 device=Z80SIO/0
-T 400 13100 5 10 0 0 0 0 1
+T 400 13450 5 10 0 0 0 0 1
 footprint=DIP40
-T 400 13300 5 10 0 0 0 0 1
-author=Oliver Lehmann <lehmann@ans-netz.de>
-T 400 13500 5 10 0 0 0 0 1
-documentation=
 T 400 13700 5 10 0 0 0 0 1
 description=Z80 SIO/0
 T 400 13900 5 10 0 0 0 0 1
@@ -457,3 +453,11 @@ T 400 14100 5 10 0 0 0 0 1
 net=GND:31
 T 400 14300 5 10 0 0 0 0 1
 net=Vcc:9
+T 400 14900 5 10 0 0 0 0 1
+author=Oliver Lehmann <lehmann@ans-netz.de>
+T 400 14500 5 10 0 0 0 0 1
+dist-license=GPL
+T 400 14700 5 10 0 0 0 0 1
+use-license=unlimited
+T 400 15100 5 10 0 0 0 0 1
+documentation=http://www.zilog.com/docs/z80/um0081.pdf
