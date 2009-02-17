@@ -95,7 +95,7 @@ pinnumber=9
 T 200 450 5 8 0 1 0 8 1
 pinseq=9
 T 350 500 9 8 1 1 0 0 1
-pinlabel=OE
+pinlabel=\_OE\_
 T 350 500 5 8 0 1 0 2 1
 pintype=in
 }
@@ -217,4 +217,3 @@ T 300 4950 5 10 0 0 0 0 1
 numslots=0
 T 300 3540 9 10 1 0 0 0 1
 M5L8282P
-L 350 625 550 625 3 0 0 0 -1 -1
