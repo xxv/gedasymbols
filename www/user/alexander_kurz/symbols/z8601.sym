@@ -79,7 +79,7 @@ pintype=out
 P 200 1700 0 1700 1 0 1
 {
 T 200 1750 5 8 1 1 0 6 1
-pinnumber=6
+pinnumber=9
 T 200 1650 5 8 0 1 0 8 1
 pinseq=9
 T 350 1700 9 8 1 1 0 0 1
@@ -367,7 +367,7 @@ P 300 6400 0 6400 1 0 1
 T 200 6450 5 8 1 1 0 6 1
 pinnumber=39
 T 200 6350 5 8 0 1 0 8 1
-pinseq=14
+pinseq=39
 T 350 6400 9 8 1 1 0 0 1
 pinlabel=P31
 T 350 6400 5 8 0 1 0 2 1
@@ -376,9 +376,9 @@ pintype=in
 P 300 6100 0 6100 1 0 1
 {
 T 200 6150 5 8 1 1 0 6 1
-pinnumber=15
+pinnumber=12
 T 200 6050 5 8 0 1 0 8 1
-pinseq=15
+pinseq=12
 T 350 6100 9 8 1 1 0 0 1
 pinlabel=P32
 T 350 6100 5 8 0 1 0 2 1
