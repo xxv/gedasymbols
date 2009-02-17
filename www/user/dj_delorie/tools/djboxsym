@@ -11,6 +11,9 @@ $y{right} = 400;
 $y{labels} = 700;
 $labelpin = 0;
 
+# If set, top and bottom labels are vertical.
+$vmode = 0;
+
 # Read in the file, storing information about each pin.
 
 while (<>) {
@@ -19,6 +22,16 @@ while (<>) {
     s/\s+$//;
     s/[\s\t]+/ /g;
     s/[\r\n]+$//;
+
+    # options
+    if (/^--(.*)/) {
+	$opt = $1;
+	($opt, $value) = split(' ', $opt, 2);
+	if ($opt eq "vmode") {
+	    $vmode = 1;
+	}
+	next;
+    }
 
     # Note change of section.
     if (/^\[(.*)\]/) {
@@ -108,8 +121,13 @@ while (<>) {
 	}
 	if ($side =~ /top|bottom/) {
 	    $tw = &alignpin((200 + $rlen{$pin}) / 2);
-	    $pinx{$pin} = $w{$side} + $tw;
-	    $w{$side} += $tw + $tw;
+	    if ($vmode) {
+		$pinx{$pin} = $w{$side};
+		$w{$side} += ($busmode ? 200 : 400);
+	    } else {
+		$pinx{$pin} = $w{$side} + $tw;
+		$w{$side} += $tw + $tw;
+	    }
 	}
 
     }
@@ -178,9 +196,29 @@ $boxwidth += 200;
 
 # Adjust the position of the top/bottom pins so that, as a group,
 # they're centered.
+%maxh = ();
 for $p (keys %pinside) {
     next unless $pinside{$p} =~ /top|bottom/;
     $pinx{$p} += &alignpin(($boxwidth - $w{$pinside{$p}})/2) + 300;
+    if ($vmode) {
+	$pinx{$p} += 200;
+	$h = &textlen($pinlabel{$p});
+	$maxh{$pinside{$p}} = $h if $maxh{$pinside{$p}} < $h;
+    }
+}
+
+if ($vmode) {
+    $dy = $maxh{bottom};
+    for $lp ($minpin..-1) {
+	$piny{$lp} += $dy;
+    }
+    for $p (keys %pinside) {
+	if ($pinside{$p} =~ /left|right|bottom/) {
+	    $piny{$p} += $dy;
+	}
+    }
+    $maxy += $dy;
+    $maxy += $maxh{top};
 }
 
 # Labels are centered in the box.
@@ -236,7 +274,11 @@ sub drawpin_top {
     printf("P %d %d %d %d 1 0 0\n",
 	   $pinx{$pin}, $y+300, $pinx{$pin}, $y);
     print "{\n";
-    &pltext($pinx{$pin}, $y-50, 5, $pinlabel{$pin});
+    if ($vmode) {
+	&pvltext($pinx{$pin}, $y-50, 7, $pinlabel{$pin});
+    } else {
+	&pltext($pinx{$pin}, $y-50, 5, $pinlabel{$pin});
+    }
     &ntext($pinx{$pin}+50, $y+50, 0, $pin);
     print "}\n";
 }
@@ -246,7 +288,11 @@ sub drawpin_bottom {
     printf("P %d %d %d %d 1 0 0\n",
 	   $pinx{$pin}, 0, $pinx{$pin}, 300);
     print "{\n";
-    &pltext($pinx{$pin}, 350, 3, $pinlabel{$pin});
+    if ($vmode) {
+	&pvltext($pinx{$pin}, 350, 1, $pinlabel{$pin});
+    } else {
+	&pltext($pinx{$pin}, 350, 3, $pinlabel{$pin});
+    }
     &ntext($pinx{$pin}+50, 250, 2, $pin);
     print "}\n";
 }
@@ -323,6 +369,12 @@ sub pltext {
     my ($x, $y, $a, $s) = @_;
     $s = "pinlabel=$s" unless $s =~ /=/;
     printf("T %d %d 9 10 1 1 0 %s 1\n%s\n", $x, $y, $a, $s);
+}
+
+sub pvltext {
+    my ($x, $y, $a, $s) = @_;
+    $s = "pinlabel=$s" unless $s =~ /=/;
+    printf("T %d %d 9 10 1 1 90 %s 1\n%s\n", $x, $y, $a, $s);
 }
 
 sub ltext {
