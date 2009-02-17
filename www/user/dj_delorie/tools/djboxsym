@@ -208,7 +208,7 @@ for $p (keys %pinside) {
 }
 
 if ($vmode) {
-    $dy = $maxh{bottom};
+    $dy = &alignpin($maxh{bottom});
     for $lp ($minpin..-1) {
 	$piny{$lp} += $dy;
     }
@@ -217,8 +217,7 @@ if ($vmode) {
 	    $piny{$p} += $dy;
 	}
     }
-    $maxy += $dy;
-    $maxy += $maxh{top};
+    $maxy += $dy + &alignpin ($maxh{top});
 }
 
 # Labels are centered in the box.
