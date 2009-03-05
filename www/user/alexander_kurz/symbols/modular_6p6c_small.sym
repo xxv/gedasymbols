@@ -12,9 +12,9 @@ refdes=X?
 T 0 3825 9 10 0 0 0 0 1
 numslots=0
 T 0 4025 9 10 0 0 0 0 1
-footprint=modular_8p8c_lp.fp
+footprint=modular_6p6c_lp.fp
 T 0 4225 9 10 0 0 0 0 1
-description=8p8c / RJ45 connector
+description=6p6c / RJ11 connector
 T 200 1600 9 10 1 1 0 0 1
 device=RJ11 / 6p6c
 L 1700 -50 1700 1500 3 0 0 0 -1 -1
