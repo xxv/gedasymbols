@@ -305,3 +305,7 @@ pinlabel=Vpp
 T 2950 600 5 8 0 1 0 8 1
 pintype=pwr
 }
+T 2400 2100 8 10 0 1 0 0 1
+dist-license=GPL, GFDL or CC-BY-SA
+T 2100 1500 8 10 0 1 0 0 1
+use-license=GFDL or CC-BY-SA

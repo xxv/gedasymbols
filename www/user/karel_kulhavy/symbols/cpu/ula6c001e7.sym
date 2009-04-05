@@ -469,3 +469,7 @@ T 2350 2200 5 8 0 1 0 2 1
 pintype=io
 }
 L 2350 11325 2945 11325 3 0 0 0 -1 -1
+T 2400 2100 8 10 0 1 0 0 1
+dist-license=GPL, GFDL or CC-BY-SA
+T 2100 1500 8 10 0 1 0 0 1
+use-license=GFDL or CC-BY-SA
