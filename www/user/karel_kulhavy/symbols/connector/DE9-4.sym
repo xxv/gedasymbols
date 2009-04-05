@@ -136,3 +136,7 @@ T 3200 2400 8 10 0 0 0 0 1
 numslots=0
 T 1600 1800 8 10 0 1 0 0 1
 author=Karel 'Clock' Kulhavy, http://ronja.twibright.com
+T 2400 2100 8 10 0 1 0 0 1
+dist-license=GPL, GFDL or CC-BY-SA
+T 2100 1500 8 10 0 1 0 0 1
+use-license=GFDL or CC-BY-SA
