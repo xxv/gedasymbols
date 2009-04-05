@@ -52,6 +52,10 @@ T 40 1170 5 8 1 1 0 0 1
 pinnumber=G2
 T 40 1170 5 8 0 0 0 0 1
 pinseq=3
+T 300 1100 5 10 0 1 0 0 1
+pintype=in
+T 100 1100 5 10 0 1 0 0 1
+pinlabel=g2
 }
 P 300 800 0 800 1 0 1
 {
@@ -59,6 +63,10 @@ T 90 640 5 8 1 1 0 0 1
 pinnumber=G1
 T 90 640 5 8 0 0 0 0 1
 pinseq=2
+T 300 800 5 10 0 1 0 0 1
+pintype=in
+T 100 800 5 10 0 1 0 0 1
+pinlabel=g1
 }
 P 900 300 900 0 1 0 1
 {
@@ -66,6 +74,10 @@ T 750 50 5 8 1 1 0 0 1
 pinnumber=S
 T 750 50 5 8 0 0 0 0 1
 pinseq=1
+T 900 300 5 10 0 1 0 0 1
+pintype=out
+T 900 100 5 10 0 1 0 0 1
+pinlabel=s
 }
 P 900 1400 900 1700 1 0 1
 {
@@ -73,7 +85,15 @@ T 750 1570 5 8 1 1 0 0 1
 pinnumber=D
 T 750 1570 5 8 0 0 0 0 1
 pinseq=4
+T 900 1400 5 10 0 1 0 0 1
+pintype=out
+T 900 1500 5 10 0 1 0 0 1
+pinlabel=d
 }
 L 900 1300 900 1400 3 0 0 0 -1 -1
 T 800 900 8 10 0 1 0 0 1
 author=Karel 'Clock' Kulhavy, http://ronja.twibright.com
+T 1000 1000 8 10 0 1 0 0 1
+footprint=dgnmos
+T 1500 800 8 10 0 0 0 0 1
+numslots=0
