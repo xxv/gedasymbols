@@ -83,3 +83,5 @@ T 310 300 8 10 0 0 0 0 1
 footprint=CONNECTOR 2 3
 T 700 900 8 10 0 1 0 0 1
 author=Karel 'Clock' Kulhavy, http://ronja.twibright.com
+T 1400 600 8 10 0 1 0 0 1
+numslots=0
