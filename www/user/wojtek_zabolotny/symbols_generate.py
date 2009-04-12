@@ -9,7 +9,7 @@ syms=glob.glob("symbols/*.sym")
 syms.sort()
 desc_match=re.compile(".*description=(.*).*")
 # Now we generate the HTML file
-fout.write("<table>\n")
+fout.write("<table border=2>\n")
 fout.write("<tr><th>Symbol</th><th>Tragesym source</th><th>Description</th></tr>\n")
 for f in syms:
    sfile=open(f,"r")
@@ -30,8 +30,11 @@ for f in syms:
    if src:
      s+="<td><a href=\""+src+"\">"+src[8:]+"</td>"
    else:
-     s+="<td></td>"
-   s+="<td>"+desc+"</td>"
+     s+="<td>&nbsp</td>"
+   if desc:
+     s+="<td>"+desc+"</td>"
+   else:
+     s+="<td>&nbsp</td>"
    s+="</tr>\n"
    fout.write(s)
    print f, desc
