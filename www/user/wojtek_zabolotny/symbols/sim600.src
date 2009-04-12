@@ -1,0 +1,159 @@
+# This is the template file for creating symbols with tragesym
+# every line starting with '#' is a comment line.
+
+[options]
+# wordswap swaps labels if the pin is on the right side an looks like this:
+#   "PB1 (CLK)". That's useful for micro controller port labels
+# rotate_labels rotates the pintext of top and bottom pins
+#   this is useful for large symbols like FPGAs with more than 100 pins
+# sort_labels will sort the pins by it's labels
+#   useful for address ports, busses, ...
+wordswap=yes
+rotate_labels=no
+sort_labels=no
+generate_pinseq=yes
+sym_width=1800
+pinwidthvertical=300
+pinwidthhorizontal=300
+
+[geda_attr]
+# name will be printed in the top of the symbol
+# name is only some graphical text, not an attribute
+# version specifies a gschem version.
+# if you have a device with slots, you'll have to use slot= and slotdef=
+# use comment= if there are special information you want to add
+version=20060113 1
+name=SIM600
+device=SIM600
+refdes=J?
+footprint=AXK5F00545YJ
+description=SIM600 GSM/GPRS/EDGE module board-to-board connector
+documentation=http://www.sim.com/productssolutions/wirelessmodule/sim600.htm
+author=Wojciech Zabolotny <wzab@ise.pw.edu.pl>
+dist-license=public domain
+use-license=public domain
+numslots=0
+#slot=1
+#slotdef=1:
+#slotdef=2:
+#slotdef=3:
+#slotdef=4:
+#comment=
+#comment=
+#comment=
+
+[pins]
+# tabseparated list of pin descriptions
+# ----------------------------------------
+# pinnr is the physical number of the pin
+# seq is the pinseq= attribute, leave it blank if it doesn't matter
+# type can be (in, out, io, oc, oe, pas, tp, tri, clk, pwr)
+# style can be (line,dot,clk,dotclk,spacer,none). none if only want to add a net
+# posit. can be (l,r,t,b) or empty for nets.
+# net specifies the name of the net. Vcc or GND for example.
+# label represents the pinlabel.
+#	negation lines can be added with "\_" example: \_enable\_ 
+#	if you want to write a "\" use "\\" as escape sequence
+#-----------------------------------------------------
+#pinnr	seq	type	style	posit.	net	label	
+#-----------------------------------------------------
+1	1	pas	line	l		NC
+2	2	pas	line	r		NC
+3	3	pas	line	l		NC
+4	4	out	line	r		KBC0
+5	5	out	line	l		NETLIGHT
+6	6	out	line	r		KBC1
+7	7	pas	line	l		NC
+8	8	out	line	r		KBC2
+9	9	pas	line	l		NC
+10	10	out	line	r		KBC3
+11	11	pas	line	l		NC
+12	12	out	line	r		KBC4
+13	13	pas	line	l		NC
+14	14	in	line	r		KBR0
+15	15	pas	line	l		NC
+16	16	in	line	r		KBR1
+17	17	pas	line	l		NC
+18	18	in	line	r		KBR2
+19	19	pas	line	l		NC
+20	20	in	line	r		KBR3
+21	21	pas	line	l		NC
+22	22	in	line	r		KBR4
+23	23	pas	line	l		NC
+24	24	pas	line	r		NC
+25	25	pas	line	l		NC
+26	26	pas	line	r		NC
+27	27	pas	line	l		NC
+28	28	pas	line	r		NC
+29	29	pas	line	l		NC
+30	30	pas	line	r		NC
+31	31	pas	line	l		NC
+32	32	out	line	r		DBG_TXD
+33	33	pas	line	l		NC
+34	34	in	line	r		DBG_RXD
+35	35	pas	line	l		NC
+36	36	pas	line	r		NC
+37	37	pas	line	l		NC
+38	38	out	line	r		DCD
+39	39	pas	line	l		NC
+40	40	in	line	r		DTR
+41	41	pas	line	l		NC
+42	42	in	line	r		RXD
+43	43	pas	line	l		NC
+44	44	out	line	r		TXD
+45	45	pas	line	l		NC
+46	46	pas	line	r		NC
+47	47	pas	line	l		NC
+48	48	io	line	r		RTS
+49	49	pas	line	l		NC
+50	50	out	line	r		CTS
+51	51	pas	line	l		NC
+52	52	out	line	r		RI
+53	53	pas	line	l		NC
+54	54	pas	line	r		NC
+55	55	pas	line	l		NC
+56	56	pas	line	r		NC
+57	57	pas	line	l		NC
+58	58	pas	line	r		NC
+59	59	out	line	l		VDD_EXT
+60	60	pas	line	r		NC
+61	61	out	line	l		STATELIGHT1
+62	62	pas	line	r		NC
+63	63	out	line	l		STATELIGHT2
+64	64	pas	line	r		NC
+65	65	io	line	l		SIM_DATA
+66	66	pas	line	r		NC
+67	67	out	line	l		SIM_CLK
+68	68	pas	line	r		NC
+69	69	out	line	l		SIM_RST
+70	70	pas	line	r		NC
+71	71	pas	line	l		NC
+72	72	pas	line	r		NC
+73	73	pwr	line	l		GND
+74	74	pas	line	r		NC
+75	75	pwr	line	l		GND
+76	76	pas	line	r		NC
+77	77	pwr	line	l		VBAT
+78	78	pas	line	r		NC
+79	79	pwr	line	l		VBAT
+80	80	in	line	r		PWRKEY
+81	81	io	line	l		VRTC
+82	82	io	line	r		AGND
+83	83	pas	line	l		NC
+84	84	pas	line	r		NC
+85	85	pas	line	l		NC
+86	86	pas	line	r		NC
+87	87	pas	line	l		NC
+88	88	out	line	r		SPK1P
+89	89	pas	line	l		NC
+90	90	out	line	r		SPK1N
+91	91	out	line	l		SIM_VDD
+92	92	in	line	r		MIC1P
+93	93	pas	line	l		NC
+94	94	in	line	r		MIC2P
+95	95	pas	line	l		NC
+96	96	out	line	r		SPK2N
+97	97	pas	line	l		NC
+98	98	out	line	r		SPK2P
+99	99	pwr	line	l		AGND
+100	100	in	line	r		MIC2N

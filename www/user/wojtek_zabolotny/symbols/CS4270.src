@@ -1,0 +1,84 @@
+# This is the template file for creating symbols with tragesym
+# every line starting with '#' is a comment line.
+
+[options]
+# wordswap swaps labels if the pin is on the right side an looks like this:
+#   "PB1 (CLK)". That's useful for micro controller port labels
+# rotate_labels rotates the pintext of top and bottom pins
+#   this is useful for large symbols like FPGAs with more than 100 pins
+# sort_labels will sort the pins by it's labels
+#   useful for address ports, busses, ...
+wordswap=yes
+rotate_labels=no
+sort_labels=no
+generate_pinseq=yes
+sym_width=1600
+pinwidthvertical=300
+pinwidthhorizontal=400
+
+[geda_attr]
+# name will be printed in the top of the symbol
+# name is only some graphical text, not an attribute
+# version specifies a gschem version.
+# if you have a device with slots, you'll have to use slot= and slotdef=
+# use comment= if there are special information you want to add
+version=20090324 1
+name=CS4270
+device=CS4270
+refdes=U?
+footprint=TSSOP24
+description=CS4270 24-Bit, 192 kHz Stereo Audio CODEC
+documentation=http://www.cirrus.com/en/products/pro/detail/P1091.html
+author=Wojciech Zabolotny <wzab@ise.pw.edu.pl>
+dist-license=public domain
+use-license=public domain
+numslots=0
+#slot=1
+#slotdef=1:
+#slotdef=2:
+#slotdef=3:
+#slotdef=4:
+#comment=
+#comment=
+#comment=
+
+[pins]
+# tabseparated list of pin descriptions
+# ----------------------------------------
+# pinnr is the physical number of the pin
+# seq is the pinseq= attribute, leave it blank if it doesn't matter
+# type can be (in, out, io, oc, oe, pas, tp, tri, clk, pwr)
+# style can be (line,dot,clk,dotclk,spacer,none). none if only want to add a net
+# posit. can be (l,r,t,b) or empty for nets.
+# net specifies the name of the net. Vcc or GND for example.
+# label represents the pinlabel.
+#	negation lines can be added with "\_" example: \_enable\_ 
+#	if you want to write a "\" use "\\" as escape sequence
+#-----------------------------------------------------
+#pinnr	seq	type	style	posit.	net	label	
+#-----------------------------------------------------
+1	1	in	line	l		SDIN
+24	24	out	line	r		\_MUTEB\_
+2	2	io	line	l		LRCK
+23	23	out	line	r		AOUTB
+3	3	in	line	l		MCLK
+22	22	out	line	r		AOUTA
+4	4	io	line	l		SCLK
+21	21	out	line	r		\_MUTEA\_
+5	5	pwr	line	l		VD
+20	20	pwr	line	r		AGND
+6	6	pwr	line	l		DGND
+19	19	pwr	line	r		VA
+7	7	out	line	l		SDOUT
+18	18	out	line	r		FILT+
+8	8	in	line	l		VLC
+17	17	out	line	r		VQ
+9	9	io	line	l		SDA/CDOUT
+16	16	in	line	r		AINB
+10	10	in	line	l		SCL/CCLK
+15	15	in	line	r		AINA
+11	11	in	line	l		AD0/\_CS\_
+14	14	in	line	r		\_RST\_
+12	12	in	line	l		AD1/CDIN
+13	13	in	line	r		AD2
+
