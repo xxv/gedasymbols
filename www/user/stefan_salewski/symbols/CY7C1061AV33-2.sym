@@ -1,4 +1,4 @@
-v 20070902 1
+v 20081231 1
 P 0 8100 300 8100 1 0 0
 {
 T 200 8150 5 8 1 1 0 6 1
@@ -237,7 +237,7 @@ pinnumber=12
 T 200 1750 5 8 0 1 0 8 1
 pinseq=22
 T 350 1800 9 8 1 1 0 0 1
-pinlabel=\_BHE
+pinlabel=\_BHE\_
 T 350 1800 5 8 0 1 0 2 1
 pintype=in
 }
@@ -248,7 +248,7 @@ pinnumber=13
 T 200 1450 5 8 0 1 0 8 1
 pinseq=23
 T 350 1500 9 8 1 1 0 0 1
-pinlabel=\_CE1
+pinlabel=\_CE1\_
 T 350 1500 5 8 0 1 0 2 1
 pintype=in
 }
@@ -259,7 +259,7 @@ pinnumber=15
 T 200 1150 5 8 0 1 0 8 1
 pinseq=24
 T 350 1200 9 8 1 1 0 0 1
-pinlabel=\_WE
+pinlabel=\_WE\_
 T 350 1200 5 8 0 1 0 2 1
 pintype=in
 }
@@ -281,7 +281,7 @@ pinnumber=42
 T 200 550 5 8 0 1 0 8 1
 pinseq=26
 T 350 600 9 8 1 1 0 0 1
-pinlabel=\_OE
+pinlabel=\_OE\_
 T 350 600 5 8 0 1 0 2 1
 pintype=in
 }
@@ -292,7 +292,7 @@ pinnumber=39
 T 200 250 5 8 0 1 0 8 1
 pinseq=27
 T 350 300 9 8 1 1 0 0 1
-pinlabel=\_BLE
+pinlabel=\_BLE\_
 T 350 300 5 8 0 1 0 2 1
 pintype=in
 }
@@ -596,8 +596,6 @@ pintype=pwr
 B 300 0 2000 8400 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 2300 8500 8 10 1 1 0 6 1
 refdes=U?
-T 300 8500 9 10 1 0 0 0 1
-CY7C1061AV33
 T 300 8700 5 10 0 0 0 0 1
 device=CY7C1061AV33
 T 300 8900 5 10 0 0 0 0 1
@@ -616,3 +614,5 @@ T 300 10100 5 10 0 0 0 0 1
 use-license=unlimited
 T 300 10300 5 10 0 0 0 0 1
 comment=generated with Python script tragesym
+T 300 8500 5 10 1 1 0 0 1
+value=CY7C1061AV33

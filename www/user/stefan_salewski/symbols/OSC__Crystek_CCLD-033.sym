@@ -1,4 +1,4 @@
-v 20080127 1
+v 20081231 1
 P 2000 900 1700 900 1 0 0
 {
 T 1800 950 5 8 1 1 0 0 1
@@ -46,25 +46,23 @@ pintype=in
 B 300 300 1400 900 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 1700 1300 8 10 1 1 0 6 1
 refdes=U?
-T 300 1300 9 10 1 0 0 0 1
-CCLD-033
-T 300 1550 5 10 0 0 0 0 1
+T 300 1500 5 10 0 0 0 0 1
 device=CCLD-033
-T 300 1750 5 10 0 0 0 0 1
+T 300 1700 5 10 0 0 0 0 1
 footprint=OSC__Crystek_CCLD-033
-T 300 1950 5 10 0 0 0 0 1
+T 300 1900 5 10 0 0 0 0 1
 author=Stefan Salewski
-T 300 2150 5 10 0 0 0 0 1
+T 300 2100 5 10 0 0 0 0 1
 documentation=http://www.crystekcrystals.com/crystal/spec-sheets/clock/CCLD-033.pdf
-T 300 2350 5 10 0 0 0 0 1
+T 300 2300 5 10 0 0 0 0 1
 description=Oscillator Crystek_CCLD-033
-T 300 2550 5 10 0 0 0 0 1
+T 300 2500 5 10 0 0 0 0 1
 numslots=0
-T 300 2750 5 10 0 0 0 0 1
+T 300 2700 5 10 0 0 0 0 1
 dist-license=GPL
-T 300 2950 5 10 0 0 0 0 1
+T 300 2900 5 10 0 0 0 0 1
 use-license=unlimited
-T 300 3150 5 10 0 0 0 0 1
+T 300 3100 5 10 0 0 0 0 1
 comment=generated with Python script tragesym
 L 800 1000 900 1000 3 0 0 0 -1 -1
 L 900 1000 900 800 3 0 0 0 -1 -1
@@ -84,7 +82,9 @@ pinnumber=5
 T 1800 550 5 8 0 1 0 2 1
 pinseq=5
 T 1650 600 9 8 1 1 0 6 1
-pinlabel=\_Out
+pinlabel=\_Out\_
 T 1650 600 5 8 0 1 0 8 1
 pintype=out
 }
+T 300 1300 5 10 1 1 0 0 1
+value=CCLD-033

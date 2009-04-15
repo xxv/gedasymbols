@@ -1,7 +1,7 @@
-v 20070902 1
+v 20081231 1
 P 0 600 200 600 1 0 0
 {
-T 150 650 5 8 1 1 0 6 1
+T 100 650 5 8 1 1 0 6 1
 pinnumber=1
 T 100 550 5 8 0 1 0 8 1
 pinseq=1
@@ -12,7 +12,7 @@ pintype=io
 }
 P 0 300 200 300 1 0 0
 {
-T 150 350 5 8 1 1 0 6 1
+T 100 350 5 8 1 1 0 6 1
 pinnumber=3
 T 100 250 5 8 0 1 0 8 1
 pinseq=2
@@ -23,7 +23,7 @@ pintype=io
 }
 P 1200 300 1000 300 1 0 0
 {
-T 1050 350 5 8 1 1 0 0 1
+T 1100 350 5 8 1 1 0 0 1
 pinnumber=5
 T 1100 250 5 8 0 1 0 2 1
 pinseq=3
@@ -34,7 +34,7 @@ pintype=io
 }
 P 1200 600 1000 600 1 0 0
 {
-T 1050 650 5 8 1 1 0 0 1
+T 1100 650 5 8 1 1 0 0 1
 pinnumber=7
 T 1100 550 5 8 0 1 0 2 1
 pinseq=4
@@ -45,21 +45,21 @@ pintype=io
 }
 T 600 850 8 10 1 1 0 4 1
 refdes=K?
-T 200 1300 5 10 0 0 0 0 1
+T 0 1000 5 10 0 0 0 0 1
 device=Reed-Relay_Meder_SILxx-1A72-71D
-T 200 1500 5 10 0 0 0 0 1
+T 0 1200 5 10 0 0 0 0 1
 footprint=Reed-Relay_Meder_SILxx-1A72-71D
-T 200 1700 5 10 0 0 0 0 1
+T 0 1400 5 10 0 0 0 0 1
 author=Stefan Salewski
-T 200 1900 5 10 0 0 0 0 1
+T 0 1600 5 10 0 0 0 0 1
 documentation=http://www.meder.com/upload/produkte/46_de_1_%20Relais%20SIL%20Serie%20d.pdf
-T 200 2100 5 10 0 0 0 0 1
+T 0 1800 5 10 0 0 0 0 1
 description=Reed-Relay_Meder_SILxx-1A72-71D
-T 200 2300 5 10 0 0 0 0 1
+T 0 2000 5 10 0 0 0 0 1
 numslots=0
-T 200 2500 5 10 0 0 0 0 1
+T 0 2200 5 10 0 0 0 0 1
 dist-license=GPL
-T 200 2700 5 10 0 0 0 0 1
+T 0 2400 5 10 0 0 0 0 1
 use-license=unlimited
 L 200 300 300 300 3 0 0 0 -1 -1
 L 200 600 300 600 3 0 0 0 -1 -1

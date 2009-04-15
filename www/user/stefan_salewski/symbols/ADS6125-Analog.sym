@@ -1,4 +1,4 @@
-v 20080127 1
+v 20081231 1
 P 0 2000 300 2000 1 0 0
 {
 T 200 2050 5 8 1 1 0 6 1
@@ -23,9 +23,9 @@ pintype=in
 }
 P 900 0 900 300 1 0 0
 {
-T 950 100 5 8 1 1 0 0 1
+T 950 200 5 8 1 1 0 2 1
 pinnumber=14
-T 950 100 5 8 0 1 0 2 1
+T 850 200 5 8 0 1 0 8 1
 pinseq=14
 T 900 350 9 8 1 1 0 3 1
 pinlabel=VCM
@@ -53,5 +53,5 @@ use-license=unlimited
 T 300 4250 5 10 0 0 0 0 1
 comment=generated with Python script tragesym
 B 300 300 1200 2000 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 900 1350 9 10 1 0 0 4 1
-ADS6125
+T 900 1350 5 10 1 1 0 4 1
+value=ADS6125

@@ -1,4 +1,4 @@
-v 20080127 1
+v 20081231 1
 P 0 2700 300 2700 1 0 0
 {
 T 200 2750 5 8 1 1 0 6 1
@@ -354,8 +354,6 @@ pintype=in
 B 300 300 3300 2700 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 3600 3100 8 10 1 1 0 6 1
 refdes=U?
-T 1950 1650 9 10 1 0 0 4 1
-TDC-GP2
 T 300 3500 5 10 0 0 0 0 1
 device=TDC-GP2
 T 300 3700 5 10 0 0 0 0 1
@@ -374,3 +372,5 @@ T 300 4900 5 10 0 0 0 0 1
 use-license=unlimited
 T 300 5100 5 10 0 0 0 0 1
 comment=generated with Python script tragesym
+T 1950 1650 5 10 1 1 0 4 1
+value=TDC-GP2

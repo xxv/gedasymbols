@@ -1,4 +1,4 @@
-v 20080127 1
+v 20081231 1
 P 100 300 400 300 1 0 0
 {
 T 300 350 5 8 1 1 0 6 1
@@ -237,7 +237,7 @@ pinnumber=98
 T 300 550 5 8 0 1 0 8 1
 pinseq=83
 T 450 600 9 8 1 1 0 0 1
-pinlabel=\_CE1
+pinlabel=\_CE1\_
 T 450 600 5 8 0 1 0 2 1
 pintype=in
 }
@@ -259,7 +259,7 @@ pinnumber=96
 T 300 1450 5 8 0 1 0 8 1
 pinseq=85
 T 450 1500 9 8 1 1 0 0 1
-pinlabel=\_BWD
+pinlabel=\_BWD\_
 T 450 1500 5 8 0 1 0 2 1
 pintype=in
 }
@@ -270,7 +270,7 @@ pinnumber=95
 T 300 1750 5 8 0 1 0 8 1
 pinseq=86
 T 450 1800 9 8 1 1 0 0 1
-pinlabel=\_BWC
+pinlabel=\_BWC\_
 T 450 1800 5 8 0 1 0 2 1
 pintype=in
 }
@@ -281,7 +281,7 @@ pinnumber=94
 T 300 2050 5 8 0 1 0 8 1
 pinseq=87
 T 450 2100 9 8 1 1 0 0 1
-pinlabel=\_BWB
+pinlabel=\_BWB\_
 T 450 2100 5 8 0 1 0 2 1
 pintype=in
 }
@@ -292,7 +292,7 @@ pinnumber=93
 T 300 2350 5 8 0 1 0 8 1
 pinseq=88
 T 450 2400 9 8 1 1 0 0 1
-pinlabel=\_BWA
+pinlabel=\_BWA\_
 T 450 2400 5 8 0 1 0 2 1
 pintype=in
 }
@@ -303,7 +303,7 @@ pinnumber=92
 T 300 1150 5 8 0 1 0 8 1
 pinseq=89
 T 450 1200 9 8 1 1 0 0 1
-pinlabel=\_CE3
+pinlabel=\_CE3\_
 T 450 1200 5 8 0 1 0 2 1
 pintype=in
 }
@@ -325,7 +325,7 @@ pinnumber=88
 T 300 2650 5 8 0 1 0 8 1
 pinseq=93
 T 450 2700 9 8 1 1 0 0 1
-pinlabel=\_GW
+pinlabel=\_GW\_
 T 450 2700 5 8 0 1 0 2 1
 pintype=in
 }
@@ -336,7 +336,7 @@ pinnumber=87
 T 300 2950 5 8 0 1 0 8 1
 pinseq=94
 T 450 3000 9 8 1 1 0 0 1
-pinlabel=\_BWE
+pinlabel=\_BWE\_
 T 450 3000 5 8 0 1 0 2 1
 pintype=in
 }
@@ -347,7 +347,7 @@ pinnumber=86
 T 300 3550 5 8 0 1 0 8 1
 pinseq=95
 T 450 3600 9 8 1 1 0 0 1
-pinlabel=\_OE
+pinlabel=\_OE\_
 T 450 3600 5 8 0 1 0 2 1
 pintype=in
 }
@@ -358,7 +358,7 @@ pinnumber=85
 T 300 3850 5 8 0 1 0 8 1
 pinseq=96
 T 450 3900 9 8 1 1 0 0 1
-pinlabel=\_ADSC
+pinlabel=\_ADSC\_
 T 450 3900 5 8 0 1 0 2 1
 pintype=in
 }
@@ -369,7 +369,7 @@ pinnumber=84
 T 300 4150 5 8 0 1 0 8 1
 pinseq=97
 T 450 4200 9 8 1 1 0 0 1
-pinlabel=\_ADSP
+pinlabel=\_ADSP\_
 T 450 4200 5 8 0 1 0 2 1
 pintype=in
 }
@@ -380,7 +380,7 @@ pinnumber=83
 T 300 4450 5 8 0 1 0 8 1
 pinseq=98
 T 450 4500 9 8 1 1 0 0 1
-pinlabel=\_ADV
+pinlabel=\_ADV\_
 T 450 4500 5 8 0 1 0 2 1
 pintype=in
 }
@@ -409,8 +409,6 @@ pintype=in
 B 400 0 1800 11400 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 2200 11500 8 10 1 1 0 6 1
 refdes=U?
-T 400 11500 9 10 1 0 0 0 1
-CY7C1380D
 T 400 11700 5 10 0 0 0 0 1
 device=CY7C1380D
 T 400 11900 5 10 0 0 0 0 1
@@ -429,3 +427,5 @@ T 400 13100 5 10 0 0 0 0 1
 use-license=unlimited
 T 400 13300 5 10 0 0 0 0 1
 comment=generated with Python script tragesym
+T 400 11500 5 10 1 1 0 0 1
+value=CY7C1380D

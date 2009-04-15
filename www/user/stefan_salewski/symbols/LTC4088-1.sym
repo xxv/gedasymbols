@@ -1,4 +1,4 @@
-v 20070902 1
+v 20081231 1
 P 0 2400 300 2400 1 0 0
 {
 T 200 2450 5 8 1 1 0 6 1
@@ -72,7 +72,7 @@ pinnumber=7
 T 200 550 5 8 0 1 0 8 1
 pinseq=7
 T 350 600 9 8 1 1 0 0 1
-pinlabel=\_CHRG
+pinlabel=\_CHRG\_
 T 350 600 5 8 0 1 0 2 1
 pintype=out
 }
@@ -155,9 +155,9 @@ pintype=out
 }
 P 1100 0 1100 300 1 0 0
 {
-T 1150 100 5 8 1 1 0 0 1
+T 1150 200 5 8 1 1 0 2 1
 pinnumber=15
-T 1150 100 5 8 0 1 0 2 1
+T 1050 200 5 8 0 1 0 8 1
 pinseq=15
 T 1100 350 9 8 1 1 0 3 1
 pinlabel=GND
@@ -167,23 +167,23 @@ pintype=pwr
 B 300 300 1600 2400 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 1900 2800 8 10 1 1 0 6 1
 refdes=U?
-T 300 2800 9 10 1 0 0 0 1
-LTC4088
-T 300 4700 5 10 0 0 0 0 1
+T 300 4600 5 10 0 0 0 0 1
 device=LTC4088
-T 300 4500 5 10 0 0 0 0 1
+T 300 4400 5 10 0 0 0 0 1
 footprint=DFN14
-T 300 3100 5 10 0 0 0 0 1
+T 300 3000 5 10 0 0 0 0 1
 author=Stefan Salewski
-T 300 3300 5 10 0 0 0 0 1
+T 300 3200 5 10 0 0 0 0 1
 documentation=http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1037,C1584,P37482,D24938
-T 300 3500 5 10 0 0 0 0 1
+T 300 3400 5 10 0 0 0 0 1
 description=USB Power Manager
-T 300 3700 5 10 0 0 0 0 1
+T 300 3600 5 10 0 0 0 0 1
 numslots=0
-T 300 3900 5 10 0 0 0 0 1
+T 300 3800 5 10 0 0 0 0 1
 dist-license=GPL
-T 300 4100 5 10 0 0 0 0 1
+T 300 4000 5 10 0 0 0 0 1
 use-license=unlimited
-T 300 4300 5 10 0 0 0 0 1
+T 300 4200 5 10 0 0 0 0 1
 comment=generated with Python script tragesym
+T 300 2800 5 10 1 1 0 0 1
+value=LTC4088

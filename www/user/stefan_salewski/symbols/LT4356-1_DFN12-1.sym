@@ -1,4 +1,4 @@
-v 20070902 1
+v 20081231 1
 P 0 2100 300 2100 1 0 0
 {
 T 200 2150 5 8 1 1 0 6 1
@@ -116,7 +116,7 @@ pinnumber=8
 T 1800 850 5 8 0 1 0 2 1
 pinseq=11
 T 1650 900 9 8 1 1 0 6 1
-pinlabel=\_FLT
+pinlabel=\_FLT\_
 T 1650 900 5 8 0 1 0 8 1
 pintype=out
 }
@@ -127,15 +127,15 @@ pinnumber=7
 T 1800 550 5 8 0 1 0 2 1
 pinseq=12
 T 1650 600 9 8 1 1 0 6 1
-pinlabel=\_SHDN
+pinlabel=\_SHDN\_
 T 1650 600 5 8 0 1 0 8 1
 pintype=in
 }
 P 1000 0 1000 300 1 0 0
 {
-T 1050 100 5 8 1 1 0 0 1
+T 1050 200 5 8 1 1 0 2 1
 pinnumber=13
-T 1050 100 5 8 0 1 0 2 1
+T 950 200 5 8 0 1 0 8 1
 pinseq=13
 T 1000 350 9 8 1 1 0 3 1
 pinlabel=GND
@@ -145,23 +145,23 @@ pintype=pwr
 B 300 300 1400 2100 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 2350 2500 8 10 1 1 0 6 1
 refdes=U?
-T 300 2500 9 10 1 0 0 0 1
-LT4356-1_DFN12
-T 300 2750 5 10 0 0 0 0 1
+T 300 2700 5 10 0 0 0 0 1
 device=LT4356-1_DFN12
-T 300 2950 5 10 0 0 0 0 1
+T 300 2900 5 10 0 0 0 0 1
 footprint=DFN12
-T 300 3150 5 10 0 0 0 0 1
+T 300 3100 5 10 0 0 0 0 1
 author=Stefan Salewski
-T 300 3350 5 10 0 0 0 0 1
+T 300 3300 5 10 0 0 0 0 1
 documentation=http://www.linear.com/pc/productDetail.jsp?navId=H0,C1,C1003,C1006,C1065,P38400
-T 300 3550 5 10 0 0 0 0 1
+T 300 3500 5 10 0 0 0 0 1
 description=Overvoltage Protection
-T 300 3750 5 10 0 0 0 0 1
+T 300 3700 5 10 0 0 0 0 1
 numslots=0
-T 300 3950 5 10 0 0 0 0 1
+T 300 3900 5 10 0 0 0 0 1
 dist-license=GPL
-T 300 4150 5 10 0 0 0 0 1
+T 300 4100 5 10 0 0 0 0 1
 use-license=unlimited
-T 300 4350 5 10 0 0 0 0 1
+T 300 4300 5 10 0 0 0 0 1
 comment=generated with Python script tragesym
+T 300 2500 5 10 1 1 0 0 1
+value=LT4356-1_DFN12

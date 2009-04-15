@@ -1,4 +1,4 @@
-v 20080127 1
+v 20081231 1
 P 0 600 300 600 1 0 0
 {
 T 200 650 5 8 1 1 0 6 1
@@ -67,9 +67,9 @@ pintype=pwr
 }
 P 900 0 900 300 1 0 0
 {
-T 950 100 5 8 1 1 0 0 1
+T 950 200 5 8 1 1 0 2 1
 pinnumber=33
-T 950 100 5 8 0 1 0 2 1
+T 850 200 5 8 0 1 0 8 1
 pinseq=33
 T 900 350 9 8 1 1 0 3 1
 pinlabel=DRGND
@@ -97,5 +97,5 @@ use-license=unlimited
 T 300 4350 5 10 0 0 0 0 1
 comment=generated with Python script tragesym
 B 300 300 1200 2100 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 300 2500 9 10 1 0 0 0 1
-ADS6125
+T 300 2500 5 10 1 1 0 0 1
+value=ADS6125

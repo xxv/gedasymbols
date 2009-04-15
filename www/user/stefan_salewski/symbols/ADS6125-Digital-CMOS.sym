@@ -1,4 +1,4 @@
-v 20080127 1
+v 20081231 1
 P 0 600 300 600 1 0 0
 {
 T 200 650 5 8 1 1 0 6 1
@@ -196,5 +196,5 @@ T 300 6250 5 10 0 0 0 0 1
 use-license=unlimited
 T 300 6450 5 10 0 0 0 0 1
 comment=generated with Python script tragesym
-T 300 4600 9 10 1 0 0 0 1
-ADS6125
+T 300 4600 5 10 1 1 0 0 1
+value=ADS6125
