@@ -21,8 +21,10 @@ not be used, but in a few cases they can be useful.
 <p>
 Some symbols uses footprints of John Luciani's 
 <a href="http://www.luciani.org/geda/pcb/pcb-footprint-list.html">footprint page</a>
-or my own footprints (see below). Most of my footprints are generated with an extended version of the Python script
-<a href="http://dlharmon.com/geda/footgen.html">Footgen</a> or with my own command line based Ruby script 
+or my own footprints (see below). Most of my footprints are generated with
+#an extended version of the Python script
+#<a href="http://dlharmon.com/geda/footgen.html">Footgen</a> or with 
+my own command line based Ruby script 
 <a href="http://www.ssalewski.de/SFG.html.en">SFG</a>.
 (For some footprints a special version optimized for hand soldering with name extension "_HS" exists.)
 </p>
@@ -30,9 +32,12 @@ or my own footprints (see below). Most of my footprints are generated with an ex
 <h2>Tools</h2>
 
 <h3>A plain, command line based footprint generator</h3>
-
 <ul>
 <li> <a href="http://www.ssalewski.de/SFG.html.en">SFG</a> - written in Ruby</li>
+</ul>
+<h3>A simple script for fixing pin (-number) layout of symbols</h3>
+<ul>
+<li> <a href="http://www.ssalewski.de/UglySym.html.en">UglySym</a> - written in Ruby</li>
 </ul>
 
 <h2>Documentation</h2>
@@ -626,9 +631,20 @@ or my own footprints (see below). Most of my footprints are generated with an ex
 <li> <a href="footprints/TSSOP16_EP_HS.fp">TSSOP16_EP_HS.fp</a> - more clearance between pads, less risk for soldering bridges</li>
 <li> <a href="footprints/TVS__SRC_CG-MS-Series.fp">TVS__SRC_CG-MS-Series.fp</a> - Transient Voltage Supressor, SRC-Devices/Littelfuse</li>
 </ul>
-<h3>Thru hole</h3>
+<h3>Through hole</h3>
+<h4>Dipped Radial Ceramic Capacitors</h4>
 <ul>
-<li> <a href="footprints/CAPR-1000P-400W-1300L-900H-60d__WIMA_MKP-10.fp">CAPR-1000P-400W-1300L-900H-60d__WIMA_MKP-10.fp</a> - Rectangular capacitors </li>
+<li> <a href="footprints/CAPR-250P-250W-400L-550H-50d__TDK_FK18.fp">CAPR-250P-250W-400L-550H-50d__TDK_FK18.fp</a> </li>
+<li> <a href="footprints/CAPR-250P-250W-450L-550H-50d__TDK_FK14.fp">CAPR-250P-250W-450L-550H-50d__TDK_FK14.fp</a> </li>
+<li> <a href="footprints/CAPR-500P-250W-500L-550H-50d__TDK_FK24.fp">CAPR-500P-250W-500L-550H-50d__TDK_FK24.fp</a> </li>
+<li> <a href="footprints/CAPR-500P-250W-500L-550H-50d__TDK_FK28.fp">CAPR-500P-250W-500L-550H-50d__TDK_FK28.fp</a> </li>
+<li> <a href="footprints/CAPR-500P-350W-550L-600H-50d__TDK_FK26.fp">CAPR-500P-350W-550L-600H-50d__TDK_FK26.fp</a> </li>
+<li> <a href="footprints/CAPR-500P-400W-550L-700H-50d__TDK_FK20.fp">CAPR-500P-400W-550L-700H-50d__TDK_FK20.fp</a> </li>
+<li> <a href="footprints/CAPR-500P-400W-750L-800H-50d__TDK_FK22.fp">CAPR-500P-400W-750L-800H-50d__TDK_FK22.fp</a> </li>
+</ul>
+<h4>Rectangular WIMA capacitors type MKP-10</h4>
+<ul>
+<li> <a href="footprints/CAPR-1000P-400W-1300L-900H-60d__WIMA_MKP-10.fp">CAPR-1000P-400W-1300L-900H-60d__WIMA_MKP-10.fp</a> </li>
 <li> <a href="footprints/CAPR-1000P-500W-1300L-1100H-60d__WIMA_MKP-10.fp">CAPR-1000P-500W-1300L-1100H-60d__WIMA_MKP-10.fp</a> </li>
 <li> <a href="footprints/CAPR-1000P-600W-1300L-1200H-60d__WIMA_MKP-10.fp">CAPR-1000P-600W-1300L-1200H-60d__WIMA_MKP-10.fp</a> </li>
 <li> <a href="footprints/CAPR-1500P-500W-1800L-1100H-80d__WIMA_MKP-10.fp">CAPR-1500P-500W-1800L-1100H-80d__WIMA_MKP-10.fp</a> </li>
@@ -654,8 +670,10 @@ or my own footprints (see below). Most of my footprints are generated with an ex
 <li> <a href="footprints/CAPR-750P-400W-1000L-900H-60d__WIMA_MKP-10.fp">CAPR-750P-400W-1000L-900H-60d__WIMA_MKP-10.fp</a> </li>
 <li> <a href="footprints/CAPR-750P-450W-1030L-950H-60d__WIMA_MKP-10.fp">CAPR-750P-450W-1030L-950H-60d__WIMA_MKP-10.fp</a> </li>
 <li> <a href="footprints/CAPR-750P-570W-1030L-1250H-60d__WIMA_MKP-10.fp">CAPR-750P-570W-1030L-1250H-60d__WIMA_MKP-10.fp</a> </li>
-<li> <a href="footprints/FUSEHOLDER-2250P-2200L-900W.fp">FUSEHOLDER-2250P-2200L-900W.fp</a> - Holder for 5x20mm fuses</li>
-<li> <a href="footprints/Fuse_PTC__Schurter_PFRA.010.fp">Fuse_PTC__Schurter_PFRA.010.fp</a> - Resettable Wire-leaded PTC-Fuses Type PFRA</li>
+</ul>
+<h4>Resettable Wire-leaded PTC-Fuses Schurter PFRA</h4>
+<ul>
+<li> <a href="footprints/Fuse_PTC__Schurter_PFRA.010.fp">Fuse_PTC__Schurter_PFRA.010.fp</a> </li>
 <li> <a href="footprints/Fuse_PTC__Schurter_PFRA.017.fp">Fuse_PTC__Schurter_PFRA.017.fp</a> </li>
 <li> <a href="footprints/Fuse_PTC__Schurter_PFRA.020.fp">Fuse_PTC__Schurter_PFRA.020.fp</a> </li>
 <li> <a href="footprints/Fuse_PTC__Schurter_PFRA.025.fp">Fuse_PTC__Schurter_PFRA.025.fp</a> </li>
@@ -680,20 +698,30 @@ or my own footprints (see below). Most of my footprints are generated with an ex
 <li> <a href="footprints/Fuse_PTC__Schurter_PFRA.800.fp">Fuse_PTC__Schurter_PFRA.800.fp</a> </li>
 <li> <a href="footprints/Fuse_PTC__Schurter_PFRA.900.fp">Fuse_PTC__Schurter_PFRA.900.fp</a> </li>
 <li> <a href="footprints/Fuse_PTC__Schurter_PFRA.1100.fp">Fuse_PTC__Schurter_PFRA.1100.fp</a> </li>
+</ul>
+<ul>
+<li> <a href="footprints/FUSEHOLDER-2250P-2200L-900W.fp">FUSEHOLDER-2250P-2200L-900W.fp</a> - Holder for 5x20mm fuses</li>
 <li> <a href="footprints/Reed-Relay_Meder_DIPxx-1C90-51D.fp">Reed-Relay_Meder_DIPxx-1C90-51D.fp</a> </li>
 <li> <a href="footprints/Reed-Relay_Meder_SILxx-1A72-71D.fp">Reed-Relay_Meder_SILxx-1A72-71D.fp</a> </li>
-<li> <a href="footprints/TRIM_TB_3N_1000D__Sprague-Goodman_Spec-1.fp">TRIM_TB_3N_1000D__Sprague-Goodman_Spec-1.fp</a> - Trimmer 3 Lead Top (Bottom) adjust</li>
+</ul>
+<h4>Trimmer -- 3 Lead</h4>
+<ul>
+<li> <a href="footprints/TRIM_TB_3N_1000D__Sprague-Goodman_Spec-1.fp">TRIM_TB_3N_1000D__Sprague-Goodman_Spec-1.fp</a> - Top/Bottom adjust</li>
 <li> <a href="footprints/TRIM_TB_3N_1000D__Sprague-Goodman_Spec-2.fp">TRIM_TB_3N_1000D__Sprague-Goodman_Spec-2.fp</a> </li>
 <li> <a href="footprints/TRIM_TB_3N_1000D__Sprague-Goodman_Std-1.fp">TRIM_TB_3N_1000D__Sprague-Goodman_Std-1.fp</a> </li>
 <li> <a href="footprints/TRIM_TB_3N_1000D__Sprague-Goodman_Std-2.fp">TRIM_TB_3N_1000D__Sprague-Goodman_Std-2.fp</a> </li>
+<li> <a href="footprints/TRIM_TB_3N_1000D__Sprague-Goodman_Std-3.fp">TRIM_TB_3N_1000D__Sprague-Goodman_Std-3.fp</a> </li>
 <li> <a href="footprints/TRIM_TB_3N_800D__Sprague-Goodman-1.fp">TRIM_TB_3N_800D__Sprague-Goodman-1.fp</a> </li>
 <li> <a href="footprints/TRIM_TB_3N_800D__Sprague-Goodman-2.fp">TRIM_TB_3N_800D__Sprague-Goodman-2.fp</a> </li>
-<li> <a href="footprints/TRIM_T_3N_1000D__Sprague-Goodman_Spec-1.fp">TRIM_T_3N_1000D__Sprague-Goodman_Spec-1.fp</a> </li>
+<li> <a href="footprints/TRIM_TB_3N_800D__Sprague-Goodman-3.fp">TRIM_TB_3N_800D__Sprague-Goodman-3.fp</a> </li>
+<li> <a href="footprints/TRIM_T_3N_1000D__Sprague-Goodman_Spec-1.fp">TRIM_T_3N_1000D__Sprague-Goodman_Spec-1.fp</a> - Top adjust</li>
 <li> <a href="footprints/TRIM_T_3N_1000D__Sprague-Goodman_Spec-2.fp">TRIM_T_3N_1000D__Sprague-Goodman_Spec-2.fp</a> </li>
 <li> <a href="footprints/TRIM_T_3N_1000D__Sprague-Goodman_Std-1.fp">TRIM_T_3N_1000D__Sprague-Goodman_Std-1.fp</a> </li>
 <li> <a href="footprints/TRIM_T_3N_1000D__Sprague-Goodman_Std-2.fp">TRIM_T_3N_1000D__Sprague-Goodman_Std-2.fp</a> </li>
+<li> <a href="footprints/TRIM_T_3N_1000D__Sprague-Goodman_Std-3.fp">TRIM_T_3N_1000D__Sprague-Goodman_Std-3.fp</a> </li>
 <li> <a href="footprints/TRIM_T_3N_800D__Sprague-Goodman-1.fp">TRIM_T_3N_800D__Sprague-Goodman-1.fp</a> </li>
 <li> <a href="footprints/TRIM_T_3N_800D__Sprague-Goodman-2.fp">TRIM_T_3N_800D__Sprague-Goodman-2.fp</a> </li>
+<li> <a href="footprints/TRIM_T_3N_800D__Sprague-Goodman-3.fp">TRIM_T_3N_800D__Sprague-Goodman-3.fp</a> </li>
 </ul>
 
 <!--#include virtual="/trailer.html" -->
