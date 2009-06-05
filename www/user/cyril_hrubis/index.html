@@ -70,7 +70,7 @@ footprint for generic smt diode.
 int main(void)
 {
 	/* 
-	 * print backend generated data to stdout
+	 * Print backend generated data to stdout
 	 */
 	fpg_set_file(stdout);
 
@@ -83,9 +83,14 @@ int main(void)
 	fpg_set_units(fpg_um);
 
 	/*
-	 * start element with description
+	 * Set line thickness.
 	 */
-	fpg_elemement_begin("Diode");
+	fpg_set_line_thickness(500);
+
+	/*
+	 * Start element with description
+	 */
+	fpg_element_begin("Diode");
 
 	/*
 	 * create two pins
