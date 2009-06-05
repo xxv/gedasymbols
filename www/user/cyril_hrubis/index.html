@@ -1,0 +1,129 @@
+<!--#set var="title" value="Cyril Hrubis" -->
+<!--#include virtual="/header.html" -->
+
+Cyril Hrubis<br>
+<table>
+ <tr>
+  <td>
+   email:
+  </td>
+  <td>
+   metan{at}ucw.cz
+  </td>
+ </tr>
+ <tr>
+  <td>
+   mailing list email:
+  </td>
+  <td>
+   metan.lists{at}mail.com
+  </td>
+ </tr>
+ <tr>
+  <td>
+   web:
+  </td>
+  <td>
+  <a href="http://atrey.karlin.mff.cuni.cz/~metan/">
+   http://atrey.karlin.mff.cuni.cz/~metan/
+  </a>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   journal:
+  </td>
+  <td>
+   <a href="http://watashi-metan.livejournal.com">
+    http://watashi-metan.livejournal.com
+   </a>
+  </td>
+ </tr>
+</table>
+
+<h2>Pcb Utils</h2>
+Is footprint generator library that will do all the hard work while creating
+footprint as well as it's collection of footprint generators.
+
+<h3>Description</h3>
+The library is written in C and consist of core library along with footprint
+generators and bash wrappers that passes default parameters to generators in
+order to create all possible footprints. You can obtain all possible footprints
+just by typing 'make' in root directory of project sources.
+<br>
+<br>
+So what can it really handle?
+<ul>
+<li>Unit conversion.</li>
+<li>Basic geometric shapes.</li>
+<li>Electronic symbols.</li>
+<li>Pcb backend.</li>
+</ul>
+
+<h3>Usage</h3>
+The most basic example of code for footprint generator in C. We are creating
+footprint for generic smt diode.
+
+<pre>
+#include "fpg_common.h"
+
+int main(void)
+{
+	/* 
+	 * print backend generated data to stdout
+	 */
+	fpg_set_file(stdout);
+
+	/*
+	 * We are working with micro meters.
+	 *
+	 * NOTE: the library works with integer numbers
+	 *       passed as arguments.
+	 */
+	fpg_set_units(fpg_um);
+
+	/*
+	 * start element with description
+	 */
+	fpg_elemement_begin("Diode");
+
+	/*
+	 * create two pins
+	 */
+	fpg_pin_default(0, 0, "Pin_1", "1", "square");
+	fpg_pin_default(10000, 0, "Pin_2", "2", "");
+
+	/*
+	 * Draw generic diode betwen pins.
+	 */
+	fpg_diode(0, 0, 10000, 0, FPG_DIODE_GEN);
+	
+	/*
+	 * Close element.
+	 */
+	fpg_element_end();
+}
+</pre>
+
+<h3>Download</h3>
+The library is distributed under GPLv2 and I really would like to see and merge your patches ;).
+<br>
+Download first published version <a href="http://atrey.karlin.mff.cuni.cz/~metan/pcb_utils.tar.bz2">here</a>
+
+<h3>Help wanted</h3>
+The goal here is to create collection of footprint generators that can generate
+all the footprints that you will ever need. Why geneators? Why not just the
+footprints? Yes I could just create some missing footprints and add them here
+but with every small change I'll end up changing all the files. Generators are
+written backend independend, so If we need to change format of output files
+it's just a few lines. In shorter words it's just much more universal solution.
+<br>
+<br>
+Note: 
+<i>
+The library is in alpha state, all comment and patches are welcome.  The api
+may change a bit so page describing all usable functions is not here right now.
+Stay tuned.
+</i>
+
+<!--#include virtual="/trailer.html" -->
