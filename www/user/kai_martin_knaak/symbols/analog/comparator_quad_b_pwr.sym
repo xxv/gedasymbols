@@ -2,7 +2,7 @@ v 20081221 2
 T 90 2700 5 8 0 0 0 0 1
 device=opamp_quad_pwr
 T 100 2500 5 8 0 0 0 0 1
-description=power pins for quad opamp
+description=power pins for quad comparator (opamp-pinout)
 T 100 2300 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
 T 100 2100 5 8 0 0 0 0 1
@@ -19,9 +19,9 @@ T 100 450 9 8 1 0 0 1 1
 P 300 900 300 800 1 0 0
 {
 T 250 850 5 8 0 1 0 6 1
-pinseq=3
+pinseq=4
 T 250 850 5 8 1 1 0 6 1
-pinnumber=3
+pinnumber=4
 T 300 1050 5 8 0 1 0 7 1
 pintype=pwr
 T 300 700 3 20 0 1 0 4 1
@@ -30,9 +30,9 @@ pinlabel=+
 P 300 0 300 100 1 0 0
 {
 T 300 0 5 8 1 1 0 7 1
-pinseq=12
+pinseq=11
 T 300 0 5 8 0 1 0 7 1
-pinnumber=12
+pinnumber=11
 T 600 0 5 8 0 1 0 6 1
 pintype=pwr
 T 300 200 3 20 0 1 0 4 1

@@ -1,4 +1,4 @@
-v 20080127 1
+v 20081221 2
 B 0 100 600 700 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 300 450 9 8 1 0 0 4 1
 opamp
@@ -29,7 +29,7 @@ refdes=U?
 T 90 2700 5 8 0 0 0 0 1
 device=opamp_pwr
 T 90 2500 5 8 0 0 0 0 1
-description=Power pins for single opamp
+description=Power pins for single comparator
 T 90 1900 5 8 0 0 0 0 1
 use-license=free, no restrictions
 T 90 2300 5 8 0 0 0 0 1
