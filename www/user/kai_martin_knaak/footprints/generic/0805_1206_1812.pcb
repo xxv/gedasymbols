@@ -1,14 +1,14 @@
-# release: pcb 1.99x
-# date:    Thu Aug 28 13:38:59 2008
-# user:    kmk (kai-martin,,,)
-# host:    bibo.iqo.uni-hannover.de
+# release: pcb 1.99y
+# date:    Tue Jun 23 02:39:54 2009
+# user:    kmk (Kai-Martin,,,)
+# host:    kwak.localdomain
 
 # To read pcb files, the pcb version (or the cvs source date) must be >= the file version
 FileVersion[20070407]
 
-PCB["0805_1206_1812.pcb" 177165 236220]
+PCB["0805_1206_1812.pcb" 196850 314961]
 
-Grid[1968.504150 0 0 1]
+Grid[1968.503906 0 0 1]
 Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
@@ -1022,6 +1022,24 @@ Element["" "" "dio_1812" "" 59055 181102 -15748 -13779 0 100 ""]
 	ElementLine [-17716 -7874 17717 -7874 800]
 
 	)
+
+Element["" "" "TANTAL_7x4MM" "" 62992 204724 -3938 -9841 0 100 ""]
+(
+	Pad[1 -1969 1 1968 14480 2404 16884 "2" "1" "square"]
+	Pad[29529 -1969 29529 1968 14480 2404 16884 "2" "2" "square"]
+	ElementLine [12795 3937 14764 3937 800]
+	ElementLine [12795 -3936 14764 -3937 800]
+	ElementLine [16732 -3937 16732 3937 800]
+	ElementLine [14764 -3937 14764 3937 800]
+	ElementLine [16732 0 21654 0 800]
+	ElementLine [12795 -3937 12795 3937 800]
+	ElementLine [7875 -1 12795 0 800]
+	ElementLine [-7874 9842 -7873 -9844 800]
+	ElementLine [37403 9841 -7873 9841 800]
+	ElementLine [37403 -9844 37403 9841 800]
+	ElementLine [-7874 -9843 37403 -9844 800]
+
+	)
 Layer(1 "top")
 (
 	Line[24764 39370 24764 39370 6000 2404 ""]
@@ -1044,6 +1062,8 @@ Layer(1 "top")
 	Line[22047 11811 22047 11811 2500 2404 ""]
 	Line[21456 3543 21456 4331 1377 2000 ""]
 	Line[17914 3543 17914 4331 1377 2000 ""]
+	Line[11812 202755 11812 206692 14480 2404 ""]
+	Line[41340 202755 41340 206692 14480 2404 ""]
 	Polygon("clearpoly")
 	(
 		[2953 175197] [12796 175197] [12796 187008] [2953 187008] 
@@ -1069,6 +1089,7 @@ Layer(3 "comment")
 	Text[72165 20513 0 177 "0805.fp" ""]
 	Text[68621 433 0 111 "0402r.fp" ""]
 	Text[83189 174448 0 210 "dio_1812.fp" ""]
+	Text[104843 198070 0 210 "tantal_7x4mm.fp" ""]
 )
 Layer(4 "lineout")
 (
@@ -1163,6 +1184,17 @@ Layer(6 "silk")
 	Line[13780 181102 25591 181102 800 2000 "clearline"]
 	Line[22638 178150 22638 184055 800 2000 "clearline"]
 	Line[21260 179134 21260 183071 800 2000 "clearline"]
+	Line[3937 194881 49214 194880 800 2000 "clearline"]
+	Line[49214 194880 49214 214565 800 2000 "clearline"]
+	Line[49214 214565 3938 214565 800 2000 "clearline"]
+	Line[3937 214566 3938 194880 800 2000 "clearline"]
+	Line[19686 204723 24606 204724 800 2000 "clearline"]
+	Line[24606 200787 24606 208661 800 2000 "clearline"]
+	Line[28543 204724 33465 204724 800 2000 "clearline"]
+	Line[26575 200787 26575 208661 800 2000 "clearline"]
+	Line[28543 200787 28543 208661 800 2000 "clearline"]
+	Line[24606 200788 26575 200787 800 2000 "clearline"]
+	Line[24606 208661 26575 208661 800 2000 "clearline"]
 	Text[122047 23622 0 67 "IND" ""]
 	Text[131889 23622 0 67 "RES" ""]
 	Text[143700 23622 0 67 "CAP" ""]
