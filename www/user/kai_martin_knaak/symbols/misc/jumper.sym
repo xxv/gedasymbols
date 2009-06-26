@@ -1,4 +1,4 @@
-v 20080127 1
+v 20090328 2
 P 100 700 100 600 1 0 0
 {
 T 150 650 5 8 0 1 0 0 1
@@ -41,3 +41,5 @@ T 100 1100 5 8 0 0 0 0 1
 numslots=0
 T 100 1900 5 8 0 0 0 0 1
 comment=use jumper_default.sym to mark a closed jumper
+T 300 400 8 8 1 1 0 0 1
+value=Jumper
