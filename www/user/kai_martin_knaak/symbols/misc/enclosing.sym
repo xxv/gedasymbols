@@ -1,16 +1,16 @@
-v 20070902 1
+v 20090328 2
 T 100 1600 5 8 0 0 0 0 1
 description=enclosing
 T 100 400 8 10 1 1 0 0 1
 refdes=M?
-T 100 200 8 8 1 1 0 0 1
+T 100 200 8 10 1 1 0 0 1
 value=Deltron 455-0020
 T 100 0 8 8 1 1 0 0 1
 footprint=BOX_DELTRON_455_0020
 T 100 1400 5 8 0 0 0 0 1
 author=K-M. Knaak, kmk@lilalaser.de
 T 100 1200 5 8 0 0 0 0 1
-license=GPL2
+dist-license=GPL3, for the details see http://www.gnu.org/licenses/gpl-3.0.txt
 B 700 400 1200 300 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 B 700 700 1200 100 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 L 1900 800 2000 900 3 0 0 0 -1 -1
@@ -20,3 +20,5 @@ L 700 800 960 900 3 0 0 0 -1 -1
 L 960 900 2000 900 3 0 0 0 -1 -1
 L 2000 900 2000 800 3 0 0 0 -1 -1
 L 2000 820 2000 560 3 0 0 0 -1 -1
+T 100 1000 5 8 0 0 0 0 1
+use-license=free, no restrictions
