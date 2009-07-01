@@ -1,8 +1,6 @@
-v 20080127 1
-T 100 2800 5 8 0 0 0 0 1
-device=INA128
+v 20090328 2
 T 100 2600 5 8 0 0 0 0 1
-description=instrumentation amplifier, INA128, SO8
+description= generic SO8 instrumentation amplifier, e.g. AD620, LT1167, INA128 
 T 100 2400 5 8 0 0 0 0 1
 comment=Use symbol opamp_pwr.sym to connect power pins.
 T 100 2200 5 8 0 0 0 0 1
@@ -15,11 +13,11 @@ T 100 1600 5 8 0 0 0 0 1
 use-license=free, no restrictions
 T 100 1400 5 8 0 0 0 0 1
 numslots=0
-T 875 1100 8 10 1 1 0 0 1
+T 800 1100 8 10 1 1 0 0 1
 refdes=U?
-T 900 900 8 10 1 1 0 0 1
-value=INA128
-T 900 700 8 8 1 1 0 0 1
+T 800 900 8 10 1 1 0 0 1
+value=LT1167
+T 800 700 8 8 1 1 0 0 1
 footprint=SO8
 L 100 800 100 0 3 0 0 0 -1 -1
 L 100 800 900 400 3 0 0 0 -1 -1
@@ -30,18 +28,18 @@ T 100 250 5 8 1 1 0 6 1
 pinnumber=2
 T 100 250 5 8 0 1 0 6 1
 pinseq=2
-T 150 100 9 16 1 1 0 0 1
+T 150 100 9 16 0 1 0 0 1
 pinlabel=-
 T 100 100 5 8 0 1 0 6 1
 pintype=in
 }
 P 0 600 100 600 1 0 0
 {
-T 100 650 5 8 0 1 0 6 1
-pinnumber=3
 T 100 650 5 8 1 1 0 6 1
+pinnumber=3
+T 100 650 5 8 0 1 0 6 1
 pinseq=3
-T 150 500 9 16 1 1 0 0 1
+T 150 500 9 16 0 1 0 0 1
 pinlabel=+
 T 100 500 5 8 0 1 0 6 1
 pintype=in
@@ -59,24 +57,24 @@ pinlabel=Vout
 }
 P 700 500 700 600 1 0 1
 {
-T 700 600 5 8 1 1 0 6 1
+T 800 500 5 8 1 1 0 6 1
 pinnumber=8
-T 700 600 5 8 0 1 0 6 1
+T 800 500 5 8 0 1 0 6 1
 pinseq=8
 T 1000 700 5 8 0 1 180 0 1
 pintype=pas
-T 600 450 9 8 0 1 0 6 1
+T 500 500 9 8 1 1 0 4 1
 pinlabel=Rg
 }
 P 300 700 300 800 1 0 1
 {
-T 400 750 5 8 0 1 180 1 1
-pinnumber=1
 T 400 750 5 8 1 1 180 1 1
+pinnumber=1
+T 400 750 5 8 0 1 180 1 1
 pinseq=1
 T 600 900 5 8 0 1 180 0 1
 pintype=pas
-T 300 900 9 8 0 1 0 7 1
+T 500 500 9 8 0 1 0 4 1
 pinlabel=Rg
 }
 P 700 200 700 300 1 0 0
@@ -90,3 +88,6 @@ pinnumber=5
 T 800 100 5 8 0 1 0 6 1
 pinseq=5
 }
+L 200 650 200 550 3 0 0 0 -1 -1
+L 150 600 250 600 3 0 0 0 -1 -1
+L 150 200 250 200 3 0 0 0 -1 -1
