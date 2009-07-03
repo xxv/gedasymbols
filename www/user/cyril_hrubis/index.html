@@ -55,6 +55,7 @@ just by typing 'make' in root directory of project sources.
 So what can it really handle?
 <ul>
 <li>Unit conversion.</li>
+<li>Relative origin point.</li>
 <li>Basic geometric shapes.</li>
 <li>Electronic symbols.</li>
 <li>Pcb backend.</li>
@@ -65,47 +66,47 @@ The most basic example of code for footprint generator in C. We are creating
 footprint for generic smt diode.
 
 <pre>
-#include "fpg_common.h"
+<font color="purple">#include</font> <font color="red">"fpg_common.h"</font>
 
-int main(void)
+<font color="green">int</font> main(<font color="green">void</font>)
 {
-	/* 
+	<font color="blue">/* 
 	 * Print backend generated data to stdout
-	 */
-	fpg_set_file(stdout);
+	 */</font>
+	fpg_set_file(<font color="red">stdout</font>);
 
-	/*
+	<font color="blue">/*
 	 * We are working with micro meters.
 	 *
 	 * NOTE: the library works with integer numbers
 	 *       passed as arguments.
-	 */
+	 */</font>
 	fpg_set_units(fpg_um);
 
-	/*
+	<font color="blue">/*
 	 * Set line thickness.
-	 */
-	fpg_set_line_thickness(500);
+	 */</font>
+	fpg_set_line_thickness(<font color="red">500</font>);
 
-	/*
+	<font color="blue">/*
 	 * Start element with description
-	 */
-	fpg_element_begin("Diode");
+	 */</font>
+	fpg_element_begin(<font color="red">"Diode"</font>);
 
-	/*
+	<font color="blue">/*
 	 * create two pins
-	 */
-	fpg_pin_default(0, 0, "Pin_1", "1", "square");
-	fpg_pin_default(10000, 0, "Pin_2", "2", "");
+	 */</font>
+	fpg_pin_default(<font color="red">0</font>, <font color="red">0</font>, <font color="red">"Pin_1"</font>, <font color="red">"1"</font>, <font color="red">"square"</font>);
+	fpg_pin_default(<font color="red">10000</font>, <font color="red">0</font>, <font color="red">"Pin_2"</font>, <font color="red">"2"</font>, <font color="red">""</font>);
 
-	/*
+	<font color="blue">/*
 	 * Draw generic diode betwen pins.
-	 */
-	fpg_diode(0, 0, 10000, 0, FPG_DIODE_GEN);
+	 */</font>
+	fpg_diode(<font color="red">0</font>, <font color="red">0</font>, <font color="red">10000</font>, <font color="red">0</font>, FPG_DIODE_GEN);
 	
-	/*
+	<font color="blue">/*
 	 * Close element.
-	 */
+	 */</font>
 	fpg_element_end();
 }
 </pre>
