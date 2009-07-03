@@ -1,4 +1,4 @@
-v 20081221 2
+v 20090328 2
 T 225 3000 5 8 0 0 0 0 1
 device=opamp
 T 225 2800 5 8 0 0 0 0 1
@@ -7,7 +7,7 @@ T 200 2600 5 8 0 0 0 0 1
 comment=Use symbol opamp_pwr.sym to connect power pins.
 T 200 2400 5 8 0 0 0 0 1
 documentation=http://www.ti.com/lit/gpn/ne5534
-T 675 1000 8 10 1 1 0 0 1
+T 700 1000 8 10 1 1 0 0 1
 refdes=U?
 T 200 2200 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de

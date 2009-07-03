@@ -1,5 +1,5 @@
 # release: pcb-GL 1.99y
-# date:    Wed Jul  1 05:18:10 2009
+# date:    Thu Jul  2 10:09:21 2009
 # user:    kmk (Kai-Martin,,,)
 # host:    kwak.localdomain
 
@@ -13,7 +13,7 @@ Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[600 1000 600 600 1500 1000]
-Flags("shownumber,nameonpcb,uniquename,clearnew,snappin")
+Flags("shownumber,nameonpcb,uniquename,clearnew,snappin,locknames")
 Groups("1,c:2,s:3")
 Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
@@ -816,7 +816,7 @@ Element["" "" "SO8" "" 78740 39370 3937 -6891 3 100 ""]
 
 	)
 
-Element["" "" "SOT23_SDG" "" 74803 112205 -5906 -9843 0 100 ""]
+Element["" "" "SOT23_SDG" "" 74803 112205 -3938 1968 0 100 ""]
 (
 	Pad[-1575 9844 -1575 10631 4724 2755 5724 "SOURCE" "S" "square,edge2"]
 	Pad[7086 9844 7086 10631 4724 2755 5724 "DRAIN" "D" "square,edge2"]
@@ -828,7 +828,7 @@ Element["" "" "SOT23_SDG" "" 74803 112205 -5906 -9843 0 100 ""]
 
 	)
 
-Element["" "" "SOT23" "" 74803 72835 -5906 -9843 0 100 ""]
+Element["" "" "SOT23" "" 74803 72835 -3937 1968 0 100 ""]
 (
 	Pad[-1575 9844 -1575 10631 4724 2755 5724 "1" "1" "square,edge2"]
 	Pad[7086 9844 7086 10631 4724 2755 5724 "2" "2" "square,edge2"]
@@ -840,7 +840,7 @@ Element["" "" "SOT23" "" 74803 72835 -5906 -9843 0 100 ""]
 
 	)
 
-Element["" "" "SOT23_GSD" "" 74803 149606 -5905 -9842 0 100 ""]
+Element["" "" "SOT23_GSD" "" 74803 149606 -3936 1969 0 100 ""]
 (
 	Pad[-1575 9844 -1575 10631 4724 2755 5724 "GATE" "G" "square,edge2"]
 	Pad[7086 9844 7086 10631 4724 2755 5724 "SOURCE" "S" "square,edge2"]
@@ -852,7 +852,7 @@ Element["" "" "SOT23_GSD" "" 74803 149606 -5905 -9842 0 100 ""]
 
 	)
 
-Element["" "" "SOT23_BEC" "" 74803 179134 0 0 0 100 ""]
+Element["" "" "SOT23_BEC" "" 74803 179134 -3937 1968 0 100 ""]
 (
 	Pad[-1575 9844 -1575 10631 4724 2755 5724 "BASE" "B" "square,edge2"]
 	Pad[0 0 5511 0 5511 2755 6511 "COLLECTOR" "C" "square,edge2"]
