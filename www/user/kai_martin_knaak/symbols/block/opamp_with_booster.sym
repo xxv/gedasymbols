@@ -10,17 +10,6 @@ value=xxx
 T -200 2100 5 8 0 0 90 0 1
 device=resistor
 }
-C 500 2400 1 0 0 cap_SMD.sym
-{
-T 600 5000 5 8 0 0 0 0 1
-device=capacitor
-T 1100 2600 5 10 1 1 0 0 1
-value=100n
-T 1100 2400 5 8 1 1 0 0 1
-footprint=xxx
-T 1100 2800 5 10 1 1 0 0 1
-refdes=C?
-}
 N 1800 2800 1800 3000 4
 C 1700 1400 1 0 0 gnd.sym
 N 1800 1700 1800 1800 4
@@ -71,14 +60,14 @@ N 5100 2400 5100 2300 4
 N 5100 4500 5100 4400 4
 C 4500 2300 1 180 1 pnp.sym
 {
-T 5000 1200 5 10 1 1 0 6 1
+T 5200 1200 5 10 1 1 0 0 1
 refdes=Q?
 T 5800 2200 5 10 0 0 0 6 1
 device=PNP_TRANSISTOR
-T 5000 800 5 8 1 1 0 6 1
-footprint=TO126_ECB
-T 5000 1000 5 10 1 1 0 6 1
-value=MJE350
+T 5200 800 5 8 1 1 0 0 1
+footprint=SOT223_BEC
+T 5200 1000 5 10 1 1 0 0 1
+value=BCP853-16
 }
 C 4500 4500 1 0 0 npn.sym
 {
@@ -87,9 +76,9 @@ refdes=Q?
 T 4600 6300 5 10 0 0 0 0 1
 device=NPN_TRANSISTOR
 T 5400 4800 5 8 1 1 0 0 1
-footprint=TO126_ECB
+footprint=SOT223_BEC
 T 5400 5000 5 10 1 1 0 0 1
-value=MJE340
+value=BCP56-16
 }
 C 4400 4600 1 90 1 dus.sym
 {
@@ -187,9 +176,9 @@ N 6900 3400 8600 3400 4
 N 7000 3400 7000 6900 4
 N 1800 6900 7000 6900 4
 N 1800 6900 1800 4000 4
-C 2000 2800 1 0 0 opamp.sym
+C 2000 3600 1 180 1 opamp.sym
 {
-T 2225 5800 5 8 0 0 0 0 1
+T 2225 600 5 8 0 0 180 6 1
 device=opamp
 T 2600 2800 5 10 1 1 0 0 1
 refdes=U?
@@ -203,9 +192,9 @@ C 2100 3400 1 0 0 cap_SMD.sym
 T 2200 6000 5 8 0 0 0 0 1
 device=capacitor
 T 2700 4100 5 10 1 1 0 0 1
-value=100n
+value=(xxx)
 T 2700 3800 5 8 1 1 0 0 1
-footprint=xxx
+footprint=0805
 T 2700 4300 5 10 1 1 0 0 1
 refdes=C?
 }
@@ -249,3 +238,20 @@ C 8500 500 1 0 0 gnd.sym
 C 8500 1600 1 0 0 gnd.sym
 N 7600 2000 7600 1700 4
 N 5800 2400 5800 2500 4
+C 500 2500 1 0 0 res0805.sym
+{
+T 1000 2250 5 8 1 1 0 0 1
+footprint=0805
+T 1000 2450 5 10 1 1 0 0 1
+value=xxx
+T 800 4900 5 8 0 0 0 0 1
+device=resistor
+T 1000 2650 5 10 1 1 0 0 1
+refdes=R?
+}
+T 7200 3500 9 10 1 0 0 0 5
+Transistoren-Paare
+BCP56/BCP53 (SOT223_BEC)
+BC847/BC857 (SOT23_BEC)
+MJE240/MJE350 (TO126)
+

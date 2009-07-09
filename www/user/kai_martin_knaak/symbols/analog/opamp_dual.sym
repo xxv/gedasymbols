@@ -1,4 +1,4 @@
-v 20080127 1
+v 20090328 2
 T 225 3100 5 8 0 0 0 0 1
 device=opamp_dual
 T 225 2900 5 8 0 0 0 0 1
@@ -43,7 +43,7 @@ T 175 250 5 8 1 1 0 6 1
 pinnumber=2
 T 0 250 5 8 0 1 0 0 1
 pinseq=2
-T 250 100 9 16 1 1 0 0 1
+T 250 100 9 16 0 1 0 0 1
 pinlabel=-
 T 50 100 5 8 0 1 0 0 1
 pintype=in
@@ -54,7 +54,7 @@ T 175 650 5 8 1 1 0 6 1
 pinnumber=3
 T 0 650 5 8 0 1 0 0 1
 pinseq=3
-T 250 500 9 16 1 1 0 0 1
+T 250 500 9 16 0 1 0 0 1
 pinlabel=+
 T 50 500 5 8 0 1 0 0 1
 pintype=in
@@ -65,3 +65,6 @@ T 200 1925 5 8 0 0 0 0 1
 use-license=free, no restrictions
 T 200 2100 5 8 0 0 0 0 1
 dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
+L 250 600 350 600 3 0 0 0 -1 -1
+L 300 650 300 550 3 0 0 0 -1 -1
+L 250 200 350 200 3 0 0 0 -1 -1

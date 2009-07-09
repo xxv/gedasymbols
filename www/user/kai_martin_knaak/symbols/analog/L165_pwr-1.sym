@@ -1,7 +1,7 @@
-v 20080127 1
-T 300 2500 5 8 0 0 0 0 1
-device=L165_power
+v 20090328 2
 T 300 2300 5 8 0 0 0 0 1
+comment=also for TDA2030
+T 300 2500 5 8 0 0 0 0 1
 description=Power pins for L165
 T 300 2100 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
@@ -17,26 +17,29 @@ P 300 1000 300 900 1 0 0
 {
 T 100 1000 5 10 0 1 0 0 1
 pinseq=5
-T 100 1000 5 10 0 1 0 0 1
+T 100 1000 5 10 1 1 0 0 1
 pinnumber=5
 T 100 1200 5 10 0 1 0 0 1
 pintype=pwr
-T 250 800 5 20 1 1 0 1 1
+T 250 800 5 20 0 1 0 1 1
 pinlabel=+
 }
 P 300 100 300 200 1 0 0
 {
 T 100 0 5 10 0 1 0 0 1
 pinseq=3
-T 100 0 5 10 0 1 0 0 1
+T 100 0 5 10 1 1 0 0 1
 pinnumber=3
 T 400 0 5 10 0 1 0 0 1
 pintype=pwr
-T 225 300 5 20 1 1 0 1 1
+T 225 300 5 20 0 1 0 1 1
 pinlabel=-
 }
 B 0 200 600 700 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 300 500 8 10 1 1 0 3 1
-value=L165
+value=L165/TDA2030
 T 700 400 8 8 1 1 0 0 1
 footprint=PENTAWATTV
+L 350 800 250 800 3 0 0 0 -1 -1
+L 300 850 300 750 3 0 0 0 -1 -1
+L 250 300 350 300 3 0 0 0 -1 -1
