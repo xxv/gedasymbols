@@ -626,7 +626,7 @@ device=LPC2119 / LP2129
 L 9150 1650 9550 1650 3 0 0 0 -1 -1
 L 7750 9850 7750 9300 3 0 0 0 -1 -1
 T 500 10892 8 10 0 0 0 0 1
-author=author:Isabelle Rieucros & Marek Peca <mp@duch.cz>
+author=Isabelle Rieucros & Marek Peca <mp@duch.cz>
 P 5500 9900 5500 10200 1 0 1
 {
 T 5450 10000 5 8 1 1 90 0 1
