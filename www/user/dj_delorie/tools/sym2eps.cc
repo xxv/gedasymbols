@@ -403,21 +403,25 @@ write_eps (const char *filename, FILE *f)
 	  sscanf(line, "%*c %d %d %d %d %d %d %d %d %d", &x, &y, &c, &s, &v, &avc, &a, &align, &n);
 	  if (v)
 	    {
-	      static int last_fsize = -1;
+	      static double last_fsize = -1;
 	      int xo, yo;
-	      s = (int)(s*1000.0 / 72.0 * 1.3);
+	      double linestep, fontsize;
+
+	      fontsize = (int)(s*1000.0 / 72.0 * 1.4);
+	      linestep = fontsize * 1.35;
+	      s = (int)(linestep * n);
 
 	      color_size(f, c, 0);
-	      if (last_fsize != s)
+	      if (last_fsize != fontsize)
 		{
-		  last_fsize = s;
-		  fprintf(f, "/Helvetica findfont %g scalefont setfont\n", (double)s);
+		  last_fsize = fontsize;
+		  fprintf(f, "/Helvetica findfont %g scalefont setfont\n", (double)fontsize);
 		}
 
 	      for (j=0; j<n; j++)
 		{
 		  int len;
-		  char *text = sym[i+n];
+		  char *text = sym[i+j+1];
 		  switch (avc) {
 		  case 1:
 		    if (strchr(text, '='))
@@ -428,7 +432,7 @@ write_eps (const char *filename, FILE *f)
 		      *(strchr(text, '=')) = 0;
 		    break;
 		  }
-		  len = ps_length(text, s);
+		  len = ps_length(text, (int)fontsize);
 		  if (a == 180)
 		    {
 		      /* special case - text is never upside-down.  */
@@ -442,11 +446,19 @@ write_eps (const char *filename, FILE *f)
 		  case 2: xo = len; break;
 		  }
 		  switch (align % 3) {
-		  case 0: yo = 0; break;
-		  case 1: yo = (int)(s * 0.35); break;
-		  case 2: yo = (int)(s * 0.7); break;
+		  case 0: yo = (int)(linestep * (n-1)); break;
+		  case 1: yo = (int)(linestep * ((n-1)/2.0-0.3)); break;
+		  case 2: yo = (int)(linestep * (-0.65)); break;
 		  }
-		  fprintf(f, "(%s) %d %d %d %d %d t\n", text, -xo, -yo, a, x, y);
+		  fprintf(f, "(");
+		  char *cp;
+		  for (cp = text; *cp; cp++)
+		    {
+		      if (*cp == '(' || *cp == ')' || *cp == '\\')
+			fputc ('\\', f);
+		      fputc (*cp, f);
+		    }
+		  fprintf(f, ") %d %d %d %d %d t\n", -xo, (int)(yo-linestep*j), a, x, y);
 		}
 	    }
 	  i += n;
