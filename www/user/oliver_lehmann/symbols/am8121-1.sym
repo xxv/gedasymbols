@@ -82,7 +82,7 @@ net=Vcc:20
 T 300 8150 5 10 0 0 0 0 1
 net=GND:10
 T 300 7040 9 10 1 0 0 0 1
-Am28121
+Am8121
 T 300 8550 5 10 0 0 0 0 1
 author=Oliver Lehmann <lehmann@ans-netz.de>
 P 0 700 300 700 1 0 0

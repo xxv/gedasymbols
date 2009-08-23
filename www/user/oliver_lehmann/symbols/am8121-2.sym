@@ -15,7 +15,7 @@ net=Vcc:20
 T 300 5350 5 10 0 0 0 0 1
 net=GND:10
 T 300 4240 9 10 1 0 0 0 1
-Am28121
+Am8121
 T 300 5750 5 10 0 0 0 0 1
 author=Oliver Lehmann <lehmann@ans-netz.de>
 P 0 300 300 300 1 0 0
