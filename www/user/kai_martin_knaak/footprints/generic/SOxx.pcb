@@ -1,21 +1,21 @@
-# release: pcb 1.99y
-# date:    Fri Jul 10 01:39:47 2009
+# release: pcb-GL 1.99y
+# date:    Sat Aug 22 08:14:38 2009
 # user:    kmk (Kai-Martin,,,)
 # host:    kwak.localdomain
 
 # To read pcb files, the pcb version (or the cvs source date) must be >= the file version
 FileVersion[20070407]
 
-PCB["SOxx.pcb" 236220 393701]
+PCB["SOxx.pcb" 236220 551181]
 
-Grid[1968.504150 0 0 1]
+Grid[196.850403 0 0 1]
 Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[600 1000 600 600 1500 1000]
 Flags("shownumber,nameonpcb,uniquename,clearnew,snappin")
 Groups("1,c:2,s:3")
-Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
+Styles["Signal,1575,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
 Symbol(' ' 18)
 (
@@ -933,6 +933,28 @@ Element["" "" "SOT223" "" 133858 312992 -9842 -1968 0 100 ""]
 	ElementLine [-12795 8858 12795 8858 1000]
 
 	)
+
+Element["" "" "SOT363" "" 133858 393701 -1969 7874 0 100 ""]
+(
+	Pad[-1575 0 1968 0 1575 2000 3575 "1" "1" "square"]
+	Pad[-1575 2559 1968 2559 1575 2000 3575 "2" "2" "square"]
+	Pad[-1575 5118 1968 5118 1575 2000 3575 "3" "3" "square"]
+	Pad[8464 5118 12007 5118 1575 2000 3575 "4" "4" "square,edge2"]
+	Pad[8464 2559 12007 2559 1575 2000 3575 "5" "5" "square,edge2"]
+	Pad[8464 0 12007 0 1575 2000 3575 "6" "6" "square,edge2"]
+	ElementLine [3150 -197 4331 -1378 600]
+	ElementLine [7284 0 9449 0 600]
+	ElementLine [7284 2559 9449 2559 600]
+	ElementLine [7284 5118 9449 5118 600]
+	ElementLine [3150 5118 984 5118 600]
+	ElementLine [3150 2559 984 2559 600]
+	ElementLine [3150 0 984 0 600]
+	ElementLine [7284 -1378 7284 6496 600]
+	ElementLine [7284 6496 3150 6496 600]
+	ElementLine [4331 -1378 7284 -1378 600]
+	ElementLine [3150 6496 3150 -197 600]
+
+	)
 Layer(1 "top")
 (
 	Line[46470 31870 52770 31870 2400 2800 "clearline"]
@@ -967,6 +989,12 @@ Layer(1 "top")
 	Line[29527 324802 29527 335630 6000 2000 "clearline"]
 	Line[49212 324803 49212 335630 6000 2000 "clearline"]
 	Line[39370 303150 39370 304134 29000 2000 "clearline"]
+	Line[39566 393701 36023 393701 1575 2000 "clearline"]
+	Line[39566 396260 36023 396260 1575 2000 "clearline"]
+	Line[39566 398819 36023 398819 1575 2000 "clearline"]
+	Line[49605 398819 46062 398819 1575 2000 "clearline"]
+	Line[49605 396260 46062 396260 1575 2000 "clearline"]
+	Line[49605 393701 46062 393701 1575 2000 "clearline"]
 )
 Layer(2 "bottom")
 (
@@ -982,6 +1010,7 @@ Layer(3 "comment")
 	Text[110235 171261 0 288 "SOT23_BEC.fp" ""]
 	Text[102361 352363 0 288 "SOT223.fp" ""]
 	Text[100392 226379 0 288 "SO14.fp" ""]
+	Text[154527 386813 0 288 "SOT363.fp" ""]
 )
 Layer(4 "none")
 (
@@ -1026,4 +1055,15 @@ Layer(5 "silk")
 	Line[23622 287402 55118 287402 1000 2000 "clearline"]
 	Line[55118 287402 55118 340551 1000 2000 "clearline"]
 	Line[55118 340551 23622 340551 1000 2000 "clearline"]
+	Line[40748 400197 40748 393504 600 1200 "clearline"]
+	Line[41929 392323 44882 392323 600 1200 "clearline"]
+	Line[44882 400197 40748 400197 600 1200 "clearline"]
+	Line[44882 392323 44882 400197 600 1200 "clearline"]
+	Line[40748 393701 38582 393701 600 1200 "clearline"]
+	Line[40748 396260 38582 396260 600 1200 "clearline"]
+	Line[40748 398819 38582 398819 600 1200 "clearline"]
+	Line[44882 398819 47047 398819 600 1200 "clearline"]
+	Line[44882 396260 47047 396260 600 1200 "clearline"]
+	Line[44882 393701 47047 393701 600 1200 "clearline"]
+	Line[40748 393504 41929 392323 600 1200 "clearline"]
 )

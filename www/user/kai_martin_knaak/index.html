@@ -6,21 +6,28 @@ email: <a href="mailto:kmk@familieknaak.de">kmk@familieknaak.de</a> <br>
 
 <h2>General remarks</h2>
 The catalog of symbols and footprints presented here is self consistent.
-That is, the default footprint attribute of a symbol points 
-to one of the footprints given in the footprint section. 
+That is, the default footprint attribute of a symbol points
+to one of the footprints given in the footprint section.
+
+<h2>New Project Script</h2>
+<a href="new_geda_project.sh">new_geda_project.sh</a> is a little convinience
+script to starting a new geda project. When given a project name, it creates
+a simple directory structure and populates it with some config files (gafrc,
+attribs). In addition, it copies a <a href ="doku_template.lyx">documentation template</a>
+in lyx format to the directory.
 
 <h2>Symbols</h2>
 The symbols in this sections are designed according to the following design criteria:
 <ol>
-	<li>they contain a default footprint attribute. 
-	<li>the footprint attribute is visible on the schematic and printed 
+	<li>they contain a default footprint attribute.
+	<li>the footprint attribute is visible on the schematic and printed
 	with a smaller font size than the refdes and the value of the symbol.
 	<li>they contain a human readable description
 	<li>power pins of integrated circuits are split off to a seperate power symbol
 	<li>pin numbers are hidden, if they obeye a generally accepted standard
-</ol>	 
-<p>Note: All my symbols are licensed GPL 2 or GPL 3 for distribution, and unlimited 
-for use. See 
+</ol>
+<p>Note: All my symbols are licensed GPL 2 or GPL 3 for distribution, and unlimited
+for use. See
 <a href="http://www.gnu.org/licenses/gpl.txt">http://www.gnu.org/licenses.gpl.txt</a>
 for the details</p>
 
@@ -28,8 +35,8 @@ for the details</p>
 
 <h2>Footprints</h2>
 
-<p>Note: All my footprints are licensed GPL3 for distribution, and 
-unlimited for use. See 
+<p>Note: All my footprints are licensed GPL3 for distribution, and
+unlimited for use. See
 <a href="http://www.gnu.org/licenses/gpl.txt">http://www.gnu.org/licenses.gpl.txt</a>
 for the details</p>
 
@@ -37,14 +44,31 @@ for the details</p>
 
 <h2>Changelog</h2>
 
+<h4>14/September/2009</h4>
+<ol>
+<li> add convinience script for project start-up.
+<li> short pins to all the diodes. (yes, this breaks old schematics on load)
+</ol>
+
+<h4>22/August/2009</h4>
+<ol>
+<li> add SOT363.fp
+</ol>
+
+<h4>10/July/2009</h4>
+<ol>
+<li> add transformer_3pick-ups.sym
+<li> add subD9-2.sym (small version of subD9.sym)
+</ol>
+
 <h4>9/July/2009</h4>
 <ol>
 <li> add suppressor_SMD.sym
 <li> add block opamp_with_booster.sym
 <li> polished in.sym (better text alignment)
 <li> polished L165-1.sym L165-2.sym, L165_pwr-1.sym
-<li> polished opamp_dual.sym opamp_dual_pwr.sym 
-<li> add SOT223.fp 
+<li> polished opamp_dual.sym opamp_dual_pwr.sym
+<li> add SOT223.fp
 </ol>
 
 <h4>3/July/2009</h4>
@@ -61,7 +85,7 @@ for the details</p>
  <li> added instr_amp_INA163_pwr.sym, power symbol for INA163
  <li> moved instr_amp_INA128.sym to instr_amp_SO8.sym
  <li> polished SO14.fp, opamp.sym
- <li> polished opamp_pwr.sym 
+ <li> polished opamp_pwr.sym
 </ol>
 
 <h4>28/June/2009</h4>
@@ -74,9 +98,9 @@ for the details</p>
  <li> add template.pcb, a template pcb for footprints
  <li> add HAMMOND_1590B.fp, HAMMOND_1590G.fp, HAMMOND_1590Y.fp
  <li> modified HAMMOND_1590B.fp -- lid, rather than box
- <li> enlarged annular rings of APEM_TL36WW.fp, APEM_TL46WW.fp, ELEDIS_2B11.fp, ELEDIS_2B11_LAY.fp, MIYAMA_MS500AVT.fp, MIYAMA_MS500FVT.fp 
- <li> corrected typo in default footprint pnp.sym 
- <li> add default footprint in enclosing.sym 
+ <li> enlarged annular rings of APEM_TL36WW.fp, APEM_TL46WW.fp, ELEDIS_2B11.fp, ELEDIS_2B11_LAY.fp, MIYAMA_MS500AVT.fp, MIYAMA_MS500FVT.fp
+ <li> corrected typo in default footprint pnp.sym
+ <li> add default footprint in enclosing.sym
 </ol>
 
 <h4>23/June/2009</h4>
@@ -91,18 +115,18 @@ for the details</p>
  <li> add footprint BOX_HAMMOND_1590LLB.fp
  <li> clean-up of BOX_HAMMOND_1590LB and BOX_HAMMOND_1590Q.fp
  <li> removed layer garbage from various hole footprint
- <li> add tantal_7x4mm.fp 
+ <li> add tantal_7x4mm.fp
 </ol>
 
 <h4>20/June/2009</h4>
 <ol>
- <li> add footprint for SMD inductor FASTRON_PISG.fp 
+ <li> add footprint for SMD inductor FASTRON_PISG.fp
 </ol>
 
 <h4>8/June/2009</h4>
 <ol>
- <li> clean-up of comparator_quad_b.sym 
- <li> add comparator_quad_b_pwr.sym 
+ <li> clean-up of comparator_quad_b.sym
+ <li> add comparator_quad_b_pwr.sym
 </ol>
 
 <h4>7/June/2009</h4>
@@ -119,19 +143,19 @@ for the details</p>
 
 <h4>05/Nov/2008</h4>
 <ol>
-  <li> fixed links to quad comparator symbols in index file. 
+  <li> fixed links to quad comparator symbols in index file.
 </ol>
 
 
 <h4>10/Oct/2008</h4>
 <ol>
-  <li> corrected SMA_LAY.fp and SMA_VERT.fp -- Holes did not fit. 
+  <li> corrected SMA_LAY.fp and SMA_VERT.fp -- Holes did not fit.
 </ol>
 
 <h4>20/Sept/2008</h4>
 <ol>
-  <li> add SCSI_68pin_male_vert.fp, recepticle, compatible with national instruments cards 
-  <li> add lochraster.fp, 100 mil prototype board 
+  <li> add SCSI_68pin_male_vert.fp, recepticle, compatible with national instruments cards
+  <li> add lochraster.fp, 100 mil prototype board
 </ol>
 
 <h4>8/Sept/2008</h4>
@@ -149,11 +173,11 @@ for the details</p>
 
 <h4>29/Aug/2008</h4>
 <ol>
-  <li> add female SubD9 connector footprints --> SUBD9_female_lay.fp and SUBD9_female_vert.fp 
+  <li> add female SubD9 connector footprints --> SUBD9_female_lay.fp and SUBD9_female_vert.fp
   <li> Renamed male SubD9 connector footprints
   <li> Corrected the pin numbers of SOT23_SDG
   <li> connector symbols PS_*: changed device attributes to value attributes
-  <li> increased holes of ALPS_RK11K112.fp  
+  <li> increased holes of ALPS_RK11K112.fp
 </ol>
 
 <h4>19/Aug/2008</h4>
@@ -184,7 +208,7 @@ for the details</p>
 <h4>12/July/2008</h4>
 <ol>
   <li> add regulators 78*.sym, 78L*.sym, 79*.sym and 79L*.sym
-  <li> add 0402.fp and 0402r.fp 
+  <li> add 0402.fp and 0402r.fp
 </ol>
 
 <h4>12/July/2008</h4>
@@ -224,7 +248,7 @@ for the details</p>
 <li> corrected TO247.fp (was falsely assumed to be similar to TO220)
 <li> add TO247_2.fp (large holes to completely sink the pins)</li>
 <li> add TO247_LAY.fp (heatsink on pcb)
-<li> changed the generic footprints TOxxx.fp -- more polygon and mask clearance  
+<li> changed the generic footprints TOxxx.fp -- more polygon and mask clearance
 </ol>
 
 <h4>26/June/2008</h4>
@@ -242,7 +266,7 @@ for the details</p>
 <h4>6/June/2008</h4>
 <ol>
 <li> add schalter_2x_um.sym, DPDT switch
-<li> add APEM_TL46WW, DPDT switch 
+<li> add APEM_TL46WW, DPDT switch
 <li> rename MULTICOMP_AS to APEM_TL36WW
 </ol>
 
@@ -259,8 +283,8 @@ for the details</p>
 <li> add PS-8.sym, PS-5.sym, PS-3.sym, PS-2.sym -- JAE connectors, series IL-G, sold bei Reichelt.
 <li> add con_pm_Ub.sym -- a connector dedicated to distribute power among boards.
 <li> update to block XLR-78xx-79xx.sym
-<li> add BNC_STAND2.fp -- model telegärtner J01001A0037, to be mounted vertically 
-<li> add BNC_SAND3.fp -- model telegärtner J01001A1945, vertical full metal recepticle 
+<li> add BNC_STAND2.fp -- model telegärtner J01001A0037, to be mounted vertically
+<li> add BNC_SAND3.fp -- model telegärtner J01001A1945, vertical full metal recepticle
 </ol>
 
 <h4>19/May/2008</h4>
@@ -273,10 +297,10 @@ for the details</p>
 <h4>9/May/2008</h4>
 <ol>
 <li> Moved opamp_*_2.sym to opamp_*.sym. I decided, not to put version strings in
-the name of a symbol. Components should be embedded, when a a schematic is 
+the name of a symbol. Components should be embedded, when a a schematic is
 regarded as finished.
 <li> new symbol 7414.sym (6xNOT)
-<li> shorter pins to led_3mm.sym --> Note, this breaks existing schematics. 
+<li> shorter pins to led_3mm.sym --> Note, this breaks existing schematics.
 <li> clean-up license of relay-AXICON_FP2.sym
 <li> add symbol flyback_SOT23.sym (A pair of schottky diodes for flyback protection)
 </ol>
@@ -285,21 +309,21 @@ regarded as finished.
 <ol>
 <li>Shorter pins in comparator_quad.sym and comparator_quad_b.sym.
 <li>Short pin versions of opamp.sym, opamp_quad.sym and opamp_offset.sym. These are called
-opamp_2.sym, opamp_quad_2.sym  and opamp_offset_2.sym. 
+opamp_2.sym, opamp_quad_2.sym  and opamp_offset_2.sym.
 <li>New directory "old" with the long pin versions
-of opamps and comparators, so old schematics still find them.  
+of opamps and comparators, so old schematics still find them.
 </ol>
 
 <h4>7/May/2008</h4>
 Shorter pins in comparator_dual.sym and opamp_dual.sym,to allow for more
-flexibility in schematics. Note: This likely breaks schematics, that use 
+flexibility in schematics. Note: This likely breaks schematics, that use
 the previous version.
 
 <h4>28/Apr/2008</h4>
 <ol>
   <li>increased polygon clearence of a couple of SMD components. Now, polygon clearence is twice the size of solder mask clearence.
   <li>increased mask clearence of cap_RM5.fp, cap_RM275.fp, res_RM20.fp and JMP_*Pin.fp
-  <li>decreased mask clearence of 
+  <li>decreased mask clearence of
 </ol>
 
 <h4>19/Apr/2008</h4>
@@ -320,14 +344,14 @@ the previous version.
 <h4>4/Apr/2008</h4>
 <ol>
   <li> clean-up and update of TOxxx footprints: Centroid in the center, named pins<br>
-  <li> add worksheet TOXXX.pcb 
+  <li> add worksheet TOXXX.pcb
 </ol>
 
 <h4>1/Apr/2008</h4>
 
 <h4>1/Apr/2008</h4>
   * clean-up and update of 74xxx symbols<br>
-  * add footprint for 19" box: BOX_DAUB_MGF44061.fp 
+  * add footprint for 19" box: BOX_DAUB_MGF44061.fp
   * add worksheet for boxes made by Daub: BOX_DAUB.pcb
   * removed multiple GND pins in 78L12.sym and 78L15.sym<br>
   * Graphics polishing 7805.sym, 7812.sym, 7815.sym, 7905.sym, 7912.sym, 7915.sym
@@ -342,12 +366,12 @@ the previous version.
   <li> removed redundant 74_16pin_pwr.sym<br>
   <li> graphical improvements to *_pwr.sym<br>
   <li> new footprints 1210.fp and dio_1210.fp<br>
-  <li> new symbol comparator_quad_b.sym for alternative opin-out   
+  <li> new symbol comparator_quad_b.sym for alternative opin-out
 </ol>
 
 <h4>19/Mar/2008</h4>
   * new footprints ELEDIS_2B11, ELEDIS_2B11_LAY and MULTICOMP_2AS for small switches<br>
-  * added a pcb working sheet for all the switches (switch.pcb)<br> 
+  * added a pcb working sheet for all the switches (switch.pcb)<br>
 
 <h4>13/Mar/2008</h4>
 fixed 78L05 and 79L05: dedicated footprint instead of coinciding pins.
@@ -378,9 +402,9 @@ removed LM137 (typo of "LM317")
 <h4>25/Feb/2008</h4>
   * modified XLR-78xx-79xx.sym --> Add safety diodes<br>
   * added BNC_LAY2.fp --> like BNC_LAY but van be mounted vertically too<br>
-  * added BNC_STAND.fp --> Teleg&auml;rtner socket to be mounted vertically 
+  * added BNC_STAND.fp --> Teleg&auml;rtner socket to be mounted vertically
 
 <h4>Jan/2008</h4>
-  * corrected RELAY_FP2.fp 
+  * corrected RELAY_FP2.fp
 
 <!--#include virtual="/trailer.html" -->

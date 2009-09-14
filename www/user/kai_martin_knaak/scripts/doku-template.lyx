@@ -1,0 +1,148 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass scrartcl
+\use_default_options true
+\language ngerman
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "DL-einfach"
+\pdf_author "Kai-Martin Knaak"
+\pdf_subject "Einfacher Stromtreiber für Laserdiode"
+\pdf_keywords "Laserdiode Treiber"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref section
+\pdf_pdfusetitle true
+\pdf_pagemode FullScreen
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine natbib_numerical
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth -1
+\tocdepth 2
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Der Name der Dame
+\end_layout
+
+\begin_layout Author
+Kai-Martin Knaak
+\end_layout
+
+\begin_layout Abstract
+Ein tolles, Projekt, das die Welt retten wird.
+\end_layout
+
+\begin_layout Section
+Ziel
+\end_layout
+
+\begin_layout Standard
+Zielgerichtete Zielbeschreibung
+\end_layout
+
+\begin_layout Section
+Schaltungsprinzip
+\end_layout
+
+\begin_layout Standard
+Wie wirds elektrisch errreicht?
+\end_layout
+
+\begin_layout Section
+Bauteile
+\end_layout
+
+\begin_layout Subsection
+Besondere Komponenten
+\end_layout
+
+\begin_layout Standard
+Mit ganz besonderen Eigenschaften.
+\end_layout
+
+\begin_layout Section
+Versorgung
+\end_layout
+
+\begin_layout Standard
+Wo der Saft herkommt
+\end_layout
+
+\begin_layout Section
+Anschlüsse und Bedienelemente
+\end_layout
+
+\begin_layout Section
+Gehäuse
+\end_layout
+
+\begin_layout Section
+Eigenschaften
+\end_layout
+
+\begin_layout Standard
+Wie gut es tut, was es tut.
+\end_layout
+
+\begin_layout Section
+Bedienung
+\end_layout
+
+\begin_layout Section
+Bilder
+\end_layout
+
+\begin_layout Section
+Schaltplan
+\end_layout
+
+\begin_layout Section
+Bestückungsplan
+\end_layout
+
+\begin_layout Section
+Materialpreis
+\end_layout
+
+\begin_layout Section
+Meckerliste
+\end_layout
+
+\end_body
+\end_document
