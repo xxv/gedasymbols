@@ -1,6 +1,4 @@
 v 20090328 2
-T 100 2600 5 8 0 0 0 0 1
-description= generic SO8 instrumentation amplifier, e.g. AD620, LT1167, INA128 
 T 100 2400 5 8 0 0 0 0 1
 comment=Use symbol opamp_pwr.sym to connect power pins.
 T 100 2200 5 8 0 0 0 0 1
@@ -91,3 +89,7 @@ pinseq=5
 L 200 650 200 550 3 0 0 0 -1 -1
 L 150 600 250 600 3 0 0 0 -1 -1
 L 150 200 250 200 3 0 0 0 -1 -1
+T 100 2600 5 8 0 0 0 0 1
+description=generic SO8 instrumentation amplifier, e.g. AD620, LT1167, INA128
+T 100 2800 5 8 0 0 0 0 1
+device=instr_amp_SO8

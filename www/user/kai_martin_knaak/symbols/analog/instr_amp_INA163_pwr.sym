@@ -38,3 +38,5 @@ T 90 1500 5 8 0 0 0 0 1
 numslots=0
 T 90 2300 5 8 0 0 0 0 1
 documentation=http://focus.ti.com/lit/ds/symlink/ina163.pdf
+T 90 2700 5 8 0 0 0 0 1
+device=instr_amp_INA163_pwr
