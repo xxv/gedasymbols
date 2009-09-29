@@ -4,9 +4,9 @@ description=enclosing
 T 100 400 8 10 1 1 0 0 1
 refdes=M?
 T 100 200 8 10 1 1 0 0 1
-value=Deltron 455-0020
+value=Hammond 1590QBK
 T 100 0 8 8 1 1 0 0 1
-footprint=BOX_DELTRON_455_0020
+footprint=BOX_HAMMOND_1590Q
 T 100 1400 5 8 0 0 0 0 1
 author=K-M. Knaak, kmk@lilalaser.de
 T 100 1200 5 8 0 0 0 0 1
