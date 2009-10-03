@@ -1,7 +1,3 @@
-# release: pcb 20070912
-# date:    Wed Oct 10 14:07:13 2007
-# user:    kmk (Kai-Martin Knaak,,,)
-# host:    bibo.iqo.uni-hannover.de
 
 Element["" "hole-M8" "" "" 26000 26000 -16900 -21000 0 100 ""]
 (
@@ -10,4 +6,3 @@ Element["" "hole-M8" "" "" 26000 26000 -16900 -21000 0 100 ""]
 	ElementArc [0 0 25500 25500 0 360 1000]
 
 	)
-

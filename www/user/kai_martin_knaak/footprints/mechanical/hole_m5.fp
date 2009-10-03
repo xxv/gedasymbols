@@ -1,7 +1,3 @@
-# release: pcb 20070912
-# date:    Wed Oct 10 14:06:08 2007
-# user:    kmk (Kai-Martin Knaak,,,)
-# host:    bibo.iqo.uni-hannover.de
 
 Element["" "hole-M5" "" "" 18000 18000 -16900 -21000 0 100 ""]
 (
@@ -10,4 +6,3 @@ Element["" "hole-M5" "" "" 18000 18000 -16900 -21000 0 100 ""]
 	ElementArc [0 0 17500 17500 0 360 1000]
 
 	)
-
