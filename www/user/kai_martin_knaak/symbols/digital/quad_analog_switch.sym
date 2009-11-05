@@ -19,7 +19,7 @@ T 100 50 5 8 0 1 0 0 1
 pintype=pas
 }
 T 500 700 8 10 1 1 0 0 1
-refdes=IC?
+refdes=U?
 V 200 200 20 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 300 3900 5 8 0 0 0 0 1
 description=quad analog switch, 16 pin
