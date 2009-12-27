@@ -20,7 +20,7 @@ for i in *; do
 		cd "$i"
 		for j in *.fp; do
 			DESC=`cat $j |grep description | sed s/\	Attribute\(\"description\"\ \"// | sed s/\"\)//`
-			echo "<tr><td><a href=\"footprints/$j/$i\">$j</a></td><td>$DESC</td><tr>"
+			echo "<tr><td><a href=\"footprints/$i/$j\">$j</a></td><td>$DESC</td><tr>"
 		done
 		echo "</table>"
 		cd ..
