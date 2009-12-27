@@ -1,4 +1,4 @@
-Element["" "DIP 14" "" "" 100000 100000 1000 1000 0 100 ""]
+Element["" "DIP 14 (300 mils wide)" "" "" 100000 100000 1000 1000 0 100 ""]
 (
 	Pin[0 0 8000 8800 8000 2500 "Pin_1" "1" "square"]
 	Pin[0 10000 8000 8800 8000 2500 "Pin_2" "2" ""]
@@ -24,5 +24,5 @@ Element["" "DIP 14" "" "" 100000 100000 1000 1000 0 100 ""]
 	Attribute("copyright" "Cyril Hrubis")
 	Attribute("dist-license" "GPLv2")
 	Attribute("use-license" "Unlimited")
-	Attribute("description" "DIP 14.")
+	Attribute("description" "DIP 14 (300 mils wide)")
 )
