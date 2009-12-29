@@ -6,7 +6,7 @@ pinnumber=1
 T 2800 4350 5 8 0 1 0 2 1
 pinseq=1
 T 1950 4200 9 8 1 1 0 6 1
-pinlabel=\_STR\_
+pinlabel=STR_
 T 2650 4400 5 8 0 1 0 8 1
 pintype=in
 T 3100 4200 5 10 0 1 0 0 1
@@ -124,7 +124,7 @@ pinnumber=10
 T 2800 1550 5 8 0 1 0 2 1
 pinseq=10
 T 1950 1400 9 8 1 1 0 6 1
-pinlabel=\_ACK\_
+pinlabel=ACK_
 T 2650 1600 5 8 0 1 0 8 1
 pintype=out
 T 3100 1400 5 10 0 1 0 0 1
@@ -177,7 +177,7 @@ pinnumber=14
 T 2800 4150 5 8 0 1 0 2 1
 pinseq=14
 T 1950 4000 9 8 1 1 0 6 1
-pinlabel=\_AUTFD\_
+pinlabel=AUTFD_
 T 2650 4200 5 8 0 1 0 8 1
 pintype=io
 T 3100 4000 5 10 0 1 0 0 1
@@ -373,7 +373,7 @@ pinnumber=30
 T -600 1350 5 8 0 1 0 8 1
 pinseq=29
 T 350 1200 9 8 1 1 0 0 1
-pinlabel=\_GNDINIT\_
+pinlabel=GNDINIT_
 T -450 1400 5 8 0 1 0 2 1
 pintype=pwr
 T -2000 1200 5 10 0 1 0 0 1
@@ -387,7 +387,7 @@ pinnumber=31
 T 2800 3950 5 8 0 1 0 2 1
 pinseq=30
 T 1950 3800 9 8 1 1 0 6 1
-pinlabel=\_INIT\_
+pinlabel=INIT_
 T 2650 4000 5 8 0 1 0 8 1
 pintype=io
 T 3100 3800 5 10 0 1 0 0 1
@@ -401,7 +401,7 @@ pinnumber=32
 T 2800 750 5 8 0 1 0 2 1
 pinseq=31
 T 1950 600 9 8 1 1 0 6 1
-pinlabel=\_ERROR\_
+pinlabel=ERROR_
 T 2650 800 5 8 0 1 0 8 1
 pintype=out
 T 3100 600 5 10 0 1 0 0 1
@@ -415,7 +415,7 @@ pinnumber=36
 T 2800 3750 5 8 0 1 0 2 1
 pinseq=32
 T 1950 3600 9 8 1 1 0 6 1
-pinlabel=\_IN SEL\_
+pinlabel=IN SEL_
 T 2650 3800 5 8 0 1 0 8 1
 pintype=in
 T 3100 3600 5 10 0 1 0 0 1
