@@ -1,9 +1,9 @@
-# author:  Vanessa Ezekowitz 
+# author:  Vanessa Ezekowitz
 # email: vanessaezekowitz@gmail.com
 # dist-license: GPL
 # use-license: unlimited
 
-Element["" "Female_DSub_HDF15_short" "" "" 357500 50000 -7000 70500 1 100 ""]
+Element["" "" "VGA" "" 334000 106000 41000 20000 1 100 ""]
 (
 	Pin[0 27000 6051 1998 6651 2799 "" "4" ""]
 	Pin[0 18000 6051 1998 6651 2799 "" "3" ""]
@@ -22,23 +22,24 @@ Element["" "Female_DSub_HDF15_short" "" "" 357500 50000 -7000 70500 1 100 ""]
 	Pin[9500 -33200 20000 1998 20600 14500 "" "X" ""]
 	Pin[9500 64800 20000 1998 20600 14500 "" "X" ""]
 	Pin[9500 -4500 6049 1998 6649 2799 "" "6" ""]
-	ElementLine [54250 -45250 54250 76750 809]
-	ElementLine [-8750 73750 -5750 76750 809]
-	ElementLine [50250 -21250 42250 -21250 809]
-	ElementLine [39250 52750 -5750 52750 809]
-	ElementLine [-8750 73750 -8750 55750 809]
-	ElementLine [39250 -21250 -5750 -21250 809]
-	ElementLine [-8750 -24250 -8750 -42250 809]
-	ElementLine [-5750 -45250 54250 -45250 809]
-	ElementLine [-5750 -45250 -8750 -42250 809]
-	ElementLine [-5750 -21250 -8750 -24250 809]
-	ElementLine [-5750 52750 -8750 55750 809]
-	ElementLine [39250 76750 39250 -45250 809]
-	ElementLine [54250 53750 50250 53750 809]
-	ElementLine [50250 52750 42250 52750 809]
-	ElementLine [50250 53750 50250 -22250 809]
-	ElementLine [50250 -22250 54250 -22250 809]
+	ElementLine [54250 -45250 54250 76750 800]
+	ElementLine [-8750 73750 -5750 76750 800]
+	ElementLine [50250 -21250 42250 -21250 800]
+	ElementLine [39250 52750 -5750 52750 800]
+	ElementLine [-8750 73750 -8750 55750 800]
+	ElementLine [39250 -21250 -5750 -21250 800]
+	ElementLine [-8750 -24250 -8750 -42250 800]
+	ElementLine [-5750 -45250 54250 -45250 800]
+	ElementLine [-5750 -45250 -8750 -42250 800]
+	ElementLine [-5750 -21250 -8750 -24250 800]
+	ElementLine [-5750 52750 -8750 55750 800]
+	ElementLine [39250 76750 39250 -45250 800]
+	ElementLine [54250 53750 50250 53750 800]
+	ElementLine [50250 52750 42250 52750 800]
+	ElementLine [50250 53750 50250 -22250 800]
+	ElementLine [50250 -22250 54250 -22250 800]
+	ElementLine [-5750 76750 54250 76750 800]
 	ElementArc [42250 -18250 3000 3000 270 90 809]
 	ElementArc [42250 49750 3000 3000 0 90 809]
 
-)
+	)

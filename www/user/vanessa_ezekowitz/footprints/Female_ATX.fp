@@ -1,3 +1,7 @@
+# author:  Vanessa Ezekowitz
+# email: vanessaezekowitz@gmail.com
+# dist-license: GPL
+# use-license: unlimited
 
 Element["" "" "" "" 227362 239764 0 0 0 100 ""]
 (

@@ -1,3 +1,7 @@
+# author:  Vanessa Ezekowitz
+# email: vanessaezekowitz@gmail.com
+# dist-license: GPL
+# use-license: unlimited
 
 Element["" "Female_ATX_right_angle" "CN1" "ATX Power" 216143 204153 -97818 -16433 0 166 ""]
 (

@@ -1,3 +1,7 @@
+# author:  Vanessa Ezekowitz
+# email: vanessaezekowitz@gmail.com
+# dist-license: GPL
+# use-license: unlimited
 
 Element["" "400_Common-Mounting-Hole__130_mil_drill" " " " " 34000 256000 0 0 0 100 ""]
 (
