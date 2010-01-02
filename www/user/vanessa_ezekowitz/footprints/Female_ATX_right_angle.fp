@@ -3,7 +3,7 @@
 # dist-license: GPL
 # use-license: unlimited
 
-Element["" "Female_ATX_right_angle" "CN1" "ATX Power" 216143 204153 -97818 -16433 0 166 ""]
+Element["" "Female_ATX_right_angle" "ATX_Power" "ATX Power" 393000 348000 -97818 -16433 0 166 ""]
 (
 	Pin[-49607 -21653 11000 2000 11600 5900 "PS-ON" "14" "edge2"]
 	Pin[-33072 -21653 11000 2000 11600 5900 "GND" "13" "edge2"]
@@ -25,9 +25,9 @@ Element["" "Female_ATX_right_angle" "CN1" "ATX Power" 216143 204153 -97818 -1643
 	Pin[-16535 0 11000 2000 11600 5900 "3.3v" "2" "edge2"]
 	Pin[-148820 -21653 11000 2000 11600 5900 "5v" "20" "edge2"]
 	Pin[-132285 -21653 11000 2000 11600 5900 "5v" "19" "edge2"]
-	ElementLine [-159253 3938 10432 3938 3100]
-	ElementLine [10432 3938 10432 55119 3100]
-	ElementLine [-159253 3938 -159253 55119 3100]
-	ElementLine [-159253 55119 10432 55119 3100]
+	ElementLine [-159253 3938 10432 3938 1100]
+	ElementLine [10432 3938 10432 55119 1100]
+	ElementLine [-159253 3938 -159253 55119 1100]
+	ElementLine [-159253 55119 10432 55119 1100]
 
 	)

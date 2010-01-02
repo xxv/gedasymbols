@@ -3,7 +3,7 @@
 # dist-license: GPL
 # use-license: unlimited
 
-Element["" "" "" "" 227362 239764 0 0 0 100 ""]
+Element["" "" "ATX_power" "" 254000 445000 59000 8000 0 100 ""]
 (
 	Pin[49606 0 11000 2000 11600 6000 "5v" "4" "edge2"]
 	Pin[16535 0 11000 2000 11600 6000 "3.3v" "2" "edge2"]
