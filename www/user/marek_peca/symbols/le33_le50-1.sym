@@ -58,3 +58,9 @@ T 300 1500 8 10 0 0 0 0 1
 numslots=0
 T 300 1700 8 10 0 0 0 0 1
 net=GND:2,3,6,7
+T 350 3000 8 10 0 0 0 0 1
+author=Marek Peca <mp@duch.cz>
+T 350 2800 8 10 0 0 0 0 1
+dist-license=GPL
+T 350 2600 8 10 0 0 0 0 1
+use-license=ask
