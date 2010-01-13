@@ -1,0 +1,12 @@
+Element(0x0 "res-carbon-film-Panasonic-ERD-0W25--P10.16-mm" "" "" 0 -103 0 100 0x0)
+(
+   Pin(0 0 55 35 "" "1" 0x01)
+   Pin(400 0 55 35 "" "2" 0x01)
+   ElementLine(79 0 44 0 10)
+   ElementLine(320 0 355 0 10)
+   ElementLine(79 -33 79 33 10)
+   ElementLine(320 -33 320 33 10)
+   ElementLine(79 -33 320 -33 10)
+   ElementLine(79 33 320 33 10)
+   Mark(0 0)
+)

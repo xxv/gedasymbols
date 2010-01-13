@@ -1,0 +1,12 @@
+Element(0x0 "Resistor-1W" "" "" 0 -103 0 100 0x0)
+(
+   Pin(-400 0 72 42 "" "1" 0x01)
+   Pin(400 0 72 42 "" "2" 0x01)
+   ElementLine(-315 -90 315 -90 10)
+   ElementLine(315 -90 315 90 10)
+   ElementLine(315 90 -315 90 10)
+   ElementLine(-315 90 -315 -90 10)
+   ElementLine(-360 0 -315 0 10)
+   ElementLine(315 0 360 0 10)
+   Mark(0 0)
+)

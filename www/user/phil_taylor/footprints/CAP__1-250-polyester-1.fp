@@ -1,0 +1,11 @@
+Element(0x0 "CAP__1-250-polyester-1.fp" "" "" 0 -115 0 100 0x0)
+(
+   Pin(-310 0 75 42 "" "1" 0x01)
+   Pin(310 0 75 42 "" "2" 0x01)
+   ElementLine(-339 -80 -339 -120 10)
+   ElementLine(-339 -120 339 -120 10)
+   ElementLine(339 -120 339 -80 10)
+   ElementLine(339 80 339 120 10)
+   ElementLine(339 120 -339 120 10)
+   ElementLine(-339 120 -339 80 10)
+)
