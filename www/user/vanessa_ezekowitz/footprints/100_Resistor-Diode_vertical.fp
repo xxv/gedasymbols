@@ -3,7 +3,7 @@
 # dist-license: GPL
 # use-license: unlimited
 
-Element["" "200_Resistor-Diode_vertical" "" "" 70000 201500 10000 -11500 3 100 ""]
+Element["" "100_Resistor-Diode_vertical" "" "" 70000 201500 10000 -11500 3 100 ""]
 (
 	Pin[0 -10000 5999 2398 6599 2799 "" "2" ""]
 	Pin[0 0 5999 2398 6599 2799 "" "1" ""]
