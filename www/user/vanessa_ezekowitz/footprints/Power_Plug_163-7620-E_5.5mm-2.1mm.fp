@@ -1,13 +1,9 @@
-# author:  Vanessa Ezekowitz
-# email: vanessaezekowitz@gmail.com
-# dist-license: GPL
-# use-license: unlimited
 
-Element["" "" "Power In" "" 137402 189370 40156 11417 0 56 ""]
+Element["" "" "Power In" "" 487000 225000 40156 11417 0 56 ""]
 (
-	Pin[11417 -18110 11000 1200 11600 9449 "" "1" "edge2"]
-	Pin[24016 0 11000 1200 11600 9449 "" "2" "edge2"]
-	Pin[0 0 11000 1200 11600 9449 "" "3" "edge2"]
+	Pin[11417 -18110 11000 1200 11600 9449 "Switch" "1" "edge2"]
+	Pin[24016 0 11000 1200 11600 9449 "Com" "2" "edge2"]
+	Pin[0 0 11000 1200 11600 9449 "Pin" "3" "edge2"]
 	ElementLine [54331 -17323 54331 17323 600]
 	ElementLine [16536 -17323 54331 -17323 600]
 	ElementLine [788 -17323 788 -5118 600]
@@ -71,9 +67,3 @@ Element["" "" "Power In" "" 137402 189370 40156 11417 0 56 ""]
 	ElementArc [51181 0 1181 1181 90 90 600]
 
 	)
-Layer(10 "")
-(
-	Text[138976 194883 0 56 "Pin" ""]
-	Text[158662 194882 0 56 "Com" ""]
-	Text[144488 176773 0 56 "Switch" ""]
-)
