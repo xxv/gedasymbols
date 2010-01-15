@@ -1,6 +1,6 @@
 v 20091004 2
-T 400 1700 5 8 0 0 0 0 1
-device=PwrJack3
+T 400 2100 5 8 0 0 0 0 1
+device=PowerJack-3
 L 1500 100 400 100 3 5 0 0 -1 -1
 T 1590 1097 5 8 1 1 0 0 1
 refdes=CN?
@@ -45,10 +45,6 @@ pinseq=3
 }
 T 400 2300 5 8 0 0 0 0 1
 author=Vanessa Ezekowitz
-T 400 2100 5 8 0 0 0 0 1
-documentation=http://www.mouser.com/catalog/specsheets/KC-301286.pdf
-T 400 1900 5 8 0 0 0 0 1
-description=Common power jack, with switch, drawn only with solid lines
 L 1900 500 1300 500 3 0 0 0 -1 -1
 L 1300 500 1300 323 3 0 0 0 -1 -1
 L 1300 277 1300 124 3 0 0 0 -1 -1
@@ -60,3 +56,5 @@ L 1900 100 1900 0 3 0 0 0 -1 -1
 L 1900 0 400 0 3 0 0 0 -1 -1
 L 400 0 400 1000 3 0 0 0 -1 -1
 L 400 1000 1900 1000 3 0 0 0 -1 -1
+T 400 1900 5 8 0 0 0 0 1
+description=Common power jack, with switch, drawn only with solid lines
