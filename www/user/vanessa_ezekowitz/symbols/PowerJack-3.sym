@@ -15,7 +15,7 @@ P 0 900 400 900 1 0 0
 T 2000 200 5 8 0 0 0 0 1
 pintype=pwr
 T 455 895 9 6 1 1 0 0 1
-pinlabel=Center
+pinlabel=Pin
 T 305 945 5 8 1 1 0 6 1
 pinnumber=1
 T 2000 0 5 8 0 0 0 0 1
