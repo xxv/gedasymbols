@@ -29,4 +29,6 @@ Element["" "Female_Edge_24_pin__156_mil" "User Port" "" 416000 319000 6000 -7300
 	Pad[-46800 -140400 0 -140400 9999 1994 11993 "PB7" "L" "onsolder,square,edge2"]
 	Pad[-46800 -156000 0 -156000 9999 1994 11993 "PA2" "M" "onsolder,square,edge2"]
 	Pad[-46800 -171600 0 -171600 9999 1994 11993 "GND" "N" "onsolder,square,edge2"]
+	ElementLine [-54600 -226200 -54600 54600 600]
+
 	)
