@@ -1,9 +1,5 @@
-# author:  Vanessa Ezekowitz 
-# email: vanessaezekowitz@gmail.com
-# dist-license: GPL
-# use-license: unlimited
 
-Element["" "Female_DIN_5_pin" "" "" 300000 105000 25000 -29000 0 100 ""]
+Element["" "Female_DIN_5_pin" "CN?" "MAB5SH" 531000 238000 25000 -50000 0 100 ""]
 (
 	Pin[0 0 7399 1998 7999 4999 "" "1" "edge2"]
 	Pin[10000 10000 7399 1998 7999 4999 "" "4" "edge2"]
@@ -12,8 +8,8 @@ Element["" "Female_DIN_5_pin" "" "" 300000 105000 25000 -29000 0 100 ""]
 	Pin[60000 0 7399 1998 7999 4999 "" "3" "edge2"]
 	Pin[0 -20000 11000 1998 11000 11000 "" "1" "hole,edge2"]
 	Pin[60000 -20000 11000 1998 11000 11000 "" "2" "hole,edge2"]
-	Pin[20000 -40000 7397 1998 7997 4999 "" "X" "edge2"]
-	Pin[40000 -40000 7397 1998 7997 4999 "" "X" "edge2"]
+	Pin[20000 -40000 7397 1998 7997 4999 "" "Shield" "edge2"]
+	Pin[40000 -40000 7397 1998 7997 4999 "" "Shield" "edge2"]
 	ElementLine [-10000 -51000 71000 -51000 600]
 	ElementLine [-10000 -30000 -10000 -11000 600]
 	ElementLine [-10000 -43000 71000 -43000 600]
@@ -52,4 +48,5 @@ Element["" "Female_DIN_5_pin" "" "" 300000 105000 25000 -29000 0 100 ""]
 	ElementLine [22000 8000 27000 8000 600]
 	ElementLine [27000 8000 27000 14000 600]
 	ElementLine [38000 8000 33000 8000 600]
-)
+
+	)
