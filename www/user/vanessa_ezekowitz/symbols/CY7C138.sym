@@ -429,7 +429,7 @@ device=CY7C138
 T 495 14895 5 10 0 0 0 0 1
 numslots=1
 T 495 15495 5 10 0 0 0 0 1
-description=Cypress 2k x 8 dual-port SRAM
+description=Cypress 4k x 8 dual-port SRAM
 T 495 15295 5 10 0 0 0 0 1
 documentation=http://download.cypress.com.edgesuite.net/design_resources/datasheets/contents/cy7c138_8.pdf
 T 495 15095 5 10 0 0 0 0 1
