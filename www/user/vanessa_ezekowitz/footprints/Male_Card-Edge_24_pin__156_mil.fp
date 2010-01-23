@@ -3,7 +3,7 @@
 # dist-license: GPL
 # use-license: unlimited
 
-Element["" "Female_Edge_24_pin__156_mil" "User Port" "" 416000 319000 6000 -73000 1 100 ""]
+Element["" "Male_Card-Edge_24_pin__156_mil" "User Port" "" 416000 319000 6000 -73000 1 100 ""]
 (
 	Pad[-46800 0 0 0 9999 1994 11993 "GND" "1" "square,edge2"]
 	Pad[-46800 -15600 0 -15600 9999 1994 11993 "+5v" "2" "square,edge2"]
