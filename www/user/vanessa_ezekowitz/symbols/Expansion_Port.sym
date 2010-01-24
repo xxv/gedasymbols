@@ -4,7 +4,7 @@ refdes=CONN?
 T -38 18307 5 10 0 0 0 0 1
 device=Expansion_Port
 T -38 18507 5 10 0 0 0 0 1
-footprint=Male_Edge_44_pin__100_mil
+footprint=Male_Card-Edge_44_pin__100_mil
 T -40 18920 5 10 0 0 0 0 1
 author=Vanessa Ezekowitz, after Leon Kos
 T -40 18720 5 10 0 0 0 0 1
