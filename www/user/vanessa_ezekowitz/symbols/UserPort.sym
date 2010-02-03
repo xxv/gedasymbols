@@ -4,7 +4,7 @@ refdes=CN?
 T 0 10350 5 10 0 0 0 0 1
 device=UserPort
 T 0 10550 5 10 0 0 0 0 1
-footprint=Female_Edge_24_pin__156_mil
+footprint=Male_Card-Edge_24_pin__156_mil
 T 0 10750 5 10 0 0 0 0 1
 author=Vanessa Ezekowitz, derived from Leon Kos's generic 24-pin connector
 T 0 10950 5 10 0 0 0 0 1
