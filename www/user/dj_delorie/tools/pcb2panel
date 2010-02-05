@@ -24,9 +24,22 @@ for $pcb (@ARGV) {
 	if (/^PCB\[".*" (\d+) (\d+)\]/) {
 	    $width{$pcb} = $1;
 	    $height{$pcb} = $2;
-	    break;
+	    last;
 	}
     }
+    $outline = '';
+    while (<PCB>) {
+	if (/Layer\(.*"outline"\)/) {
+	    $junk = <PCB>; # open paren
+	    while (<PCB>) {
+		last if /^\)/; # close paren
+		($args) = m@\[(.*)\]@;
+		($x1, $y1, $x2, $y2, $width) = split(' ', $args);
+		$outline .= "  ElementLine[$x1 $y1 $x2 $y2 $width]\n";
+	    }
+	}
+    }
+    push (@outlines, $outline);
     close PCB;
 }
 
@@ -41,23 +54,31 @@ $ph += 20000;
 
 print "PCB[\"\" $pw $ph]\n";
 print "Grid[10000.0 0 0 1]\n";
+print "DRC[799 799 800 100 1500 800]\n";
 print "Groups(\"1,c:2,s\")\n";
 
 $x = 10000;
 $y = 10000;
-for $pcb (@pcbs) {
+for ($i=0; $i<@pcbs; $i++) {
+    $pcb = $pcbs[$i];
+    $outline = $outlines[$i];
     $desc = $pcb;
     $name = $base{$pcb};
     $value = "$width{$pcb} x $height{$pcb}";
     $w = $width{$pcb};
     $h = $height{$pcb};
+
     print "Element[\"\" \"$desc\" \"$name\" \"$value\" $x $y 2000 2000 0 50 \"\"] (\n";
-    print "  Pin[0 0 300 0 0 100 \"1\" \"1\" \"\"]\n";
-    print "  Pin[$w 0 300 0 0 100 \"2\" \"2\" \"\"]\n";
-    print "  ElementLine[0 0 $w 0 100]\n";
-    print "  ElementLine[0 0 0 $h 100]\n";
-    print "  ElementLine[$w 0 $w $h 100]\n";
-    print "  ElementLine[0 $h $w $h 100]\n";
+    print "  Pin[0  0 1000 0 0 400 \"1\" \"1\" \"\"]\n";
+    print "  Pin[$w 0 1000 0 0 400 \"2\" \"2\" \"\"]\n";
+    if ($outline =~ /\S/) {
+	print $outline;
+    } else {
+	print "  ElementLine[0 0 $w 0 100]\n";
+	print "  ElementLine[0 0 0 $h 100]\n";
+	print "  ElementLine[$w 0 $w $h 100]\n";
+	print "  ElementLine[0 $h $w $h 100]\n";
+    }
     print ")\n";
     $x += $w + 10000;
 }
