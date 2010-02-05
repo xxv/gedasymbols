@@ -40,7 +40,7 @@ T 1995 845 5 10 1 1 0 0 1
 pinnumber=7
 }
 T 95 3500 5 10 0 0 0 0 1
-device=rpack5
+device=rpack5-1
 T 95 3300 5 10 0 0 0 0 1
 description=Five-in-one resistor network (isolated)
 T 95 3100 5 10 0 0 0 0 1
