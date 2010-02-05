@@ -8,8 +8,13 @@
 
 $y{left} = 400;
 $y{right} = 400;
-$y{labels} = 700;
+$y{labels} = 600;
 $labelpin = 0;
+
+$busspace = 200;
+$groupspace = 400;
+$skipspace = 800;
+$yinvert = 300;
 
 # If set, top and bottom labels are vertical.
 $vmode = 0;
@@ -30,6 +35,12 @@ while (<>) {
 	if ($opt eq "vmode") {
 	    $vmode = 1;
 	}
+	if ($opt eq "compact") {
+	    $groupspace = 200;
+	    $skipspace = 400;
+	    $yinvert = 400;
+	    $compactmode = 1;
+	}
 	next;
     }
 
@@ -49,12 +60,12 @@ while (<>) {
     # blank lines - cancel bus, add gap.
     if (! /\S/) {
 	if ($busmode) {
-	    $y{$side} += 200;
+	    $y{$side} += $busspace;
 	}
 	$busmode = 0;
 	if ($space) {
 	    if ($side =~ /left|right/) {
-		$y{$side} += 400;
+		$y{$side} += $groupspace;
 	    }
 	    if ($side =~ /top|bottom/) {
 		$x{$side} += 400;
@@ -86,7 +97,7 @@ while (<>) {
 	$pinside{$labelpin} = $side;
 	$piny{$labelpin} = $y{labels};
 	$pinlabel{$labelpin} = $_;
-	$y{labels} += 400;
+	$y{labels} += $groupspace;
 	$rlen{$labelpin} = &textlen($_);
 	next;
     }
@@ -117,7 +128,7 @@ while (<>) {
 
 	if ($side =~ /left|right/) {
 	    $y = $piny{$pin} = $y{$side};
-	    $y{$side} += ($busmode ? 200 : 400);
+	    $y{$side} += ($busmode ? $busspace : $groupspace);
 	}
 	if ($side =~ /top|bottom/) {
 	    $tw = &alignpin((200 + $rlen{$pin}) / 2);
@@ -143,7 +154,7 @@ $boxwidth = 0;
 for $lp (keys %pinside) {
     next unless $pinside{$lp} =~ /left|right|label/;
     $yb = &alignpin($piny{$lp});
-    for ($y=$yb-100; $y<=$yb+100; $y+=100) {
+    for ($y=$yb-300; $y<=$yb+300; $y+=100) {
 	if ($bw{$y}{$pinside{$lp}} < $rlen{$lp}) {
 	    $bw{$y}{$pinside{$lp}} = $rlen{$lp};
 	}
@@ -157,7 +168,7 @@ for $p (keys %pinside) {
 	$maxy = $piny{$p};
     }
 }
-$maxy += 400;
+$maxy += $groupspace;
 
 # Now, use the slice widths to compute the minimum width of the box.
 for ($i=0; $i<$maxy; $i+=100) {
@@ -188,7 +199,7 @@ $boxwidth = $w{bottom} if $boxwidth < $w{bottom};
 # are from the bottom).
 for $p (keys %pinside) {
     next unless $pinside{$p} =~ /left|right|labels/;
-    $piny{$p} = $maxy - $piny{$p} + 300;
+    $piny{$p} = $maxy - $piny{$p} + $yinvert;
 }
 
 $boxwidth = &alignpin($boxwidth);
