@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Ein einfaches Script, das ein geda-Projekt nach dem Geschmack von
 # ---<(kaimartin)>--- anlegt.
 
@@ -90,7 +90,7 @@ author="$AUTHORSHORT"
 # Create an empty layout
 echo \
 "ChangeName(Layout) "\
-"SaveTo(LayoutAs,"wiswas".pcb) "\
+"SaveTo(LayoutAs,"$NAME".pcb) "\
 "Quit() "\
 | pcb --listen \
  --fab-author \"$AUTHOR\" \
