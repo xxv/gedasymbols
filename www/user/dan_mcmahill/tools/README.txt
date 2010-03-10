@@ -2,11 +2,11 @@
 run
 
 mkdir symbols
-./make_syms components.dat
+./make_syms components.txt
 
 and the short awk program will take the symbol templates in symbol_templates/
 and produce heavy parts that have the correct footprint and pinout for that package
-for all the parts defined in components.dat.
+for all the parts defined in components.txt.
 
 I could easily envision having more hidden attributes that control how the 
 heavy symbols each netlist for spice or gnucap or whatever else too.  Seems like
