@@ -1,9 +1,9 @@
 v 20090328 2
-T 90 2700 5 8 0 0 0 0 1
-device=opamp_dual_pwr
+T 90 2900 5 8 0 0 0 0 1
+device=comparator_dual_pwr
+T 100 2700 5 8 0 0 0 0 1
+description=power pins for dual comparator, LM393 style
 T 100 2500 5 8 0 0 0 0 1
-description=power pins for dual opamp
-T 100 2300 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
 T 100 2100 5 8 0 0 0 0 1
 dist-license=GPL , see http://www.gnu.org/licenses/gpl.txt
@@ -48,3 +48,5 @@ footprint=SO8
 L 300 750 300 650 3 0 0 0 -1 -1
 L 250 700 350 700 3 0 0 0 -1 -1
 L 250 200 350 200 3 0 0 0 -1 -1
+T 100 2300 5 8 0 0 0 0 1
+documentation=http://www.onsemi.com/pub/Collateral/LM393-D.PDF

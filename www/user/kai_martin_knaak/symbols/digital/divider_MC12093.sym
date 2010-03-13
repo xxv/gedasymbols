@@ -1,6 +1,6 @@
 v 20090328 2
 T 100 3600 5 8 0 0 0 0 1
-description=divide by 2,4,8, model MCH12093 by ON-Semi
+description=divide by 2,4,8, model MC12093 by ON-Semi
 T 100 2400 5 8 0 0 0 0 1
 numslots=0
 T 100 3400 5 8 0 0 0 0 1
