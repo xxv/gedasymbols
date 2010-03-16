@@ -1,15 +1,16 @@
 #!/bin/bash
-# Layout-Ausdruck für pcb -<(kmk)>- 2010
-# braucht die utilities poster, ps2pdf, convert und evince 
+# layout-print for pcb -<(kmk)>- 2010
+# needs poster, ps2pdf, convert, psmerge and evince 
 ########################################################
 
 PCBFILE=$1
 OUTPDF=`basename $PCBFILE .pcb`"_layout.pdf"
 OUTPNG=`basename $PCBFILE .pcb`"_layout.png"
+OUTPNG_BOTTOM=`basename $PCBFILE .pcb`"_layout_bottom.png"
 PCB=/usr/local/bin/pcb
 SIZE="40x20cm"
 
-## What pcb binary is in use:
+## echo pcb version
 $PCB -V
 
 ## top-refdes
@@ -82,7 +83,7 @@ $PCB -x eps \
 
 poster -mA4 -p$SIZE -c12x12mm -o "/tmp/out_bottomvalue.ps" "/tmp/out.eps"
 
-## Combine to a single document
+## combine to a single PDF document
 psmerge -o/tmp/out.ps \
    /tmp/out_toprefdes.ps \
    /tmp/out_topvalue.ps \
@@ -93,8 +94,7 @@ ps2pdf "/tmp/out.ps" $OUTPDF
 
 evince $OUTPDF;
 
-# Ein photorealistisches Bild der Oberseite der Leiterplatte
-# (Option für die Unterseite: --photo-flip-x)
+# a photo realistic view of the top side of the pcb
 pcb -x png --photo-mode \
   --dpi 600  \
   --use-alpha \
@@ -108,5 +108,21 @@ convert /tmp/out.png \
   -layers merge \
   -resize 50% \
   $OUTPNG
+
+# a photo realistic view of the bottom side of the pcb
+pcb -x png --photo-mode \
+  --dpi 600  \
+  --use-alpha \
+  --only-visible \
+  --photo-flip-x \
+  --outfile /tmp/out.png \
+  $PCBFILE
+
+convert /tmp/out.png \
+  \( +clone -background black -shadow 75x20+20+20 \)  +swap \
+  -background white \
+  -layers merge \
+  -resize 50% \
+  $OUTPNG_BOTTOM
 
 

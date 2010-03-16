@@ -1,5 +1,5 @@
 # release: pcb 1.99y
-# date:    Fri Jun 26 13:19:26 2009
+# date:    Tue Mar 16 04:23:57 2010
 # user:    kmk (Kai-Martin,,,)
 # host:    kwak.localdomain
 
@@ -800,7 +800,7 @@ Symbol('~' 12)
 Via[39370 98425 10406 2000 0 5118 "1" ""]
 Via[54370 98425 10406 2000 0 5118 "2" ""]
 
-Element["" "" "PlugCon_383_2pin" "" 118110 98425 -9842 14764 0 100 ""]
+Element["" "" "RIACon_383_2pin" "" 118110 98425 -9842 14764 0 100 ""]
 (
 	Pin[0 0 10406 2000 11006 5118 "1" "1" "edge2"]
 	Pin[15000 0 10406 2000 11006 5118 "2" "2" "edge2"]
@@ -834,8 +834,8 @@ Layer(2 "bottom")
 )
 Layer(3 "comment")
 (
-	Text[9842 1969 0 522 "Riaconnect PLUGCON" ""]
-	Text[1969 59055 0 280 "PLUGCON_383_2PIN.fp" ""]
+	Text[9842 1969 0 522 "Riaconnect RIACON" ""]
+	Text[1969 59055 0 280 "RIACON_383_2PIN.fp" ""]
 )
 Layer(4 "bott.-GND")
 (

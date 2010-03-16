@@ -8,7 +8,7 @@ refdes=CONN?
 T 100 1000 8 10 1 1 0 0 1
 value=RIA connect, 383, 2pin
 T 100 850 8 8 1 1 0 0 1
-footprint=PLUGCON_383_2PIN
+footprint=RIACON_383_2PIN
 P 0 600 200 600 1 0 0
 {
 T 200 650 5 8 0 1 0 6 1
@@ -44,7 +44,7 @@ dist-license=GPL 3, see http://www.gnu.org/licenses/gpl.txt
 T 100 2000 5 8 0 0 0 0 1
 use-license=free, no restrictions
 T 100 2800 5 8 0 0 0 0 1
-description=connector by RIA connect, series PLUGCON 383, 2 pin
+description=connector by RIA connect, series RIACON 383, 2 pin
 L 525 275 525 100 3 0 0 0 -1 -1
 L 525 500 525 700 3 0 0 0 -1 -1
 L 525 700 475 675 3 0 0 0 -1 -1
