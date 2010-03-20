@@ -22,6 +22,19 @@ a simple directory structure and populates it with some config files (gafrc,
 attribs). In addition, it copies a <a href ="doku_template.lyx">documentation template</a>
 in lyx format to the directory.
 
+<h2>Scripted pcb layout export</h2>
+The bash script <a href="layoutdruck.sh">layoutdruck.sh</a> uses actions on the 
+command line of pcb to produce a set of printouts for use in documentatuion. 
+These include a multi page PDF with top and bottom layout, each with values and with 
+refdes. The layout can be spread between several sheets for large layouts.
+
+In addition photo realistic PNG export of top and bottom side is produced. A drop
+shadow is added to the PNG to make the image even more photo realistic.
+
+Note, there is a bug in pcb that prevents the execution of actions when printing
+from the command line. This script needs a bug patch of pcb not yet applied to the 
+distributed version of pcb.
+
 <h2>Symbols</h2>
 The symbols in this sections are designed according to the following design criteria:
 <ol>
@@ -40,6 +53,10 @@ The symbols in this sections are designed according to the following design crit
 <!--#include file="footprints.html" -->
 
 <h2>Changelog</h2>
+
+<h4>20/march/2010</h4>
+<li> add the pcb print script layoutdruck.sh 
+</ol>
 
 <h4>19/march/2010</h4>
 <li> add max232.sym 
