@@ -1,14 +1,38 @@
 #!/bin/bash
 # layout-print for pcb -<(kmk)>- 2010
-# needs poster, ps2pdf, convert, psmerge and evince 
+# needs poster, ps2pdf, convert, psmerge 
+# optional viewers: gthumb and evince 
 ########################################################
+
+if [ $# -eq 0 ]    # Script invoked with no command-line args?
+then
+  echo "Usage: `basename $0` [-p][-V] foobar.pcb"
+  echo "-p     produce photo realistic output"
+  echo "-V     launch viewers on produced output"
+  exit
+fi  
+
+PHOTOOUTPUT=0
+STARTVIEWER=0
+while getopts ":pV" Option
+do
+  case $Option in
+    p     ) echo "produce photorealistic image "; PHOTOOUTPUT=1 ;;
+    V     ) echo "produce photorealistic image "; STARTVIEWER=1 ;;
+    *     ) echo "Unimplemented option chosen.";;   # Default.
+  esac
+done
+shift $(($OPTIND - 1))   # go to next argument
+
+#######################################################
+
 
 PCBFILE=$1
 OUTPDF=`basename $PCBFILE .pcb`"_layout.pdf"
 OUTPNG=`basename $PCBFILE .pcb`"_layout.png"
 OUTPNG_BOTTOM=`basename $PCBFILE .pcb`"_layout_bottom.png"
 PCB=/usr/local/bin/pcb
-SIZE="40x20cm"
+SIZE="20x30cm"
 
 ## echo pcb version
 $PCB -V
@@ -92,9 +116,18 @@ psmerge -o/tmp/out.ps \
  
 ps2pdf "/tmp/out.ps" $OUTPDF
 
-evince $OUTPDF;
+### optionally start viewer.###
+if [ "$STARTVIEWER" = "1" ]
+then
+  evince $OUTPDF
+fi
 
-# a photo realistic view of the top side of the pcb
+
+### photorealistic output is optional, because time consuming ####
+if [ "$PHOTOOUTPUT" = "1" ]
+then
+
+echo  "Do a photo realistic view of the top side of the pcb"
 pcb -x png --photo-mode \
   --dpi 600  \
   --use-alpha \
@@ -109,7 +142,7 @@ convert /tmp/out.png \
   -resize 50% \
   $OUTPNG
 
-# a photo realistic view of the bottom side of the pcb
+echo "Do a photo realistic view of the bottom side of the pcb"
 pcb -x png --photo-mode \
   --dpi 600  \
   --use-alpha \
@@ -125,4 +158,12 @@ convert /tmp/out.png \
   -resize 50% \
   $OUTPNG_BOTTOM
 
+### optionally start viewer.###
+if [ "$STARTVIEWER" = "1" ]
+then
+  gthumb $OUTPNG $OUTPNG_BOTTOM
+fi
 
+fi # PHOTOOUTPUT
+
+exit # end of script
