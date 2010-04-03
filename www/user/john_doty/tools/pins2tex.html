@@ -1,0 +1,50 @@
+<!--#set var="title" value="Pin Table to LaTeX table" -->
+<!--#include virtual="/header.html" -->
+
+<p>The
+<a href="pins2tex.awk">pins2tex</a>
+script converts a "tab-separated value" (TSV) file into the body of a LaTeX table.</p>
+
+Shell usage:
+<Pre>awk -f pins2tex.awk input.tsv &gt output.tex
+</Pre>
+Makefile rule:
+<Pre>%.tex : %.tsv
+	awk -f pins2tex.awk $&lt &gt $@
+</Pre>
+
+Here's a fragment of an actual input file:
+<Pre>
+# All LVDS signals are here. Others are on J2.
+#
+J1	1	GND
+#-
+J1	20	VPCLK+	Command/HK clock
+J1	2	VPCLK-
+#-
+J1	21	CCLK+	ASIC Cclk
+J1	3	CCLK-
+#-
+</Pre>
+
+<p>The script ignores blank lines.</p>
+<p>The script converts lines that start with "#-" to "\hline" directives to draw a horizontal line across the table. It ignores other lines starting with "#".<p>
+<p>"TAB" characters separate fields.</p>
+<p>The first four fields in each line become the four columns in the table. The script ignores any additional fields.</p>
+<p>For the third field only, the script translates the gEDA overbar indicators ("\_") to LaTeX overbar commands. </p>
+
+<p>The output file contains the body of a four column LaTeX table. The following LaTeX commands typeset that output (assumed to be in the file J1.tex):</p>
+
+<Pre>
+\begin{tabular}{|l|l|l|l|}
+\hline
+ Connector & Pin & Signal & Description \\
+\hline
+\input{J1}
+\hline
+\end{tabular}
+</Pre>
+
+<p>Adjust the LaTeX as needed for your document.</p>
+
+<!--#include virtual="/trailer.html" -->

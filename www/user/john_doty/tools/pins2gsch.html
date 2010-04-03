@@ -1,0 +1,43 @@
+<!--#set var="title" value="Pin Table to Pseudo-schematic" -->
+<!--#include virtual="/header.html" -->
+
+<p>The
+<a href="pins2gsch.awk">pins2gsch</a>
+script converts a "tab-separated value" (TSV) file into a pseudo-schematic. The output is in legal gEDA schematic format, but is not in a form that gschem can usefully display or edit. The output can, however, serve as input to gnetlist or one of pcb's schematic importers.</p>
+
+Shell usage:
+<Pre>awk -f pins2gsch.awk input.tsv &gt output.sch
+</Pre>
+Makefile rule:
+<Pre>%.sch : %.tsv
+	awk -f pins2gsch.awk $&lt &gt $@
+</Pre>
+
+Here's a fragment of an actual input file:
+<Pre>
+# All LVDS signals are here. Others are on J2.
+#
+J1	1	GND
+#-
+J1	20	VPCLK+	Command/HK clock
+J1	2	VPCLK-
+#-
+J1	21	CCLK+	ASIC Cclk
+J1	3	CCLK-
+#-
+</Pre>
+
+<p>The script ignores blank lines and lines that start with "#".</p>
+<p>"TAB" characters separate fields.</p>
+<p>The first field is the refdes.</p>
+<p>The second field is the pinnumber.</p>
+<p>The third field is the name of the net to be attached to the pin.</p>
+<p>The script ignores additional fields (but see 
+<a href="pins2tex.html">pins2tex</a>).</p>
+
+<p>The output file contains invisible embedded components with net= attributes that specify the connections.</p> 
+
+<p>Because these components lack other attributes (like footprint, for example), it is important to put a placeholder component in one of your normal schematics and attach the additional required attributes to it. I use a symbol that's simply a box with no pins, with the refdes and other attributes of the part attached.
+Because gnetlist misses such attributes unless they are attached to the first instance of a given refdes, it is important when netlisting to place the names of the pseudo-schematics produced by pins2gsch after the normal schematics in the argument list for the netlister.</p>
+
+<!--#include virtual="/trailer.html" -->
