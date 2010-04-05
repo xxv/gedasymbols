@@ -1,0 +1,73 @@
+<!--#set var="title" value="Basic Logic" -->
+<!--#include virtual="/header.html" -->
+
+<p>
+See
+<a href="http://research.kek.jp/people/ikeda/openIP/openIP_3.pdf">
+Analog-VLSI Open-IP Chapter 3</a>
+for circuit diagrams and further details (in Japanese).
+</p>
+<p>
+Gates and inverters in Open-IP often come in two variants. The variant intended to drive other digital circuitry has the letter "P" at the end of the name and takes power from the digital rails (VDD1/VSS1). The variant without the "P" is intended to drive analog circuitry (e.g. switches) and takes power from the analog rails (VDD/VSS). More complex logic subcircuits generally use digital power.
+</p>
+<p>
+Open-IP is intended for either single supply operation with digital (VSS1) and analog (VSS) negative rails at ground, or for split analog supplies with VSS1 at ground and VSS below ground.
+</p>
+<p>
+General purpose inverters.
+</p>
+<a href="INV1-1.sym">INV1</a> (analog power)<br>
+<a href="INV1P-1.sym">INV1P</a> (digital power)<br>
+<p>
+High output inverting buffers.
+</p>
+<a href="INV4-1.sym">INV4</a> (analog power)<br>
+<a href="INV4P-1.sym">INV4P</a> (digital power)<br>
+<p>
+High speed inverter.
+</p>
+<a href="INV1F-1.sym">INV1F</a> (digital power)<br>
+<p>Schmitt inverter.
+</p>
+<a href="INV1S-1.sym">INV1S</a> (digital power)<br>
+<p>Gated inverter.
+</p>
+<a href="GINVP-1.sym">GINVP</a> (digital power)<br>
+
+<p>NAND Gates.</p>
+<a href="NAND-1.sym">NAND</a> (2 inputs, analog power)<br>
+<a href="NANDP-1.sym">NANDP</a> (2 inputs, digital power)<br>
+<a href="NAND3-1.sym">NAND3</a> (3 inputs, analog power)<br>
+<a href="NAND3P-1.sym">NAND3P</a> (3 inputs, digital power)<br>
+<p>NOR Gates.</p>
+<a href="NOR-1.sym">NOR</a> (2 inputs, analog power)<br>
+<a href="NORP-1.sym">NORP</a> (2 inputs, digital power)<br>
+
+<p>Tri-state buffer.</p>
+<a href="TRBUF-1.sym">TRBUF</a> (digital power)<br>
+
+<p>AND gates.</p>
+<a href="ANDP-1.sym">ANDP</a> (2 inputs, digital power)<br>
+<a href="AND3P-1.sym">AND3P</a> (3 inputs, digital power)<br>
+<a href="AND4P-1.sym">AND4P</a> (4 inputs, digital power)<br>
+<a href="AND5P-1.sym">AND5P</a> (5 inputs, digital power)<br>
+
+<p>Symmetrical RS flip-flop.</p>
+<a href="RSFF1-1.sym">RSFF1</a> (digital power)<br>
+<p>Asymmetrical RS flip-flop, reset has priority.</p>
+<a href="RSFF2-1.sym">RSFF2</a> (digital power)<br>
+<p>D latch.</p>
+<a href="LATCHP-1.sym">LATCHP</a> (digital power)<br>
+<p>D flip-flop.</p>
+<a href="DFFP-1.sym">DFFP</a> (digital power)<br>
+<p>D flip-flop with clock enable.</p>
+<a href="EDFFP-1.sym">EDFFP</a> (digital power)<br>
+<p>Four stage shift register.</p>
+<a href="SHIFT4-1.sym">SHIFT4</a> (digital power)<br>
+<p>2:1 digital multiplexer.</p>
+<a href="SELECTOR-1.sym">SELECTOR</a> (digital power)<br>
+<p>Four bit counter.</p>
+<a href="COUNTA-1.sym">COUNTA</a> (digital power)<br>
+
+
+<!--#include virtual="/trailer.html" -->

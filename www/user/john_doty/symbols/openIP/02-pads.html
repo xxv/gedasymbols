@@ -1,0 +1,64 @@
+<!--#set var="title" value="Input/output Pads" -->
+<!--#include virtual="/header.html" -->
+
+<p>
+I/O pads may include ESD protection and other circuitry. See
+<a href="http://research.kek.jp/people/ikeda/openIP/openIP_2.pdf">
+Analog-VLSI Open-IP Chapter 2</a>
+for circuit diagrams and further details (in Japanese).
+</p>
+
+<p>
+VSS/VDD are intended for the analog core of the chip. VSS is normally also the substrate connection.
+</p>
+<a href="PVSS-1.sym">PVSS</a><br>
+<a href="PVDD-1.sym">PVDD</a><br>
+<p>
+VSS0/VDD0 are intended for digital peripheral circuitry.
+</p>
+<a href="PVSS0-1.sym">PVSS0</a><br>
+<a href="PVDD0-1.sym">PVDD0</a><br>
+<p>
+VSS1/VDD1 are intended for the digital core of the chip.
+</p>
+<a href="PVSS1-1.sym">PVSS1</a><br>
+<a href="PVDD1-1.sym">PVDD1</a><br>
+<p>
+VSSE/VDDE are intended for analog peripheral circuitry.
+</p>
+<a href="PVSSE-1.sym">PVSSE</a><br>
+<a href="PVDDE-1.sym">PVDDE</a><br>
+<p>
+PATH is an ESD-protected.pad intended for low impedance analog I/O.
+</p>
+<a href="PATH-1.sym">PATH</a><br>
+<p>
+PATHR is an ESD-protected.pad with a series resistor intended for high impedance analog input.
+</p>
+<a href="PATHR-1.sym">PATHR</a><br>
+<p>
+PDIN is an ESD-protected.pad with a CMOS input buffer.
+</p>
+<a href="PDIN-1.sym">PDIN</a><br>
+<p>
+PDOUT is an ESD-protected.pad with a CMOS output buffer.
+</p>
+<a href="PDOUT-1.sym">PDOUT</a><br>
+<p>
+PDTH is an ESD-protected.pad intended for specialized digital ouputs such as LVDS .
+</p>
+<a href="PDTH-1.sym">PDTH</a><br>
+<p>
+PDTHR is an ESD-protected.pad with a series resistor intended for specialized digital inputs such as LVDS .
+</p>
+<a href="PDTHR-1.sym">PDTHR</a><br>
+<p>
+TROUT is an ESD-protected.pad with a tri-state CMOS output buffer.
+</p>
+<a href="TROUT-1.sym">TROUT</a><br>
+<p>
+PAD is a pad without any additional circuitry.
+</p>
+<a href="PAD-1.sym">PAD</a><br>
+
+<!--#include virtual="/trailer.html" -->
