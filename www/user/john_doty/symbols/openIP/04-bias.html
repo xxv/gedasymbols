@@ -1,0 +1,38 @@
+<!--#set var="title" value="Bias Circuits" -->
+<!--#include virtual="/header.html" -->
+
+<p>
+See
+<a href="http://research.kek.jp/people/ikeda/openIP/openIP_4.pdf">
+Analog-VLSI Open-IP Chapter 4</a>
+for circuit diagrams and further details (in Japanese).
+</p>
+<p>
+These blocks provide either a bias voltage or a bias current, based on an externally provided input current, nominally 100&#956A. 
+</p>
+<p>When voltage outputs are present, they are intended to drive the gates of transistors used as current sources: VH for P-channel, VL for N-channel. The nominal transistor size is (w=3u, l=1u, m=10): for that size the output current from the controlled transistor will equal the input current. The designer may, of course, adjust these parameters (especially m) to get other output current values.
+</p>
+<p>
+VM is simply a resistor-isolated connection to the global analog or digital ground network in a split power supply design.
+</p>
+
+<p>
+Split-power bias, voltage output.</p>
+<a href="BIAS-1.sym">BIAS</a> (for analog)<br>
+<a href="BIASP-1.sym">BIASP</a> (for digital)<br>
+<p>
+Bias for single power supply designs.</p>
+<a href="BIAS1-1.sym">BIAS1</a> (for analog)<br>
+<p>
+Current dividers.</p>
+<a href="BIAS2-1.sym">BIAS2</a> (2:1)<br>
+<a href="BIAS4-1.sym">BIAS4</a> (4:1)<br>
+<a href="BIAS8-1.sym">BIAS8</a> (8:1)<br>
+<p>Four bit multiplying current DAC.
+</p>
+<a href="BIASF-1.sym">BIASF</a><br>
+<p>Bias block with voltage outputs and 1:1 current outputs.
+</p>
+<a href="BIASGEN-1.sym">BIASGEN</a><br>
+
+<!--#include virtual="/trailer.html" -->
