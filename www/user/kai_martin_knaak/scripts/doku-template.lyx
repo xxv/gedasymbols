@@ -47,7 +47,7 @@
 \quotes_language english
 \papercolumns 1
 \papersides 1
-\paperpagestyle default
+\paperpagestyle defaultssh root@192.168.0.202
 \tracking_changes false
 \output_changes false
 \author "" 
@@ -81,7 +81,7 @@ Schaltungsprinzip
 \end_layout
 
 \begin_layout Standard
-Wie wirds elektrisch errreicht?
+Wie wird es elektrisch errreicht?
 \end_layout
 
 \begin_layout Section
