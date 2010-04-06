@@ -1,0 +1,39 @@
+<!--#set var="title" value="Low Voltage and Current Mode Interfaces" -->
+<!--#include virtual="/header.html" -->
+
+<p>
+See
+<a href="http://research.kek.jp/people/ikeda/openIP/openIP_5.pdf">
+Analog-VLSI Open-IP Chapter 5</a>
+for circuit diagrams and further details (in Japanese).
+</p>
+<p>
+LVD is a low current LVDS driver, intended for short links with 1k ohm termination rather than the standard 100 ohms.
+</p>
+<a href="LVD-1.sym">LVD</a><br>
+
+<p>
+LVDS receivers.
+</p>
+<a href="LVR-1.sym">LVR</a> (medium speed)<br>
+<a href="LVR2-1.sym">LVR2</a> (medium speed with enable input)<br>
+<a href="LVR3-1.sym">LVR3</a> (high speed with enable input)<br>
+<a href="LVR4-1.sym">LVR4</a> (high speed with enable input)<br>
+
+<p>
+Current-mode digital receivers.
+</p>
+<a href="HITR1-1.sym">HITR1</a> (input sources current from VDD1)<br>
+<a href="HITR2-1.sym">HITR2</a> (input sinks current to VSS1)<br>
+
+<p>
+"Multiplexers". These are gated transconductance amplifiers with single-ended inputs.
+</p>
+
+<a href="MUX1-1.sym">MUX1</a> (low voltage input, differential output)<br>
+<a href="MUX2B-1.sym">MUX2B</a> (high voltage input, differential output)<br>
+<a href="MUX3B-1.sym">MUX3B</a> (high voltage input, wide common mode range differential output)<br>
+<a href="MUX4-1.sym">MUX4</a> (high voltage input, single-ended output)<br>
+
+
+<!--#include virtual="/trailer.html" -->
