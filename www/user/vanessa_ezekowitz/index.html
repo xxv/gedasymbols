@@ -47,18 +47,18 @@
 
 <ul>
 <li><a href="symbols/TC7WU04F.sym">TC7WU04F</a> - Three invertors in one package (Toshiba).</li>
-<li><a href="symbols/TLC_7226CN-1.sym">TLC-7226CN</a> - Quad 8-bit Digital to Analog converter (Texas Instruments).</li>
+<li><a href="symbols/TLC_7226CN-1.sym">TLC7226CN</a> - Quad 8-bit Digital to Analog converter (Texas Instruments).</li>
 <li><a href="symbols/CY7C138.sym">CY7C138</a> - 4k x 8 dual-port SRAM (Cypress).</li>
 <li><a href="symbols/DS1135.sym">DS1135</a> - triple 10ns delay line (Maxim).</li>
-<li><a href="symbols/744040.sym">74x4040</a> - 12-bit binary counter with reset.</li>
+<li><a href="symbols/744040.sym">74*4040</a> - 12-bit binary counter with reset.</li>
 <li><a href="symbols/lm324-1.sym">LM324</a> - Generic quad Op-Amp.</li>
 <li><a href="symbols/STA013T-TQFP.sym">STA013T</a> - MP3 decoder IC, TQFP44 package (STMicroelectronics).</li>
-<li><a href="symbols/MAS-3507D-PLCC.sym">MAS-3507D</a> - Another MP3 decoder chip, PLCC44 only (Micronas Intermetall).</li>
-<li><a href="symbols/CS4331.sym">CS4331.sym</a> - dual 18-bit A/D converter, serial interface (Cirrus)</li>
+<li><a href="symbols/MAS-3507D-PLCC.sym">MAS3507D</a> - Another MP3 decoder chip, PLCC44 only (Micronas Intermetall).</li>
+<li><a href="symbols/CS4331.sym">CS4331</a> - dual 18-bit A/D converter, serial interface (Cirrus)</li>
 <li><a href="symbols/8726_REC.sym">8726 REC</a> - Standard REC chip used in Commodore 17xx REUs (Commodore/MOS).</li>
 <li><a href="symbols/41256.sym">41256</a> - Common 41256 256 kbit x 1 DRAM chip.</li>
 <li><a href="symbols/514400-1.sym">HM51440A</a> - 1Mb x 4 DRAM chip, for ZIP-20 package (Hitachi).</li>
-<li><a href="symbols/V-Infinity-VBT1.sym">V-Infinity-VBT1</a> - 5v to 12v DC-DC converter
+<li><a href="symbols/V-Infinity-VBT1.sym">V-Infinity VBT1</a> - 5v to 12v DC-DC converter, probably also works for other voltage ranges judging by their datasheet.
 </ul>
 
 <h3>Connectors</h3>
@@ -92,16 +92,16 @@
 <h4>Tested/working on a board</h4>
 
 <ul>
-<li><a href="footprints/200_Capacitor.fp">Basic ceramic capacitor</a> - 200-mil lead spacing, typically decoupling capacitors.</li>
-<li><a href="footprints/100_Resistor-Diode_vertical.fp">Resistor/Diode</a> - 100-mil lead spacing for folded-over 1/8W resistors and small diodes like 1N914.  Also *just* fits 1/4W resistors.  Not for 1N400x-type diodes.</li>
-<li><a href="footprints/Transistor_TO-18.fp">Basic Transistor</a> - 2N2222 or similar, standard TO-18 case, derived from Eagle part.</li>
+<li><a href="footprints/200_Capacitor.fp">Basic non-polarized capacitor</a> - 200-mil lead spacing, commonly for small ceramics, polyester film, etc.</li>
+<li><a href="footprints/100_Resistor-Diode_vertical.fp">Resistor/Diode</a> - 100-mil lead spacing for folded-over 1/8W resistors and small diodes like 1N914.  Also *just* fits 1/4W resistors.  Not for 1N400x-type diodes (leads on these are usually too thick).</li>
+<li><a href="footprints/Transistor_TO-18.fp">Common TO-18</a> - For 2N2222 or similar, derived from Eagle part.</li>
 </ul>
 
 <h4>In Progress</h4>
 
 <ul>
 <li><a href="footprints/0603_rpack4.fp">Four-in-one resistor network</a> - 0603 (x4) surface mount isolated resistor pack (Yageo YC164 series).</li>
-<li><a href="footprints/PTS625SL50-LFS.fp">SPST switch</a> - Normally open, low-profile pushbutton type (C&K Components).</li>
+<li><a href="footprints/PTS625SL50-LFS.fp">PTS625SL50-LFS</a> - SPST momentary switch, normally open, low-profile pushbutton type (C&K Components).</li>
 </ul>
 
 <h4>Untested</h4>
