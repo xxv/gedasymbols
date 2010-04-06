@@ -8,19 +8,43 @@
 <P>
 <h2>Tools</h2>
 <h2>Documentation</h2>
-
 <h2>Symbols</h2>
-<P>Common Parts:
+
+<h3>Common Parts</h3>
+
+<h4>Tested/working in a schematic</h4>
+
+(Haven't confirmed any of them yet, sorry!)
+
+<h4>In Progress</h4>
+
+<ul>
+<li><a href="symbols/rpack4-1.sym">4-resistor network</a> - Basic isolated four-in-one resistor network, counter-clockwise pin numbering.</li>
+</ul>
+
+<h4>Untested</h4>
+
 <ul>
 <li><a href="symbols/XTAL-1.sym">Generic crystal</a> - Basic 4-pin crystal "XTAL" type oscillator</li>
-<li><a href="symbols/rpack4-1.sym">4-resistor network</a> - Basic isolated four-in-one resistor network, counter-clockwise pin numbering.</li>
-<li><a href="symbols/rpack4-2.sym">4-resistor network</a> - Same thing, left-to-right numbering.</li>
+<li><a href="symbols/rpack4-2.sym">4-resistor network</a> - Basic isolated resistor network, left-to-right numbering.</li>
 <li><a href="symbols/rpack5-1.sym">5-resistor network</a> - Basic isolated five-in-one resistor network (counter-clockwise pin numbering).</li>
 <li><a href="symbols/rpack5-2.sym">5-resistor network</a> - Same thing, left-to-right numbering.</li>
 <li><a href="symbols/rpack8.sym">8-resistor network</a> - Basic isolated eight-in-one resistor network.</li>
 <li><a href="symbols/Ferrite_bead.sym">Ferrite Bead</a> - Just a common ferrite bead (a generic box with two generic pins. :-) ).</li>
 </ul>
-<P>IC's:
+
+<h3>IC's</h3>
+
+<h4>Tested/working in a schematic</h4>
+
+(Haven't tested any of them yet, sorry!)
+
+<h4>In Progress</h4>
+
+(None are currently being tested)
+
+<h4>Untested</h4>
+
 <ul>
 <li><a href="symbols/TC7WU04F.sym">TC7WU04F</a> - Three invertors in one package (Toshiba).</li>
 <li><a href="symbols/TLC_7226CN-1.sym">TLC-7226CN</a> - Quad 8-bit Digital to Analog converter (Texas Instruments).</li>
@@ -34,33 +58,79 @@
 <li><a href="symbols/8726_REC.sym">8726 REC</a> - Standard REC chip used in Commodore 17xx REUs (Commodore/MOS).</li>
 <li><a href="symbols/41256.sym">41256</a> - Common 41256 256 kbit x 1 DRAM chip.</li>
 <li><a href="symbols/514400-1.sym">HM51440A</a> - 1Mb x 4 DRAM chip, for ZIP-20 package (Hitachi).</li>
-
 </ul>
-<P>Connectors:
+
+<h3>Connectors</h3>
+
+<h4>Tested</h4>
+
+(Haven't confirmed any of them yet, sorry!)
+
+<h4>In Progress</h4>
+
 <ul>
 <li><a href="symbols/Expansion_Port.sym">C64/C128 Expansion Port</a> - Derived from stock GEDA 40-pin header/connector.</li>
+</ul>
+
+<h4>Untested</h4>
+
+<ul>
 <li><a href="symbols/UserPort.sym">C64/C128 User Port</a> - Derived from Leon Kos' generic 24-pin connector.</li>
 <li><a href="symbols/Stereo_Jack.sym">Stereo Jack</a> - Common two-channel "stereo" connector.</li>
 <li><a href="symbols/Female-DIN-5.sym">Female DIN-5</a> - Female 5-pin round DIN connector (common, for old AT keyboards, C64 video, etc.</li>
 <li><a href="symbols/PowerJack-2.sym">PowerJack-2.sym</a> - Common DC power jack.</li>
 <li><a href="symbols/PowerJack-3.sym">PowerJack-3.sym</a> - Common DC power jack - without dotted lines.</li>
 </ul>
+
 <h2>Footprints</h2>
-<P>Common parts:
+<P>
+
+<h3>Common Parts</h3>
+<P>
+
+<h4>Tested/working on a board</h4>
+
 <ul>
 <li><a href="footprints/200_Capacitor.fp">Basic ceramic capacitor</a> - 200-mil lead spacing, typically decoupling capacitors.</li>
 <li><a href="footprints/100_Resistor-Diode_vertical.fp">Resistor/Diode</a> - 100-mil lead spacing for folded-over 1/8W resistors and small diodes like 1N914.  Also *just* fits 1/4W resistors.  Not for 1N400x-type diodes.</li>
-<li><a href="footprints/0603_rpack4.fp">Four-in-one resistor network</a> - 0603 (x4) surface mount isolated resistor pack (Yageo YC164 series).</li>
 <li><a href="footprints/Transistor_TO-18.fp">Basic Transistor</a> - 2N2222 or similar, standard TO-18 case, derived from Eagle part.</li>
+</ul>
+
+<h4>In Progress</h4>
+
+<ul>
+<li><a href="footprints/0603_rpack4.fp">Four-in-one resistor network</a> - 0603 (x4) surface mount isolated resistor pack (Yageo YC164 series).</li>
+<li><a href="footprints/PTS625SL50-LFS.fp">SPST switch</a> - Normally open, low-profile pushbutton type (C&K Components).</li>
+</ul>
+
+<h4>Untested</h4>
+
+<ul>
 <li><a href="footprints/350_Common-Mounting-Hole__130_mil_drill.fp">Common Mounting hole</a> - A simple screw hole, 350 mil pad diameter, 130 mill drill (as a component so PCB won't move it around).</li>
 <li><a href="footprints/PT10LH01_Piher_Potentiometer.fp">PT10LH01</a> - Common potentiometer - standing upright, horizontal shaft (Piher)</li>
 <li><a href="footprints/DIP 12.fp">DIP 12</a> - Simple 12-pin DIP package.</li>
-<li><a href="footprints/PTS625SL50-LFS.fp">SPST switch</a> - Normally open, low-profile pushbutton type (C&K Components).</li>
 <li><a href="footprints/Littelfuse-52000001009.fp">Fuseholder</a> - Common 5mm diamater fuse holder; two separate clips joined into one footprint (Littelfuse).</li>
 <li><a href="footprints/jumper-2-pad-open.fp">2-pad jumper</a> - Surface mount style jumper pads, 40 mil square.</li>
 <li><a href="footprints/jumper-3-pad-open.fp">3-pad jumper</a> - Surface mount style jumper pads, 40 mil square.</li>
 </ul>
-<P>Connectors:
+
+<h3>Connectors</h3>
+<P>
+
+<h4>Tested</h4>
+<P>
+(Haven't confirmed any of them yet, sorry!)
+
+<P>
+<h4>In Progress</h4>
+
+<ul>
+<li><a href="footprints/Male_Card-Edge_44_pin__100_mil.fp">Male 44-pin card edge</a> - 100 mil pin spacing, Suitable to plug into Commodore 64/128 "Expansion Port" connector.</li>
+<li><a href="footprints/Female_Edge_Connector_44_pin__100_mil__with_keepouts.fp">Female 44-pin edge connector</a> - 100 mil pin spacing, 200 mil row spacing, with silk added to mark "keepout" areas around it to match Commodore 64 "Expansion Port".</li>
+</ul>
+
+<h4>Untested</h4>
+
 <ul>
 <li><a href="footprints/Female_ATX.fp">2-794954-0</a> - Female ATX Connector, as used on most mainboards.  20-pin version, from datasheet (Tyco/AMP).</li>
 <li><a href="footprints/Female_ATX_right_angle.fp">2-1586041-0</a> - Female ATX, Right angle, 20 pin version, from datasheet (Tyco/AMP).</li>
@@ -68,20 +138,13 @@
 <li><a href="footprints/Female_DSub_HDF15.fp">Female 15-pin D-Sub</a> - Standard female VGA connector, derived from Eagle part.</li>
 <li><a href="footprints/Female_DSub_HDF15_short.fp">Female 15-pin D-Sub (short)</a> - Shortened version suitable for use at the edge of a board, similar to PCB's other D-Sub connectors. </li>
 <li><a href="footprints/Female_Edge_Connector_44_pin__100_mil.fp">Female 44-pin edge connector</a> - Typical, 100 mil pin spacing, 191 mil row spacing.</li>
-<li><a href="footprints/Female_Edge_Connector_44_pin__100_mil__with_keepouts.fp">Female 44-pin edge connector</a> - 100 mil pin spacing, 200 mil row spacing, with silk added to mark "keepout" areas around it to match Commodore 64 "Expansion Port".</li>
-<li><a href="footprints/Male_Card-Edge_44_pin__100_mil.fp">Male 44-pin card edge</a> - 100 mil pin spacing, Suitable to plug into Commodore 64/128 "Expansion Port" connector.</li>
 <li><a href="footprints/Male_Card-Edge_44_pin__100_mil__no_silk.fp">Male 44-pin card edge, no silk</a> - Same as above, without the silk layer (so it can be connected to from either edge)</li>
 <li><a href="footprints/Male_Card-Edge_44_pin__100_mil__no_silk__short.fp">Male 44-pin card edge, short</a> - Same as above, without the silk layer and considerably shorter (useful as test points, or to mount something at the edge of a board).</li>
 <li><a href="footprints/Male_Card-Edge_24_pin__156_mil.fp">Male 24-pin card edge</a> - 156 mil spacing, suitable to attach a Commodore 64 "User Port" connector to.</li>
 <li><a href="footprints/Female_Stereo_Conn_PG203J_3.5mm.fp">PG203J</a> - Basic 3.5mm stereo jack (the kind Radio Shack sells), derived from Eagle part.</li>
 <li><a href="footprints/Female_Stereo_Conn_SJ13533NG_3.5mm.fp">SJ13533NG</a> - Lower-profile 3.5mm stereo jack, without internal switches, based on datasheet (CUI, Inc).</li>
 <li><a href="footprints/Power_Plug_163-7620-E_5.5mm-2.1mm.fp">163-7620-E</a> - 5.5mm outer contact, 2.1mm pin diameter (Kobiconn).</li>
-</ul>
-
-<h3>In the attic:</h3>
-<ul>
 <li><a href="attic/Female_Barrel_DC0202.fp">DC0202</a> - Female DC Power jack.  Generic footprint, derived from Eagle part.</li>
 </ul>
-
 
 <!--#include virtual="/trailer.html" -->
