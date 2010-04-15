@@ -1,0 +1,35 @@
+# author: Amand Tihon
+# email: amand.tihon@alrj.org
+# dist-license: GPL3, http://www.gnu.org/licenses/gpl-3.0.txt
+# use-license: unlimited
+
+
+Element["" "SPDT SRU Relay" "RE000" "" 72500 60000 -42500 -5000 3 100 ""]
+(
+	Pin[-25059 23622 12000 2000 12000 2000 "2" "2" "edge2"]
+	Pin[22973 23622 12000 2000 12000 2000 "5" "5" "edge2"]
+	Pin[22973 -23622 12000 2000 12000 2000 "4" "4" "edge2"]
+	Pin[-32933 0 12000 2000 12000 2000 "3" "3" "edge2"]
+	Pin[-25059 -23622 12000 2000 12000 2000 "1" "1" "edge2"]
+	ElementLine [-40807 -31496 39508 -31496 1500]
+	ElementLine [-40807 31496 39508 31496 1500]
+	ElementLine [-40807 -31496 -40807 31496 1500]
+	ElementLine [39508 -31496 39508 31496 1500]
+	ElementLine [-25059 -23622 -13248 -23622 1500]
+	ElementLine [-13248 -23622 -13248 -15748 1500]
+	ElementLine [-25059 23622 -13248 23622 1500]
+	ElementLine [-13248 23622 -13248 15748 1500]
+	ElementLine [22973 23622 22973 7874 1500]
+	ElementLine [22973 -23622 22973 -7874 1500]
+	ElementLine [19036 -15748 22973 -7874 1500]
+	ElementLine [22973 -7874 26910 -15748 1500]
+	ElementLine [19036 15748 22973 7874 1500]
+	ElementLine [22973 7874 26910 15748 1500]
+	ElementLine [26122 -7874 2500 0 1500]
+	ElementLine [2500 0 -32933 0 1500]
+	ElementArc [-13248 -11811 3937 3937 90 180 1500]
+	ElementArc [-13248 3937 3937 3937 90 180 1500]
+	ElementArc [-13248 -3937 3937 3937 90 180 1500]
+	ElementArc [-13248 11811 3937 3937 90 180 1500]
+
+	)
