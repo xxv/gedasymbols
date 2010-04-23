@@ -11,9 +11,9 @@
 $y{left} = 300;
 $y{right} = 300;
 #This $y{labels} will be good for symbols with more than 20 names all around edge, else...you tweak it.
-$y{labels} = 1500;
+$y{labels} = 1600;  #should be about half height to go in middle of symbol.
 $labelpin = 0;
-
+$box_horiz_space = 4800;  #main thing to guess about number of pins 300 per pin on bootom or top.
 # Read in the file, storing information about each pin.
 
 while (<>) {
@@ -138,30 +138,11 @@ for $p (1..$maxpin) {
 }
 $maxy += 400;
 
-# Now, use the slice widths to compute the minimum width of the box.
-for ($i=0; $i<$maxy; $i+=100) {
-    $w = $bw{$i}{left} + $bw{$i}{labels} + $bw{$i}{right};
-    if ($bw{$i}{labels}) {
-	$wl = ($bw{$i}{left} + $bw{$i}{labels}) * 2;
-	$w = $wl if $w < $wl;
-	$wl = ($bw{$i}{right} + $bw{$i}{labels}) * 2;
-	$w = $wl if $w < $wl;
-    }
-    if ($bw{$i}{left} && $bw{$i}{labels}) {
-	$w += 150;
-    } elsif ($bw{$i}{left} && $bw{$i}{right}) {
-	$w += 300;
-    }
-    if ($bw{$i}{right} && $bw{$i}{labels}) {
-	$w += 150;
-    }
-    if ($boxwidth < $w) {
-	$boxwidth = $w;
-    }
-}
+# Now, insert width of the box from above.
+$boxwidth += $box_horiz_space;  #  added 300 jg 23apr10
+print STDERR "boxwidth after add box_horiz_space =  $boxwidth \n";  #  jg23apr  debug
 
-$boxwidth = $w{top} if $boxwidth < $w{top};
-$boxwidth = $w{bottom} if $boxwidth < $w{bottom};
+
 
 # Flip Y coordinates (we count from the top, but symbols coordinates
 # are from the bottom).
@@ -170,8 +151,10 @@ for $p ($minpin..$maxpin) {
     $piny{$p} = $maxy - $piny{$p} + 300;
 }
 
+print STDERR "boxwidth =  $boxwidth \n";  #  jg23apr  debug
+
 $boxwidth = &alignpin($boxwidth);
-$boxwidth += 300;
+print STDERR "boxwidth after alignpin =  $boxwidth \n";  #  jg23apr  debug
 
 # Adjust the position of the top/bottom pins so that, as a group,
 # they're centered.
@@ -182,7 +165,7 @@ for $p ($minpin..$maxpin) {
 
 # Labels are centered in the box.
 for $lp ($minpin..-1) {
-    $pinx{$lp} = &alignpin($boxwidth/2) + 300;
+    $pinx{$lp} = &alignpin($boxwidth/2) + 300;  # added 300 jg23apr10
 }
 
 # Version.
