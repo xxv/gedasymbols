@@ -1,0 +1,79 @@
+<!--#set var="title" value="Simple, generic Opamp Models" -->
+<!--#include virtual="/header.html" -->
+
+<p>
+In response to popular demand for opamp models that could be used for ngspice and gnucap simulation, <a href="jpdoplib.inc">here are three</a>.</p>
+
+<p>These models work with any gEDA opamp symbol that has a pinout compatible with the defacto industry standard for SPICE opamp models:</p>
+
+<table border="1">
+<tr>
+<th>pinseq</th>
+<th>Function</th>
+</tr>
+<tr>
+<td>1</td>
+<td>+ input</td>
+</tr>
+<tr>
+<td>2</td>
+<td>- input</td>
+</tr>
+<tr>
+<td>3</td>
+<td>+ power</td>
+</tr>
+<tr>
+<td>4</td>
+<td>- power</td>
+</tr>
+<tr>
+<td>5</td>
+<td>output</td>
+</tr>
+</table>
+
+<p>"opbw" is an idealized opamp with unity gain bandwidth of about 160 kHz, and unlimited DC gain. </p>
+
+<p>"opgain" is an idealized opamp with gain of 1000 and unlimited bandwidth.</p>
+
+<p>"opmediocre" simulates a mediocre bipolar opamp. It also has a unity gain bandwidth around 160 kHz, but having the basic internal structure of a simple opamp, it suffers from the usual physical limitations: slew rate, crossover distortion, limited phase margin, input bias current, etc.</p>
+
+<p>To use, attach a model-name attribute (e.g. model-name=opmediocre) to the opamp symbol in your circuit, and arrange to include the subcircuit file above in your simulation. If you don't understand this, see optest.sch and Makefile in the downloadable project below for one way to accomplish it.</p>
+
+<p>You can <a href="opamp.tar.gz">download the development project</a> that I used to create this library. Once you've downloaded it, try the following:</p>
+
+<Pre>
+tar xzf opamp.tar.gz 
+cd opamp
+make test
+</Pre>
+
+<p>You should see a bunch of gnetlist and ngspice spewage followed by an ngspice prompt ("ngspice 1 ->"). The "make test" command builds the subcircuit library (unless it already exists), makes the SPICE circuit file for the test simulation (unless it already exists), and invokes ngspice on that file. Look at the Makefile if you want to know how this happens: it's pretty simple.</p>
+
+The circuit is already set up for small signal AC analysis, so you can type
+
+<Pre>
+run
+plot abs(m) abs(b)
+plot phase(m) phase(b)
+</Pre>
+
+to compare gain and phase response of the opbw (output netname=b) and opmediocre (output netname=m) models in a unity-gain buffer circuit. Note the gain "peaking" due the the extra (more realistic) phase shift in the opmediocre model.</p>
+
+<p>Although AC is set up, you're not limited to that. Type
+
+<Pre>
+tran 100n 100u
+plot m b
+</Pre>
+
+To see transient response. The opbw buffer circuit is pretty clean, but the opmediocre circuit shows slew rate limiting and ringing. </p>
+
+<p>Look at the schematics and the Makefile for more information.</p>
+
+<p>I think this is a good example of a very simple gEDA simulation project. Even on this scale, the Makefile is helpful. Bigger projects need more elaborate Makefiles, but the productivity gain is greater.</p>
+
+
+
+<!--#include virtual="/trailer.html" -->
