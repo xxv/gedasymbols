@@ -1,0 +1,12 @@
+gEDA/gschem version 20040111
+gEDA/gschem comes with ABSOLUTELY NO WARRANTY; see COPYING for more details.
+This is free software, and you are welcome to redistribute it under certain
+conditions; please see the COPYING file for more details.
+
+Read system-gschemrc file [/Users/mark/geda/share/gEDA/system-gschemrc]
+Did not find optional ~/.gEDA/gschemrc file [/Users/mark/.gEDA/gschemrc]
+Did not find optional local gschemrc file [./gschemrc]
+Read init scm file [/Users/mark/geda/share/gEDA/scheme/gschem.scm]
+Opened schematic [/Users/mark/geda/share/gEDA/sym/local/ATtiny2313-DIP.sym]
+Saved [/Users/mark/geda/share/gEDA/sym/local/ATtiny2313-DIP.sym]
+Saved [/Users/mark/geda/share/gEDA/sym/local/ATtiny2313-DIP.sym]
