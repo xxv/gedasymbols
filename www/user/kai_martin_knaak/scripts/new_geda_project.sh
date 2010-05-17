@@ -12,6 +12,7 @@ NAME=$1
 AUTHORSHORT="-<(kmk)>-"
 AUTHOR="Kai-Martin Knaak"
 FOOTPRINTLIB="/home/kmk/geda/footprints"
+PFAD="/afs/iqo.uni-hannover.de/products/gedasymbols/www/user/kai_martin_knaak"
 
 mkdir $NAME
 cd $NAME
@@ -20,8 +21,8 @@ mkdir halde
 mkdir gehaeuse
 mkdir print
 mkdir bom
-cp $HOME/geda/gedasymbols/www/user/kai_martin_knaak/layoutdruck.sh print/layoutdruck_$NAME.sh
-cp $HOME/geda/gedasymbols/www/user/kai_martin_knaak/bomdruck.sh print/bomdruck_$NAME.sh
+cp $PFAD/layoutdruck.sh print/layoutdruck_$NAME.sh
+cp $PFAD/bomdruck.sh print/bomdruck_$NAME.sh
 
 # The project file for gsch2pcb
 # Use only local footprints, no m4, no global defaults.
