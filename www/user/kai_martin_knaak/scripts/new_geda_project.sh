@@ -20,8 +20,8 @@ mkdir halde
 mkdir gehaeuse
 mkdir print
 mkdir bom
-cp $HOME/geda/layoutdruck.sh print/layoutdruck_$NAME.sh
-cp $HOME/geda/bomdruck.sh print/bomdruck_$NAME.sh
+cp $HOME/geda/gedasymbols/www/user/kai_martin_knaak/layoutdruck.sh print/layoutdruck_$NAME.sh
+cp $HOME/geda/gedasymbols/www/user/kai_martin_knaak/bomdruck.sh print/bomdruck_$NAME.sh
 
 # The project file for gsch2pcb
 # Use only local footprints, no m4, no global defaults.
@@ -39,7 +39,7 @@ echo \
 "footprint
 value
 description
-" > /print/attribs
+" > print/attribs
 
 # Add a local gafrc
 echo \
