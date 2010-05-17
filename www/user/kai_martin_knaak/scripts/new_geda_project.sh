@@ -1,6 +1,6 @@
 #!/bin/bash
 # Ein einfaches Script, das ein geda-Projekt nach dem Geschmack von
-# ---<(kaimartin)>--- anlegt.
+# ---<(kaimartin)>--- anlegt. 
 
 if [ $# = 0 ]; then
 	echo "usage: new_geda_project.sh NAME"
