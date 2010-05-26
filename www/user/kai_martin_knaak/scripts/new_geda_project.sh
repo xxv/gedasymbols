@@ -9,10 +9,15 @@ if [ $# = 0 ]; then
 fi;
 
 NAME=$1
-AUTHORSHORT="-<(kmk)>-"
 AUTHOR="Kai-Martin Knaak"
+AUTHORSHORT="-<(kmk)>-"
 FOOTPRINTLIB="/home/kmk/geda/footprints"
-PFAD="/afs/iqo.uni-hannover.de/products/gedasymbols/www/user/kai_martin_knaak"
+
+# Absolute path of the Script.
+# Note, requires GNU readlink. Might not work for Mac and BSD users 
+PFAD=`dirname $(readlink -f $0)`
+#PFAD="/afs/iqo.uni-hannover.de/products/gedasymbols/www/user/kai_martin_knaak"
+
 
 mkdir $NAME
 cd $NAME
