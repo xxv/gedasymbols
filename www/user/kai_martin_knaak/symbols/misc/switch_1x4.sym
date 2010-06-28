@@ -1,4 +1,4 @@
-v 20061020 1
+v 20100214 2
 T 800 1400 8 10 1 1 0 0 1
 refdes=S?
 P 400 1400 200 1400 1 0 1
@@ -47,8 +47,8 @@ pintype=pas
 }
 P 600 800 800 800 1 0 1
 {
-T 750 850 5 8 0 1 0 0 1
-pinnumber=5
+T 550 850 5 8 0 1 0 0 1
+pinnumber=C
 T 750 850 5 8 0 1 0 0 1
 pinseq=5
 T 650 850 9 8 1 1 0 6 1
@@ -62,11 +62,15 @@ value=ELMA_07R14
 T 800 1000 8 8 1 1 0 0 1
 footprint=ELMA_07R14
 B 300 0 400 1600 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 300 2300 5 8 0 0 0 0 1
-device=switch_1x4
-T 300 2100 5 8 0 0 0 0 1
+T 300 2700 5 8 0 0 0 0 1
+description=switch_1x4
+T 300 2500 5 8 0 0 0 0 1
 author=K-M. Knaak, kmk@lilalaser.de
 T 300 1900 5 8 0 0 0 0 1
-license=GPL2
+use-license=free, no use restrictions
 T 300 1700 5 8 0 0 0 0 1
 numslots=0
+T 300 2100 5 8 0 0 0 0 1
+dist-license=GPL2
+T 300 2300 5 8 0 0 0 0 1
+documentation=http://www.elma.com/Admin/ProductionFiles1//ProductTypeFile/373/English/15%20Selector%20Switch%20Type%2007R.pdf
