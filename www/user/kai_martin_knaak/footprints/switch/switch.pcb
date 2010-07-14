@@ -1,5 +1,5 @@
 # release: pcb 1.99z
-# date:    Mon Jun 28 14:54:02 2010
+# date:    Tue Jul 13 19:11:36 2010
 # user:    kmk (kai-martin,,,)
 # host:    bibo.iqo.uni-hannover.de
 
@@ -1658,7 +1658,7 @@ Layer(2 "bott.-poly.")
 Layer(3 "comment")
 (
 	Text[38866 334307 0 156 "APEM_TL46WW.fp" ""]
-	Text[38866 204307 0 156 "APEM_TL36WW.fp" ""]
+	Text[135614 247787 0 156 "MULTICOMP_2AS1T2A1M7RE.fp (ein-ein)" ""]
 	Text[36866 84307 0 156 "ELEDIS_2B11_LAY.fp" ""]
 	Text[36866 29307 0 156 "ELEDIS_2B11.fp" ""]
 	Text[36866 15307 0 200 "ELEDIS_2B11, vertical" ""]
@@ -1676,6 +1676,9 @@ Layer(3 "comment")
 	Text[19866 905307 0 156 "NIKKAI_SK12BG30.fp" ""]
 	Text[208866 912307 0 156 "ELMA_07R14.fp" ""]
 	Text[208866 772307 0 156 "ELMA_C08.fp" ""]
+	Text[135614 262787 0 156 "MULTICOMP_2AS3T2A1M7RE.fp  (ein-aus-ein)" ""]
+	Text[133866 234307 0 156 "APEM_TL39WW.fp  (ein-aus-ein)" ""]
+	Text[133866 219307 0 156 "APEM_TL36WW.fp   (ein-ein)" ""]
 )
 Layer(4 "bott.-GND")
 (

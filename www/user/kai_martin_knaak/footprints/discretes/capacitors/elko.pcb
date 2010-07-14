@@ -1,10 +1,10 @@
-# release: pcb-GL 1.99y
-# date:    Sun Nov  1 02:25:08 2009
-# user:    kmk (Kai-Martin,,,)
-# host:    kwak.localdomain
+# release: pcb 1.99z
+# date:    Wed Jul 14 19:26:13 2010
+# user:    kmk (kai-martin,,,)
+# host:    bibo.iqo.uni-hannover.de
 
-# To read pcb files, the pcb version (or the cvs source date) must be >= the file version
-FileVersion[20070407]
+# To read pcb files, the pcb version (or the git source date) must be >= the file version
+FileVersion[20100606]
 
 PCB["ELKO.PCB" 590551 393701]
 
@@ -933,7 +933,7 @@ Element["" "" "elko_RM35_D8" "" 55118 102362 -15748 19685 0 100 ""]
 Element["" "" "elko_BC_D35" "" 452756 236221 -15748 51181 0 100 ""]
 (
 	Pin[-14763 -29527 19685 2000 20285 5906 "3" "3" "edge2"]
-	Pin[-14763 29528 19685 2000 20285 5906 "1" "1" "edge2"]
+	Pin[-14763 29528 19685 2000 20285 5906 "1" "1" "square,edge2"]
 	Pin[-44291 0 19685 2000 20285 5906 "2" "2" "edge2"]
 	Pin[24607 0 19685 2000 20285 5906 "4" "4" "edge2"]
 	ElementLine [-48228 17716 -44290 13780 1969]
