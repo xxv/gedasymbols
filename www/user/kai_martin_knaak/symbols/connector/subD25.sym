@@ -345,13 +345,3 @@ pinlabel=shield
 T 1500 -50 5 8 0 1 0 0 1
 pintype=pas
 }
-T 9600 6700 5 8 0 0 0 0 1
-author=K-M. Knaak, kmk@lilalaser.de
-T 9600 6900 5 8 0 0 0 0 1
-description=SUBD-9 connector, aka DB9
-T 9600 6500 5 8 0 0 0 0 1
-dist-license=GPL3
-T 9600 6100 5 8 0 0 0 0 1
-numslots=0
-T 9600 6300 5 8 0 0 0 0 1
-license=free, no restrictions
