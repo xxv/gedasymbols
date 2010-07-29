@@ -51,6 +51,6 @@ author=David Griffith <davidgriffith@acm.org>
 T 800 1900 5 10 0 0 0 0 1
 documentation=http://www.datasheetcatalog.com/datasheets_pdf/2/N/4/0/2N4058.shtml
 T 800 1700 5 10 0 0 0 0 1
-description=2N4058PNP General Purpose Signal
+description=2N4058 PNP General Purpose Signal
 T 800 1300 5 10 0 0 0 0 1
 value=2N4058
