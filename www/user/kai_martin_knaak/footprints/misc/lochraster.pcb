@@ -1,5 +1,5 @@
 # release: pcb 1.99z
-# date:    Thu Jul 15 05:47:35 2010
+# date:    Sat Jul 31 07:06:50 2010
 # user:    kmk (Kai-Martin,,,)
 # host:    kwak.localdomain
 
@@ -8,12 +8,12 @@ FileVersion[20100606]
 
 PCB["Lochraster.pcb" 1000000 3000000]
 
-Grid[1.000000 0 0 1]
+Grid[10000.000000 0 0 1]
 Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[600 1000 600 600 100 100]
-Flags("nameonpcb,clearnew,snappin,onlynames")
+Flags("nameonpcb,clearnew,snappin,locknames")
 Groups("1,c:2,s:3:4:5:6:7:8")
 Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,7087,3150,1000:Skinny,600,2402,1181,600"]
 
