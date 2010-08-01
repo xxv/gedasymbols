@@ -10,8 +10,8 @@
 	
 Element(0x00 "Axial polar component (typically capacitor)," "" "ACY1300P" 770 186 0 100 0x00)
 (
-	Pin(0 83 80 50 "1" 0x101)
-	Pin(1300 83 80 50 "2" 0x01)
+	Pin(0 83 120 50 "1" 0x101)
+	Pin(1300 83 120 50 "2" 0x01)
 
 	ElementLine(0 83 325 83 10)
 	ElementLine(975 83 1300 83 10)
