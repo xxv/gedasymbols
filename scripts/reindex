@@ -36,6 +36,7 @@ close(SYMD);
 open(FPD, "find * -name '*.fp' -print | sort |");
 while (<FPD>) {
     chomp;
+    next if m@footprints/m4lib@;
     $file = $_;
     open(F, $file);
     %words = ();
