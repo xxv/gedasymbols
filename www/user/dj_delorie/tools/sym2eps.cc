@@ -175,6 +175,59 @@ scan_extents ()
 	  coord(x2, y2, s);
 	  break;
 
+	case 'H': /* path */
+	  {
+	    int color, width, capstyle, dashstyle, dashlength, dashspace;
+	    int filltype, fillwidth, angle1, pitch1, angle2, pitch2, num_lines;
+
+	    /*                co wi lc ds dl sp fi wf fa fp sa sp N */
+	    sscanf(line, "%*c %d %d %d %d %d %d %d %d %d %d %d %d %d",
+		   &color, &width, &capstyle, &dashstyle, &dashlength, &dashspace,
+		   &filltype, &fillwidth, &angle1, &pitch1, &angle2, &pitch2, &num_lines);
+	    save_sort('H', color, width, i);
+	    for (j=0; j<num_lines; j++)
+	      {
+		char lcode;
+		sscanf (sym[i+j+1], "%c %d%c%d", &lcode, &x1, &y1);
+		switch (lcode)
+		  {
+		  case 'M':
+		  case 'L':
+		    x = x1;
+		    y = y1;
+		    coord (x, y, width);
+		    break;
+		  case 'm':
+		  case 'l':
+		    x += x1;
+		    y += y1;
+		    coord (x, y, width);
+		    break;
+		  case 'Z':
+		  case 'z':
+		    break;
+		  case 'H':
+		    x = x1;
+		    coord (x, y, width);
+		    break;
+		  case 'h':
+		    x += x1;
+		    coord (x, y, width);
+		    break;
+		  case 'V':
+		    y = x1;
+		    coord (x, y, width);
+		    break;
+		  case 'v':
+		    y += x1;
+		    coord (x, y, width);
+		    break;
+		  }
+	      }
+	    i += num_lines;
+	    break;
+	  }
+
 	case 'G': /* picture */
 	  i ++;
 	  break;
@@ -286,7 +339,7 @@ sort_func (const void *va, const void *vb)
   return a->index - b->index;
 }
 
-char * colormap[] = {
+const char * colormap[] = {
   "1.0 1.0 1.0", /* background */
   "0.0 0.0 0.0", /* white */
   "0.8 0.0 0.0", /* red */
@@ -369,6 +422,70 @@ write_eps (const char *filename, FILE *f)
 	  sscanf(line, "%*c %d %d %d %d %d %d", &x1, &y1, &x2, &y2, &c, &s);
 	  color_size(f, c, s);
 	  fprintf(f, "%d %d moveto %d %d lineto stroke\n", x1, y1, x2, y2);
+	  break;
+
+	case 'H': /* path */
+	  {
+	    int color, width, capstyle, dashstyle, dashlength, dashspace;
+	    int filltype, fillwidth, angle1, pitch1, angle2, pitch2, num_lines;
+
+	    /*                co wi lc ds dl sp fi wf fa fp sa sp N */
+	    sscanf(line, "%*c %d %d %d %d %d %d %d %d %d %d %d %d %d",
+		   &color, &width, &capstyle, &dashstyle, &dashlength, &dashspace,
+		   &filltype, &fillwidth, &angle1, &pitch1, &angle2, &pitch2, &num_lines);
+	    for (j=0; j<num_lines; j++)
+	      {
+		char lcode;
+		sscanf (sym[i+j+1], "%c %d%*c%d", &lcode, &x1, &y1);
+		switch (lcode)
+		  {
+		  case 'M':
+		    fprintf (f, "%d %d moveto\n", x1, y1);
+		    x = x1; y = y1;
+		    break;
+		  case 'm':
+		    fprintf (f, "%d %d rmoveto\n", x1, y1);
+		    x += x1; y += y1;
+		    break;
+		  case 'L':
+		    fprintf (f, "%d %d lineto\n", x1, y1);
+		    x = x1; y = y1;
+		    break;
+		  case 'l':
+		    fprintf (f, "%d %d rlineto\n", x1, y1);
+		    x += x1; y += y1;
+		    break;
+
+		  case 'Z':
+		  case 'z':
+		    if (filltype)
+		      fprintf (f, "closepath fill\n");
+		    else
+		      fprintf (f, "closepath stroke\n");
+		    break;
+
+		  case 'H':
+		    fprintf (f, "%d %d lineto\n", x1, y);
+		    x = x1;
+		    break;
+		  case 'h':
+		    fprintf (f, "%d 0 rlineto\n", x1);
+		    x += x1;
+		    break;
+		    coord (x, y, width);
+		    break;
+		  case 'V':
+		    fprintf (f, "%d %d lineto\n", x, y1);
+		    y = x1;
+		    break;
+		  case 'v':
+		    fprintf (f, "0 %d rlineto\n", 0, y1);
+		    y += x1;
+		    break;
+		  }
+	      }
+	    i += num_lines;
+	  }
 	  break;
 
 	case 'G': /* picture */
@@ -510,7 +627,6 @@ main(int argc, char **argv)
     fclose (symfile);
 
   scan_extents();
-
 
   if (argc > 2)
     {
