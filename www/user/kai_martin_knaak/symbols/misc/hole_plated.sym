@@ -11,7 +11,7 @@ author=Kai-Martin Knaak
 T 100 1800 5 8 0 0 0 0 1
 dist-license=GPL2
 T 100 800 8 10 1 1 0 0 1
-refdes=hole_plated
+value=hole_plated
 P 200 0 200 100 1 0 0
 {
 T 150 150 5 10 0 1 0 0 1
