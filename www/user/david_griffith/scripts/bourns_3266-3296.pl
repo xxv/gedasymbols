@@ -75,7 +75,7 @@ while (<DATA>) {
 		thickness => $f{line_thickness});
 
 	# Bottom
-	if ($f{model} eq "3266p") {
+	if ($f{model} eq "3266p" || $f{model} eq "3296p") {
 		$Pcb -> element_add_line(
 			x1 => $f{p1x} - $f{left_clearance},
 			y1 => $f{p2y} + $f{bottom_clearance},
@@ -131,8 +131,34 @@ while (<DATA>) {
 			thickness => $f{line_thickness});
 	}
 
+
+	if ($f{model} eq "3296w") {
+		$Pcb -> element_add_arc(
+			x => $f{p1x} - $f{left_clearance} * .65, 
+			y => $f{p1y} - $f{top_clearance} * .65, 
+			width => $f{pad_thickness} * .5,
+			height => $f{pad_thickness} * .5,
+			start_angle => 0,
+			delta_angle => 360,
+			thickness => $f{line_thickness});
+	}
+
+	if ($f{model} eq "3296y") {
+		$Pcb -> element_add_arc(
+			x => $f{p1x} - $f{left_clearance} * .70, 
+			y => $f{p1y} - $f{top_clearance} * .40, 
+			width => $f{pad_thickness} * .5,
+			height => $f{pad_thickness} * .5,
+			start_angle => 0,
+			delta_angle => 360,
+			thickness => $f{line_thickness});
+	}
+
+
+
+
 	# Side actuators
-	if ($f{model} eq "3266z") {
+	if ($f{model} eq "3266z" || $f{model} eq "3296x") {
 		$Pcb -> element_add_line(
 			x1 => $f{p3x} + $f{right_clearance},
 			y1 => $f{p2y} + $f{bottom_clearance},
@@ -155,7 +181,7 @@ while (<DATA>) {
 			thickness => $f{line_thickness});
 	}
 
-	if ($f{model} eq "3266x") {
+	if ($f{model} eq "3266x" || $f{model} eq "3296z") {
 		$Pcb -> element_add_line(
 			x1 => $f{p3x} + $f{right_clearance},
 			y1 => $f{p2y} + $f{bottom_clearance},
@@ -199,7 +225,29 @@ while (<DATA>) {
 			x2 => $f{p1x} + $f{left_clearance},
 			y2 => $f{p1y} - $f{top_clearance} - $f{sidescrew},
 			thickness => $f{line_thickness});
+	}
 
+	if ($f{model} eq "3296p") {
+		$Pcb -> element_add_line(
+			x1 => $f{p1x} - $f{left_clearance},
+			y1 => $f{p1y} - $f{top_clearance},
+			x2 => $f{p1x} - $f{left_clearance}, 
+			y2 => $f{p1y} - $f{top_clearance} - $f{sidescrew},
+			thickness => $f{line_thickness});
+
+		$Pcb -> element_add_line(
+			x1 => $f{p1x} - $f{left_clearance},
+			y1 => $f{p1y} - $f{top_clearance} - $f{sidescrew},
+			x2 => $f{p1x},
+			y2 => $f{p1y} - $f{top_clearance} - $f{sidescrew},
+			thickness => $f{line_thickness});
+
+		$Pcb -> element_add_line(
+			x1 => $f{p1x},
+			y1 => $f{p1y} - $f{top_clearance},
+			x2 => $f{p1x},
+			y2 => $f{p1y} - $f{top_clearance} - $f{sidescrew},
+			thickness => $f{line_thickness});
 	}
 
 	$Pcb -> element_output();
@@ -228,3 +276,8 @@ fields = model width length p1x p1y p2x p2y p3x p3y \
 3266y | 264 | 177 | 0 | 0 | 100 | 0 | 200 | 0 | 85 | 85 | 50 | 50 | 0
 3266z | 264 | 177 | 0 | 0 | 100 | 0 | 200 | 0 | 85 | 85 | 50 | 50 | 40
 3266p | 264 | 177 | 0 | 100 | 100 | 200 | 200 | 100 | 130 | 50 | 50 | 50 | 40
+3296w | 375 | 190 | 0 | 0 | 100 | 0 | 200 | 0 | 100 | 100 | 100 | 100 | 0
+3296x | 375 | 190 | 0 | 0 | 100 | 0 | 200 | 0 | 100 | 100 | 100 | 100 | 40
+3296y | 375 | 190 | 0 | 0 | 100 | 100 | 200 | 0 | 50 | 50 | 100 | 100 | 0
+3296z | 375 | 190 | 0 | 0 | 100 | 100 | 200 | 0 | 50 | 50 | 100 | 100 | 40
+3296p | 375 | 190 | 0 | 100 | 100 | 200 | 200 | 100 | 206 | 100 | 100 | 100 | 40
