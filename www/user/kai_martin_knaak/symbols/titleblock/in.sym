@@ -12,7 +12,7 @@ use-license=free, no restrictions
 T 100 800 5 8 0 0 0 0 1
 numslots=0
 T 100 400 5 8 0 0 0 0 1
-value=out
+value=in
 T 650 100 8 10 1 1 0 7 1
 refdes=in-net
 P 1000 100 1100 100 1 0 1
