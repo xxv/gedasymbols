@@ -206,7 +206,7 @@ footprint=LGA16
 T 400 3100 5 10 0 0 0 0 1
 author=Anton Dubniak <twister AT tfsoft.org.ua>
 T 400 4100 5 10 0 0 0 0 1
-documentation=www.st.com/stonline/books/pdf/docs/12094.pdf
+documentation=http://www.st.com/stonline/books/pdf/docs/12094.pdf
 T 400 4300 5 10 0 0 0 0 1
 description=3-axis digital output linear accelerometer (ST)
 T 400 3500 5 10 0 0 0 0 1
