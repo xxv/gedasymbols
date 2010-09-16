@@ -1,0 +1,110 @@
+#!/usr/bin/perl
+# -*- perl -*-
+
+# Copyright (C) 2010 DJ Delorie dj@delorie.com
+# Released under the terms of the GNU General Public License, version 2
+
+use Text::CSV;
+
+if (! defined $ARGV[0]) {
+    printf("Usage: sch2csv [-o file.csv] *.sch\n");
+    exit (1);
+}
+
+if ($ARGV[0] eq "-o") {
+    shift;
+    $outfile = shift;
+    open(OUT, ">$outfile");
+} else {
+    open(OUT, ">&STDOUT");
+}
+
+for $infile (@ARGV) {
+    open (IN, $infile);
+    @in = <IN>;
+    close IN;
+
+    grep s/[\r\n]+$//, @in;
+
+    for ($i = 0; $i < @in; $i ++) {
+	$_ = $in[$i];
+
+	if (/^C /) {
+	    ($type, $x, $y, $selectable, $angle, $mirror, $basename) = split(' ');
+	    $symbol = $basename;
+
+	    %tmp = ();
+	    $tmp{'%symbol'} = $basename;
+	    $tmp{'%file'} = $infile;
+	    $tmp{'%x'} = $x;
+	    $tmp{'%y'} = $y;
+	}
+
+	if (/^}/) {
+	    $refdes = $tmp{"refdes"};
+	    $refdes =~ s/(\d+)/sprintf("%08d", $1)/ge;
+	    if ($refdes) {
+
+		for $n (keys %tmp) {
+		    $values{"$refdes\0$infile"}{"$n"} = $tmp{$n};
+		}
+	    }
+
+	    $symbol = '';
+	}
+
+	if (/^T / && $symbol) {
+	    ($type, $x, $y, $color, $size, $visible, $show_name, $angle, $alignment, $num_lines) = split(' ');
+
+	    next unless $num_lines == 1;
+
+	    $text = $in[++$i];
+	    next unless $text =~ /=/;
+
+	    ($name, $val) = split(/=/, $text, 2);
+	    $tmp{$name} = $val;
+	    $names{$name} = 1;
+	}
+    }
+
+}
+
+$names{"%symbol"} = 1;
+$names{"%file"} = 1;
+$names{"%x"} = 1;
+$names{"%y"} = 1;
+
+%sortby = ("%x", 6,
+	   "%y", 5,
+	   "%file", 4,
+	   "refdes", 3,
+	   "%symbol", 2,
+	   "value", 1,
+	   "symversion", -1);
+
+sub mysort {
+    my ($a, $b) = @_;
+
+    my ($sa) = 0 + $sortby{$a};
+    my ($sb) = 0 + $sortby{$b};
+    if ($sa || $sb) {
+	return $sb - $sa;
+    }
+    return $a cmp $b;
+}
+
+@cols = sort { &mysort($a,$b) } keys %names;
+
+$csv = Text::CSV->new({always_quote => 1});
+
+$csv->combine(@cols);
+print OUT $csv->string(), "\n";
+
+for $row (sort keys %values) {
+    @v = ();
+    for $c (@cols) {
+	push (@v, $values{$row}{$c});
+    }
+    $csv->combine(@v);
+    print OUT $csv->string(), "\n";
+}

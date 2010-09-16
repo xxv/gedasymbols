@@ -18,6 +18,23 @@ Other tools:
 
 <ul>
 <li> <a href="tools/scale-schematic">scale-schematic</a> - Perl script to scale a symbol or schematic
+
+<li> <a href="tools/sch2csv">sch2csv</a> - extract part attributes to a comma seperated list (open with openoffice calc)
+<li> <a href="tools/csv2sch">csv2sch</a> - merge part attributes to schematics.  To use these:
+
+<pre>
+$ sch2csv [-o foo.csv] *.sch
+$ ooffice foo.csv
+$ csv2sch foo.csv [*.sch]
+</pre>
+
+If you don't specify<tt> -o file </tt> for sch2csv, the CSV is printed
+to stdout.  If you don't specify any schematics for csv2sch, all the
+schematics mentioned in the CSV are updated.  The new schematics are
+named <tt>foo.sch.new</tt> - the original schematics are not changed.
+
+</p>
+
 <li> <a href="tools/sym2csv">sym2csv</a> - extract pin attributes to a comma seperated list (open with openoffice calc)
 <li> <a href="tools/csv2sym">csv2sym</a> - merge pin attributes back to symbol.  To use these:
 

@@ -1,0 +1,97 @@
+#!/usr/bin/perl
+# -*- perl -*-
+
+# Copyright (C) 2010 DJ Delorie dj@delorie.com
+# Released under the terms of the GNU General Public License, version 2
+
+use Text::CSV;
+$csv = Text::CSV->new();
+
+$csvfile = shift;
+
+open(CSV, $csvfile);
+
+$cols = <CSV>;
+$cols =~ s/[\r\n]+$//;
+$csv->parse($cols);
+@cols = $csv->fields();
+
+while (<CSV>) {
+    s/[\r\n]+$//;
+    $csv->parse($_);
+    @h = $csv->fields();
+    $x = $h[0];
+    next unless $x =~ /^[0-9]+$/;
+    $y = $h[1];
+    $f = $h[2];
+    $seen_files{$f} = $f;
+    $pid = "$f $x $y";
+    for ($i=3; $i<=$#h; $i++) {
+	$attr{$pid}{$cols[$i]} = $h[$i];
+    }
+}
+
+if ($ARGV[0]) {
+    @files = @ARGV;
+} else {
+    @files = sort keys %seen_files;
+}
+
+for $file (@files) {
+    next unless $seen_files{$file};
+
+    open (F, $file);
+    @in = <F>;
+    close F;
+    grep s/[\r\n]+$//, @in;
+
+    open(O, ">$file.new");
+
+
+    for ($i = 0; $i < @in; $i ++) {
+	$_ = $in[$i];
+
+	if (/^C /) {
+	    ($type, $x, $y, $selectable, $angle, $mirror, $basename) = split(' ');
+
+	    $pid = "$file $x $y";
+	    %seen = ();
+	}
+
+	if (/^}/ && $pid) {
+	    for $n (sort keys %{$attr{$pid}}) {
+		next if $seen{$n};
+		next if $n =~ /^%/;
+
+		$v = $attr{$pid}{$n};
+
+		if ($v) {
+		    print O "T $x $y 5 10 0 0 0 0 1\n";
+		    print O "$n=$v\n";
+		}
+	    }
+
+	    $pid = undef;
+	}
+
+	if (/^T / && $pid) {
+	    ($type, $x, $y, $color, $size, $visible, $show_name, $angle, $alignment, $num_lines) = split(' ');
+
+	    next unless $num_lines == 1;
+
+	    $text = $in[$i+1];
+	    if ($text =~ /=/) {
+
+		($name, $val) = split(/=/, $text, 2);
+		if (defined $attr{$pid}{$name}) {
+		    $in[$i+1] = "$name=$attr{$pid}{$name}";
+		    $seen{$name} = 1;
+		}
+	    }
+	}
+
+	print O $_, "\n";
+    }
+
+    close O;
+}
