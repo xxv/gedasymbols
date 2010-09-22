@@ -27,7 +27,7 @@ mkdir gehaeuse
 mkdir print
 mkdir bom
 cp $PFAD/layoutdruck.sh print/layoutdruck_$NAME.sh
-cp $PFAD/bomdruck.sh print/bomdruck_$NAME.sh
+cp $PFAD/bomdruck.sh bom/bomdruck_$NAME.sh
 
 # The project file for gsch2pcb
 # Use only local footprints, no m4, no global defaults.
@@ -45,7 +45,7 @@ echo \
 "footprint
 value
 description
-" > print/attribs
+" > bom/attribs
 
 # Add a local gafrc
 echo \
