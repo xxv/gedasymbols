@@ -2,6 +2,8 @@ v 20100214 2
 T 3700 3900 5 10 0 0 0 0 1
 Copyright Mark Salyzyn
 T 3700 3900 5 10 0 0 0 0 1
+author=Mark Salyzyn
+T 3700 3900 5 10 0 0 0 0 1
 documentation=http://www.sws.co.jp/prd_e/carprd01/pdf/a_mt_e.pdf
 T 600 400 5 10 0 0 0 0 1
 description=Sumitomo 13 pin female MT series connector
@@ -296,3 +298,4 @@ L 3450 1500 3290 1460 3 0 0 0 -1 -1
 L 3055 1395 2895 1350 3 0 0 0 -1 -1
 L 3990 1960 3990 1760 3 0 0 0 -1 -1
 L 4795 800 4615 980 3 0 0 0 -1 -1
+L 2869 2569 2870 2805 3 0 0 0 -1 -1
