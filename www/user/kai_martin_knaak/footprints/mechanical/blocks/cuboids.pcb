@@ -1,20 +1,20 @@
-# release: pcb 20070912
-# date:    Wed Oct 24 15:39:16 2007
-# user:    kmk (Kai-Martin Knaak,,,)
+# release: pcb 1.99z
+# date:    Tue Sep 28 19:56:18 2010
+# user:    kmk (kai-martin,,,)
 # host:    bibo.iqo.uni-hannover.de
 
-# To read pcb files, the pcb version (or the cvs source date) must be >= the file version
-FileVersion[20070407]
+# To read pcb files, the pcb version (or the git source date) must be >= the file version
+FileVersion[20100606]
 
-PCB["cuboids" 196850 393701]
+PCB["cuboids" 196850 472441]
 
-Grid[19685.037109 0 0 1]
+Grid[1968.502686 0 0 1]
 Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[600 1000 600 600 1500 1000]
 Flags("nameonpcb,uniquename,clearnew,snappin")
-Groups("1,2,3,s:4,5,6,c:7:8")
+Groups("2,s:1,c:3")
 Styles["Signal,1000,23622,12205,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
 Symbol(' ' 18)
@@ -854,38 +854,46 @@ Element["" "" "" "" 118110 314961 0 0 0 100 ""]
 	ElementLine [-19685 -9843 19685 -9843 1000]
 
 	)
-Layer(1 "bottom")
+
+Element["" "" "" "" 100394 393701 0 0 0 100 ""]
+(
+	Pad[-1969 -11811 17716 -11811 23622 2000 24622 "1" "1" "square"]
+	ElementLine [25590 0 -9843 0 1000]
+	ElementLine [25590 -19685 25590 0 1000]
+	ElementLine [-9843 -19685 25590 -19685 1000]
+	ElementLine [-9843 0 -9843 -19685 1000]
+	ElementLine [0 -11811 0 -9843 1000]
+	ElementLine [0 -9843 1968 -9843 1000]
+	ElementLine [0 -9843 0 -7874 1000]
+	ElementLine [-1969 -9843 0 -9843 1000]
+	ElementArc [0 -9843 3937 3937 0 90 1000]
+	ElementArc [0 -9843 3937 3937 270 90 1000]
+	ElementArc [0 -9843 3937 3937 180 90 1000]
+	ElementArc [0 -9843 3937 3937 90 90 1000]
+
+	)
+Layer(1 "top")
+(
+	Polygon("clearpoly")
+	(
+		[15748 370079] [59055 370079] [59055 393701] [15748 393701] 
+	)
+)
+Layer(2 "bottom")
 (
 )
-Layer(2 "bott.-poly.")
-(
-)
-Layer(3 "bott.-GND")
-(
-)
-Layer(4 "top")
-(
-)
-Layer(5 "top-polyg.")
-(
-)
-Layer(6 "top-GND")
-(
-)
-Layer(7 "comment")
+Layer(3 "comment")
 (
 	Line[9961 180452 9961 215885 1000 2000 "clearline"]
 	Text[19685 7874 0 112 "Wuerfel 10x10x10mm, (Buerklin 17 H 905)" ""]
 	Text[15748 82677 0 112 "Wuerfel 12x12x12mm, (Buerklin 17 H 906)" ""]
 	Text[11811 165354 0 112 "Quader 5x10x15mm (Buerklin 17 H 912)" ""]
+	Text[23622 399607 0 144 "cuboid_5x9mm_SMD.fp" ""]
 )
-Layer(8 "lineout")
+Layer(4 "silk")
 (
 )
-Layer(9 "silk")
-(
-)
-Layer(10 "silk")
+Layer(5 "silk")
 (
 	Line[15748 94488 62992 94488 1000 2000 "clearline"]
 	Line[62992 94488 62992 141732 1000 2000 "clearline"]
@@ -907,4 +915,16 @@ Layer(10 "silk")
 	Line[59055 305118 59055 324803 1000 2000 "clearline"]
 	Line[59055 324803 19685 324803 1000 2000 "clearline"]
 	Line[19685 324803 19685 305118 1000 2000 "clearline"]
+	Line[27559 383858 29528 383858 1000 2000 "clearline"]
+	Line[29528 383858 29528 385827 1000 2000 "clearline"]
+	Line[29528 383858 31496 383858 1000 2000 "clearline"]
+	Line[29528 381890 29528 383858 1000 2000 "clearline"]
+	Line[19685 393701 19685 374016 1000 2000 "clearline"]
+	Line[19685 374016 55118 374016 1000 2000 "clearline"]
+	Line[55118 374016 55118 393701 1000 2000 "clearline"]
+	Line[55118 393701 19685 393701 1000 2000 "clearline"]
+	Arc[29528 383858 3937 3937 1000 2000 90 90 "clearline"]
+	Arc[29528 383858 3937 3937 1000 2000 180 90 "clearline"]
+	Arc[29528 383858 3937 3937 1000 2000 -90 90 "clearline"]
+	Arc[29528 383858 3937 3937 1000 2000 0 90 "clearline"]
 )
