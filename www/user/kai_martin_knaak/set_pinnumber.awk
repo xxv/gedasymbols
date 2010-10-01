@@ -1,7 +1,7 @@
 # A little convenience script that emits the footpint with the value of all pin 
 # and pad names set to the value of their number. -<)kmk(>- 
 # call like this: 
-#    awk -f set_pinnumber.awk foo.fp > bar.fp; mv foo.fp bar.fp
+#    awk -f set_pinnumber.awk foo.fp > bar.fp; mv bar.fp foo.fp
 { 
   if ( $1 ~ /Pin\[/ ) {       # If the current line is a pin 
     $7=$8                     # set the pin name to the value of the pin number
