@@ -8,7 +8,7 @@ description=Single-Channel Monochrome On-Screen Display
 T 0 2400 5 10 0 0 0 0 1
 numslots=0
 T 1200 2400 5 10 0 0 0 0 1
-footprint=TSSOP28.fp
+footprint=TSSOP28EP
 T 3100 500 8 10 1 1 0 4 1
 refdes=U?
 T 2950 1650 8 8 1 1 0 4 1
