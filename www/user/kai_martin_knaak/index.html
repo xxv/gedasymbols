@@ -40,6 +40,10 @@ distributed version of pcb.
 <li> <a href="set_pinnumber.awk">: Emits the footprint file given on the 
 command line with the value of all pin and pad names set to the value of their
 number. Requires awk.
+<li> <a href="collect_gedaconfs.sh">: Collects the config files in $HOME/.gEDA
+and $HOME/.pcb into the compressed tar file <a href="geda-conf.tgz">. The path 
+to the color file is absolute. It contains the path to the home directory of the
+user, who runs the script.  
 </ol>
 
 <h2>Symbols</h2>
@@ -50,7 +54,7 @@ The symbols in this sections are designed according to the following design crit
 	with a smaller font size than the refdes and the value of the symbol.
 	<li>they contain a human readable description
 	<li>power pins of integrated circuits are split off to a seperate power symbol
-	<li>pin numbers are hidden, if they obeye a generally accepted standard
+	<li>pin numbers are hidden, if they follow a generally accepted standard
 </ol>
 
 <!--#include file="symbols.html" -->
