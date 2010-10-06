@@ -14,7 +14,7 @@ $labelpin = 0;
 
 $busspace = 200;
 $groupspace = 300;
-$skipspace = 800;
+$skipspace = 200;
 $yinvert = 300;
 
 # If set, top and bottom labels are vertical.
@@ -66,7 +66,7 @@ while (<>) {
 	$busmode = 0;
 	if ($space) {
 	    if ($side =~ /left|right/) {
-		$y{$side} += $groupspace;
+		$y{$side} += $skipspace;
 	    }
 	    if ($side =~ /top|bottom/) {
 		$x{$side} += 400;

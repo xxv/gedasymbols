@@ -4,7 +4,7 @@
 [labels]
 
 refdes=U?
-value=ATXmegaA1
+value=ATXmega128A1-AU
 footprint=TFQP100
 ! device=ATXmegaA1
 ! description=ATXmegaA1, TQFP-100 
@@ -13,10 +13,6 @@ footprint=TFQP100
 ! distlicense=GPL3
 
 [left]
-
-24 ! CS
-
-.bus
 95 PA0
 96 PA1
 97 PA2
