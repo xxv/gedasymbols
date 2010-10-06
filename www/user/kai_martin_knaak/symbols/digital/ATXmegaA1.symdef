@@ -7,6 +7,7 @@ refdes=U?
 value=ATXmega128A1-AU
 footprint=TFQP100
 ! device=ATXmegaA1
+! documentation=http://www.atmel.com/dyn/resources/prod_documents/doc8067.pdf
 ! description=ATXmegaA1, TQFP-100 
 ! author=Kai-Martin Knaak, kmk@lilalaser.de
 ! uselicense=no restrictions
