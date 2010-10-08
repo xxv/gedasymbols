@@ -495,7 +495,7 @@ symversion=1.0
 T 400 9200 8 10 1 1 0 0 1
 value=ATMEGA32-16 AI
 T 1400 10700 5 8 0 0 0 0 1
-description=ATmega32, TFQP-44
+description=ATmega32, TQFP-44
 T 1400 10300 5 8 0 0 0 0 1
 documentation=http://www.atmel.com/atmel/acrobat/doc2466.pdf
 T 1400 10100 5 8 0 0 0 0 1
