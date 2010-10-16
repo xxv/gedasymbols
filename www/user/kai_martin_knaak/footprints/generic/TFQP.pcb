@@ -1,20 +1,20 @@
-# release: pcb-head 1.99z
-# date:    Mon Oct  4 03:58:32 2010
+# release: pcb 1.99z
+# date:    Sat Oct 16 02:15:43 2010
 # user:    kmk (Kai-Martin Knaak,,,)
 # host:    kwak
 
 # To read pcb files, the pcb version (or the git source date) must be >= the file version
 FileVersion[20100606]
 
-PCB["" 295276 500000]
+PCB["TFQP.pcb" 295276 500000]
 
 Grid[1968.503662 0 0 1]
 Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[600 1000 600 600 1500 1000]
-Flags("shownumber,rubberband,nameonpcb,uniquename,clearnew,snappin")
-Groups("1,2,3,c:4,5,6,s:7:8")
+Flags("shownumber,rubberband,nameonpcb,uniquename,clearnew,snappin,onlynames")
+Groups("1,2,c:s:3")
 Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
 Symbol(' ' 18)
@@ -798,7 +798,7 @@ Symbol('~' 12)
 	SymbolLine(20 35 25 30 8)
 )
 
-Element["" "" "TFQP100" "" 149606 59055 -23622 -41339 0 100 ""]
+Element["" "" "ATXMEGA_TFQP100" "" 149606 59055 -23622 -41339 0 100 ""]
 (
 	Pad[-23622 -32875 -23622 -26181 1181 2000 3181 "" "100" "square"]
 	Pad[-21654 -32875 -21654 -26181 1181 2000 3181 "" "99" "square"]
@@ -1011,33 +1011,18 @@ Layer(1 "top")
 	Line[26180 37401 32874 37401 1181 2000 ""]
 	Line[26180 35433 32874 35433 1181 2000 ""]
 )
-Layer(2 "top-polyg.")
+Layer(2 "bottom")
 (
 )
-Layer(3 "top-GND")
+Layer(3 "comment")
+(
+	Text[232283 1969 0 214 "grid is mm" ""]
+	Text[37402 3938 0 214 "ATXMEGA_TFQP100.fp" ""]
+)
+Layer(4 "silk")
 (
 )
-Layer(4 "bottom")
-(
-)
-Layer(5 "bott.-poly.")
-(
-)
-Layer(6 "bott.-GND")
-(
-)
-Layer(7 "comment")
-(
-	Text[3938 1969 0 214 "grid is mm" ""]
-	Text[202756 47243 0 412 "TFQP.fp" ""]
-)
-Layer(8 "outline")
-(
-)
-Layer(9 "silk")
-(
-)
-Layer(10 "silk")
+Layer(5 "silk")
 (
 	Line[82646 82646 35464 82646 1000 0 ""]
 	Line[35464 82646 35464 39370 1000 0 ""]
