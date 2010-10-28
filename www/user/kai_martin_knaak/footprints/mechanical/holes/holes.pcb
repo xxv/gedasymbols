@@ -1,21 +1,21 @@
-# release: pcb-GL 1.99y
-# date:    Sun Jun 28 19:44:31 2009
-# user:    kmk (Kai-Martin,,,)
-# host:    kwak.localdomain
+# release: pcb 1.99z
+# date:    Thu Oct 28 04:27:39 2010
+# user:    kmk (kai-martin,,,)
+# host:    bibo.iqo.uni-hannover.de
 
-# To read pcb files, the pcb version (or the cvs source date) must be >= the file version
-FileVersion[20070407]
+# To read pcb files, the pcb version (or the git source date) must be >= the file version
+FileVersion[20100606]
 
-PCB["footprint.pcb" 200000 400000]
+PCB["holes.pcb" 511811 511811]
 
-Grid[2000.000000 0 0 1]
+Grid[19685.039063 0 0 1]
 Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
-DRC[600 400 800 599 1500 1000]
-Flags("nameonpcb,alldirection,uniquename,clearnew")
-Groups("1,c:2,s:3")
-Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
+DRC[600 1000 600 600 1500 1000]
+Flags("nameonpcb,uniquename,clearnew,snappin,locknames")
+Groups("2,s:1,c:3")
+Styles["Signal,1000,23622,12205,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
 Symbol(' ' 18)
 (
@@ -797,6 +797,220 @@ Symbol('~' 12)
 	SymbolLine(15 35 20 35 8)
 	SymbolLine(20 35 25 30 8)
 )
+
+Element["" "hole-1mm" "hole-1mm" "" 59055 31496 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 0 6437 4937 3937 "" "1" "hole"]
+	ElementArc [0 0 1968 1968 0 360 1000]
+
+	)
+
+Element["" "hole-1.9mm" "hole-1.9mm" "" 59055 59055 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 0 9980 8480 7480 "" "1" "hole"]
+	ElementArc [0 0 3740 3740 0 360 1000]
+
+	)
+
+Element["" "hole-2mm" "hole-2mm" "" 59055 78740 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 0 10374 8874 7874 "" "1" "hole"]
+	ElementArc [0 0 3937 3937 0 360 1000]
+
+	)
+
+Element["" "hole-2k5mm" "hole-2k5mm" "" 59055 118110 0 -3000 0 100 ""]
+(
+	Pin[0 0 0 12342 10874 9842 "" "1" "hole"]
+	ElementArc [0 0 4921 4921 0 360 1000]
+
+	)
+
+Element["" "hole-3mm" "hole-3mm" "" 59055 157480 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 0 14311 12811 11811 "" "1" "hole"]
+	ElementArc [0 0 5905 5905 0 360 1000]
+
+	)
+
+Element["" "hole-3k5mm" "hole-3k5mm" "" 59055 192913 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 0 16279 14779 13779 "" "1" "hole"]
+	ElementArc [0 0 6889 6889 0 360 1000]
+
+	)
+
+Element["" "hole-4mm" "hole-4mm" "" 59055 240157 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 0 18248 16748 15748 "" "1" "hole"]
+	ElementArc [0 0 7874 7874 0 360 1000]
+
+	)
+
+Element["" "hole-4k5mm" "hole-4k5mm" "" 59055 295276 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 0 20216 18716 17716 "" "1" "hole"]
+	ElementArc [0 0 8858 8858 0 360 1000]
+
+	)
+
+Element["" "hole-5mm" "hole-5mm" "" 59055 354331 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 0 22185 20685 19685 "" "1" "hole"]
+	ElementArc [0 0 9842 9842 0 360 1000]
+
+	)
+
+Element["" "hole-6mm" "hole-6mm" "" 59055 433071 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 0 26122 24622 23122 "" "1" "hole"]
+	ElementArc [0 0 11561 11561 0 360 1000]
+
+	)
+
+Element["" "hole-M1k8" "hole_M1k8" "" 177165 39370 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 0 16960 14960 7480 "" "1" "hole"]
+	ElementArc [0 0 7480 7480 0 360 1000]
+	ElementArc [0 0 4200 4200 0 360 1000]
+
+	)
+
+Element["" "hole-M2" "hole_M2" "" 177165 78740 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 0 18535 16535 8268 "" "1" "hole"]
+	ElementArc [0 0 8268 8268 0 360 1000]
+	ElementArc [0 0 4200 4200 0 360 1000]
+
+	)
+
+Element["" "hole-M2.5" "hole_M2k5" "" 177165 118110 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 0 22472 20472 10236 "" "1" "hole"]
+	ElementArc [0 0 10236 10236 0 360 1000]
+	ElementArc [0 0 5118 5118 0 360 1000]
+
+	)
+
+Element["" "hole_M3" "hole_M3" "" 177165 157480 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 0 26222 24222 12205 "" "1" "hole"]
+	ElementArc [0 0 12205 12205 0 360 1000]
+	ElementArc [0 0 6800 6800 0 360 1000]
+
+	)
+
+Element["" "hole-M4" "hole_M4" "" 177165 196850 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 0 34283 32283 16141 "" "1" "hole,selected"]
+	ElementArc [0 0 16141 16141 0 360 1000]
+	ElementArc [0 0 8070 8070 0 360 1000]
+
+	)
+
+Element["selected" "hole-M5" "hole_M5" "" 177165 240157 -3000 -3000 0 100 "selected"]
+(
+	Pin[0 0 0 42157 40157 20079 "" "1" "hole,selected"]
+	ElementArc [0 0 20079 20079 0 360 1000]
+	ElementArc [0 0 10039 10039 0 360 1000]
+
+	)
+
+Element["" "hole-M6" "hole_M6" "" 177165 295276 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 0 50031 48031 24016 "" "1" "hole"]
+	ElementArc [0 0 24016 24016 0 360 1000]
+	ElementArc [0 0 12008 12008 0 360 1000]
+
+	)
+
+Element["" "hole-M8" "hole_M8" "" 177165 354332 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 0 65780 63780 31890 "" "1" "hole"]
+	ElementArc [0 0 31890 31890 0 360 1000]
+	ElementArc [0 0 15945 15945 0 360 1000]
+
+	)
+
+Element["" "hole-M10" "hole_M10" "" 177165 433071 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 0 81528 79528 39736 "" "1" "hole"]
+	ElementArc [0 0 39736 39736 0 360 1000]
+	ElementArc [0 0 19882 19882 0 360 1000]
+
+	)
+
+Element["" "M1k8_plated" "M1k8_plated" "" 287402 39370 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 14173 5000 14960 7480 "" "1" ""]
+	ElementArc [0 0 7480 7480 0 360 1000]
+	ElementArc [0 0 4200 4200 0 360 1000]
+
+	)
+
+Element["" "hole-M2" "hole_M2" "" 287402 78740 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 15748 5000 16535 8268 "" "1" ""]
+	ElementArc [0 0 8268 8268 0 360 1000]
+	ElementArc [0 0 4200 4200 0 360 1000]
+
+	)
+
+Element["" "hole-M2.5" "hole_M2k5" "" 287402 118110 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 19685 5000 20472 10236 "" "1" ""]
+	ElementArc [0 0 10236 10236 0 360 1000]
+	ElementArc [0 0 5118 5118 0 360 1000]
+
+	)
+
+Element["" "hole_M3" "hole_M3" "" 287402 157480 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 23622 5000 24222 12205 "" "1" ""]
+	ElementArc [0 0 12205 12205 0 360 1000]
+	ElementArc [0 0 6800 6800 0 360 1000]
+
+	)
+
+Element["" "hole-M4" "hole_M4" "" 287402 196850 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 31496 5000 32283 16141 "" "1" ""]
+	ElementArc [0 0 16141 16141 0 360 1000]
+	ElementArc [0 0 8070 8070 0 360 1000]
+
+	)
+
+Element["" "hole-M5" "hole_M5" "" 287402 240157 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 39370 5000 40157 20079 "" "1" ""]
+	ElementArc [0 0 20079 20079 0 360 1000]
+	ElementArc [0 0 10039 10039 0 360 1000]
+
+	)
+
+Element["" "hole-M6" "hole_M6" "" 287402 295276 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 47244 5000 48031 24016 "" "1" ""]
+	ElementArc [0 0 24016 24016 0 360 1000]
+	ElementArc [0 0 12008 12008 0 360 1000]
+
+	)
+
+Element["" "hole-M8" "hole_M8" "" 287402 354332 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 62992 5000 63780 31890 "" "1" ""]
+	ElementArc [0 0 31890 31890 0 360 1000]
+	ElementArc [0 0 15945 15945 0 360 1000]
+
+	)
+
+Element["" "hole-M10" "hole_M10" "" 287402 433071 -3000 -3000 0 100 ""]
+(
+	Pin[0 0 78740 5000 79528 39736 "" "1" ""]
+	ElementArc [0 0 39736 39736 0 360 1000]
+	ElementArc [0 0 19882 19882 0 360 1000]
+
+	)
 Layer(1 "top")
 (
 )
@@ -805,6 +1019,30 @@ Layer(2 "bottom")
 )
 Layer(3 "comment")
 (
+	Text[137795 74803 0 144 "M2" ""]
+	Text[137795 110236 0 144 "M2.5" ""]
+	Text[141732 149606 0 144 "M3" ""]
+	Text[3937 0 0 166 "grid is mm" ""]
+	Text[141732 224409 0 144 "M5" "selected"]
+	Text[141732 271654 0 144 "M6" ""]
+	Text[141732 322836 0 144 "M8" ""]
+	Text[129921 397638 0 144 "M10" ""]
+	Text[141732 188976 0 144 "M4" ""]
+	Text[149606 35433 0 144 "M1.8" ""]
+	Text[236220 78740 0 144 "M2" ""]
+	Text[236220 114173 0 144 "M2.5" ""]
+	Text[240157 153543 0 144 "M3" ""]
+	Text[240157 228346 0 144 "M5" ""]
+	Text[240157 275591 0 144 "M6" ""]
+	Text[240157 326773 0 144 "M8" ""]
+	Text[228346 401575 0 144 "M10" ""]
+	Text[240157 192913 0 144 "M4" ""]
+	Text[248031 39370 0 144 "M1.8" ""]
+	Text[145669 3937 0 166 "holes for" ""]
+	Text[145669 15748 0 166 "metric screws" ""]
+	Text[43307 11811 0 166 "pure holes" ""]
+	Text[259843 3937 0 166 "plated holes for" ""]
+	Text[259843 15748 0 166 "metric screws" ""]
 )
 Layer(4 "silk")
 (
