@@ -1,5 +1,5 @@
 # release: pcb 1.99z
-# date:    Thu Oct 28 04:27:39 2010
+# date:    Mon Nov  1 13:21:10 2010
 # user:    kmk (kai-martin,,,)
 # host:    bibo.iqo.uni-hannover.de
 
@@ -8,12 +8,12 @@ FileVersion[20100606]
 
 PCB["holes.pcb" 511811 511811]
 
-Grid[19685.039063 0 0 1]
+Grid[3937.007324 0 0 1]
 Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[600 1000 600 600 1500 1000]
-Flags("nameonpcb,uniquename,clearnew,snappin,locknames")
+Flags("nameonpcb,uniquename,clearnew,snappin,onlynames")
 Groups("2,s:1,c:3")
 Styles["Signal,1000,23622,12205,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
@@ -902,15 +902,15 @@ Element["" "hole_M3" "hole_M3" "" 177165 157480 -3000 -3000 0 100 ""]
 
 Element["" "hole-M4" "hole_M4" "" 177165 196850 -3000 -3000 0 100 ""]
 (
-	Pin[0 0 0 34283 32283 16141 "" "1" "hole,selected"]
+	Pin[0 0 0 34283 32283 16141 "" "1" "hole"]
 	ElementArc [0 0 16141 16141 0 360 1000]
 	ElementArc [0 0 8070 8070 0 360 1000]
 
 	)
 
-Element["selected" "hole-M5" "hole_M5" "" 177165 240157 -3000 -3000 0 100 "selected"]
+Element["" "hole-M5" "hole_M5" "" 177165 240157 -3000 -3000 0 100 ""]
 (
-	Pin[0 0 0 42157 40157 20079 "" "1" "hole,selected"]
+	Pin[0 0 0 42157 40157 20079 "" "1" "hole"]
 	ElementArc [0 0 20079 20079 0 360 1000]
 	ElementArc [0 0 10039 10039 0 360 1000]
 
@@ -1023,7 +1023,7 @@ Layer(3 "comment")
 	Text[137795 110236 0 144 "M2.5" ""]
 	Text[141732 149606 0 144 "M3" ""]
 	Text[3937 0 0 166 "grid is mm" ""]
-	Text[141732 224409 0 144 "M5" "selected"]
+	Text[141732 224409 0 144 "M5" ""]
 	Text[141732 271654 0 144 "M6" ""]
 	Text[141732 322836 0 144 "M8" ""]
 	Text[129921 397638 0 144 "M10" ""]
@@ -1038,11 +1038,21 @@ Layer(3 "comment")
 	Text[228346 401575 0 144 "M10" ""]
 	Text[240157 192913 0 144 "M4" ""]
 	Text[248031 39370 0 144 "M1.8" ""]
-	Text[145669 3937 0 166 "holes for" ""]
+	Text[145669 3937 0 166 "pure holes for" ""]
 	Text[145669 15748 0 166 "metric screws" ""]
-	Text[43307 11811 0 166 "pure holes" ""]
+	Text[23622 153543 0 144 "3mm" ""]
 	Text[259843 3937 0 166 "plated holes for" ""]
 	Text[259843 15748 0 166 "metric screws" ""]
+	Text[23622 429134 0 144 "6mm" ""]
+	Text[23622 350394 0 144 "5mm" ""]
+	Text[27559 27559 0 144 "1mm" ""]
+	Text[23622 291339 0 144 "4.5mm" ""]
+	Text[23622 188976 0 144 "3.5mm" ""]
+	Text[23622 114173 0 144 "2.5mm" ""]
+	Text[23622 236220 0 144 "4mm" ""]
+	Text[27559 74803 0 144 "2mm" ""]
+	Text[27559 55118 0 144 "1.9mm" ""]
+	Text[23622 11811 0 166 "pure metric holes" ""]
 )
 Layer(4 "silk")
 (
