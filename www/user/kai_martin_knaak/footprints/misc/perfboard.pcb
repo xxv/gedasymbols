@@ -1,12 +1,12 @@
 # release: pcb 1.99z
-# date:    Sat Jul 31 07:06:50 2010
-# user:    kmk (Kai-Martin,,,)
-# host:    kwak.localdomain
+# date:    Mon Nov  1 19:18:58 2010
+# user:    kmk (kai-martin,,,)
+# host:    bibo.iqo.uni-hannover.de
 
 # To read pcb files, the pcb version (or the git source date) must be >= the file version
 FileVersion[20100606]
 
-PCB["Lochraster.pcb" 1000000 3000000]
+PCB["perfboard.pcb" 1000000 3000000]
 
 Grid[10000.000000 0 0 1]
 Cursor[0 0 0.000000]
