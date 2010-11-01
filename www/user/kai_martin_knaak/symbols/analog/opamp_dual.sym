@@ -20,7 +20,7 @@ slot=1
 T 675 1025 8 10 1 1 0 0 1
 refdes=U?
 T 700 800 8 10 1 1 0 0 1
-value=XXX
+value=TL082
 T 700 600 8 8 1 1 0 0 1
 footprint=SO8
 L 200 800 200 0 3 0 0 0 -1 -1
