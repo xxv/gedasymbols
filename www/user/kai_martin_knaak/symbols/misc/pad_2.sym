@@ -14,7 +14,7 @@ V 100 200 50 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 300 1700 5 8 0 0 0 0 1
 description=measurement pad
 T 300 600 8 10 1 1 0 0 1
-refdes=J?
+refdes=PAD?
 T 300 400 8 10 1 1 0 0 1
 value=Measurement
 T 300 200 8 8 1 1 0 0 1
