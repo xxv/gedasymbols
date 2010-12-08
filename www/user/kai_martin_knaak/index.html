@@ -22,7 +22,7 @@ a simple directory structure and populates it with some config files (gafrc,
 attribs). In addition, it copies a <a href ="doku_template.lyx">documentation template</a>
 in lyx format to the directory.
 
-<h2>Scripted pcb layout export</h2>
+<h2>Scripted pcb Layout print</h2>
 The bash script <a href="layoutdruck.sh">layoutdruck.sh</a> uses actions on the 
 command line of pcb to produce a set of printouts for use in documentation. 
 These include a multi page PDF with top and bottom layout, each with values and with 
@@ -35,7 +35,12 @@ shadow is added to the PNG to make the image even more photo realistic.
 from the command line. This script needs a bug patch of pcb not yet applied to the 
 distributed version of pcb.
 
-<h2>Convenience Scripts</h2>
+<h2>PDF of all schematics in a hierarchy</h2>
+The bash script <a href="schaltplandruck.sh">schaltplandruck.sh</a> uses print.scm 
+from the gnetlist distribution and ps2pdf to create output. It recursively descends
+into subsheets of a hierarchy and collects prints every unique schematic it encounters.
+
+<h2>More Convenience Scripts</h2>
 <ol>  
 <li> <a href="set_pinnumber.awk">: Emits the footprint file given on the 
 command line with the value of all pin and pad names set to the value of their
@@ -44,6 +49,7 @@ number. Requires awk.
 and $HOME/.pcb into the compressed tar file <a href="geda-conf.tgz">. The path 
 to the color file is absolute. It contains the path to the home directory of the
 user, who runs the script.  
+<li>
 </ol>
 
 <h3> Templates
