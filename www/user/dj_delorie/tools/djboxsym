@@ -34,6 +34,10 @@ while (<>) {
 	($opt, $value) = split(' ', $opt, 2);
 	if ($opt eq "vmode") {
 	    $vmode = 1;
+#	    $y{left} = $y{right} = 0;
+	}
+	if ($opt eq "square") {
+	    $square = 1;
 	}
 	if ($opt eq "compact") {
 	    $groupspace = 200;
@@ -81,6 +85,7 @@ while (<>) {
 	if ($side =~ /left|right/) {
 	    $y{$side} += $skip;
 	}
+	next;
     }
 
     # Hidden labels are stored separately, because we don't care how
@@ -103,9 +108,13 @@ while (<>) {
     }
 
     # Regular pins are handled here.
-    if (/^(\d+[A-Za-z]?)\s*(.*)/) {
+    if (/^(\S+)\s*(.*)/) {
 	$space = 1;
 	($pin, $rest) = ($1,$2);
+
+	if ($pin =~ /^\d+$/) {
+	    $pinseq_used[$pin] = 1;
+	}
 
 	if ($saw_pin{$pin}) {
 	    print STDERR "DUPLICATE PIN $pin (was $pinlabel{$pin}, now $rest)\n";
@@ -134,7 +143,7 @@ while (<>) {
 	    $tw = &alignpin((200 + $rlen{$pin}) / 2);
 	    if ($vmode) {
 		$pinx{$pin} = $w{$side};
-		$w{$side} += ($busmode ? 200 : 400);
+		$w{$side} += (($busmode || $compactmode) ? 200 : 400);
 	    } else {
 		$pinx{$pin} = $w{$side} + $tw;
 		$w{$side} += $tw + $tw;
@@ -144,6 +153,8 @@ while (<>) {
     }
 
 }
+
+$pinseq = 1;
 
 $minpin = $labelpin;
 $boxwidth = 0;
@@ -168,7 +179,9 @@ for $p (keys %pinside) {
 	$maxy = $piny{$p};
     }
 }
-$maxy += $groupspace;
+if (! $vmode) {
+    $maxy += $groupspace;
+}
 
 # Now, use the slice widths to compute the minimum width of the box.
 for ($i=0; $i<$maxy; $i+=100) {
@@ -231,6 +244,22 @@ if ($vmode) {
     $maxy += $dy + &alignpin ($maxh{top});
 }
 
+if ($square) {
+    if ($boxwidth < $maxy) {
+	$delta = $maxy - $boxwidth;
+	$delta = &alignpin($delta / 2);
+	$boxwidth = $maxy;
+	for $p (keys %pinside) {
+	    if ($pinside{$p} =~ /top|bottom/) {
+		$pinx{$p} += $delta;
+	    }
+	}
+    }
+    if ($maxy < $boxwidth) {
+	$maxy = $boxwidth;
+    }
+}
+
 # Labels are centered in the box.
 for $lp ($minpin..-1) {
     $pinx{$lp} = &alignpin($boxwidth/2) + 300;
@@ -252,8 +281,17 @@ for $a (reverse @attrs) {
     $ay += 200;
 }
 
+sub pinsort {
+    my ($a, $b) = @_;
+    $a =~ tr/a-z/A-Z/;
+    $b =~ tr/a-z/A-Z/;
+    $a =~ s/(\d+)/sprintf("%06d", $1);/ge;
+    $b =~ s/(\d+)/sprintf("%06d", $1);/ge;
+    return $a cmp $b;
+}
+
 # Now print all the pins.
-for $p (sort {$a<=>$b} keys %pinside) {
+for $p (sort {&pinsort($a,$b)} keys %pinside) {
     next unless $pinside{$p};
     if ($pinside{$p} eq "left") {
 	$pinx{$p} = 300;
@@ -265,7 +303,7 @@ for $p (sort {$a<=>$b} keys %pinside) {
 	print STDERR "MISSING PIN $p\n";
 	$errors++;
     } else {
-	printf STDERR ("%3d  %-6s  %4d %4d  %s\n",
+	printf STDERR ("%3s  %-6s  %4d %4d  %s\n",
 		       $p, $pinside{$p}, $pinx{$p}, $piny{$p}, $pinlabel{$p});
     }
 
@@ -372,7 +410,16 @@ sub drawpin_right {
 sub ntext {
     my ($x, $y, $a, $s) = @_;
     printf("T %d %d 5 8 1 1 0 %s 1\npinnumber=%s\n", $x, $y, $a, $s);
-    printf("T %d %d 5 8 0 1 0 %s 1\npinseq=%s\n", $x, $y, $a, $s);
+    if ($s =~ /^\d+$/) {
+	$my_pinseq = $s;
+    } else {
+	while ($pinseq_used[$pinseq]) {
+	    $pinseq ++;
+	}
+	$pinseq_used[$pinseq] = 1;
+	$my_pinseq = $pinseq;
+    }
+    printf("T %d %d 5 8 0 1 0 %s 1\npinseq=%d\n", $x, $y, $a, $my_pinseq);
 }
 
 sub pltext {
