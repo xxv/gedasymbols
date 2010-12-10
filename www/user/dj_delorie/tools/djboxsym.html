@@ -55,6 +55,14 @@ supported:
 of the symbol will be drawn vertically, rather than the default
 horizontally.
 
+<dt> <tt>--compact</tt>
+
+<dd> Compact mode - reduced spacing between pins
+
+<dt> <tt>--square</tt>
+
+<dd> Square mode - symbol is made wider if needed to keep the box outline square.
+
 </dl>
 
 <h2><tt>[labels]</tt></h2>
@@ -78,15 +86,21 @@ of the form:
 pinnumber [opt-flags] pinlabel
 </pre>
 
+<p>Note that "pinnumber" need not be numeric; common BGA pin numbers
+like <tt>C3</tt> are allowed as well.</p>
+
 <p>The optional flags may be <tt>!</tt> (exclamation point) to include an
 inversion bubble on the pin, and/or <tt>&gt;</tt> (greater than) to
 include an edge-trigger on the pin.</p>
 
-<p>In addition to pin lines, there are two "special" lines.  First,
+<p>In addition to pin lines, there are some "special" lines.  First,
 any blank line between pins causes a gap to be included between those
 pins in the symbol.  Second, a line with only <tt>.bus</tt> on it
 causes the next group of pins (up to the next line) to be spaced
-closer together (bus spacing).
+closer together (bus spacing).  Third, a ".skip N" line skips N grid
+units of space in addition to any other space that would be skipped at
+that point.  For reference, pins are normally spaced 200 grid units
+apart (100 for bus mode).
 
 <p>Pins should be listed in the order you want them to appear on the
 symbol, from top to bottom.</p>
