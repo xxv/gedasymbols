@@ -4,14 +4,14 @@ T 100 1350 8 10 1 1 0 0 1
 device=555
 T 100 1550 8 10 1 1 0 0 1
 refdes=U?
-T 100 3450 5 8 0 0 0 0 1
+T 100 3650 5 8 0 0 0 0 1
 description=555, timer
 T 100 3050 5 8 0 0 0 0 1
 comment=pin compatible models NE555, TS555, TLC555, LMC555, LM555,  SA555, ICM7555
 T 100 2650 5 8 0 0 0 0 1
 symversion=1
-T 100 3250 5 8 0 0 0 0 1
-documentation=http://www.ti.com/lit/gpn/sa555
+T 100 3450 5 8 0 0 0 0 1
+comment=http://www.ti.com/lit/gpn/sa555
 T 100 2450 5 8 0 0 0 0 1
 author=Kai-Martin Knaak, kmk@lilalaser.de
 T 100 2250 5 8 0 0 0 0 1
@@ -110,3 +110,5 @@ pinseq=8
 T 800 1050 5 8 0 1 270 2 1
 pintype=pas
 }
+T 100 3250 5 8 0 0 0 0 1
+documentation=http://home.cogeco.ca/~rpaisley4/LM555.html

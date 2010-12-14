@@ -1,4 +1,4 @@
-v 20070902 1
+v 20100214 2
 T 300 900 8 10 1 1 0 0 1
 refdes=S?
 P 100 200 250 200 1 0 0
@@ -32,9 +32,23 @@ L 370 405 395 355 3 0 0 0 -1 -1
 L 420 405 395 355 3 0 0 0 -1 -1
 L 395 405 395 455 3 0 0 0 -1 -1
 L 395 355 395 286 3 0 0 0 -1 -1
-T 300 1200 5 8 0 0 0 0 1
+T 300 2600 5 8 0 0 0 0 1
 description=generic button
 T 300 500 8 8 1 1 0 0 1
-footprint=XXXfootprint
+footprint=Tyco_FSMJ
 T 300 700 8 10 1 1 0 0 1
-value=XXX
+value=Button Tyco FSMJ
+T 300 2000 5 8 0 0 0 0 1
+footprints=Tyco_FSMJ
+T 300 1800 5 8 0 0 0 0 1
+symversion=1
+T 300 1200 5 8 0 0 0 0 1
+use-license=free, no restrictions
+T 300 1400 5 8 0 0 0 0 1
+dist-license=GNU General Public License, version 3, or later. See http://www.gnu.org/licenses/licenses.html
+T 300 1600 5 8 0 0 0 0 1
+author=Kai-Martin Knaak, kmk@lilalaser.de
+T 300 2200 5 8 0 0 0 0 1
+comment=FSMJ was replaced by 1825910-2
+T 300 2400 5 8 0 0 0 0 1
+documentation=http://www.tycoelectronics.com/catalog/pn/en/1825910-2
