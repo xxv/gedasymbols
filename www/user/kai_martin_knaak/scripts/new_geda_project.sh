@@ -132,6 +132,18 @@ echo \
  --clear-increment-mm 0.500000 \
  --clear-increment-mil 2.000000
 
+# file pattern, git should ignore
+echo \
+"
+# To be ignored by git:
+*~
+*-
+PCB.*.save
+PCB.*.backup
+*.new.pcb
+*.cmd
+" > .gitignore
+
 # Create documentation file in lyx format
 ###############begin LyX template###################################
 echo \
