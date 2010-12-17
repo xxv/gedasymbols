@@ -1,9 +1,5 @@
-# author: Levente Kovacs
-# email: lekovacs@interware.hu
-# dist-license: GPL 2
-# use-license: unlimited
 
-Element["" "Square Quad-side flat pack" "" "LQFP32_7" 117450 98762 10000 13700 0 100 ""]
+Element["" "Square Quad-side flat pack" "" "LQFP32_7" 0 0 10000 13700 0 100 ""]
 (
 	Pad[-4300 2700 -1200 2700 1500 3000 2100 "1" "1" ""]
 	Pad[-4300 5800 -1200 5800 1500 3000 2100 "2" "2" "square"]

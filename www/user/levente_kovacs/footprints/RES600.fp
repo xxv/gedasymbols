@@ -1,7 +1,3 @@
-# author: Levente Kovacs
-# email: lekovacs@interware.hu
-# dist-license: GPL 2
-# use-license: unlimited
 
 Element["" "resistor_axial" "R1" "600" 255000 265000 -2500 -10000 1 100 ""]
 (

@@ -3,7 +3,7 @@
 # dist-license: GPL 2
 # use-license: unlimited
 
-Element["" "" "X1" "" 195000 57500 0 0 0 100 ""]
+Element["" "" "X1" "" 0 0 0 0 0 100 ""]
 (
 	Pin[-10000 0 6000 4000 6000 2800 "" "1" "square,edge2"]
 	Pin[10000 0 6000 4000 6000 2800 "" "2" "edge2"]

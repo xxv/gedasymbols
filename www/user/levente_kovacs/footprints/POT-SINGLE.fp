@@ -1,7 +1,3 @@
-# author: Levente Kovacs
-# email: lekovacs@interware.hu
-# dist-license: GPL 2
-# use-license: unlimited
 
 Element["" "" "P1" "" 272500 275000 -30000 -25000 0 200 ""]
 (

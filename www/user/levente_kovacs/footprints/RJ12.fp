@@ -1,7 +1,3 @@
-# author: Levente Kovacs
-# email: lekovacs@interware.hu
-# dist-license: GPL 2
-# use-license: unlimited
 
 Element["" "" "" "" 297500 147500 0 0 0 100 ""]
 (

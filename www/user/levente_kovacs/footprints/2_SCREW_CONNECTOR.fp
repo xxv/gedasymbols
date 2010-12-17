@@ -1,16 +1,12 @@
-# author: Levente Kovacs
-# email: lekovacs@interware.hu
-# dist-license: GPL 2
-# use-license: unlimited
 
-Element[0x00000000 "" "CONN1" "" 210000 85000 0 -16000 0 100 0x00000000]
+Element["" "" "" "" 0 0 0 0 0 150 ""]
 (
-	Pin[0 0 12000 6000 12000 5200 "" "1" 0x00004101]
-	Pin[20000 0 12000 6000 12000 5200 "" "2" 0x00004001]
-	ElementLine [-10000 -10000 30000 -10000 500]
-	ElementLine [30000 -10000 30000 10000 500]
-	ElementLine [30000 10000 -10000 10000 500]
-	ElementLine [-10000 10000 -10000 -10000 500]
-	ElementLine [-10000 7500 30000 7500 500]
+	Pin[0 0 12000 6000 12800 5200 "" "1" "edge2"]
+	Pin[20000 0 12000 6000 12800 5200 "" "2" "edge2"]
+	ElementLine [-10000 17700 -10000 -17700 1000]
+	ElementLine [30000 -17700 30000 17700 1000]
+	ElementLine [-10000 -17700 30000 -17700 1000]
+	ElementLine [30000 17700 -10000 17700 1000]
+	ElementLine [-10000 13800 30000 13800 1000]
 
 	)
