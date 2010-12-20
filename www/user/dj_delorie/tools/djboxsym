@@ -15,6 +15,7 @@ $busspace = 200;
 $groupspace = 400;
 $skipspace = 800;
 $yinvert = 300;
+$minwidth = 0;
 
 # If set, top and bottom labels are vertical.
 $vmode = 0;
@@ -29,8 +30,9 @@ while (<>) {
     s/[\r\n]+$//;
 
     # options
-    if (/^--(.*)/) {
+    if (/^--(\S*)\s*(.*)/) {
 	$opt = $1;
+	@args = split(' ', $2);
 	($opt, $value) = split(' ', $opt, 2);
 	if ($opt eq "vmode") {
 	    $vmode = 1;
@@ -38,6 +40,9 @@ while (<>) {
 	}
 	if ($opt eq "square") {
 	    $square = 1;
+	}
+	if ($opt eq "minwidth") {
+	    $minwidth = $args[0];
 	}
 	if ($opt eq "compact") {
 	    $groupspace = 200;
@@ -157,7 +162,7 @@ while (<>) {
 $pinseq = 1;
 
 $minpin = $labelpin;
-$boxwidth = 0;
+$boxwidth = $minwidth;
 %bw = ();
 
 # for each horizontal slice of the symbol, keep track of how much
