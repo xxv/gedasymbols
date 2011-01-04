@@ -1,5 +1,5 @@
 
-Element["" "" "U?" "" 5709 5512 0 0 0 100 ""]
+Element["" "LGA-16" "U?" "" 5709 5512 0 0 0 100 ""]
 (
 	Pad[11812 10042 11812 11222 1969 2000 2769 "" "11" "square,edge2"]
 	Pad[7875 10042 7875 11222 1969 2000 2769 "" "12" "square,edge2"]
@@ -27,4 +27,6 @@ Element["" "" "U?" "" 5709 5512 0 0 0 100 ""]
 	Attribute("copyright" "2010 Anton Dubniak")
 	Attribute("use-license" "Unlimited")
 	Attribute("dist-license" "GPL")
-	)
+	Attribute("description" "16-pin Land Grid Array Package (4.4x7.5mm)")
+	Attribute("height" "1mm")
+)

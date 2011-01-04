@@ -45,7 +45,7 @@ LM1117
 T 1275 850 9 8 1 0 0 8 1
 TAB
 T 275 1650 5 10 0 0 0 0 1
-author=Anton Dubniak <twister AT tfsoft.org.ua>
+author=Anton Dubniak <twister@tfsoft.org.ua>
 T 275 2050 5 10 0 0 0 0 1
 numslots=0
 T 275 1450 5 10 0 0 0 0 1

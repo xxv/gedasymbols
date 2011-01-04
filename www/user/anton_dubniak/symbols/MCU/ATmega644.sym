@@ -333,7 +333,7 @@ device=Atmega644PA
 T 400 6900 5 10 0 0 0 0 1
 footprint=TQFP44_10
 T 400 6300 5 10 0 0 0 0 1
-author=Anton Dubniak <twister AT tfsoft.org.ua>
+author=Anton Dubniak <twister@tfsoft.org.ua>
 T 400 7300 5 10 0 0 0 0 1
 documentation=http://www.atmel.com/dyn/resources/prod_documents/doc8272.pdf
 T 400 7500 5 10 0 0 0 0 1
