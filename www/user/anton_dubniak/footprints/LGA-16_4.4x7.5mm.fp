@@ -23,7 +23,7 @@ Element["" "LGA-16" "U?" "" 5709 5512 0 0 0 100 ""]
 	ElementLine [25000 -5118 -3741 -5119 787]
 	ElementLine [-5316 12991 24999 12992 787]
 
-	Attribute("author" "Anton Dubniak <twister AT tfsoft.org.ua>")
+	Attribute("author" "Anton Dubniak <twister@tfsoft.org.ua>")
 	Attribute("copyright" "2010 Anton Dubniak")
 	Attribute("use-license" "Unlimited")
 	Attribute("dist-license" "GPL")

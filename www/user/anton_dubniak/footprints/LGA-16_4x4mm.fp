@@ -23,8 +23,8 @@ Element["" "LGA-16" "U?" "" 15551 2638 -9054 2716 0 100 ""]
 	ElementLine [-13582 -2263 1378 -2263 787]
 	ElementLine [-15157 -689 -13582 -2263 787]
 
-	Attribute("author" "Anton Dubniak <twister AT tfsoft.org.ua>")
-	Attribute("copyright" "2010 Anton Dubniak")
+	Attribute("author" "Anton Dubniak <twister@tfsoft.org.ua>")
+	Attribute("copyright" "2011 Anton Dubniak")
 	Attribute("use-license" "Unlimited")
 	Attribute("dist-license" "GPL")
 	Attribute("description" "16-pin Land Grid Array Package (4x4mm)")
