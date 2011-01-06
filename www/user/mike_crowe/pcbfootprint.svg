@@ -1,0 +1,69 @@
+<?xml version="1.0" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100mm" height="200mm" id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="testfootprint">
+	<text id="refdes" x = "10" y = "25" fill = "navy" font-size = "15"> U?</text>	
+	<defs>
+		<!-- description of pad geometries used in design -->
+		<rect id="sigA" width="0.7mm" height="1.75mm"/>
+		<rect id="mechA" width="1.3mm" height="1.50mm" />
+		<rect id="mechB" width="1.50mm" height="1.50mm" />
+		<rect id="sigB" width="1.00mm" height="1.55mm" />
+		<rect id="sigC" width="1.450mm" height="1.00mm" />
+		<rect id="mechC" width="0.8mm" height="1.40mm" />
+		<rect id="mechD" width="0.8mm" height="1.50mm" />
+	</defs>
+
+	<!-- description of pads -->
+	<g id="copper_layer1"  style="fill:#000000;stroke:#00ff00;stroke-width:0.2">
+		<use xlink:href="#sigA" x="0mm"   y="0.875mm" id="8" />
+		<use xlink:href="#sigA" x="1.1mm" y="0.875mm" id="7" />
+		<use xlink:href="#sigA" x="2.2mm" y="0.875mm" id="6" />
+		<use xlink:href="#sigA" x="3.3mm" y="0.875mm" id="5" />
+		<use xlink:href="#sigA" x="4.4mm" y="0.875mm" id="4" />
+		<use xlink:href="#sigA" x="5.5mm" y="0.875mm" id="3" />
+		<use xlink:href="#sigA" x="6.6mm" y="0.875mm" id="2" />
+		<use xlink:href="#sigA" x="7.7mm" y="0.875mm" id="1" />
+
+		<use xlink:href="#mechA" x="-1.2mm" y="0.75mm" id="9" />
+		<use xlink:href="#mechB" x="10.15mm" y="0.75mm" id="10" />
+		<use xlink:href="#mechC" x="10.5mm" y="-7.5mm" id="11"/>
+		<use xlink:href="#mechD" x="-1.45mm" y="-6.85mm" id="12"/>
+
+		<use xlink:href="#sigB" x="10mm" y="-9.925mm" id="13" />
+		<use xlink:href="#sigC" x="-1.125mm" y="-8.35mm" id="14" />
+	</g>
+	<g id="silk"  style="stroke:#0000ff;stroke-width:0.010in">
+		<line x1="-2.2mm" y1="2.4mm" x2="11.2mm" y2="2.4mm" />
+		<line x1="-2.2mm" y1="2.4mm" x2="-2.2mm" y2="-11mm" />
+		<line x1="-2.2mm" y1="-11mm" x2="11.2mm" y2="-11mm" />
+		<line x1="11.2mm" y1="-11mm" x2="11.2mm" y2="2.4mm" />
+
+		<line x1="-0.4mm" y1="-4mm" x2="8.1mm" y2="-4mm" />
+		<line x1="-0.4mm" y1="-6mm" x2="8.1mm" y2="-6mm" />
+		<line x1="-0.4mm" y1="-4mm" x2="-0.4mm" y2="-6mm" />
+		<line x1="8.1mm" y1="-4mm" x2="8.1mm" y2="-6mm" />
+
+		<line x1="-0.4mm" y1="-4mm" x2="8.1mm" y2="-6mm" />
+		<line x1="8.1mm" y1="-4mm" x2="-0.4mm" y2="-6mm" />
+
+
+		<line x1="2.55mm" y1="-10.2mm" x2="5.05mm" y2="-10.2mm" />
+		<line x1="2.55mm" y1="-8.2mm" x2="5.05mm" y2="-8.2mm" />
+		<line x1="2.55mm" y1="-8.2mm" x2="2.55mm" y2="-10.2mm" />
+		<line x1="5.05mm" y1="-8.2mm" x2="5.05mm" y2="-10.2mm" />
+
+		<line x1="2.55mm" y1="-10.2mm" x2="5.05mm" y2="-8.2mm" />
+		<line x1="5.05mm" y1="-10.2mm" x2="2.55mm" y2="-8.2mm" />
+	</g>
+</svg>	
