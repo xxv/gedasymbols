@@ -12,6 +12,7 @@
    version="1.1"
    inkscape:version="0.47 r22583"
    sodipodi:docname="testfootprint">
+<svg y="15mm" x="10mm">
 	<text id="refdes" x = "10" y = "25" fill = "navy" font-size = "15"> U?</text>	
 	<defs>
 		<!-- description of pad geometries used in design -->
@@ -66,4 +67,5 @@
 		<line x1="2.55mm" y1="-10.2mm" x2="5.05mm" y2="-8.2mm" />
 		<line x1="5.05mm" y1="-10.2mm" x2="2.55mm" y2="-8.2mm" />
 	</g>
+</svg>
 </svg>	
