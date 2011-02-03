@@ -132,18 +132,6 @@ echo \
  --clear-increment-mm 0.500000 \
  --clear-increment-mil 2.000000
 
-# file pattern, git should ignore
-echo \
-"
-# To be ignored by git:
-*~
-*-
-PCB.*.save
-PCB.*.backup
-*.new.pcb
-*.cmd
-" > .gitignore
-
 # Create documentation file in lyx format
 ###############begin LyX template###################################
 echo \
@@ -298,6 +286,30 @@ Meckerliste
 \end_document
 " > $NAME.lyx
 #######################End LyX template################
+
+
+######################initialize a git repository######
+# file pattern, git should ignore
+echo \
+"
+# To be ignored by git:
+*~
+*-
+PCB.*.save
+PCB.*.backup
+*.new.pcb
+*.cmd
+\#*#
+" > .gitignore
+
+git init
+git add .
+git commit -m \'geda project $NAME initialized\'
+git config color.ui true
+sudo git clone --bare . /var/cache/git/$NAME.git
+sudo touch /var/cache/git/$NAME.git/git-daemon-export-ok
+sudo echo "geda project "$NAME > /var/cache/git/description
+###################end git related stuff##############
 
 
 echo "Done with project "$NAME
