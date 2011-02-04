@@ -30,7 +30,7 @@ footprint=0805
 T 4400 5350 5 10 1 1 0 6 1
 refdes=R?
 T 4400 5150 5 10 1 1 0 6 1
-value=XXX
+value=330R
 }
 C 5600 4900 1 90 0 dus.sym
 {
@@ -89,7 +89,7 @@ footprint=0805
 T 4400 2650 5 10 1 1 0 6 1
 refdes=R?
 T 4400 2450 5 10 1 1 0 6 1
-value=XXX
+value=330R
 }
 C 5600 2900 1 90 1 dus.sym
 {
