@@ -7,12 +7,12 @@ pinnumber=1
 T 100 50 5 10 0 1 0 6 1
 pinseq=1
 T 200 250 5 10 1 1 0 3 1
-pinlabel=-15V
+pinlabel=-12V
 T 300 50 5 10 0 1 0 0 1
 pintype=pwr
 }
 T 100 2200 5 8 0 0 0 0 1
-description=15V negative supply voltage
+description=12V negative supply voltage
 T 100 2000 5 8 0 0 0 0 1
 documentation=none
 T 100 1400 5 8 0 0 0 0 1
@@ -20,7 +20,7 @@ author= Kai-Martin Knaak, kmk@lilalaser.de
 T 100 1800 5 8 0 0 0 0 1
 refdes=none
 T 100 800 5 8 0 0 0 0 1
-net=-15V:1
+net=-12V:1
 T 100 1000 5 8 0 0 0 0 1
 use-license=free, no restrictions
 T 100 1600 5 8 0 0 0 0 1
