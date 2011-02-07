@@ -297,6 +297,8 @@ echo \
 *-
 PCB.*.save
 PCB.*.backup
+*.bak
+*.bak?
 *.new.pcb
 *.cmd
 \#*#
