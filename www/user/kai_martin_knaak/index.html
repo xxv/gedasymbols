@@ -4,13 +4,13 @@
 Kai-Martin Knaak <br>
 email: <a href="mailto:kmk@familieknaak.de">kmk@familieknaak.de</a> <br>
 
-<h2>General Remarks</h2>
+<h2>General remarks</h2>
 The catalog of symbols and footprints presented here is self consistent.
 That is, the default footprint attribute of a symbol points
 to one of the footprints given in the footprint section.
 
-<p>Note: All my symbols and footprints are licensed GPL 2 or GPL 3 for distribution,
-and unlimited for use. See
+<p>Note: All my symbols, footprints and scripts are licensed GPL 2 or GPL 3 for 
+distribution, and unlimited for use. See
 <a href="http://www.gnu.org/licenses/gpl.txt">http://www.gnu.org/licenses.gpl.txt</a>
 for the details</p>
 
@@ -22,7 +22,7 @@ a simple directory structure and populates it with some config files (gafrc,
 attribs). In addition, it copies a <a href ="doku_template.lyx">documentation template</a>
 in lyx format to the directory.
 
-<h2>Scripted pcb Layout print</h2>
+<h2>Scripted pcb layout print</h2>
 The bash script <a href="layoutdruck.sh">layoutdruck.sh</a> uses actions on the 
 command line of pcb to produce a set of printouts for use in documentation. 
 These include a multi page PDF with top and bottom layout, each with values and with 
@@ -40,17 +40,20 @@ The bash script <a href="schaltplandruck.sh">schaltplandruck.sh</a> uses print.s
 from the gnetlist distribution and ps2pdf to create output. It recursively descends
 into subsheets of a hierarchy and collects prints every unique schematic it encounters.
 
-<h2>More Convenience Scripts</h2>
+<h2>More convenience scripts</h2>
 <ol>  
-<li> <a href="set_pinnumber.awk">: Emits the footprint file given on the 
+<li> <a href="set_pinnumber.awk">set_pinnumber.awk</a>: Emits the footprint file given on the 
 command line with the value of all pin and pad names set to the value of their
 number. Requires awk.
-<li> <a href="collect_gedaconfs.sh">: Collects the config files in $HOME/.gEDA
-and $HOME/.pcb into the compressed tar file <a href="geda-conf.tgz">. The path 
-to the color file is absolute. It contains the path to the home directory of the
-user, who runs the script.  
-<li> <a href="find-missing-symbols.sh">: Searches all *.sch in $PWD and sub dirs 
-for missing symbols.
+<li> <a href="collect_gedaconfs.sh">collect_gedaconfs.sh</a>: Collects the config files 
+in $HOME/.gEDA and $HOME/.pcb into the compressed tar file <a href="geda-conf.tgz">. 
+The path to the color file is absolute. It contains the path to the home directory 
+of the user, who runs the script.  
+<li> <a href="find-missing-symbols.sh">find-missing-symbols.sh</a>: Searches all 
+*.sch in $PWD and sub dirs for missing symbols.
+<li> <a href="extract_footprints.sh">extract_footprints.sh</a>: Extracts all 
+footprints of a layout and writes them to individual files in the currrent 
+working directory.
 </ol>
 
 <h3> Templates
