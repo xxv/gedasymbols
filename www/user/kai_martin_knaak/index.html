@@ -42,18 +42,21 @@ into subsheets of a hierarchy and collects prints every unique schematic it enco
 
 <h2>More convenience scripts</h2>
 <ol>  
-<li> <a href="set_pinnumber.awk">set_pinnumber.awk</a>: Emits the footprint file given on the 
-command line with the value of all pin and pad names set to the value of their
-number. Requires awk.
-<li> <a href="collect_gedaconfs.sh">collect_gedaconfs.sh</a>: Collects the config files 
-in $HOME/.gEDA and $HOME/.pcb into a compressed tar file. The path to the color 
-file is absolute. It contains the path to the home directory of the user, who 
-runs the script. 
+<li> <a href="set_pinnumber.awk">set_pinnumber.awk</a>: Emits the footprint file 
+given on the command line with the value of all pin and pad names set to the 
+value of their number. Requires awk.
+<li> <a href="set_name_value_description.sh">set_name_value_description.sh</a>:
+Sets name, value and description to the same string. I use this for footprint
+collections in the library.
 <li> <a href="find-missing-symbols.sh">find-missing-symbols.sh</a>: Searches all 
 *.sch in $PWD and sub dirs for missing symbols.
 <li> <a href="extract_footprints.sh">extract_footprints.sh</a>: Extracts all 
 footprints of a layout and writes them to individual files in the currrent 
 working directory.
+<li> <a href="collect_gedaconfs.sh">collect_gedaconfs.sh</a>: Collects the config files 
+in $HOME/.gEDA and $HOME/.pcb into a compressed tar file. The path to the color 
+file is absolute. It contains the path to the home directory of the user, who 
+runs the script. 
 </ol>
 
 <h3> Templates

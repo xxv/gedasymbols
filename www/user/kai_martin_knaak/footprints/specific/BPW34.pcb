@@ -1,12 +1,12 @@
-# release: pcb 20070912
-# date:    Wed Oct 10 21:19:48 2007
+# release: pcb 1.99z
+# date:    Sat Feb 19 03:56:33 2011
 # user:    kmk (Kai-Martin Knaak,,,)
-# host:    bibo.iqo.uni-hannover.de
+# host:    swips.iqo.uni-hannover.de
 
-# To read pcb files, the pcb version (or the cvs source date) must be >= the file version
-FileVersion[20070407]
+# To read pcb files, the pcb version (or the git source date) must be >= the file version
+FileVersion[20100606]
 
-PCB["BPW 34" 196850 98425]
+PCB["BPW 34" 295276 98425]
 
 Grid[1968.503906 0 0 0]
 Cursor[0 0 0.000000]
@@ -14,7 +14,7 @@ PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[600 1000 600 600 1500 1000]
 Flags("nameonpcb,uniquename,clearnew,snappin")
-Groups("1,c:2,s:3:4:5:6:7:8")
+Groups("1,c:2,s:3")
 Styles["Signal,1000,3600,2000,1000:Power,2500,5000,3150,1000:Fat,4000,13000,11811,1000:Skinny,600,2402,1181,600"]
 
 Symbol(' ' 18)
@@ -797,18 +797,18 @@ Symbol('~' 12)
 	SymbolLine(15 35 20 35 8)
 	SymbolLine(20 35 25 30 8)
 )
-Via[50000 39370 5000 2000 0 3150 "1" ""]
-Via[28740 39370 5000 2000 0 3150 "2" ""]
-Via[89370 39370 5000 2000 0 3150 "1" ""]
-Via[68110 39370 5000 2000 0 3150 "2" ""]
-Via[78740 39370 13000 2000 0 11811 "" ""]
-Via[157480 39370 13000 2000 0 11811 "" ""]
+Via[50000 39370 6500 2800 0 3150 "1" ""]
+Via[28740 39370 6500 2800 0 3150 "2" ""]
+Via[89370 39370 6500 2800 0 3150 "1" ""]
+Via[68110 39370 6500 2800 0 3150 "2" ""]
+Via[78740 39370 13000 2800 0 11811 "" ""]
+Via[157480 39370 13000 2800 0 11811 "" ""]
 
-Element["" "" "" "" 157480 59055 0 0 0 100 ""]
+Element["" "" "BPW34S_upsidedown" "" 157480 59055 -7874 9843 0 100 ""]
 (
-	Pin[0 0 13000 2000 13600 11811 "" "1" "edge2"]
-	Pad[-11811 0 -9842 0 4000 5600 9600 "2" "2" "square"]
-	Pad[9843 0 11811 0 4000 2000 6000 "1" "1" "square,edge2"]
+	Pin[0 0 13000 2800 13600 11811 "" "1" "edge2"]
+	Pad[-11811 0 -9842 0 5500 2400 6700 "2" "2" "square"]
+	Pad[9843 0 11811 0 5500 2400 6700 "1" "1" "square,edge2"]
 	ElementLine [0 -1181 0 1181 600]
 	ElementLine [8858 -7874 -8858 -7874 1000]
 	ElementLine [8858 -7874 8858 -2953 1000]
@@ -821,10 +821,10 @@ Element["" "" "" "" 157480 59055 0 0 0 100 ""]
 
 	)
 
-Element["" "" "" "" 118110 59055 0 0 0 100 ""]
+Element["" "" "BPW34S" "" 118110 59055 -9843 9843 0 100 ""]
 (
-	Pad[-11811 0 -9842 0 4000 5600 9600 "2" "2" "square"]
-	Pad[9843 0 11811 0 4000 2000 6000 "1" "1" "square,edge2"]
+	Pad[-11811 0 -9842 0 5500 2800 6700 "2" "2" "square"]
+	Pad[9843 0 11811 0 5500 2400 6700 "1" "1" "square,edge2"]
 	ElementLine [8858 7874 8858 2953 1000]
 	ElementLine [-8858 7874 8858 7874 1000]
 	ElementLine [-8858 2953 -8858 7874 1000]
@@ -843,11 +843,11 @@ Element["" "" "" "" 118110 59055 0 0 0 100 ""]
 
 	)
 
-Element["" "" "" "" 78740 59055 0 0 0 100 ""]
+Element["" "" "BPW34_upsidedown" "" 78740 59055 -11811 9842 0 100 ""]
 (
-	Pin[10630 0 5000 2000 5600 3150 "" "1" "square,edge2"]
-	Pin[-10630 0 5000 2000 5600 3150 "2" "2" "edge2"]
-	Pin[0 0 13000 2000 13600 11811 "" "1" "edge2"]
+	Pin[10630 0 6500 2800 7500 3150 "" "1" "square,edge2"]
+	Pin[-10630 0 6500 2800 7500 3150 "2" "2" "edge2"]
+	Pin[0 0 13000 2800 13600 11811 "" "1" "edge2"]
 	ElementLine [-8858 -7874 -8858 -2953 1000]
 	ElementLine [8858 -7874 -8858 -7874 1000]
 	ElementLine [8858 -7874 8858 -2953 1000]
@@ -860,10 +860,10 @@ Element["" "" "" "" 78740 59055 0 0 0 100 ""]
 
 	)
 
-Element["" "" "" "" 39370 59055 0 0 0 100 ""]
+Element["" "" "BPW34" "" 39370 59055 -9842 9843 0 100 ""]
 (
-	Pin[10630 0 5000 2000 5600 3150 "1" "1" "square,edge2"]
-	Pin[-10630 0 5000 2000 5600 3150 "2" "2" "edge2"]
+	Pin[10630 0 6500 2800 7500 3150 "1" "1" "square,edge2"]
+	Pin[-10630 0 6500 2800 7500 3150 "2" "2" "edge2"]
 	ElementLine [1181 0 -1181 0 600]
 	ElementLine [0 -1181 0 1181 600]
 	ElementLine [-6693 0 -7480 0 1000]
@@ -881,38 +881,27 @@ Element["" "" "" "" 39370 59055 0 0 0 100 ""]
 	ElementLine [8858 -7874 8858 -2953 1000]
 
 	)
-Layer(1 "bottom")
+Layer(1 "top")
 (
-	Line[108268 39370 106299 39370 4000 5600 "clearline"]
-	Line[127953 39370 129921 39370 4000 2000 "clearline"]
-	Line[147638 39370 145669 39370 4000 5600 "clearline"]
-	Line[167323 39370 169291 39370 4000 2000 "clearline"]
+	Line[108268 39370 106299 39370 5500 3600 "clearline"]
+	Line[127953 39370 129921 39370 5500 2800 "clearline"]
+	Line[147638 39370 145669 39370 5500 2800 "clearline"]
+	Line[167323 39370 169291 39370 5500 2800 "clearline"]
+	Polygon("clearpoly")
+	(
+		[7874 5906] [187008 5906] [187008 88583] [7874 88583] 
+	)
 )
-Layer(2 "bott.-poly.")
-(
-)
-Layer(3 "bott.-GND")
-(
-)
-Layer(4 "top")
+Layer(2 "bottom")
 (
 )
-Layer(5 "top-polyg.")
+Layer(3 "comment")
 (
 )
-Layer(6 "top-GND")
+Layer(4 "silk")
 (
 )
-Layer(7 "unused")
-(
-)
-Layer(8 "lineout")
-(
-)
-Layer(9 "silk")
-(
-)
-Layer(10 "silk")
+Layer(5 "silk")
 (
 	Line[48228 31496 48228 36417 1000 2000 "clearline"]
 	Line[48228 31496 30512 31496 1000 2000 "clearline"]
@@ -964,8 +953,8 @@ Layer(10 "silk")
 	Line[157480 38189 157480 40551 600 1200 "clearline"]
 	Text[29528 23622 0 100 "BPW34" ""]
 	Text[68898 17717 0 100 "BPW34" ""]
-	Text[68898 23622 0 100 "von unten" ""]
+	Text[68898 23622 0 100 "from below" ""]
 	Text[108268 23622 0 100 "BPW34S" ""]
 	Text[147638 17717 0 100 "BPW34S" ""]
-	Text[147638 23622 0 100 "von unten" ""]
+	Text[147638 23622 0 100 "from below" ""]
 )
