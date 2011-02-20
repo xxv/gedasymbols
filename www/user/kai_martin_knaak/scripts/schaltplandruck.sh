@@ -5,8 +5,8 @@
 if [ $# -eq 0 ]    # If Script invoked with no command-line args
 then
   echo "Collects all sub sheets of a hierarchical design and prints them to"
-  echo "multi page PDF. Uses awk, psmerge, ps2pdf and evince"
-  echo "Usage: `basename $0` [-V] foobar.sch"
+  echo "multi page PDF. Uses awk, psmerge, ps2pdf and optionally evince"
+  echo "Usage: `basename $0` [-p][-V] foobar.sch"
   echo "-V     launch viewer on produced output"
   exit
 fi  
@@ -21,14 +21,20 @@ do
 done
 shift $(($OPTIND - 1))   # go to next argument
 
-###########################################################################
+###########
+# Some shell variables
 
 SCHFILE=`basename $1`
-OUTPDF=`basename $SCHFILE .sch`"_schematic.pdf"
 SCHEMDIR=`dirname $1`
 WORKINGDIR=$PWD
 PRINTSCM="/usr/local/share/gEDA/scheme/print.scm"
 PREFIX="/tmp/out_schaltplandruck"
+
+OUTPDF=`basename $SCHFILE .sch`"_schematic_"`date +%F`".pdf"
+
+
+##########
+# This function is called for every subsheet 
 
 function subsheet {
   # Check for source attributes sort and drop duplicates
@@ -42,6 +48,9 @@ function subsheet {
     done
 }
 
+
+###########
+# main block
 
 cd $SCHEMDIR
 
