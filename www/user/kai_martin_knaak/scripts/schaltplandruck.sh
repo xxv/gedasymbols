@@ -6,7 +6,7 @@ if [ $# -eq 0 ]    # If Script invoked with no command-line args
 then
   echo "Collects all sub sheets of a hierarchical design and prints them to"
   echo "multi page PDF. Uses awk, psmerge, ps2pdf and evince"
-  echo "Usage: `basename $0` [-p][-V] foobar.sch"
+  echo "Usage: `basename $0` [-V] foobar.sch"
   echo "-V     launch viewer on produced output"
   exit
 fi  
