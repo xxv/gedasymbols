@@ -1,8 +1,8 @@
-v 20090328 2
+v 20110116 2
 T 100 1800 5 8 0 0 0 0 1
 device=INPUT
 T 100 1600 5 8 0 0 0 0 1
-description=signal that enter the sub sheet
+description=signal that enters a sub sheet
 T 100 1400 5 8 0 0 0 0 1
 author=K-M. Knaak, kmk@lilalaser.de
 T 100 1200 5 8 0 0 0 0 1
@@ -10,7 +10,7 @@ dist-license=GPL 3, for details see http://www.gnu.org/licenses/gpl-3.0.txt
 T 100 1000 5 8 0 0 0 0 1
 use-license=free, no restrictions
 T 100 800 5 8 0 0 0 0 1
-numslots=0
+footprint=none
 T 100 400 5 8 0 0 0 0 1
 value=in
 T 650 100 8 10 1 1 0 7 1
@@ -25,3 +25,5 @@ pinseq=1
 L 1000 100 700 200 6 0 0 0 -1 -1
 L 1000 100 700 0 6 0 0 0 -1 -1
 L 700 0 700 200 3 0 0 0 -1 -1
+T 100 600 5 8 0 0 0 0 1
+numslots=0

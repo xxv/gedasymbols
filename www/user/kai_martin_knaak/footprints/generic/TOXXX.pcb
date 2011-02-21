@@ -1,7 +1,4 @@
 # release: pcb 1.99z
-# date:    Sat Feb 19 06:26:00 2011
-# user:    kmk (Kai-Martin Knaak,,,)
-# host:    swips.iqo.uni-hannover.de
 
 # To read pcb files, the pcb version (or the git source date) must be >= the file version
 FileVersion[20100606]
@@ -1433,6 +1430,30 @@ Element["" "TO252" "TO252" "TO252" 153543 1259842 -9842 -9842 0 100 ""]
 	ElementLine [-12795 -20669 -12795 12796 600]
 
 	)
+
+Element["" "DPAK_GDS" "DPAK_GDS" "DPAK_GDS" 153543 1385826 -9842 -9842 0 100 ""]
+(
+	Pin[-7874 0 6000 2362 0 3500 "D" "D" "square"]
+	Pin[-7874 -7874 6000 2362 0 3500 "D" "D" "square"]
+	Pin[0 -7874 6000 2362 0 3500 "D" "D" "square"]
+	Pin[0 0 6000 2362 0 3500 "D" "D" "square"]
+	Pin[7874 -7874 6000 2362 0 3500 "D" "D" "square"]
+	Pin[7874 0 6000 2362 0 3500 "D" "D" "square"]
+	Pin[-7874 -15748 6000 2362 0 3500 "D" "D" "square"]
+	Pin[0 -15748 6000 2362 0 3500 "D" "D" "square"]
+	Pin[7874 -15748 6000 2362 0 3500 "D" "D" "square"]
+	Pad[0 -7874 0 0 23622 6362 25984 "D" "D" "square"]
+	Pad[9055 18111 9055 25592 6299 3962 7461 "S" "S" "square,edge2"]
+	Pad[-9055 18111 -9055 25592 6299 3962 7461 "G" "G" "square,edge2"]
+	Pad[0 -7874 0 0 23622 3962 0 "D" "D" "onsolder,square"]
+	ElementLine [8858 12796 8858 23623 600]
+	ElementLine [-8858 12796 -8858 23623 600]
+	ElementLine [12795 -20669 -12795 -20669 600]
+	ElementLine [12795 12796 12795 -20669 600]
+	ElementLine [-12795 12796 12795 12796 600]
+	ElementLine [-12795 -20669 -12795 12796 600]
+
+	)
 Layer(1 "bottom")
 (
 	Line[98425 669291 98425 704724 65000 5200 "clearline"]
@@ -1506,6 +1527,7 @@ Layer(3 "comment")
 	Text[281537 1161110 0 232 "TO220_block.fp" ""]
 	Text[194881 1251969 0 232 "TO252.fp" ""]
 	Text[196849 1307087 0 232 "DPAK.fp" ""]
+	Text[196849 1377953 0 232 "DPAK_GDS.fp" ""]
 )
 Layer(4 "bott.-GND")
 (
