@@ -1,4 +1,7 @@
 # release: pcb 1.99z
+# date:    Tue Feb 22 20:15:07 2011
+# user:    kmk (Kai-Martin Knaak,,,)
+# host:    swips.iqo.uni-hannover.de
 
 # To read pcb files, the pcb version (or the git source date) must be >= the file version
 FileVersion[20100606]
