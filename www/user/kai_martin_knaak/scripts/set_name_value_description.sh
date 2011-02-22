@@ -18,7 +18,7 @@ awk -v filename="$1" '
       $4 = fp_name                        # set description,
       $3 = fp_name                        # set name
       $2 = fp_name                        # set value
-      printf ("normalized %s\n", fp_name) 
+      printf ("normalized name/value/description of %s\n", fp_name) 
    }
    print $0 > "/tmp/"filename      # print to tmp file
 }
@@ -26,3 +26,5 @@ awk -v filename="$1" '
 
 mv $1 /tmp/$1.backup
 mv /tmp/$1 $1
+echo "moved the original "$1" to /tmp/"$1".backup"
+
