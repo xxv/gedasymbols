@@ -56,7 +56,7 @@ echo \
 (reset-source-library)     ; don't use system schematics
 
 ; Allow to source symbols from the current working directory
-(define current-working-directory (getenv \"PWD\"))
+(define current-working-directory \".\")
 (component-library current-working-directory)
 (source-library  current-working-directory)
 
