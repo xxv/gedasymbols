@@ -1,19 +1,24 @@
-# release: pcb 1.99z
-# date:    Fri Feb 18 22:16:43 2011
-# user:    kmk (Kai-Martin Knaak,,,)
-# host:    swips.iqo.uni-hannover.de
+# release: pcb 1.99z+grids
 
 # To read pcb files, the pcb version (or the git source date) must be >= the file version
-FileVersion[20100606]
+FileVersion[20110221]
 
 PCB["SUBD" 787402 1574803]
 
-Grid[3937.008057 0 0 0]
+GridMode[0 0 2 1 1]
+GridSpacing0[3937.008057 2]
+GridSpacing1[1000.000000 2]
+GridSpacing2[2500.000000 2]
+GridSpacing3[5000.000000 2]
+GridSpacing4[10000.000000 2]
+GridSpacing5[393.700787 2]
+GridSpacing6[787.401575 2]
+GridSpacing7[1968.503937 2]
 Cursor[0 1574803 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[600 400 800 599 1500 1000]
-Flags("shownumber,rubberband,nameonpcb,clearnew,snappin")
+Flags("shownumber,rubberband,nameonpcb,clearnew,snappin,thindrawpoly")
 Groups("2,s:1,c:3")
 Styles["Signal,1500,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
@@ -1791,8 +1796,6 @@ Layer(5 "silk")
 	Line[479432 853369 479432 857869 1500 2000 "clearline"]
 	Line[374016 848544 374016 851615 600 1200 "clearline"]
 	Line[372205 850315 375748 850315 600 1200 "clearline"]
-	Text[220472 145669 0 200 "" ""]
-	Text[220472 381890 0 200 "" ""]
 	Text[204725 7874 0 243 "SUBD9_female_lay, SUBD9_male_vert und SUBD9_female_vert" ""]
 	Text[204725 27559 0 243 "sind noch nicht exakt." ""]
 	Text[440945 55118 0 243 "Nach Datenblatt zu Reichelt \"D-SUB ST 09EU\"" ""]

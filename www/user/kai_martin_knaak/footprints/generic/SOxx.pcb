@@ -1,21 +1,26 @@
-# release: pcb 1.99z
-# date:    Tue Feb 22 20:15:07 2011
-# user:    kmk (Kai-Martin Knaak,,,)
-# host:    swips.iqo.uni-hannover.de
+# release: pcb 1.99z+grids
 
 # To read pcb files, the pcb version (or the git source date) must be >= the file version
-FileVersion[20100606]
+FileVersion[20110221]
 
 PCB["SOxx.pcb" 236220 984252]
 
-Grid[3937.008057 0 0 1]
+GridMode[0 0 5 1 1]
+GridSpacing0[78.740158 2]
+GridSpacing1[196.850388 2]
+GridSpacing2[393.700775 2]
+GridSpacing3[787.401550 2]
+GridSpacing4[1968.503906 2]
+GridSpacing5[3937.007813 2]
+GridSpacing6[19.685040 2]
+GridSpacing7[39.370079 2]
 Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[600 1000 600 600 1500 1000]
-Flags("shownumber,nameonpcb,uniquename,clearnew,snappin")
+Flags("shownumber,nameonpcb,clearnew,snappin")
 Groups("1,c:2,s:3")
-Styles["Signal,3937,3937,1969,1000:Power,11811,6000,3500,1000:Fat,15748,6000,3500,1000:Skinny,984,2402,1181,600"]
+Styles["Signal,3937,3937,1969,1000:Power,11811,6000,3500,1000:Fat,15748,6000,3500,1000:Skinny,1181,2402,1181,600"]
 
 Symbol(' ' 18)
 (
@@ -1099,6 +1104,21 @@ Element["" "LM317_SO8" "LM317_SO8" "LM317_SO8" 78740 82677 3937 -6891 3 100 ""]
 	ElementLine [-4900 8700 -4900 -5100 1000]
 
 	)
+
+Element["" "SOT886" "SOT886" "SOT886" 66929 685039 -3937 3937 0 100 ""]
+(
+	Pad[1004 -1968 1674 -1968 1181 1600 1981 "1" "1" "square,edge2"]
+	Pad[1004 0 1674 0 1181 1600 1981 "2" "2" "square,edge2"]
+	Pad[1004 1969 1674 1969 1181 1600 1981 "3" "3" "square,edge2"]
+	Pad[-1673 1969 -1004 1969 1181 1600 1981 "4" "4" "square"]
+	Pad[-1673 0 -1004 0 1181 1600 1981 "5" "5" "square"]
+	Pad[-1673 -1968 -1004 -1968 1181 1600 1981 "6" "6" "square"]
+	ElementLine [-2854 -3150 2855 -3150 787]
+	ElementLine [-2854 -3150 -2854 3149 787]
+	ElementLine [-2854 3149 2855 3149 787]
+	ElementLine [2855 -3150 2855 3149 787]
+
+	)
 Layer(1 "top")
 (
 	Line[67500 565000 73800 565000 2400 3000 ""]
@@ -1197,6 +1217,12 @@ Layer(1 "top")
 	Line[43700 120867 43700 121654 4724 2755 ""]
 	Line[36614 111023 42125 111023 5511 2755 ""]
 	Line[35039 120867 35039 121654 4724 2755 ""]
+	Line[48248 683071 48918 683071 1181 1200 "clearline"]
+	Line[48248 685039 48918 685039 1181 1200 "clearline"]
+	Line[48248 687008 48918 687008 1181 1200 "clearline"]
+	Line[45571 687008 46240 687008 1181 1200 "clearline"]
+	Line[45571 685039 46240 685039 1181 1200 "clearline"]
+	Line[45571 683071 46240 683071 1181 1200 "clearline"]
 	Polygon("clearpoly")
 	(
 		[34239 481083] [40144 481083] [40144 483445] [34239 483445] 
@@ -1236,6 +1262,31 @@ Layer(3 "comment")
 	Text[110236 129922 0 288 "SOT23_SDG.fp" ""]
 	Text[110236 108268 0 288 "SOT23.fp" ""]
 	Text[110236 68898 0 288 "LM317_SO8.fp" ""]
+	Text[112781 672423 0 288 "SOT886.fp" ""]
+	Polygon("clearpoly")
+	(
+		[49115 682676] [49115 683463] [47737 683463] [47737 682676] 
+	)
+	Polygon("clearpoly")
+	(
+		[49115 684645] [49115 685432] [47737 685432] [47737 684645] 
+	)
+	Polygon("clearpoly")
+	(
+		[49115 686613] [49115 687400] [47737 687400] [47737 686613] 
+	)
+	Polygon("clearpoly")
+	(
+		[46752 682676] [46752 683463] [45374 683463] [45374 682676] 
+	)
+	Polygon("clearpoly")
+	(
+		[46752 684645] [46752 685432] [45374 685432] [45374 684645] 
+	)
+	Polygon("clearpoly")
+	(
+		[46752 686613] [46752 687400] [45374 687400] [45374 686613] 
+	)
 )
 Layer(4 "none")
 (
@@ -1317,4 +1368,8 @@ Layer(5 "silk")
 	Line[30904 107481 47833 107481 787 0 ""]
 	Line[47834 107481 47834 124804 787 0 ""]
 	Line[30905 107481 30905 124804 787 0 ""]
+	Line[50099 681889 50099 688188 787 1200 "clearline"]
+	Line[44390 688188 50099 688188 787 1200 "clearline"]
+	Line[44390 681889 44390 688188 787 1200 "clearline"]
+	Line[44390 681889 50099 681889 787 1200 "clearline"]
 )
