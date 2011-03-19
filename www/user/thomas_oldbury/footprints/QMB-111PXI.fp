@@ -1,3 +1,6 @@
+# piezo/transducer type QMB-111PXI
+# dist LGPL, use unlimited
+
 Element["" "Buzzer/beeper" "" "QMB-111PXI" 12500 22500 30000 -20000 0 100 ""]
 (
 	Pin[-2700 0 6000 3000 6600 3000 "1" "1" "square"]

@@ -1,12 +1,15 @@
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-
+# NOTE: Do NOT use - this has incorrect clearances for mask or copper
+# Instead use TL1240-2.fp
+# 
 # TL1240 illuminated tactile switch footprint. 
 # Also compatible with most other 6mmx6mm switches without illumination.
 # Works in tandem with TL1240-pushbutton-with-led-1.sym.
 # Author: Thomas Oldbury
 # Use: Unlimited
 # Distribution: CC-BY 3.0
+
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
 
 # All dimensions in mils!
 Element[0x00000000 "TL1240-1" "" "" 0 0 0 0 0 100 0x00]

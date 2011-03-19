@@ -1,3 +1,4 @@
+# LGA with 28 pins for LSM303DLH (LSM303)
 # Created by make-lga.py (by Tom Oldbury)
 # Dist: LGPL, Use: Unlimited
 Element[0x00 "QFN like LGA, 28 pads" "" "" 10 10 0 0 0 100 0x00]
