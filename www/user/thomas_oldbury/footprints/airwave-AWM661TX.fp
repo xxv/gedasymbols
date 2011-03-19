@@ -1,7 +1,6 @@
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
+# Airwave AWM661TX video transmitter module
+# LGPL dist, use unlimited
 
-# All dimensions in mils!
 Element[0x00000000 "AWM661TX module" "" "AWM661TX" 0 0 0 0 0 100 ""]
 (
     # Note: Coordinates in y are inverted. All dimensions in 1/100th mil.
