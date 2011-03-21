@@ -36,8 +36,9 @@ my $format;			# output format
 my $gs_format;			# GS output type
 my $output;			# output, defaults to STDOUT
 my $antialias = 4;              # antialiasing
-my $width;			# desired widht
+my $width;			# desired width
 my $height;			# desired height
+my $minarea = 0;		# minimum area
 
 my ($verbose,$trace,$test,$debug) = (0,0,0,0);
 handle_options ();
@@ -118,6 +119,15 @@ foreach $eps_file ( @ARGV ) {
 		# Normal PostScript resolution is 72.
 		$width  *= $res/72 * $xscale;
 		$height *= $res/72 * $yscale;
+		# Round up.
+		$width  = int ($width + 0.5) + 1;
+		$height = int ($height + 0.5) + 1;
+	    }
+	    if ($width * $height < $minarea) {
+		my($ma_scale) = $minarea / ($width * $height);
+		$width *= $ma_scale;
+		$height *= $ma_scale;
+		$res *= $ma_scale;
 		# Round up.
 		$width  = int ($width + 0.5) + 1;
 		$height = int ($height + 0.5) + 1;
@@ -262,6 +272,7 @@ sub handle_options {
 			     'scale=f'     => \$scale,
 			     'width=i'	   => \$width,
 			     'height=i'	   => \$height,
+			     'minarea=i'   => \$minarea,
 			     'output=s'    => \$output,
 			     'png'	   => \&set_out_type,
 			     'pngmono'	   => \&set_out_type,
@@ -306,6 +317,7 @@ Usage: $0 [options] file [...]
     -[no]mono		monochrome/colour rendition
     -width XXX		desired with
     -height XXX		desired height
+    -minarea XXX	minimum width*height
     -resolution XXX	resolution (default = $res)
     -scale XXX		scaling factor
     -antialias XX	antialias factor (must be 0, 1, 2, 4 or 8; default: 4)

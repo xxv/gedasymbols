@@ -180,7 +180,7 @@ sub make_png {
 	    &dump_pcb();
 	    exit 0;
 	}
-	if (system "./eps2png -o $png -resolution 100 $eps") {
+	if (system "./eps2png -o $png -resolution 100 -minarea 2000 $eps") {
 	    print "Content-type: text/plain\n\n";
 	    print "EPS conversion failed\n";
 	    print $msg;
