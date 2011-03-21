@@ -124,7 +124,7 @@ foreach $eps_file ( @ARGV ) {
 		$height = int ($height + 0.5) + 1;
 	    }
 	    if ($width * $height < $minarea) {
-		my($ma_scale) = $minarea / ($width * $height);
+		my($ma_scale) = sqrt ($minarea / ($width * $height));
 		$width *= $ma_scale;
 		$height *= $ma_scale;
 		$res *= $ma_scale;
