@@ -129,12 +129,17 @@ while (<>) {
 	$maxpin = $pin if $maxpin < $pin;
 
 	$pinside{$pin} = $side;
+	$pintype{$pin} = "pas";
 	next if $side eq "nc";
-	if ($rest =~ /^([!>]+) (.*)/) {
+	if ($rest =~ /^([!>iop]+) (.*)/) {
 	    $flags = $1;
 	    $pinlabel{$pin} = $2;
 	    $bubble{$pin} = 1 if $flags =~ /!/;
 	    $edge{$pin} = 1 if $flags =~ />/;
+	    $pintype{$pin} = "in" if $flags =~ /i/;
+	    $pintype{$pin} = "out" if $flags =~ /o/;
+	    $pintype{$pin} = "pwr" if $flags =~ /p/;
+	    $pintype{$pin} = "inout" if $flags =~ /io/;
 	} else {
 	    $pinlabel{$pin} = $rest;
 	}
@@ -333,6 +338,7 @@ sub drawpin_top {
 	&pltext($pinx{$pin}, $y-50, 5, $pinlabel{$pin});
     }
     &ntext($pinx{$pin}+50, $y+50, 0, $pin);
+    &pttext($pinx{$pin} -100, $piny{$pin} + 50, 6, $pintype{$pin});
     print "}\n";
 }
 
@@ -347,6 +353,7 @@ sub drawpin_bottom {
 	&pltext($pinx{$pin}, 350, 3, $pinlabel{$pin});
     }
     &ntext($pinx{$pin}+50, 250, 2, $pin);
+    &pttext($pinx{$pin} -100, $piny{$pin} + 50, 6, $pintype{$pin});
     print "}\n";
 }
 
@@ -383,6 +390,7 @@ sub drawpin_left {
     print "{\n";
     &pltext($pinx{$pin} + $px, $piny{$pin}, 1, $pinlabel{$pin});
     &ntext($pinx{$pin} -100, $piny{$pin} + 50, 6, $pin);
+    &pttext($pinx{$pin} -100, $piny{$pin} + 50, 6, $pintype{$pin});
     print "}\n";
 }
 
@@ -409,6 +417,7 @@ sub drawpin_right {
     print "{\n";
     &pltext($pinx{$pin} - $px, $piny{$pin}, 7, $pinlabel{$pin});
     &ntext($pinx{$pin} +100, $piny{$pin} + 50, 0, $pin);
+    &pttext($pinx{$pin} -100, $piny{$pin} + 50, 6, $pintype{$pin});
     print "}\n";
 }
 
@@ -427,6 +436,11 @@ sub ntext {
     printf("T %d %d 5 8 0 1 0 %s 1\npinseq=%d\n", $x, $y, $a, $my_pinseq);
 }
 
+sub pttext {
+    my ($x, $y, $a, $s) = @_;
+    printf("T %d %d 9 10 0 1 0 %s 1\npintype=%s\n", $x, $y, $a, $s);
+}
+
 sub pltext {
     my ($x, $y, $a, $s) = @_;
     $s = "pinlabel=$s" unless $s =~ /=/;
@@ -441,7 +455,7 @@ sub pvltext {
 
 sub ltext {
     my ($x, $y, $a, $s) = @_;
-    printf("T %d %d 9 10 1 1 0 %s 1\n%s\n", $x, $y, $a, $s);
+    printf("T %d %d 9 10 1 0 0 %s 1\n%s\n", $x, $y, $a, $s);
 }
 
 sub textlen {
