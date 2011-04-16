@@ -455,7 +455,7 @@ sub pvltext {
 
 sub ltext {
     my ($x, $y, $a, $s) = @_;
-    printf("T %d %d 9 10 1 0 0 %s 1\n%s\n", $x, $y, $a, $s);
+    printf("T %d %d 9 10 1 1 0 %s 1\n%s\n", $x, $y, $a, $s);
 }
 
 sub textlen {
