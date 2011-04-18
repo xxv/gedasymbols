@@ -31,7 +31,7 @@ PRINTSCM="/usr/local/share/gEDA/scheme/print.scm"
 PREFIX="/tmp/out_schaltplandruck"
 
 OUTPDF=`basename $SCHFILE .sch`"_schematic_"`date +%F`".pdf"
-
+OUTPS=`basename $SCHFILE .sch`"_schematic_"`date +%F`".ps"
 
 ##########
 # This function is called for every subsheet 
@@ -41,9 +41,12 @@ function subsheet {
   SUBSCH=`awk 'BEGIN { FS = "=" } ; $1 == "source" { print $2 }' $1 | sort -u`
   for i in $SUBSCH
     do
-      echo "found sub sheet: "$i
+      PAGE=`awk 'BEGIN { FS = "=" } ; $1 == "page" { print $2 }' $i`
+      echo "found sub sheet: "$i" with page number "$PAGE
+      # syntesize a name with padded pagenumber for correct sorting downstream
+      OUT=$PREFIX"_"`printf "%03d" $PAGE`"_"$i".ps"
       # print schematic using the scheme script provided by gnetlist
-      gschem -p -o $PREFIX_$i".ps" -s $PRINTSCM $i
+      gschem -p -o $OUT -s $PRINTSCM $i
       subsheet $i
     done
 }
@@ -55,16 +58,18 @@ function subsheet {
 cd $SCHEMDIR
 
 # print the top schematic
-gschem -p -o $PREFIX.ps -s $PRINTSCM $SCHFILE
+gschem -p -o $PREFIX"_001.ps" -s $PRINTSCM $SCHFILE
 
 # recursively descend into subsheets
 subsheet $SCHFILE
-
+ 
 ## Combine to a single document
-psmerge -o$PREFIX_merged.ps $PREFIX.ps $PREFIX_*.ps
+psmerge -o$PREFIX"merged.ps" $PREFIX"_"*".ps"
+echo $PREFIX"merged.ps nach "$OUTPS" kopieren" 
+cp $PREFIX"merged.ps" $WORKINGDIR/$OUTPS
 
 ## Convert to PDF
-ps2pdf $PREFIX_merged.ps $WORKINGDIR/$OUTPDF
+ps2pdf $PREFIX"merged.ps" $WORKINGDIR/$OUTPDF
 
 ## optionally start viewer
 if [ "$STARTVIEWER" = "1" ]
@@ -73,5 +78,5 @@ then
 fi
 
 # remove temporary files
-rm $PREFIX*.ps
-
+rm $PREFIX"_"*".ps"
+rm /tmp/gschem.save*.sch
