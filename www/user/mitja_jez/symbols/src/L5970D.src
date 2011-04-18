@@ -1,0 +1,22 @@
+[labels]
+refdes=U?
+L5970D
+! author=Mitja Jež <mitja.jez@zeitgeist.si>
+! uselicense=unlimited
+! distlicense=GPL 3
+! device=L5970D
+! description=UP TO 1A STEP DOWN SWITCHING REGULATOR
+! documentation=http://www.farnell.com/datasheets/91949.pdf
+! footprint=SO-8
+
+[left]
+6 VREF
+8 VCC
+2 SYNC
+4 COMP
+[right]
+1 OUT
+5 FB
+[bottom]
+3 INH
+7 GND

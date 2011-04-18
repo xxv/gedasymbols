@@ -1,0 +1,26 @@
+[labels]
+refdes=U?
+SN75176A
+! author=Mitja Jež <mitja.jez@zeitgeist.si>
+! uselicense=unlimited
+! distlicense=GPL
+! device=SN75176A
+! description=Differential bus transceiver
+! documentation=http://www.farnell.com/datasheets/74294.pdf
+! footprint=SO-8
+[left]
+3 DE
+2 ! RE
+
+4 D
+1 R
+
+[bottom]
+5 GND
+
+[right]
+6 A
+7 B
+
+[top]
+8 VCC

@@ -1,0 +1,45 @@
+[labels]
+refdes=U?
+drv8811
+! author=Mitja Jež <mitja.jez@zeitgeist.si>
+! uselicense=unlimited
+! distlicense=GPL 3
+! device=drv8811
+! description=Stepper motor controller ic
+! documentation=http://focus.ti.com/lit/ds/symlink/drv8811.pdf
+! footprint=HTSSOP-28
+! HTSSOP-65P-810L1-28N-420LT-770WT__TI_PowerPAD_Package
+[left]
+10 VCC
+20 VGD
+8 VREF
+26 ENABLEn
+27 SLEEPn
+19 STEP
+3 DIR
+13 USM0
+12 USM1
+17 RESETn
+16 SRn
+2 HOMEn
+5 DECAY
+6 RCA
+9 RCB
+
+[bottom]
+7 GND
+21 GND
+
+[right]
+23 CP1
+24 CP2
+22 VCP
+28 VMA
+4 AOUT1
+25 AOUT2
+1 ISENA
+15 VMB
+11 BOUT1
+18 BOUT2
+14 ISENB
+
