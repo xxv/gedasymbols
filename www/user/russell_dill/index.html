@@ -6,13 +6,25 @@ email: <a href="mailto:Russ.Dill@asu.edu">Russ.Dill@asu.edu</a>
 
 <h2>Tools</h2>
 
-ATLC tools:
+<a href="http://atlc.sourceforge.net/">atlc</a> (2-D Field Solver) tools:
 
 <ul>
-<li> <a href="create_bmp_for_pcb.sh">Generate BMP for common PCB formats.</a>
+<li><a href="tools/create_bmp_for_pcb.sh">Generate BMP for common PCB formats.</a>
+<li><a href="tools/math.inc">Include file for above.</a>
 </ul>
 
 Currently under development, inspired by mdtlc, but with a desire for
 scriptibility.
+
+<h2>Symbols</h2>
+
+<ul>
+<li><a href="symbols/gaussian.sym">Symbol for gaussian filter</a>
+<li><a href="symbols/gaussian.sch">Associated SPICE subcircuit></a>
+<ul>
+
+Gaussian edges are a good approximation of digital signals if a model is not
+available, see <a href="http://sigcon.com/Pubs/edn/MakingEdges.htm">Making Gaussian Edges</a>
+from Dr. Howard Johnson.
 
 <!--#include virtual="/trailer.html" -->
