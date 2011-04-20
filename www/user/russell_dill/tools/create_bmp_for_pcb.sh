@@ -450,7 +450,7 @@ for var in $scale_vars; do
 	fi
 done
 
-letf "pixel_size = round(1e6 / ${factor},12)"
+letf "pixel_size = round(1e6 / ${factor},2)"
 letf "area_mm = round($area * 1e6 * 1e6,2)"
 rho="1.723898e-8"
 delta_rho="0.0039"
