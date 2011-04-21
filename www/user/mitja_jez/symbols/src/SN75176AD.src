@@ -19,8 +19,9 @@ SN75176A
 5 GND
 
 [right]
-6 A
+.bus
 7 B
+6 A
 
 [top]
 8 VCC
