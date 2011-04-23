@@ -1,4 +1,4 @@
-v 20060123 1
+v 20100214 2
 B 300 300 5400 9100 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 5700 9500 9 10 0 0 0 0 1
 footprint=LQFP64
@@ -13,7 +13,7 @@ distlicense=GPL 3
 T 5700 10500 9 10 0 0 0 0 1
 uselicense=unlimited
 T 5700 10700 9 10 0 0 0 0 1
-author=Mitja Jeæ <mitja.jez@zeitgeist.si>
+author=Mitja Je≈∏ <mitja.jez@zeitgeist.si>
 T 3000 7800 9 10 1 1 0 3 1
 lpc2141
 T 3000 8200 9 10 1 1 0 3 1
@@ -99,22 +99,22 @@ pinnumber=9
 T 200 6550 5 8 0 1 0 6 1
 pinseq=9
 }
-P 0 3300 300 3300 1 0 0
-{
-T 350 3300 9 10 1 1 0 1 1
-pinlabel=DP
-T 200 3350 5 8 1 1 0 6 1
-pinnumber=10
-T 200 3350 5 8 0 1 0 6 1
-pinseq=10
-}
 P 0 3100 300 3100 1 0 0
 {
 T 350 3100 9 10 1 1 0 1 1
-pinlabel=DM
+pinlabel=DP
 T 200 3150 5 8 1 1 0 6 1
-pinnumber=11
+pinnumber=10
 T 200 3150 5 8 0 1 0 6 1
+pinseq=10
+}
+P 0 3300 300 3300 1 0 0
+{
+T 350 3300 9 10 1 1 0 1 1
+pinlabel=DM
+T 200 3350 5 8 1 1 0 6 1
+pinnumber=11
+T 200 3350 5 8 0 1 0 6 1
 pinseq=11
 }
 P 6000 6700 5700 6700 1 0 0
