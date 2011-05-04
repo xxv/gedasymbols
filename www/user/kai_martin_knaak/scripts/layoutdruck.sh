@@ -44,9 +44,9 @@ $PCB -x eps \
   --action-string 'DISPLAY(NameOnPCB)' \
   --element-color '#000000' \
   --pin-color '#cccccc' \
-  --layer-color-1 '#ffffff' \
-  --layer-color-2 '#ffffff' \
-  --layer-color-3 '#ffffff' \
+  --layer-color-1 '#dddddd' \
+  --layer-color-2 '#dddddd' \
+  --layer-color-3 '#dddddd' \
   --as-shown  \
   --layer-stack "outline,comment,elements,top" \
   --eps-file "/tmp/out_ref.eps" \
@@ -61,9 +61,9 @@ $PCB -x eps \
   --action-string 'DISPLAY(Value)' \
   --element-color '#000000' \
   --pin-color '#cccccc' \
-  --layer-color-1 '#ffffff' \
-  --layer-color-2 '#ffffff' \
-  --layer-color-3 '#ffffff' \
+  --layer-color-1 '#dddddd' \
+  --layer-color-2 '#dddddd' \
+  --layer-color-3 '#dddddd' \
   --as-shown  \
   --layer-stack "outline,comment,elements,top" \
   --eps-file "/tmp/out_value.eps" \
@@ -79,9 +79,9 @@ $PCB -x eps \
   --action-string 'DISPLAY(NameOnPCB)' \
   --element-color '#000000' \
   --pin-color '#cccccc' \
-  --layer-color-4 '#ffffff' \
-  --layer-color-5 '#ffffff' \
-  --layer-color-6 '#ffffff' \
+  --layer-color-4 '#dddddd' \
+  --layer-color-5 '#dddddd' \
+  --layer-color-6 '#dddddd' \
   --as-shown \
   --layer-stack "outline,elements,bottom,solderside" \
   --eps-file "/tmp/out.eps" \
@@ -97,13 +97,13 @@ $PCB -x eps \
   --action-string 'DISPLAY(Value)' \
   --element-color '#000000' \
   --pin-color '#cccccc' \
-  --layer-color-4 '#ffffff' \
-  --layer-color-5 '#ffffff' \
-  --layer-color-6 '#ffffff' \
+  --layer-color-4 '#dddddd' \
+  --layer-color-5 '#dddddd' \
+  --layer-color-6 '#dddddd' \
   --as-shown  \
   --layer-stack "outline,elements,bottom,solderside" \
-  --eps-file "/tmp/out.eps" \
-. $PCBFILE
+  --eps-file "/tmp/value.eps" \
+  $PCBFILE
 
 poster -mA4 -p$SIZE -c12x12mm -o "/tmp/out_bottomvalue.ps" "/tmp/out.eps"
 
