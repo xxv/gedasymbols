@@ -3,10 +3,12 @@
 # in a layout to the value of their number. -
 ######################################################-<)kmk(>-(2011)
 
+echo "set all pin names and pad names to the value of the corresponding pinnnumber" 
+
 awk -v filename="$1" '
 { 
   if ( $1 ~ /Pin\[/ ) {       # If the current line is a pin 
-    $7=$8                     # set the pin name to the value of the pin number
+s    $7=$8                     # set the pin name to the value of the pin number
     ++numpins                 # increment numpins
     } 
     else {   

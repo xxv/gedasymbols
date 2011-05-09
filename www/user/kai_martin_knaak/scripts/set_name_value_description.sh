@@ -1,6 +1,7 @@
 #!/bin/sh
-# This little script uses awk to set name, value and description of footprints 
-# to the same string. This is useful for footprints in the library.
+# This little script uses awk to set name, value and description of all 
+# footprints in a layout to the same string. This is useful for footprints
+# that will go into the library.
 ################################################# -<)kmk(>---<(2011)
 
 awk -v filename="$1" '
