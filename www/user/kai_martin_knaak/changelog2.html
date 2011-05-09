@@ -1,0 +1,811 @@
+<h4>9/may/2011</h4>
+<ol>
+<li> increased pad size of cap_RM*.fp
+<li> add cap_RM5_c.fp -- small outline package
+<li> corrected pin numbers of various switches. Increased annular ring, too.
+</ol>
+
+<h4>18/april/2011</h4>
+<ol>
+<li> corrected pinnumbers of header footprints with elongated pads.
+<li> add AMP_4.2mm_header_20pin_lay.fp header similar to the ones used for mother boards
+<li> improved schaltplandruck --> sort schematics according to page attribute
+</ol>
+
+
+<h4>13/april/2011</h4>
+<ol>
+<li> minor beautification of comparator_quad_pwr.sym, 7400_4xNAND.sym, analog_switch_DG468.sym
+<li> add SCSI_VHDCI_cable_lay.fp
+</ol>
+
+<h4>21/march/2011</h4>
+<ol>
+<li> add versions with oblong pins to the series of footprints for two row headers.
+</ol>
+
+<h4>14/march/2011</h4>
+<ol>
+<li> better clearance of DIOTEC_*.fp
+</ol>
+
+<h4>3/march/2011</h4>
+<ol>
+<li> add SOT886.fp
+<li> add RCA_DUAL_CUI_RCJ22.fp
+<li> add BNC_DUAL_BOMAR364.fp
+</ol>
+
+<h4>1/march/2011</h4>
+<ol>
+<li> replaced (getenv "PWD") with "." in new_geda_project.sh to make gschem 
+start up properly from nautilus.
+</ol>
+
+<h4>21/february/2011</h4>
+<ol> add LM317_SO8.fp  variable voltage regulator in SO8 package
+<ol> add DPAK_GDS.fp  DPAK with pins named for power P-MOSFETs like IRL5602
+<ol> add AMP_4_2mm_header_20pin_lay.fp an ATX like 20 pin power connector
+<ol> add 2x20PIN_PSL.fp a 40 pin header with interlock mechanism
+<ol> add 2x4socket.fp eight pin socket with two rows
+<ol> put changelog in extra page
+<li>
+</ol>
+
+<h4>19/february/2011</h4>
+<ol>
+<li> improved oblong pads with TO*.fp and SUBD*.fp (mask smaller than polygon clearance)
+<li> polished SO14.fp, SO16.fp, SO28W.fp, SO8.fp, SOT363.fp (better mask)
+<li> add SO8_FET.fp for power MOSFETs in SO8 design
+<li> enlarged annular rings in PENTAWATTV footprints
+<li> add convenience script extract_footprints.sh
+<li> add convenience script set_name_value_description.sh
+<li> add led_bicolor_4pin.sym, a slotted symbol for bicolor LEDs with four pins
+<li> add LTST-C155.fp - a footprint for a bicolor SMD LED by LITEON
+<li> polished the diodes: triangles more equilatral
+</ol>
+
+<h4>8/february/2011</h4>
+<ol>
+<li> oblong pads and a square No1 pin with TO220**.fp and TO92**.fp 
+<li> find_missing_symbols.sh
+</ol>
+
+<h4>3/february/2011</h4>
+<ol>
+<li> beautified subD9.sym, subD15.sym, subD25.sym
+<li> new subsheet-2.sym, template with pins 400 units apart
+<li> add 12V+.sym, 12V-.sym
+<li> add supply_with_variable_regulators.sym 
+<li> shortened the pins of elko.sym to make it compatible with cap_SMD_vert 
+</ol>
+
+<h4>2/february/2011</h4>
+<ol>
+<li> add res_zero.sym
+<li> reworked subsheet.sym
+<li> add footprints and values to dus.sym, comparator_quad.sym
+<li> polished 7905.sym
+</ol>
+
+<h4>26/january/2011</h4>
+<ol>
+<li> add con_SMA.sym
+<li> fixed license in con_BNC.sym
+<li> add footprint list to con_BNC.sym
+</ol>
+
+<h4>26/january/2011</h4>
+<ol>
+<li> add subD15.sym
+</ol>
+
+<h4>31/december/2010</h4>
+<ol>
+<li> corrected URL to SPECTROL_534.fp
+</ol>
+
+<h4>12/december/2010</h4>
+<ol>
+<li> add .gitignore to new_project.sh
+<li> polished subsheet.sym
+<li> polished pin-*.sym
+<li> add subsheet_in_out.sym, a convenience symbol for subsheet generation
+</ol>
+
+<h4>8/december/2010</h4>
+<ol>
+<li> add schaltplandruck.sh, a recursive print script for gschem schematics
+<li> add block symbol resistor_dipswitch_beanstalk.sym, a stack of configurable resistors
+<li> larger pins at cap_RM275.fp
+</ol>
+
+<h4>7/december/2010</h4>
+<ol>
+<li> polished 74161_COUNTER.sym and moved to 74161_counter.sym
+<li> polished 74163_COUNTER_DECIMAL.sym and moved to 74163_counter_decimal.sym
+<li> add pin_left.sym, pin_right.sym, pin_top.sym, pin_bottom.sym convenience symbols
+<li> add 555.sym and 556.sym, single and dual. general purpose timers.
+</ol>
+
+<h4>3/december/2010</h4>
+<ol>
+<li> add 0805xs.fp extra small pads
+<li> move 0805r.fp to 0805s.fp
+<li> move 0402r.fp to 0402s.fp
+<li> add 0603.fp
+<li> beautified dio_1206, fp dio_1210, fp dio_1812.fp, tantal_7x4mm.fp, 
+tvs_1812.fp, 0805.fp, 1206.fp, 1210.fp, SOT89.fp 
+</ol>
+
+<h4>23/november/2010</h4>
+<ol>
+<li> add SO8_FET, MOSFET footprint, SO8 style.
+<li> add list of footprints to res_thru
+<li> moved hole footprints from misc/ to a separate dir
+<li> changed default refdes of pad_2.sym to refdes=PAD?
+</ol>
+
+<h4>8/november/2010</h4>
+<ol>
+<li> add SOT89.fp
+<li> add TO252.fp, aka DPAK.fp
+<li> add footprints list to 7805.sch
+</ol>
+
+<h4>1/november/2010</h4>
+<ol>
+<li> add socketed resistor res_socket.sym, res_socket.fp
+<li> clean-up of res_RM**.fp (metric holes, larger annulus, mark at pin 1)
+<li> add perfboard.sym
+<li> renamed lochraster*.fp to perfboard*.fp
+</ol>
+
+<h4>28/october/2010</h4>
+<ol>
+<li> redefined existing holes and added some more.
+<li> add footprint template
+</ol>
+
+<h4>26/october/2010</h4>
+<ol>
+<li> add RIACON_3PIN_LAY.fp and RIACON_2PIN_LAY.fp
+</ol>
+
+<h4>16/october/2010</h4>
+<ol>
+<li> more annulus to SMA_*.fp and BNC_*.fp
+<li> more annulus to RIACON_2PIN.fp
+<li> add RIACON_3PIN.fp
+<li> add HF_MULTI.fp a footprint for various coaxial connectors
+<li> renamed TFQP100.fp to ATXMEGA_TFQP100.fp
+</ol>
+
+<h4>12/october/2010</h4>
+<ol>
+<li> add multiplexer_DG406.sym
+<li> add 2x13PIN.fp
+<li> polished 2x13PIN_WSL.fp
+</ol>
+
+<h4>8/october/2010</h4>
+<ol>
+<li> renamed TFQP100.fp to TQFP100.fp
+</ol>
+
+<h4>4/october/2010</h4>
+<ol>
+<li> add TFQP100.fp
+</ol>
+
+<h4>1/october/2010</h4>
+<ol>
+<li> add mark_2.fp, a square production mark
+<li> renamed MARKE.fp to mark_1.fp
+<li> fixed usage comment in set_pinnumber.awk
+<li> add TO220_block.fp, generic TO220 mounted to a cooling block
+<li> add oblong pads to the pins of TO220*.fp
+<li> add flag nopaste to oblong pads of TO92*.fp
+</ol>
+
+<h4>28/september/2010</h4>
+<ol>
+<li> add SMA_EDGE.fp, a SMA footprint to be soldered from the edge of the PCB
+<li> add cuboid_5x9mm_SMD, a brass cuboid to be soldered to a polygon
+<li> add cuboid.sym, a cuboid symbol
+<li> add LT1719, a specific comparator
+</ol>
+
+<h4>27/september/2010</h4>
+<ol>
+<li> polished 78L**.sym and 79**.sym
+<li> improved supply block and moved to supply_with_regulators.sym
+</ol>
+
+<h4>26/september/2010</h4>
+<ol>
+<li> add EL7222.sym, a line driver
+<li> add nc.sym, to mark deliberately not connected pins
+<li> add author attribute to 78**.sym and 79**.sym
+<li> polished ATmega32TQFP.sym
+<li> add ATxmegaA1.sym
+</ol>
+
+<h4>23/september/2010</h4>
+<ol>
+<li> add inductor_vert.sym
+</ol>
+
+<h4>22/september/2010</h4>
+<ol>
+<li> corrected subD25.sym --> shield is pin number 0, rather than 26
+</ol>
+
+<h4>11/september/2010</h4>
+<ol>
+<li> add elko_RM10_D22.fp
+<li> moved PS_**PIN_lay.fp to PS_**PIN_LAY.fp
+<li> moved SCSI_68pin.fp to SCSI_68pin_vert.fp
+<li> larger screw holes in SCSI footprint
+<li> bug fix in.sym
+</ol>
+
+<h4>3/august/2010</h4>
+<ol>
+<li> more annular ring in res_RM5.fp and res_RM5_b.fp
+</ol>
+
+<h4>2/august/2010</h4>
+<ol>
+<li> added 2x13PIN_WSL.fp
+<li> fixed footprint attribute of nmosfet.sym
+<li> added SUBD15_male_lay.fp SUBD25_male_lay.fp SUBD37_male_lay.fp
+<li> decorated SUBD*.fp with oval pads for easier soldering
+</ol>
+
+<h4>27/july/2010</h4>
+<ol>
+<li> added TO92 FET footprint with alternative pin allocation, TO92_DGS 
+<li> added generic TO92 footprint TO92_123.fp 
+<li> modified TO92* footprints for elongated pads
+</ol>
+
+<h4>26/july/2010</h4>
+<ol>
+<li> bug-fix subD25.sym
+<li> added SO28W.fp
+</ol>
+
+<h2>Changelog</h2>
+<ol>
+<h4>13/july/2010</h4>
+<li> added schalter_1x_mittel.sym switch in middle position
+<li> added an outline to lochraster2.pcb
+<li> marked pin 1 of res_*.fp with the square flag
+</ol>
+
+<h2>Changelog</h2>
+<h4>5/july/2010</h4>
+<li> added  convenience script set_pinnumber.awk
+</ol>
+
+<h4>29/june/2010</h4>
+<li> embedded components in symbols of the block section.
+</ol>
+
+<h4>28/june/2010</h4>
+<ol>
+<li> removed  SCSI footprint SCSI_68pin_female.fp
+<li> renamed SCSI_68pin_male.fp to SCSI_68pin.fp
+<li> added SCSI_VHDCI_cable.fp
+<li> added coded_switch_4bit.sym and ELMA_C08.fp
+<li> added subD25.sym
+</ol>
+
+<h4>15/june/2010</h4>
+<ol>
+<li> added  SCSI footprint matching footprint SCSI_68pin_female.fp
+</ol>
+
+<h4>14/june/2010</h4>
+<ol>
+<li> added  SCSI connector symbol con_SCSI68.sym
+<li> moved pins of res_RM??.fp to multiples of 50 mil
+</ol>
+
+<h4>31/may/2010</h4>
+<ol>
+<li> add quad_analog_switch_closed.sym -- an opening analog switch, e.g. DG212.
+<li> add res_thru_vert.sym, vertically drawn thru hole resistor.
+<li> larger annular rings with 1x1PIN.fp, 1x3PIN.fp, 1x5PIN.fp, 2x3PIN.fp, 
+<li> beautified con_2x8.sym, con_2x3.sym 
+<li> correcter pin numbers of con_2x20.sym
+<li> added work sheets 1xnPIN.pcb and 2xnPIN.pcb
+<li> added 2x2PIN.fp, 2x4PIN.fp, 2x5PIN.fp 2x8PIN.fp 
+<li> renamed 2x20pin.fp to 2x20PIN.fp 
+<li> renamed AKL_4Pin.fp to AKL_4PIN.fp
+<li> renamed con_2x16-2.sym to con_2x16.sym and larger annular rings.
+<li> added con_2x10.sym, con_2x16.sym, con_2x2.sym, con_2x32.sym 
+</ol>
+
+<h4>26/may/2010</h4>
+<ol>
+<li> add poti_thru_vert.sym
+<li> add trimmers.pcb
+<li> corrected default footprint of res_thru.sym
+<li> enlarged annular rings of ALPS_RK11K112.fp
+</ol>
+
+<h4>25/may/2010</h4>
+<ol>
+<li> add lochraster2.fp a grid of holes
+</ol>
+
+<h4>18/may/2010</h4>
+<li> larger holes in BNC_vert3.fp
+<li> more clearance to M3_plated.fp
+</ol>
+
+<h4>6/april/2010</h4>
+<ol>
+<li> add 2x20Pin.fp, 2x5Pin.fp 
+<li> add AKL_4Pin.fp  
+<li> add TQFP44.fp,  ATmega32TQFP.sym  
+<li> con_2x16-2.sym, 2x20.sym, con_2x5.sym, con_2x8.sym  
+<li>crystal.sym 
+</ol>
+
+<h4>26/march/2010</h4>
+<ol>
+<li> improved layoutdruck.sh. Now accepts command line options -p and -V
+</ol>
+
+<h4>20/march/2010</h4>
+<ol>
+<li> add the pcb print script layoutdruck.sh 
+</ol>
+
+<h4>19/march/2010</h4>
+<ol>
+<li> add max232.sym.
+</ol>
+
+<h4>16/march/2010</h4>
+<li> various bug fixes and typos.
+</ol>
+
+<h4>13/march/2010</h4>
+<ol>
+<li> fixed typo in description of divider_MC12093.sym
+<li> fixed typo in description of comparator_dual_pwr.sym
+</ol>
+
+<h4>24/february/2010</h4>
+<ol>
+<li> add pin V_L to quad_analog_switch_pwr.sym
+<li> install attrib file to the print subdir of the project dir
+<li> add a layout print script to new_geda_project.sh
+<li> add a bom print script to new_geda_project.sh
+</ol>
+
+<h4>10/february/2010</h4>
+<ol>
+<li> add tvs_1812.fp
+<li> add tvs.sym
+<li> rename suppressor_SMD.sym to tvs_vert.sym
+</ol>
+
+<h4>25/november/2009</h4>
+<ol>
+<li>comparator_dual_pwr.sym: clean-up 
+<li>mmic-ERA.sym: Only three pins rather than four.
+<li>zener_SOT23.sym: corrected an error with pin numbers 
+<li>symbols/connector/con_XLR3_power.sym 
+</ol>
+
+<h4>13/november/2009</h4>
+<ol>
+<li> add DIOTEC_BXXD.pcb
+<li> add elko_BC_D35.fp - high voltage elcap by BC-Components
+<li> add TSOP6.fp
+<li> add analog_switch_TSOP6_pwr.sym
+<li> add analog_switch_DG467.sym and analog_switch_DG468.sym
+<li> add analog_switch_TS3157.sym and analog_switch_TS3157_pwr.sym
+</ol>
+
+<h4>3/October/2009</h4>
+<ol>
+<li> add title-block.sym -- A titleblock without a frame
+<li> enhanced the project start script new_geda_project.sh
+<li> add SOT343.fp
+<li> add mmic-BGA427.sym
+<li> cleaned BNC_LAY.fp (footprint format rather than layout format)
+</ol>
+
+<h4>29/September/2009</h4>
+<ol>
+<li> add zener_SOT23.sch
+<li> move zener_SMD.sch to zener_minimelf.sch
+</ol>
+
+<h4>23/September/2009</h4>
+<ol>
+<li> add quad_analog_switch.sch and corresponding power pin symbol quad_analog_switch_pwr.sym
+<li> add pinseq Attributes to instr_amp_*.sym
+</ol>
+
+<h4>17/September/2009</h4>
+<ol>
+<li> add MINICIRCUITS_MMIC.fp
+<li> add divider_MC12093.sym
+<li> add phase_detector_MCH12140.sym
+<li> add 5V+.sym
+<li> cleaned 15V-.sym, 5V+.sym
+<li> moved 7414_4xNOT_schmitt_trigger.sym to 7414_6xNOT_schmitt_trigger.sym
+<li> add XLR3_silk.fp
+<li> add footprint_template.pcb
+</ol>
+
+<h4>14/September/2009</h4>
+<ol>
+<li> add convinience script for project start-up.
+<li> short pins to all the diodes. (yes, this breaks old schematics on load)
+</ol>
+
+<h4>22/August/2009</h4>
+<ol>
+<li> add SOT363.fp
+</ol>
+
+<h4>10/July/2009</h4>
+<ol>
+<li> add transformer_3pick-ups.sym
+<li> add subD9-2.sym (small version of subD9.sym)
+</ol>
+
+<h4>9/July/2009</h4>
+<ol>
+<li> add suppressor_SMD.sym
+<li> add block opamp_with_booster.sym
+<li> polished in.sym (better text alignment)
+<li> polished L165-1.sym L165-2.sym, L165_pwr-1.sym
+<li> polished opamp_dual.sym opamp_dual_pwr.sym
+<li> add SOT223.fp
+</ol>
+
+<h4>3/July/2009</h4>
+<ol>
+<li> add APMEM TL46.fp, vertical two way switch
+<li> add MIYAMA_MS500FPC.fp, slightly larger, vertical two way switch
+<li> increaseded annular rings of  APEM_5236.fp, APEM_TL46WW.fp, APEM_TL36WW.fp
+<li> polished SOT_23***.fp
+</ol>
+
+<h4>1/July/2009</h4>
+<ol>
+ <li> added instr_amp_INA163.sym, a low noise microphone diffamp
+ <li> added instr_amp_INA163_pwr.sym, power symbol for INA163
+ <li> moved instr_amp_INA128.sym to instr_amp_SO8.sym
+ <li> polished SO14.fp, opamp.sym
+ <li> polished opamp_pwr.sym
+</ol>
+
+<h4>28/June/2009</h4>
+<ol>
+ <li> add symbol bridge_rectifier_SMD.sym
+ <li> cleaned and polished res_RM20.fp, res_RM15.fp
+ <li> add res_vert.fp, res_RM75.fp, res_RM10.fp
+ <li> removed resistor_vertical. fp, resistor_vertical2.fp
+ <li> add DIOTEC_BXXS.fp, DIOTEC_SXX.fp (SMD bridge rectifiers)
+ <li> add template.pcb, a template pcb for footprints
+ <li> add HAMMOND_1590B.fp, HAMMOND_1590G.fp, HAMMOND_1590Y.fp
+ <li> modified HAMMOND_1590B.fp -- lid, rather than box
+ <li> enlarged annular rings of APEM_TL36WW.fp, APEM_TL46WW.fp, ELEDIS_2B11.fp, ELEDIS_2B11_LAY.fp, MIYAMA_MS500AVT.fp, MIYAMA_MS500FVT.fp
+ <li> corrected typo in default footprint pnp.sym
+ <li> add default footprint in enclosing.sym
+</ol>
+
+<h4>23/June/2009</h4>
+<ol>
+ <li> add footprint RIACON_383_2PIN.fp (RIAconnect, series 383, 2 pin)
+ <li> add symbol con_RIACON_2pin.sym
+ <li> polished jumper.sym
+</ol>
+
+<h4>23/June/2009</h4>
+<ol>
+ <li> add footprint BOX_HAMMOND_1590LLB.fp
+ <li> clean-up of BOX_HAMMOND_1590LB and BOX_HAMMOND_1590Q.fp
+ <li> removed layer garbage from various hole footprint
+ <li> add tantal_7x4mm.fp
+</ol>
+
+<h4>20/June/2009</h4>
+<ol>
+ <li> add footprint for SMD inductor FASTRON_PISG.fp
+</ol>
+
+<h4>8/June/2009</h4>
+<ol>
+ <li> clean-up of comparator_quad_b.sym
+ <li> add comparator_quad_b_pwr.sym
+</ol>
+
+<h4>7/June/2009</h4>
+<ol>
+ <li> hole_1mm.fp, hole_2mm and hole_m2.5.fp were in layout format rather than footprints. Corrected.
+ <li> corrected the description of various holes in index.html
+</ol>
+
+<h4>05/Nov/2008</h4>
+<ol>
+  <li> fixed the footprint of 2x2 jumper (slightly wrong distance of pins)
+  <li> increased annular ring of jumper footprints.
+</ol>
+
+<h4>05/Nov/2008</h4>
+<ol>
+  <li> fixed links to quad comparator symbols in index file.
+</ol>
+
+
+<h4>10/Oct/2008</h4>
+<ol>
+  <li> corrected SMA_LAY.fp and SMA_VERT.fp -- Holes did not fit.
+</ol>
+
+<h4>20/Sept/2008</h4>
+<ol>
+  <li> add SCSI_68pin_male_vert.fp, recepticle, compatible with national instruments cards
+  <li> add lochraster.fp, 100 mil prototype board
+</ol>
+
+<h4>8/Sept/2008</h4>
+<ol>
+  <li> add MIYAMA_MS500FVT.fp, 2 way switch, vertical pcb mount
+  <li> add MIYAMA_MS500FVT.fp, 1 way switch, vertical pcb mount
+</ol>
+
+<h4>5/Sept/2008</h4>
+<ol>
+  <li> add XLR3_PCB, an pcb mounted version of the XLR connector by NEUTRIK
+  <li> modified the XLR footprints so that the included jae connectors will
+       receive positive voltage at the red cable.
+</ol>
+
+<h4>29/Aug/2008</h4>
+<ol>
+  <li> add female SubD9 connector footprints --> SUBD9_female_lay.fp and SUBD9_female_vert.fp
+  <li> Renamed male SubD9 connector footprints
+  <li> Corrected the pin numbers of SOT23_SDG
+  <li> connector symbols PS_*: changed device attributes to value attributes
+  <li> increased holes of ALPS_RK11K112.fp
+</ol>
+
+<h4>19/Aug/2008</h4>
+<ol>
+  <li> corrected VISHAY_RH10.fp (mirror, placement of holes)
+  <li> changed supply_with_virtual_GND.sym (Schottky diode rather tham DUS)
+</ol>
+
+<h4>14/Aug/2008</h4>
+<ol>
+  <li> corrected SOT23 confusion (hopefully).
+  <li> add dio_1812.fp
+  <li> add elko_RM35_D8.fp
+</ol>
+
+<h4>6/Aug/2008</h4>
+<ol>
+  <li> fixed the link to Resistor_thru_vertical2.fp
+  <li> add JMP_default.fp -- A footprint to mark the default setting of a jumper
+</ol>
+
+<h4>12/July/2008</h4>
+<ol>
+  <li> add 0805r.fp
+  <li> add con_4x_shield.sym, shielded four way connector
+</ol>
+
+<h4>12/July/2008</h4>
+<ol>
+  <li> add regulators 78*.sym, 78L*.sym, 79*.sym and 79L*.sym
+  <li> add 0402.fp and 0402r.fp
+</ol>
+
+<h4>12/July/2008</h4>
+<ol>
+  <li> add SMA_LAY.fp -- SMA recepticle, telegärtner J01151A0191
+  <li> add SMA_VERT.fp -- SMA recepticle, telegärtner J01151A0931
+  <li> add BNC_VERT3.fp -- BNC recepticle, telegärtner J01001A1945 or J01001A1944
+  <li> moved BNC_STAND.fp to BNC_VERT.fp
+  <li> moved BNC_STAND2.fp to BNC_VERT2.fp
+  <li> clean-up of BNC footprints
+  <li> add LEMO_4PIN.fp -- recepticle, LEMO EPG.0B.304.HLN
+  <li> moved PS_*PIN_gerade.fp to PS_*PIN.fp
+  <li> moved PS_*PIN_winkel.fp to PS_*PIN_LAY.fp
+  <li> add 1x4PIN.fp, PS_4PIN.fp and PS_4PIN_LAY.fp
+  <li> changed the text default position of PS_*.fp footprints and JMP_*.fp
+  <li> add JMP_3PIN_SMD.fp
+  <li> add jumper_2x2.sym
+</ol>
+
+
+<h4>10/July/2008</h4>
+<ol>
+  <li> add REF02.sym, a precision voltage refernce with temperature transducer
+  <li> add dipswitch_4x.sym
+</ol>
+
+
+<h4>8/July/2008</h4>
+<ol>
+  <li> add TO220_bighole.fp, to mount a voltage refernce as low as posssible.
+  <li> add Vishay_PH1.fp, a popular power resistor
+  <li> corrected jumper.sym (gschem choked on it because of a missing parameter)
+</ol>
+
+<h4>2/July/2008</h4>
+<ol>
+<li> corrected TO247.fp (was falsely assumed to be similar to TO220)
+<li> add TO247_2.fp (large holes to completely sink the pins)</li>
+<li> add TO247_LAY.fp (heatsink on pcb)
+<li> changed the generic footprints TOxxx.fp -- more polygon and mask clearance
+</ol>
+
+<h4>26/June/2008</h4>
+<ol>
+<li> corrected the outline of SPECTROL_534.fp</li>
+</ol>
+
+<h4>23/June/2008</h4>
+<ol>
+<li> add block supply_with_virtual_GND.sym</li>
+<li> larger pads for FASTRON_PISR.fp </li>
+<li> add symbol poti_Spectrol_534.sym and SPECTROL_534.fp
+</ol>
+
+<h4>6/June/2008</h4>
+<ol>
+<li> add schalter_2x_um.sym, DPDT switch
+<li> add APEM_TL46WW, DPDT switch
+<li> rename MULTICOMP_AS to APEM_TL36WW
+</ol>
+
+
+<h4>4/June/2008</h4>
+<ol>
+<li> add footprint XLR3_vert.fp for vertically mounted XLR recepticle
+<li> add generic footprint SOT23.fp
+<li> add block supply_with_virtual_GND.sym
+</ol>
+
+<h4>26/May/2008</h4>
+<ol>
+<li> add PS-8.sym, PS-5.sym, PS-3.sym, PS-2.sym -- JAE connectors, series IL-G, sold bei Reichelt.
+<li> add con_pm_Ub.sym -- a connector dedicated to distribute power among boards.
+<li> update to block XLR-78xx-79xx.sym
+<li> add BNC_STAND2.fp -- model telegärtner J01001A0037, to be mounted vertically
+<li> add BNC_SAND3.fp -- model telegärtner J01001A1945, vertical full metal recepticle
+</ol>
+
+<h4>19/May/2008</h4>
+<ol>
+<li> more telling names for digital 74xxx symbols.
+<li> new symbols 7400_4xNAND.sym, 7402_4xNOR.sym, 7432_4x_OR.sym
+<li> removed 74128.sym - This component is depreciated
+</ol>
+
+<h4>9/May/2008</h4>
+<ol>
+<li> Moved opamp_*_2.sym to opamp_*.sym. I decided, not to put version strings in
+the name of a symbol. Components should be embedded, when a a schematic is
+regarded as finished.
+<li> new symbol 7414.sym (6xNOT)
+<li> shorter pins to led_3mm.sym --> Note, this breaks existing schematics.
+<li> clean-up license of relay-AXICON_FP2.sym
+<li> add symbol flyback_SOT23.sym (A pair of schottky diodes for flyback protection)
+</ol>
+
+<h4>7/May/2008</h4>
+<ol>
+<li>Shorter pins in comparator_quad.sym and comparator_quad_b.sym.
+<li>Short pin versions of opamp.sym, opamp_quad.sym and opamp_offset.sym. These are called
+opamp_2.sym, opamp_quad_2.sym  and opamp_offset_2.sym.
+<li>New directory "old" with the long pin versions
+of opamps and comparators, so old schematics still find them.
+</ol>
+
+<h4>7/May/2008</h4>
+Shorter pins in comparator_dual.sym and opamp_dual.sym,to allow for more
+flexibility in schematics. Note: This likely breaks schematics, that use
+the previous version.
+
+<h4>28/Apr/2008</h4>
+<ol>
+  <li>increased polygon clearence of a couple of SMD components. Now, polygon clearence is twice the size of solder mask clearence.
+  <li>increased mask clearence of cap_RM5.fp, cap_RM275.fp, res_RM20.fp and JMP_*Pin.fp
+  <li>decreased mask clearence of
+</ol>
+
+<h4>19/Apr/2008</h4>
+<ol>
+  <li>unified and corrected diode footprints (dio_1206.fp and dio_1210.fp)
+  <li>removed footprint dio_0805.fp
+  <li>add zener_SMD.sym
+  <li>add diodes to symbol index
+  <li>unified pin numbers and pin labels of diodes.
+</ol>
+
+<h4>7/Apr/2008</h4>
+<ol>
+  <li>renamed 0805_dio.fp to dio_0805.fp to conform with the names of the other footprints
+  <li>correctetd the silk of dio_1210.fp and dio_1206.fp
+</ol>
+
+<h4>4/Apr/2008</h4>
+<ol>
+  <li> clean-up and update of TOxxx footprints: Centroid in the center, named pins<br>
+  <li> add worksheet TOXXX.pcb
+</ol>
+
+<h4>1/Apr/2008</h4>
+
+<h4>1/Apr/2008</h4>
+  * clean-up and update of 74xxx symbols<br>
+  * add footprint for 19" box: BOX_DAUB_MGF44061.fp
+  * add worksheet for boxes made by Daub: BOX_DAUB.pcb
+  * removed multiple GND pins in 78L12.sym and 78L15.sym<br>
+  * Graphics polishing 7805.sym, 7812.sym, 7815.sym, 7905.sym, 7912.sym, 7915.sym
+
+<h4>31/Mar/2008</h4>
+<ol>
+  <li> new symbols for generic quad opamp and for quad comparator<br>
+  <li> centered handle of 0805.fp<br>
+  <li> larger pads and centered handle for 1206.fp<br>
+  <li> larger pads and centered handle for 1812.fp<br>
+  <li> new footprint dio_1206.fp<br>
+  <li> removed redundant 74_16pin_pwr.sym<br>
+  <li> graphical improvements to *_pwr.sym<br>
+  <li> new footprints 1210.fp and dio_1210.fp<br>
+  <li> new symbol comparator_quad_b.sym for alternative opin-out
+</ol>
+
+<h4>19/Mar/2008</h4>
+  * new footprints ELEDIS_2B11, ELEDIS_2B11_LAY and MULTICOMP_2AS for small switches<br>
+  * added a pcb working sheet for all the switches (switch.pcb)<br>
+
+<h4>13/Mar/2008</h4>
+fixed 78L05 and 79L05: dedicated footprint instead of coinciding pins.
+
+<h4>6/Mar/2008</h4>
+Another clean-up. Added dist-licence and use-license attributes to the following files:<br>
+L165-2.sym L165_pwr-1.sym LM317.sym LM337.sym lm399.sym
+njfet.sym nmosfet.sym nmosfet_power.sym npn.sym
+opamp_dual_pwr.sym opamp_offset.sym opamp_pwr.sym
+phase_detector_HMC439QS16G.sym pmosfet.sym pmosfet_power.sym
+pnp.sym poti_Alps_RK11K112.sym poti_thru.sym res0805.sym
+res_SMD.sym res_SMD_vert.sym res_ref.sym res_thru.sym
+<p>
+removed LM137 (typo of "LM317")
+
+<h4>5/Mar/2008</h4>
+  * modified opamp_pwr, opamp.sym --> Add license<br>
+  * modified 7805 --> Add pinlabel and pinname attributes<br>
+  * modified 78L05 --> correct foot print (SO8)<br>
+  * added 78L15, 78L12<br>
+  * modified comparator*.sym --> spurious slot defs<br>
+  * modified instr_amp_INA128.sym --> off grid pins, general clean-up, pins moved (!)<br>
+  * modified L165-1.sym --> general cleanup, pins moved (!)<br>
+  * modiified L165-2.sym --> corrected footprint value<br>
+  * removed lm311_orig.sym<br>
+  * modified ntc.sym --> clean-up
+
+<h4>25/Feb/2008</h4>
+  * modified XLR-78xx-79xx.sym --> Add safety diodes<br>
+  * added BNC_LAY2.fp --> like BNC_LAY but van be mounted vertically too<br>
+  * added BNC_STAND.fp --> Teleg&auml;rtner socket to be mounted vertically
+
+<h4>Jan/2008</h4>
+  * corrected RELAY_FP2.fp
+
