@@ -1,19 +1,11 @@
 # release: pcb 1.99z+grids
 
 # To read pcb files, the pcb version (or the git source date) must be >= the file version
-FileVersion[20110221]
+FileVersion[20100606]
 
 PCB["HF-Connector.pcb" 600000 1600000]
 
-GridMode[0 0 6 1 1]
-GridSpacing0[500.000000 2]
-GridSpacing1[1000.000000 2]
-GridSpacing2[2500.000000 2]
-GridSpacing3[196.850388 2]
-GridSpacing4[393.700775 2]
-GridSpacing5[787.401550 2]
-GridSpacing6[1968.503906 2]
-GridSpacing7[3937.007813 2]
+Grid[1968.504395 0 0 1]
 Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]

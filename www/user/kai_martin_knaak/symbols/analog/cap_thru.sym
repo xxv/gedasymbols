@@ -1,6 +1,6 @@
-v 20060824 1
-T 100 1700 5 8 0 0 0 0 1
-device=cap_thru
+v 20110116 2
+T 100 2100 5 8 0 0 0 0 1
+device=capacitor
 T 600 200 8 10 1 1 0 0 1
 value=XXX
 T 100 1500 5 8 0 0 0 0 1
@@ -37,8 +37,6 @@ pinlabel=2
 T 775 475 5 8 0 1 0 0 1
 pintype=pas
 }
-T 100 900 5 8 0 0 0 0 1
-numslots=0
 T 600 400 8 10 1 1 0 0 1
 refdes=C?
 L 450 800 450 400 3 0 0 0 -1 -1

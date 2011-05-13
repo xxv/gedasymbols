@@ -1,20 +1,12 @@
 # release: pcb 1.99z+grids
 
 # To read pcb files, the pcb version (or the git source date) must be >= the file version
-FileVersion[20110221]
+FileVersion[20100606]
 
 PCB["SUBD" 787402 1574803]
 
-GridMode[0 0 2 1 1]
-GridSpacing0[3937.008057 2]
-GridSpacing1[1000.000000 2]
-GridSpacing2[2500.000000 2]
-GridSpacing3[5000.000000 2]
-GridSpacing4[10000.000000 2]
-GridSpacing5[393.700787 2]
-GridSpacing6[787.401575 2]
-GridSpacing7[1968.503937 2]
-Cursor[0 1574803 0.000000]
+Grid[1968.504395 0 0 1]
+Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[600 400 800 599 1500 1000]
