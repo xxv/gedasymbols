@@ -16,6 +16,69 @@ email: <a href="mailto:Russ.Dill@asu.edu">Russ.Dill@asu.edu</a>
 <p>Currently under development, inspired by mdtlc, but with a desire for
 scriptibility.</p>
 
+IBIS to SPICE tools:
+
+<ul>
+<li><a href="tools/ibis.py">SPICE .lib generate script for IBIS .ibs files</a>
+<li><a href="tools/Makefile">Makefile to generate master ibis.lib needed by generated .lib files</a>
+<li><a href="symbols/ibis_buffer.sch">Schematic required for ibis.lib</a>
+<li><a href="symbols/ibis_dynamic_clamp.sch">Schematic required for ibis.lib</a>
+<li><a href="symbols/ibis_input.sch">Schematic required for ibis.lib</a>
+<li><a href="symbols/ibis_open_sink.sch">Schematic required for ibis.lib</a>
+<li><a href="symbols/ibis_open_source.sch">Schematic required for ibis.lib</a>
+<li><a href="symbols/ibis_output.sch">Schematic required for ibis.lib</a>
+<li><a href="symbols/ibis_terminator.sch">Schematic required for ibis.lib</a>
+<li><a href="symbols/example.sch">Example IBIS schematic (uses pi-1.sym)</a>
+</ul>
+
+<p>The IBIS tools are very much a work in progress. The basic workflow is:</p>
+<ul>
+<li>Download the Makefile and associated .sch's as well and ibis.py
+<li>Build ibis.lib (make ibis.lib)
+<li>Obtain a .ibs file from your vendor (eg, u69a.ibs)
+<li>Build the associated .lib file (make u69a.lib)
+<li>Create a schematic using the proper IBIS components:
+	<ul>
+	<li>Check in your .ibs file to see what [Model]'s are available
+	<li>Create a 'SPICE directive' with a .lib line for that [Model] (.lib u69a.lib DQ_FULL_533)
+	<li>Create a 'SPICE directive' with a '.param spec=0'
+		<ul>
+		<li> This is card is needed due to a bug...but once things are working, spec=-1,0,1 for slow,typ,fast respectively
+		</ul>
+	<li>Select the IBIS symbol associated with the Model_type
+	<li>Fill in the <model> in the symbol attribute (DQ_FULL_533)
+	<li>Connect up a stimulus to the IN and EN pins if applicable
+	<li>Connect up the power and ground rails
+	<li>Add package parasitics (currently not done by the tools)
+	<li>Connect together various models as in your own design
+	<li>Create a SPICE netlist from your schematic (gnetlist -g spice-sdb -o example.net example.sch)
+	<li>Load the netlist in ngspice (ngspice example.net)
+	<li>Run as appropriate (tran 10p 60n)
+	<li>Plot the output (aka, go nuts)
+	</ul>
+</ul>
+
+<p>Currently unsupported:</p>
+<ul>
+<li>Driver Schedules
+<li>External Models/circuits
+<li>ECL
+<li>Package parasitics (including component/package models)
+<li>ISSO PU/PD data
+<li>Composite current for rising/falling waveforms
+<li>Bus hold
+<li>Fall back
+<li>Series models
+<li>Comment char changes
+<li>Model specs/receiver thresholds
+<li>Output buffers need two rising and falling waveforms each
+<li>Open source/sink buffers need one rising and one falling waveform
+<li>Ramp data is ignored
+</ul>
+
+<p>Work is definitely not complete, and very little testing has been done
+but feedback would be greatly appreciated</p>
+
 <h2>Symbols</h2>
 
 <ul>
@@ -26,5 +89,22 @@ scriptibility.</p>
 <p>Gaussian edges are a good approximation of digital signals if a model is not
 available, see <a href="http://sigcon.com/Pubs/edn/MakingEdges.htm">Making Gaussian Edges</a>
 from Dr. Howard Johnson.</p>
+
+<ul>
+<li><a href="symbols/pi-1.sym">Symbol for SPICE Pi subcircuit</a>
+<li><a href="symbols/pi.sch">Associated SPICE subcircuit</a>
+</ul>
+
+<ul>
+<li><a href="symbols/ibis_3-state.sym">IBIS 3-state buffer</a>
+<li><a href="symbols/ibis_input.sym">IBIS input buffer</a>
+<li><a href="symbols/ibis_io_open_sink.sym">IBIS open sink (drain) I/O buffer</a>
+<li><a href="symbols/ibis_io_open_source.sym">IBIS open source I/O buffer</a>
+<li><a href="symbols/ibis_io.sym">IBIS I/O buffer</a>
+<li><a href="symbols/ibis_open_sink.sym">IBIS open sink (drain) buffer</a>
+<li><a href="symbols/ibis_open_source.sym">IBIS open source buffer</a>
+<li><a href="symbols/ibis_output.sym">IBIS output buffer</a>
+<li><a href="symbols/ibis_terminator.sym">IBIS terminator only buffer</a>
+</ul>
 
 <!--#include virtual="/trailer.html" -->
