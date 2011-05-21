@@ -6,6 +6,7 @@ all: ibis.lib
 IBIS_COMPONENTS=\
 	ibis_input.sch \
 	ibis_output.sch \
+	ibis_tristate.sch \
 	ibis_open_source.sch \
 	ibis_open_sink.sch \
 	ibis_buffer.sch \
