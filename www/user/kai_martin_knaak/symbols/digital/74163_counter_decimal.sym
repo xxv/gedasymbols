@@ -1,4 +1,4 @@
-v 20100214 2
+v 20110116 2
 T 200 4600 5 8 0 0 0 0 1
 description=74163, synchronous programmable 4-bit decimal counter with sync. clear
 T 200 4400 5 8 0 0 0 0 1
@@ -141,7 +141,7 @@ pinlabel=CLK
 T 275 400 5 8 0 1 0 2 1
 pintype=clk
 }
-P 100 100 100 100 1 0 0
+P 100 100 200 100 1 0 0
 {
 T 150 150 5 8 1 1 0 6 1
 pinnumber=1
@@ -152,7 +152,7 @@ pinlabel=\_CLR\_
 T 250 100 5 8 0 1 0 2 1
 pintype=in
 }
-P 100 700 100 700 1 0 0
+P 100 700 200 700 1 0 0
 {
 T 150 750 5 8 1 1 0 6 1
 pinnumber=9
@@ -163,10 +163,6 @@ pinlabel=\_LOAD\_
 T 250 700 5 8 0 1 0 2 1
 pintype=in
 }
-V 150 100 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-V 150 700 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-L 275 400 200 450 3 0 0 0 -1 -1
-L 275 400 200 350 3 0 0 0 -1 -1
 B 200 0 1100 2750 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 200 4050 5 8 0 0 0 0 1
 footprints=SO16, DIP16
@@ -180,3 +176,13 @@ T 200 3450 5 8 0 0 0 0 1
 dist-license=GNU General Public License, version 3, or later. See http://www.gnu.org/licenses/licenses.html
 T 200 4250 5 8 0 0 0 0 1
 comment=Use 74-pwr16.sym for power
+V 160 700 40 6 0 0 0 -1 -1 1 -1 -1 -1 -1 -1
+V 160 100 40 6 0 0 0 -1 -1 1 -1 -1 -1 -1 -1
+L 275 400 200 350 3 0 0 0 -1 -1
+L 200 350 200 450 3 0 0 0 -1 -1
+L 200 450 275 400 3 0 0 0 -1 -1
+H 6 0 0 0 -1 -1 1 -1 -1 -1 -1 -1 4
+M 275,400
+L 200,350
+L 200,450
+z

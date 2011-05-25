@@ -1,4 +1,4 @@
-v 20100214 2
+v 20110116 2
 T 200 2300 5 8 0 0 0 0 1
 device=nmosfet
 T 200 2100 5 8 0 0 0 0 1
@@ -11,8 +11,6 @@ T 200 1500 5 8 0 0 0 0 1
 dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
 T 200 1300 5 8 0 0 0 0 1
 use-license=free, no restrictions
-T 200 1100 5 8 0 0 0 0 1
-numslots=0
 T 600 600 8 10 1 1 0 0 1
 refdes=Q?
 T 600 400 8 10 1 1 0 0 1
