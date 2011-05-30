@@ -1,28 +1,24 @@
-all: ibis.lib
+IBIS_COMPONENTS=\
+	ibis_pkg.inc \
+	ibis_input.inc \
+	ibis_output.inc \
+	ibis_tristate.inc \
+	ibis_open_source.inc \
+	ibis_open_sink.inc \
+	ibis_buffer.inc \
+	ibis_terminator.inc \
+	ibis_dynamic_clamp.inc
 
-%.lib: %.ibs ibis.py
+all: $(IBIS_COMPONENTS)
+
+%.net: %.sch
+	gnetlist -g spice-sdb -o $@ $<
+
+%.lib: %.ibs ibis.py *.inc
 	./ibis.py $< $@
 
-IBIS_COMPONENTS=\
-	ibis_input.sch \
-	ibis_output.sch \
-	ibis_tristate.sch \
-	ibis_open_source.sch \
-	ibis_open_sink.sch \
-	ibis_buffer.sch \
-	ibis_terminator.sch \
-	ibis_dynamic_clamp.sch
-
-ibis.lib: $(IBIS_COMPONENTS)
-	@-rm -f $@
-	@echo Generating $@...
-	@set -e; for n in $^; do \
-		echo Adding $$n; \
-		echo ".lib $${n%%.sch}" >> $@; \
-		gnetlist -g spice-sdb -o /dev/stderr $$n 2>&1 >/dev/null | grep -v '^.end$$' >> $@; \
-		echo ".endl" >> $@; \
-	done
-	@echo Done
+%.inc: %.sch
+	gnetlist -g spice-sdb -o /dev/stderr $< 2>&1 >/dev/null | grep -v '^.end$$' > $@
 
 clean:
 	-rm *.lib
