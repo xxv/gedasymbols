@@ -1,15 +1,12 @@
-# release: pcb 20080202
-# date:    Thu Apr  1 17:38:26 2010
-# user:    mathias (Mathias Hoffmann,,,)
-# host:    mathias-desktop
+# release: pcb 1.99z
 
-# To read pcb files, the pcb version (or the cvs source date) must be >= the file version
+# To read pcb files, the pcb version (or the git source date) must be >= the file version
 FileVersion[20070407]
 
 PCB["" 196850 196850]
 
 Grid[3937.004150 0 0 1]
-Cursor[0 0 0.000000]
+Cursor[0 11811 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[600 1000 600 600 1500 1000]
@@ -802,7 +799,7 @@ Via[39370 39370 11811 3938 0 5906 "1" ""]
 Via[39370 59055 11811 3938 0 5906 "2" ""]
 Via[39370 78740 11811 3938 0 5906 "3" ""]
 
-Element["" "" "AKL_4Pin.fp" "" 110236 39370 -15748 74803 0 100 ""]
+Element["" "" "AKL_4PIN.fp" "" 110236 39370 -15748 74803 0 100 ""]
 (
 	Pin[0 59055 11811 3938 12411 5906 "4" "4" ""]
 	Pin[0 0 11811 3938 12411 5906 "1" "1" "square"]

@@ -8,7 +8,7 @@ echo "set all pin names and pad names to the value of the corresponding pinnnumb
 awk -v filename="$1" '
 { 
   if ( $1 ~ /Pin\[/ ) {       # If the current line is a pin 
-s    $7=$8                     # set the pin name to the value of the pin number
+    $7=$8                     # set the pin name to the value of the pin number
     ++numpins                 # increment numpins
     } 
     else {   
