@@ -2,13 +2,13 @@ v 20060123 1
 T 1000 2400 8 10 1 1 0 6 1
 refdes=CONN?
 T 700 3350 5 8 0 0 0 0 1
-device=CON_1x4
+device=CONNECTOR_1x4
 T 1100 350 5 8 1 1 0 6 1
-footprint=CON_1x4PIN
+footprint=1x4PIN
 T 700 2950 5 8 0 0 0 0 1
 author=Leon Kos / Kai-Martin Knaak
 T 700 3150 5 8 0 0 0 0 1
-description=connector, 4 pole
+description=connector, 4 pin
 T 700 2650 5 8 0 0 0 0 1
 numslots=0
 P 400 1900 600 1900 1 0 0
