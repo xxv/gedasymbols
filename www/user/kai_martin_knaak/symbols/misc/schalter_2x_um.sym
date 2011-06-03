@@ -28,7 +28,7 @@ value=APEM TL46WW
 T 400 500 8 8 1 1 0 0 1
 footprint=APEM_TL46WW
 T 300 2900 5 8 0 0 0 0 1
-description=toggle switch, two pole
+description=two pole toggle switch, DPDT
 T 300 2300 5 8 0 0 0 0 1
 author=K-M. Knaak, kmk@lilalaser.de
 T 300 2100 5 8 0 0 0 0 1

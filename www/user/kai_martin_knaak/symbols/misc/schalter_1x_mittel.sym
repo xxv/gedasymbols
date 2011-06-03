@@ -29,7 +29,7 @@ value=XXX
 T 300 500 8 8 1 1 0 0 1
 footprint=XXXfootprint
 T 300 2300 5 8 0 0 0 0 1
-description=toggle switch
+description=toggle switch with stable middle position, SPTT
 T 300 1700 5 8 0 0 0 0 1
 author=K-M. Knaak, kmk@lilalaser.de
 T 300 1500 5 8 0 0 0 0 1
