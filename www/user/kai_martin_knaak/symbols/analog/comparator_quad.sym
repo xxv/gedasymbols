@@ -8,7 +8,7 @@ documentation=http://www.national.com/ds/LM/LM139.pdf
 T 0 2700 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
 T 0 2500 5 8 0 0 0 0 1
-dist-license=GPL , see http://www.gnu.org/licenses/gpl.txt
+dist-license=GPL3 , see http://www.gnu.org/licenses/gpl.txt
 T 0 2300 5 8 0 0 0 0 1
 use-license=free, no restrictions
 T 0 2100 5 8 0 0 0 0 1
