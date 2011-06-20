@@ -1,0 +1,138 @@
+<!--#set var="title" value="Essential Geda Library" -->
+<!--#include virtual="/header.html" -->
+
+put together by: Kai-Martin Knaak <br>
+email: <a href="mailto:kmk@familieknaak.de">kmk@familieknaak.de</a> <br>
+
+<h2>General remarks</h2>
+The catalog of symbols and footprints presented here is supposed to provide
+reasonable defaults for simple electronics projects. It is self consistent.
+That is, the default footprint attribute of a symbol points to one of the
+footprints given in the footprint section.
+
+<p>Note: All symbols, footprints and scripts are licensed GPL 3 for 
+distribution, and unlimited for use. See
+<a href="http://www.gnu.org/licenses/gpl.txt">http://www.gnu.org/licenses.gpl.txt</a>
+for the details</p>
+
+<!---
+<h2>New Project Script</h2>
+<a href="new_geda_project.sh">new_geda_project.sh</a> is a little convinience
+script to starting a new geda project. When given a project name, it creates
+a simple directory structure and populates it with some config files (gafrc,
+attribs). In addition, it copies a <a href ="doku_template.lyx">documentation template</a>
+in lyx format to the directory.
+
+<h2>Scripted pcb layout print</h2>
+The bash script <a href="layoutdruck.sh">layoutdruck.sh</a> uses actions on the 
+command line of pcb to produce a set of printouts for use in documentation. 
+These include a multi page PDF with top and bottom layout, each with values and with 
+refdes. The layout can be spread between several sheets for large layouts.
+
+<p>In addition photo realistic PNG export of top and bottom side is produced. A drop
+shadow is added to the PNG to make the image even more photo realistic.
+
+<p>Note, there is a bug in pcb that prevents the execution of actions when printing
+from the command line. This script needs a bug patch of pcb not yet applied to the 
+distributed version of pcb.
+
+<h2>Export a PDF of all schematics in a hierarchy</h2>
+The bash script <a href="schaltplandruck.sh">schaltplandruck.sh</a> uses print.scm 
+from the gnetlist distribution and ps2pdf to create output. It recursively descends
+into subsheets of a hierarchy and prints every unique schematic it encounters.
+
+
+<h3> Templates
+<ul>
+   <li> <a href="footprints/footprint_template.pcb"> footprint_template.pcb</a>
+ - a template for footprint design</li>
+</ul>
+</h3>
+--->
+
+<h2>Symbols</h2>
+The symbols of the essential lib are designed as generic as possible, yet
+ready for use. That is, they contain footprint attributes that match items
+in the footprint section of this lib. The symbols also demonstrate the 
+recommended use of some not mandatory attributes like "documentation" and
+"symversion". The set of symbols tries to deliver a look and feel consistent
+with aceppted standard practice in electronic. The choice of symbols is by
+no means complete. But they should allow for simple projects.
+
+<h3> Standard Visible Attributes</h3>
+With a few exceptions, all symbols contain these three visible symbols:
+<ol>
+	<li>refdes
+	<li>value
+	<li>footprint
+</ol>
+On placement of the symbol, these attributes are promoted to the schematic. 
+They can be changed per instance in the schematic with the attribute editor.
+To avoid clutter, only the value of these attributes is visible. Their color
+ is "detached attribute", size is 10 units, except for the footprint 
+attribute, which is size 8. These three attributes are generally placed on
+top of each other somewhere near the the graphics. For slotted symbols, 
+the slot attribute is also visible in the canvas.
+
+<h3> Standard Hidden Atttributes </h3>
+All symbols in the lib contain these hidden attributes:
+<ol>
+	<li>description
+	<li>comment
+	<li>documentation
+	<li>symversion
+	<li>author
+	<li>dist-license
+	<li>use-license
+</ol>
+The hidden attributes are placed top to bottom in this order somewhere above
+the symbol graphic. Font size is 8, color is "Attribute", line separation 
+is 200 units.
+
+In case there is no value known for the standard attributes, but should be 
+replaced with the instance in the schematic, their value is set to the 
+string "unknown". If no value is the intended value, then the value is 
+set to the string "none".
+
+<h3>List attributes</h3>
+For some symbols there is more than one reasonable footprint in the lib.
+Most notably, many components come in SMD and thru hole variants. Other
+symbols may most likely be attributed with one of a small set of standard
+values (e.g. 1N4148, or 1N4001 for diodes). To make this discoverable,
+there are plural attributes that present a comma separated list of values.
+<ul>
+	<li>footprints
+	<li>values
+</ul>
+Currently, these lists are purely informational. Check "show inherited
+attributes" in the attribute editor to get them displayed. Future versions
+of the attribute editor may put the items of the list in a drop-down list
+so you can choose with a simple mouse click.
+
+<h3> Design </h3>
+In addition to the standard attributes, the symbols meet the following
+design criteria:
+<ul>
+	<li>The sensitive point of all pins is at grid 100 points.
+	<li>Power pins of integrated circuits are split off to a separate 
+power symbol. A hiddden comment attributes hints what power symbol to use.
+	<li>Graphic lines are generally width 10
+	<li>Pin length is generally 100 units.
+	<li>Pin numbers are hidden, if they follow a generally accepted
+ standard. With box shaped symbols they are placed 50 units above the pin 
+and 50 units outside the box. Pin number size is 8 units.
+	<li>With box shaped symbols, pin labels are placed 50 units inside 
+the box, vertically centered to the pin. Pin label size is 10 units.
+</ul>
+
+<!--#include file="symbols.html" -->
+
+<h2>Footprints</h2>
+
+<!--#include file="footprints.html" -->
+
+<h2>Changelog</h2>
+A changelog of the essential library is 
+<a href="changelog-essential.html"> here</a>
+
+<!--#include virtual="/trailer.html" -->
