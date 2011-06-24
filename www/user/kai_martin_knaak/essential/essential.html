@@ -1,4 +1,4 @@
-<!--#set var="title" value="Essential Geda Library" -->
+<!--#set var="title" value="Essential gEDA Library" -->
 <!--#include virtual="/header.html" -->
 
 put together by: Kai-Martin Knaak <br>
@@ -52,14 +52,20 @@ into subsheets of a hierarchy and prints every unique schematic it encounters.
 
 <h2>Symbols</h2>
 The symbols of the essential lib are designed as generic as possible, yet
-ready for use. That is, they contain footprint attributes that match items
+ready for use. They contain footprint attributes that match items
 in the footprint section of this lib. The symbols also demonstrate the 
-recommended use of some not mandatory attributes like "documentation" and
-"symversion". The set of symbols tries to deliver a look and feel consistent
-with aceppted standard practice in electronic. The choice of symbols is by
-no means complete. But they should allow for simple projects.
+recommended use of some none-mandatory attributes like "documentation",
+"comment" and "symversion". There is no need to add attributes to the
+instances of the symbol in the schematics. The symbols are "heavy" in the
+context of the geda library debate.
+(see a recap of the debate <a href="http://geda.seul.org/wiki/geda:faq-gschem#what_s_this_business_about_heavy_vs_light_symbols"> in the gschem-FAQ</a>).
 
-<h3> Standard Visible Attributes</h3>
+The set of symbols tries to deliver a look and feel consistent with 
+accepted standard practice in electronic. It does not strictly ahere to
+an IEC standard, though. The choice of symbols is by no means complete. 
+But they should allow for simple projects.
+
+<h3> Visible Attributes</h3>
 With a few exceptions, all symbols contain these three visible symbols:
 <ol>
 	<li>refdes
@@ -74,8 +80,8 @@ attribute, which is size 8. These three attributes are generally placed on
 top of each other somewhere near the the graphics. For slotted symbols, 
 the slot attribute is also visible in the canvas.
 
-<h3> Standard Hidden Atttributes </h3>
-All symbols in the lib contain these hidden attributes:
+<h3> Hidden Attributes </h3>
+All symbols in the lib contain these standard attributes in a hidden way:
 <ol>
 	<li>description
 	<li>comment
@@ -99,7 +105,8 @@ For some symbols there is more than one reasonable footprint in the lib.
 Most notably, many components come in SMD and thru hole variants. Other
 symbols may most likely be attributed with one of a small set of standard
 values (e.g. 1N4148, or 1N4001 for diodes). To make this discoverable,
-there are plural attributes that present a comma separated list of values.
+there are two plural attributes which contain a comma separated list of 
+values.
 <ul>
 	<li>footprints
 	<li>values
@@ -107,7 +114,7 @@ there are plural attributes that present a comma separated list of values.
 Currently, these lists are purely informational. Check "show inherited
 attributes" in the attribute editor to get them displayed. Future versions
 of the attribute editor may put the items of the list in a drop-down list
-so you can choose with a simple mouse click.
+so you can choose from them with a simple mouse click.
 
 <h3> Design </h3>
 In addition to the standard attributes, the symbols meet the following
