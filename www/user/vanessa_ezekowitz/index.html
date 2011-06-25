@@ -5,9 +5,11 @@
 <BR>Vanessa Ezekowitz
 <BR>email: <a href="mailto:vanessaezekowitz@gmail.com">vanessaezekowitz@gmail.com</a>
 <BR>web: <a href="http://digitalaudioconcepts.com/vanessa/index-van.html">http://digitalaudioconcepts.com/vanessa/index-van.html</a>
+
 <P>
 <h2>Tools</h2>
 <h2>Documentation</h2>
+
 <h2>Symbols</h2>
 
 <h3>Common Parts</h3>
@@ -48,6 +50,7 @@
 <li><a href="symbols/41256.sym">41256</a> - Common 41256 256 kbit x 1 DRAM chip.</li>
 <li><a href="symbols/44256-DRAM.sym">44256</a> - Common 44256 256 kbit x 4 DRAM chip, DIP package only.</li>
 <li><a href="symbols/514400-1.sym">HM51440A</a> - 1Mb x 4 DRAM chip, for ZIP-20 package (Hitachi).</li>
+<li><a href="symbols/MC68000.sym">Motorola 68000 CPU</a> - Standard DIP version.</li>
 </ul>
 
 <h3>Connectors</h3>
@@ -56,6 +59,7 @@
 
 <ul>
 <li><a href="symbols/Expansion_Port.sym">C64/C128 Expansion Port</a> - Derived from stock GEDA 40-pin header/connector.</li>
+<li><a href="symbols/30-pin-SIMM.sym">30-pin SIMM</a> - For single-unit SIMMs and sockets.</li>
 </ul>
 
 <h4>Untested</h4>
@@ -79,16 +83,19 @@
 <ul>
 <li><a href="footprints/200_Capacitor.fp">Basic non-polarized capacitor</a> - 200-mil lead spacing, commonly for small ceramics, polyester film, etc.</li>
 <li><a href="footprints/100_Resistor-Diode_vertical.fp">Resistor/Diode</a> - 100-mil lead spacing for folded-over 1/8W resistors and small diodes like 1N914.  Also *just* fits 1/4W resistors.  Not for 1N400x-type diodes (leads on these are usually too thick).</li>
-<li><a href="footprints/Transistor_TO-18.fp">Common TO-18</a> - For 2N2222 or similar, derived from Eagle part.</li>
+<li><a href="footprints/Transistor_TO-18.fp">Common Transistor</a> - TO-18, for 2N2222 or similar, derived from Eagle part.</li>
 <li><a href="footprints/PTS625SL50-LFS.fp">PTS625SL50-LFS</a> - SPST momentary switch, normally open, low-profile pushbutton type (C&K Components).</li>
 <li><a href="footprints/350_Common-Mounting-Hole__130_mil_drill.fp">Common Mounting hole</a> - A simple screw hole, 350 mil pad diameter, 130 mill drill (as a component so PCB won't move it around).</li>
 <li><a href="footprints/jumper-2-pad-open.fp">2-pad jumper</a> - Surface mount style jumper pads, 40 mil square.</li>
-
+<li><a href="footprints/DIP switch 5-pos.fp">5-position DIP switch</a> - Common, fits 10-pin DIP components.</li>
 </ul>
 
 <h4>Untested</h4>
 
 <ul>
+
+<li><a href="footprints/Transistor_TO-92-EBC.fp">Basic transistor</a> - TO-92 case, Emitter-Base-Collector pin order</li>
+<li><a href="footprints/Transistor_TO-92-CBE.fp">Basic transistor</a> - TO-92 case, Collector-Base-Emitter pin order</li>
 <li><a href="footprints/0603_rpack4.fp">Four-in-one resistor network</a> - 0603 (x4) surface mount isolated resistor pack (Yageo YC164 series).</li>
 <li><a href="footprints/PT10LH01_Piher_Potentiometer.fp">PT10LH01</a> - Common potentiometer - standing upright, horizontal shaft (Piher)</li>
 <li><a href="footprints/DIP 12.fp">DIP 12</a> - Simple 12-pin DIP package.</li>
@@ -112,6 +119,7 @@
 <li><a href="footprints/Female_DIN_5_pin.fp">Female 5-pin DIN</a> - PCB mounted, suitable for older keyboards, etc. derived from Eagle part.</li>
 <li><a href="footprints/Female_Stereo_Conn_SJ13533NG_3.5mm.fp">SJ13533NG</a> - Lower-profile 3.5mm stereo jack, without internal switches, based on datasheet (CUI, Inc).</li>
 <li><a href="footprints/Power_Plug_163-7620-E_5.5mm-2.1mm.fp">163-7620-E</a> - 5.5mm outer contact, 2.1mm pin diameter (Kobiconn).</li>
+<li><a href="footprints/30-pin-SIMM.fp">30 pin SIMM socket</a> - should fit most such components.</li>
 </ul>
 
 <h4>Untested</h4>
@@ -123,6 +131,10 @@
 <li><a href="footprints/Female_DSub_HDF15_short.fp">Female 15-pin D-Sub (short)</a> - Shortened version suitable for use at the edge of a board, similar to PCB's other D-Sub connectors. </li>
 <li><a href="footprints/Female_Stereo_Conn_PG203J_3.5mm.fp">PG203J</a> - Basic 3.5mm stereo jack (the kind Radio Shack sells), derived from Eagle part.</li>
 <li><a href="attic/Female_Barrel_DC0202.fp">DC0202</a> - Female DC Power jack.  Generic footprint, derived from Eagle part.</li>
+<li><a href="footprints/SD-RSMT-2.fp">SD Card slot</a> - SD-RSMT-2 (3M, obsolete).</li>
+<li><a href="footprints/SD-Amphenol-101-00708-64.fp">SD Card slot</a> - 101-00708-64 (Amphenol)</li>
+<li><a href="footprints/SCDA7A0101.fp">SD Card slot</a> - SCDA7A0101 (ALPS)</li>
+<li><a href="footprints/RCJ-02X.fp"></a> - PCB-mount RCA connector RCJ-02X (CUI, Inc.).</li>
 </ul>
 
 <h3>IC's</h3>
