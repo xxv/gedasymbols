@@ -1,0 +1,2 @@
+# Add an entire directory tree to cvs, pruning the CVS directory so it is not added:
+for f in `find . -name CVS -prune -o -print | sort`; do cvs add $f; done
