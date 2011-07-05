@@ -22,7 +22,7 @@ a simple directory structure and populates it with some config files (gafrc,
 attribs). In addition, it copies a <a href ="doku_template.lyx">documentation template</a>
 in lyx format to the directory.
 
-<h2>Scripted pcb layout print</h2>
+<h2>Scripted print of pcb layouts</h2>
 The bash script <a href="layoutdruck.sh">layoutdruck.sh</a> uses actions on the 
 command line of pcb to produce a set of printouts for use in documentation. 
 These include a multi page PDF with top and bottom layout, each with values and with 
@@ -35,7 +35,7 @@ shadow is added to the PNG to make the image even more photo realistic.
 from the command line. This script needs a bug patch of pcb not yet applied to the 
 distributed version of pcb.
 
-<h2>PDF of all schematics in a hierarchy</h2>
+<h2>PDF export of all schematics in a hierarchy</h2>
 The bash script <a href="schaltplandruck.sh">schaltplandruck.sh</a> uses print.scm 
 from the gnetlist distribution and ps2pdf to create output. It recursively descends
 into subsheets of a hierarchy and collects prints every unique schematic it encounters.
@@ -60,7 +60,11 @@ runs the script.
 <li> <a href="set_number_of_pages.sh">set_number_of_pages.sh</a>: Sets the attribute 
 "number_of_pages" of all schematics files in the current working directory. This 
 is a work-arround for the absence of methods to handle global attributes in 
-gschem. 
+gschem.
+<li> <a href="set_net_of_port_symbol.sh">set_net_of_port_symbol.sh</a>: Sets the
+net attribute of port symbols to the value given by the refdes. With this setting
+gnetlist connects all ports of a kind. Else, only the first instance of the port
+with a given refdes receives connection to the parent sheet.
 </ol>
 
 <h3> Templates
@@ -94,6 +98,6 @@ The symbols in this sections are designed according to the following design crit
 
 <h2>Changelog</h2>
 A changelog of this section of geda symbols is 
-<a href="changelog2.html"> here</a>
+<a href="changelog.html"> here</a>
 
 <!--#include virtual="/trailer.html" -->
