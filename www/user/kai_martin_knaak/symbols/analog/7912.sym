@@ -40,7 +40,7 @@ refdes=U?
 T 300 2200 5 8 0 0 0 0 1
 author=Kai-Martin Knaak, kmk@lilalaser.de
 T 300 2800 5 8 0 0 0 0 1
-description=voltage constant, -12V, 1A 
+description=voltage regulator, -12V, 1A 
 T 300 1000 8 8 1 1 0 0 1
 footprint=TO220
 T 300 2600 5 8 0 0 0 0 1

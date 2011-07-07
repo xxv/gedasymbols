@@ -40,7 +40,7 @@ refdes=U?
 T 200 2000 5 8 0 0 0 0 1
 author=Kai-Martin Knaak, kmk@lilalaser.de
 T 200 3000 5 8 0 0 0 0 1
-description=positive constant voltage regulator
+description=positive regulator voltage regulator
 T 200 900 8 8 1 1 0 0 1
 footprint=TO220
 T 200 2800 5 8 0 0 0 0 1

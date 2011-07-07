@@ -4,7 +4,7 @@ value=79L15
 T 300 1400 8 10 1 1 0 0 1
 refdes=U?
 T 300 2800 5 8 0 0 0 0 1
-description=voltage constant, -15V, 100 mA, SO8 
+description=voltage regulator, -15V, 100 mA, SO8 
 T 300 1000 8 8 1 1 0 0 1
 footprint=SO8
 T 300 2600 5 8 0 0 0 0 1

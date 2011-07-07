@@ -38,7 +38,7 @@ pinlabel=out
 T 300 1400 8 10 1 1 0 0 1
 refdes=U?
 T 300 3000 5 8 0 0 0 0 1
-description=voltage constant, -5V, 100 mA, SO8 
+description=voltage regulator, -5V, 100 mA, SO8 
 T 300 1000 8 8 1 1 0 0 1
 footprint=SO8
 T 300 2800 5 8 0 0 0 0 1
