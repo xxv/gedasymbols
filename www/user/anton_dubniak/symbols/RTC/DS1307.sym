@@ -1,0 +1,104 @@
+v 20110115 2
+B 400 200 1000 1200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 375 4250 5 10 0 0 0 0 1
+device=DS1307
+T 1100 1550 8 10 1 1 0 0 1
+refdes=U?
+T 375 2850 5 10 0 0 0 0 1
+footprint=DIP8
+T 400 1550 9 10 1 0 0 0 1
+DS1307
+T 375 2250 5 10 0 0 0 0 1
+author=Anton Dubniak <twister@tfsoft.org.ua>
+T 375 2650 5 10 0 0 0 0 1
+numslots=0
+T 375 2050 5 10 0 0 0 0 1
+dist-license=GPL
+T 375 1850 5 10 0 0 0 0 1
+use-license=unlimited
+T 375 4050 5 10 0 0 0 0 1
+description=I2C real-time clock and calendar
+T 375 3850 5 10 0 0 0 0 1
+documentation=http://datasheets.maxim-ic.com/en/ds/DS1307.pdf
+V 975 925 175 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+V 975 925 200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+L 900 1000 975 925 3 0 0 0 -1 -1
+L 975 925 1075 1025 3 0 0 0 -1 -1
+T 950 1025 9 3 1 0 0 0 1
+XII
+T 1100 900 9 3 1 0 0 0 1
+III
+T 950 775 9 3 1 0 0 0 1
+VI
+T 825 900 9 3 1 0 0 0 1
+IX
+T 375 3450 5 10 0 0 0 0 1
+net=GND:4
+T 375 3250 5 10 0 0 0 0 1
+net=Vcc:8
+P 100 1200 400 1200 1 0 0
+{
+T 305 1245 5 8 1 1 0 6 1
+pinnumber=5
+T 550 1375 5 8 0 1 0 8 1
+pinseq=5
+T 455 1195 9 8 1 1 0 0 1
+pinlabel=SDA
+T 600 1375 5 8 0 1 0 2 1
+pintype=io
+}
+P 100 1000 400 1000 1 0 0
+{
+T 305 1045 5 8 1 1 0 6 1
+pinnumber=6
+T 550 1175 5 8 0 1 0 8 1
+pinseq=6
+T 455 995 9 8 1 1 0 0 1
+pinlabel=SCL
+T 600 1175 5 8 0 1 0 2 1
+pintype=io
+}
+P 100 600 400 600 1 0 0
+{
+T 305 645 5 8 1 1 0 6 1
+pinnumber=7
+T 550 775 5 8 0 1 0 8 1
+pinseq=7
+T 455 595 9 8 1 1 0 0 1
+pinlabel=SQW
+T 600 775 5 8 0 1 0 2 1
+pintype=out
+}
+P 100 400 400 400 1 0 0
+{
+T 305 445 5 8 1 1 0 6 1
+pinnumber=3
+T 550 575 5 8 0 1 0 8 1
+pinseq=3
+T 455 395 9 8 1 1 0 0 1
+pinlabel=VBAT
+T 600 575 5 8 0 1 0 2 1
+pintype=in
+}
+P 1700 1200 1400 1200 1 0 0
+{
+T 1495 1245 5 8 1 1 0 0 1
+pinnumber=1
+T 1250 1375 5 8 0 1 0 2 1
+pinseq=1
+T 1345 1195 9 8 1 1 0 6 1
+pinlabel=X1
+T 1200 1375 5 8 0 1 0 8 1
+pintype=in
+}
+P 1700 400 1400 400 1 0 0
+{
+T 1495 445 5 8 1 1 0 0 1
+pinnumber=2
+T 1250 575 5 8 0 1 0 2 1
+pinseq=2
+T 1345 395 9 8 1 1 0 6 1
+pinlabel=X2
+T 1200 575 5 8 0 1 0 8 1
+pintype=out
+}
