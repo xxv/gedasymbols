@@ -2,6 +2,14 @@
 # A very simple script to copy symbols and components to the essential lib
 
 PRE=essential/symbols
+
+cp symbols/analog/opamp.sym $PRE/analog
+cp symbols/analog/opamp_pwr.sym $PRE/analog
+cp symbols/analog/opamp_dual.sym $PRE/analog
+cp symbols/analog/opamp_dual_pwr.sym $PRE/analog
+cp symbols/analog/opamp_offset.sym $PRE/analog
+
+
 cp symbols/titleblock/title-block.sym $PRE/titleblock/titleblock.sym
 cp symbols/titleblock/in.sym $PRE/titleblock
 cp symbols/titleblock/out.sym $PRE/titleblock
