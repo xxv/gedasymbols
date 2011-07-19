@@ -72,6 +72,24 @@ echo \
 (component-library (build-path gedasymbols \"analog\"))
 " > gafrc
 
+
+# Add a local gnetlistrc. Hierarchy is enabled by default
+echo \
+"(hierarchy-traversal "enabled")
+
+(hierarchy-uref-mangle "enabled")
+(hierarchy-uref-separator "")
+
+(hierarchy-netname-mangle "enabled")
+(hierarchy-netname-separator "/")
+
+(hierarchy-netattrib-mangle "enabled")
+(hierarchy-netattrib-separator "/")
+
+(unnamed-netname "noname")
+" > gnetlistrc
+
+
 # Create a schematic with a title block filled with name an date.
 echo \
 "v 20090328 2
@@ -306,11 +324,13 @@ PCB.*.backup
 
 git init
 git add .
-git commit -m \'geda project $NAME initialized\'
+git commit -m 'geda project $NAME initialized'
 git config color.ui true
 sudo git clone --bare . /var/cache/git/$NAME.git
 sudo touch /var/cache/git/$NAME.git/git-daemon-export-ok
-sudo echo "geda project "$NAME > /var/cache/git/description
+sudo chown $USER /var/cache/git/$NAME".git"/description
+sudo echo "geda project "$NAME > /var/cache/git/$NAME".git"/description
+sudo chown root /var/cache/git/$NAME".git"/description
 ###################end git related stuff##############
 
 

@@ -1,9 +1,7 @@
-v 20110116 2
-T 200 2400 5 8 0 0 0 0 1
-device=pmosfet
-T 200 2200 5 8 0 0 0 0 1
+v 20110619 2
+T 200 2600 5 8 0 0 0 0 1
 description=MOSFET, p-channel
-T 200 2000 5 8 0 0 0 0 1
+T 200 2400 5 8 0 0 0 0 1
 documentation=http://www.fairchildsemi.com/ds/BS/BSS84.pdf
 T 200 1800 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
@@ -11,8 +9,8 @@ T 200 1600 5 8 0 0 0 0 1
 dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
 T 200 1400 5 8 0 0 0 0 1
 use-license=free, no restrictions
-T 200 1200 5 8 0 0 0 0 1
-numslots=0
+T 200 2000 5 8 0 0 0 0 1
+symversion=1.0
 T 600 600 8 10 1 1 0 0 1
 refdes=Q?
 T 600 400 8 10 1 1 0 0 1
@@ -63,3 +61,5 @@ z
 L 200 600 200 200 3 10 1 0 -1 -1
 L 250 600 500 600 3 10 1 0 -1 -1
 L 250 200 500 200 3 10 1 0 -1 -1
+T 200 2200 5 8 0 0 0 0 1
+footprints=SOT23_GSD, TO92_DGS, DPAK_GDS, TO220_GDS

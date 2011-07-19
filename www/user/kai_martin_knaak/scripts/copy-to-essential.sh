@@ -9,6 +9,8 @@ cp symbols/analog/opamp_dual.sym $PRE/analog
 cp symbols/analog/opamp_dual_pwr.sym $PRE/analog
 cp symbols/analog/opamp_offset.sym $PRE/analog
 
+cp symbols/analog/igbt.sym $PRE/discrete
+
 
 cp symbols/titleblock/title-block.sym $PRE/titleblock/titleblock.sym
 cp symbols/titleblock/in.sym $PRE/titleblock
@@ -32,3 +34,7 @@ cp footprints/discrete/res_vert.fp $PRE/discrete
 cp footprints/generic/0805.fp $PRE/generic
 cp footprints/generic/0603.fp $PRE/generic
 
+cp footprints/generic/TO220.fp $PRE/generic
+cp footprints/generic/TO220_GDS.fp $PRE/generic
+cp footprints/generic/TO220_GCE.fp $PRE/generic
+cp footprints/generic/TO220_ECB.fp $PRE/generic
