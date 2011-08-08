@@ -53,18 +53,23 @@ collections in the library.
 <li> <a href="extract_footprints.sh">extract_footprints.sh</a>: Extracts all 
 footprints of a layout and writes them to individual files in the currrent 
 working directory.
-<li> <a href="collect_gedaconfs.sh">collect_gedaconfs.sh</a>: Collects the config files 
-in $HOME/.gEDA and $HOME/.pcb into a compressed tar file. The path to the color 
-file is absolute. It contains the path to the home directory of the user, who 
-runs the script.
-<li> <a href="set_number_of_pages.sh">set_number_of_pages.sh</a>: Sets the attribute 
-"number_of_pages" of all schematics files in the current working directory. This 
-is a work-arround for the absence of methods to handle global attributes in 
-gschem.
+<li> <a href="collect_gedaconfs.sh">collect_gedaconfs.sh</a>: Collects the
+config files in $HOME/.gEDA and $HOME/.pcb into a compressed tar file. The path
+to the color file is absolute. It contains the path to the home directory of
+the user, who runs the script.
+<li> <a href="set_number_of_pages.sh">set_number_of_pages.sh</a>: Sets the
+attribute "number_of_pages" of all schematics files in the current working
+directory. This is a work-arround for the absence of methods to handle global
+attributes in gschem.
 <li> <a href="set_net_of_port_symbol.sh">set_net_of_port_symbol.sh</a>: Sets the
 net attribute of port symbols to the value given by the refdes. With this setting
 gnetlist connects all ports of a kind. Else, only the first instance of the port
 with a given refdes receives connection to the parent sheet.
+<li> <a href="set_linewidth.sh"> set_linewidth.sh</a>: Manipulates the width of
+selected lines. Divides or multiplies line width by 10. This is useful to
+temporarily suppress DRC warnings.
+<li> <a href="layer_content.sh"> layer_content.sh</a>: Cut, or paste the content
+of a layer wholesale from a layout.
 </ol>
 
 <h3> Templates

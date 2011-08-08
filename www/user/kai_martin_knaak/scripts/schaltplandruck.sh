@@ -2,7 +2,7 @@
 # A script to print all sheets of a hierarchical gschem schematic to PDF
 #################################################-<(kmk)>- 2010 ########
 
-if [ $# -eq 0 ]    # If Script invoked with no command-line args
+if [ $# -eq 0 ]    # If script invoked with no command-line args
 then
   echo "Collects all sub sheets of a hierarchical design and prints them to multi"
   echo "page postscript and PDF. Schematics are sorted according to page attribute."
