@@ -8,7 +8,7 @@
 
 if [ $# != 2 ]    # If script was invoked without the correct number of args
 then
-  echo "This script uses gawk to set the width of all lines in a PCB style file"
+  echo "\nThis script sets the width of all selected lines in a PCB style file."
   echo "Usage: `basename $0` MODE layout-file"
   echo "MODE can be:"
   echo "   *10  -->  multiply line width by 10"
