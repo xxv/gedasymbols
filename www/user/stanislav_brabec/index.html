@@ -19,10 +19,15 @@ soldering pads</i> and <i>allows snap to grid</i>.
 <h2>Symbols</h2>
 
 <ul>
-<li><a href="symbols/connector/Hosiden_TCX3106-1.sym">Hosiden TCX3106</a>: half lock board to board connector used on Sharp Zaurus IOPORT peripherals (needs footprint below)</li>
+<li><a href="symbols/connector/header4t-1.sym">T-shaped 4-pin jumper header</a>: Header for jumper with 3 possible positions, for use with JUMPER4T or JUMPER4TR footprints</li>
 <li><a href="symbols/connector/DB9-RS232-1.sym">RS232 DB9</a>: yet another RS232 DB9 symbol</li>
+<li><a href="symbols/connector/Hosiden_TCX3106-1.sym">Hosiden TCX3106</a>: half lock board to board connector used on Sharp Zaurus IOPORT peripherals (needs footprint below)</li>
+<li><a href="symbols/connector/rs232-idc10.sym">RS-232 IDC10</a>: Just an original gEDA symbol with letter case fix</li>
 <li><a href="symbols/maxim/max3245e-1.sym">Maxim MAX3245E</a>: 3.0-5.5V RS-232 3-driver/5-receiver (SSOP28)</li>
 <li><a href="symbols/74/NL27WZ00-1.sym">NL27WZ00</a>: dual 2-input NAND gate</li>
+<li><a href="symbols/74/NC7WZ04-1.sym">NC7WZ04</a>: dual invertor</li>
+<li><a href="symbols/analog/comparator-1.sym">Comparator</a>: generic comparator symbol</li>
+<li><a href="symbols/analog/comparator-mcp6541.sym">MCP6541</a>: MCP6541 comparator symbol (just this variant, others have different pinout, usable also for MCP6546)</li>
 <li><a href="symbols/analog/testpad_0_5mm-1.sym">testpad 0.5mm</a>: a simple circular test pad (needs footprint below)</li>
 <li><a href="symbols/analog/testpad_1mm-1.sym">testpad 1mm</a>: a simple circular test pad (needs footprint below)</li>
 </ul>
@@ -32,9 +37,13 @@ soldering pads</i> and <i>allows snap to grid</i>.
 <h2>Footprints</h2>
 
 <ul>
+<li><a href="footprints/connectors/JUMPER4T.fp">T-shaped 4-pin jumper header</a>: Header for jumper with 3 possible positions, for use with header4t-1 symbol</li>
+<li><a href="footprints/connectors/JUMPER4TR.fp">T-shaped 4-pin jumper header</a>: Header for jumper with 3 possible positions, for use with header4t-1 symbol, flipped</li>
 <li><a href="footprints/connectors/Hosiden_TCX3106.fp">Hosiden TCX3106</a>: half lock board to board connector used on Sharp Zaurus IOPORT peripherals</li>
+<li><a href="footprints/geda/SOT25D.fp">SOT23-5 variant</a>: variant with pin numbering 1-3, 4-5</li>
 <li><a href="footprints/generic/testpad_0_5mm.fp">testpad 0.5mm</a>: a simple circular test pad</li>
 <li><a href="footprints/generic/testpad_1mm.fp">testpad 1mm</a>: a simple circular test pad</li>
+<li><a href="footprints/generic/pad_rectangle_1_5x2mm.fp">rectangular pad 1.5 x 2mm</a>: just a single surface soldering pad</li>
 </ul>
 
 <p>Note: all my footprints are licensed GPL for distribution, and unlimited for use.</p>
