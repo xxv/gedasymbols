@@ -49,10 +49,10 @@ $PCB -x eps \
   --layer-color-3 '#dddddd' \
   --as-shown  \
   --layer-stack "outline,comment,elements,top" \
-  --eps-file "/tmp/out_ref.eps" \
+  --eps-file "/tmp/out.eps" \
   $PCBFILE
 
-poster -mA4 -p$SIZE -c12x12mm -o "/tmp/out_toprefdes.ps" "/tmp/out_ref.eps"
+poster -mA4 -p$SIZE -c12x12mm -o "/tmp/out_toprefdes.ps" "/tmp/out.eps"
 
 ## top-values
 echo "Bestückungsdruck Werte, Oberseite von "$OUTPUT
@@ -66,10 +66,10 @@ $PCB -x eps \
   --layer-color-3 '#dddddd' \
   --as-shown  \
   --layer-stack "outline,comment,elements,top" \
-  --eps-file "/tmp/out_value.eps" \
+  --eps-file "/tmp/out.eps" \
   $PCBFILE
 
-poster -mA4 -p$SIZE -c12x12mm -o "/tmp/out_topvalue.ps" "/tmp/out_value.eps"
+poster -mA4 -p$SIZE -c12x12mm -o "/tmp/out_topvalue.ps" "/tmp/out.eps"
 
 
 ## bottom-refdes
@@ -102,7 +102,7 @@ $PCB -x eps \
   --layer-color-6 '#dddddd' \
   --as-shown  \
   --layer-stack "outline,elements,bottom,solderside" \
-  --eps-file "/tmp/value.eps" \
+  --eps-file "/tmp/out.eps" \
   $PCBFILE
 
 poster -mA4 -p$SIZE -c12x12mm -o "/tmp/out_bottomvalue.ps" "/tmp/out.eps"
@@ -123,7 +123,7 @@ then
 fi
 
 
-### photorealistic output is optional, because time consuming ####
+### photorealistic output is optional, because it is time consuming ####
 if [ "$PHOTOOUTPUT" = "1" ]
 then
 
