@@ -10,7 +10,6 @@ tar -czf geda-conf.tgz  --directory=$HOME \
 	.pcb/colors/footprint \
 	.pcb/colors/layout \
 	.pcb/colors/layout_4layer \
-	.pcb/plugins/teardrops.so
 
 OUTFILE=$PWD/geda-conf.zip
 mv $OUTFILE /tmp
@@ -23,4 +22,5 @@ zip -o $OUTFILE \
 	.pcb/preferences \
 	.pcb/colors/footprint \
 	.pcb/colors/layout \
-	.pcb/colors/layout_4layer
+	.pcb/colors/layout_4layer \
+

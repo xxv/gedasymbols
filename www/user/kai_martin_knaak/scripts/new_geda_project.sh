@@ -21,6 +21,7 @@ PFAD=`dirname $(readlink -f $0)`
 
 mkdir $NAME
 cd $NAME
+mkdir doc
 mkdir gerber
 mkdir halde
 mkdir gehaeuse
@@ -302,7 +303,7 @@ Meckerliste
 
 \end_body
 \end_document
-" > $NAME.lyx
+" > doc/$NAME.lyx
 #######################End LyX template################
 
 
