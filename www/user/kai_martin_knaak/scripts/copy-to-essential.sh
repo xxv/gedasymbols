@@ -14,6 +14,11 @@ cp symbols/analog/diode/zener.sym $PRE/discrete
 cp symbols/analog/diode/photodiode_BPW34.sym $PRE/discrete
 cp symbols/analog/igbt.sym $PRE/discrete
 cp symbols/analog/cap_vert.sym $PRE/discrete
+cp symbols/analog/nmosfet.sym $PRE/discrete
+cp symbols/analog/nmosfet_power.sym $PRE/discrete
+cp symbols/analog/pmosfet.sym $PRE/discrete
+cp symbols/analog/pmosfet_power.sym $PRE/discrete
+
 # cp symbols/analog/res.sym $PRE/discrete
 # cp symbols/analog/res2.sym $PRE/discrete
 cp symbols/titleblock/title-block.sym $PRE/titleblock/titleblock.sym
@@ -38,21 +43,36 @@ cp footprints/discrete/res_RM15.fp $PRE/discrete
 cp footprints/discrete/res_RM20.fp $PRE/discrete
 cp footprints/discrete/res_vert.fp $PRE/discrete
 
+cp footprints/discrete/cap_100mil.fp $PRE/discrete
 cp footprints/discrete/cap_200mil.fp $PRE/discrete
 cp footprints/discrete/cap_200mil_a.fp $PRE/discrete
-cp footprints/discrete/cap_100mil.fp $PRE/discrete
 
 cp footprints/discrete/dio_1206.fp $PRE/discrete
 cp footprints/discrete/dio_1812.fp $PRE/discrete
 cp footprints/discrete/dio_RM10.fp $PRE/discrete
 
+cp footprints/generic/SOT23_BEC.fp $PRE/discrete
+cp footprints/generic/TO92_ECB.fp $PRE/discrete
+cp footprints/generic/TO220_ECB.fp $PRE/discrete
+cp footprints/generic/TO220_ECB_LAY.fp $PRE/discrete
+cp footprints/generic/TO126_ECB.fp $PRE/discrete
+
+cp footprints/generic/SOT23_GSD.fp $PRE/discrete
+cp footprints/generic/TO92_GDS.fp $PRE/discrete
+cp footprints/generic/TO92_DGS.fp $PRE/discrete
+cp footprints/generic/TO220_GDS.fp $PRE/discrete
+cp footprints/generic/TO247_GDS_LAY.fp $PRE/discrete
+
+cp footprints/generic/TO220_GCE.fp $PRE/discrete
+cp footprints/generic/TO247_GCE_LAY.fp $PRE/discrete
+
+cp footprints/generic/SOT23.fp $PRE/generic
 cp footprints/generic/0805.fp $PRE/generic
 cp footprints/generic/0603.fp $PRE/generic
-
+cp footprints/generic/TO92_123.fp $PRE/generic
 cp footprints/generic/TO220.fp $PRE/generic
-cp footprints/generic/TO220_GDS.fp $PRE/generic
-cp footprints/generic/TO220_GCE.fp $PRE/generic
-cp footprints/generic/TO220_ECB.fp $PRE/generic
+cp footprints/generic/TO247.fp $PRE/generic
+cp footprints/generic/TO247_LAY.fp $PRE/generic
 
 cp footprints/specific/BPW34.fp $PRE/specific
 cp footprints/specific/BPW34S.fp $PRE/specific
