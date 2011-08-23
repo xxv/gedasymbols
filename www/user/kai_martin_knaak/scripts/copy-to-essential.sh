@@ -66,9 +66,20 @@ cp footprints/generic/TO247_GDS_LAY.fp $PRE/discrete
 cp footprints/generic/TO220_GCE.fp $PRE/discrete
 cp footprints/generic/TO247_GCE_LAY.fp $PRE/discrete
 
+### generic SMD ###
 cp footprints/generic/SOT23.fp $PRE/generic
 cp footprints/generic/0805.fp $PRE/generic
 cp footprints/generic/0603.fp $PRE/generic
+cp footprints/generic/SO8.fp $PRE/generic
+cp footprints/generic/SO14.fp $PRE/generic
+cp footprints/generic/SO16.fp $PRE/generic
+cp footprints/generic/SO16W.fp $PRE/generic
+cp footprints/generic/SO20W.fp $PRE/generic
+cp footprints/generic/SO24W.fp $PRE/generic
+cp footprints/generic/SO28W.fp $PRE/generic
+
+
+### generic thru hole ###
 cp footprints/generic/TO92_123.fp $PRE/generic
 cp footprints/generic/TO220.fp $PRE/generic
 cp footprints/generic/TO247.fp $PRE/generic
