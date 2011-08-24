@@ -12,6 +12,7 @@ cp symbols/analog/opamp_offset.sym $PRE/analog
 cp symbols/analog/diode/diode.sym $PRE/discrete
 cp symbols/analog/diode/zener.sym $PRE/discrete
 cp symbols/analog/diode/photodiode_BPW34.sym $PRE/discrete
+cp symbols/analog/diode/led.sym $PRE/discrete
 cp symbols/analog/igbt.sym $PRE/discrete
 cp symbols/analog/cap_vert.sym $PRE/discrete
 cp symbols/analog/nmosfet.sym $PRE/discrete
@@ -50,6 +51,9 @@ cp footprints/discrete/cap_200mil_a.fp $PRE/discrete
 cp footprints/discrete/dio_1206.fp $PRE/discrete
 cp footprints/discrete/dio_1812.fp $PRE/discrete
 cp footprints/discrete/dio_RM10.fp $PRE/discrete
+
+cp footprints/discrete/LED_3mm.fp $PRE/discrete
+cp footprints/discrete/LED_5mm.fp $PRE/discrete
 
 cp footprints/generic/SOT23_BEC.fp $PRE/discrete
 cp footprints/generic/TO92_ECB.fp $PRE/discrete
