@@ -15,44 +15,9 @@ distribution, and unlimited for use. See
 <a href="http://www.gnu.org/licenses/gpl.txt">http://www.gnu.org/licenses.gpl.txt</a>
 for the details</p>
 
-<!---
-<h2>New Project Script</h2>
-<a href="new_geda_project.sh">new_geda_project.sh</a> is a little convinience
-script to starting a new geda project. When given a project name, it creates
-a simple directory structure and populates it with some config files (gafrc,
-attribs). In addition, it copies a <a href ="doku_template.lyx">documentation template</a>
-in lyx format to the directory.
-
-<h2>Scripted pcb layout print</h2>
-The bash script <a href="layoutdruck.sh">layoutdruck.sh</a> uses actions on the 
-command line of pcb to produce a set of printouts for use in documentation. 
-These include a multi page PDF with top and bottom layout, each with values and with 
-refdes. The layout can be spread between several sheets for large layouts.
-
-<p>In addition photo realistic PNG export of top and bottom side is produced. A drop
-shadow is added to the PNG to make the image even more photo realistic.
-
-<p>Note, there is a bug in pcb that prevents the execution of actions when printing
-from the command line. This script needs a bug patch of pcb not yet applied to the 
-distributed version of pcb.
-
-<h2>Export a PDF of all schematics in a hierarchy</h2>
-The bash script <a href="schaltplandruck.sh">schaltplandruck.sh</a> uses print.scm 
-from the gnetlist distribution and ps2pdf to create output. It recursively descends
-into subsheets of a hierarchy and prints every unique schematic it encounters.
-
-
-<h3> Templates
-<ul>
-   <li> <a href="footprints/footprint_template.pcb"> footprint_template.pcb</a>
- - a template for footprint design</li>
-</ul>
-</h3>
---->
-
 <h2>Symbols</h2>
-The symbols of the essential lib are designed as generic as possible, yet
-ready for use. They contain footprint attributes that match items
+The symbols of the essential lib are designed as generic, yet ready
+for use. They contain footprint attributes that match items
 in the footprint section of this lib. The symbols also demonstrate the 
 recommended use of some none-mandatory attributes like "documentation",
 "comment" and "symversion". There is no need to add attributes to the
@@ -61,7 +26,7 @@ context of the geda library debate.
 (see a recap of the debate <a href="http://geda.seul.org/wiki/geda:faq-gschem#what_s_this_business_about_heavy_vs_light_symbols"> in the gschem-FAQ</a>).
 
 The set of symbols tries to deliver a look and feel consistent with 
-accepted standard practice in electronic. It does not strictly ahere to
+accepted standard practice in electronics. It does not strictly ahere to
 an IEC standard, though. The choice of symbols is by no means complete. 
 But they should allow for simple projects.
 
@@ -72,12 +37,12 @@ With a few exceptions, all symbols contain these three visible symbols:
 	<li>value
 	<li>footprint
 </ol>
-On placement of the symbol, these attributes are promoted to the schematic. 
+On placement of the symbol, these attributes are promoted to the schematic.
 They can be changed per instance in the schematic with the attribute editor.
 To avoid clutter, only the value of these attributes is visible. Their color
- is "detached attribute", size is 10 units, except for the footprint 
+ is "detached attribute", size is 10 units, except for the footprint
 attribute, which is size 8. These three attributes are generally placed on
-top of each other somewhere near the the graphics. For slotted symbols, 
+top of each other somewhere near the graphics. For slotted symbols, 
 the slot attribute is also visible in the canvas.
 
 <h3> Hidden Attributes </h3>
@@ -105,7 +70,7 @@ For some symbols there is more than one reasonable footprint in the lib.
 Most notably, many components come in SMD and thru hole variants. Other
 symbols may most likely be attributed with one of a small set of standard
 values (e.g. 1N4148, or 1N4001 for diodes). To make this discoverable,
-there are two plural attributes which contain a comma separated list of 
+there are two attributes which contain a comma separated list of
 values.
 <ul>
 	<li>footprints
@@ -113,8 +78,8 @@ values.
 </ul>
 Currently, these lists are purely informational. Check "show inherited
 attributes" in the attribute editor to get them displayed. Future versions
-of the attribute editor may put the items of the list in a drop-down list
-so you can choose from them with a simple mouse click.
+of the attribute editor may put the items in a drop-down list so you can
+choose from them with a simple mouse click.
 
 <h3> Design </h3>
 In addition to the standard attributes, the symbols meet the following
