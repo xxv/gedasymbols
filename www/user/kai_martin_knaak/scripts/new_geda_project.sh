@@ -12,6 +12,8 @@ NAME=$1
 AUTHOR="Kai-Martin Knaak"
 AUTHORSHORT="-<(kmk)>-"
 FOOTPRINTLIB="/home/kmk/geda/footprints"
+DATE=`date +%d.%m.%Y`
+SELF=$0
 
 # Absolute path of the Script.
 # Note, requires GNU readlink. Might not work for Mac and BSD users 
@@ -50,7 +52,8 @@ description
 
 # Add a local gafrc
 echo \
-"; Kai-Martins project config for gEDA and friends
+"; local gafrc
+; automatically installed by \"$SELF\" on \"$DATE\"
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (reset-component-library)   ; don't use system symbols
@@ -76,19 +79,135 @@ echo \
 
 # Add a local gnetlistrc. Hierarchy is enabled by default
 echo \
-"(hierarchy-traversal "enabled")
+"
+; local gnetlistrc
+; automatically installed by \"$SELF\" on \"$DATE\"
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(hierarchy-uref-mangle "enabled")
-(hierarchy-uref-separator "")
+(hierarchy-traversal \"enabled\")
 
-(hierarchy-netname-mangle "enabled")
-(hierarchy-netname-separator "/")
+(hierarchy-uref-mangle \"enabled\")
+(hierarchy-uref-separator \"\")
 
-(hierarchy-netattrib-mangle "enabled")
-(hierarchy-netattrib-separator "/")
+(hierarchy-netname-mangle \"enabled\")
+(hierarchy-netname-separator \"/\")
 
-(unnamed-netname "noname")
+(hierarchy-netattrib-mangle \"enabled\")
+(hierarchy-netattrib-separator \"/\")
+
+(unnamed-netname \"noname\")
 " > gnetlistrc
+
+
+# Add a local gschemrc
+echo \
+";  This is a local 
+; gschemrc automatically installed on "$DATE" for project "$NAME".
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(load (build-path (getenv \"PWD\") \"gschem-colors\"))    ; localized colors 
+;(load (build-path (getenv \"HOME\") \".gEDA\" \"gschemcolor\"))    ; localized colors 
+(third-button \"mousepan\")	;use the mouse to pan around the schematic
+ 
+;(fast-mousepan \"enabled\")       			; draw boxes when panning
+(fast-mousepan \"disabled\")         			; always draw text
+(mousepan-gain 5)	; default --> 5
+(keyboardpan-gain 20)   ; default --> 20
+
+(text-size 10)						; Default text size
+(undo-levels 50)
+
+; Autonumber components on insert.
+(load-from-path \"auto-uref.scm\")
+(define auto-uref-set-page-offset 100)
+(add-hook! add-component-hook auto-uref)
+(add-hook! copy-component-hook auto-uref)
+
+; In case, autonumber must should be unhooked
+;(reset-hook! add-component-hook)
+;(reset-hook! copy-component-hook)
+
+
+; default titleblock for new schematics
+(define default-titleblock \"title-block.sym\")
+
+; Ein Druck-Befehl für den PDF-Printer
+  (define %file-print file-print)
+  (define (file-print)
+    (print-command (format #f \"lp -d PDF -o media=A4 -t \\\"~A\\\"\" (basename (get-selected-filename) \".sch\")))
+    (gschem-use-rc-values)
+    (%file-print))
+
+
+; disable the toolbar
+;(toolbars \"disabled\")
+" > gschemrc
+
+
+# add localized color file to be loaded by gschemrc
+echo \
+"
+; This is a color map for project \"$NAME\"
+; automatically installed by \"$SELF\" on \"$DATE\"
+
+; Colors may be specified in \"#RRGGBB\" or \"#RRGGBBAA\" format. If the alpha
+; value is not specified, full opacity is assumed.
+; If a color is #f, then objects of that color will never be drawn.
+
+(display-color-map
+ '((background         \"#ffffff\")
+   (pin                \"#000000\")
+   (net-endpoint       \"#ff0000\")
+   (graphic            \"#008b00\")
+   (net                \"#0000ee\")
+   (attribute          \"#000000\")
+   (logic-bubble       \"#008b8b\")
+   (dots-grid          \"#7f7f7f\")
+   (mesh-grid-major    \"#d8d8d8\")
+   (mesh-grid-minor    \"#eaeaea\")
+   (detached-attribute \"#ff0000\")
+   (text               \"#008b00\")
+   (bus                \"#00ee00\")
+   (select             \"#b22222\")
+   (bounding-box       \"#ffa500\")
+   (stroke             \"#a020f0\")
+   (zoom-box           \"#008b8b\")
+   (lock               \"#666666\")
+   (output-background  #f)
+   (junction           \"#a020f0\")
+   (freestyle1         #f)
+   (freestyle2         #f)
+   (freestyle3         #f)
+   (freestyle4         #f)
+   ))
+
+(display-outline-color-map
+ '((background         #f)
+   (pin                \"#4d4d4d\")
+   (net-endpoint       \"#cdcdcd\")
+   (graphic            \"#008b00\")
+   (net                \"#0000cd\")
+   (attribute          \"#4d4d4d\")
+   (logic-bubble       \"#008b8b\")
+   (dots-grid          #f)
+   (mesh-grid-major    #f)
+   (mesh-grid-minor    #f)
+   (detached-attribute \"#cd0000\")
+   (text               \"#008b00\")
+   (bus                \"#00cd00\")
+   (select             \"#b22222\")
+   (bounding-box       \"#ffa500\")
+   (zoom-box           \"#008b8b\")
+   (stroke             \"#a020f0\")
+   (lock               \"#a9a9a9\")
+   (output-background  #f)
+   (junction           \"#7e26cd\")
+   (freestyle1         #f)
+   (freestyle2         #f)
+   (freestyle3         #f)
+   (freestyle4         #f)
+   ))
+" > gschem-colors
 
 
 # Create a schematic with a title block filled with name an date.
