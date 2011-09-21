@@ -38,6 +38,13 @@ cp symbols/titleblock/title-block.sym $PRE/titleblock/titleblock.sym
 cp symbols/titleblock/in.sym $PRE/titleblock
 cp symbols/titleblock/out.sym $PRE/titleblock
 
+cp symbols/digital/7400_4xNAND.sym $PRE/digital
+
+
+#######################################################################
+############# footprints ##############################################
+#######################################################################
+
 PRE=essential/footprints
 cp footprints/discrete/res_RM10.fp $PRE/discrete
 cp footprints/discrete/res_RM15.fp $PRE/discrete
