@@ -13,13 +13,13 @@ pinlabel=(NC)
 T 2150 405 5 10 1 1 90 6 1
 pinnumber=31
 }
-T 395 16195 5 10 0 0 0 0 1
-footprint=PLCC68
-T 395 16395 5 10 0 0 0 0 1
-device=Motorola MC68000 processor
-T 395 15995 5 10 0 0 0 0 1
+T 395 16695 5 10 0 0 0 0 1
+footprint=PLCC68X
+T 395 16895 5 10 0 0 0 0 1
+device=MC68000-PLCC
+T 395 16495 5 10 0 0 0 0 1
 author=Vanessa Ezekowitz
-T 395 15795 5 10 0 0 0 0 1
+T 395 16295 5 10 0 0 0 0 1
 documentation=http://www.freescale.com/files/archives/doc/ref_manual/M68000PRM.pdf 
 P 3700 13400 3400 13400 1 0 0
 {
@@ -504,3 +504,5 @@ T 500 1000 9 10 1 0 0 0 1
 GND
 T 500 600 9 10 1 0 0 0 1
 GND
+T 395 17095 5 10 0 0 0 0 1
+description=Motorola MC68000 processor (PLCC68 through-hole)
