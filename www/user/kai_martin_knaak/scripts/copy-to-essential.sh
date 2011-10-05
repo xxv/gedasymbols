@@ -39,8 +39,9 @@ cp symbols/titleblock/in.sym $PRE/titleblock
 cp symbols/titleblock/out.sym $PRE/titleblock
 
 cp symbols/digital/7400_4xNAND.sym $PRE/digital
-cp symbols/digital/7404_4xNOT.sym $PRE/digital
+cp symbols/digital/7404_6xNOT.sym $PRE/digital
 cp symbols/digital/7432_4xOR.sym $PRE/digital
+cp symbols/digital/7486_4xXOR.sym $PRE/digital
 cp symbols/digital/74112_2xJK_flipflop.sym $PRE/digital
 cp symbols/digital/74161_4bit_counter.sym $PRE/digital
 cp symbols/digital/74_pwr.sym $PRE/digital
