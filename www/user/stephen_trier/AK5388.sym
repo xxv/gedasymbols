@@ -3,15 +3,15 @@ B 300 300 3800 9200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 4100 9600 9 10 0 0 0 0 1
 footprint=LQFP-44
 T 4100 9800 9 10 0 0 0 0 1
-description=120dB 24-bit 192kHz 4-Channel ADC
+description=AK5388 120dB 24-bit 192kHz 4-Channel ADC
 T 4100 10000 9 10 0 0 0 0 1
 distlicense=GPL
 T 4100 10200 9 10 0 0 0 0 1
 uselicense=unlimited
 T 4100 10400 9 10 0 0 0 0 1
-author=Stephen Trier
+author=Stephen Trier, sct@skywired.net
 T 4100 10600 9 10 0 0 0 0 1
-copyright=2011 Stephen Trier, sct@skywired.net
+copyright=2011 Stephen Trier
 T 2200 7900 9 10 1 1 0 3 1
 device=AK5388EQ
 T 2200 8300 9 10 1 1 0 3 1
@@ -295,22 +295,22 @@ pinnumber=31
 T 2650 250 5 8 0 1 0 2 1
 pinseq=31
 }
-P 0 5300 300 5300 1 0 0
-{
-T 350 5300 9 10 1 1 0 1 1
-pinlabel=RIN2-
-T 200 5350 5 8 1 1 0 6 1
-pinnumber=32
-T 200 5350 5 8 0 1 0 6 1
-pinseq=32
-}
 P 0 4900 300 4900 1 0 0
 {
 T 350 4900 9 10 1 1 0 1 1
-pinlabel=RIN2+
+pinlabel=RIN2-
 T 200 4950 5 8 1 1 0 6 1
-pinnumber=33
+pinnumber=32
 T 200 4950 5 8 0 1 0 6 1
+pinseq=32
+}
+P 0 5300 300 5300 1 0 0
+{
+T 350 5300 9 10 1 1 0 1 1
+pinlabel=RIN2+
+T 200 5350 5 8 1 1 0 6 1
+pinnumber=33
+T 200 5350 5 8 0 1 0 6 1
 pinseq=33
 }
 P 0 2900 300 2900 1 0 0
@@ -367,22 +367,22 @@ pinnumber=39
 T 3850 250 5 8 0 1 0 2 1
 pinseq=39
 }
-P 0 7700 300 7700 1 0 0
-{
-T 350 7700 9 10 1 1 0 1 1
-pinlabel=RIN1-
-T 200 7750 5 8 1 1 0 6 1
-pinnumber=40
-T 200 7750 5 8 0 1 0 6 1
-pinseq=40
-}
 P 0 7300 300 7300 1 0 0
 {
 T 350 7300 9 10 1 1 0 1 1
-pinlabel=RIN1+
+pinlabel=RIN1-
 T 200 7350 5 8 1 1 0 6 1
-pinnumber=41
+pinnumber=40
 T 200 7350 5 8 0 1 0 6 1
+pinseq=40
+}
+P 0 7700 300 7700 1 0 0
+{
+T 350 7700 9 10 1 1 0 1 1
+pinlabel=RIN1+
+T 200 7750 5 8 1 1 0 6 1
+pinnumber=41
+T 200 7750 5 8 0 1 0 6 1
 pinseq=41
 }
 P 0 6900 300 6900 1 0 0

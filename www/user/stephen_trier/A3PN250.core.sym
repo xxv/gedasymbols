@@ -3,7 +3,7 @@ B 300 300 3000 5800 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 3300 6200 9 10 0 0 0 0 1
 footprint=Actel-VQ100
 T 3300 6400 9 10 0 0 0 0 1
-description=FPGA
+description=Microsemi SOC A3PN250 FPGA, core
 T 3300 6600 9 10 0 0 0 0 1
 device=A3PN250
 T 3300 6800 9 10 0 0 0 0 1

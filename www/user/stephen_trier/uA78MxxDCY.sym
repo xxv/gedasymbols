@@ -1,4 +1,4 @@
-v 20060123 1
+v 20100214 2
 B 300 300 2900 1500 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 3200 1900 9 10 0 0 0 0 1
 footprint=SOT-223-4
@@ -12,9 +12,9 @@ T 3200 2700 9 10 0 0 0 0 1
 author=Stephen Trier, sct@skywired.net
 T 3200 2900 9 10 0 0 0 0 1
 copyright=Copyright 2011 Stephen Trier
-T 1800 800 9 10 1 1 0 3 1
+T 2600 1800 9 10 1 1 0 3 1
 device=uA78MxxDCY
-T 1800 1200 9 10 1 1 0 3 1
+T 400 1800 9 10 1 1 0 3 1
 refdes=U?
 P 0 1400 300 1400 1 0 0
 {
