@@ -5,9 +5,9 @@ footprint=SOT-223-4
 T 3200 2100 9 10 0 0 0 0 1
 description=3-terminal fixed voltage regulator in 4-pin SOT-223
 T 3200 2300 9 10 0 0 0 0 1
-distlicense=GPL
+dist-license=GPL
 T 3200 2500 9 10 0 0 0 0 1
-uselicense=unlimited
+use-license=unlimited
 T 3200 2700 9 10 0 0 0 0 1
 author=Stephen Trier, sct@skywired.net
 T 3200 2900 9 10 0 0 0 0 1

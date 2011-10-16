@@ -7,9 +7,9 @@ description=Actel FlashPro 3/3+/4 JTAG header
 T 2100 3200 9 10 0 0 0 0 1
 device=JTAG-Actel
 T 2100 3400 9 10 0 0 0 0 1
-distlicense=GPL
+dist-license=GPL
 T 2100 3600 9 10 0 0 0 0 1
-uselicense=unlimited
+use-license=unlimited
 T 2100 3800 9 10 0 0 0 0 1
 author=Stephen Trier
 T 2100 4000 9 10 0 0 0 0 1

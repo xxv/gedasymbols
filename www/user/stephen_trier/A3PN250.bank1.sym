@@ -7,9 +7,9 @@ description=Microsemi SOC A3PN250 FPGA, I/O bank 1
 T 5300 4200 9 10 0 0 0 0 1
 device=A3PN250
 T 5300 4400 9 10 0 0 0 0 1
-distlicense=GPL
+dist-license=GPL
 T 5300 4600 9 10 0 0 0 0 1
-uselicense=unlimited
+use-license=unlimited
 T 5300 4800 9 10 0 0 0 0 1
 author=Stephen Trier, sct@skywired.net
 T 5300 5000 9 10 0 0 0 0 1
