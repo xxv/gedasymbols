@@ -12,6 +12,14 @@ email: <a href="mailto:jpd@noqsi.com">jpd@noqsi.com</a> <br>
 <li> <a href="tools/pins2gsch.html">Turn a table of pins into a pseudo-schematic</a>
 <li> <a href="tools/pins2tex.html">Turn a table of pins into a LaTeX table</a>
 
+<p>When you have a component that is represented by multiple symbols, gnetlist does not handle conflicting attributes attached to the symbols very well. The following script detects conflicting attributes, generates a warning message, and replaces the conficting attribute values with "attribute_conflict".</p>
+
+<p>Usage:</p>
+
+<p><b>gnetlist -m censor-fix.scm</b> <i>other-gnetlist-arguments</i></p>
+
+<li> <a href="tools/censor-fix.scm">censor-fix.scm</a>
+
 <h2>Symbols</h2>
 
 <p>Professor Ikeda's 
