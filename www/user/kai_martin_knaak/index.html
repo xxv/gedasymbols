@@ -14,16 +14,21 @@ distribution, and unlimited for use. See
 <a href="http://www.gnu.org/licenses/gpl.txt">http://www.gnu.org/licenses.gpl.txt</a>
 for the details</p>
 
-
 <h2>New Project Script</h2>
 <a href="new_geda_project.sh">new_geda_project.sh</a> is a little convinience
 script to starting a new geda project. When given a project name, it creates
 a simple directory structure and populates it with some config files (gafrc,
-attribs). In addition, it copies a <a href ="doku_template.lyx">documentation template</a>
-in lyx format to the directory.
+attribs). In addition, it copies a <a href ="doku_template.lyx">
+documentation template</a> in lyx format to the directory. It does the same
+with the bash scripts bomdruck.sh and layoutdruck.sh (see below). 
+
+<h2>Script to print a bill of materials (BOM)</h2>
+The almost trivial bash script <a href="bomdruck.sh">bomdruck.sh</a> uses
+gnetlist to derive two versions of a bill of materials. The first lists one
+component per line. The other collates all components with the same value. 
 
 <h2>Scripted print of pcb layouts</h2>
-The bash script <a href="layoutdruck.sh">layoutdruck.sh</a> uses actions on the 
+The bash script <a href="layoutdruck.sh">layoutdruck.sh</a> uses PCB actions on the 
 command line of pcb to produce a set of printouts for use in documentation. 
 These include a multi page PDF with top and bottom layout, each with values and with 
 refdes. The layout can be spread between several sheets for large layouts.
