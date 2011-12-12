@@ -65,7 +65,7 @@ echo \
 (source-library  current-working-directory)
 
 ; Allow to source symbols from the local copy of geda-symbols
-(define gedasymbols \"/home/kmk/geda/gedasymbols/www/user/kai_martin_knaak/symbols\")
+(define gedasymbols \"\${HOME}/geda/gedasymbols/www/user/kai_martin_knaak/symbols\")
 (component-library (build-path gedasymbols \"titleblock\"))
 (component-library (build-path gedasymbols \"power\"))
 (component-library (build-path gedasymbols \"misc\"))
