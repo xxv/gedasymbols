@@ -15,9 +15,9 @@ pinlabel=temp
 }
 P 600 100 600 200 1 0 0
 {
-T 500 0 5 8 1 1 0 0 1
+T 550 50 5 8 1 1 0 6 1
 pinnumber=4
-T 500 0 5 8 0 1 0 0 1
+T 550 50 5 8 0 1 0 6 1
 pinseq=4
 T 700 0 5 10 0 1 0 0 1
 pintype=pas
