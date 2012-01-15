@@ -13,6 +13,8 @@ sub baseboard {
 	$base = $nbase;
     }
 
+    $panelcopperlayers = ".*" unless $panelcopperlayers;
+
     $pscript = "$base.pscript";
     open(PS, ">$pscript");
     push(@files_to_remove, "$base.pscript");
@@ -22,14 +24,22 @@ sub baseboard {
     $outname =~ s/pnl\.panel\.pcb/pcb/;
     open(O, ">$outname");
     while (<S>) {
-	if (/PCB\[.* (\d+) (\d+)\]/) {
-	    s/ (\d+) (\d+)\]/ $width $height\]/;
+	if (/PCB\[.* (\S+) (\S+)\]/) {
+	    s/ (\S+) (\S+)\]/ $width $height\]/;
 	}
 	s/Cursor\[.*\]/Cursor[0 0 0.0]/;
+	if (/^Flags/) {
+	    s/,uniquename,/,/;
+	    s/,uniquename//;
+	    s/uniquename,//;
+	}
 	next if /\b(Via|Pin|Pad|ElementLine|Line|Arc|ElementArc|Text)/;
 	if (/Polygon|Element/) {
+	    $hole = 0;
 	    while (<S>) {
-		last if /^\s*\)\s*$/;
+		$hole++ if /Hole \(/;
+		last if /^\s*\)\s*$/ && $hole <= 0;
+		$hole-- if /\)/;
 	    }
 	    next;
 	}
@@ -40,9 +50,14 @@ sub baseboard {
 	    }
 	}
 	print O;
-	if (/Layer/) {
+	if (/Layer\((\d+) \"(.*)\"\)/) {
+	    $lnum = $1;
+	    $lname = $2;
 	    print O scalar <S>;
-	    print O @panelcopper;
+	    print STDERR "layer $lnum $lname vs '$panelcopperlayers'\n";
+	    if ($lnum =~ /$panelcopperlayers/ || $lname =~ /$panelcopperlayers/) {
+		print O @panelcopper;
+	    }
 	}
     }
     close O;
@@ -60,9 +75,9 @@ sub loadboard {
     open(S, $file);
     open(O, ">temp-panel.$seq");
     while (<S>) {
-	if (/PCB\[.* (\d+) (\d+)\]/) {
-	    $width = $1;
-	    $height = $2;
+	if (/PCB\[.* (\S+) (\S+)\]/) {
+	    $width = &parseval($1);
+	    $height = &parseval($2);
 	}
 	s/Cursor\[.*\]/Cursor[0 0 0.0]/;
 	print O;
@@ -95,6 +110,14 @@ sub done {
     system "set -x; pcb --action-script $pscript";
     #system "pcb -x ps $base.panel.pcb";
     #unlink @files_to_remove;
+}
+
+sub parseval {
+    my ($v) = @_;
+    if ($v =~ /mil/) {
+	$v *= 100;
+    }
+    return 0 + $v;
 }
 
 1;

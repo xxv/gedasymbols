@@ -8,7 +8,7 @@ if (! @ARGV) {
     print "Usage: pcb2panel board1.pcb board2.pcb board3.pcb > boards.pcb";
     print "Then edit boards.pcb, putting each outline where you want it\n";
     print "and sizing the board.  Then:\n";
-    print "panel2pcb boards.pcb\n";
+    print "panel2pcb [-l regex] boards.pcb\n";
     print "and edit/print boards.panel.pcb\n";
     exit 0;
 }
@@ -19,28 +19,34 @@ if ($mydir =~ m@/@) {
 } else {
     $mydir = ".";
 }
-    require "$mydir/panel.pl";
+
+require "$mydir/panel.pl";
 
 $panel = shift;
 
+if ($panel eq "-l") {
+    $panelcopperlayers = shift;
+    $panel = shift;
+}
+
 open(P, $panel);
 while (<P>) {
-    if (/PCB\[.* (\d+) (\d+)\]/) {
-	$panel_width = $1;
-	$panel_height = $2;
+    if (/PCB\[.* (\S+) (\S+)\]/) {
+	$panel_width = &parseval($1);
+	$panel_height = &parseval($2);
     }
-    if (/Element\[\"[^\"]*\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" (\d+) (\d+)/) {
+    if (/Element\[\"[^\"]*\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" (\S+) (\S+)/) {
 	$pcb = $1;
 	$base = $2;
 	$value = $3;
-	$mx = $4;
-	$my = $5;
+	$mx = &parseval($4);
+	$my = &parseval($5);
 	%pinx = ();
 	%piny = ();
     }
-    if (/Pin\[([\d-]+) ([\d-]+) \d+ \d+ \d+ \d+ \"(\d)\"/) {
-	$pinx{$3} = $1;
-	$piny{$3} = $2;
+    if (/Pin\[(\S+) (\S+) \S+ \S+ \S+ \S+ \"(\d)\"/) {
+	$pinx{$3} = &parseval($1);
+	$piny{$3} = &parseval($2);
     }
     if ($pcb && /\)/) {
 	if ($pinx{'1'} < $pinx{'2'}) {

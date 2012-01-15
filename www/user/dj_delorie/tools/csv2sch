@@ -83,7 +83,7 @@ for $file (@files) {
 	    if ($text =~ /=/) {
 
 		($name, $val) = split(/=/, $text, 2);
-		if (defined $attr{$pid}{$name}) {
+		if ($attr{$pid}{$name} =~ /\S/) {
 		    $in[$i+1] = "$name=$attr{$pid}{$name}";
 		    $seen{$name} = 1;
 		}

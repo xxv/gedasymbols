@@ -46,7 +46,7 @@ for $infile (@ARGV) {
 	    if ($refdes) {
 
 		for $n (keys %tmp) {
-		    $values{"$refdes\0$infile"}{"$n"} = $tmp{$n};
+		    $values{"$refdes\0$infile.$x.$y"}{"$n"} = $tmp{$n};
 		}
 	    }
 
@@ -59,7 +59,7 @@ for $infile (@ARGV) {
 	    next unless $num_lines == 1;
 
 	    $text = $in[++$i];
-	    next unless $text =~ /=/;
+	    next unless $text =~ /^[a-zA-Z0-9_-]+=/;
 
 	    ($name, $val) = split(/=/, $text, 2);
 	    $tmp{$name} = $val;

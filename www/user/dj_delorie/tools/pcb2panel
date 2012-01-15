@@ -21,9 +21,10 @@ for $pcb (@ARGV) {
     push (@pcbs, $pcb);
     open(PCB, $pcb);
     while (<PCB>) {
-	if (/^PCB\[".*" (\d+) (\d+)\]/) {
-	    $width{$pcb} = $1;
-	    $height{$pcb} = $2;
+	if (/^PCB\[".*" (\S+) (\S+)\]/) {
+	    $width{$pcb} = &parseval($1);
+	    $height{$pcb} = &parseval($2);
+	    printf STDERR "%s : %d x %d\n", $pcb, $width{$pcb}, $height{$pcb};
 	    last;
 	}
     }
@@ -55,7 +56,7 @@ $ph += 20000;
 print "PCB[\"\" $pw $ph]\n";
 print "Grid[10000.0 0 0 1]\n";
 print "DRC[799 799 800 100 1500 800]\n";
-print "Groups(\"1,c:2,s\")\n";
+print "Groups(\"1,c:2,s\")\n"; #"
 
 $x = 10000;
 $y = 10000;
@@ -89,3 +90,11 @@ print "Layer(3 \"silk\")()\n";
 print "Layer(4 \"silk\")()\n";
 
 exit 0;
+
+sub parseval {
+    my ($v) = @_;
+    if ($v =~ /mil/) {
+	$v *= 100;
+    }
+    return 0 + $v;
+}

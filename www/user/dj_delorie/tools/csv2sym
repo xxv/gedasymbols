@@ -12,7 +12,7 @@ $infile = shift;
 $outfile = shift;
 
 if (!$csvfile) {
-    print STDERR "Usage: csv2sym csvfile [infile] [outfile]\n";
+    print STDERR "Usage: csv2sym csvfile *.sch\n";
     exit 1;
 }
 
