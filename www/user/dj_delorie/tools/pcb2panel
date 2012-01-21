@@ -4,6 +4,15 @@
 # Copyright 2006 DJ Delorie <dj@delorie.com>
 # Released under the terms of the GNU General Public License, version 2
 
+$mydir = $0;
+if ($mydir =~ m@/@) {
+    $mydir =~ s@[^/]*$@@;
+} else {
+    $mydir = ".";
+}
+
+require "$mydir/panel.pl";
+
 if (! @ARGV) {
     print "Usage: pcb2panel board1.pcb board2.pcb board3.pcb > boards.pcb\n";
     print "Then edit boards.pcb, putting each outline where you want it\n";
