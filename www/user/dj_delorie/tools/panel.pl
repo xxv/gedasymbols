@@ -117,6 +117,9 @@ sub parseval {
     if ($v =~ /mil/) {
 	$v *= 100;
     }
+    if ($v =~ /mm/) {
+	$v *= 3937.007874015748;
+    }
     return 0 + $v;
 }
 

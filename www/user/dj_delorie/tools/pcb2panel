@@ -90,11 +90,3 @@ print "Layer(3 \"silk\")()\n";
 print "Layer(4 \"silk\")()\n";
 
 exit 0;
-
-sub parseval {
-    my ($v) = @_;
-    if ($v =~ /mil/) {
-	$v *= 100;
-    }
-    return 0 + $v;
-}
