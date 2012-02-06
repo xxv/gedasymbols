@@ -1,0 +1,44 @@
+v 20100214 2
+B 0 700 1200 1600 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+P 500 2900 500 2300 1 0 0
+{
+T 500 2900 5 10 0 0 0 0 1
+pintype=PWR
+T 355 2200 5 10 1 1 180 6 1
+pinlabel=+5V
+T 500 2900 5 10 0 0 0 0 1
+pinseq=6
+}
+P 500 0 500 700 1 0 0
+{
+T 500 0 5 10 0 0 0 0 1
+pintype=pwr
+T 745 900 5 10 1 1 180 0 1
+pinlabel=GND
+T 500 0 5 10 0 0 0 0 1
+pinseq=7
+}
+P 1900 1600 1200 1600 1 0 0
+{
+T 1145 1595 5 10 1 1 0 6 1
+pinlabel=SER
+T 1295 1645 5 10 1 1 0 0 1
+pinnumber=5
+T 1900 1600 5 10 0 0 0 0 1
+pintype=out
+T 1900 1600 5 10 0 0 0 0 1
+pinseq=5
+}
+T 0 3300 8 10 0 0 0 0 1
+device=MB1200
+T 0 3100 8 10 0 0 0 0 1
+description=Ultrasonic distance sensor
+T 100 2400 8 10 1 1 0 0 1
+refdes=M?
+T 0 3500 8 10 0 0 0 0 1
+author=http://gedasymbols.org/user/russell_nelson
+T 0 3700 8 10 0 0 0 0 1
+dist-license=CC0
+T 0 3900 8 10 0 0 0 0 1
+use-license=CC0
+
