@@ -109,7 +109,11 @@ sub dump {
 	    &where('m4lib');
 	    print "<a href=\"/footprints/m4query.cgi?$1\">$wline</a><br>\n";
 	} else {
-	    ($url, $keys) = split(' ', $line);
+	    if ($line =~ /\t/) {
+		($url, $keys) = split(/\t/, $line);
+	    } else {
+		($url, $keys) = split(' ', $line);
+	    }
 	    $newwhere = $url;
 	    $newwhere =~ s@/.*@@;
 	    &where($newwhere);

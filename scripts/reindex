@@ -28,7 +28,7 @@ while (<SYMD>) {
 	&store($val);
     }
     $w = join(' ', sort keys %words);
-    print IDX "$file $w\n";
+    print IDX "$file\t$w\n";
     close(S);
 }
 close(SYMD);
@@ -54,7 +54,7 @@ while (<FPD>) {
 	}
     }
     $w = join(' ', sort keys %words);
-    print IDX "$file $w\n";
+    print IDX "$file\t$w\n";
     close(F);
 }
 close(FPD);
