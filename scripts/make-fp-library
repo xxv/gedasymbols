@@ -3,9 +3,12 @@
 
 
 $docroot=$ENV{'DOCUMENT_ROOT'};
-exit unless $docroot && -d $docroot;
+if (! $docroot || ! -d $docroot) {
+    print STDERR "make-fp-library: DOCUMENT_ROOT ($docroot) not valid\n";
+    exit(1);
+}
 
-open(IDX, ">$docroot/pcblibrary.txt") || die;
+open(IDX, ">$docroot/pcblibrary.txt") || die ("can't open pcblibrary.txt: $!");
 select IDX;
 
 chdir "$docroot";
