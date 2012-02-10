@@ -1,0 +1,37 @@
+#!/usr/bin/perl
+# -*- perl -*-
+
+
+$docroot=$ENV{'DOCUMENT_ROOT'};
+exit unless $docroot && -d $docroot;
+
+open(IDX, ">$docroot/pcblibrary.txt") || die;
+
+chdir "$docroot";
+
+open (FP, "find user -name '*.fp' -print |");
+while (<FP>) {
+    s/[\r\n]+$//;
+    ($user, $sub) = $_ =~ m@user/([^/]+)/(.*)@;
+    ($base = $sub) =~ s@.*/@@;
+    $base =~ s/\.fp$//;
+    next unless $base =~ /\S/;
+    next if $base =~ /\t/;
+    $fps{$user}{$base} = $sub;
+}
+
+for $user (sort keys %fps) {
+    print "\t$user\n";
+
+    for $fp (sort keys %{$fps{$user}}) {
+	$sub = $fps{$user}{$fp};
+	open (FP, "user/$user/$sub");
+	$desc = "";
+	while (<FP>) {
+	    if (/Attribute\s*\(\s*"description"\s+"(.*)"\s*\)/) {
+		$desc = "\t$1";
+	    }
+	}
+	print "$fp\tuser/$user/$sub$desc\n";
+    }
+}
