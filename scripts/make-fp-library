@@ -33,6 +33,6 @@ for $user (sort keys %fps) {
 		$desc = "\t$1";
 	    }
 	}
-	print "$fp\tuser/$user/$sub$desc\n";
+	print "$fp\tuser/$user/$sub?dl$desc\n";
     }
 }
