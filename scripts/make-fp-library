@@ -6,6 +6,7 @@ $docroot=$ENV{'DOCUMENT_ROOT'};
 exit unless $docroot && -d $docroot;
 
 open(IDX, ">$docroot/pcblibrary.txt") || die;
+select IDX;
 
 chdir "$docroot";
 
