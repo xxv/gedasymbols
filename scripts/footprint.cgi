@@ -122,7 +122,7 @@ sub download {
 sub download_attr {
     print "Content-type: text/plain\n";
     ($filesize,$filetime) = (stat($file))[7,9];
-    $outline = qq!\tAttribute("gedasymbols::url", "http://$ENV{'HTTP_HOST'}$ENV{'PATH_INFO'}")\n!;
+    $outline = qq!\tAttribute("gedasymbols::url" "http://$ENV{'HTTP_HOST'}$ENV{'PATH_INFO'}")\n!;
     $filesize += length($outline);
     print "Content-size: $filesize\n";
     print "\n";
