@@ -34,7 +34,11 @@ $query = $ENV{'QUERY_STRING'};
 if ($query eq "png") {
     &make_png();
 } elsif ($query eq "dl") {
-    &download();
+    &download(1);
+} elsif ($query eq "view") {
+    &download(0);
+} elsif ($query eq "dlattr") {
+    &download_attr();
 } else {
     &make_html();
 }
@@ -97,12 +101,30 @@ sub make_html {
 }
 
 sub download {
+    my ($savetofile) = @_;
     print "Content-type: text/plain\n";
+    print "Content-Disposition: attachment; filename=$symbol\n" if $savetofile;
     ($filesize,$filetime) = (stat($file))[7,9];
     print "Content-size: $filesize\n";
     print "\n";
     open(F, $file);
     print while <F>;
+    close F;
+    exit 0;
+}
+
+sub download_attr {
+    print "Content-type: text/plain\n";
+    ($filesize,$filetime) = (stat($file))[7,9];
+    $outline = "T 100 100 0 1 0 0 0 0 1\ngedasymbols::url=http://".$ENV{'HTTP_HOST'}.$ENV{'PATH_INFO'}."\n";
+    $filesize += length($outline);
+    print "Content-size: $filesize\n";
+    print "\n";
+    open(F, $file);
+    while (<F>) {
+        print;
+        if (/^v /) { print $outline; }
+    }
     close F;
     exit 0;
 }

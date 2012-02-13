@@ -6,7 +6,7 @@ exit unless $docroot && -d $docroot;
 
 $outdir = $0;
 $outdir =~ s@/[^/]*$@/cache@;
-open(IDX, ">$outdir/search.idx") || die;
+open(IDX, ">$outdir/search.idx") || die "$outdir doesn't exist";
 
 chdir $docroot;
 
