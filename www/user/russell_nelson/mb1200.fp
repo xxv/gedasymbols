@@ -1,9 +1,9 @@
-Attribute("author" "http://gedasymbols.org/user/russell_nelson")
-Attribute("dist-license" "CC0")
-Attribute("use-license" "CC0")
-
 Element["" "Maxbotics MB-1200" "MB1200" "" 0mil 0mil 0.0000 0.0000 0 100 ""]
 (
+	Attribute("author" "http://gedasymbols.org/user/russell_nelson")
+	Attribute("dist-license" "CC0")
+	Attribute("use-license" "CC0")
+
 	Pin[-224.00mil -331.00mil 36.00mil 20.00mil 42.00mil 20.00mil "" "7" "edge2"]
 	Pin[-124.00mil -331.00mil 36.00mil 20.00mil 42.00mil 20.00mil "" "6" "edge2"]
 	Pin[-24.00mil -331.00mil 36.00mil 20.00mil 42.00mil 20.00mil "" "5" "edge2"]
