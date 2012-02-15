@@ -17,7 +17,7 @@ use-license=CC0
 P 0 700 200 700 1 0 0
 {
 T -100 700 5 10 0 0 0 0 1
-pintype=unknown
+pintype=in
 T 255 695 5 10 1 1 0 0 1
 pinlabel=-Vin
 T 105 745 5 10 1 1 0 6 1
@@ -28,7 +28,7 @@ pinseq=3
 P 0 500 200 500 1 0 0
 {
 T 0 500 5 10 0 0 0 0 1
-pintype=unknown
+pintype=in
 T 255 495 5 10 1 1 0 0 1
 pinlabel=RC
 T 105 545 5 10 1 1 0 6 1
@@ -39,7 +39,7 @@ pinseq=2
 P 0 100 200 100 1 0 0
 {
 T 0 100 5 10 0 0 0 0 1
-pintype=unknown
+pintype=in
 T 255 95 5 10 1 1 0 0 1
 pinlabel=+Vin
 T 105 145 5 10 1 1 0 6 1
@@ -50,7 +50,7 @@ pinseq=1
 P 1500 700 1300 700 1 0 0
 {
 T 1500 700 5 10 0 0 0 0 1
-pintype=unknown
+pintype=pas
 T 1245 695 5 10 1 1 0 6 1
 pinlabel=NC
 T 1395 745 5 10 1 1 0 0 1
@@ -61,7 +61,7 @@ pinseq=4
 P 1500 500 1300 500 1 0 0
 {
 T 1500 500 5 10 0 0 0 0 1
-pintype=unknown
+pintype=out
 T 1245 495 5 10 1 1 0 6 1
 pinlabel=-Vout
 T 1395 545 5 10 1 1 0 0 1
@@ -72,7 +72,7 @@ pinseq=5
 P 1500 100 1300 100 1 0 0
 {
 T 1400 100 5 10 0 0 0 0 1
-pintype=unknown
+pintype=out
 T 1245 95 5 10 1 1 0 6 1
 pinlabel=+Vout
 T 1395 145 5 10 1 1 0 0 1
@@ -83,7 +83,7 @@ pinseq=7
 P 1500 300 1300 300 1 0 0
 {
 T 2900 400 5 10 0 0 180 0 1
-pintype=unknown
+pintype=in
 T 1245 295 5 10 1 1 0 6 1
 pinlabel=TRM
 T 1395 345 5 10 1 1 0 0 1

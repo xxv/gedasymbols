@@ -1,4 +1,8 @@
 
+Attribute("author" "http://gedasymbols.org/user/russell_nelson")
+Attribute("dist-license" "CC0")
+Attribute("use-license" "CC0")
+
 Element(0x00 "TDK/Lambda CC10 series power supplies" "" "CC10" 10 10 3 100 0x00)
 (
 	Pin(50 150 60 38 "1" 0x101)
