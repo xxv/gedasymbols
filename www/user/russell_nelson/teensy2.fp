@@ -1,45 +1,45 @@
 
-Element(0x00 "Teensy 2.0" "" "TEENSY2" 370 100 3 100 0x00)
+Element["" "Teensy 2.0" "" "TEENSY2" 55.00mil 55.10mil 320.00mil 50.00mil 3 100 ""]
 (
 	Attribute("author" "http://gedasymbols.org/user/russell_nelson")
 	Attribute("dist-license" "CC0")
 	Attribute("use-license" "CC0")
-	Pin(50 50 60 30 "1" 0x101)
-	Pin(50 150 60 30 "2" 0x01)
-	Pin(50 250 60 30 "3" 0x01)
-	Pin(50 350 60 30 "4" 0x01)
-	Pin(50 450 60 30 "5" 0x01)
-	Pin(50 550 60 30 "6" 0x01)
-	Pin(50 650 60 30 "7" 0x01)
-	Pin(50 750 60 30 "8" 0x01)
-	Pin(50 850 60 30 "9" 0x01)
-	Pin(50 950 60 30 "10" 0x01)
-	Pin(50 1050 60 30 "11" 0x01)
-	Pin(50 1150 60 30 "12" 0x01)
-	Pin(650 1150 60 30 "13" 0x01)
-	Pin(650 1050 60 30 "14" 0x01)
-	Pin(650 950 60 30 "15" 0x01)
-	Pin(650 850 60 30 "16" 0x01)
-	Pin(650 750 60 30 "17" 0x01)
-	Pin(650 650 60 30 "18" 0x01)
-	Pin(650 550 60 30 "19" 0x01)
-	Pin(650 450 60 30 "20" 0x01)
-	Pin(650 350 60 30 "21" 0x01)
-	Pin(650 250 60 30 "22" 0x01)
-	Pin(650 150 60 30 "23" 0x01)
-	Pin(650 50 60 30 "24" 0x01)
-	Pin(150 1150 60 30 "25" 0x01)
-	Pin(250 1150 60 30 "26" 0x01)
-	Pin(350 1150 60 30 "27" 0x01)
-	Pin(450 1150 60 30 "28" 0x01)
-	Pin(550 1150 60 30 "29" 0x01)
-	Pin(550 450 60 30 "30" 0x01)
-	Pin(150 450 60 30 "31" 0x01)
-	ElementLine(0 0 0 1200 10)
-	ElementLine(0 1200 700 1200 10)
-	ElementLine(700 1200 700 0 10)
-	ElementLine(0 0 300 0 10)
-	ElementLine(400 0 700 0 10)
-	ElementArc(350 0 50 50 0 180 10)
-	Mark(50 50)
-)
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 30.00mil "1" "1" "square"]
+	Pin[0.0000 100.00mil 60.00mil 30.00mil 66.00mil 30.00mil "2" "2" ""]
+	Pin[0.0000 200.00mil 60.00mil 30.00mil 66.00mil 30.00mil "3" "3" ""]
+	Pin[0.0000 300.00mil 60.00mil 30.00mil 66.00mil 30.00mil "4" "4" ""]
+	Pin[0.0000 400.00mil 60.00mil 30.00mil 66.00mil 30.00mil "5" "5" ""]
+	Pin[0.0000 500.00mil 60.00mil 30.00mil 66.00mil 30.00mil "6" "6" ""]
+	Pin[0.0000 600.00mil 60.00mil 30.00mil 66.00mil 30.00mil "7" "7" ""]
+	Pin[0.0000 700.00mil 60.00mil 30.00mil 66.00mil 30.00mil "8" "8" ""]
+	Pin[0.0000 800.00mil 60.00mil 30.00mil 66.00mil 30.00mil "9" "9" ""]
+	Pin[0.0000 900.00mil 60.00mil 30.00mil 66.00mil 30.00mil "10" "10" ""]
+	Pin[0.0000 1000.00mil 60.00mil 30.00mil 66.00mil 30.00mil "11" "11" ""]
+	Pin[0.0000 1100.00mil 60.00mil 30.00mil 66.00mil 30.00mil "12" "12" ""]
+	Pin[600.00mil 1100.00mil 60.00mil 30.00mil 66.00mil 30.00mil "13" "13" ""]
+	Pin[600.00mil 1000.00mil 60.00mil 30.00mil 66.00mil 30.00mil "14" "14" ""]
+	Pin[600.00mil 900.00mil 60.00mil 30.00mil 66.00mil 30.00mil "15" "15" ""]
+	Pin[600.00mil 800.00mil 60.00mil 30.00mil 66.00mil 30.00mil "16" "16" ""]
+	Pin[600.00mil 700.00mil 60.00mil 30.00mil 66.00mil 30.00mil "17" "17" ""]
+	Pin[600.00mil 600.00mil 60.00mil 30.00mil 66.00mil 30.00mil "18" "18" ""]
+	Pin[600.00mil 500.00mil 60.00mil 30.00mil 66.00mil 30.00mil "19" "19" ""]
+	Pin[600.00mil 400.00mil 60.00mil 30.00mil 66.00mil 30.00mil "20" "20" ""]
+	Pin[600.00mil 300.00mil 60.00mil 30.00mil 66.00mil 30.00mil "21" "21" ""]
+	Pin[600.00mil 200.00mil 60.00mil 30.00mil 66.00mil 30.00mil "22" "22" ""]
+	Pin[600.00mil 100.00mil 60.00mil 30.00mil 66.00mil 30.00mil "23" "23" ""]
+	Pin[600.00mil 0.0000 60.00mil 30.00mil 66.00mil 30.00mil "24" "24" ""]
+	Pin[100.00mil 1100.00mil 60.00mil 30.00mil 66.00mil 30.00mil "25" "25" ""]
+	Pin[200.00mil 1100.00mil 60.00mil 30.00mil 66.00mil 30.00mil "26" "26" ""]
+	Pin[300.00mil 1100.00mil 60.00mil 30.00mil 66.00mil 30.00mil "27" "27" ""]
+	Pin[400.00mil 1100.00mil 60.00mil 30.00mil 66.00mil 30.00mil "28" "28" ""]
+	Pin[500.00mil 1100.00mil 60.00mil 30.00mil 66.00mil 30.00mil "29" "29" ""]
+	Pin[500.00mil 400.00mil 60.00mil 30.00mil 66.00mil 30.00mil "30" "30" ""]
+	Pin[100.00mil 400.00mil 60.00mil 30.00mil 66.00mil 30.00mil "31" "31" ""]
+	ElementLine [-50.00mil -50.00mil -50.00mil 1150.00mil 10.00mil]
+	ElementLine [-50.00mil 1150.00mil 650.00mil 1150.00mil 10.00mil]
+	ElementLine [650.00mil 1150.00mil 650.00mil -50.00mil 10.00mil]
+	ElementLine [-50.00mil -50.00mil 250.00mil -50.00mil 10.00mil]
+	ElementLine [350.00mil -50.00mil 650.00mil -50.00mil 10.00mil]
+	ElementArc [300.00mil -50.00mil 50.00mil 50.00mil 0 180 10.00mil]
+
+	)
