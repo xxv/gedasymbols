@@ -1,4 +1,4 @@
-v 20110619 2
+v 20111231 2
 P 300 900 300 800 1 0 0
 {
 T 300 900 5 8 0 1 0 7 1
@@ -33,7 +33,7 @@ symversion=1.0
 T 700 500 8 10 1 1 0 0 1
 value=F/UCW-12
 T 700 300 8 8 1 1 0 0 1
-footprint=BEEPER
+footprint=BEEPER_F-UCW
 T 325 500 9 10 1 0 0 4 1
 BEEP
 T 100 1300 5 8 0 0 0 0 1

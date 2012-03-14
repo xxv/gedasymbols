@@ -67,6 +67,7 @@ echo \
 ; Allow to source symbols from the local copy of geda-symbols
 (define gedasymbols \"\${HOME}/geda/gedasymbols/www/user/kai_martin_knaak/symbols\")
 (component-library (build-path gedasymbols \"titleblock\"))
+(component-library (build-path gedasymbols \"templates\"))
 (component-library (build-path gedasymbols \"power\"))
 (component-library (build-path gedasymbols \"misc\"))
 (component-library (build-path gedasymbols \"digital\"))
@@ -106,14 +107,7 @@ echo \
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (load (build-path (getenv \"PWD\") \"gschem-colors\"))    ; localized colors 
-;(load (build-path (getenv \"HOME\") \".gEDA\" \"gschemcolor\"))    ; localized colors 
-(third-button \"mousepan\")	;use the mouse to pan around the schematic
  
-;(fast-mousepan \"enabled\")       			; draw boxes when panning
-(fast-mousepan \"disabled\")         			; always draw text
-(mousepan-gain 5)	; default --> 5
-(keyboardpan-gain 20)   ; default --> 20
-
 (text-size 10)						; Default text size
 (undo-levels 50)
 
@@ -123,24 +117,9 @@ echo \
 (add-hook! add-component-hook auto-uref)
 (add-hook! copy-component-hook auto-uref)
 
-; In case, autonumber must should be unhooked
-;(reset-hook! add-component-hook)
-;(reset-hook! copy-component-hook)
-
 
 ; default titleblock for new schematics
 (define default-titleblock \"title-block.sym\")
-
-; Ein Druck-Befehl für den PDF-Printer
-  (define %file-print file-print)
-  (define (file-print)
-    (print-command (format #f \"lp -d PDF -o media=A4 -t \\\"~A\\\"\" (basename (get-selected-filename) \".sch\")))
-    (gschem-use-rc-values)
-    (%file-print))
-
-
-; disable the toolbar
-;(toolbars \"disabled\")
 " > gschemrc
 
 

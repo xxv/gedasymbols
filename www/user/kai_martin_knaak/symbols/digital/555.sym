@@ -1,4 +1,4 @@
-v 20110619 2
+v 20111231 2
 B 100 100 1800 1000 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 100 1350 8 10 1 1 0 0 1
 value=555
@@ -19,9 +19,9 @@ dist-license=GNU General Public License, version 3, or later. See http://www.gnu
 T 100 2050 5 8 0 0 0 0 1
 use-license=free, no restrictions
 T 100 1150 8 8 1 1 0 0 1
-footprint=SO16
+footprint=SO8
 T 100 2850 5 8 0 0 0 0 1
-footprints=SO16, DIP16
+footprints=SO8, DIP8
 P 900 0 900 100 1 0 0
 {
 T 900 150 9 10 1 1 270 7 1
