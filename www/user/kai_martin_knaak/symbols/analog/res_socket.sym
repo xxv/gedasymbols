@@ -16,7 +16,7 @@ refdes=R?
 T 300 900 8 10 1 1 0 0 1
 value=XXX
 T 300 700 8 8 1 1 0 0 1
-footprint=res_RM10_socket
+footprint=res_socket
 P 800 500 700 500 1 0 0
 {
 T 850 550 5 8 0 1 0 0 1
