@@ -2,24 +2,45 @@
 # Ein einfaches Script, das ein geda-Projekt nach dem Geschmack von
 # ---<(kaimartin)>--- anlegt. 
 
-if [ $# = 0 ]; then
-	echo "usage: new_geda_project.sh NAME"
-	echo "Creates a geda/pcb project directory from scratch"
-	exit;
-fi;
+# This program is copyright (C) 2009-2012, Kai-Martin Knaak
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License version 3 as
+# published by the Free Software Foundation. 
+# For details see http://www.gnu.org/licenses/gpl.txt
 
-NAME=$1
-AUTHOR="Kai-Martin Knaak"
-AUTHORSHORT="-<(kmk)>-"
-FOOTPRINTLIB="/home/kmk/geda/footprints"
-DATE=`date +%d.%m.%Y`
+
+help () {
+    echo "Usage: "$0" <--skel |--git | --help> NAME"
+    echo "A simple script to start a new geda project from scratch."
+    echo "   --git  : set up a git repository in /var/cache/git. Requires sudo privilege."
+    echo "   --skel : install the basic structure of a geda project in the current dir."
+    echo "   --help : this help message"
+    exit 1;
+}
+
+[ $# -lt 2 ] && help
+
+action=$1
+shift 1
+
 SELF=$0
+NAME=$1
+# A low case only version of the name -- better for dokuwiki integration
+name=`echo $NAME | tr [:upper:] [:lower:]`
+USER=`whoami`
+AUTHOR=`finger $USER | awk 'BEGIN {FS = ": "} ; $0 ~ /Name/ {print $3}'`
+AUTHORSHORT=$USER
+FOOTPRINTLIB="~/geda/gedasymbols/kai_martin_knaak/footprints:$PWD"
+DATE=`date +%d.%m.%Y`
 
 # Absolute path of the Script.
-# Note, requires GNU readlink. Might not work for Mac and BSD users 
+# Note, this requires GNU readlink and might not work for Mac and BSD users 
 PFAD=`dirname $(readlink -f $0)`
 #PFAD="/afs/iqo.uni-hannover.de/products/gedasymbols/www/user/kai_martin_knaak"
 
+################################################################################
+skel () {
 
 mkdir $NAME
 cd $NAME
@@ -29,19 +50,19 @@ mkdir halde
 mkdir gehaeuse
 mkdir print
 mkdir bom
-cp $PFAD/layoutdruck.sh print/layoutdruck_$NAME.sh
-cp $PFAD/bomdruck.sh bom/bomdruck_$NAME.sh
+cp $PFAD/layoutdruck.sh print/layoutdruck_$name.sh
+cp $PFAD/bomdruck.sh bom/bomdruck_$name.sh
 
 # The project file for gsch2pcb
 # Use only local footprints, no m4, no global defaults.
 echo \
-"schematics "$NAME".sch
-output-name "$NAME"
+"schematics "$name".sch
+output-name "$name"
 skip-m4
 verbose
 elements-dir "$FOOTPRINTLIB"
 use-files
-" > $NAME.g2p
+" > $name.g2p
 
 # The attributes to be used for the bill of materials
 echo \
@@ -62,9 +83,9 @@ echo \
 ; Allow to source symbols from the current working directory
 (define current-working-directory \".\")
 (component-library current-working-directory)
-(source-library  current-working-directory)
+(source-library current-working-directory)
 
-; Allow to source symbols from the local copy of geda-symbols
+; Allow to source symbols from the local copy of Kai-Martin's gedasymbols
 (define gedasymbols \"\${HOME}/geda/gedasymbols/www/user/kai_martin_knaak/symbols\")
 (component-library (build-path gedasymbols \"titleblock\"))
 (component-library (build-path gedasymbols \"templates\"))
@@ -75,6 +96,7 @@ echo \
 (component-library (build-path gedasymbols \"block\"))
 (component-library (build-path gedasymbols \"analog/diode\"))
 (component-library (build-path gedasymbols \"analog\"))
+(component-library (build-path gedasymbols \"obsolete\"))
 " > gafrc
 
 
@@ -103,7 +125,7 @@ echo \
 # Add a local gschemrc
 echo \
 ";  This is a local 
-; gschemrc automatically installed on "$DATE" for project "$NAME".
+; gschemrc automatically installed on "$DATE" for project "$name".
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (load (build-path (getenv \"PWD\") \"gschem-colors\"))    ; localized colors 
@@ -126,7 +148,7 @@ echo \
 # add localized color file to be loaded by gschemrc
 echo \
 "
-; This is a color map for project \"$NAME\"
+; This is a color map for project \"$name\"
 ; automatically installed by \"$SELF\" on \"$DATE\"
 
 ; Colors may be specified in \"#RRGGBB\" or \"#RRGGBBAA\" format. If the alpha
@@ -189,7 +211,7 @@ echo \
 " > gschem-colors
 
 
-# Create a schematic with a title block filled with name an date.
+echo "Create a schematic with a title block filled with name and current date."
 echo \
 "v 20090328 2
 C 40000 40000 0 0 0 title-block.sym
@@ -197,7 +219,7 @@ C 40000 40000 0 0 0 title-block.sym
 T 52300 41300 5 30 1 1 0 4 1
 Title="$NAME"
 T 51400 40300 5 16 1 1 0 4 1
-filename="$NAME".sch
+filename="$name".sch
 T 55850 41500 5 16 1 1 0 4 1
 revision=0.1
 T 56050 40100 5 16 1 1 0 6 1
@@ -208,13 +230,12 @@ T 55850 40850 5 12 1 1 0 4 1
 date="`date +%d.%m.%y`"
 T 54450 40450 5 16 1 1 0 4 1
 author="$AUTHORSHORT"
-}
-" > $NAME.sch
+}" > $name.sch
 
-# Create an empty layout
+echo "Create an empty layout"
 echo \
 "ChangeName(Layout) "\
-"SaveTo(LayoutAs,"$NAME".pcb) "\
+"SaveTo(LayoutAs,"$name".pcb) "\
 "Quit() "\
 | pcb --listen \
  --fab-author \"$AUTHOR\" \
@@ -249,8 +270,8 @@ echo \
  --clear-increment-mm 0.500000 \
  --clear-increment-mil 2.000000
 
-# Create documentation file in lyx format
 ###############begin LyX template###################################
+echo "Create documentation file in lyx format"
 echo \
 "
 #LyX 1.6.2 created this file. For more info see http://www.lyx.org/
@@ -401,12 +422,28 @@ Meckerliste
 
 \end_body
 \end_document
-" > doc/$NAME.lyx
+" > doc/$name.lyx
 #######################End LyX template################
 
+} # end of skel sub routine
+################################################################################
 
-######################initialize a git repository######
-# file pattern, git should ignore
+
+#initialize a git repository####################################################
+init_git () {
+if [ -d "$NAME" ]; then cd $NAME ; fi
+
+if [ ! -d ../$NAME ]
+     then echo "No project "$NAME" found! --> quitting."
+     exit 1
+   fi
+
+if [ -d ".git" ]; then echo "git repo already exists! --> quitting" ; fi
+
+echo "initialize a git repository"$NAME" in "$PWD
+echo "and a bare clone in /var/cache/git/"$NAME"."
+
+# .gitignore: the file patterns, git should ignore
 echo \
 "
 # To be ignored by git:
@@ -425,12 +462,28 @@ git init
 git add .
 git commit -m 'geda project $NAME initialized'
 git config color.ui true
+git 
+
 sudo git clone --bare . /var/cache/git/$NAME.git
 sudo touch /var/cache/git/$NAME.git/git-daemon-export-ok
-sudo chown $USER /var/cache/git/$NAME".git"/description
+sudo chown www-data:iqo /var/cache/git/$NAME".git" -R
+sudo chmod g+w /var/cache/git/$NAME".git" -R
 sudo echo "geda project "$NAME > /var/cache/git/$NAME".git"/description
-sudo chown root /var/cache/git/$NAME".git"/description
-###################end git related stuff##############
+sudo chmod g-w /var/cache/git/$NAME".git"/description
 
+} #end git related stuff########################################################
+
+#main###########################################################################
+case $action in
+    --skel)
+	skel
+	;;
+    --git)
+	init_git
+	;;
+    *)
+	help
+	;;
+esac
 
 echo "Done with project "$NAME

@@ -14,6 +14,7 @@ cp symbols/analog/diode/zener.sym $PRE/discrete
 cp symbols/analog/diode/photodiode_BPW34.sym $PRE/discrete
 cp symbols/analog/diode/led.sym $PRE/discrete
 cp symbols/analog/igbt.sym $PRE/discrete
+cp symbols/analog/cap_horiz.sym $PRE/discrete
 cp symbols/analog/cap_vert.sym $PRE/discrete
 cp symbols/analog/nmosfet.sym $PRE/discrete
 cp symbols/analog/nmosfet_power.sym $PRE/discrete
@@ -60,6 +61,9 @@ cp footprints/discrete/res_vert.fp $PRE/discrete
 cp footprints/discrete/cap_100mil.fp $PRE/discrete
 cp footprints/discrete/cap_200mil.fp $PRE/discrete
 cp footprints/discrete/cap_200mil_a.fp $PRE/discrete
+cp footprints/discrete/cap_200mil_b.fp $PRE/discrete
+cp footprints/discrete/cap_200mil_c.fp $PRE/discrete
+cp footprints/discrete/cap_1100mil.fp $PRE/discrete
 
 cp footprints/discrete/dio_1206.fp $PRE/discrete
 cp footprints/discrete/dio_1812.fp $PRE/discrete

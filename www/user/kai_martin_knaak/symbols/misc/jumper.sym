@@ -44,6 +44,6 @@ comment=use jumper_default.sym to mark a closed jumper
 T 300 400 8 8 1 1 0 0 1
 value=Jumper
 T 100 1900 5 8 0 0 0 0 1
-footprints=JMP_2PIN
+footprints=JMP_2PIN, JMP_SMD
 T 100 2300 5 8 0 0 0 0 1
 value=jumper
