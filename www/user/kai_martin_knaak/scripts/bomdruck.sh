@@ -10,7 +10,7 @@ fi
 
 
 SCHEMATIC=$1
-OUTFILEKOLL=`basename $SCHEMATIC .sch`"_koll.bom"
+OUTFILE_KOLL=`basename $SCHEMATIC .sch`"_koll.bom"
 OUTFILE_SINGLE=`basename $SCHEMATIC .sch`".bom"
 
 gnetlist -g bom2 -o $OUTFILE_KOLL $SCHEMATIC
