@@ -71,34 +71,6 @@ value
 description
 " > bom/attribs
 
-# Add a local gafrc
-echo \
-"; local gafrc
-; automatically installed by \"$SELF\" on \"$DATE\"
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-(reset-component-library)   ; don't use system symbols
-(reset-source-library)     ; don't use system schematics
-
-; Allow to source symbols from the current working directory
-(define current-working-directory \".\")
-(component-library current-working-directory)
-(source-library current-working-directory)
-
-; Allow to source symbols from the local copy of Kai-Martin's gedasymbols
-(define gedasymbols \"\${HOME}/geda/gedasymbols/www/user/kai_martin_knaak/symbols\")
-(component-library (build-path gedasymbols \"titleblock\"))
-(component-library (build-path gedasymbols \"templates\"))
-(component-library (build-path gedasymbols \"power\"))
-(component-library (build-path gedasymbols \"misc\"))
-(component-library (build-path gedasymbols \"digital\"))
-(component-library (build-path gedasymbols \"connector\"))
-(component-library (build-path gedasymbols \"block\"))
-(component-library (build-path gedasymbols \"analog/diode\"))
-(component-library (build-path gedasymbols \"analog\"))
-(component-library (build-path gedasymbols \"obsolete\"))
-" > gafrc
-
 
 # Add a local gnetlistrc. Hierarchy is enabled by default
 echo \
@@ -458,18 +430,34 @@ PCB.*.backup
 \#*#
 " > .gitignore
 
+# initilize a git repo in the current dir.
 git init
-git add .
-git commit -m 'geda project $NAME initialized'
-git config color.ui true
-git 
 
+# add everything to the repo
+git add .
+
+# first commit to the repo
+git commit -m 'geda project $NAME initialized'
+
+# Use color for git status
+git config color.ui true
+
+# add the branch "origin"
+git config branch.master.remote origin
+git config branch.master.merge refs/heads/master
+# let origin point to where a bare repo is going to be installed
+git remote add origin git://bibo/git/$NAME.git
+git remote set-url origin git://bibo/git/$NAME.git
+git remote set-url --push origin ssh://var/cache/git/$NAME.git
+
+# install a bare clone in /var/cache/git
 sudo git clone --bare . /var/cache/git/$NAME.git
 sudo touch /var/cache/git/$NAME.git/git-daemon-export-ok
+sudo echo "geda project "$NAME > /var/cache/git/$NAME".git"/description
+
+# the bare repo needs to be writeable by ssh users
 sudo chown www-data:iqo /var/cache/git/$NAME".git" -R
 sudo chmod g+w /var/cache/git/$NAME".git" -R
-sudo echo "geda project "$NAME > /var/cache/git/$NAME".git"/description
-sudo chmod g-w /var/cache/git/$NAME".git"/description
 
 } #end git related stuff########################################################
 

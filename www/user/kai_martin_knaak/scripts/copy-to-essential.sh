@@ -3,6 +3,7 @@
 
 PRE=essential/symbols
 
+cp symbols/analog/instr_amp_8pin.sym $PRE/analog
 cp symbols/analog/opamp.sym $PRE/analog
 cp symbols/analog/opamp_pwr.sym $PRE/analog
 cp symbols/analog/opamp_dual.sym $PRE/analog
@@ -106,6 +107,19 @@ cp footprints/generic/TO220.fp $PRE/generic
 cp footprints/generic/TO247.fp $PRE/generic
 cp footprints/generic/TO247_LAY.fp $PRE/generic
 
+cp footprints/generic/DIP6.fp $PRE\generic
+cp footprints/generic/DIP8.fp $PRE\generic
+cp footprints/generic/DIP12.fp $PRE\generic
+cp footprints/generic/DIP14.fp $PRE\generic
+cp footprints/generic/DIP16.fp $PRE\generic
+cp footprints/generic/DIP18.fp $PRE\generic
+cp footprints/generic/DIP20.fp $PRE\generic
+cp footprints/generic/DIP24.fp $PRE\generic
+cp footprints/generic/DIP24_wide.fp $PRE\generic
+cp footprints/generic/DIP40_wide.fp $PRE\generic
+
+
+### specific thru hole ###
 cp footprints/specific/BPW34.fp $PRE/specific
 cp footprints/specific/BPW34S.fp $PRE/specific
 cp footprints/specific/BPW34_upsidedown.fp $PRE/specific
