@@ -107,16 +107,16 @@ cp footprints/generic/TO220.fp $PRE/generic
 cp footprints/generic/TO247.fp $PRE/generic
 cp footprints/generic/TO247_LAY.fp $PRE/generic
 
-cp footprints/generic/DIP6.fp $PRE\generic
-cp footprints/generic/DIP8.fp $PRE\generic
-cp footprints/generic/DIP12.fp $PRE\generic
-cp footprints/generic/DIP14.fp $PRE\generic
-cp footprints/generic/DIP16.fp $PRE\generic
-cp footprints/generic/DIP18.fp $PRE\generic
-cp footprints/generic/DIP20.fp $PRE\generic
-cp footprints/generic/DIP24.fp $PRE\generic
-cp footprints/generic/DIP24_wide.fp $PRE\generic
-cp footprints/generic/DIP40_wide.fp $PRE\generic
+cp footprints/generic/DIP6.fp $PRE/generic
+cp footprints/generic/DIP8.fp $PRE/generic
+cp footprints/generic/DIP12.fp $PRE/generic
+cp footprints/generic/DIP14.fp $PRE/generic
+cp footprints/generic/DIP16.fp $PRE/generic
+cp footprints/generic/DIP18.fp $PRE/generic
+cp footprints/generic/DIP20.fp $PRE/generic
+cp footprints/generic/DIP24.fp $PRE/generic
+cp footprints/generic/DIP24_wide.fp $PRE/generic
+cp footprints/generic/DIP40_wide.fp $PRE/generic
 
 
 ### specific thru hole ###
