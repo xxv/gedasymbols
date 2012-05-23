@@ -33,6 +33,7 @@ AUTHOR=`finger $USER | awk 'BEGIN {FS = ": "} ; $0 ~ /Name/ {print $3}'`
 AUTHORSHORT=$USER
 FOOTPRINTLIB="~/geda/gedasymbols/kai_martin_knaak/footprints:$PWD"
 DATE=`date +%d.%m.%Y`
+VERSION="v1"      # The version string to be used in gerber- and print scripts"
 
 # Absolute path of the Script.
 # Note, this requires GNU readlink and might not work for Mac and BSD users 
@@ -46,11 +47,12 @@ mkdir $NAME
 cd $NAME
 mkdir doc
 mkdir gerber
-mkdir halde
+mkdir versions
 mkdir gehaeuse
 mkdir print
 mkdir bom
 cp $PFAD/layoutdruck.sh print/layoutdruck_$name.sh
+cp $PFAD/schaltplandruck.sh print/schaltplandruck_$name.sh
 cp $PFAD/bomdruck.sh bom/bomdruck_$name.sh
 
 # The project file for gsch2pcb
@@ -154,7 +156,22 @@ echo \
    (freestyle4         #f)
    ))
 
-(display-outline-color-map
+(display-outline-color-mapGerber-Daten zum Projekt 
+	Stromverteiler-Monitor, Version 2
+
+Inhaltliche Bedeutung der Dateien
+
+stromverteiler_monitor_v2.bottommask.gbr	-- Lötstoppmaske, Unterseite 
+stromverteiler_monitor_v2.bottompaste.gbr	-- Lötpaste, Unterseite
+stromverteiler_monitor_v2.fab.gbr		-- Lage und Durchmesser der Löcher
+stromverteiler_monitor_v2.top.gbr		-- Kupfer, Oberseite (1. Lage)
+stromverteiler_monitor_v2.topmask.gbr		-- Lötstoppmaske, Oberseite
+stromverteiler_monitor_v2.toppaste.gbr		-- Lötpaste, Oberseite
+stromverteiler_monitor_v2.topsilk.gbr		-- Bestückungsdruck, Oberseite
+stromverteiler_monitor_v2.comment.gbr		-- Kommentare/Anmerkungen
+stromverteiler_monitor_v2.outline.gbr		-- Umriss der Leiterplatte
+stromverteiler_monitor_v2.plated-drill.cnc	-- Koordinaten metallisierter Löcher
+stromverteiler_monitor_v2.unplated-drill.cnc	-- Koordinaten unmetallisierter Löcher
  '((background         #f)
    (pin                \"#4d4d4d\")
    (net-endpoint       \"#cdcdcd\")
@@ -183,6 +200,65 @@ echo \
 " > gschem-colors
 
 
+echo "Add a script that creates gerber files and zips them for the fab"
+echo \
+"#!/bin/sh
+# produce gerber files, packages them in a zip file and open 
+
+NAME="$NAME"
+VERSION="$VERSION"
+LAYOUT="../$NAME.pcb"
+
+pcb -x gerber --gerberfile $NAME_$VERSION.pcb --name-style first $LAYOUT
+
+zip $NAME_$VERSION.zip \
+$NAME.README \
+$NAME_$VERSION*.gbr \
+$NAME_$VERSION*.cnc
+
+# open the gerbers with gerbv
+gerbv $NAME_$VERSION*.gbr
+
+" > gerber/do_$NAME"_gerbers.sh"
+chmod u+x gerber/do_$NAME"_gerbers.sh"
+
+
+echo "Add a README for the fab"
+echo \
+"Diese zip-Datei enthält Gerberdaten für das Projekt:
+	"$NAME", "$VERSION"
+
+Inhaltliche Bedeutung der Dateien
+
+"$NAME"_"$VERSION".bottommask.gbr	-- Lötstoppmaske, Unterseite 
+"$NAME"_"$VERSION".bottompaste.gbr	-- Lötpaste, Unterseite
+"$NAME"_"$VERSION".fab.gbr		-- Lage und Durchmesser der Löcher
+"$NAME"_"$VERSION".top.gbr		-- Kupfer, Oberseite (1. Lage)
+"$NAME"_"$VERSION".topmask.gbr		-- Lötstoppmaske, Oberseite
+"$NAME"_"$VERSION".toppaste.gbr		-- Lötpaste, Oberseite
+"$NAME"_"$VERSION".topsilk.gbr		-- Bestückungsdruck, Oberseite
+"$NAME"_"$VERSION".comment.gbr		-- Kommentare/Anmerkungen
+"$NAME"_"$VERSION".outline.gbr		-- Umriss der Leiterplatte
+"$NAME"_"$VERSION".plated-drill.cnc	-- Koordinaten metallisierter Löcher
+"$NAME"_"$VERSION".unplated-drill.cnc	-- Koordinaten unmetallisierter Löcher
+" > gerber/$NAME"_"$VERSION".README"
+
+
+echo "add a gafrc to the versions folder"
+echo \
+"; gafrc for a self contained repo of a geda project.
+; All symbols should be embedded in the schematic, or local to this folder.
+(reset-component-library)
+(reset-source-library)
+
+; Allow to source symbols from the current working directory
+(define current-working-directory (getenv \"PWD\"))
+(component-library current-working-directory)
+(source-library  current-working-directory)
+" > versions/gafrc
+
+
+#########################Create an empty schematic###########################
 echo "Create a schematic with a title block filled with name and current date."
 echo \
 "v 20090328 2
@@ -204,6 +280,8 @@ T 54450 40450 5 16 1 1 0 4 1
 author="$AUTHORSHORT"
 }" > $name.sch
 
+#########################Create an empty layout##############################
+# This actually starts pcb and executes a couple of commands through a pipe.
 echo "Create an empty layout"
 echo \
 "ChangeName(Layout) "\
@@ -241,6 +319,8 @@ echo \
  --line-increment-mil 8.000000 \
  --clear-increment-mm 0.500000 \
  --clear-increment-mil 2.000000
+
+
 
 ###############begin LyX template###################################
 echo "Create documentation file in lyx format"
@@ -418,7 +498,7 @@ echo "and a bare clone in /var/cache/git/"$NAME"."
 # .gitignore: the file patterns, git should ignore
 echo \
 "
-# To be ignored by git:
+\# To be ignored by git:
 *~
 *-
 PCB.*.save
@@ -429,6 +509,16 @@ PCB.*.backup
 *.cmd
 \#*#
 " > .gitignore
+
+if [ -d gerber ]; then
+echo \
+"
+\# Do not include gerber files in git repo. 
+\# They can readily be reproduced when needed.
+*.gbr
+*.cnc
+" > gerber/.gitignore
+fi
 
 # initilize a git repo in the current dir.
 git init

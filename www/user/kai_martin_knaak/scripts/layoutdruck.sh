@@ -28,9 +28,9 @@ shift $(($OPTIND - 1))   # go to next argument
 
 
 PCBFILE=$1
-OUTPDF=`basename $PCBFILE .pcb`"_layout.pdf"
-OUTPNG=`basename $PCBFILE .pcb`"_layout.png"
-OUTPNG_BOTTOM=`basename $PCBFILE .pcb`"_layout_bottom.png"
+OUTPDF=`basename $PCBFILE .pcb`"_layout_"`date +%F`".pdf"
+OUTPNG=`basename $PCBFILE .pcb`"_layout_"`date +%F`".png"
+OUTPNG_BOTTOM=`basename $PCBFILE .pcb`"_layout_bottom_"`date +%F`".png"
 PCB=/usr/local/bin/pcb
 SIZE="20x30cm"
 
