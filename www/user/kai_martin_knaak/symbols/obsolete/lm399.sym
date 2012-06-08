@@ -4,7 +4,7 @@ device=lm399
 T 300 2700 5 8 0 0 0 0 1
 description=precision voltage reference
 T 300 2500 5 8 0 0 0 0 1
-documentation=http://www.national.com/ds/LM/LM199.pdf
+documentation=http://www.ti.com/lit/gpn/lm399
 T 300 2300 5 8 0 0 0 0 1
 comment=Lm199 and LM299 are compatible.
 T 300 2100 5 8 0 0 0 0 1

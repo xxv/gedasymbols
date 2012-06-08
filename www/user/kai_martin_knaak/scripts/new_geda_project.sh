@@ -156,23 +156,8 @@ echo \
    (freestyle4         #f)
    ))
 
-(display-outline-color-mapGerber-Daten zum Projekt 
-	Stromverteiler-Monitor, Version 2
-
-Inhaltliche Bedeutung der Dateien
-
-stromverteiler_monitor_v2.bottommask.gbr	-- Lötstoppmaske, Unterseite 
-stromverteiler_monitor_v2.bottompaste.gbr	-- Lötpaste, Unterseite
-stromverteiler_monitor_v2.fab.gbr		-- Lage und Durchmesser der Löcher
-stromverteiler_monitor_v2.top.gbr		-- Kupfer, Oberseite (1. Lage)
-stromverteiler_monitor_v2.topmask.gbr		-- Lötstoppmaske, Oberseite
-stromverteiler_monitor_v2.toppaste.gbr		-- Lötpaste, Oberseite
-stromverteiler_monitor_v2.topsilk.gbr		-- Bestückungsdruck, Oberseite
-stromverteiler_monitor_v2.comment.gbr		-- Kommentare/Anmerkungen
-stromverteiler_monitor_v2.outline.gbr		-- Umriss der Leiterplatte
-stromverteiler_monitor_v2.plated-drill.cnc	-- Koordinaten metallisierter Löcher
-stromverteiler_monitor_v2.unplated-drill.cnc	-- Koordinaten unmetallisierter Löcher
- '((background         #f)
+(display-outline-color-map
+  '((background         #f)
    (pin                \"#4d4d4d\")
    (net-endpoint       \"#cdcdcd\")
    (graphic            \"#008b00\")
@@ -536,9 +521,9 @@ git config color.ui true
 git config branch.master.remote origin
 git config branch.master.merge refs/heads/master
 # let origin point to where a bare repo is going to be installed
-git remote add origin git://bibo/git/$NAME.git
-git remote set-url origin git://bibo/git/$NAME.git
-git remote set-url --push origin ssh://var/cache/git/$NAME.git
+git remote add origin git://localhost/git/$NAME.git
+git remote set-url origin git://localhost/git/$NAME.git
+git remote set-url --push origin ssh://localhost/var/cache/git/$NAME.git
 
 # install a bare clone in /var/cache/git
 sudo git clone --bare . /var/cache/git/$NAME.git

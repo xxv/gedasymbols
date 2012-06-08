@@ -6,7 +6,7 @@ description=generic comparator
 T 100 2400 5 8 0 0 0 0 1
 comment=use symbol comparator_pwr.sym to connect power pins.
 T 100 2200 5 8 0 0 0 0 1
-documentation=http://www.national.com/ds/LM/LM111.pdf
+documentation=http://www.ti.com/lit/gpn/lm311
 T 100 2000 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
 T 100 1800 5 8 0 0 0 0 1

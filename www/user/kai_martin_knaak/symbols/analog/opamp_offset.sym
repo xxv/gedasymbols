@@ -4,7 +4,7 @@ description=operational amplifier with offset compensation on pin 1 and pin 5
 T 100 2700 5 8 0 0 0 0 1
 comment=Use symbol opamp_pwr.sym to connect power pins.
 T 100 2500 5 8 0 0 0 0 1
-documentation=http://www.national.com/ds/TL/TL081.pdf
+documentation=http://www.ti.com/lit/gpn/lm78l05
 T 100 1900 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
 T 100 1700 5 8 0 0 0 0 1

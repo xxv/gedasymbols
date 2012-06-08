@@ -4,7 +4,7 @@ description=operational amplifier
 T 200 2700 5 8 0 0 0 0 1
 comment=Use symbol opamp_pwr.sym to connect power pins.
 T 200 2500 5 8 0 0 0 0 1
-documentation=http://www.national.com/ds/TL/TL081.pdf
+documentation=http://www.ti.com/lit/gpn/tl081
 T 200 2300 5 8 0 0 0 0 1
 footprints=SO8, DIP8
 T 200 2100 5 8 0 0 0 0 1

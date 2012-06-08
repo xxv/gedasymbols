@@ -33,6 +33,7 @@ OUTPNG=`basename $PCBFILE .pcb`"_layout_"`date +%F`".png"
 OUTPNG_BOTTOM=`basename $PCBFILE .pcb`"_layout_bottom_"`date +%F`".png"
 PCB=/usr/local/bin/pcb
 SIZE="20x30cm"
+PAPERSIZE="A4"
 
 ## echo pcb version
 $PCB -V
@@ -52,7 +53,7 @@ $PCB -x eps \
   --eps-file "/tmp/out.eps" \
   $PCBFILE
 
-poster -mA4 -p$SIZE -c12x12mm -o "/tmp/out_toprefdes.ps" "/tmp/out.eps"
+poster -m$PAPERSIZE -p$SIZE -c12x12mm -o "/tmp/out_toprefdes.ps" "/tmp/out.eps"
 
 ## top-values
 echo "Bestückungsdruck Werte, Oberseite von "$OUTPUT
@@ -69,7 +70,7 @@ $PCB -x eps \
   --eps-file "/tmp/out.eps" \
   $PCBFILE
 
-poster -mA4 -p$SIZE -c12x12mm -o "/tmp/out_topvalue.ps" "/tmp/out.eps"
+poster -m$PAPERSIZE -p$SIZE -c12x12mm -o "/tmp/out_topvalue.ps" "/tmp/out.eps"
 
 
 ## bottom-refdes
@@ -87,7 +88,7 @@ $PCB -x eps \
   --eps-file "/tmp/out.eps" \
   $PCBFILE
 
-poster -mA4 -p$SIZE -c12x12mm -o "/tmp/out_bottomrefdes.ps" "/tmp/out.eps"
+poster -m$PAPERSIZE -p$SIZE -c12x12mm -o "/tmp/out_bottomrefdes.ps" "/tmp/out.eps"
 
 
 ## bottom-value
@@ -105,7 +106,7 @@ $PCB -x eps \
   --eps-file "/tmp/out.eps" \
   $PCBFILE
 
-poster -mA4 -p$SIZE -c12x12mm -o "/tmp/out_bottomvalue.ps" "/tmp/out.eps"
+poster -m$PAPERSIZE -p$SIZE -c12x12mm -o "/tmp/out_bottomvalue.ps" "/tmp/out.eps"
 
 ## combine to a single PDF document
 psmerge -o/tmp/out.ps \

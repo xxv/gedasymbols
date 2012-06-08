@@ -9,7 +9,7 @@ description=voltage regulator, +15V, 100 mA
 T 300 1000 8 8 1 1 0 0 1
 footprint=SO8
 T 300 2500 5 8 0 0 0 0 1
-documentation=http://www.national.com/ds.cgi/LM/LM78L15.pdf
+documentation=http://www.ti.com/lit/gpn/lm78l05
 T 300 1900 5 8 0 0 0 0 1
 dist-license=GPL , see http://www.gnu.org/licenses/gpl.txt
 T 300 2300 5 8 0 0 0 0 1

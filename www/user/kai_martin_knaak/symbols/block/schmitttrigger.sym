@@ -255,7 +255,7 @@ description=dual comparator, LM393, SO8
 T 1400 500 5 8 0 0 180 6 1
 comment=Use symbol comparator_dual_pwr.sym to connect power pins.
 T 1400 700 5 8 0 0 180 6 1
-documentation=http://www.national.com/ds/LM/LM193.pdf
+documentation=http://www.ti.com/lit/gpn/lm393
 T 1400 900 5 8 0 0 180 6 1
 author=Kai-Martin Knaak kmk@lilalaser.de
 T 1400 1100 5 8 0 0 180 6 1

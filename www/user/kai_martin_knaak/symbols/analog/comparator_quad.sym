@@ -4,7 +4,7 @@ description=generic quad comparator, LM339 style
 T 0 3500 5 8 0 0 0 0 1
 comment=pin-out like LM339. Use comparator_quad_pwr.sym to connect power pins.
 T 0 2900 5 8 0 0 0 0 1
-documentation=http://www.national.com/ds/LM/LM139.pdf
+documentation=http://www.ti.com/lit/gpn/lm339
 T 0 2700 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
 T 0 2500 5 8 0 0 0 0 1
