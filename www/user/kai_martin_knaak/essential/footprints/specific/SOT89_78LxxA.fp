@@ -1,4 +1,4 @@
-Element["" "SOT89" "SOT89" "SOT89" 30.9999mm 231.2401mm -68.90mil -49.21mil 0 100 ""]
+Element["" "SOT89_78LxxA" "SOT89_78LxxA" "SOT89_78LxxA" 31.0000mm 241.9998mm -68.90mil -49.21mil 0 100 ""]
 (
 	Pin[-39.37mil -59.05mil 39.37mil 20.00mil 0.0000 19.69mil "2" "2" "square"]
 	Pin[39.37mil 0.01mil 39.37mil 20.00mil 0.0000 19.69mil "2" "2" "square"]
@@ -8,9 +8,9 @@ Element["" "SOT89" "SOT89" "SOT89" 30.9999mm 231.2401mm -68.90mil -49.21mil 0 10
 	Pin[0.0000 39.38mil 39.37mil 20.00mil 1.37mil 19.69mil "2" "2" "square"]
 	Pad[-19.69mil 39.38mil -9.85mil 49.22mil 55.67mil 20.00mil 63.67mil "2" "2" "square"]
 	Pad[0.0000 -19.68mil 0.0000 0.0000 118.11mil 32.00mil 122.11mil "2" "2" "square"]
-	Pad[-59.06mil 157.49mil -59.05mil 98.43mil 39.37mil 32.00mil 47.37mil "1" "1" "square,edge2"]
-	Pad[0.0000 98.43mil 0.0000 157.49mil 39.37mil 32.00mil 47.37mil "2" "2" "square,edge2"]
-	Pad[59.05mil 98.43mil 59.05mil 157.49mil 39.37mil 32.00mil 47.37mil "3" "3" "square,edge2"]
+	Pad[-59.06mil 157.49mil -59.05mil 98.43mil 39.37mil 32.00mil 47.37mil "Vout" "3" "square,edge2"]
+	Pad[0.0000 98.43mil 0.0000 157.49mil 39.37mil 32.00mil 47.37mil "GND" "2" "square,edge2"]
+	Pad[59.05mil 98.43mil 59.05mil 157.49mil 39.37mil 32.00mil 47.37mil "Vin" "1" "square,edge2"]
 	Pad[9.84mil 49.22mil 19.68mil 39.38mil 55.67mil 20.00mil 63.67mil "2" "2" "square"]
 	Pad[0.0000 0.0000 0.0000 98.43mil 157.48mil 32.00mil 0.0000 "2" "2" "onsolder,square"]
 	ElementLine [0.0000 39.38mil 0.0000 118.12mil 9.84mil]

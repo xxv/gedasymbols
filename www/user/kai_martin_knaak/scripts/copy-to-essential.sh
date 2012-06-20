@@ -10,6 +10,11 @@ cp symbols/analog/opamp_dual.sym $PRE/analog
 cp symbols/analog/opamp_dual_pwr.sym $PRE/analog
 cp symbols/analog/opamp_offset.sym $PRE/analog
 
+cp symbols/analog/regulator_positive_fixed.sym $PRE/analog
+cp symbols/analog/regulator_positive_variable.sym $PRE/analog
+cp symbols/analog/regulator_negative_fixed.sym $PRE/analog
+cp symbols/analog/regulator_negative_variable.sym $PRE/analog
+
 cp symbols/analog/diode/diode.sym $PRE/discrete
 cp symbols/analog/diode/zener.sym $PRE/discrete
 cp symbols/analog/diode/photodiode_BPW34.sym $PRE/discrete
@@ -124,3 +129,12 @@ cp footprints/specific/BPW34.fp $PRE/specific
 cp footprints/specific/BPW34S.fp $PRE/specific
 cp footprints/specific/BPW34_upsidedown.fp $PRE/specific
 cp footprints/specific/BPW34S_upsidedown.fp $PRE/specific
+
+### specific SMD ###
+cp footprints/generic/SO8_78Lxx.fp $PRE/specific
+cp footprints/generic/SO8_79Lxx.fp $PRE/specific
+cp footprints/generic/SOT89_78LxxA.fp $PRE/specific
+cp footprints/generic/SO8_LM317.fp $PRE/specific
+cp footprints/generic/SO8_LM337.fp $PRE/specific
+cp footprints/generic/SOT89_79Lxx.fp $PRE/specific
+
