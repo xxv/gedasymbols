@@ -138,3 +138,8 @@ cp footprints/generic/SO8_LM317.fp $PRE/specific
 cp footprints/generic/SO8_LM337.fp $PRE/specific
 cp footprints/generic/SOT89_79Lxx.fp $PRE/specific
 
+### connectors ###
+cp footprints/connector/AKL_2PIN.fp $PRE/connector
+cp footprints/connector/AKL_3PIN.fp $PRE/connector
+
+

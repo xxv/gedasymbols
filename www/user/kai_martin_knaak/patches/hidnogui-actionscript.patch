@@ -1,0 +1,27 @@
+From 39da24471519012c04d3c2974b6f6a89469d5a29 Mon Sep 17 00:00:00 2001
+From: Kai-Martin Knaak <knaak@iqo.uni-hannover.de>
+Date: Sun, 1 Jan 2012 23:23:45 +0100
+Subject: [PATCH] hidnogui so gepatcht, dass Ausdruck mit actionscript nicht
+ aussteigt
+
+---
+ src/hid/common/hidnogui.c |    3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/src/hid/common/hidnogui.c b/src/hid/common/hidnogui.c
+index d772e18..645111d 100644
+--- a/src/hid/common/hidnogui.c
++++ b/src/hid/common/hidnogui.c
+@@ -48,7 +48,8 @@ nogui_parse_arguments (int *argc, char ***argv)
+ static void
+ nogui_invalidate_lr (int l, int r, int t, int b)
+ {
+-  CRASH;
++  printf("pcb: invalidate_lr() called without a GUI\n");
++  printf("This is ok, if you run an action script\n");
+ }
+ 
+ static void
+-- 
+1.7.10
+

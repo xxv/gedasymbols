@@ -1,14 +1,20 @@
 #!/bin/bash
-# layout-print for pcb -<(kmk)>- 2010
-# needs poster, ps2pdf, convert, psmerge 
-# optional viewers: gthumb and evince 
+# layout-print for pcb -<(kmk)>- 2010-2012
+# needs poster, ps2pdf, convert, psmerge and optionally
+# viewers for PNG and PDF (gthumb and okular)
 ########################################################
 
-if [ $# -eq 0 ]    # Script invoked with no command-line args?
+if [ $# -eq 0 ]    # Script invoked with no command line args
 then
   echo "Usage: `basename $0` [-p][-V] foobar.pcb"
   echo "-p     produce photo realistic output"
   echo "-V     launch viewers on produced output"
+  echo "Note: There is a bug in run of the mill version of cb, that prevents"
+  echo "execution of the DISPLAY action on the command line. PCB preemptively"
+  echo "exits on the assumption, that this command is only valid if pcb runs"
+  echo "in GUI mode. A patch to rectify this and issue a warning rather than"
+  echo "exit, can be found named 'hidnogui-actionscript.patch' on"
+  echo "http://gedasymbols.org"
   exit
 fi  
 
@@ -32,6 +38,8 @@ OUTPDF=`basename $PCBFILE .pcb`"_layout_"`date +%F`".pdf"
 OUTPNG=`basename $PCBFILE .pcb`"_layout_"`date +%F`".png"
 OUTPNG_BOTTOM=`basename $PCBFILE .pcb`"_layout_bottom_"`date +%F`".png"
 PCB=/usr/local/bin/pcb
+PDFVIEWER=/usr/bin/okular
+PNGVIEWER=/usr/bin/gthumb
 SIZE="20x30cm"
 PAPERSIZE="A4"
 
@@ -49,6 +57,7 @@ $PCB -x eps \
   --layer-color-2 '#dddddd' \
   --layer-color-3 '#dddddd' \
   --as-shown  \
+  --only-visible \
   --layer-stack "outline,comment,elements,top" \
   --eps-file "/tmp/out.eps" \
   $PCBFILE
@@ -66,6 +75,7 @@ $PCB -x eps \
   --layer-color-2 '#dddddd' \
   --layer-color-3 '#dddddd' \
   --as-shown  \
+  --only-visible \
   --layer-stack "outline,comment,elements,top" \
   --eps-file "/tmp/out.eps" \
   $PCBFILE
@@ -102,6 +112,7 @@ $PCB -x eps \
   --layer-color-5 '#dddddd' \
   --layer-color-6 '#dddddd' \
   --as-shown  \
+  --only-visible \
   --layer-stack "outline,elements,bottom,solderside" \
   --eps-file "/tmp/out.eps" \
   $PCBFILE
@@ -120,7 +131,7 @@ ps2pdf "/tmp/out.ps" $OUTPDF
 ### optionally start viewer.###
 if [ "$STARTVIEWER" = "1" ]
 then
-  evince $OUTPDF
+  $PDFVIEWER $OUTPDF
 fi
 
 
@@ -162,9 +173,9 @@ convert /tmp/out.png \
 ### optionally start viewer.###
 if [ "$STARTVIEWER" = "1" ]
 then
-  gthumb $OUTPNG $OUTPNG_BOTTOM
+  $PNGVIEWER $OUTPNG $OUTPNG_BOTTOM
 fi
 
-fi # PHOTOOUTPUT
+fi # photo realistic output
 
 exit # end of script

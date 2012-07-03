@@ -493,6 +493,7 @@ PCB.*.backup
 *.new.pcb
 *.cmd
 \#*#
+*.log
 " > .gitignore
 
 if [ -d gerber ]; then

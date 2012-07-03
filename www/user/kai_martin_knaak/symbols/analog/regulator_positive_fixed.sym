@@ -52,7 +52,7 @@ use-license=free, no restrictions
 L 600 600 800 600 3 10 0 0 -1 -1
 L 700 700 700 500 3 10 0 0 -1 -1
 T 200 2600 5 8 0 0 0 0 1
-footprints=TO220, TO220_LAY, TO220_bighole, TO220_block TO92, DPAK, D2PAK, SO8_78Lxx, SOT89_78LxxA
+footprints=TO220, TO220_LAY, TO220_bighole, TO220_block, TO92, DPAK, D2PAK, SO8_78Lxx, SOT89_78LxxA
 T 200 2200 5 8 0 0 0 0 1
 symversion=3.0
 T 200 2800 5 8 0 0 0 0 1

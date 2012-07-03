@@ -10,7 +10,7 @@ dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
 T 300 1800 5 8 0 0 0 0 1
 use-license=free, no restrictions
 T 300 2600 5 8 0 0 0 0 1
-footprints=TO220, TO220_LAY, TO220_BLOCK, SOT223, LM317_SO8
+footprints=TO220, TO220_LAY, TO220_BLOCK, SOT223, SO8_LM317, SOT89_LM317
 T 200 1400 8 10 1 1 0 0 1
 refdes=U?
 T 200 1100 8 10 1 1 0 0 1
