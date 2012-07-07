@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tree>
+  <directory name="footprints">
+    <file name="1x01con.fp"/>
+    <file name="1x02con.fp"/>
+    <file name="1x03con.fp"/>
+    <file name="1x04con.fp"/>
+    <file name="1x05con.fp"/>
+    <file name="1x08con.fp"/>
+    <file name="1x20con.fp"/>
+    <file name="2x03con.fp"/>
+    <file name="atmega16.fp"/>
+    <file name="attiny2313.fp"/>
+    <file name="audio_chinch_connector.fp"/>
+    <file name="capacitor_bipolar.fp"/>
+    <file name="capacitor_electrolytic.fp"/>
+    <file name="crystal.fp"/>
+    <file name="diode.fp"/>
+    <file name="dip_01x03-02.fp"/>
+    <file name="dogm.fp"/>
+    <file name="jumper.fp"/>
+    <file name="led.fp"/>
+    <file name="memcard.fp"/>
+    <file name="mosfet.fp"/>
+    <file name="resistor.fp"/>
+    <file name="resistor_long.fp"/>
+    <file name="sdcard.fp"/>
+    <file name="spi_dogm.fp"/>
+    <file name="spi_memcard.fp"/>
+    <file name="spi_pwr.fp"/>
+    <file name="spi_stage.fp"/>
+    <file name="spi_vs1011.fp"/>
+    <file name="transistor.fp"/>
+    <file name="voltage_regulator_positive.fp"/>
+    <file name="vs1053_breakout.fp"/>
+  </directory>
+</tree>

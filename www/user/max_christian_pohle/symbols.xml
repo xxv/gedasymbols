@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tree>
+  <directory name="symbols">
+    <file name="1x01con.sym"/>
+    <file name="1x02con.sym"/>
+    <file name="1x03con.sym"/>
+    <file name="1x04con.sym"/>
+    <file name="1x05con.sym"/>
+    <file name="1x06con.sym"/>
+    <file name="1x08con.sym"/>
+    <file name="1x20con.sym"/>
+    <file name="2x03con.sym"/>
+    <file name="atmega16.sym"/>
+    <file name="attiny2313.sym"/>
+    <file name="capacitor_bipolar.sym"/>
+    <file name="capacitor_electrolytic.sym"/>
+    <file name="crystal.sym"/>
+    <file name="diode.sym"/>
+    <file name="dip_01x03-02.sym"/>
+    <file name="dogm.sym"/>
+    <file name="jumper.sym"/>
+    <file name="L78xx.sym"/>
+    <file name="led.sym"/>
+    <file name="memcard.sym"/>
+    <file name="mosfet.sym"/>
+    <file name="resistor_long.sym"/>
+    <file name="resistor.sym"/>
+    <file name="sd_memorycard.sym"/>
+    <file name="securedigital.sym"/>
+    <file name="spi_dogm.sym"/>
+    <file name="spi_memcard.sym"/>
+    <file name="spi_stage.sym"/>
+    <file name="spi_vs1011.sym"/>
+    <file name="stage_spi.sym"/>
+    <file name="transistor_npn.sym"/>
+    <file name="transistor_pnp.sym"/>
+    <file name="voltage_regulator_positive.sym"/>
+    <file name="vs1011-larger.sym"/>
+    <file name="vs1053_breakout.sym"/>
+  </directory>
+</tree>
