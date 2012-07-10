@@ -1,8 +1,13 @@
 #!/bin/sh
 # A very simple script to copy symbols and components to the essential lib
 
+#######################################################################
+############# symbols #################################################
+#######################################################################
+
 PRE=essential/symbols
 
+### analog ###
 cp symbols/analog/instr_amp_8pin.sym $PRE/analog
 cp symbols/analog/opamp.sym $PRE/analog
 cp symbols/analog/opamp_pwr.sym $PRE/analog
@@ -29,22 +34,9 @@ cp symbols/analog/pmosfet_power.sym $PRE/discrete
 
 # cp symbols/analog/res.sym $PRE/discrete
 # cp symbols/analog/res2.sym $PRE/discrete
-cp symbols/titleblock/title-block.sym $PRE/titleblock/titleblock.sym
-cp symbols/titleblock/in.sym $PRE/titleblock
-cp symbols/titleblock/out.sym $PRE/titleblock
 
-cp symbols/power/gnd.sym $PRE/power
-cp symbols/power/vcc.sym $PRE/power
-cp symbols/power/vee.sym $PRE/power
-cp symbols/power/Ub+.sym $PRE/power
-cp symbols/power/Ub-.sym $PRE/power
-cp symbols/power/5V+.sym $PRE/power
-cp symbols/power/nc.sym $PRE/power
 
-cp symbols/titleblock/title-block.sym $PRE/titleblock/titleblock.sym
-cp symbols/titleblock/in.sym $PRE/titleblock
-cp symbols/titleblock/out.sym $PRE/titleblock
-
+### digital ###
 cp symbols/digital/7400_4xNAND.sym $PRE/digital
 cp symbols/digital/7404_6xNOT.sym $PRE/digital
 cp symbols/digital/7432_4xOR.sym $PRE/digital
@@ -54,11 +46,35 @@ cp symbols/digital/74161_4bit_counter.sym $PRE/digital
 cp symbols/digital/74_pwr.sym $PRE/digital
 cp symbols/digital/74_pwr16.sym $PRE/digital
 
+
+### titleblock ###
+cp symbols/titleblock/title-block.sym $PRE/titleblock/titleblock.sym
+cp symbols/titleblock/in.sym $PRE/titleblock
+cp symbols/titleblock/out.sym $PRE/titleblock
+
+
+### power ###
+cp symbols/power/gnd.sym $PRE/power
+cp symbols/power/vcc.sym $PRE/power
+cp symbols/power/vee.sym $PRE/power
+cp symbols/power/Ub+.sym $PRE/power
+cp symbols/power/Ub-.sym $PRE/power
+cp symbols/power/5V+.sym $PRE/power
+cp symbols/power/nc.sym $PRE/power
+
+### misc ###
+cp symbols/misc/jumper.sym $PRE/misc
+cp symbols/misc/jumper_3pin.sym $PRE/misc
+cp symbols/misc/jumper-default.sym $PRE/misc/jumper_default.sym
+
+
 #######################################################################
 ############# footprints ##############################################
 #######################################################################
 
 PRE=essential/footprints
+
+### discrete thru hole ###
 cp footprints/discrete/res_RM10.fp $PRE/discrete
 cp footprints/discrete/res_RM15.fp $PRE/discrete
 cp footprints/discrete/res_RM20.fp $PRE/discrete
@@ -142,4 +158,8 @@ cp footprints/generic/SOT89_79Lxx.fp $PRE/specific
 cp footprints/connector/AKL_2PIN.fp $PRE/connector
 cp footprints/connector/AKL_3PIN.fp $PRE/connector
 
-
+### misc ###
+cp footprints/misc/JMP_2PIN.fp $PRE/misc
+cp footprints/misc/JMP_3PIN.fp $PRE/misc
+cp footprints/misc/JMP_SMD.fp $PRE/misc
+cp footprints/misc/JMP_default.fp $PRE/misc

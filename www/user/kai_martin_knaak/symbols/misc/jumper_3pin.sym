@@ -24,8 +24,6 @@ pintype=pas
 V 200 700 50 3 10 0 0 -1 -1 0 -1 -1 -1 -1 -1
 V 200 300 50 3 10 0 0 -1 -1 0 -1 -1 -1 -1 -1
 B 100 200 200 600 3 10 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 200 2800 5 8 0 0 0 0 1
-device=JUMPER-1xUM
 T 100 1100 8 10 1 1 0 0 1
 refdes=J?
 V 200 500 50 3 10 0 0 -1 -1 0 -1 -1 -1 -1 -1
@@ -40,8 +38,8 @@ pinlabel=2
 T 50 450 5 8 0 1 180 0 1
 pintype=pas
 }
-T 200 2400 5 8 0 0 0 0 1
-description=jumper, 1x UM
+T 200 2600 5 8 0 0 0 0 1
+description=three pin jumper
 T 200 1800 5 8 0 0 0 0 1
 author=Kai-Martin Knaak, kmk@lilalaser.de
 T 100 900 8 10 1 1 0 0 1
@@ -55,7 +53,7 @@ T 200 1400 5 8 0 0 0 0 1
 use-license=free, no restriction
 T 200 2200 5 8 0 0 0 0 1
 symversion=1.0
-T 200 2600 5 8 0 0 0 0 1
+T 200 2400 5 8 0 0 0 0 1
 comment=use jumper_default.sym to mark a closed jumper
 T 200 2000 5 8 0 0 0 0 1
-footprints=JMP_2PIN, JMP_SMD
+footprints=JMP_3PIN, JMP_3PIN_SMD

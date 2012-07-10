@@ -14,7 +14,7 @@ then
   echo "exits on the assumption, that this command is only valid if pcb runs"
   echo "in GUI mode. A patch to rectify this and issue a warning rather than"
   echo "exit, can be found named 'hidnogui-actionscript.patch' on"
-  echo "http://gedasymbols.org"
+  echo "http://gedasymbols.org ."
   exit
 fi  
 
@@ -94,6 +94,7 @@ $PCB -x eps \
   --layer-color-5 '#dddddd' \
   --layer-color-6 '#dddddd' \
   --as-shown \
+  --only-visible \
   --layer-stack "outline,elements,bottom,solderside" \
   --eps-file "/tmp/out.eps" \
   $PCBFILE
