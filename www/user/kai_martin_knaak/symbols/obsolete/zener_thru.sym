@@ -1,5 +1,5 @@
 v 20110619 2
-L 400 975 400 625 3 10 1 0 -1 -1
+L 400 975 400 625 3 0 0 0 -1 -1
 P 0 800 100 800 1 0 0
 {
 T 200 850 5 8 0 1 0 6 1
@@ -33,19 +33,19 @@ author=Kai-Martin Knaak, kmk@lilalaser.de
 T 0 2400 5 8 0 0 0 0 1
 documentation=http://www.diotec.com/pdf/zpy1.pdf
 T 100 0 8 8 1 1 0 0 1
-footprint=dio_RM10
-L 400 975 350 975 3 10 1 0 -1 -1
+footprint=dio_400mil
+L 400 975 350 975 3 0 0 0 -1 -1
 T 0 1600 5 8 0 0 0 0 1
 dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
 T 0 1400 5 8 0 0 0 0 1
 use-license=free, no restrictions
-L 450 625 400 625 3 10 1 0 -1 -1
+L 450 625 400 625 3 0 0 0 -1 -1
 T 0 2600 5 8 0 0 0 0 1
 comment=none
 T 0 2200 5 8 0 0 0 0 1
 footprints=dio_1210, dio_minimelf, dio_1812, dio_400mil, dio_300mil
 T 0 2000 5 8 0 0 0 0 1
 symversion=1.0
-L 100 975 100 625 3 10 2 0 -1 -1
-L 100 975 400 800 3 10 2 0 -1 -1
-L 400 800 100 625 3 10 2 0 -1 -1
+L 100 975 100 625 3 0 0 0 -1 -1
+L 100 975 400 800 3 0 0 0 -1 -1
+L 400 800 100 625 3 0 0 0 -1 -1

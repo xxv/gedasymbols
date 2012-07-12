@@ -8,6 +8,8 @@
 PRE=essential/symbols
 
 ### analog ###
+cp symbols/analog/comparator.sym $PRE/analog
+cp symbols/analog/comparator_pwr.sym $PRE/analog
 cp symbols/analog/instr_amp_8pin.sym $PRE/analog
 cp symbols/analog/opamp.sym $PRE/analog
 cp symbols/analog/opamp_pwr.sym $PRE/analog
@@ -87,9 +89,9 @@ cp footprints/discrete/cap_200mil_b.fp $PRE/discrete
 cp footprints/discrete/cap_200mil_c.fp $PRE/discrete
 cp footprints/discrete/cap_1100mil.fp $PRE/discrete
 
-cp footprints/discrete/dio_1206.fp $PRE/discrete
+cp footprints/discrete/dio_minimelf.fp $PRE/discrete
 cp footprints/discrete/dio_1812.fp $PRE/discrete
-cp footprints/discrete/dio_RM10.fp $PRE/discrete
+cp footprints/discrete/dio_400mil.fp $PRE/discrete
 
 cp footprints/discrete/LED_3mm.fp $PRE/discrete
 cp footprints/discrete/LED_5mm.fp $PRE/discrete

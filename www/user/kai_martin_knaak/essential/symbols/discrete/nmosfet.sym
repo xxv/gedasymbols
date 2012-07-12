@@ -1,7 +1,7 @@
-v 20110619 2
-T 200 2800 5 8 0 0 0 0 1
+v 20111231 2
+T 200 3000 5 8 0 0 0 0 1
 description=MOSFET, n-channel
-T 200 2600 5 8 0 0 0 0 1
+T 200 2800 5 8 0 0 0 0 1
 documentation=http://www.fairchildsemi.com/ds/BS/BSS123.pdf
 T 200 1800 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
@@ -65,3 +65,5 @@ T 200 2400 5 8 0 0 0 0 1
 footprints=SOT23_GSD, TO92_DGS, DPAK_GDS, TO220_GDS
 T 200 2200 5 8 0 0 0 0 1
 comment=check the data sheet for pinout!
+T 200 2600 5 8 0 0 0 0 1
+values=BSS123, BS170

@@ -1,19 +1,22 @@
 #!/bin/sh
 # A convenience script that uses awk to set the name of all pin and pad names 
 # in a layout to the value of their number. -
-######################################################-<)kmk(>-(2011)
+######################################################-<)kmk(>-(2011-2012)
 
-echo "set all pin names and pad names to the value of the corresponding pinnnumber" 
+echo "set all pin names and pad names that have empty values to the value of"
+echo "the corresponding pinn number" 
 
 awk -v filename="$1" '
 { 
-  if ( $1 ~ /Pin\[/ ) {       # If the current line is a pin 
+  if ( $1 ~ /Pin\[/ ) {       # if the current line is a pin 
     $7=$8                     # set the pin name to the value of the pin number
     ++numpins                 # increment numpins
     } 
     else {   
-      if ( $1 ~ /Pad\[/ ) {   # If the current line is a pad 
-      $8=$9                   # set the pin name to the value of the pin number
+      if ( $1 ~ /Pad\[/ ) {   # if the current line is a pad
+        if ( $9 == "" ) {     # if the pin name has not been set, yet
+           $8=$9              # set the pin name to the value of the pin number
+        }
       ++numpads               # increment numpads
       }
     }
