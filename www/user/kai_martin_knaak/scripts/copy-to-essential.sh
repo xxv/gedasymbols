@@ -33,6 +33,8 @@ cp symbols/analog/nmosfet.sym $PRE/discrete
 cp symbols/analog/nmosfet_power.sym $PRE/discrete
 cp symbols/analog/pmosfet.sym $PRE/discrete
 cp symbols/analog/pmosfet_power.sym $PRE/discrete
+cp symbols/analog/potentiometer.sym $PRE/discrete
+cp symbols/analog/potentiometer_vert.sym $PRE/discrete
 
 # cp symbols/analog/res.sym $PRE/discrete
 # cp symbols/analog/res2.sym $PRE/discrete
@@ -147,6 +149,11 @@ cp footprints/specific/BPW34.fp $PRE/specific
 cp footprints/specific/BPW34S.fp $PRE/specific
 cp footprints/specific/BPW34_upsidedown.fp $PRE/specific
 cp footprints/specific/BPW34S_upsidedown.fp $PRE/specific
+cp footprints/potentiometer/VISHAY_T93YA.fp $PRE/specific
+cp footprints/potentiometer/VISHAY_T93YB.fp $PRE/specific
+cp footprints/potentiometer/VISHAY_T18.fp $PRE/specific
+cp footprints/potentiometer/ALPS_RK11K112.fp $PRE/specific
+
 
 ### specific SMD ###
 cp footprints/generic/SO8_78Lxx.fp $PRE/specific
