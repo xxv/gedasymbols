@@ -35,6 +35,9 @@ cp symbols/analog/pmosfet.sym $PRE/discrete
 cp symbols/analog/pmosfet_power.sym $PRE/discrete
 cp symbols/analog/potentiometer.sym $PRE/discrete
 cp symbols/analog/potentiometer_vert.sym $PRE/discrete
+cp symbols/analog/res_horiz.sym $PRE/discrete
+cp symbols/analog/res_vert.sym $PRE/discrete
+
 
 # cp symbols/analog/res.sym $PRE/discrete
 # cp symbols/analog/res2.sym $PRE/discrete
@@ -79,9 +82,9 @@ cp symbols/misc/jumper-default.sym $PRE/misc/jumper_default.sym
 PRE=essential/footprints
 
 ### discrete thru hole ###
-cp footprints/discrete/res_RM10.fp $PRE/discrete
-cp footprints/discrete/res_RM15.fp $PRE/discrete
-cp footprints/discrete/res_RM20.fp $PRE/discrete
+cp footprints/discrete/res_400mil.fp $PRE/discrete
+cp footprints/discrete/res_300mil.fp $PRE/discrete
+cp footprints/discrete/res_800mil.fp $PRE/discrete
 cp footprints/discrete/res_vert.fp $PRE/discrete
 
 cp footprints/discrete/cap_100mil.fp $PRE/discrete

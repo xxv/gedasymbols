@@ -1,24 +1,22 @@
-v 20110619 2
-T 100 2400 5 8 0 1 0 0 1
-device=reference_resistor
-T 100 2200 5 8 0 0 0 0 1
-description=precision reference resistor, SMD 1812 
-T 100 2000 5 8 0 0 0 0 1
+v 20111231 2
+T 300 2500 5 8 0 0 0 0 1
+description=precision reference resistor
+T 300 2300 5 8 0 0 0 0 1
 documentation=none
-T 100 1800 5 8 0 0 0 0 1
+T 300 1700 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
-T 100 1600 5 8 0 0 0 0 1
+T 300 1500 5 8 0 0 0 0 1
 dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
-T 100 1400 5 8 0 0 0 0 1
+T 300 1300 5 8 0 0 0 0 1
 use-license=free, no restrictions
-T 300 500 5 10 1 1 0 0 1
+T 300 500 8 10 1 1 0 0 1
 refdes=R?
-T 100 1200 5 8 0 0 0 0 1
-numslots=0
-T 300 300 5 10 1 1 0 0 1
+T 300 2100 5 8 0 0 0 0 1
+footprints=VISHAY_S102
+T 300 300 8 10 1 1 0 0 1
 value=XXX
-T 300 100 5 10 1 1 0 0 1
-footprint=1812
+T 300 100 8 10 1 1 0 0 1
+footprint=VISHAY_S102
 T 320 740 9 10 1 0 0 0 1
 REF
 P 800 800 700 800 1 0 0
@@ -43,5 +41,7 @@ pinlabel=1
 T 25 700 5 8 0 1 0 0 1
 pintype=pas
 }
-B 300 700 400 200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-L 300 750 350 700 3 0 0 0 -1 -1
+B 300 700 400 200 3 10 0 0 -1 -1 0 -1 -1 -1 -1 -1
+L 300 750 350 700 3 10 0 0 -1 -1
+T 300 1900 5 8 0 0 0 0 1
+symversion=1.0

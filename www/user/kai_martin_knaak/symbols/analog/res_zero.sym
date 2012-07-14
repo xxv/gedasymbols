@@ -1,15 +1,15 @@
-v 20110116 2
-T 300 2200 5 8 0 0 0 0 1
-device=resistor
-T 300 2000 5 8 0 0 0 0 1
-description=resistor, SMD
-T 300 1800 5 8 0 0 0 0 1
-documentation=none
-T 300 1600 5 8 0 0 0 0 1
-author=Kai-Martin Knaak kmk@lilalaser.de
+v 20111231 2
 T 300 1400 5 8 0 0 0 0 1
-dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
+symversion=1.0
+T 300 1800 5 8 0 0 0 0 1
+description=no resistance resistor
+T 300 1600 5 8 0 0 0 0 1
+documentation=none
 T 300 1200 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 300 1000 5 8 0 0 0 0 1
+dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
+T 300 800 5 8 0 0 0 0 1
 use-license=free, no restrictions
 T 350 450 8 10 1 1 0 0 1
 refdes=R?
@@ -39,5 +39,5 @@ pinlabel=1
 T 25 200 5 8 0 1 0 0 1
 pintype=pas
 }
-B 300 200 400 200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-L 300 250 350 200 3 0 0 0 -1 -1
+B 300 200 400 200 3 10 0 0 -1 -1 0 -1 -1 -1 -1 -1
+L 300 250 350 200 3 10 0 0 -1 -1

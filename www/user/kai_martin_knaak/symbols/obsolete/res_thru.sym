@@ -2,7 +2,7 @@ v 20111231 2
 T 300 2800 5 8 0 0 0 0 1
 device=resistor
 T 300 2600 5 8 0 0 0 0 1
-description=resistor, wire soldered 
+description=generic resistor
 T 300 2200 5 8 0 0 0 0 1
 documentation=none
 T 300 1800 5 8 0 0 0 0 1
@@ -11,12 +11,12 @@ T 300 1600 5 8 0 0 0 0 1
 dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
 T 300 1400 5 8 0 0 0 0 1
 use-license=free, no restrictions
-T 300 900 8 10 1 1 0 0 1
+T 300 200 8 10 1 1 0 0 1
 refdes=R?
-T 300 700 8 10 1 1 0 0 1
+T 300 0 8 10 1 1 0 0 1
 value=XXX
-T 300 200 8 8 1 1 0 0 1
-footprint=res_RM10
+T 300 -200 8 8 1 1 0 0 1
+footprint=res_400mil
 P 800 500 700 500 1 0 0
 {
 T 850 550 5 8 0 1 0 0 1
@@ -39,9 +39,9 @@ pinlabel=1
 T 25 400 5 8 0 1 0 0 1
 pintype=pas
 }
-B 300 400 400 200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-L 300 450 350 400 3 0 0 0 -1 -1
+B 300 400 400 200 3 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+L 300 450 350 400 3 10 2 0 -1 -1
 T 300 2400 5 8 0 0 0 0 1
-footprints=res_RM10, res_RM15, res_RM20, res_RM75 res_vert.fp res_socket.fp
+footprints=res_400mil, res_600mil, res_800mil, res_300mil res_vert.fp res_socket.fp
 T 300 2000 5 8 0 0 0 0 1
 symversion=1.0
