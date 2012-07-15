@@ -43,6 +43,7 @@ cp symbols/discrete/potentiometer_vert.sym $PRE/discrete
 cp symbols/discrete/res_horiz.sym $PRE/discrete
 cp symbols/discrete/res_vert.sym $PRE/discrete
 
+cp symbols/discrete/inductor.sym $PRE/discrete
 
 # cp symbols/analog/res.sym $PRE/discrete
 # cp symbols/analog/res2.sym $PRE/discrete
@@ -115,6 +116,9 @@ cp footprints/discrete/dio_400mil.fp $PRE/discrete
 
 cp footprints/discrete/LED_3mm.fp $PRE/discrete
 cp footprints/discrete/LED_5mm.fp $PRE/discrete
+
+cp footprints/discrete/ind_300mil.fp $PRE/discrete
+cp footprints/discrete/ind_400mil.fp $PRE/discrete
 
 cp footprints/generic/SOT23_BEC.fp $PRE/discrete
 cp footprints/generic/TO92_ECB.fp $PRE/discrete
