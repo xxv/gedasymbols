@@ -33,6 +33,8 @@ cp symbols/analog/nmosfet.sym $PRE/discrete
 cp symbols/analog/nmosfet_power.sym $PRE/discrete
 cp symbols/analog/pmosfet.sym $PRE/discrete
 cp symbols/analog/pmosfet_power.sym $PRE/discrete
+cp symbols/analog/npn_transistor.sym $PRE/discrete
+cp symbols/analog/pnp_transistor.sym $PRE/discrete
 cp symbols/analog/potentiometer.sym $PRE/discrete
 cp symbols/analog/potentiometer_vert.sym $PRE/discrete
 cp symbols/analog/res_horiz.sym $PRE/discrete
