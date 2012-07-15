@@ -4,7 +4,7 @@ device=resistor
 T 100 2600 5 8 0 0 0 0 1
 description=resistor
 T 300 250 8 8 1 1 0 0 1
-footprint=res_400mil
+footprint=0805
 T 100 2200 5 8 0 0 0 0 1
 documentation=none
 T 100 1800 5 8 0 0 0 0 1
@@ -40,4 +40,4 @@ L 150 300 200 350 3 10 0 0 -1 -1
 T 100 2000 5 8 0 0 0 0 1
 symversion=1.0
 T 100 2400 5 8 0 0 0 0 1
-footprints=res_400mil, res_600mil, res_800mil, res_300mil res_vert.fp res_socket.fp
+footprints=0805, 0603, res_300mil, res_400mil, res_600mil, res_800mil, res_vert.fp, res_socket.fp

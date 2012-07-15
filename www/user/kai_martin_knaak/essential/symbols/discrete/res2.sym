@@ -1,4 +1,4 @@
-v 20110116 2
+v 20111231 2
 T 300 2400 5 8 0 0 0 0 1
 description=generic resistor, american style
 T 300 2000 5 8 0 0 0 0 1
@@ -40,9 +40,9 @@ pintype=pas
 T 300 1600 5 8 0 0 0 0 1
 symversion=1.0
 T 300 2200 5 8 0 0 0 0 1
-comment=see res2.sym for the american variant
+comment=see res_horiz.sym for the european variant
 T 300 1800 5 8 0 0 0 0 1
-footprints=res_RM10, res_RM15, res_RM20, res_vert, 0805, 0603
+footprints=0805, 0603, res_300mil, res_400mil, res_800mil, res_vert.fp
 L 310 300 340 380 3 10 2 0 -1 -1
 L 340 380 400 220 3 10 2 0 -1 -1
 L 400 220 460 380 3 10 2 0 -1 -1

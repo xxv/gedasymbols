@@ -22,23 +22,26 @@ cp symbols/analog/regulator_positive_variable.sym $PRE/analog
 cp symbols/analog/regulator_negative_fixed.sym $PRE/analog
 cp symbols/analog/regulator_negative_variable.sym $PRE/analog
 
-cp symbols/analog/diode/diode.sym $PRE/discrete
-cp symbols/analog/diode/zener.sym $PRE/discrete
-cp symbols/analog/diode/photodiode_BPW34.sym $PRE/discrete
-cp symbols/analog/diode/led.sym $PRE/discrete
-cp symbols/analog/igbt.sym $PRE/discrete
-cp symbols/analog/cap_horiz.sym $PRE/discrete
-cp symbols/analog/cap_vert.sym $PRE/discrete
-cp symbols/analog/nmosfet.sym $PRE/discrete
-cp symbols/analog/nmosfet_power.sym $PRE/discrete
-cp symbols/analog/pmosfet.sym $PRE/discrete
-cp symbols/analog/pmosfet_power.sym $PRE/discrete
-cp symbols/analog/npn_transistor.sym $PRE/discrete
-cp symbols/analog/pnp_transistor.sym $PRE/discrete
-cp symbols/analog/potentiometer.sym $PRE/discrete
-cp symbols/analog/potentiometer_vert.sym $PRE/discrete
-cp symbols/analog/res_horiz.sym $PRE/discrete
-cp symbols/analog/res_vert.sym $PRE/discrete
+### discretes ###
+cp symbols/discrete/diodes/diode.sym $PRE/discrete
+cp symbols/discrete/diodes/zener.sym $PRE/discrete
+cp symbols/discrete/diodes/photodiode_BPW34.sym $PRE/discrete
+cp symbols/discrete/diodes/led.sym $PRE/discrete
+cp symbols/discrete/transistors/nmosfet.sym $PRE/discrete
+cp symbols/discrete/transistors/nmosfet_power.sym $PRE/discrete
+cp symbols/discrete/transistors/pmosfet.sym $PRE/discrete
+cp symbols/discrete/transistors/pmosfet_power.sym $PRE/discrete
+cp symbols/discrete/transistors/npn_transistor.sym $PRE/discrete
+cp symbols/discrete/transistors/pnp_transistor.sym $PRE/discrete
+cp symbols/discrete/transistors/igbt.sym $PRE/discrete
+
+cp symbols/discrete/cap_horiz.sym $PRE/discrete
+cp symbols/discrete/cap_vert.sym $PRE/discrete
+cp symbols/discrete/elko.sym $PRE/discrete
+cp symbols/discrete/potentiometer.sym $PRE/discrete
+cp symbols/discrete/potentiometer_vert.sym $PRE/discrete
+cp symbols/discrete/res_horiz.sym $PRE/discrete
+cp symbols/discrete/res_vert.sym $PRE/discrete
 
 
 # cp symbols/analog/res.sym $PRE/discrete
@@ -84,8 +87,8 @@ cp symbols/misc/jumper-default.sym $PRE/misc/jumper_default.sym
 PRE=essential/footprints
 
 ### discrete thru hole ###
-cp footprints/discrete/res_400mil.fp $PRE/discrete
 cp footprints/discrete/res_300mil.fp $PRE/discrete
+cp footprints/discrete/res_400mil.fp $PRE/discrete
 cp footprints/discrete/res_800mil.fp $PRE/discrete
 cp footprints/discrete/res_vert.fp $PRE/discrete
 
@@ -95,6 +98,16 @@ cp footprints/discrete/cap_200mil_a.fp $PRE/discrete
 cp footprints/discrete/cap_200mil_b.fp $PRE/discrete
 cp footprints/discrete/cap_200mil_c.fp $PRE/discrete
 cp footprints/discrete/cap_1100mil.fp $PRE/discrete
+
+cp footprints/discrete/elko_RM25_D6.fp $PRE/discrete
+cp footprints/discrete/elko_RM35_D8.fp $PRE/discrete
+cp footprints/discrete/elko_RM5_D6.fp $PRE/discrete
+cp footprints/discrete/elko_RM5_D10.fp $PRE/discrete
+cp footprints/discrete/elko_RM5_D13.fp $PRE/discrete
+cp footprints/discrete/elko_RM75_D16.fp $PRE/discrete
+cp footprints/discrete/elko_RM75_D18.fp $PRE/discrete
+cp footprints/discrete/elko_RM10_D22.fp $PRE/discrete
+cp footprints/discrete/elko_BC_D35.fp $PRE/discrete
 
 cp footprints/discrete/dio_minimelf.fp $PRE/discrete
 cp footprints/discrete/dio_1812.fp $PRE/discrete

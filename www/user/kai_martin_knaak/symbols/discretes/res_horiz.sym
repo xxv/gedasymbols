@@ -1,7 +1,7 @@
 v 20111231 2
-T 300 2800 5 8 0 0 0 0 1
+T 300 3000 5 8 0 0 0 0 1
 device=resistor
-T 300 2600 5 8 0 0 0 0 1
+T 300 2800 5 8 0 0 0 0 1
 description=generic resistor
 T 300 2200 5 8 0 0 0 0 1
 documentation=none
@@ -16,7 +16,7 @@ refdes=R?
 T 300 0 8 10 1 1 0 0 1
 value=XXX
 T 300 -200 8 8 1 1 0 0 1
-footprint=res_400mil
+footprint=0805
 P 800 500 700 500 1 0 0
 {
 T 850 550 5 8 0 1 0 0 1
@@ -42,6 +42,8 @@ pintype=pas
 B 300 400 400 200 3 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
 L 300 450 350 400 3 10 2 0 -1 -1
 T 300 2400 5 8 0 0 0 0 1
-footprints=res_400mil, res_600mil, res_800mil, res_300mil res_vert.fp res_socket.fp
+footprints=0805, 0603, res_400mil, res_600mil, res_800mil, res_300mil res_vert.fp res_socket.fp
 T 300 2000 5 8 0 0 0 0 1
 symversion=1.0
+T 300 2600 5 8 0 0 0 0 1
+description=see res2.sym for the american version
