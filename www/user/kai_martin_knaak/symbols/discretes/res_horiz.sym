@@ -46,4 +46,4 @@ footprints=0805, 0603, res_400mil, res_600mil, res_800mil, res_300mil res_vert.f
 T 300 2000 5 8 0 0 0 0 1
 symversion=1.0
 T 300 2600 5 8 0 0 0 0 1
-description=see res2.sym for the american version
+comment=the little mark on the lower left corrsponds to the square pin in the footprint
