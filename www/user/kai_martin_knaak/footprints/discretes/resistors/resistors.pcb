@@ -6,11 +6,11 @@ FileVersion[20091103]
 PCB["resistors.pcb" 4000.00mil 5000.00mil]
 
 Grid[10000.000000 0.0000 0.0000 1]
-Cursor[0.0000 700.00mil 0.000000]
+Cursor[0.0000 0.0000 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 4.00mil 8.00mil 5.99mil 15.00mil 10.00mil]
-Flags("nameonpcb,uniquename,clearnew,snappin,locknames")
+Flags("nameonpcb,uniquename,clearnew,snappin,onlynames")
 Groups("1,c:2,s:3")
 Styles["Signal,10.00mil,2.0000mm,31.50mil,10.00mil:Power,25.00mil,98.43mil,39.37mil,10.00mil:Fat,40.00mil,118.11mil,59.06mil,10.00mil:Skinny,6.00mil,24.02mil,11.81mil,6.00mil"]
 
@@ -795,23 +795,23 @@ Symbol['~' 12.00mil]
 	SymbolLine[20.00mil 35.00mil 25.00mil 30.00mil 8.00mil]
 )
 Attribute("PCB::grid::unit" "mil")
-Via[300.00mil 3600.00mil 98.43mil 39.37mil 0.0000 39.37mil "2" ""]
+Via[300.00mil 3600.00mil 88.43mil 39.37mil 0.0000 39.37mil "2" ""]
 Via[300.00mil 100.00mil 133.11mil 39.37mil 0.0000 59.06mil "2" ""]
-Via[300.00mil 1800.00mil 118.11mil 39.37mil 0.0000 59.06mil "1" ""]
+Via[300.00mil 1800.00mil 108.11mil 39.37mil 0.0000 59.06mil "1" ""]
 Via[300.00mil 1200.00mil 118.11mil 39.37mil 0.0000 59.06mil "2" ""]
-Via[300.00mil 4000.00mil 98.43mil 39.37mil 0.0000 39.37mil "1" ""]
+Via[300.00mil 4000.00mil 88.43mil 39.37mil 0.0000 39.37mil "1" ""]
 Via[300.00mil 900.00mil 133.11mil 39.37mil 0.0000 59.06mil "1" ""]
-Via[300.00mil 2900.00mil 98.43mil 39.37mil 0.0000 39.37mil "1" ""]
-Via[300.00mil 2600.00mil 98.43mil 39.37mil 0.0000 39.37mil "2" ""]
-Via[300.00mil 2400.00mil 98.43mil 39.37mil 0.0000 39.37mil "1" ""]
-Via[300.00mil 2000.00mil 98.43mil 39.37mil 0.0000 39.37mil "2" ""]
-Via[300.00mil 3200.00mil 83.43mil 39.37mil 0.0000 39.37mil "2" ""]
-Via[300.00mil 3300.00mil 83.43mil 39.37mil 0.0000 39.37mil "1" ""]
+Via[300.00mil 2900.00mil 88.43mil 39.37mil 0.0000 39.37mil "1" ""]
+Via[300.00mil 2600.00mil 88.43mil 39.37mil 0.0000 39.37mil "2" ""]
+Via[300.00mil 2400.00mil 88.43mil 39.37mil 0.0000 39.37mil "1" ""]
+Via[300.00mil 2000.00mil 88.43mil 39.37mil 0.0000 39.37mil "2" ""]
+Via[300.00mil 3200.00mil 73.43mil 39.37mil 0.0000 39.37mil "2" ""]
+Via[300.00mil 3300.00mil 73.43mil 39.37mil 0.0000 39.37mil "1" ""]
 
-Element["" "" "res_socket" "" 800.00mil 4000.00mil -125.00mil -25.00mil 1 100 ""]
+Element["" "res_socket" "res_socket" "res_socket" 800.00mil 4000.00mil -125.00mil -25.00mil 1 100 ""]
 (
-	Pin[0.0000 -400.00mil 98.43mil 39.37mil 104.43mil 39.37mil "2" "2" ""]
-	Pin[0.0000 0.0000 98.43mil 39.37mil 104.43mil 39.37mil "1" "1" "square"]
+	Pin[0.0000 -400.00mil 88.43mil 39.37mil 94.43mil 39.37mil "2" "2" ""]
+	Pin[0.0000 0.0000 88.43mil 39.37mil 94.43mil 39.37mil "1" "1" "square"]
 	ElementLine [-60.00mil 60.00mil -60.00mil -60.00mil 10.00mil]
 	ElementLine [60.00mil 60.00mil -60.00mil 60.00mil 10.00mil]
 	ElementLine [60.00mil -60.00mil 60.00mil 60.00mil 10.00mil]
@@ -830,9 +830,9 @@ Element["" "" "res_socket" "" 800.00mil 4000.00mil -125.00mil -25.00mil 1 100 ""
 
 	)
 
-Element["" "" "res_vert" "" 800.00mil 3300.00mil -125.00mil 25.00mil 1 100 ""]
+Element["" "res_vert" "res_vert" "res_vert" 800.00mil 3300.00mil -125.00mil 25.00mil 1 100 ""]
 (
-	Pin[0.0000 -100.00mil 83.43mil 39.37mil 89.43mil 39.37mil "2" "2" ""]
+	Pin[0.0000 -100.00mil 73.43mil 39.37mil 79.43mil 39.37mil "2" "2" ""]
 	Pin[0.0000 0.0000 83.43mil 39.37mil 89.43mil 39.37mil "1" "1" ""]
 	ElementLine [51.18mil -102.36mil 51.18mil 0.01mil 10.00mil]
 	ElementLine [-51.18mil -98.42mil -51.18mil 3.94mil 10.00mil]
@@ -842,7 +842,7 @@ Element["" "" "res_vert" "" 800.00mil 3300.00mil -125.00mil 25.00mil 1 100 ""]
 
 	)
 
-Element["" "" "res_RM75" "" 800.00mil 2900.00mil -125.00mil -50.00mil 1 100 ""]
+Element["" "res_300mil" "res_300mil" "res_300mil" 800.00mil 2900.00mil -125.00mil -50.00mil 1 100 ""]
 (
 	Pin[0.0000 0.0000 98.43mil 39.37mil 104.43mil 39.37mil "1" "1" "square"]
 	Pin[0.0000 -300.00mil 98.43mil 39.37mil 104.43mil 39.37mil "2" "2" ""]
@@ -856,10 +856,10 @@ Element["" "" "res_RM75" "" 800.00mil 2900.00mil -125.00mil -50.00mil 1 100 ""]
 
 	)
 
-Element["" "" "res_RM10" "" 800.00mil 2400.00mil -125.00mil -75.00mil 1 100 ""]
+Element["" "res_400mil" "res_400mil" "res_400mil" 800.00mil 2400.00mil -125.00mil -75.00mil 1 100 ""]
 (
-	Pin[0.0000 0.0000 98.43mil 39.37mil 104.43mil 39.37mil "1" "1" "square"]
-	Pin[0.0000 -400.00mil 98.43mil 39.37mil 104.43mil 39.37mil "2" "2" ""]
+	Pin[0.0000 0.0000 88.43mil 39.37mil 94.43mil 39.37mil "1" "1" "square"]
+	Pin[0.0000 -400.00mil 88.43mil 39.37mil 94.43mil 39.37mil "2" "2" ""]
 	ElementLine [20.00mil -100.00mil 40.00mil -120.00mil 10.00mil]
 	ElementLine [0.0000 -300.00mil 0.0000 -340.00mil 10.00mil]
 	ElementLine [40.00mil -300.00mil 40.00mil -100.00mil 10.00mil]
@@ -870,10 +870,10 @@ Element["" "" "res_RM10" "" 800.00mil 2400.00mil -125.00mil -75.00mil 1 100 ""]
 
 	)
 
-Element["" "" "res_RM15" "" 800.00mil 1800.00mil -150.00mil -150.00mil 1 100 ""]
+Element["" "res_600mil" "res_600mil" "res_600mil" 800.00mil 1800.00mil -150.00mil -150.00mil 1 100 ""]
 (
-	Pin[0.0000 0.0000 118.11mil 39.37mil 124.11mil 59.06mil "1" "1" "square"]
-	Pin[0.0000 -600.00mil 118.11mil 39.37mil 124.11mil 59.06mil "2" "2" ""]
+	Pin[0.0000 0.0000 108.11mil 39.37mil 114.11mil 59.06mil "1" "1" "square"]
+	Pin[0.0000 -600.00mil 108.11mil 39.37mil 114.11mil 59.06mil "2" "2" ""]
 	ElementLine [40.00mil -120.00mil 60.00mil -140.00mil 10.00mil]
 	ElementLine [0.0000 -530.00mil 0.0000 -480.00mil 10.00mil]
 	ElementLine [0.0000 -120.00mil 0.0000 -70.00mil 10.00mil]
@@ -884,7 +884,7 @@ Element["" "" "res_RM15" "" 800.00mil 1800.00mil -150.00mil -150.00mil 1 100 ""]
 
 	)
 
-Element["" "" "res_RM20" "" 800.00mil 900.00mil -200.00mil -150.00mil 1 100 ""]
+Element["" "res_800mil" "res_800mil" "res_800mil" 800.00mil 900.00mil -200.00mil -150.00mil 1 100 ""]
 (
 	Pin[0.0000 -800.00mil 133.11mil 39.37mil 139.11mil 59.06mil "2" "2" ""]
 	Pin[0.0000 0.0000 133.11mil 39.37mil 139.11mil 59.06mil "1" "1" "square"]
@@ -909,11 +909,11 @@ Layer(2 "bottom")
 )
 Layer(3 "comment")
 (
-	Text[27.9999mm 14.0000mm 0 522 "res_RM20.fp" ""]
-	Text[27.9999mm 33.9999mm 0 522 "res_RM15.fp" ""]
-	Text[27.9999mm 51.9999mm 0 522 "res_RM10.fp" ""]
+	Text[27.9999mm 14.0000mm 0 522 "res_800mil.fp" ""]
+	Text[27.9999mm 33.9999mm 0 522 "res_600mil.fp" ""]
+	Text[27.9999mm 51.9999mm 0 522 "res_400mil.fp" ""]
 	Text[27.9999mm 3031.50mil 0 522 "res_vert.fp" ""]
-	Text[27.9999mm 65.0001mm 0 522 "res_RM75.fp" ""]
+	Text[27.9999mm 65.0001mm 0 522 "res_300mil.fp" ""]
 	Text[2100.00mil 0.0000 0 408 "grid is mil" ""]
 	Text[27.9999mm 3631.50mil 0 522 "res_socket.fp" ""]
 )

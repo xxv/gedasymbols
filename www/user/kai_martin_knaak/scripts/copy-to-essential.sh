@@ -40,13 +40,13 @@ cp symbols/discrete/cap_vert.sym $PRE/discrete
 cp symbols/discrete/elko.sym $PRE/discrete
 cp symbols/discrete/potentiometer.sym $PRE/discrete
 cp symbols/discrete/potentiometer_vert.sym $PRE/discrete
-cp symbols/discrete/res_horiz.sym $PRE/discrete
-cp symbols/discrete/res_vert.sym $PRE/discrete
 
 cp symbols/discrete/inductor.sym $PRE/discrete
 
+# slightly different in essential-lib compared to kaimartin-lib
 # cp symbols/analog/res.sym $PRE/discrete
 # cp symbols/analog/res2.sym $PRE/discrete
+# cp symbols/discrete/res_vert.sym $PRE/discrete
 
 
 ### digital ###

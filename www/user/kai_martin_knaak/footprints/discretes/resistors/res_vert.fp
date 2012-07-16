@@ -1,11 +1,11 @@
-Element["" "" "res_vert" "" 80000 330000 -12500 2500 1 100 ""]
+Element["" "res_vert" "res_vert" "res_vert" 800.00mil 3300.00mil -125.00mil 25.00mil 1 100 ""]
 (
-	Pin[0 -10000 8343 3937 8943 3937 "2" "2" ""]
-	Pin[0 0 8343 3937 8943 3937 "1" "1" ""]
-	ElementLine [5118 -10236 5118 1 1000]
-	ElementLine [-5118 -9842 -5118 394 1000]
-	ElementArc [-1 -9841 5119 5119 180 90 1000]
-	ElementArc [0 -9842 5118 5118 270 90 1000]
-	ElementArc [0 0 5000 5000 90 360 1000]
+	Pin[0.0000 -100.00mil 73.43mil 39.37mil 79.43mil 39.37mil "2" "2" ""]
+	Pin[0.0000 0.0000 83.43mil 39.37mil 89.43mil 39.37mil "1" "1" ""]
+	ElementLine [51.18mil -102.36mil 51.18mil 0.01mil 10.00mil]
+	ElementLine [-51.18mil -98.42mil -51.18mil 3.94mil 10.00mil]
+	ElementArc [-0.01mil -98.41mil 51.19mil 51.19mil 180 90 10.00mil]
+	ElementArc [0.0000 -98.42mil 51.18mil 51.18mil 270 90 10.00mil]
+	ElementArc [0.0000 0.0000 50.00mil 50.00mil 90 360 10.00mil]
 
 	)

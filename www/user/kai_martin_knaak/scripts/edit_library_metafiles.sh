@@ -5,4 +5,5 @@ gedit changelog.html \
       footprints.html \
       essential/changelog.html \
       essential/footprints.html \
-      essential/symbols.html
+      essential/symbols.html \
+      copy-to-essential.sh

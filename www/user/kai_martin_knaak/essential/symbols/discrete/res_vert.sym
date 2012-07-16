@@ -36,8 +36,7 @@ T 225 100 5 8 0 1 0 0 1
 pintype=pas
 }
 B 0 300 200 400 3 10 0 0 -1 -1 0 -1 -1 -1 -1 -1
-L 150 300 200 350 3 10 0 0 -1 -1
 T 100 2000 5 8 0 0 0 0 1
 symversion=1.0
 T 100 2400 5 8 0 0 0 0 1
-footprints=0805, 0603, res_300mil, res_400mil, res_600mil, res_800mil, res_vert.fp, res_socket.fp
+footprints=0805, 0603, res_300mil, res_400mil, res_800mil, res_vert.fp

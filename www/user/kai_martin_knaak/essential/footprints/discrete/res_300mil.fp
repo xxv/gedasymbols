@@ -1,13 +1,13 @@
-Element["" "" "res_RM75" "" 80000 290000 -12500 -5000 1 100 ""]
+Element["" "res_300mil" "res_300mil" "res_300mil" 800.00mil 2900.00mil -125.00mil -50.00mil 1 100 ""]
 (
-	Pin[0 0 9843 3937 10443 3937 "1" "1" "square"]
-	Pin[0 -30000 9843 3937 10443 3937 "2" "2" ""]
-	ElementLine [2000 -8000 4000 -10000 1000]
-	ElementLine [4000 -8000 -4000 -8000 1000]
-	ElementLine [0 -8000 0 -6000 1000]
-	ElementLine [0 -22000 0 -23623 1000]
-	ElementLine [4000 -22000 4000 -8000 1000]
-	ElementLine [-4000 -22000 4000 -22000 1000]
-	ElementLine [-4000 -8000 -4000 -22000 1000]
+	Pin[0.0000 0.0000 98.43mil 39.37mil 104.43mil 39.37mil "1" "1" "square"]
+	Pin[0.0000 -300.00mil 98.43mil 39.37mil 104.43mil 39.37mil "2" "2" ""]
+	ElementLine [20.00mil -80.00mil 40.00mil -100.00mil 10.00mil]
+	ElementLine [40.00mil -80.00mil -40.00mil -80.00mil 10.00mil]
+	ElementLine [0.0000 -80.00mil 0.0000 -60.00mil 10.00mil]
+	ElementLine [0.0000 -220.00mil 0.0000 -236.23mil 10.00mil]
+	ElementLine [40.00mil -220.00mil 40.00mil -80.00mil 10.00mil]
+	ElementLine [-40.00mil -220.00mil 40.00mil -220.00mil 10.00mil]
+	ElementLine [-40.00mil -80.00mil -40.00mil -220.00mil 10.00mil]
 
 	)
