@@ -1,31 +1,42 @@
 #!/bin/bash
-# layout-print for pcb -<(kmk)>- 2010-2012
+# layout-print for PCB -<(kmk)>- 2010-2012
 # needs poster, ps2pdf, convert, psmerge and optionally
 # viewers for PNG and PDF (gthumb and okular)
 ########################################################
 
 if [ $# -eq 0 ]    # Script invoked with no command line args
 then
-  echo "Usage: `basename $0` [-p][-V] foobar.pcb"
+  echo "A script to provide PDF and PNG prints of a PCB layout. The PDF output"
+  echo "contains pages with the refdes of components and additionaly pages that"
+  echo "show the values of components. Optionally, an additional bottom view"
+  echo "is produced that shows mirrored top silk. This is useful for debugging" 
+  echo "thru hole designs."
+  echo "Photorealistic PNG output is rendered with a drop shadow for a slightly" 
+  echo "three dimensional impression."
+  echo ""
+  echo "Usage: `basename $0` [-s][-p][-V] foobar.pcb"
+  echo "-s     add a page with mirrored top silk on bottom layer"
   echo "-p     produce photo realistic output"
   echo "-V     launch viewers on produced output"
-  echo "Note: There is a bug in run of the mill version of cb, that prevents"
-  echo "execution of the DISPLAY action on the command line. PCB preemptively"
-  echo "exits on the assumption, that this command is only valid if pcb runs"
-  echo "in GUI mode. A patch to rectify this and issue a warning rather than"
-  echo "exit, can be found named 'hidnogui-actionscript.patch' on"
-  echo "http://gedasymbols.org ."
+  echo "Note: There is a bug in the run of the mill version of PCB, that prevents"
+  echo "execution of the DISPLAY action on the command line. The application"
+  echo "exits preemptively on the assumption, that this command is only valid"
+  echo "if PCB runs in GUI mode. Because of this, this print script won't work"
+  echo "properly unless a patch has been applied to the source."
+  echo "A patch to make PCB issue a rather than exit right away, can be"
+  echo "downloaded as 'hidnogui-actionscript.patch' from http://gedasymbols.org ."
   exit
 fi  
 
 PHOTOOUTPUT=0
 STARTVIEWER=0
-while getopts ":pV" Option
+while getopts ":spV" Option
 do
   case $Option in
+    s     ) echo "add a page with mirrored top silk on bottom layer"; BOTTOMTHRU=1 ;;
     p     ) echo "produce photorealistic image "; PHOTOOUTPUT=1 ;;
-    V     ) echo "produce photorealistic image "; STARTVIEWER=1 ;;
-    *     ) echo "Unimplemented option chosen.";;   # Default.
+    V     ) echo "automatically start viewers "; STARTVIEWER=1 ;;
+    *     ) echo "unknown option: \""$Option"\"" ; exit;   # Default.
   esac
 done
 shift $(($OPTIND - 1))   # go to next argument
@@ -42,9 +53,12 @@ PDFVIEWER=/usr/bin/okular
 PNGVIEWER=/usr/bin/gthumb
 SIZE="20x30cm"
 PAPERSIZE="A4"
+TMPDIR=/tmp/layoutdruck
 
 ## echo pcb version
 $PCB -V
+
+mkdir $TMPDIR
 
 ## top-refdes
 echo "Bestückungsdruck Nummern, Oberseite von "$OUTPUT
@@ -53,16 +67,18 @@ $PCB -x eps \
   --action-string 'DISPLAY(NameOnPCB)' \
   --element-color '#000000' \
   --pin-color '#cccccc' \
-  --layer-color-1 '#dddddd' \
-  --layer-color-2 '#dddddd' \
-  --layer-color-3 '#dddddd' \
+  --layer-color-1 '#999999' \
+  --layer-color-2 '#bbbbbb' \
+  --layer-color-3 '#aaaaaa' \
+  --layer-color-4 '#555555' \
+  --layer-color-5 '#aaaaaa' \
   --as-shown  \
   --only-visible \
   --layer-stack "outline,comment,elements,top" \
-  --eps-file "/tmp/out.eps" \
+  --eps-file $TMPDIR/toprefdes.eps \
   $PCBFILE
 
-poster -m$PAPERSIZE -p$SIZE -c12x12mm -o "/tmp/out_toprefdes.ps" "/tmp/out.eps"
+poster -m$PAPERSIZE -p$SIZE -c12x12mm -o $TMPDIR/toprefdes.ps $TMPDIR/toprefdes.eps
 
 ## top-values
 echo "Bestückungsdruck Werte, Oberseite von "$OUTPUT
@@ -71,16 +87,18 @@ $PCB -x eps \
   --action-string 'DISPLAY(Value)' \
   --element-color '#000000' \
   --pin-color '#cccccc' \
-  --layer-color-1 '#dddddd' \
-  --layer-color-2 '#dddddd' \
-  --layer-color-3 '#dddddd' \
+  --layer-color-1 '#999999' \
+  --layer-color-2 '#bbbbbb' \
+  --layer-color-3 '#aaaaaa' \
+  --layer-color-4 '#555555' \
+  --layer-color-5 '#aaaaaa' \
   --as-shown  \
   --only-visible \
   --layer-stack "outline,comment,elements,top" \
-  --eps-file "/tmp/out.eps" \
+  --eps-file $TMPDIR"/topvalue.eps" \
   $PCBFILE
 
-poster -m$PAPERSIZE -p$SIZE -c12x12mm -o "/tmp/out_topvalue.ps" "/tmp/out.eps"
+poster -m$PAPERSIZE -p$SIZE -c12x12mm -o $TMPDIR/topvalue.ps $TMPDIR/topvalue.eps
 
 
 ## bottom-refdes
@@ -90,16 +108,18 @@ $PCB -x eps \
   --action-string 'DISPLAY(NameOnPCB)' \
   --element-color '#000000' \
   --pin-color '#cccccc' \
-  --layer-color-4 '#dddddd' \
-  --layer-color-5 '#dddddd' \
-  --layer-color-6 '#dddddd' \
+  --layer-color-1 '#999999' \
+  --layer-color-2 '#bbbbbb' \
+  --layer-color-3 '#aaaaaa' \
+  --layer-color-4 '#555555' \
+  --layer-color-5 '#aaaaaa' \
   --as-shown \
   --only-visible \
-  --layer-stack "outline,elements,bottom,solderside" \
-  --eps-file "/tmp/out.eps" \
+  --layer-stack "outline,comment,elements,bottom,rats,solderside" \
+  --eps-file $TMPDIR/bottomrefdes.eps \
   $PCBFILE
 
-poster -m$PAPERSIZE -p$SIZE -c12x12mm -o "/tmp/out_bottomrefdes.ps" "/tmp/out.eps"
+poster -m$PAPERSIZE -p$SIZE -c12x12mm -o $TMPDIR/bottomrefdes.ps $TMPDIR/bottomrefdes.eps
 
 
 ## bottom-value
@@ -109,25 +129,70 @@ $PCB -x eps \
   --action-string 'DISPLAY(Value)' \
   --element-color '#000000' \
   --pin-color '#cccccc' \
-  --layer-color-4 '#dddddd' \
-  --layer-color-5 '#dddddd' \
-  --layer-color-6 '#dddddd' \
+  --layer-color-1 '#999999' \
+  --layer-color-2 '#bbbbbb' \
+  --layer-color-3 '#aaaaaa' \
+  --layer-color-4 '#555555' \
+  --layer-color-5 '#aaaaaa' \
   --as-shown  \
   --only-visible \
-  --layer-stack "outline,elements,bottom,solderside" \
-  --eps-file "/tmp/out.eps" \
+  --layer-stack "outline,comment,elements,bottom,rats,solderside" \
+  --eps-file $TMPDIR"/bottomvalue.eps" \
   $PCBFILE
 
-poster -m$PAPERSIZE -p$SIZE -c12x12mm -o "/tmp/out_bottomvalue.ps" "/tmp/out.eps"
+poster -m$PAPERSIZE -p$SIZE -c12x12mm -o $TMPDIR"/bottomvalue.ps" $TMPDIR"/bottomvalue.eps"
+
+$PCB -x eps \
+  --action-string 'DISPLAY(NameOnPCB)' \
+  --element-color '#000000' \
+  --pin-color '#cccccc' \
+  --layer-color-1 '#999999' \
+  --layer-color-2 '#bbbbbb' \
+  --layer-color-3 '#aaaaaa' \
+  --layer-color-4 '#555555' \
+  --layer-color-5 '#aaaaaa' \
+  --as-shown  \
+  --mirror \
+  --layer-stack "elements" \
+  --eps-file $TMPDIR/elements.eps \
+  $PCBFILE
+
+
+###### Optionally derive a see-thru of bottom with awk and tail 
+######(very dirty hack that depends on specific layer names and layer groups)
+if [ $BOTTOMTHRU = "1" ]
+then 
+echo "Do bottomthru"
+awk '$0 == "% Layer bottom group 1 drill 0 mask 0" { exit } \
+	{ print }' $TMPDIR/bottomrefdes.eps > $TMPDIR/bottomthru.eps
+awk 'NR <= 22 { next } $1 == "showpage" { exit } { print }' $TMPDIR/bottomrefdes.eps >> $TMPDIR/bottomthru.eps
+awk 'NR <= 21 { next } $1 == "showpage" { exit } { print }' $TMPDIR/elements.eps >> $TMPDIR/bottomthru.eps
+tail -n 5 $TMPDIR/elements.eps >> $TMPDIR/bottomthru.eps
+poster -mA4 -p$SIZE -c12x12mm -o $TMPDIR/bottomthru.ps $TMPDIR/bottomthru.eps
+
+fi
+###########################################################################
+
+if [ $BOTTOMTHRU = "1" ] 
+then 
+  PAGES=" \
+   $TMPDIR/toprefdes.ps \
+   $TMPDIR/topvalue.ps \
+   $TMPDIR/bottomthru.ps \
+   $TMPDIR/bottomrefdes.ps \
+   $TMPDIR/bottomvalue.ps"
+else
+  PAGES=" \
+   $TMPDIR/toprefdes.ps \
+   $TMPDIR/topvalue.ps \
+   $TMPDIR/bottomrefdes.ps \
+   $TMPDIR/bottomvalue.ps"
+fi
 
 ## combine to a single PDF document
-psmerge -o/tmp/out.ps \
-   /tmp/out_toprefdes.ps \
-   /tmp/out_topvalue.ps \
-   /tmp/out_bottomrefdes.ps \
-   /tmp/out_bottomvalue.ps
+psmerge -o$TMPDIR/out.ps $PAGES
  
-ps2pdf "/tmp/out.ps" $OUTPDF
+ps2pdf $TMPDIR/out.ps $OUTPDF
 
 ### optionally start viewer.###
 if [ "$STARTVIEWER" = "1" ]
@@ -136,7 +201,7 @@ then
 fi
 
 
-### photorealistic output is optional, because it is time consuming ####
+### photorealistic output ####
 if [ "$PHOTOOUTPUT" = "1" ]
 then
 
@@ -145,10 +210,10 @@ pcb -x png --photo-mode \
   --dpi 600  \
   --use-alpha \
   --only-visible \
-  --outfile /tmp/out.png \
+  --outfile $TMPDIR/out.png \
   $PCBFILE
 
-convert /tmp/out.png \
+convert $TMPDIR/out.png \
   \( +clone -background black -shadow 75x20+20+20 \)  +swap \
   -background white \
   -layers merge \
@@ -161,10 +226,10 @@ pcb -x png --photo-mode \
   --use-alpha \
   --only-visible \
   --photo-flip-x \
-  --outfile /tmp/out.png \
+  --outfile $TMPDIR/out.png \
   $PCBFILE
 
-convert /tmp/out.png \
+convert $TMPDIR/out.png \
   \( +clone -background black -shadow 75x20+20+20 \)  +swap \
   -background white \
   -layers merge \

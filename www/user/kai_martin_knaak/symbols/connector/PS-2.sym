@@ -1,7 +1,5 @@
-v 20080706 1
-T 100 1800 5 8 0 0 0 0 1
-numslots=0
-T 100 2400 5 8 0 0 0 0 1
+v 20111231 2
+T 100 2200 5 8 0 0 0 0 1
 author=Kai-Martin Knaak, kmk@lilalaser.de
 T 100 1200 8 10 1 1 0 0 1
 refdes=CONN?
@@ -20,7 +18,7 @@ pinlabel=1
 T 250 550 5 8 0 1 0 2 1
 pintype=pas
 }
-V 250 600 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+V 250 600 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
 P 0 200 200 200 1 0 0
 {
 T 200 250 5 8 0 1 0 6 1
@@ -32,18 +30,24 @@ pinlabel=2
 T 250 150 5 8 0 1 0 2 1
 pintype=pas
 }
-V 250 200 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-B 50 0 500 800 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-L 500 500 450 500 3 0 0 0 -1 -1
-L 500 500 500 300 3 0 0 0 -1 -1
-L 450 300 500 300 3 0 0 0 -1 -1
-T 100 2600 5 8 0 0 0 0 1
+V 250 200 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+B 50 0 500 800 3 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+L 500 500 450 500 3 10 2 0 -1 -1
+L 500 500 500 300 3 10 2 0 -1 -1
+L 450 300 500 300 3 10 2 0 -1 -1
+T 100 3000 5 8 0 0 0 0 1
 documentation=http://jae-connector.com/en/general_en.cfm?series_code=IL%2DG
-T 100 2200 5 8 0 0 0 0 1
-dist-license=GPL 3, see http://www.gnu.org/licenses/gpl.txt
 T 100 2000 5 8 0 0 0 0 1
+dist-license=GPL 3, see http://www.gnu.org/licenses/gpl.txt
+T 100 1800 5 8 0 0 0 0 1
 use-license=free, no restrictions
-T 100 2800 5 8 0 0 0 0 1
+T 100 3200 5 8 0 0 0 0 1
 description=connector by JAE, IL-G series, 2 pins, model IL-G-2S-S3C2-SA
-L 450 300 450 0 3 0 0 0 -1 -1
-L 450 500 450 800 3 0 0 0 -1 -1
+L 450 300 450 0 3 10 2 0 -1 -1
+L 450 500 450 800 3 10 2 0 -1 -1
+T 100 2600 5 8 0 0 0 0 1
+values=JAE IL-G-2S, PSK 2Pin
+T 100 2400 5 8 0 0 0 0 1
+symversion=1.0
+T 100 2800 5 8 0 0 0 0 1
+comment=also good for PSK connectors with same footprint

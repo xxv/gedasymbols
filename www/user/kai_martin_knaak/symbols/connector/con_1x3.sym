@@ -1,52 +1,52 @@
-v 20080127 1
-T 100 1500 8 10 1 1 0 0 1
-device=XXX
-T 300 2600 5 8 0 0 0 0 1
-numslots=0
-T 300 2400 5 8 0 0 0 0 1
-description=power connector, XLR 3 pin
-T 300 2200 5 8 0 0 0 0 1
-author=Leon Kos / Kai-Martin Knaak
-T 300 2000 5 8 0 0 0 0 1
-license=GPL2, see http://www.gnu.org/licenses/gpl.txt
-T 100 1700 8 10 1 1 0 0 1
+v 20111231 2
+T 0 200 8 10 1 1 0 0 1
+value=XXX
+T 0 3300 5 8 0 0 0 0 1
+description=generic three pin connector
+T 0 400 8 10 1 1 0 0 1
 refdes=CONN?
-T 100 50 8 8 1 1 0 0 1
+T 0 0 8 8 1 1 0 0 1
 footprint=1x3PIN
-P 0 1200 200 1200 1 0 0
+P 500 1600 300 1600 1 0 0
 {
-T 200 1250 5 8 0 1 0 6 1
+T 300 1650 5 8 0 1 0 0 1
 pinnumber=1
-T 200 1150 5 8 0 1 0 8 1
-pinseq=1
-T 350 1200 5 8 0 1 0 2 1
+T 400 1550 5 8 0 1 0 8 1
 pintype=pas
-T 400 1200 5 10 1 1 0 3 1
+T 100 1600 5 10 1 1 0 3 1
 pinlabel=1
 }
-V 250 1200 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-P 0 800 200 800 1 0 0
+V 250 1600 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+P 500 1200 300 1200 1 0 0
 {
-T 200 850 5 8 0 1 0 6 1
+T 300 1250 5 8 0 1 0 0 1
 pinnumber=2
-T 200 750 5 8 0 1 0 8 1
-pinseq=2
-T 350 800 5 8 0 1 0 2 1
+T 400 1150 5 8 0 1 0 8 1
 pintype=pas
-T 400 800 5 10 1 1 0 3 1
+T 100 1200 5 10 1 1 0 3 1
 pinlabel=2
 }
-V 250 800 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-B 100 200 400 1200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-P 0 400 200 400 1 0 0
+V 250 1200 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+B 0 600 400 1200 3 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+P 500 800 300 800 1 0 0
 {
-T 200 450 5 8 0 1 0 6 1
+T 300 850 5 8 0 1 0 0 1
 pinnumber=3
-T 200 350 5 8 0 1 0 8 1
-pinseq=3
-T 350 400 5 8 0 1 0 2 1
+T 400 750 5 8 0 1 0 8 1
 pintype=pas
-T 400 400 5 10 1 1 0 3 1
+T 100 800 5 10 1 1 0 3 1
 pinlabel=3
 }
-V 250 400 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+V 250 800 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+T 0 3100 5 8 0 0 0 0 1
+documentation=none
+T 0 2900 5 8 0 0 0 0 1
+footprints=1x3PIN, AKL_3PIN, PS_3PIN, PS_3PIN_LAY, RIACON_383_3PIN, RIACON_383_3PIN_LAY, XLR3_3PIN, XLR3_4PIN, XLR3_3PIN_b, XLR3_3PIN_c, XLR3_LAY, XLR3_vert, XLR3_PCB
+T 0 2700 5 8 0 0 0 0 1
+symversion=1.0
+T 0 2500 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 0 2300 5 8 0 0 0 0 1
+dist-license=GPL 3, http://www.gnu.org/licenses/gpl-3.0.txt
+T 0 2100 5 8 0 0 0 0 1
+use-license=free, no restrictions
