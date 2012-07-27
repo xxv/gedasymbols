@@ -49,6 +49,7 @@ sub dump_unseen_attrs {
 	    print O "$n=$v\n";
 	}
     }
+    %seen = ();
 
     $pid = undef;
 }
@@ -74,7 +75,9 @@ for $file (@files) {
 
 	    $pid = "$file $x $y";
 	    %seen = ();
-	    $need_braces_dump = 1;
+	    if ($in[$i+1] !~ /^{/) {
+		$need_braces_dump = 1;
+	    }
 	}
 
 	if (/^}/ && $pid) {
@@ -101,11 +104,9 @@ for $file (@files) {
 
 	if ($need_braces_dump) {
 	    $need_braces_dump = 0;
-	    if ($in[$i+1] !~ /^{/) {
-		print O "{\n";
-		&dump_unseen_attrs ();
-		print O "}\n";
-	    }
+	    print O "{\n";
+	    &dump_unseen_attrs ();
+	    print O "}\n";
 	}
     }
 
