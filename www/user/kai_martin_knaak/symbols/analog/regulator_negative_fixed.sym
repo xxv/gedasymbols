@@ -48,7 +48,7 @@ documentation=http://www.fairchildsemi.com/ds/KA/KA7905.pdf
 T 200 1800 5 8 0 0 0 0 1
 dist-license=GPL , see http://www.gnu.org/licenses/gpl.txt
 T 200 2600 5 8 0 0 0 0 1
-footprints=TO220, TO220_LAY, TO220_bighole, TO220_block TO92, DPAK, D2PAK, SO8_79Lxx, SOT89
+footprints=TO220, TO220_LAY, TO220_bighole, TO220_block TO92, DPAK, D2PAK, SO8_79Lxx, SOT89_79Lxx
 T 200 1600 5 8 0 0 0 0 1
 use-license=freee, no restrictions
 L 600 600 800 600 3 10 0 0 -1 -1
