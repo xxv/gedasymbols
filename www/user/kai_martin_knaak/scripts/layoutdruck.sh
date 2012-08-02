@@ -27,7 +27,7 @@ then
   echo "downloaded as 'hidnogui-actionscript.patch' from http://gedasymbols.org ."
   exit
 fi  
-
+BOTTOMTHRU=0
 PHOTOOUTPUT=0
 STARTVIEWER=0
 while getopts ":spV" Option
@@ -67,12 +67,15 @@ $PCB -x eps \
   --action-string 'DISPLAY(NameOnPCB)' \
   --element-color '#000000' \
   --pin-color '#cccccc' \
-  --layer-color-1 '#999999' \
-  --layer-color-2 '#bbbbbb' \
-  --layer-color-3 '#aaaaaa' \
-  --layer-color-4 '#555555' \
-  --layer-color-5 '#aaaaaa' \
-  --as-shown  \
+  --layer-color-1 '#cccccc' \
+  --layer-color-2 '#dddddd' \
+  --layer-color-3 '#eeeeee' \
+  --layer-color-4 '#cccccc' \
+  --layer-color-5 '#dddddd' \
+  --layer-color-6 '#eeeeee' \
+  --layer-color-7 '#555555' \
+  --layer-color-8 '#666666' \
+ --as-shown  \
   --only-visible \
   --layer-stack "outline,comment,elements,top" \
   --eps-file $TMPDIR/toprefdes.eps \
@@ -87,11 +90,14 @@ $PCB -x eps \
   --action-string 'DISPLAY(Value)' \
   --element-color '#000000' \
   --pin-color '#cccccc' \
-  --layer-color-1 '#999999' \
-  --layer-color-2 '#bbbbbb' \
-  --layer-color-3 '#aaaaaa' \
-  --layer-color-4 '#555555' \
-  --layer-color-5 '#aaaaaa' \
+  --layer-color-1 '#cccccc' \
+  --layer-color-2 '#dddddd' \
+  --layer-color-3 '#eeeeee' \
+  --layer-color-4 '#cccccc' \
+  --layer-color-5 '#dddddd' \
+  --layer-color-6 '#eeeeee' \
+  --layer-color-7 '#555555' \
+  --layer-color-8 '#666666' \
   --as-shown  \
   --only-visible \
   --layer-stack "outline,comment,elements,top" \
@@ -108,18 +114,33 @@ $PCB -x eps \
   --action-string 'DISPLAY(NameOnPCB)' \
   --element-color '#000000' \
   --pin-color '#cccccc' \
-  --layer-color-1 '#999999' \
-  --layer-color-2 '#bbbbbb' \
-  --layer-color-3 '#aaaaaa' \
-  --layer-color-4 '#555555' \
-  --layer-color-5 '#aaaaaa' \
+  --layer-color-1 '#cccccc' \
+  --layer-color-2 '#dddddd' \
+  --layer-color-3 '#eeeeee' \
+  --layer-color-4 '#cccccc' \
+  --layer-color-5 '#dddddd' \
+  --layer-color-6 '#eeeeee' \
+  --layer-color-7 '#555555' \
+  --layer-color-8 '#666666' \
   --as-shown \
-  --only-visible \
-  --layer-stack "outline,comment,elements,bottom,rats,solderside" \
-  --eps-file $TMPDIR/bottomrefdes.eps \
+  --layer-stack "outline,comment,elements,bottom,solderside" \
+  --eps-file $TMPDIR"/bottomrefdes_tmp.eps" \
   $PCBFILE
 
-poster -m$PAPERSIZE -p$SIZE -c12x12mm -o $TMPDIR/bottomrefdes.ps $TMPDIR/bottomrefdes.eps
+## rectify broken eps syntax: make bounding box parameters integers ##
+awk -F [\ \.] '
+  {
+  if ( $1 == "%%BoundingBox:" )
+     { print $1" "$2" "$3" "$4" "$6 }
+     else { print $0 }
+  }
+' $TMPDIR"/bottomrefdes_tmp.eps" > $TMPDIR"/bottomrefdes_tmp2.eps"
+
+## crop eps ##
+epstool --bbox --copy  $TMPDIR"/bottomrefdes_tmp2.eps" $TMPDIR"/bottomrefdes.eps"
+
+## make a decently sized postscript page
+poster -m$PAPERSIZE -p$SIZE -c12x12mm -o $TMPDIR"/bottomrefdes.ps" $TMPDIR"/bottomrefdes.eps"
 
 
 ## bottom-value
@@ -129,51 +150,70 @@ $PCB -x eps \
   --action-string 'DISPLAY(Value)' \
   --element-color '#000000' \
   --pin-color '#cccccc' \
-  --layer-color-1 '#999999' \
-  --layer-color-2 '#bbbbbb' \
-  --layer-color-3 '#aaaaaa' \
-  --layer-color-4 '#555555' \
-  --layer-color-5 '#aaaaaa' \
+  --layer-color-1 '#cccccc' \
+  --layer-color-2 '#dddddd' \
+  --layer-color-3 '#eeeeee' \
+  --layer-color-4 '#cccccc' \
+  --layer-color-5 '#dddddd' \
+  --layer-color-6 '#eeeeee' \
+  --layer-color-7 '#555555' \
+  --layer-color-8 '#666666' \
   --as-shown  \
-  --only-visible \
-  --layer-stack "outline,comment,elements,bottom,rats,solderside" \
-  --eps-file $TMPDIR"/bottomvalue.eps" \
+  --layer-stack "outline,comment,elements,bottom,solderside" \
+  --eps-file $TMPDIR"/bottomvalue_tmp.eps" \
   $PCBFILE
 
+
+## rectify broken eps syntax: make bounding box parameters integers ##
+awk -F [\ \.] '
+  {
+  if ( $1 == "%%BoundingBox:" )
+     { print $1" "$2" "$3" "$4" "$6 }
+     else { print $0 }
+  }
+' $TMPDIR"/bottomvalue_tmp.eps" > $TMPDIR"/bottomvalue_tmp2.eps"
+
+## crop eps ##
+epstool --bbox --copy  $TMPDIR"/bottomvalue_tmp2.eps" $TMPDIR"/bottomvalue.eps"
+
+## make a decently sized postscript page
 poster -m$PAPERSIZE -p$SIZE -c12x12mm -o $TMPDIR"/bottomvalue.ps" $TMPDIR"/bottomvalue.eps"
 
 $PCB -x eps \
   --action-string 'DISPLAY(NameOnPCB)' \
   --element-color '#000000' \
   --pin-color '#cccccc' \
-  --layer-color-1 '#999999' \
-  --layer-color-2 '#bbbbbb' \
-  --layer-color-3 '#aaaaaa' \
-  --layer-color-4 '#555555' \
-  --layer-color-5 '#aaaaaa' \
+  --layer-color-1 '#cccccc' \
+  --layer-color-2 '#dddddd' \
+  --layer-color-3 '#eeeeee' \
+  --layer-color-4 '#cccccc' \
+  --layer-color-5 '#dddddd' \
+  --layer-color-6 '#eeeeee' \
+  --layer-color-7 '#555555' \
+  --layer-color-8 '#666666' \
   --as-shown  \
   --mirror \
   --layer-stack "elements" \
-  --eps-file $TMPDIR/elements.eps \
+  --eps-file $TMPDIR"/elements.eps" \
   $PCBFILE
 
 
 ###### Optionally derive a see-thru of bottom with awk and tail 
 ######(very dirty hack that depends on specific layer names and layer groups)
-if [ $BOTTOMTHRU = "1" ]
+if [ $BOTTOMTHRU == "1" ]
 then 
 echo "Do bottomthru"
 awk '$0 == "% Layer bottom group 1 drill 0 mask 0" { exit } \
 	{ print }' $TMPDIR/bottomrefdes.eps > $TMPDIR/bottomthru.eps
 awk 'NR <= 22 { next } $1 == "showpage" { exit } { print }' $TMPDIR/bottomrefdes.eps >> $TMPDIR/bottomthru.eps
 awk 'NR <= 21 { next } $1 == "showpage" { exit } { print }' $TMPDIR/elements.eps >> $TMPDIR/bottomthru.eps
-tail -n 5 $TMPDIR/elements.eps >> $TMPDIR/bottomthru.eps
-poster -mA4 -p$SIZE -c12x12mm -o $TMPDIR/bottomthru.ps $TMPDIR/bottomthru.eps
+tail -n 5 $TMPDIR"/elements.eps" >> $TMPDIR"/bottomthru.eps"
+poster -mA4 -p$SIZE -c12x12mm -o $TMPDIR"/bottomthru.ps" $TMPDIR"/bottomthru.eps"
 
 fi
 ###########################################################################
 
-if [ $BOTTOMTHRU = "1" ] 
+if [ $BOTTOMTHRU == "1" ] 
 then 
   PAGES=" \
    $TMPDIR/toprefdes.ps \
@@ -195,14 +235,14 @@ psmerge -o$TMPDIR/out.ps $PAGES
 ps2pdf $TMPDIR/out.ps $OUTPDF
 
 ### optionally start viewer.###
-if [ "$STARTVIEWER" = "1" ]
+if [ $STARTVIEWER == "1" ]
 then
   $PDFVIEWER $OUTPDF
 fi
 
 
 ### photorealistic output ####
-if [ "$PHOTOOUTPUT" = "1" ]
+if [ $PHOTOOUTPUT == "1" ]
 then
 
 echo  "Do a photo realistic view of the top side of the pcb"
@@ -237,7 +277,7 @@ convert $TMPDIR/out.png \
   $OUTPNG_BOTTOM
 
 ### optionally start viewer.###
-if [ "$STARTVIEWER" = "1" ]
+if [ $STARTVIEWER == "1" ]
 then
   $PNGVIEWER $OUTPNG $OUTPNG_BOTTOM
 fi
