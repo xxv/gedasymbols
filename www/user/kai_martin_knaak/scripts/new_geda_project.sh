@@ -13,6 +13,7 @@
 help () {
     echo "Usage: "$0" <--skel |--git | --help> NAME"
     echo "A simple script to start a new geda project from scratch."
+    echo 'Necessary tools: finger, whoami, date, '
     echo "   --git  : set up a git repository in /var/cache/git. Requires sudo privilege."
     echo "   --skel : install the basic structure of a geda project in the current dir."
     echo "   --help : this help message"
