@@ -1,4 +1,4 @@
-v 20110619 2
+v 20111231 2
 T 300 3500 5 8 0 0 0 0 1
 description=generic dual operational amplifier, SO8
 T 300 3300 5 8 0 0 0 0 1
@@ -56,8 +56,6 @@ pinlabel=+
 T 150 550 5 8 0 1 0 8 1
 pintype=in
 }
-T 450 400 9 10 1 0 0 4 1
-dual
 T 300 2100 5 8 0 0 0 0 1
 use-license=free, no restrictions
 T 300 2300 5 8 0 0 0 0 1
@@ -67,6 +65,8 @@ L 300 650 300 550 3 10 0 0 -1 -1
 L 250 200 350 200 3 10 0 0 -1 -1
 L 200 800 200 0 3 10 2 0 -1 -1
 T 300 2700 5 8 0 0 0 0 1
-symversion=1.0
+symversion=1.1
 T 300 3100 5 8 0 0 0 0 1
 footprints=SO8, DIP8
+T 450 400 9 10 1 1 0 4 1
+component-label=dual

@@ -8,7 +8,7 @@ tar -czf geda-conf.tgz  --directory=$HOME \
 	.pcb/settings \
 	.pcb/preferences \
 	.pcb/colors/footprint \
-	.pcb/colors/layout \
+	.pcb/colors/layout_2layer \
 	.pcb/colors/layout_4layer \
 
 OUTFILE=$PWD/geda-conf.zip
@@ -21,6 +21,6 @@ zip -o $OUTFILE \
 	.pcb/settings \
 	.pcb/preferences \
 	.pcb/colors/footprint \
-	.pcb/colors/layout \
+	.pcb/colors/layout_2layer \
 	.pcb/colors/layout_4layer \
 
