@@ -217,15 +217,15 @@ if [ $BOTTOMTHRU == "1" ]
 then 
   PAGES=" \
    $TMPDIR/toprefdes.ps \
-   $TMPDIR/topvalue.ps \
-   $TMPDIR/bottomthru.ps \
    $TMPDIR/bottomrefdes.ps \
-   $TMPDIR/bottomvalue.ps"
+   $TMPDIR/topvalue.ps \
+   $TMPDIR/bottomvalue.ps\
+   $TMPDIR/bottomthru.ps"
 else
   PAGES=" \
    $TMPDIR/toprefdes.ps \
-   $TMPDIR/topvalue.ps \
    $TMPDIR/bottomrefdes.ps \
+   $TMPDIR/topvalue.ps \
    $TMPDIR/bottomvalue.ps"
 fi
 
@@ -249,6 +249,7 @@ echo  "Do a photo realistic view of the top side of the pcb"
 pcb -x png --photo-mode \
   --dpi 600  \
   --use-alpha \
+  --as-shown  \
   --only-visible \
   --outfile $TMPDIR/out.png \
   $PCBFILE
@@ -264,6 +265,7 @@ echo "Do a photo realistic view of the bottom side of the pcb"
 pcb -x png --photo-mode \
   --dpi 600  \
   --use-alpha \
+  --as-shown  \
   --only-visible \
   --photo-flip-x \
   --outfile $TMPDIR/out.png \

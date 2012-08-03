@@ -7,7 +7,7 @@ then
   echo "Collects all sub sheets of a hierarchical design and prints them to multi"
   echo "page postscript and PDF. Schematics are sorted according to page attribute."
   echo "Uses awk, psmerge, ps2pdf and optionally evince"
-  echo "Usage: `basename $0` [-p][-V] foobar.sch"
+  echo "Usage: `basename $0` [-V] foobar.sch"
   echo "-V     launch viewer on produced output"
   exit
 fi  
