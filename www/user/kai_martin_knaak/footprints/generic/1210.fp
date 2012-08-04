@@ -1,12 +1,11 @@
-
-Element["" "" "1210" "" 59055 137795 -12794 -3938 0 100 ""]
+Element["" "1210" "1210" "1210" 15.0000mm 34.9999mm -127.94mil -39.38mil 0 100 ""]
 (
-	Pad[7874 -1968 7874 1969 8480 2404 9280 "2" "2" "square,edge2"]
-	Pad[-7874 -1968 -7874 1969 8480 2404 9280 "1" "1" "square,edge2"]
-	ElementLine [-11811 -7874 13780 -7874 800]
-	ElementLine [13780 -7874 13780 7874 800]
-	ElementLine [13780 7874 -13779 7874 800]
-	ElementLine [-13779 7874 -13779 -5905 800]
-	ElementLine [-13779 -5905 -11811 -7874 800]
+	Pad[2.0000mm -19.68mil 2.0000mm 19.69mil 84.80mil 39.37mil 2.2540mm "2" "2" "square,edge2"]
+	Pad[-2.0000mm -19.68mil -2.0000mm 19.69mil 84.80mil 39.37mil 2.2540mm "1" "1" "square,edge2"]
+	ElementLine [-137.79mil -59.05mil -118.11mil -2.0000mm 8.00mil]
+	ElementLine [-137.79mil 2.0000mm -137.79mil -59.05mil 8.00mil]
+	ElementLine [137.80mil 2.0000mm -137.79mil 2.0000mm 8.00mil]
+	ElementLine [137.80mil -2.0000mm 137.80mil 2.0000mm 8.00mil]
+	ElementLine [-118.11mil -2.0000mm 137.80mil -2.0000mm 8.00mil]
 
 	)

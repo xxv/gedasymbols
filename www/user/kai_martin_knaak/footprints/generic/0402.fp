@@ -1,11 +1,10 @@
-
-Element["" "" "0402" "" 59055 11811 -3543 -1575 0 56 ""]
+Element["" "0402" "0402" "0402" 15.0000mm 118.11mil -35.43mil -15.75mil 0 56 ""]
 (
-	Pad[-2323 1 -2323 1 2500 2404 4904 "1" "1" "square"]
-	Pad[2362 0 2362 0 2500 2404 4904 "2" "2" "square,edge2"]
-	ElementLine [-4134 -1772 4173 -1772 591]
-	ElementLine [4173 -1772 4173 1772 591]
-	ElementLine [-4134 1772 -4134 -1772 591]
-	ElementLine [4173 1772 -4134 1772 591]
+	Pad[-23.23mil 0.01mil -23.23mil 0.01mil 25.00mil 39.37mil 28.94mil "1" "1" "square"]
+	Pad[23.62mil 0.0000 23.62mil 0.0000 25.00mil 39.37mil 28.94mil "2" "2" "square,edge2"]
+	ElementLine [41.73mil 17.72mil -41.34mil 17.72mil 5.91mil]
+	ElementLine [-41.34mil 17.72mil -41.34mil -17.72mil 5.91mil]
+	ElementLine [41.73mil -17.72mil 41.73mil 17.72mil 5.91mil]
+	ElementLine [-41.34mil -17.72mil 41.73mil -17.72mil 5.91mil]
 
 	)

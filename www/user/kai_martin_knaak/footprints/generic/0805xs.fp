@@ -1,12 +1,11 @@
-
-Element["" "" "0805xs" "" 59055 55118 -5512 -1969 0 78 ""]
+Element["" "0805xs" "0805xs" "0805xs" 14.7500mm 610.23mil -55.12mil -19.69mil 0 78 ""]
 (
-	Pad[3937 -1181 3937 1181 3000 2404 4204 "2" "2" "square"]
-	Pad[-3937 -1181 -3937 1181 3000 2404 4204 "1" "1" "square"]
-	ElementLine [-6299 3543 -6299 -2362 591]
-	ElementLine [-6299 -2362 -5118 -3543 591]
-	ElementLine [-5118 -3543 6299 -3543 591]
-	ElementLine [6299 -3543 6299 3543 591]
-	ElementLine [6299 3543 -6299 3543 591]
+	Pad[39.37mil -11.81mil 39.37mil 11.81mil 30.00mil 39.37mil 33.94mil "2" "2" "square"]
+	Pad[-39.37mil -11.81mil -39.37mil 11.81mil 30.00mil 39.37mil 33.94mil "1" "1" "square"]
+	ElementLine [62.99mil 35.43mil -62.99mil 35.43mil 5.91mil]
+	ElementLine [62.99mil -35.43mil 62.99mil 35.43mil 5.91mil]
+	ElementLine [-51.18mil -35.43mil 62.99mil -35.43mil 5.91mil]
+	ElementLine [-62.99mil -23.62mil -51.18mil -35.43mil 5.91mil]
+	ElementLine [-62.99mil 35.43mil -62.99mil -23.62mil 5.91mil]
 
 	)
