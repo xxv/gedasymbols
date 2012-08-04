@@ -1,8 +1,8 @@
 Element["" "TO18" "TO18" "TO18" 43.9999mm 28.9999mm -59.05mil -177.17mil 0 122 ""]
 (
-	Pin[0.0000 49.21mil 46.00mil 32.00mil 56.00mil 25.00mil "2" "2" ""]
-	Pin[-49.21mil 0.0000 46.00mil 32.00mil 56.00mil 25.00mil "1" "1" "square"]
-	Pin[49.21mil 0.0000 46.00mil 32.00mil 56.00mil 25.00mil "3" "3" ""]
+	Pin [0.0000 49.21mil 46.00mil 39.37mil 49.94mil 25.00mil "2" "2" ""]
+	Pin [-49.21mil 0.0000 46.00mil 39.37mil 49.94mil 25.00mil "1" "1" "square"]
+	Pin [49.21mil 0.0000 46.00mil 39.37mil 49.94mil 25.00mil "3" "3" ""]
 	ElementLine [-2.0000mm -108.27mil -59.05mil -88.58mil 10.00mil]
 	ElementLine [-108.27mil -2.0000mm -2.0000mm -108.27mil 10.00mil]
 	ElementLine [-88.58mil -59.05mil -108.27mil -2.0000mm 10.00mil]

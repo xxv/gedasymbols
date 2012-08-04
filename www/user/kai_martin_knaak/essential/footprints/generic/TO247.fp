@@ -1,13 +1,13 @@
-Element["" "TO247" "TO247" "TO247" 173228 590551 -28149 12991 0 100 ""]
+Element["" "TO247" "TO247" "TO247" 43.9999mm 150.0000mm -281.49mil 129.91mil 0 100 ""]
 (
-Pin[20000 0 11811 4000 13211 6693 "3" "3" "edge2"]
-Pin[-20000 0 11811 4000 13211 6693 "1" "1" "square,edge2"]
-Pin[0 0 11811 4000 13211 6693 "2" "2" "edge2"]
-	ElementLine [-30000 8000 30000 8000 1500]
-	ElementLine [-30000 -7500 -30000 10000 1500]
-	ElementLine [-30000 -7500 30000 -7500 1500]
-	ElementLine [-30000 10000 30000 10000 1500]
-	ElementLine [30000 10000 30000 -7500 1500]
-	ElementLine [-30000 9000 30000 9000 1500]
+	Pin [200.00mil 0.0000 118.11mil 39.37mil 122.05mil 66.93mil "3" "3" "edge2"]
+	Pin [-200.00mil 0.0000 118.11mil 39.37mil 122.05mil 66.93mil "1" "1" "square,edge2"]
+	Pin [0.0000 0.0000 118.11mil 39.37mil 122.05mil 66.93mil "2" "2" "edge2"]
+	ElementLine [-300.00mil 80.00mil 300.00mil 80.00mil 15.00mil]
+	ElementLine [-300.00mil -75.00mil -300.00mil 100.00mil 15.00mil]
+	ElementLine [-300.00mil -75.00mil 300.00mil -75.00mil 15.00mil]
+	ElementLine [-300.00mil 100.00mil 300.00mil 100.00mil 15.00mil]
+	ElementLine [300.00mil 100.00mil 300.00mil -75.00mil 15.00mil]
+	ElementLine [-300.00mil 90.00mil 300.00mil 90.00mil 15.00mil]
 
 	)
