@@ -29,11 +29,15 @@ component per line. The other collates all components with the same value.
 
 <h2>Scripted print of pcb layouts</h2>
 The bash script <a href="layoutdruck.sh">layoutdruck.sh</a> uses PCB actions on the 
-command line of pcb to produce a set of printouts for use in documentation. 
-These include a multi page PDF with top and bottom layout, each with values and with 
+command line of pcb to produce a set of printouts for use in documentation. The
+print is geared to facilitate population and debugging of prototypes. It produces
+ a multi page PDF with top and bottom layout, each with values and with 
 refdes. The layout can be spread between several sheets for large layouts.
 
-<p>In addition photo realistic PNG export of top and bottom side is produced. A drop
+Optionally, there is a  bottom view overlayed with a mirrored view of top silk. 
+This x-ray view comes handy with thru hole designs.
+
+<p>In addition, photo realistic PNG export of top and bottom side is produced. A drop
 shadow is added to the PNG to make the image even more photo realistic.
 
 <p>Note, there is a bug in pcb that prevents the execution of actions when printing
