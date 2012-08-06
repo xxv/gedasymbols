@@ -796,7 +796,7 @@ Symbol['~' 12.00mil]
 )
 Attribute("PCB::grid::unit" "mil")
 
-Element["" "" "PISR" "" 800.00mil 1200.00mil -150.00mil -50.00mil 0 100 ""]
+Element["" "FASTRON_PISR" "FASTRON_PISR" "FASTRON_PISR" 800.00mil 1200.00mil -150.00mil -50.00mil 0 100 ""]
 (
 	Pad[350.00mil 0.0000 350.00mil 0.0000 195.00mil 19.69mil 198.94mil "2" "2" "square,edge2"]
 	Pad[-350.00mil 0.0000 -350.00mil 0.0000 195.00mil 19.69mil 198.94mil "1" "1" "square"]
@@ -815,7 +815,7 @@ Element["" "" "PISR" "" 800.00mil 1200.00mil -150.00mil -50.00mil 0 100 ""]
 
 	)
 
-Element["" "" "PISG" "" 800.00mil 2300.00mil -60.00mil -20.00mil 0 100 ""]
+Element["" "FASTRON_PISG" "FASTRON_PISG" "FASTRON_PISG" 800.00mil 2300.00mil -60.00mil -20.00mil 0 100 ""]
 (
 	Pad[-120.00mil -40.00mil -120.00mil 40.00mil 60.00mil 19.69mil 63.94mil "1" "1" "square"]
 	Pad[120.00mil -40.00mil 120.00mil 40.00mil 60.00mil 19.69mil 63.94mil "2" "2" "square"]

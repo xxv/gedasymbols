@@ -1,4 +1,4 @@
-Element["" "dio_minimelf" "dio_minimelf" "dio_minimelf" 28.0000mm 64.0000mm -118.11mil -118.11mil 0 100 ""]
+Element["" "dio_minimelf" "dio_minimelf" "dio_minimelf" 15.0000mm 984.25mil -118.11mil -118.11mil 0 100 ""]
 (
 	Pad[-68.90mil 0.0000 -68.90mil 0.0000 80.00mil 39.37mil 83.94mil "cathode" "1" "square"]
 	Pad[68.90mil 0.0000 68.90mil 0.0000 80.00mil 39.37mil 83.94mil "anode" "2" "square,edge2"]
