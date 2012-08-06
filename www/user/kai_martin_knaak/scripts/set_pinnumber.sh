@@ -78,9 +78,10 @@ END {
   }
 ' $INFILE
 
-
-#mv $INFILE /tmp/`basename $INFILE`_backup
-#mv $OUTFILE $INFILE
-#echo "not yet set pin and pad names set to the value of the pin number" 
-#echo "moved the original "$INFILE" to /tmp/"$INFILE".backup"
+BACKUP_NR=0
+BACKUP_BASE=/tmp/`basename $INFILE`_backup
+while [ -f $BACKUP_BASE$BACKUP_NR ]; do let BACKUP_NR=$BACKUP_NR+1 ; done
+mv $INFILE $BACKUP_BASE$BACKUP_NR
+mv $OUTFILE $INFILE
+echo "moved the original "$INFILE" to "$BACKUP_BASE$BACKUP_NR
 

@@ -153,9 +153,12 @@ END {
   }
 ' $INFILE
 
-mv $INFILE /tmp/`basename $INFILE`_backup
+BACKUP_NR=0
+BACKUP_BASE=/tmp/`basename $INFILE`_backup
+while [ -f $BACKUP_BASE$BACKUP_NR ]; do let BACKUP_NR=$BACKUP_NR+1 ; done
+mv $INFILE $BACKUP_BASE$BACKUP_NR
 mv $OUTFILE $INFILE
-echo "moved the original "$INFILE" to /tmp/"$INFILE".backup"
+echo "moved the original "$INFILE" to "$BACKUP_BASE$BACKUP_NR
 echo "polygon clearance was set to "$CLEAR_DISTANCE" mm."
 echo "mask clearance was set to "$MASK_DISTANCE" mm."
 
