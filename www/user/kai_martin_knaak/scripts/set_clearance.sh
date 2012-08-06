@@ -12,27 +12,58 @@
 # published by the Free Software Foundation. 
 # For details see http://www.gnu.org/licenses/gpl.txt
 
-
 help () {
-    echo "Usage: "$0" <--help> foobar.pcb"
-    echo "This script uses awk to set polygon clearance and mask clearance of pads and pins."
-    echo "Clearance values are hard set in the preamble of this script." 
-    echo "Output replaces the file given by foobar.pcb"
-    echo "   --help : this help message"
+    echo "Usage: "$0" [-a|-b|-c] [-1|-2|-3] foobar.pcb"
+    echo "This script uses awk to set polygon clearance and solder stop mask"
+    echo "clearance for pads and pins. Output replaces the file given by foobar.pcb."
+    echo "A backup copy of the original is written to /tmp."
+    echo "Clearance distance can be chosen with options:"
+    echo "-a --> mask clearance 0.05 mm"
+    echo "-b --> mask clearance 0.1 mm"
+    echo "-c --> mask clearance 0.2 mm"
+    echo "-1 --> polygon clearance 0.2 mm"
+    echo "-2 --> polygon clearance 0.5 mm"
+    echo "-3 --> polygon clearance 1.0 mm"
+    echo "default is 0.1 mm for mask, 0.5 mm for polygons"
     exit 1;
 }
-
 [ $# -lt 1 ] && help
+if [ $1 = "-h" ]; then help; fi
+if [ $1 = "--help" ]; then help; fi
 
 
+POLY_DIST="1.0"
+MASK_DIST="0.1"
 
-echo "set mask clearance of pads"
+while getopts ":123abc" Option
+do
+  case $Option in
+    1     ) echo "polygon clearance 0.2 mm"; POLY_DIST="0.2" ;;
+    2     ) echo "polygon clearance 0.5 mm"; POLY_DIST="0.5" ;;
+    3     ) echo "polygon clearance 1.0 mm"; POLY_DIST="1.0" ;;
+    a     ) echo "mask clearance 0.05 mm"; MASK_DIST="0.05" ;;
+    a     ) echo "mask clearance 0.1 mm"; MASK_DIST="0.1" ;;
+    a     ) echo "mask clearance 0.2 mm"; MASK_DIST="0.2" ;;
+    *     ) echo "unknown option"; help; exit;                      # Default.
+  esac
+done
+shift $(($OPTIND - 1))   # go to next argument
 
-MASK_DISTANCE="0.1"               # solder stop distance mask to pin/pad in mm
-CLEAR_DISTANCE="1.0"              # polygon clearance to pin/pad in mm
 
-INFILE=$1
+if [ -f $1 ] 
+  then 
+    INFILE=$1 
+  else 
+    echo "file not found: "$1
+    exit 1
+  fi
 OUTFILE=/tmp/`basename $INFILE`"_tmp"
+
+#######################################################
+
+MASK_DISTANCE=$MASK_DIST           # solder stop distance mask to pin/pad in mm
+CLEAR_DISTANCE=$POLY_DIST          # polygon clearance to pin/pad in mm
+
 
 gawk -v filename="$OUTFILE" \
      -v mask_dist_mm="$MASK_DISTANCE" \
@@ -48,7 +79,7 @@ BEGIN { FS = "[ \\[\\]]+"   # field separator is space or tab or square bracket
    {
 
    ###################### pins ####################################
-   case /^\t?+Pin/ : {                              # if the current line is a pin
+   case /^\t?+Pin/ : {                            # if the current line is a pin
     ++numpins                                     # increment numpins
 
     ## parse the fourth argument

@@ -14,13 +14,15 @@ distribution, and unlimited for use. See
 <a href="http://www.gnu.org/licenses/gpl.txt">http://www.gnu.org/licenses.gpl.txt</a>
 for the details</p>
 
-<h2>New Project Script</h2>
+<h2>New Geda Project Script</h2>
 <a href="new_geda_project.sh">new_geda_project.sh</a> is a little convinience
-script to starting a new geda project. When given a project name, it creates
-a simple directory structure and populates it with some config files (gafrc,
+script to start a new geda project. When given a project name, it creates
+a directory structure and populates it with some config files (gafrc,
 attribs). In addition, it copies a <a href ="doku_template.lyx">
 documentation template</a> in lyx format to the directory. It does the same
-with the bash scripts bomdruck.sh and layoutdruck.sh (see below). 
+with the bash scripts bomdruck.sh and layoutdruck.sh (see below).
+
+The script includes an option to initialize a git repository for the project.
 
 <h2>Script to print a bill of materials (BOM)</h2>
 The almost trivial bash script <a href="bomdruck.sh">bomdruck.sh</a> uses
@@ -49,19 +51,22 @@ The bash script <a href="schaltplandruck.sh">schaltplandruck.sh</a> uses print.s
 from the gnetlist distribution and ps2pdf to create output. It recursively descends
 into subsheets of a hierarchy and collects prints every unique schematic it encounters.
 
-<h2>More convenience scripts</h2>
+<h2>More scripts</h2>
 <ol>  
 <li> <a href="set_pinnumber.awk">set_pinnumber.awk</a>: Emits the footprint file 
 given on the command line with the value of all pin and pad names set to the 
 value of their number. Requires awk.
 <li> <a href="set_name_value_description.sh">set_name_value_description.sh</a>:
-Sets name, value and description to the same string. I use this for footprint
+Sets name, value and description to the same string. I use this script for footprint
 collections in the library.
-<li> <a href="find-missing-symbols.sh">find-missing-symbols.sh</a>: Searches all 
-*.sch in $PWD and sub dirs for missing symbols.
+<li>  <a href="set_clearance.sh">set_clearance.sh</a>: Sets the polygon clearance
+and mask clearance of pins and pads. This is useful for footprint generation or
+to comply with specific fab requirements.
 <li> <a href="extract_footprints.sh">extract_footprints.sh</a>: Extracts all 
 footprints of a layout and writes them to individual files in the currrent 
 working directory.
+<li> <a href="find-missing-symbols.sh">find-missing-symbols.sh</a>: Searches all 
+*.sch in $PWD and sub dirs for missing symbols.
 <li> <a href="collect_gedaconfs.sh">collect_gedaconfs.sh</a>: Collects the
 config files in $HOME/.gEDA and $HOME/.pcb into a compressed tar file. The path
 to the color file is absolute. It contains the path to the home directory of
@@ -78,7 +83,7 @@ with a given refdes receives connection to the parent sheet.
 selected lines. Divides or multiplies line width by 10. This is useful to
 temporarily suppress DRC warnings.
 <li> <a href="layer_content.sh"> layer_content.sh</a>: Cut, or paste the content
-of a layer wholesale from a layout.
+of a layer wholesale from a layout. 
 </ol>
 
 <h3> Templates
@@ -91,7 +96,7 @@ of a layer wholesale from a layout.
 <h2>Essential Lib</h2>
 The <a href="essential/essential.html"> essential lib</a> is an effort to 
 put together an improved default library for geda/pcb. Unlike the current
-default it is supposed to be usable as is.
+default libary it is supposed to be usable as is.
 
 <h2>Symbols</h2>
 The symbols in this sections are designed according to the following design criteria:

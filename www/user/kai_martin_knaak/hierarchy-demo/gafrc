@@ -1,0 +1,10 @@
+(reset-component-library)   ; don't use system symbols
+(reset-source-library)      ; don't use system location for subcircuits
+
+; Source symbols from a symbols dir in the current working directory
+(define current-working-directory ".")
+(define symboldir (build-path current-working-directory "symbols"))
+(component-library symboldir "symbols in project dir")
+
+; Source susb sheets from the current working directory
+(source-library  current-working-directory)

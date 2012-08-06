@@ -6,7 +6,7 @@ FileVersion[20091103]
 PCB["RELAIS_FP2" 2000.00mil 4000.00mil]
 
 Grid[3937.007874 0.0000 0.0000 1]
-Cursor[1.0000mm 6.0000mm 0.000000]
+Cursor[22.0000mm 30.0000mm 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 10.00mil 6.00mil 6.00mil 15.00mil 10.00mil]
@@ -878,6 +878,14 @@ Element["" "RELAY_T7CV5D" "RELAY_T7CV5D" "RELAY_T7CV5D" 32.0000mm 27.0000mm -4.0
 	)
 Layer(1 "bottom")
 (
+	Polygon("clearpoly")
+	(
+		[14.0000mm 1.0000mm] [29.0000mm 1.0000mm] [29.0000mm 18.0000mm] [14.0000mm 18.0000mm] 
+	)
+	Polygon("clearpoly")
+	(
+		[26.0000mm 22.0000mm] [49.0000mm 22.0000mm] [49.0000mm 45.0000mm] [26.0000mm 45.0000mm] 
+	)
 )
 Layer(2 "bott.-poly.")
 (

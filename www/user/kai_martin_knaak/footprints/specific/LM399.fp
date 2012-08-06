@@ -1,16 +1,15 @@
-
-Element["" "" "" "" 102362 39370 0 0 0 100 ""]
+Element["" "LM399" "LM399" "LM399" 25.9999mm 393.70mil -2.0000mm -157.48mil 0 100 ""]
 (
-	Pin[-3621 -3464 5200 2000 6421 3500 "1" "1" "square"]
-	Pin[-3543 3543 5200 2000 6421 3500 "2" "2" ""]
-	Pin[3543 -3543 5200 2000 6421 3500 "4" "4" ""]
-	Pin[3543 3543 5200 2000 6421 3500 "3" "3" ""]
-	ElementLine [3937 -17323 3937 -20669 1000]
-	ElementLine [-3937 -17323 3937 -17323 1000]
-	ElementLine [-3937 -20669 -3937 -17323 1000]
-	ElementArc [0 0 21653 21653 270 90 1000]
-	ElementArc [-1 2 21655 21655 180 90 1000]
-	ElementArc [1 1 21653 21653 90 90 1000]
-	ElementArc [0 1 21653 21653 0 90 1000]
+Pin [-36.21mil -34.64mil 52.00mil 19.69mil 55.94mil 35.00mil "1" "1" "square"]
+Pin [-35.43mil 35.43mil 52.00mil 19.69mil 55.94mil 35.00mil "2" "2" ""]
+Pin [35.43mil -35.43mil 52.00mil 19.69mil 55.94mil 35.00mil "4" "4" ""]
+Pin [35.43mil 35.43mil 52.00mil 19.69mil 55.94mil 35.00mil "3" "3" ""]
+	ElementLine [-39.37mil -206.69mil -39.37mil -173.23mil 10.00mil]
+	ElementLine [-39.37mil -173.23mil 39.37mil -173.23mil 10.00mil]
+	ElementLine [39.37mil -173.23mil 39.37mil -206.69mil 10.00mil]
+	ElementArc [0.0000 0.01mil 216.53mil 216.53mil 0 90 10.00mil]
+	ElementArc [0.01mil 0.01mil 216.53mil 216.53mil 90 90 10.00mil]
+	ElementArc [-0.01mil 0.02mil 216.55mil 216.55mil 180 90 10.00mil]
+	ElementArc [0.0000 0.0000 216.53mil 216.53mil 270 90 10.00mil]
 
 	)

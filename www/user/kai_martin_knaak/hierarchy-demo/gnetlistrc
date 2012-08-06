@@ -1,0 +1,13 @@
+(hierarchy-traversal "enabled")
+
+(hierarchy-uref-mangle "enabled")
+(hierarchy-uref-separator "/")
+
+(hierarchy-netname-mangle "enabled")
+(hierarchy-netname-separator "/")
+
+(hierarchy-netattrib-mangle "disabled")
+(hierarchy-netattrib-separator "/")
+
+(unnamed-netname "noname")
+
