@@ -1,4 +1,4 @@
-Element["" "dio_1812" "dio_1812" "dio_1812" 15.0000mm 45.9999mm -157.48mil -137.80mil 0 100 ""]
+Element["" "dio_1812" "dio_1812" "dio_1812" 28.0000mm 79.0000mm -157.48mil -137.80mil 0 100 ""]
 (
 	Pad[-118.11mil -9.84mil -118.11mil 9.84mil 98.43mil 39.37mil 2.6002mm "cathode" "1" "square"]
 	Pad[118.11mil -9.84mil 118.11mil 9.85mil 98.42mil 39.37mil 102.36mil "anode" "2" "square,edge2"]
