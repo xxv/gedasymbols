@@ -6,7 +6,7 @@ FileVersion[20091103]
 PCB["JMP.pcb" 2500.00mil 5000.00mil]
 
 Grid[10000.000000 0.0000 0.0000 1]
-Cursor[0.0000 400.00mil 0.000000]
+Cursor[0.0000 500.00mil 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 4.00mil 8.00mil 5.99mil 15.00mil 10.00mil]
@@ -809,7 +809,7 @@ Via[5.0000mm 5.0000mm 67.00mil 20.00mil 75.00mil 35.00mil "1" ""]
 
 Element["" "JMP_1PIN" "JMP_1PIN" "JMP_1PIN" 14.0000mm 5.0000mm -50.00mil -100.00mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 67.00mil 20.00mil 75.00mil 35.00mil "1" "1" "square"]
+	Pin [0.0000 0.0000 67.00mil 39.37mil 70.94mil 35.00mil "1" "1" "square"]
 	ElementLine [40.00mil -40.00mil -40.00mil -40.00mil 10.00mil]
 	ElementLine [-40.00mil -40.00mil -40.00mil 40.00mil 10.00mil]
 	ElementLine [-40.00mil 40.00mil 40.00mil 40.00mil 10.00mil]
@@ -825,12 +825,12 @@ Element["" "JMP_default" "JMP_default" "JMP_default" 500.00mil 2500.00mil -25.00
 
 Element["" "JMP_3PIN_SMD" "JMP_3PIN_SMD" "JMP_3PIN_SMD" 14.0000mm 51.0000mm -2.5000mm -2.7500mm 0 100 ""]
 (
-	Pad[-55.12mil -15.76mil -55.12mil 15.74mil 34.37mil 32.00mil 38.37mil "2" "2" "square"]
-	Pad[-70.87mil -15.76mil -70.87mil 15.74mil 34.37mil 32.00mil 38.37mil "1" "1" "square"]
-	Pad[-7.88mil -15.76mil -7.88mil 15.74mil 34.37mil 32.00mil 38.37mil "2" "2" "square"]
-	Pad[7.87mil -15.76mil 7.87mil 15.74mil 34.37mil 32.00mil 38.37mil "2" "2" "square"]
-	Pad[55.11mil -15.75mil 55.11mil 15.75mil 34.37mil 32.00mil 38.37mil "3" "3" "square,edge2"]
-	Pad[70.86mil -15.75mil 70.86mil 15.75mil 34.37mil 32.00mil 38.37mil "3" "3" "edge2"]
+	Pad[-55.12mil -15.76mil -55.12mil 15.74mil 34.37mil 39.37mil 38.31mil "2" "2" "square"]
+	Pad[-70.87mil -15.76mil -70.87mil 15.74mil 34.37mil 39.37mil 38.31mil "1" "1" "square"]
+	Pad[-7.88mil -15.76mil -7.88mil 15.74mil 34.37mil 39.37mil 38.31mil "2" "2" "square"]
+	Pad[7.87mil -15.76mil 7.87mil 15.74mil 34.37mil 39.37mil 38.31mil "2" "2" "square"]
+	Pad[55.11mil -15.75mil 55.11mil 15.75mil 34.37mil 39.37mil 38.31mil "3" "3" "square,edge2"]
+	Pad[70.86mil -15.75mil 70.86mil 15.75mil 34.37mil 39.37mil 38.31mil "3" "3" "edge2"]
 	ElementLine [-2.4000mm -1.0000mm 1.9997mm -0.9997mm 7.87mil]
 	ElementLine [-2.4000mm 1.0000mm -2.4000mm -1.0000mm 7.87mil]
 	ElementLine [78.73mil 39.37mil -2.4000mm 1.0000mm 7.87mil]
@@ -842,10 +842,10 @@ Element["" "JMP_3PIN_SMD" "JMP_3PIN_SMD" "JMP_3PIN_SMD" 14.0000mm 51.0000mm -2.5
 
 Element["" "JMP_SMD" "JMP_SMD" "JMP_SMD" 14.0000mm 38.0000mm -1.5000mm -2.7500mm 0 100 ""]
 (
-	Pad[23.62mil -15.75mil 23.62mil 15.75mil 34.37mil 32.00mil 38.37mil "2" "2" "square"]
-	Pad[39.37mil -15.75mil 39.37mil 15.75mil 34.37mil 32.00mil 38.37mil "2" "2" ""]
-	Pad[-23.62mil -15.75mil -23.62mil 15.75mil 34.37mil 32.00mil 38.37mil "1" "1" "square"]
-	Pad[-39.37mil -15.75mil -39.37mil 15.75mil 34.37mil 32.00mil 38.37mil "1" "1" "square"]
+	Pad[23.62mil -15.75mil 23.62mil 15.75mil 34.37mil 39.37mil 38.31mil "2" "2" "square"]
+	Pad[39.37mil -15.75mil 39.37mil 15.75mil 34.37mil 39.37mil 38.31mil "2" "2" ""]
+	Pad[-23.62mil -15.75mil -23.62mil 15.75mil 34.37mil 39.37mil 38.31mil "1" "1" "square"]
+	Pad[-39.37mil -15.75mil -39.37mil 15.75mil 34.37mil 39.37mil 38.31mil "1" "1" "square"]
 	ElementLine [47.24mil 39.37mil -1.6000mm 1.0000mm 7.87mil]
 	ElementLine [-1.6000mm 1.0000mm -62.99mil -23.62mil 7.87mil]
 	ElementLine [-1.6000mm -1.0000mm 47.24mil -39.37mil 7.87mil]
@@ -858,8 +858,8 @@ Element["" "JMP_SMD" "JMP_SMD" "JMP_SMD" 14.0000mm 38.0000mm -1.5000mm -2.7500mm
 
 Element["" "JMP_2PIN" "JMP_2PIN" "JMP_2PIN" 14.0000mm 12.0000mm -2.5000mm -3.0000mm 0 100 ""]
 (
-	Pin[50.00mil 0.0000 77.00mil 20.00mil 85.00mil 35.00mil "2" "2" "edge2"]
-	Pin[-50.00mil 0.0000 77.00mil 20.00mil 85.00mil 35.00mil "1" "1" "square,edge2"]
+	Pin [50.00mil 0.0000 77.00mil 39.37mil 80.94mil 35.00mil "2" "2" "edge2"]
+	Pin [-50.00mil 0.0000 77.00mil 39.37mil 80.94mil 35.00mil "1" "1" "square,edge2"]
 	ElementLine [-2.5000mm -1.2500mm 2.5000mm -1.2500mm 0.2000mm]
 	ElementLine [2.5000mm -1.2500mm 2.5000mm 1.2500mm 0.2000mm]
 	ElementLine [2.5000mm 1.2500mm -2.5000mm 1.2500mm 0.2000mm]
@@ -870,9 +870,9 @@ Element["" "JMP_2PIN" "JMP_2PIN" "JMP_2PIN" 14.0000mm 12.0000mm -2.5000mm -3.000
 
 Element["" "JMP_3PIN" "JMP_3PIN" "JMP_3PIN" 14.0000mm 20.0000mm -3.7500mm -3.0000mm 0 100 ""]
 (
-	Pin[-100.00mil 0.0000 77.00mil 20.00mil 85.00mil 35.00mil "1" "1" "square,edge2"]
-	Pin[0.0000 0.0000 77.00mil 20.00mil 85.00mil 35.00mil "2" "2" "edge2"]
-	Pin[100.00mil 0.0000 77.00mil 20.00mil 85.00mil 35.00mil "3" "3" "edge2"]
+	Pin [-100.00mil 0.0000 77.00mil 39.37mil 80.94mil 35.00mil "1" "1" "square,edge2"]
+	Pin [0.0000 0.0000 77.00mil 39.37mil 80.94mil 35.00mil "2" "2" "edge2"]
+	Pin [100.00mil 0.0000 77.00mil 39.37mil 80.94mil 35.00mil "3" "3" "edge2"]
 	ElementLine [-3.7700mm -1.2500mm 3.7700mm -1.2500mm 0.2000mm]
 	ElementLine [3.7700mm 1.2500mm -3.7700mm 1.2500mm 0.2000mm]
 	ElementLine [-3.7700mm 1.2500mm -3.7700mm -1.2500mm 0.2000mm]
@@ -883,10 +883,10 @@ Element["" "JMP_3PIN" "JMP_3PIN" "JMP_3PIN" 14.0000mm 20.0000mm -3.7500mm -3.000
 
 Element["" "JMP_2x2PIN" "JMP_2x2PIN" "JMP_2x2PIN" 14.0000mm 29.0000mm -2.7500mm -4.2500mm 0 100 ""]
 (
-	Pin[-50.00mil -50.00mil 77.00mil 20.00mil 85.00mil 35.00mil "1" "1" "square"]
-	Pin[50.00mil -50.00mil 77.00mil 20.00mil 85.00mil 35.00mil "2" "2" ""]
-	Pin[50.00mil 50.00mil 77.00mil 20.00mil 85.00mil 35.00mil "4" "4" ""]
-	Pin[-50.00mil 50.00mil 77.00mil 20.00mil 85.00mil 35.00mil "3" "3" ""]
+	Pin [-50.00mil -50.00mil 77.00mil 39.37mil 80.94mil 35.00mil "1" "1" "square"]
+	Pin [50.00mil -50.00mil 77.00mil 39.37mil 80.94mil 35.00mil "2" "2" ""]
+	Pin [50.00mil 50.00mil 77.00mil 39.37mil 80.94mil 35.00mil "4" "4" ""]
+	Pin [-50.00mil 50.00mil 77.00mil 39.37mil 80.94mil 35.00mil "3" "3" ""]
 	ElementLine [-2.5000mm -2.5000mm -2.5000mm 2.5000mm 0.2000mm]
 	ElementLine [-2.5000mm -2.5000mm 2.5000mm -2.5000mm 0.2000mm]
 	ElementLine [-2.1500mm -2.5000mm -2.5000mm -2.1500mm 0.2000mm]

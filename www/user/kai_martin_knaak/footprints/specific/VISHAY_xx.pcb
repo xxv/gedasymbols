@@ -6,7 +6,7 @@ FileVersion[20091103]
 PCB["VISHAY_xx.pcb" 150.0000mm 200.0001mm]
 
 Grid[3937.007874 0.0000 0.0000 1]
-Cursor[142.0000mm 0.0000 0.000000]
+Cursor[0.0000 24.0000mm 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 10.00mil 6.00mil 6.00mil 15.00mil 10.00mil]

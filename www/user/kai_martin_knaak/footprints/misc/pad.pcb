@@ -798,14 +798,14 @@ Attribute("PCB::grid::unit" "mil")
 
 Element["" "pad_round" "pad_round" "pad_round" 12.0000mm 16.0000mm -39.37mil -118.11mil 0 100 ""]
 (
-	Pad[0.0000 0.0000 0.0000 0.0000 60.00mil 24.04mil 68.04mil "1" "1" ""]
+	Pad[0.0000 0.0000 0.0000 0.0000 60.00mil 39.37mil 63.94mil "1" "1" ""]
 	ElementArc [0.0000 0.0000 40.00mil 40.00mil 0 360 10.00mil]
 
 	)
 
 Element["" "pad_square" "pad_square" "pad_square" 12.0000mm 25.9999mm -39.37mil -118.11mil 0 100 ""]
 (
-	Pad[0.0000 0.0000 0.0000 0.0000 60.00mil 24.04mil 66.04mil "1" "1" "square"]
+	Pad[0.0000 0.0000 0.0000 0.0000 60.00mil 39.37mil 63.94mil "1" "1" "square"]
 	ElementLine [-40.00mil 40.00mil 40.00mil 40.00mil 8.00mil]
 	ElementLine [-40.00mil -40.00mil -40.00mil 40.00mil 8.00mil]
 	ElementLine [40.00mil 40.00mil 40.00mil -40.00mil 8.00mil]
@@ -815,28 +815,28 @@ Element["" "pad_square" "pad_square" "pad_square" 12.0000mm 25.9999mm -39.37mil 
 
 Element["" "pad_thru" "pad_thru" "pad_thru" 12.0000mm 33.9999mm -39.38mil -118.11mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 61.00mil 20.00mil 66.00mil 35.00mil "1" "1" ""]
+	Pin [0.0000 0.0000 61.00mil 39.37mil 64.94mil 35.00mil "1" "1" ""]
 	ElementArc [0.0000 0.0000 40.00mil 40.00mil 0 360 10.00mil]
 
 	)
 
 Element["" "pin_0.5mm" "pin_0.5mm" "pin_0.5mm" 12.0000mm 43.9999mm -39.37mil -118.11mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 59.05mil 39.36mil 65.05mil 23.62mil "1" "1" ""]
+	Pin [0.0000 0.0000 59.05mil 39.37mil 62.99mil 23.62mil "1" "1" ""]
 	ElementArc [0.0000 0.0000 40.00mil 40.00mil 0 360 10.00mil]
 
 	)
 
 Element["" "pin_1mm" "pin_1mm" "pin_1mm" 12.0000mm 53.9999mm -39.37mil -118.11mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 70.86mil 39.34mil 76.86mil 39.36mil "1" "1" ""]
+	Pin [0.0000 0.0000 70.86mil 39.37mil 74.80mil 39.36mil "1" "1" ""]
 	ElementArc [0.0000 0.0000 47.24mil 47.24mil 0 360 9.84mil]
 
 	)
 
 Element["" "pin_meas" "pin_meas" "pin_meas" 12.0000mm 63.9999mm -39.37mil -118.11mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 59.05mil 39.34mil 65.05mil 21.81mil "1" "1" ""]
+	Pin [0.0000 0.0000 59.05mil 39.37mil 62.99mil 21.81mil "1" "1" ""]
 	ElementArc [0.0000 0.0000 40.00mil 40.00mil 0 360 10.00mil]
 
 	)

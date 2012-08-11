@@ -1,7 +1,7 @@
 Element["" "LED_5mm" "LED_5mm" "LED_5mm" 1200.00mil 2050.00mil -100.00mil -190.00mil 0 100 ""]
 (
-	Pin[-50.00mil 0.0000 75.00mil 39.37mil 78.94mil 33.00mil "1" "1" "square"]
-	Pin[50.00mil 0.0000 80.00mil 39.37mil 83.94mil 33.00mil "2" "2" ""]
+	Pin [-50.00mil 0.0000 75.00mil 39.37mil 78.94mil 33.00mil "1" "1" "square"]
+	Pin [50.00mil 0.0000 80.00mil 39.37mil 83.94mil 33.00mil "2" "2" ""]
 	ElementLine [-5.00mil 5.00mil 10.00mil 5.00mil 10.00mil]
 	ElementLine [-5.00mil -5.00mil 10.00mil -5.00mil 10.00mil]
 	ElementLine [15.00mil -20.00mil -15.00mil 0.0000 10.00mil]

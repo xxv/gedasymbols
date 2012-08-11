@@ -6,11 +6,11 @@ FileVersion[20091103]
 PCB["inductors.pcb" 3000.00mil 3000.00mil]
 
 Grid[10000.000000 0.0000 0.0000 1]
-Cursor[2800.00mil 0.0000 0.000000]
+Cursor[0.0000 2200.00mil 0.000000]
 PolyArea[3100.006200]
 Thermal[0.500000]
 DRC[0.2000mm 0.1000mm 0.2500mm 0.2000mm 0.3000mm 0.3000mm]
-Flags("nameonpcb,uniquename,clearnew,snappin")
+Flags("nameonpcb,uniquename,clearnew,snappin,showmask")
 Groups("1,c:2,s:3")
 Styles["Signal,10.00mil,36.00mil,20.00mil,10.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,40.00mil,1.5000mm,0.8000mm,0.5000mm:Skinny,6.00mil,24.02mil,11.81mil,6.00mil"]
 
@@ -824,6 +824,10 @@ Element["" "ind_400mil" "ind_400mil" "ind_400mil" 700.00mil 1000.00mil 0.0000 -1
 	)
 Layer(1 "top")
 (
+	Polygon("clearpoly")
+	(
+		[600.00mil 500.00mil] [1200.00mil 500.00mil] [1200.00mil 1200.00mil] [600.00mil 1200.00mil] 
+	)
 )
 Layer(2 "bottom")
 (

@@ -6,11 +6,11 @@ FileVersion[20091103]
 PCB["LEDs.pcb" 1181.10mil 1181.10mil]
 
 Grid[1968.000000 0.0000 0.0000 1]
-Cursor[0.0000 19.68mil 0.000000]
+Cursor[19.68mil 295.20mil 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[5.98mil 10.00mil 6.00mil 6.00mil 15.00mil 10.00mil]
-Flags("rubberband,nameonpcb,alldirection,uniquename,clearnew,snappin")
+Flags("rubberband,nameonpcb,alldirection,uniquename,clearnew,snappin,showmask")
 Groups("1,2,3,c:4,5,6,s:7:8")
 Styles["Signal,11.81mil,36.00mil,20.00mil,10.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,39.37mil,2.0000mm,39.37mil,39.37mil:Skinny,6.00mil,24.02mil,11.81mil,6.00mil"]
 
@@ -796,12 +796,12 @@ Symbol['~' 12.00mil]
 )
 Attribute("PCB::grid::unit" "mil")
 
-Element["" "" "LTST-C155" "" 16.0000mm 17.0000mm -39.36mil 98.43mil 0 100 ""]
+Element["" "LTST-C155" "LTST-C155" "LTST-C155" 16.0000mm 17.0000mm -39.36mil 98.43mil 0 100 ""]
 (
-	Pad[-15.75mil 0.0000 11.81mil 0.0000 39.37mil 82.74mil 50.11mil "1" "1" "square"]
-	Pad[-15.75mil 59.06mil 11.81mil 59.06mil 39.37mil 82.74mil 50.11mil "2" "2" "square"]
-	Pad[129.92mil 0.0000 157.48mil 0.0000 39.37mil 82.74mil 50.11mil "3" "3" "square,edge2"]
-	Pad[129.93mil 59.06mil 157.48mil 59.06mil 39.37mil 82.74mil 50.11mil "4" "4" "square,edge2"]
+	Pad[-15.75mil 0.0000 11.81mil 0.0000 39.37mil 39.37mil 43.31mil "1" "1" "square"]
+	Pad[-15.75mil 59.06mil 11.81mil 59.06mil 39.37mil 39.37mil 43.31mil "2" "2" "square"]
+	Pad[129.92mil 0.0000 157.48mil 0.0000 39.37mil 39.37mil 43.31mil "3" "3" "square,edge2"]
+	Pad[129.93mil 59.06mil 157.48mil 59.06mil 39.37mil 39.37mil 43.31mil "4" "4" "square,edge2"]
 	ElementLine [39.37mil 27.56mil 39.37mil -27.56mil 11.81mil]
 	ElementLine [-43.31mil 27.56mil 39.37mil 27.56mil 11.81mil]
 	ElementLine [-43.31mil 86.61mil -43.31mil -27.56mil 11.81mil]

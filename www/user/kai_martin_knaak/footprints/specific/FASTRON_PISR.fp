@@ -1,7 +1,7 @@
 Element["" "FASTRON_PISR" "FASTRON_PISR" "FASTRON_PISR" 800.00mil 1200.00mil -150.00mil -50.00mil 0 100 ""]
 (
-	Pad[350.00mil 0.0000 350.00mil 0.0000 195.00mil 19.69mil 198.94mil "2" "2" "square,edge2"]
-	Pad[-350.00mil 0.0000 -350.00mil 0.0000 195.00mil 19.69mil 198.94mil "1" "1" "square"]
+	Pad[350.00mil 0.0000 350.00mil 0.0000 195.00mil 39.37mil 198.94mil "2" "2" "square,edge2"]
+	Pad[-350.00mil 0.0000 -350.00mil 0.0000 195.00mil 39.37mil 198.94mil "1" "1" "square"]
 	ElementLine [-290.00mil 110.00mil -150.00mil 200.00mil 25.00mil]
 	ElementLine [150.00mil 200.00mil 290.00mil 110.00mil 25.00mil]
 	ElementLine [290.00mil -110.00mil 170.00mil -180.00mil 25.00mil]

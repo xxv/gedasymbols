@@ -1,9 +1,9 @@
 Element["" "DIOTEC_BXXD" "DIOTEC_BXXD" "DIOTEC_BXXD" 1200.00mil 2600.00mil -137.01mil 195.28mil 0 100 ""]
 (
-	Pin [-150.00mil -100.00mil 80.00mil 19.69mil 83.94mil 27.56mil "1" "1" "edge2"]
-	Pin [150.00mil -100.00mil 85.00mil 19.69mil 88.94mil 27.56mil "4" "4" "edge2"]
-	Pin [150.00mil 100.00mil 85.00mil 19.69mil 88.94mil 27.56mil "3" "3" "edge2"]
-	Pin [-150.00mil 100.00mil 85.00mil 19.69mil 88.94mil 27.56mil "2" "2" "edge2"]
+	Pin [-150.00mil -100.00mil 80.00mil 39.37mil 83.94mil 27.56mil "1" "1" "edge2"]
+	Pin [150.00mil -100.00mil 85.00mil 39.37mil 88.94mil 27.56mil "4" "4" "edge2"]
+	Pin [150.00mil 100.00mil 85.00mil 39.37mil 88.94mil 27.56mil "3" "3" "edge2"]
+	Pin [-150.00mil 100.00mil 85.00mil 39.37mil 88.94mil 27.56mil "2" "2" "edge2"]
 	ElementLine [75.00mil 100.00mil 25.00mil 100.00mil 10.00mil]
 	ElementLine [-125.00mil 50.00mil -125.00mil -50.00mil 10.00mil]
 	ElementLine [-125.00mil 175.00mil -125.00mil 150.00mil 10.00mil]

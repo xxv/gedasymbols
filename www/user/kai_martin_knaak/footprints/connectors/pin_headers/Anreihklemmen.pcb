@@ -6,11 +6,11 @@ FileVersion[20091103]
 PCB["Anreihklemmen" 100.0000mm 200.0000mm]
 
 Grid[3937.007874 0.0000 0.0000 1]
-Cursor[0.0000 12.0000mm 0.000000]
+Cursor[9.0000mm 0.0000 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 10.00mil 6.00mil 6.00mil 15.00mil 10.00mil]
-Flags("nameonpcb,clearnew,snappin")
+Flags("nameonpcb,clearnew,snappin,showmask")
 Groups("1,2,3,c:4,5,6,s:7:8")
 Styles["Signal,10.00mil,118.11mil,59.06mil,19.69mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,40.00mil,60.00mil,35.00mil,10.00mil:Skinny,6.00mil,24.02mil,11.81mil,6.00mil"]
 
@@ -813,8 +813,8 @@ Via[10.0000mm 100.9999mm 118.11mil 39.38mil 0.0000 59.06mil "5" ""]
 
 Element["" "AKL_2PIN" "AKL_2PIN" "AKL_2PIN" 27.9999mm 12.0000mm -157.48mil -196.85mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 118.11mil 39.38mil 124.11mil 59.06mil "1" "1" "square"]
-	Pin[0.0000 5.0000mm 118.11mil 39.38mil 124.11mil 59.06mil "2" "2" ""]
+	Pin [0.0000 0.0000 118.11mil 39.37mil 122.05mil 59.06mil "1" "1" "square"]
+	Pin [0.0000 5.0000mm 118.11mil 39.37mil 122.05mil 59.06mil "2" "2" ""]
 	ElementLine [-157.48mil 8.0000mm -157.48mil -118.11mil 25.00mil]
 	ElementLine [-157.48mil -118.11mil 7.0000mm -118.11mil 25.00mil]
 	ElementLine [7.0000mm -118.11mil 7.0000mm 8.0000mm 25.00mil]
@@ -829,9 +829,9 @@ Element["" "AKL_2PIN" "AKL_2PIN" "AKL_2PIN" 27.9999mm 12.0000mm -157.48mil -196.
 
 Element["" "AKL_3PIN" "AKL_3PIN" "AKL_3PIN" 27.9999mm 30.9999mm -157.48mil -196.85mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 118.11mil 39.38mil 124.11mil 59.06mil "1" "1" ""]
-	Pin[0.0000 5.0000mm 118.11mil 39.38mil 124.11mil 59.06mil "2" "2" ""]
-	Pin[0.0000 10.0000mm 118.11mil 39.38mil 124.11mil 59.06mil "3" "3" ""]
+	Pin [0.0000 0.0000 118.11mil 39.37mil 122.05mil 59.06mil "1" "1" ""]
+	Pin [0.0000 5.0000mm 118.11mil 39.37mil 122.05mil 59.06mil "2" "2" ""]
+	Pin [0.0000 10.0000mm 118.11mil 39.37mil 122.05mil 59.06mil "3" "3" ""]
 	ElementLine [-4.0001mm 13.0000mm -157.48mil -118.11mil 25.00mil]
 	ElementLine [-157.48mil -118.11mil 7.0000mm -118.11mil 25.00mil]
 	ElementLine [7.0000mm -118.11mil 6.9999mm 13.0000mm 25.00mil]
@@ -847,10 +847,10 @@ Element["" "AKL_3PIN" "AKL_3PIN" "AKL_3PIN" 27.9999mm 30.9999mm -157.48mil -196.
 
 Element["" "AKL_4PIN" "AKL_4PIN" "AKL_4PIN" 27.9999mm 53.9999mm -157.48mil -196.85mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 118.11mil 39.38mil 124.11mil 59.06mil "1" "1" ""]
-	Pin[0.0000 5.0000mm 118.11mil 39.38mil 124.11mil 59.06mil "2" "2" ""]
-	Pin[0.0000 10.0000mm 118.11mil 39.38mil 124.11mil 59.06mil "3" "3" ""]
-	Pin[0.0000 15.0001mm 118.11mil 39.38mil 124.11mil 59.06mil "4" "4" ""]
+	Pin [0.0000 0.0000 118.11mil 39.37mil 122.05mil 59.06mil "1" "1" ""]
+	Pin [0.0000 5.0000mm 118.11mil 39.37mil 122.05mil 59.06mil "2" "2" ""]
+	Pin [0.0000 10.0000mm 118.11mil 39.37mil 122.05mil 59.06mil "3" "3" ""]
+	Pin [0.0000 15.0001mm 118.11mil 39.37mil 122.05mil 59.06mil "4" "4" ""]
 	ElementLine [-3.9999mm 18.0001mm -157.48mil -118.11mil 25.00mil]
 	ElementLine [-157.48mil -118.11mil 7.0000mm -118.11mil 25.00mil]
 	ElementLine [7.0000mm -118.11mil 6.9998mm 18.0001mm 25.00mil]
@@ -867,11 +867,11 @@ Element["" "AKL_4PIN" "AKL_4PIN" "AKL_4PIN" 27.9999mm 53.9999mm -157.48mil -196.
 
 Element["" "AKL_5PIN" "AKL_5PIN" "AKL_5PIN" 27.9999mm 80.9998mm -157.48mil -196.85mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 118.11mil 39.38mil 124.11mil 59.06mil "1" "1" ""]
-	Pin[0.0000 5.0000mm 118.11mil 39.38mil 124.11mil 59.06mil "2" "2" ""]
-	Pin[0.0000 10.0000mm 118.11mil 39.38mil 124.11mil 59.06mil "3" "3" ""]
-	Pin[0.0000 15.0001mm 118.11mil 39.38mil 124.11mil 59.06mil "4" "4" ""]
-	Pin[0.0000 20.0001mm 118.11mil 39.38mil 124.11mil 59.06mil "5" "5" ""]
+	Pin [0.0000 0.0000 118.11mil 39.37mil 122.05mil 59.06mil "1" "1" ""]
+	Pin [0.0000 5.0000mm 118.11mil 39.37mil 122.05mil 59.06mil "2" "2" ""]
+	Pin [0.0000 10.0000mm 118.11mil 39.37mil 122.05mil 59.06mil "3" "3" ""]
+	Pin [0.0000 15.0001mm 118.11mil 39.37mil 122.05mil 59.06mil "4" "4" ""]
+	Pin [0.0000 20.0001mm 118.11mil 39.37mil 122.05mil 59.06mil "5" "5" ""]
 	ElementLine [-3.9999mm 23.0001mm -157.48mil -118.11mil 25.00mil]
 	ElementLine [-157.48mil -118.11mil 7.0000mm -118.11mil 25.00mil]
 	ElementLine [7.0000mm -118.11mil 6.9999mm 23.0001mm 25.00mil]
@@ -888,6 +888,10 @@ Element["" "AKL_5PIN" "AKL_5PIN" "AKL_5PIN" 27.9999mm 80.9998mm -157.48mil -196.
 	)
 Layer(1 "top")
 (
+	Polygon("clearpoly")
+	(
+		[21.0000mm 5.0000mm] [43.0000mm 5.0000mm] [43.0000mm 115.0000mm] [21.0000mm 115.0000mm] 
+	)
 )
 Layer(2 "top.-poly.")
 (

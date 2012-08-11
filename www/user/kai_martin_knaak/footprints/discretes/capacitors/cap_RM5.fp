@@ -1,10 +1,10 @@
-Element["" "cap_RM5" "cap_RM5" "cap_RM5" 70000 130000 -14000 6000 0 100 ""]
+Element["" "cap_RM5" "cap_RM5" "cap_RM5" 700.00mil 1300.00mil -140.00mil 60.00mil 0 100 ""]
 (
-	Pin[10000 0 7700 2000 8502 3000 "2" "2" "edge2"]
-	Pin[-10000 0 7700 2000 8502 3000 "1" "1" "square,edge2"]
-	ElementLine [1500 -5000 1500 5000 1000]
-	ElementLine [-1500 5000 -1500 -5000 1000]
-	ElementLine [1500 0 5000 0 1000]
-	ElementLine [-5000 0 -1500 0 1000]
+	Pin [100.00mil 0.0000 77.00mil 39.37mil 80.94mil 30.00mil "2" "2" "edge2"]
+	Pin [-100.00mil 0.0000 77.00mil 39.37mil 80.94mil 30.00mil "1" "1" "square,edge2"]
+	ElementLine [15.00mil -50.00mil 15.00mil 50.00mil 10.00mil]
+	ElementLine [-15.00mil 50.00mil -15.00mil -50.00mil 10.00mil]
+	ElementLine [15.00mil 0.0000 50.00mil 0.0000 10.00mil]
+	ElementLine [-50.00mil 0.0000 -15.00mil 0.0000 10.00mil]
 
 	)

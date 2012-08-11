@@ -1,6 +1,6 @@
 Element["" "tvs_1812" "tvs_1812" "tvs_1812" 28.0000mm 86.0000mm -167.33mil -137.80mil 0 100 ""]
 (
-	Pad[-118.11mil -9.84mil -118.11mil 9.84mil 98.43mil 39.37mil 2.6002mm "1" "1" "square"]
+	Pad[-118.11mil -9.84mil -118.11mil 9.84mil 98.43mil 39.37mil 102.37mil "1" "1" "square"]
 	Pad[118.11mil -9.84mil 118.11mil 9.85mil 98.42mil 39.37mil 102.36mil "2" "2" "square,edge2"]
 	ElementLine [-157.48mil -2.0000mm 177.17mil -2.0000mm 8.00mil]
 	ElementLine [-177.16mil -59.05mil -157.48mil -2.0000mm 7.87mil]

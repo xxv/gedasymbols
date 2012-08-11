@@ -1,7 +1,7 @@
 Element["" "dio_1210" "dio_1210" "dio_1210" 28.0000mm 71.0000mm -118.11mil -137.80mil 0 100 ""]
 (
-	Pad[2.0000mm -19.68mil 2.0000mm 19.69mil 84.80mil 39.37mil 2.2540mm "anode" "2" "square,edge2"]
-	Pad[-2.0000mm -19.68mil -2.0000mm 19.69mil 84.80mil 39.37mil 2.2540mm "cathode" "1" "square,edge2"]
+	Pad[2.0000mm -19.68mil 2.0000mm 19.69mil 84.80mil 39.37mil 88.74mil "anode" "2" "square,edge2"]
+	Pad[-2.0000mm -19.68mil -2.0000mm 19.69mil 84.80mil 39.37mil 88.74mil "cathode" "1" "square,edge2"]
 	ElementLine [-137.79mil -59.05mil -118.11mil -2.0000mm 8.00mil]
 	ElementLine [-137.79mil 2.0000mm -137.79mil -59.05mil 8.00mil]
 	ElementLine [137.80mil 2.0000mm -137.79mil 2.0000mm 8.00mil]

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # A convenience script that uses awk to set the mask clearance of pads
 # and pins to sensible values.
 # Note: This script is resilient with regards to additional leading tabs.

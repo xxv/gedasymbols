@@ -1,7 +1,7 @@
 Element["" "res_socket" "res_socket" "res_socket" 800.00mil 4000.00mil -125.00mil -25.00mil 1 100 ""]
 (
-	Pin[0.0000 -400.00mil 88.43mil 39.37mil 94.43mil 39.37mil "2" "2" ""]
-	Pin[0.0000 0.0000 88.43mil 39.37mil 94.43mil 39.37mil "1" "1" "square"]
+	Pin [0.0000 -400.00mil 88.43mil 39.37mil 92.37mil 39.37mil "2" "2" ""]
+	Pin [0.0000 0.0000 88.43mil 39.37mil 92.37mil 39.37mil "1" "1" "square"]
 	ElementLine [-60.00mil 60.00mil -60.00mil -60.00mil 10.00mil]
 	ElementLine [60.00mil 60.00mil -60.00mil 60.00mil 10.00mil]
 	ElementLine [60.00mil -60.00mil 60.00mil 60.00mil 10.00mil]

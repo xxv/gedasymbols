@@ -1,8 +1,8 @@
 Element["" "VISHAY_T93YB" "VISHAY_T93YB" "VISHAY_T93YB" 1500.00mil 2000.00mil -50.00mil -175.00mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 70.00mil 20.00mil 80.00mil 35.00mil "1" "1" "square"]
-	Pin[0.0000 200.00mil 70.00mil 20.00mil 80.00mil 35.00mil "3" "3" ""]
-	Pin[100.00mil 100.00mil 70.00mil 20.00mil 80.00mil 35.00mil "2" "2" ""]
+	Pin [0.0000 0.0000 70.00mil 39.37mil 73.94mil 35.00mil "1" "1" "square"]
+	Pin [0.0000 200.00mil 70.00mil 39.37mil 73.94mil 35.00mil "3" "3" ""]
+	Pin [100.00mil 100.00mil 70.00mil 39.37mil 73.94mil 35.00mil "2" "2" ""]
 	ElementLine [60.00mil -50.00mil 100.00mil -10.00mil 25.00mil]
 	ElementLine [10.00mil 70.00mil -10.00mil 70.00mil 10.00mil]
 	ElementLine [10.00mil 140.00mil -10.00mil 140.00mil 10.00mil]

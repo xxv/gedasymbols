@@ -1,14 +1,13 @@
-
-Element["" "" "1x5PIN" "" 125984 381890 -3937 -11811 0 100 ""]
+Element["" "1x5PIN" "1x5PIN" "1x5PIN" 31.9999mm 3818.90mil -39.37mil -118.11mil 0 100 ""]
 (
-	Pin[20000 0 8100 2800 9700 4600 "3" "3" "edge2"]
-	Pin[10000 0 8100 2800 9700 4600 "2" "2" "edge2"]
-	Pin[40000 0 8100 2800 9700 4600 "5" "5" "edge2"]
-	Pin[30000 0 8100 2800 9700 4600 "4" "4" "edge2"]
-	Pin[0 0 8100 2800 9700 4600 "1" "1" "square,edge2"]
-	ElementLine [45276 -4922 45276 4921 1000]
-	ElementLine [-4921 -4922 45276 -4922 1000]
-	ElementLine [-4921 4921 -4921 -4922 1000]
-	ElementLine [45276 4921 -4921 4921 1000]
+	Pin [200.00mil 0.0000 81.00mil 39.37mil 84.94mil 46.00mil "3" "3" "edge2"]
+	Pin [100.00mil 0.0000 81.00mil 39.37mil 84.94mil 46.00mil "2" "2" "edge2"]
+	Pin [400.00mil 0.0000 81.00mil 39.37mil 84.94mil 46.00mil "5" "5" "edge2"]
+	Pin [300.00mil 0.0000 81.00mil 39.37mil 84.94mil 46.00mil "4" "4" "edge2"]
+	Pin [0.0000 0.0000 81.00mil 39.37mil 84.94mil 46.00mil "1" "1" "square,edge2"]
+	ElementLine [452.76mil 49.21mil -49.21mil 49.21mil 10.00mil]
+	ElementLine [-49.21mil 49.21mil -49.21mil -49.22mil 10.00mil]
+	ElementLine [-49.21mil -49.22mil 452.76mil -49.22mil 10.00mil]
+	ElementLine [452.76mil -49.22mil 452.76mil 49.21mil 10.00mil]
 
 	)

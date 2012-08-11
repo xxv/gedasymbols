@@ -1,9 +1,9 @@
 Element["" "DIOTEC_BXXS" "DIOTEC_BXXS" "DIOTEC_BXXS" 1181.10mil 15.0000mm -118.11mil 196.85mil 0 100 ""]
 (
-	Pad[-228.34mil 102.36mil -161.42mil 102.36mil 65.00mil 19.69mil 68.94mil "2" "2" "square"]
-	Pad[-228.34mil -98.43mil -161.42mil -98.43mil 65.00mil 19.69mil 68.94mil "1" "1" "square"]
-	Pad[153.56mil -98.43mil 220.48mil -98.43mil 65.00mil 19.69mil 68.94mil "4" "4" "square,edge2"]
-	Pad[153.56mil 102.36mil 220.48mil 102.36mil 65.00mil 19.69mil 68.94mil "3" "3" "square,edge2"]
+	Pad[-228.34mil 102.36mil -161.42mil 102.36mil 65.00mil 39.37mil 68.94mil "2" "2" "square"]
+	Pad[-228.34mil -98.43mil -161.42mil -98.43mil 65.00mil 39.37mil 68.94mil "1" "1" "square"]
+	Pad[153.56mil -98.43mil 220.48mil -98.43mil 65.00mil 39.37mil 68.94mil "4" "4" "square,edge2"]
+	Pad[153.56mil 102.36mil 220.48mil 102.36mil 65.00mil 39.37mil 68.94mil "3" "3" "square,edge2"]
 	ElementLine [106.30mil -161.42mil -114.17mil -161.42mil 10.00mil]
 	ElementLine [86.61mil -98.43mil 47.24mil -98.43mil 10.00mil]
 	ElementLine [106.30mil 165.35mil 106.30mil -161.42mil 10.00mil]
