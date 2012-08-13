@@ -1,0 +1,29 @@
+From f6cd4c8b79153886ceb4dd614538cfe5b9aa2863 Mon Sep 17 00:00:00 2001
+From: Kai-Martin Knaak <kmk@lilalaser.de>
+Date: Mon, 13 Aug 2012 01:06:21 +0200
+Subject: [PATCH] set default names of silk layers Currently, the names of the
+ two silk layers are set to the exact same value. This patch
+ set their name to "top silk" and "bottom silk".
+
+---
+ src/create.c |    4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/create.c b/src/create.c
+index 9ed7caa..dd25ee5 100644
+--- a/src/create.c
++++ b/src/create.c
+@@ -223,8 +223,8 @@ CreateNewPCBPost (PCBType *pcb, int use_defaults)
+       if (ParseGroupString (Settings.Groups, &pcb->LayerGroups, DEF_LAYER))
+ 	return 1;
+ 
+-      pcb->Data->Layer[component_silk_layer].Name = strdup ("silk");
+-      pcb->Data->Layer[solder_silk_layer].Name = strdup ("silk");
++      pcb->Data->Layer[component_silk_layer].Name = strdup ("top silk");
++      pcb->Data->Layer[solder_silk_layer].Name = strdup ("bottom silk");
+     }
+   return 0;
+ }
+-- 
+1.7.10.4
+

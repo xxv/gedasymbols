@@ -2,7 +2,7 @@
 # A convenience script that uses awk to set the mask clearance of pads
 # and pins to sensible values.
 # Note: This script is resilient with regards to additional leading tabs.
-# It chokes on leading spaces, though.
+# It chokes on leading spaces, though. It requires gawk, bash and basename.
 ######################################################-<)kmk(>-(2011-2012)
 
 # This program is copyright (C) 2012, Kai-Martin Knaak
@@ -13,9 +13,9 @@
 # For details see http://www.gnu.org/licenses/gpl.txt
 
 help () {
-    echo "Usage: "$0" [-a|-b|-c] [-1|-2|-3] foobar.pcb"
+    echo -e \\n"Usage: set_clearance.sh [-a|-b|-c] [-1|-2|-3] foobar"
     echo "This script uses awk to set polygon clearance and solder stop mask"
-    echo "clearance for pads and pins. Output replaces the file given by foobar.pcb."
+    echo "clearance for pads and pins. Output replaces the file given by foobar."
     echo "A backup copy of the original is written to /tmp."
     echo "Clearance distance can be chosen with options:"
     echo "-a --> mask clearance 0.05 mm"
@@ -91,14 +91,19 @@ BEGIN { FS = "[ \\[\\]]+"   # field separator is space or tab or square bracket
        mask_dist = mask_dist_mil
        clear_dist = clear_dist_mil
        }
-    if ( unit == "mm" ){
+    else if ( unit == "mm" ){
        mask_dist = mask_dist_mm
        clear_dist = clear_dist_mm
        }
-    if ( unit == "" ){
+    else if ( unit == "" ){
        printf("pin width with no unit encountered: %s --> stop.\n", $4);
        print $0
-       exit;
+       exit 1;
+       }
+     else {
+       printf("pin width with unknown unit encountered: %s --> stop.\n", unit);
+       print $0
+       exit 1;
        }
 
     mask = pinwidth[1] + mask_dist ;
@@ -121,14 +126,20 @@ BEGIN { FS = "[ \\[\\]]+"   # field separator is space or tab or square bracket
        mask_dist = mask_dist_mil
        clear_dist = clear_dist_mil
        }
-    if ( unit == "mm" ){
+    else if ( unit == "mm" ){
        mask_dist = mask_dist_mm
        clear_dist = clear_dist_mm
        }
-    if ( unit == "" ){
-       printf("pad width with no unit encountered: %s --> stop.\n", $4);
-       exit;
+    else if ( unit == "" ){
+       printf("pad width with no unit encountered: %s --> stop.\n", $6);
+       exit 1;
        }
+    else {
+       printf("pad width with unknown unit encountered: %s --> stop.\n", unit);
+       print $0
+       exit 1;
+       }
+
 
     mask = padwidth[1] + mask_dist ;
     clear = clear_dist ;
@@ -152,13 +163,31 @@ END {
   printf("number of pins found in layout: %s\n", numpins)
   }
 ' $INFILE
+AWK_EXITSTATUS=$?
 
-BACKUP_NR=0
-BACKUP_BASE=/tmp/`basename $INFILE`_backup
-while [ -f $BACKUP_BASE$BACKUP_NR ]; do let BACKUP_NR=$BACKUP_NR+1 ; done
-mv $INFILE $BACKUP_BASE$BACKUP_NR
-mv $OUTFILE $INFILE
-echo "moved the original "$INFILE" to "$BACKUP_BASE$BACKUP_NR
-echo "polygon clearance was set to "$CLEAR_DISTANCE" mm."
-echo "mask clearance was set to "$MASK_DISTANCE" mm."
 
+################################################ save and report errors
+if [ $AWK_EXITSTATUS == "0" ] 
+  then {
+    BACKUP_NR=0
+    BACKUP_BASE=/tmp/`basename $INFILE`_backup
+    while [ -f $BACKUP_BASE$BACKUP_NR ]; do let BACKUP_NR=$BACKUP_NR+1 ; done
+    mv $INFILE $BACKUP_BASE$BACKUP_NR
+    mv $OUTFILE $INFILE
+    echo "moved the original "$INFILE" to "$BACKUP_BASE$BACKUP_NR
+    echo "polygon clearance was set to "$CLEAR_DISTANCE" mm."
+    echo "mask clearance was set to "$MASK_DISTANCE" mm."
+    }
+  fi
+
+if [ $AWK_EXITSTATUS == "1" ] 
+  then {
+    echo "The awk script could not parse the unit of an item. No file was changed."
+    } 
+  fi
+
+if [ $AWK_EXITSTATUS == "2" ] 
+  then {
+    echo "The awk script exited with errors. No file was changed."
+    } 
+  fi

@@ -1,0 +1,21 @@
+From 069f00ade324c13f2eb1322db8caafb2cf8446e1 Mon Sep 17 00:00:00 2001
+From: Kai-Martin Knaak <kmk@lilalaser.de>
+Date: Mon, 13 Aug 2012 00:54:15 +0200
+Subject: [PATCH] add to src/.gitignore
+
+---
+ src/.gitignore |    1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/.gitignore b/src/.gitignore
+index 0966282..737e422 100644
+--- a/src/.gitignore
++++ b/src/.gitignore
+@@ -14,3 +14,4 @@ pcb.exe
+ pcb_icon.ico
+ gpcb-menu.res
+ pcb-menu.res
++parse_y.output
+-- 
+1.7.10.4
+

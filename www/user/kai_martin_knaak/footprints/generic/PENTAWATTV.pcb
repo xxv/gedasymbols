@@ -6,11 +6,11 @@ FileVersion[20091103]
 PCB["PENTAWATT.pcb" 200.0001mm 200.0001mm]
 
 Grid[1968.000000 0.0000 0.0000 1]
-Cursor[83.4786mm 2755.20mil 0.000000]
+Cursor[38.9900mm 1279.20mil 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 10.00mil 6.00mil 6.00mil 15.00mil 10.00mil]
-Flags("showdrc,rubberband,clearnew,showmask")
+Flags("showdrc,rubberband,clearnew")
 Groups("1,c:2,s:3")
 Styles["Signal,10.00mil,157.48mil,122.05mil,10.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,40.00mil,60.00mil,35.00mil,10.00mil:Skinny,6.00mil,24.02mil,11.81mil,6.00mil"]
 
@@ -922,10 +922,10 @@ Layer(3 "comment")
 	Text[79.0003mm 787.39mil 0 606 "PENTAWATTV_LAY_2.fp" ""]
 	Text[236.22mil 118.11mil 0 519 "grid is mm" ""]
 )
-Layer(4 "bott.-GND")
+Layer(4 "bottom silk")
 (
 )
-Layer(5 "top")
+Layer(5 "silk")
 (
 	Line[47.9999mm 62.1000mm 47.9999mm 66.0999mm 10.00mil 0.0000 ""]
 	Line[1968.50mil 49.4998mm 1968.50mil 50.4998mm 10.00mil 0.0000 ""]

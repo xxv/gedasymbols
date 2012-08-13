@@ -62,6 +62,8 @@ collections in the library.
 <li>  <a href="set_clearance.sh">set_clearance.sh</a>: Sets the polygon clearance
 and mask clearance of pins and pads. This is useful for footprint generation or
 to comply with specific fab requirements.
+<li> <a href="set_linewidth.sh"> set_linewidth.sh</a>: Sets the width of
+silk lines in footprints. Default width is 0.2 mm.
 <li> <a href="extract_footprints.sh">extract_footprints.sh</a>: Extracts all 
 footprints of a layout and writes them to individual files in the currrent 
 working directory.
@@ -79,9 +81,10 @@ attributes in gschem.
 net attribute of port symbols to the value given by the refdes. With this setting
 gnetlist connects all ports of a kind. Else, only the first instance of the port
 with a given refdes receives connection to the parent sheet.
-<li> <a href="set_linewidth.sh"> set_linewidth.sh</a>: Manipulates the width of
-selected lines. Divides or multiplies line width by 10. This is useful to
-temporarily suppress DRC warnings.
+<li> <a href="set_width_of_selected_lines.sh"> set_width_of_selected_lines.sh</a>: 
+Manipulates the width of selected lines. Divides or multiplies line width by 10.
+This can be useful to temporarily suppress DRC warnings. E.g., if some layers
+require tighter DRC rules than others.
 <li> <a href="layer_content.sh"> layer_content.sh</a>: Cut, or paste the content
 of a layer wholesale from a layout. 
 </ol>
