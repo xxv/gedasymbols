@@ -1,0 +1,67 @@
+From 853459a3be294198d502d8dbec11319d663ab441 Mon Sep 17 00:00:00 2001
+From: Kai-Martin Knaak <kmk@lilalaser.de>
+Date: Tue, 14 Aug 2012 11:17:59 +0200
+Subject: [PATCH] show the actual name of silk layers in the GUI
+
+This patch makes the GTK GUI show the actual name of the silk layer, rather
+than a hard coded "silk". The layer name in silk gets updated if the view is
+swapped.
+---
+ src/hid/gtk/gtkhid-main.c    |    2 ++
+ src/hid/gtk/gui-top-window.c |    7 +++++--
+ src/hid/gtk/gui.h            |    1 +
+ 3 files changed, 8 insertions(+), 2 deletions(-)
+
+diff --git a/src/hid/gtk/gtkhid-main.c b/src/hid/gtk/gtkhid-main.c
+index 88b9360..cd24e79 100644
+--- a/src/hid/gtk/gtkhid-main.c
++++ b/src/hid/gtk/gtkhid-main.c
+@@ -1428,6 +1428,8 @@ SwapSides (int argc, char **argv, Coord x, Coord y)
+                              new_solder_vis, new_solder_vis);
+     }
+ 
++  layer_process ( NULL, NULL, NULL, LAYER_BUTTON_SILK );
++  hid_action ("LayersChanged");
+   return 0;
+ }
+ 
+diff --git a/src/hid/gtk/gui-top-window.c b/src/hid/gtk/gui-top-window.c
+index 786024e..7905b0c 100644
+--- a/src/hid/gtk/gui-top-window.c
++++ b/src/hid/gtk/gui-top-window.c
+@@ -463,7 +463,7 @@ ghid_notify_filename_changed (void)
+  * used by a couple of functions.
+  *
+  */
+-static void
++void
+ layer_process (gchar **color_string, char **text, int *set, int i)
+ {
+   int tmp;
+@@ -487,7 +487,10 @@ layer_process (gchar **color_string, char **text, int *set, int i)
+     {
+     case LAYER_BUTTON_SILK:
+       *color_string = Settings.ElementColor;
+-      *text = _( "silk");
++      if (Settings.ShowSolderSide)
++         *text = (char *)UNKNOWN (PCB->Data->Layer[solder_silk_layer].Name);
++      else
++         *text = (char *)UNKNOWN (PCB->Data->Layer[component_silk_layer].Name);
+       *set = PCB->ElementOn;
+       break;
+     case LAYER_BUTTON_RATS:
+diff --git a/src/hid/gtk/gui.h b/src/hid/gtk/gui.h
+index f2585f7..3530a4d 100644
+--- a/src/hid/gtk/gui.h
++++ b/src/hid/gtk/gui.h
+@@ -345,6 +345,7 @@ void ghid_notify_filename_changed (void);
+ void ghid_install_accel_groups (GtkWindow *window, GhidGui *gui);
+ void ghid_remove_accel_groups (GtkWindow *window, GhidGui *gui);
+ void make_route_style_buttons (GHidRouteStyleSelector *rss);
++void layer_process (gchar **color_string, char **text, int *set, int i);
+ 
+ /* gui-utils.c
+ */
+-- 
+1.7.10.4
+

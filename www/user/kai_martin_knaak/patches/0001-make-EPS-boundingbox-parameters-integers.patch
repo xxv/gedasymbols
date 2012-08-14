@@ -1,0 +1,39 @@
+From 6dcb95ca5126901645136f0e7a9cbfa8bd7d8d24 Mon Sep 17 00:00:00 2001
+From: Kai-Martin Knaak <kmk@lilalaser.de>
+Date: Mon, 13 Aug 2012 03:14:59 +0200
+Subject: [PATCH] make EPS boundingbox parameters integers 
+ 
+ Currently, the bounding box parameters given in the header of 
+ an EPS file are floats. The standard calls for integers, though. 
+ Some applications like epstool fail if the boundingbox is
+ anything but integer. This patch uses llrint() to output
+ the nearest integer as bounding box parameters. In
+ addition, it adds a high resolution header for the benefit
+ of applications that can use the extra precision.
+
+ Example of the bounding box lines produced by the patch:
+ %%BoundingBox: 0 0 370 426
+ %%HiResBoundingBox: 0.000000 0.000000 369.503937 426.196850
+---
+ src/hid/ps/eps.c |    5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/src/hid/ps/eps.c b/src/hid/ps/eps.c
+index ba27023..f089e6c 100644
+--- a/src/hid/ps/eps.c
++++ b/src/hid/ps/eps.c
+@@ -269,7 +269,10 @@ eps_hid_export_to_file (FILE * the_file, HID_Attr_Val * options)
+   in_mono = options[HA_mono].int_value;
+ 
+ #define pcb2em(x) 1 + COORD_TO_INCH (x) * 72.0 * options[HA_scale].real_value
+-  fprintf (f, "%%%%BoundingBox: 0 0 %f %f\n",
++  fprintf (f, "%%%%BoundingBox: 0 0 %i %i\n",
++	   llrint (pcb2em (bounds->X2 - bounds->X1)),
++	   llrint (pcb2em (bounds->Y2 - bounds->Y1)) );
++  fprintf (f, "%%%%HiResBoundingBox: 0.000000 0.000000 %.6f %.6f\n",
+ 	   pcb2em (bounds->X2 - bounds->X1),
+ 	   pcb2em (bounds->Y2 - bounds->Y1));
+ #undef pcb2em
+-- 
+1.7.10.4
+
