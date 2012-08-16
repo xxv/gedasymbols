@@ -1,0 +1,7 @@
+schematics hierarchy-demo-head.sch
+output-name hierarchy-demo
+skip-m4
+verbose
+elements-dir /home/kmk/geda/footprints
+use-files
+

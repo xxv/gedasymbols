@@ -5,6 +5,7 @@ tar -czf geda-conf.tgz  --directory=$HOME \
 	.gEDA/gafrc \
 	.gEDA/gnetlistrc \
 	.gEDA/gschemrc \
+	.gEDA/gschem-colors \
 	.pcb/settings \
 	.pcb/preferences \
 	.pcb/colors/footprint \
@@ -18,6 +19,7 @@ zip -o $OUTFILE \
 	.gEDA/gafrc \
 	.gEDA/gnetlistrc \
 	.gEDA/gschemrc \
+	.gEDA/gschem-colors \
 	.pcb/settings \
 	.pcb/preferences \
 	.pcb/colors/footprint \

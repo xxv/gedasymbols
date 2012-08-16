@@ -1,11 +1,11 @@
-v 20110116 2
-T 0 3100 5 8 0 0 0 0 1
-device=comparator_dual
-T 0 2900 5 8 0 0 0 0 1
-description=dual comparator, LM393, SO8
-T 0 2700 5 8 0 0 0 0 1
-comment=Use symbol comparator_dual_pwr.sym to connect power pins.
+v 20111231 2
 T 0 2500 5 8 0 0 0 0 1
+symversion=1.0
+T 0 3100 5 8 0 0 0 0 1
+description=dual comparator, LM393, SO8
+T 0 2900 5 8 0 0 0 0 1
+comment=Use symbol comparator_dual_pwr.sym to connect power pins.
+T 0 2700 5 8 0 0 0 0 1
 documentation=http://www.ti.com/lit/gpn/lm311
 T 0 2300 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
@@ -21,9 +21,9 @@ T 0 1300 5 8 0 0 0 0 1
 slotdef=2:7,6,5
 T 700 600 8 8 1 0 0 0 1
 slot=1
-L 200 800 200 0 3 0 0 0 -1 -1
-L 200 800 1000 400 3 0 0 0 -1 -1
-L 200 0 1000 400 3 0 0 0 -1 -1
+L 200 800 200 0 3 10 2 0 -1 -1
+L 200 800 1000 400 3 10 2 0 -1 -1
+L 200 0 1000 400 3 10 2 0 -1 -1
 P 1000 400 1100 400 1 0 1
 {
 T 1025 450 5 8 1 1 0 0 1
@@ -57,8 +57,8 @@ pinlabel=+
 T 50 500 5 8 0 1 0 0 1
 pintype=in
 }
-L 400 300 500 300 3 0 0 0 -1 -1
-L 500 300 500 500 3 0 0 0 -1 -1
-L 500 500 600 500 3 0 0 0 -1 -1
+L 400 300 500 300 3 10 2 0 -1 -1
+L 500 300 500 500 3 10 2 0 -1 -1
+L 500 500 600 500 3 10 2 0 -1 -1
 T 700 800 8 10 1 1 0 0 1
 refdes=U?
