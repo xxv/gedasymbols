@@ -67,7 +67,9 @@ subsheet $SCHFILE
 ## Combine to a single document
 psmerge -o$PREFIX"merged.ps" $PREFIX"_"*".ps"
 echo $PREFIX"merged.ps nach "$OUTPS" kopieren" 
-cp $PREFIX"merged.ps" $WORKINGDIR/$OUTPS
+
+## save the Postscript file
+# cp $PREFIX"merged.ps" $WORKINGDIR/$OUTPS
 
 ## Convert to PDF
 ps2pdf $PREFIX"merged.ps" $WORKINGDIR/$OUTPDF

@@ -6,7 +6,7 @@ FileVersion[20091103]
 PCB["subtest" 3000.00mil 3000.00mil]
 
 Grid[1000.000000 0.0000 0.0000 0]
-Cursor[180.00mil 520.00mil 0.000000]
+Cursor[0.0000 30.00mil 0.000000]
 PolyArea[3100.006200]
 Thermal[0.500000]
 DRC[0.3000mm 0.0500mm 0.3000mm 0.2000mm 0.3000mm 0.3000mm]
@@ -788,24 +788,75 @@ Symbol['~' 12.00mil]
 )
 Attribute("PCB::grid::unit" "mil")
 
-Element["" "0805" "R1" "XXX" 38.1270mm 50.7541mm -68.90mil -29.53mil 0 100 ""]
+Element["" "PS_1x2PIN" "CONN2" "XXX" 1588.40mil 19.5753mm -59.05mil -196.85mil 0 100 ""]
+(
+	Attribute("device" "unknown")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[100.00mil 0.0000 81.00mil 28.00mil 97.00mil 46.00mil "2" "2" ""]
+	Pin[0.0000 0.0000 81.00mil 28.00mil 97.00mil 46.00mil "1" "1" "square"]
+	ElementLine [147.64mil 118.11mil -49.21mil 118.11mil 10.00mil]
+	ElementLine [147.64mil -118.11mil 147.64mil 118.11mil 10.00mil]
+	ElementLine [-49.21mil -118.11mil 147.64mil -118.11mil 10.00mil]
+	ElementLine [-49.21mil 118.11mil -49.21mil -118.11mil 10.00mil]
+	ElementLine [-49.21mil -68.90mil 9.84mil -68.90mil 9.84mil]
+	ElementLine [88.58mil -68.90mil 147.64mil -68.90mil 9.84mil]
+	ElementLine [9.84mil -68.90mil 9.84mil -98.42mil 9.84mil]
+	ElementLine [9.84mil -98.42mil 88.58mil -98.42mil 9.84mil]
+	ElementLine [88.58mil -98.42mil 88.58mil -68.90mil 9.84mil]
+
+	)
+
+Element["" "BNC_LAY" "CONN1" "XXX" 33.0565mm 35.6424mm -236.22mil 393.70mil 0 100 ""]
+(
+	Attribute("device" "unknown")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[-200.00mil 200.00mil 170.00mil 39.37mil 173.94mil 85.00mil "" "" ""]
+	Pin[200.00mil 200.00mil 170.00mil 39.37mil 173.94mil 85.00mil "" "" ""]
+	Pin[100.00mil 0.0000 80.00mil 39.37mil 83.94mil 35.00mil "2" "2" ""]
+	Pin[0.0000 0.0000 80.00mil 39.37mil 83.94mil 35.00mil "1" "1" ""]
+	ElementLine [190.00mil 1310.00mil 190.00mil 840.00mil 25.00mil]
+	ElementLine [-190.00mil 1310.00mil 190.00mil 1310.00mil 25.00mil]
+	ElementLine [-190.00mil 840.00mil -190.00mil 1310.00mil 25.00mil]
+	ElementLine [250.00mil 820.00mil 250.00mil 490.00mil 25.00mil]
+	ElementLine [230.00mil 840.00mil 250.00mil 820.00mil 25.00mil]
+	ElementLine [-230.00mil 840.00mil 230.00mil 840.00mil 25.00mil]
+	ElementLine [-250.00mil 820.00mil -230.00mil 840.00mil 25.00mil]
+	ElementLine [-250.00mil 490.00mil -250.00mil 820.00mil 25.00mil]
+	ElementLine [-290.00mil -50.00mil -290.00mil 490.00mil 25.00mil]
+	ElementLine [290.00mil -50.00mil -290.00mil -50.00mil 25.00mil]
+	ElementLine [290.00mil 490.00mil 290.00mil -50.00mil 25.00mil]
+	ElementLine [-290.00mil 490.00mil 290.00mil 490.00mil 25.00mil]
+	ElementArc [0.0000 1160.00mil 40.00mil 40.00mil 0 90 20.00mil]
+	ElementArc [0.0000 1160.00mil 40.00mil 40.00mil 270 90 20.00mil]
+	ElementArc [0.0000 1160.00mil 40.00mil 40.00mil 180 90 20.00mil]
+	ElementArc [0.0000 1160.00mil 40.00mil 40.00mil 90 90 20.00mil]
+
+	)
+
+Element["" "0805" "R1" "XXX" 26.9766mm 15.7962mm -68.90mil -29.53mil 0 100 ""]
 (
 	Attribute("device" "resistor")
 	Attribute("manufacturer" "unknown")
 	Attribute("manufacturer_part_number" "unknown")
 	Attribute("vendor" "unknown")
 	Attribute("vendor_part_number" "unknown")
-	Pad[50.79mil 0.0000 50.79mil 0.0000 60.00mil 24.04mil 68.02mil "2" "2" "square,edge2"]
-	Pad[-49.21mil 0.0000 -49.21mil 0.0000 60.00mil 24.04mil 68.02mil "1" "1" "square"]
-	ElementLine [-89.21mil 40.00mil 90.79mil 40.00mil 7.87mil]
-	ElementLine [90.79mil 40.00mil 90.79mil -40.00mil 7.87mil]
-	ElementLine [90.79mil -40.00mil -74.21mil -40.00mil 7.87mil]
-	ElementLine [-74.21mil -40.00mil -89.21mil -25.00mil 7.87mil]
-	ElementLine [-89.21mil -25.00mil -89.21mil 40.00mil 7.87mil]
+	Pad[50.79mil 0.0000 50.79mil 0.0000 60.00mil 41.37mil 63.94mil "2" "2" "square,edge2"]
+	Pad[-49.21mil 0.0000 -49.21mil 0.0000 60.00mil 41.37mil 63.94mil "1" "1" "square"]
+	ElementLine [-89.21mil -25.00mil -89.21mil 40.00mil 8.00mil]
+	ElementLine [-74.21mil -40.00mil -89.21mil -25.00mil 8.00mil]
+	ElementLine [90.79mil -40.00mil -74.21mil -40.00mil 8.00mil]
+	ElementLine [90.79mil 40.00mil 90.79mil -40.00mil 8.00mil]
+	ElementLine [-89.21mil 40.00mil 90.79mil 40.00mil 8.00mil]
 
 	)
 
-Element["" "SO8" "1U1" "TL081" 36.2425mm 55.4667mm 39.37mil -68.91mil 3 100 ""]
+Element["" "SO8" "1U1" "TL081" 29.1469mm 24.3536mm 39.37mil -68.91mil 3 100 ""]
 (
 	Attribute("device" "unknown")
 	Attribute("manufacturer" "unknown")
@@ -820,71 +871,20 @@ Element["" "SO8" "1U1" "TL081" 36.2425mm 55.4667mm 39.37mil -68.91mil 3 100 ""]
 	Pad[71.00mil 25.00mil 134.00mil 25.00mil 24.00mil 39.37mil 27.94mil "out" "6" "square,edge2"]
 	Pad[71.00mil -25.00mil 134.00mil -25.00mil 24.00mil 39.37mil 27.94mil "+Ub" "7" "square,edge2"]
 	Pad[71.00mil -75.00mil 134.00mil -75.00mil 24.00mil 39.37mil 27.94mil "8" "8" "square,edge2"]
-	ElementLine [-49.00mil 87.00mil -49.00mil -51.00mil 7.87mil]
-	ElementLine [-13.00mil -87.00mil 49.00mil -87.00mil 7.87mil]
-	ElementLine [49.00mil 87.00mil 49.00mil -87.00mil 7.87mil]
-	ElementLine [-49.00mil 87.00mil 49.00mil 87.00mil 7.87mil]
-	ElementLine [-49.00mil -51.00mil -13.00mil -87.00mil 7.87mil]
+	ElementLine [-49.00mil 87.00mil -49.00mil -51.00mil 10.00mil]
+	ElementLine [-13.00mil -87.00mil 49.00mil -87.00mil 10.00mil]
+	ElementLine [49.00mil 87.00mil 49.00mil -87.00mil 10.00mil]
+	ElementLine [-49.00mil 87.00mil 49.00mil 87.00mil 10.00mil]
+	ElementLine [-49.00mil -51.00mil -13.00mil -87.00mil 10.00mil]
 
 	)
-
-Element["" "PS_1x2PIN" "CONN2" "XXX" 1774.90mil 60.5980mm 36.22mil 216.30mil 2 100 ""]
-(
-	Attribute("device" "unknown")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[-100.00mil 0.0000 81.00mil 28.00mil 97.00mil 46.00mil "2" "2" ""]
-	Pin[0.0000 0.0000 81.00mil 28.00mil 97.00mil 46.00mil "1" "1" "square"]
-	ElementLine [-147.64mil -118.11mil 49.21mil -118.11mil 7.87mil]
-	ElementLine [-147.64mil -118.11mil -147.64mil 118.11mil 7.87mil]
-	ElementLine [-147.64mil 118.11mil 49.21mil 118.11mil 7.87mil]
-	ElementLine [49.21mil -118.11mil 49.21mil 118.11mil 7.87mil]
-	ElementLine [-9.84mil 68.90mil 49.21mil 68.90mil 7.87mil]
-	ElementLine [-147.64mil 68.90mil -88.58mil 68.90mil 7.87mil]
-	ElementLine [-9.84mil 68.90mil -9.84mil 98.42mil 7.87mil]
-	ElementLine [-88.58mil 98.42mil -9.84mil 98.42mil 7.87mil]
-	ElementLine [-88.58mil 68.90mil -88.58mil 98.42mil 7.87mil]
-
-	)
-
-Element["" "BNC_LAY" "CONN1" "XXX" 37.5770mm 46.8268mm -8.5819mm 86.00mil 0 100 ""]
-(
-	Attribute("device" "unknown")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[200.00mil -200.00mil 170.00mil 32.00mil 176.00mil 85.00mil "" "" ""]
-	Pin[-200.00mil -200.00mil 170.00mil 32.00mil 176.00mil 85.00mil "" "" ""]
-	Pin[-100.00mil 0.0000 80.00mil 32.00mil 86.00mil 35.00mil "2" "2" ""]
-	Pin[0.0000 0.0000 80.00mil 32.00mil 86.00mil 35.00mil "1" "1" ""]
-	ElementLine [-190.00mil -1310.00mil -190.00mil -840.00mil 7.87mil]
-	ElementLine [-190.00mil -1310.00mil 190.00mil -1310.00mil 7.87mil]
-	ElementLine [190.00mil -1310.00mil 190.00mil -840.00mil 7.87mil]
-	ElementLine [-250.00mil -820.00mil -250.00mil -490.00mil 7.87mil]
-	ElementLine [-230.00mil -840.00mil -250.00mil -820.00mil 7.87mil]
-	ElementLine [-230.00mil -840.00mil 230.00mil -840.00mil 7.87mil]
-	ElementLine [250.00mil -820.00mil 230.00mil -840.00mil 7.87mil]
-	ElementLine [250.00mil -820.00mil 250.00mil -490.00mil 7.87mil]
-	ElementLine [290.00mil -490.00mil 290.00mil 50.00mil 7.87mil]
-	ElementLine [-290.00mil 50.00mil 290.00mil 50.00mil 7.87mil]
-	ElementLine [-290.00mil -490.00mil -290.00mil 50.00mil 7.87mil]
-	ElementLine [-290.00mil -490.00mil 290.00mil -490.00mil 7.87mil]
-	ElementArc [0.0000 -1160.00mil 40.00mil 40.00mil 180 90 20.00mil]
-	ElementArc [0.0000 -1160.00mil 40.00mil 40.00mil 90 90 20.00mil]
-	ElementArc [0.0000 -1160.00mil 40.00mil 40.00mil 0 90 20.00mil]
-	ElementArc [0.0000 -1160.00mil 40.00mil 40.00mil 270 90 20.00mil]
-
-	)
-Rat[39.6461mm 54.8317mm 0 1774.90mil 60.5980mm 1  ""]
-Rat[32.8389mm 54.8317mm 0 32.8389mm 57.3717mm 0  ""]
-Rat[32.8389mm 54.8317mm 0 35.0370mm 46.8268mm 1  ""]
-Rat[32.8389mm 57.3717mm 0 1674.90mil 60.5980mm 1  ""]
-Rat[32.8389mm 56.1017mm 0 36.8771mm 50.7541mm 0  ""]
-Rat[39.6461mm 56.1017mm 0 39.4171mm 50.7541mm 0  ""]
-Rat[39.4171mm 50.7541mm 0 37.5770mm 46.8268mm 1  ""]
+Rat[32.5505mm 23.7186mm 0 1588.40mil 19.5753mm 1  ""]
+Rat[25.7433mm 23.7186mm 0 25.7433mm 1033.80mil 0  ""]
+Rat[25.7433mm 23.7186mm 0 35.5965mm 35.6424mm 1  ""]
+Rat[35.5965mm 35.6424mm 1 1688.40mil 19.5753mm 1  ""]
+Rat[25.7433mm 24.9886mm 0 25.7266mm 15.7962mm 0  ""]
+Rat[32.5505mm 24.9886mm 0 28.2666mm 15.7962mm 0  ""]
+Rat[32.5505mm 24.9886mm 0 33.0565mm 35.6424mm 1  ""]
 Layer(1 "top")
 (
 )

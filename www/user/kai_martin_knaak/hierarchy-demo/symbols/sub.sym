@@ -27,12 +27,12 @@ pintype=pas
 }
 P 2500 500 2400 500 1 0 0
 {
-T 100 500 5 10 0 0 0 0 1
+T 2350 500 9 10 1 1 0 7 1
+pinlabel=out11
+T 2450 550 5 10 0 1 0 0 1
+pinnumber=11
+T 2450 550 5 10 0 1 0 0 1
+pinseq=11
+T 2350 400 5 8 0 1 0 8 1
 pintype=pas
-T 355 495 5 10 0 1 0 0 1
-pinlabel=HPF_I1
-T 105 545 5 10 0 1 0 6 1
-pinnumber=3
-T 100 500 5 10 0 0 0 0 1
-pinseq=3
 }
