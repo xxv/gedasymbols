@@ -1037,10 +1037,10 @@ Layer(3 "comment")
 	Text[34.0000mm 84.0000mm 0 210 "tvs_1812.fp" ""]
 	Text[58.9600mm 59.2700mm 0 200 "grid is mil" "clearline"]
 )
-Layer(4 "silk")
+Layer(4 "bottom silk")
 (
 )
-Layer(5 "silk")
+Layer(5 "top silk")
 (
 	Line[515.00mil 1550.00mil 550.00mil 1550.00mil 10.00mil 20.00mil "clearline"]
 	Line[450.00mil 1550.00mil 485.00mil 1550.00mil 10.00mil 20.00mil "clearline"]

@@ -859,12 +859,12 @@ Layer(6 "top-GND")
 Layer(7 "unused")
 (
 )
-Layer(8 "lineout")
+Layer(8 "outline")
 (
 )
-Layer(9 "silk")
+Layer(9 "bottom silk")
 (
 )
-Layer(10 "silk")
+Layer(10 "top silk")
 (
 )

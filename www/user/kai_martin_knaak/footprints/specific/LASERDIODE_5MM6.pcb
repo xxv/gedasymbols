@@ -6,11 +6,11 @@ FileVersion[20091103]
 PCB["LASERDIODE_5MM6" 16.0000mm 16.0000mm]
 
 Grid[787.000000 0.0000 0.0000 0]
-Cursor[7.87mil 212.49mil 0.000000]
+Cursor[0.0000 86.57mil 0.000000]
 PolyArea[3100.006200]
 Thermal[0.500000]
 DRC[6.99mil 4.00mil 8.00mil 5.99mil 15.00mil 10.00mil]
-Flags("nameonpcb,uniquename,clearnew,snappin")
+Flags("nameonpcb,uniquename,clearnew,snappin,showmask")
 Groups("2,s:1,c")
 Styles["Signal,10.00mil,36.00mil,20.00mil,10.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,40.00mil,60.00mil,35.00mil,10.00mil:Skinny,6.00mil,24.02mil,11.81mil,6.00mil"]
 
@@ -798,9 +798,9 @@ Attribute("PCB::grid::unit" "mil")
 
 Element["" "LASERDIODE_5MM6" "LASERDIODE_5MM6" "LASERDIODE_5MM6" 165.35mil 165.35mil -86.57mil 118.05mil 0 100 ""]
 (
-	Pin [0.0000 -39.37mil 39.93mil 39.37mil 43.87mil 23.93mil "PD" "3" ""]
-	Pin [39.37mil 0.0000 39.93mil 39.37mil 43.87mil 23.93mil "GND" "2" ""]
-	Pin [0.0000 39.37mil 39.93mil 39.37mil 43.87mil 23.93mil "LD" "1" ""]
+	Pin[0.0000 -39.37mil 39.93mil 39.37mil 43.87mil 23.93mil "PD" "3" ""]
+	Pin[39.37mil 0.0000 39.93mil 39.37mil 43.87mil 23.93mil "GND" "2" ""]
+	Pin[0.0000 39.37mil 39.93mil 39.37mil 43.87mil 23.93mil "LD" "1" ""]
 	ElementLine [94.49mil 23.62mil 102.36mil 23.62mil 10.00mil]
 	ElementLine [-15.75mil 102.36mil 0.0000 86.61mil 10.00mil]
 	ElementLine [0.0000 -86.61mil 15.75mil -102.36mil 10.00mil]

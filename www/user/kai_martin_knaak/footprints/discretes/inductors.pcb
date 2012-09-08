@@ -839,10 +839,10 @@ Layer(3 "comment")
 	Text[1200.00mil 600.00mil 0 223 "ind_300mil.fp" "clearline"]
 	Text[1200.00mil 900.00mil 0 223 "ind_400mil.fp" "clearline"]
 )
-Layer(4 "silk")
+Layer(4 "bottom silk")
 (
 )
-Layer(5 "silk")
+Layer(5 "top silk")
 (
 	Line[188.58mil 700.00mil 3.5400mm 700.00mil 10.00mil 0.0000 ""]
 	Line[7.8900mm 700.00mil 355.91mil 700.00mil 10.00mil 0.0000 ""]

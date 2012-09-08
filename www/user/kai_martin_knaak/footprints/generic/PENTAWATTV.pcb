@@ -925,7 +925,7 @@ Layer(3 "comment")
 Layer(4 "bottom silk")
 (
 )
-Layer(5 "silk")
+Layer(5 "top silk")
 (
 	Line[47.9999mm 62.1000mm 47.9999mm 66.0999mm 10.00mil 0.0000 ""]
 	Line[1968.50mil 49.4998mm 1968.50mil 50.4998mm 10.00mil 0.0000 ""]

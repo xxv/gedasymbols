@@ -1194,7 +1194,7 @@ Element["" "XLR3_3PIN" "XLR3_3PIN" "XLR3_3PIN" 126.0000mm 60.0001mm 30.31mil -48
 
 	)
 
-Element["" "XLR_3PIN_b" "XLR_3PIN_b" "XLR_3PIN_b" 163.9999mm 60.0001mm 39.37mil 413.38mil 0 122 ""]
+Element["" "XLR3_3PIN_b" "XLR3_3PIN_b" "XLR3_3PIN_b" 163.9999mm 60.0001mm 39.37mil 413.38mil 0 122 ""]
 (
 	Pin[17.0800mm -531.49mil 66.00mil 39.37mil 69.94mil 46.00mil "1" "1" "square"]
 	Pin[12.0000mm -531.49mil 66.00mil 39.37mil 69.94mil 46.00mil "3" "3" ""]
@@ -1298,7 +1298,7 @@ Element["" "XLR_3PIN_b" "XLR_3PIN_b" "XLR_3PIN_b" 163.9999mm 60.0001mm 39.37mil 
 
 	)
 
-Element["" "XLR_3PIN_c" "XLR_3PIN_c" "XLR_3PIN_c" 195.9999mm 60.0001mm 19.69mil -12.0000mm 0 122 ""]
+Element["" "XLR3_3PIN_c" "XLR3_3PIN_c" "XLR3_3PIN_c" 195.9999mm 60.0001mm 19.69mil -12.0000mm 0 122 ""]
 (
 	Pin[835.05mil -344.49mil 66.00mil 39.37mil 69.94mil 46.00mil "3" "3" ""]
 	Pin[26.2903mm -344.49mil 66.00mil 39.37mil 69.94mil 46.00mil "1" "1" "square"]
@@ -1666,10 +1666,10 @@ Layer(2 "top")
 Layer(3 "comment")
 (
 )
-Layer(4 "silk")
+Layer(4 "bottom silk")
 (
 )
-Layer(5 "silk")
+Layer(5 "top silk")
 (
 	Line[36.1000mm 27.5001mm 36.1000mm 25.8999mm 6.00mil 12.00mil "clearline"]
 	Line[354.33mil 118.11mil 354.34mil 118.11mil 11.81mil 20.00mil "clearline"]

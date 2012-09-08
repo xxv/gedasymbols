@@ -1729,10 +1729,10 @@ Layer(3 "comment")
 	Text[62.5099mm 5036.30mil 0 232 "TO22_GDS_LAY.fp" ""]
 	Text[62.5099mm 122.9220mm 0 232 "TO22_GCE_LAY.fp" ""]
 )
-Layer(4 "bott.-GND")
+Layer(4 "bottom silk")
 (
 )
-Layer(5 "top")
+Layer(5 "top silk")
 (
 	Line[964.57mil 136.0000mm 994.10mil 136.0000mm 10.00mil 20.00mil "clearline"]
 	Line[994.10mil 136.0000mm 25.5001mm 135.7500mm 10.00mil 20.00mil "clearline"]

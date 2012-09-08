@@ -1687,10 +1687,10 @@ Layer(3 "comment")
 	Text[69.0402mm 8663.00mil 0 331 "SUBD25_female_lay.fp" ""]
 	Text[65.0403mm 155.0401mm 0 331 "SUBD15_female_lay.fp" ""]
 )
-Layer(4 "silk")
+Layer(4 "bottom silk")
 (
 )
-Layer(5 "silk")
+Layer(5 "top silk")
 (
 	Line[55.5000mm 72.5002mm 54.5000mm 73.5002mm 15.00mil 20.00mil "clearline"]
 	Line[54.5000mm 82.5002mm 54.5000mm 86.5002mm 15.00mil 20.00mil "clearline"]

@@ -1680,10 +1680,10 @@ Layer(3 "comment")
 	Text[57.4149mm 309.2420mm 0 232 "DIP40_wide.fp" ""]
 	Text[57.4149mm 142.2370mm 0 232 "DIP18.fp" ""]
 )
-Layer(4 "bott.-GND")
+Layer(4 "bottom silk")
 (
 )
-Layer(5 "top")
+Layer(5 "top silk")
 (
 	Line[430.00mil 550.00mil 430.00mil 850.00mil 10.00mil 0.0000 ""]
 	Line[870.00mil 550.00mil 870.00mil 850.00mil 10.00mil 0.0000 ""]

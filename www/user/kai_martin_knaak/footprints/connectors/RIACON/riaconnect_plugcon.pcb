@@ -929,10 +929,10 @@ Layer(3 "comment")
 	Text[181469 274555 0 280 "RIACON_383_3PIN_LAY.fp" ""]
 	Text[11469 29555 0 280 "compatible with Phoenix Contact MC 1,5/*-*-3.81" ""]
 )
-Layer(4 "bott.-GND")
+Layer(4 "bottom silk")
 (
 )
-Layer(5 "top")
+Layer(5 "top silk")
 (
 	Line[30079 89173 39921 89173 984 2000 "clearline"]
 	Line[39921 89173 38937 91142 984 2000 "clearline"]

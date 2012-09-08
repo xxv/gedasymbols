@@ -1018,10 +1018,10 @@ Layer(3 "comment")
 	Text[105.4999mm 56.5000mm 0 100 "D 22mm" ""]
 	Text[105.4999mm 54.5000mm 0 100 "RM 10mm" ""]
 )
-Layer(4 "bott.-GND")
+Layer(4 "bottom silk")
 (
 )
-Layer(5 "top")
+Layer(5 "top silk")
 (
 	Line[27.9999mm 374.00mil 27.9999mm 421.25mil 10.00mil 0.0000 ""]
 	Line[29.7241mm 8.5918mm 29.7241mm 9.6078mm 10.00mil 0.0000 ""]

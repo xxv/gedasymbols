@@ -917,10 +917,10 @@ Layer(3 "comment")
 	Text[2100.00mil 0.0000 0 408 "grid is mil" ""]
 	Text[27.9999mm 3631.50mil 0 522 "res_socket.fp" ""]
 )
-Layer(4 "silk")
+Layer(4 "bottom silk")
 (
 )
-Layer(5 "silk")
+Layer(5 "top silk")
 (
 	Line[360.00mil 1320.00mil 360.00mil 1680.00mil 10.00mil 0.0000 ""]
 	Line[240.00mil 1320.00mil 240.00mil 1680.00mil 10.00mil 0.0000 ""]

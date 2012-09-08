@@ -2625,10 +2625,10 @@ Layer(3 "comment")
 	Text[188.97mil 471.9198mm 0 522 "AMP_4.2mm_header_20pin_lay" ""]
 	Text[81.0001mm 412.9999mm 0 379 "grid is mm" ""]
 )
-Layer(4 "silk")
+Layer(4 "bottom silk")
 (
 )
-Layer(5 "silk")
+Layer(5 "top silk")
 (
 	Line[450.00mil 1950.00mil 450.00mil 2350.00mil 10.00mil 0.0000 ""]
 	Line[450.00mil 2350.00mil 650.00mil 2350.00mil 10.00mil 0.0000 ""]

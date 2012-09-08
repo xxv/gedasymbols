@@ -1009,10 +1009,10 @@ Layer(3 "comment")
 	Text[1525.00mil 3005.00mil 0 210 "cap_1100mil.fp" ""]
 	Text[1525.00mil 2105.00mil 0 210 "cap_RM275.fp" ""]
 )
-Layer(4 "silk")
+Layer(4 "bottom silk")
 (
 )
-Layer(5 "silk")
+Layer(5 "top silk")
 (
 	Line[215.00mil 150.00mil 215.00mil 250.00mil 10.00mil 0.0000 ""]
 	Line[185.00mil 250.00mil 185.00mil 150.00mil 10.00mil 0.0000 ""]

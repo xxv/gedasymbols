@@ -6,11 +6,11 @@ FileVersion[20091103]
 PCB["Minicircuits.pcb" 2000.00mil 4000.00mil]
 
 Grid[2500.000000 0.0000 0.0000 1]
-Cursor[0.0000 0.0000 0.000000]
+Cursor[0.0000 925.00mil 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 4.00mil 8.00mil 6.00mil 15.00mil 10.00mil]
-Flags("showdrc,rubberband,nameonpcb,autodrc,uniquename,clearnew,newfullpoly,snappin")
+Flags("showdrc,rubberband,nameonpcb,autodrc,uniquename,clearnew,newfullpoly,snappin,showmask")
 Groups("1,c:2,s:3")
 Styles["Signal,11.81mil,36.00mil,20.00mil,10.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,66.00mil,60.00mil,35.00mil,10.00mil:Skinny,6.00mil,24.02mil,11.81mil,6.00mil"]
 
@@ -817,16 +817,16 @@ Via[400.00mil 41.6641mm 36.00mil 20.00mil 0.0000 20.00mil "2" ""]
 Via[400.00mil 42.9341mm 36.00mil 20.00mil 0.0000 20.00mil "2" ""]
 Via[350.00mil 42.9341mm 36.00mil 20.00mil 0.0000 20.00mil "2" ""]
 
-Element["" "MINICIRCUITS_0PIN" "MINICIRCUITS_0PIN" "MINICIRCUITS_0PIN" 800.00mil 400.00mil -100.00mil -175.00mil 0 100 ""]
+Element["" "MINICIRCUITS_8PIN" "MINICIRCUITS_8PIN" "MINICIRCUITS_8PIN" 800.00mil 400.00mil -100.00mil -175.00mil 0 100 ""]
 (
-	Pin [0.0000 0.0000 70.00mil 39.37mil 73.94mil 38.00mil "1" "1" "square"]
-	Pin [200.00mil 600.00mil 70.00mil 39.37mil 73.94mil 38.00mil "8" "8" ""]
-	Pin [0.0000 200.00mil 70.00mil 39.37mil 73.94mil 38.00mil "3" "3" ""]
-	Pin [200.00mil 200.00mil 70.00mil 39.37mil 73.94mil 38.00mil "4" "4" ""]
-	Pin [0.0000 400.00mil 70.00mil 39.37mil 73.94mil 38.00mil "5" "5" ""]
-	Pin [200.00mil 400.00mil 70.00mil 39.37mil 73.94mil 38.00mil "6" "6" ""]
-	Pin [0.0000 600.00mil 70.00mil 39.37mil 73.94mil 38.00mil "7" "7" ""]
-	Pin [200.00mil 0.0000 70.00mil 39.37mil 73.94mil 38.00mil "2" "2" ""]
+	Pin[0.0000 0.0000 70.00mil 39.37mil 73.94mil 38.00mil "1" "1" "square"]
+	Pin[200.00mil 600.00mil 70.00mil 39.37mil 73.94mil 38.00mil "8" "8" ""]
+	Pin[0.0000 200.00mil 70.00mil 39.37mil 73.94mil 38.00mil "3" "3" ""]
+	Pin[200.00mil 200.00mil 70.00mil 39.37mil 73.94mil 38.00mil "4" "4" ""]
+	Pin[0.0000 400.00mil 70.00mil 39.37mil 73.94mil 38.00mil "5" "5" ""]
+	Pin[200.00mil 400.00mil 70.00mil 39.37mil 73.94mil 38.00mil "6" "6" ""]
+	Pin[0.0000 600.00mil 70.00mil 39.37mil 73.94mil 38.00mil "7" "7" ""]
+	Pin[200.00mil 0.0000 70.00mil 39.37mil 73.94mil 38.00mil "2" "2" ""]
 	ElementLine [146.45mil 44.12mil 122.81mil 44.12mil 11.81mil]
 	ElementLine [114.96mil 75.59mil 107.09mil 59.84mil 11.81mil]
 	ElementLine [122.83mil 44.09mil 107.10mil 59.83mil 11.81mil]
@@ -846,24 +846,24 @@ Element["" "MINICIRCUITS_0PIN" "MINICIRCUITS_0PIN" "MINICIRCUITS_0PIN" 800.00mil
 
 	)
 
-Element["" "MMIC_MINICIRCUITS" "MMIC_MINICIRCUITS" "MMIC_MINICIRCUITS" 1200.00mil 1500.00mil -59.05mil 157.48mil 0 100 ""]
+Element["" "MINICIRCUITS_MMIC" "MINICIRCUITS_MMIC" "MINICIRCUITS_MMIC" 1200.00mil 1500.00mil -59.05mil 157.48mil 0 100 ""]
 (
-	Pin [0.0000 140.32mil 36.00mil 39.37mil 39.94mil 20.00mil "2" "2" ""]
-	Pin [50.00mil 140.32mil 36.00mil 39.37mil 39.94mil 20.00mil "2" "2" ""]
-	Pin [50.00mil 90.32mil 36.00mil 39.37mil 39.94mil 20.00mil "2" "2" ""]
-	Pin [-50.00mil 90.32mil 36.00mil 39.37mil 39.94mil 20.00mil "2" "2" ""]
-	Pin [-50.00mil -79.68mil 36.00mil 39.37mil 39.94mil 20.00mil "2" "2" ""]
-	Pin [-50.00mil -139.68mil 36.00mil 39.37mil 39.94mil 20.00mil "2" "2" ""]
-	Pin [0.0000 -139.68mil 36.00mil 39.37mil 39.94mil 20.00mil "2" "2" ""]
-	Pin [50.00mil -139.68mil 36.00mil 39.37mil 39.94mil 20.00mil "2" "2" ""]
-	Pin [50.00mil -79.68mil 36.00mil 39.37mil 39.94mil 20.00mil "2" "2" ""]
-	Pin [0.0000 20.32mil 36.00mil 39.37mil 39.94mil 20.00mil "2" "2" ""]
-	Pin [0.0000 -19.68mil 36.00mil 39.37mil 39.94mil 20.00mil "2" "2" ""]
-	Pin [-50.00mil 140.32mil 36.00mil 39.37mil 39.94mil 20.00mil "2" "2" ""]
+	Pin[0.0000 140.32mil 36.00mil 0.0000 39.94mil 20.00mil "2" "2" ""]
+	Pin[50.00mil 140.32mil 36.00mil 0.0000 39.94mil 20.00mil "2" "2" ""]
+	Pin[50.00mil 90.32mil 36.00mil 0.0000 39.94mil 20.00mil "2" "2" ""]
+	Pin[-50.00mil 90.32mil 36.00mil 0.0000 35.94mil 20.00mil "2" "2" ""]
+	Pin[-50.00mil -79.68mil 36.00mil 0.0000 39.94mil 20.00mil "2" "2" ""]
+	Pin[-50.00mil -139.68mil 36.00mil 0.0000 39.94mil 20.00mil "2" "2" ""]
+	Pin[0.0000 -139.68mil 36.00mil 0.0000 39.94mil 20.00mil "2" "2" ""]
+	Pin[50.00mil -139.68mil 36.00mil 0.0000 39.94mil 20.00mil "2" "2" ""]
+	Pin[50.00mil -79.68mil 36.00mil 0.0000 39.94mil 20.00mil "2" "2" ""]
+	Pin[0.0000 20.32mil 36.00mil 0.0000 39.94mil 20.00mil "2" "2" ""]
+	Pin[0.0000 -19.68mil 36.00mil 0.0000 39.94mil 20.00mil "2" "2" ""]
+	Pin[-50.00mil 140.32mil 36.00mil 0.0000 39.94mil 20.00mil "2" "2" ""]
 	Pad[-20.00mil 110.32mil 20.00mil 110.32mil 100.00mil 39.37mil 103.94mil "2" "2" "square,edge2,nopaste"]
 	Pad[0.0000 50.32mil 0.0000 100.32mil 40.00mil 39.37mil 43.94mil "2" "2" "square,edge2"]
-	Pad[-120.00mil 0.32mil -70.00mil 0.32mil 66.00mil 39.37mil 69.94mil "1" "1" "nopaste"]
-	Pad[70.00mil 0.32mil 110.00mil 0.32mil 66.00mil 39.37mil 69.94mil "3" "3" "edge2,nopaste"]
+	Pad[-120.00mil 0.32mil -70.00mil 0.32mil 66.00mil 39.37mil 0.0000 "1" "1" "nopaste"]
+	Pad[70.00mil 0.32mil 110.00mil 0.32mil 66.00mil 39.37mil 0.0000 "3" "3" "edge2,nopaste"]
 	Pad[0.0000 -49.68mil 0.0000 50.32mil 40.00mil 39.37mil 43.94mil "2" "2" "nopaste"]
 	Pad[-100.00mil 0.32mil -50.00mil 0.32mil 40.00mil 39.37mil 43.94mil "1" "1" "square"]
 	Pad[0.0000 -99.68mil 0.0000 -49.68mil 40.00mil 39.37mil 43.94mil "2" "2" "square"]
@@ -914,10 +914,10 @@ Layer(3 "comment")
 	Text[210.00mil 1890.00mil 0 188 "MINICIRCUITS_MMIC.fp" ""]
 	Text[510.00mil 1790.00mil 0 133 "note: nopaste flag set on some pads" ""]
 )
-Layer(4 "silk")
+Layer(4 "bottom silk")
 (
 )
-Layer(5 "silk")
+Layer(5 "top silk")
 (
 	Line[200.00mil 300.00mil 200.00mil 1100.00mil 10.00mil 0.0000 ""]
 	Line[200.00mil 1100.00mil 600.00mil 1100.00mil 10.00mil 0.0000 ""]

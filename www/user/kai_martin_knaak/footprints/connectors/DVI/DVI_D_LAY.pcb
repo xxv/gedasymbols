@@ -890,10 +890,10 @@ Layer(7 "unused")
 Layer(8 "lineout")
 (
 )
-Layer(9 "silk")
+Layer(9 "bottom silk")
 (
 )
-Layer(10 "silk")
+Layer(10 "top silk")
 (
 	Line[67500 135500 207500 135500 1000 0 ""]
 	Line[190000 102000 190000 135500 1000 2000 "clearline"]

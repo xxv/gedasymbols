@@ -1653,10 +1653,10 @@ Layer(3 "comment")
 		[491.15mil 281.6498mm] [491.15mil 281.8497mm] [477.37mil 281.8497mm] [477.37mil 281.6498mm] 
 	)
 )
-Layer(4 "none")
+Layer(4 "bottom silk")
 (
 )
-Layer(5 "silk")
+Layer(5 "top silk")
 (
 	Line[442.70mil 638.18mil 442.70mil 464.18mil 10.00mil 0.0000 "clearline"]
 	Line[442.70mil 401.96mil 442.70mil 227.96mil 10.00mil 0.0000 "clearline"]

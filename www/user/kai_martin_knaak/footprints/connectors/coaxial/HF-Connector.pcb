@@ -1099,7 +1099,7 @@ Element["" "LEMO_4PIN" "LEMO_4PIN" "LEMO_4PIN" 1600.00mil 12000.00mil -150.00mil
 
 	)
 
-Element["" "HF_MULTI" "HF_MULTI" "HF_MULTI" 1600.00mil 10000.00mil -300.00mil -375.00mil 0 100 ""]
+Element["" "HF_multi" "HF_multi" "HF_multi" 1600.00mil 10000.00mil -300.00mil -375.00mil 0 100 ""]
 (
 	Pin[-100.00mil 100.00mil 108.43mil 39.37mil 2.8542mm 59.06mil "2" "2" ""]
 	Pin[100.00mil 100.00mil 108.43mil 39.37mil 2.8542mm 59.06mil "2" "2" ""]
@@ -1314,13 +1314,13 @@ Layer(3 "comment")
 	Text[500.00mil 290.5402mm 0 310 "LEMO EPG.0B.304.HLN " ""]
 	Text[53.2501mm 302.7299mm 0 309 "LEMO_4PIN.fp" ""]
 	Text[1850.00mil 9000.00mil 0 309 "SMA_EDGE.fp" ""]
-	Text[54.5201mm 251.9299mm 0 309 "HF_MULTI.fp" ""]
+	Text[54.5201mm 251.9299mm 0 309 "HF_multi.fp" ""]
 	Text[4200.00mil 50.00mil 0 254 "BNC_DUAL.fp" ""]
 )
-Layer(4 "silk")
+Layer(4 "bottom silk")
 (
 )
-Layer(5 "silk")
+Layer(5 "top silk")
 (
 	Line[410.00mil 1190.00mil 990.00mil 1190.00mil 25.00mil 20.00mil "clearline"]
 	Line[990.00mil 1190.00mil 990.00mil 650.00mil 25.00mil 20.00mil "clearline"]

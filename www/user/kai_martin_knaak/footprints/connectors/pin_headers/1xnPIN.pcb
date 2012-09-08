@@ -948,10 +948,10 @@ Layer(3 "comment")
 	Text[60.6199mm 72.5200mm 0 522 "1x8PIN.fp" ""]
 	Text[88.5599mm 85.2200mm 0 522 "1x10PIN.fp" ""]
 )
-Layer(4 "silk")
+Layer(4 "bottom silk")
 (
 )
-Layer(5 "silk")
+Layer(5 "top silk")
 (
 	Line[549.22mil 549.21mil 450.79mil 549.21mil 10.00mil 0.0000 ""]
 	Line[549.22mil 450.79mil 549.22mil 549.21mil 10.00mil 0.0000 ""]

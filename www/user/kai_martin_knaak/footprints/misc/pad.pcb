@@ -853,9 +853,9 @@ Layer(2 "bottom")
 Layer(3 "comment")
 (
 )
-Layer(4 "silk")
+Layer(4 "bottom silk")
 (
 )
-Layer(5 "silk")
+Layer(5 "top silk")
 (
 )

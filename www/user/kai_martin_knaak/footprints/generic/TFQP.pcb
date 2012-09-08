@@ -1021,10 +1021,10 @@ Layer(3 "comment")
 	Text[58.9999mm 19.69mil 0 214 "grid is mm" ""]
 	Text[374.02mil 39.38mil 0 214 "ATXMEGA_TFQP100.fp" ""]
 )
-Layer(4 "silk")
+Layer(4 "bottom silk")
 (
 )
-Layer(5 "silk")
+Layer(5 "top silk")
 (
 	Line[826.46mil 826.46mil 354.64mil 826.46mil 10.00mil 0.0000 ""]
 	Line[354.64mil 826.46mil 354.64mil 393.70mil 10.00mil 0.0000 ""]

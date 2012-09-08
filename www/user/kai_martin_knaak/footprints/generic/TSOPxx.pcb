@@ -851,10 +851,10 @@ Layer(3 "comment")
 	Text[27.9999mm 492.13mil 0 288 "TSOP6.fp" ""]
 	Text[255.90mil 19.68mil 0 222 "grid is metric" ""]
 )
-Layer(4 "none")
+Layer(4 "bottom silk")
 (
 )
-Layer(5 "silk")
+Layer(5 "top silk")
 (
 	Line[362.21mil 559.05mil 385.83mil 535.43mil 9.84mil 20.00mil "clearline"]
 	Line[385.83mil 535.43mil 425.20mil 535.43mil 9.84mil 20.00mil "clearline"]
