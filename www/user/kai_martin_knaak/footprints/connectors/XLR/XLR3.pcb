@@ -947,7 +947,7 @@ Element["" "XLR3_LAY" "XLR3_LAY" "XLR3_LAY" 393.70mil 2362.20mil 19.68mil -12.00
 
 	)
 
-Element["" "XLR_4PIN" "XLR_4PIN" "XLR_4PIN" 90.0001mm 60.0001mm 30.32mil -480.31mil 0 111 ""]
+Element["" "XLR3_4PIN" "XLR3_4PIN" "XLR3_4PIN" 90.0001mm 60.0001mm 30.32mil -480.31mil 0 111 ""]
 (
 	Pin[275.60mil 531.50mil 66.00mil 39.37mil 69.94mil 46.00mil "1" "1" "square"]
 	Pin[375.60mil 531.50mil 66.00mil 39.37mil 69.94mil 46.00mil "2" "2" ""]
@@ -1298,7 +1298,7 @@ Element["" "XLR3_3PIN_b" "XLR3_3PIN_b" "XLR3_3PIN_b" 163.9999mm 60.0001mm 39.37m
 
 	)
 
-Element["" "XLR3_3PIN_c" "XLR3_3PIN_c" "XLR3_3PIN_c" 195.9999mm 60.0001mm 19.69mil -12.0000mm 0 122 ""]
+Element["" "XLR3_3PIN_c" "XLR3_3PIN_c" "XLR33_PIN_c" 195.9999mm 60.0001mm 19.69mil -12.0000mm 0 122 ""]
 (
 	Pin[835.05mil -344.49mil 66.00mil 39.37mil 69.94mil 46.00mil "3" "3" ""]
 	Pin[26.2903mm -344.49mil 66.00mil 39.37mil 69.94mil 46.00mil "1" "1" "square"]
@@ -1444,7 +1444,7 @@ Element["" "XLR3_silk" "XLR3_silk" "XLR3_silk" 1968.50mil 60.0001mm 2.0000mm -47
 
 	)
 
-Element["" "XLR_PCB" "XLR_PCB" "XLR_PCB" 295.9999mm 60.0001mm 39.37mil -531.50mil 0 122 ""]
+Element["" "XLR3_PCB" "XLR3_PCB" "XLR3_PCB" 295.9999mm 60.0001mm 39.37mil -531.50mil 0 122 ""]
 (
 	Pin[807.09mil 0.0000 2.6350mm 1.0000mm 2.7300mm 58.31mil "3" "3" "edge2"]
 	Pin[807.09mil 157.48mil 2.6350mm 1.0000mm 2.7300mm 58.31mil "2" "2" "edge2"]

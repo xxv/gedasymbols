@@ -1,8 +1,8 @@
 Element["" "XLR3_3PIN" "XLR3_3PIN" "XLR3_3PIN" 126.0000mm 60.0001mm 30.31mil -480.31mil 0 122 ""]
 (
-	Pin [355.90mil 531.50mil 66.00mil 39.37mil 69.94mil 46.00mil "2" "2" ""]
-	Pin [255.90mil 531.50mil 66.00mil 39.37mil 69.94mil 46.00mil "1" "1" "square"]
-	Pin [455.90mil 531.50mil 66.00mil 39.37mil 69.94mil 46.00mil "3" "3" ""]
+	Pin[355.90mil 531.50mil 66.00mil 39.37mil 69.94mil 46.00mil "2" "2" ""]
+	Pin[255.90mil 531.50mil 66.00mil 39.37mil 69.94mil 46.00mil "1" "1" "square"]
+	Pin[455.90mil 531.50mil 66.00mil 39.37mil 69.94mil 46.00mil "3" "3" ""]
 	ElementLine [376.75mil 269.69mil 8.7696mm 301.18mil 6.00mil]
 	ElementLine [376.75mil 269.69mil 9.7696mm 269.69mil 6.00mil]
 	ElementLine [329.51mil 269.69mil 9.7696mm 269.69mil 6.00mil]

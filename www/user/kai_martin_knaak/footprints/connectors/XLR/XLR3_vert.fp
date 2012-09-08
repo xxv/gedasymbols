@@ -1,8 +1,8 @@
 Element["" "XLR3_vert" "XLR3_vert" "XLR3_vert" 270.0000mm 2362.20mil -11.0000mm -20.0000mm 0 122 ""]
 (
-	Pin [-15.0000mm 0.0000 66.00mil 39.37mil 69.94mil 46.00mil "2" "2" ""]
-	Pin [-15.0000mm -100.00mil 66.00mil 39.37mil 69.94mil 46.00mil "1" "1" "square"]
-	Pin [-15.0000mm 100.00mil 66.00mil 39.37mil 69.94mil 46.00mil "3" "3" ""]
+	Pin[-15.0000mm 0.0000 66.00mil 39.37mil 69.94mil 46.00mil "2" "2" ""]
+	Pin[-15.0000mm -100.00mil 66.00mil 39.37mil 69.94mil 46.00mil "1" "1" "square"]
+	Pin[-15.0000mm 100.00mil 66.00mil 39.37mil 69.94mil 46.00mil "3" "3" ""]
 	ElementLine [-877.96mil -99.59mil -850.40mil -99.59mil 6.00mil]
 	ElementLine [-22.0000mm 85.43mil -22.0000mm 116.93mil 6.00mil]
 	ElementLine [-13.1000mm 30.30mil -13.1000mm 148.41mil 10.00mil]
