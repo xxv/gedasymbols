@@ -1,0 +1,51 @@
+v 20110115 2
+T 300 2600 5 10 1 1 0 0 1
+refdes=U?
+P 0 2300 300 2300 1 0 0
+{
+T 200 2350 5 8 1 1 0 6 1
+pinnumber=3
+T 200 2450 5 8 0 1 0 8 1
+pinseq=3
+T 350 2300 5 8 0 1 0 2 1
+pintype=in
+T 400 2300 3 8 1 1 0 0 1
+pinlabel=Vin
+}
+P 0 2100 300 2100 1 0 0
+{
+T 200 2150 5 8 1 1 0 6 1
+pinnumber=1
+T 200 2250 5 8 0 1 0 8 1
+pinseq=1
+T 350 2100 5 8 0 1 0 2 1
+pintype=pas
+T 400 2100 3 8 1 1 0 0 1
+pinlabel=GND
+}
+P 1200 2300 1500 2300 1 0 1
+{
+T 1300 2350 5 8 1 1 0 0 1
+pinnumber=2
+T 1300 2450 5 8 0 1 0 2 1
+pinseq=2
+T 1150 2300 5 8 0 1 0 8 1
+pintype=out
+T 1100 2300 3 8 1 1 0 6 1
+pinlabel=Vout
+}
+B 300 1900 900 600 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 400 1700 9 8 1 0 0 0 1
+MCP1701A
+T 1400 2700 9 10 0 0 0 0 1
+device=MCP1701A
+T 1400 1900 9 10 0 0 0 0 1
+footprint=SOT23
+T 1400 2500 9 10 0 0 0 0 1
+description=Low-dropout positive voltage regulator
+T 1400 2300 9 10 0 0 0 0 1
+author=Jan "Yenya" Kasprzak <kas@fi.muni.cz>
+T 1400 1700 9 10 0 0 0 0 1
+datasheet=http://ww1.microchip.com/downloads/en/DeviceDoc/21991c.pdf
+T 1400 2100 9 10 0 0 0 0 1
+dist-license=GPL 2

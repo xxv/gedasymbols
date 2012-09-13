@@ -1,0 +1,106 @@
+v 20110115 2
+T 300 1300 3 8 1 1 0 0 1
+value=MCP14628
+T 2800 2400 3 10 0 0 0 0 1
+description=2A Synchronous Buck Power MOSFET Driver
+T 300 2600 5 10 1 1 0 0 1
+refdes=U?
+B 300 1500 1300 1000 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 2800 2600 9 10 0 0 0 0 1
+device=MCP14628
+T 2800 2200 9 10 0 0 0 0 1
+author=Jan "Yenya" Kasprzak <kas@fi.muni.cz>
+T 2800 1800 9 10 0 0 0 0 1
+footprint=SO8
+T 2800 1600 9 10 0 0 0 0 1
+datasheet=http://ww1.microchip.com/downloads/en/DeviceDoc/22083a.pdf
+P 1800 2100 1600 2100 1 0 0
+{
+T 1800 2100 5 10 0 0 0 0 1
+pintype=out
+T 1545 2095 3 8 1 1 0 6 1
+pinlabel=HIGHDR
+T 1695 2145 5 8 1 1 0 0 1
+pinnumber=1
+T 1800 2100 5 10 0 0 0 0 1
+pinseq=1
+}
+P 1800 1900 1600 1900 1 0 0
+{
+T 1800 1900 5 10 0 0 0 0 1
+pintype=in
+T 1545 1895 3 8 1 1 0 6 1
+pinlabel=PHASE
+T 1695 1945 5 8 1 1 0 0 1
+pinnumber=8
+T 1800 1900 5 10 0 0 0 0 1
+pinseq=8
+}
+P 1800 1700 1600 1700 1 0 0
+{
+T 1800 1700 5 10 0 0 0 0 1
+pintype=out
+T 1545 1695 3 8 1 1 0 6 1
+pinlabel=LOWDR
+T 1695 1745 5 8 1 1 0 0 1
+pinnumber=5
+T 1800 1700 5 10 0 0 0 0 1
+pinseq=5
+}
+P 1800 2300 1600 2300 1 0 0
+{
+T 1800 2300 5 10 0 0 0 0 1
+pintype=in
+T 1545 2295 3 8 1 1 0 6 1
+pinlabel=BOOT
+T 1695 2345 5 8 1 1 0 0 1
+pinnumber=2
+T 1800 2300 5 10 0 0 0 0 1
+pinseq=2
+}
+P 100 2300 300 2300 1 0 0
+{
+T 100 2300 5 10 0 0 0 0 1
+pintype=pas
+T 355 2295 3 8 1 1 0 0 1
+pinlabel=VCC
+T 205 2345 5 8 1 1 0 6 1
+pinnumber=6
+T 100 2300 5 10 0 0 0 0 1
+pinseq=6
+}
+P 100 2100 300 2100 1 0 0
+{
+T 100 2100 5 10 0 0 0 0 1
+pintype=in
+T 355 2095 3 8 1 1 0 0 1
+pinlabel=PWM
+T 205 2145 5 8 1 1 0 6 1
+pinnumber=3
+T 100 2100 5 10 0 0 0 0 1
+pinseq=3
+}
+P 100 1900 300 1900 1 0 0
+{
+T 100 1900 5 10 0 0 0 0 1
+pintype=in
+T 355 1895 3 8 1 1 0 0 1
+pinlabel=FCCM
+T 205 1945 5 8 1 1 0 6 1
+pinnumber=7
+T 100 1900 5 10 0 0 0 0 1
+pinseq=7
+}
+P 100 1700 300 1700 1 0 0
+{
+T 100 1700 5 10 0 0 0 0 1
+pintype=pas
+T 355 1695 3 8 1 1 0 0 1
+pinlabel=GND
+T 205 1745 5 8 1 1 0 6 1
+pinnumber=4
+T 100 1700 5 10 0 0 0 0 1
+pinseq=4
+}
+T 2800 2000 9 10 0 0 0 0 1
+dist-license=GPL 2
