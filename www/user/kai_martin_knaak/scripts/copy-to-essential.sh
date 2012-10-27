@@ -114,6 +114,7 @@ cp footprints/discrete/dio_minimelf.fp $PRE/discrete
 cp footprints/discrete/dio_1812.fp $PRE/discrete
 cp footprints/discrete/dio_400mil.fp $PRE/discrete
 
+cp footprints/discrete/LED_1206.fp $PRE/discrete
 cp footprints/discrete/LED_3mm.fp $PRE/discrete
 cp footprints/discrete/LED_5mm.fp $PRE/discrete
 
