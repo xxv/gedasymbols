@@ -1,4 +1,4 @@
-v 20110116 2
+v 20111231 2
 T 100 1700 5 8 0 0 0 0 1
 description=BNC connector
 T 100 1300 5 8 0 0 0 0 1
@@ -7,7 +7,7 @@ T 800 500 8 10 1 1 0 0 1
 refdes=CONN?
 T 800 300 8 10 1 1 0 0 1
 value=XXX
-T 800 150 8 8 1 1 0 0 1
+T 800 100 8 8 1 1 0 0 1
 footprint=BNC_LAY
 P 0 400 100 400 1 0 0
 {

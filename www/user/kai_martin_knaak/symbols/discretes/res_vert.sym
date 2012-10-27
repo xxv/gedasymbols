@@ -3,7 +3,7 @@ T 100 2800 5 8 0 0 0 0 1
 device=resistor
 T 100 2600 5 8 0 0 0 0 1
 description=resistor
-T 300 250 8 8 1 1 0 0 1
+T 300 200 8 8 1 1 0 0 1
 footprint=0805
 T 100 2200 5 8 0 0 0 0 1
 documentation=none

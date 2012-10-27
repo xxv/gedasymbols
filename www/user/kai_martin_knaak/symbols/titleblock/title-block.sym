@@ -1,5 +1,5 @@
-v 20110116 2
-T 12300 1800 5 10 0 0 0 0 1
+v 20111231 2
+T 9000 3100 5 8 0 0 0 0 1
 graphical=1
 L 9000 700 15200 700 15 0 0 0 -1 -1
 L 15200 1800 15200 700 15 0 0 0 -1 -1
@@ -35,3 +35,15 @@ T 14350 450 5 16 1 1 0 4 1
 author=author
 L 15200 700 15200 0 15 0 0 0 -1 -1
 L 13500 700 13500 0 15 0 0 0 -1 -1
+T 9000 3500 5 8 0 0 0 0 1
+description=Title block with attributes
+T 9000 3300 5 8 0 0 0 0 1
+comment=the values of the attributes are not used anywhere else (yet)
+T 9000 2900 5 8 0 0 0 0 1
+symversion=1.0
+T 9000 2700 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 9000 2500 5 8 0 0 0 0 1
+dist-license=GPL 3, http://www.gnu.org/licenses/gpl-3.0.txt
+T 9000 2300 5 8 0 0 0 0 1
+use-license=free, no restrictions

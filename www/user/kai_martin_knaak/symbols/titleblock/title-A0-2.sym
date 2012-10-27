@@ -1,10 +1,6 @@
-v 20060123 1
+v 20111231 2
 B 0 0 46800 33100 15 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 42600 1800 5 10 0 0 0 0 1
-graphical=1
 L 39000 -5600 46600 -5600 15 0 0 0 -1 -1
-T 0 0 8 10 1 0 0 0 1
-Title=-T-i-t-l-e-
 L 39300 700 45500 700 15 0 0 0 -1 -1
 L 45500 1800 45500 700 15 0 0 0 -1 -1
 L 46450 350 46350 100 15 0 0 0 -1 -1
@@ -39,3 +35,17 @@ T 44200 100 15 8 1 0 0 0 1
 DRAWN BY: 
 T 44750 450 5 16 1 1 0 4 1
 author=author
+T 400 34200 5 8 0 0 0 0 1
+graphical=1
+T 400 34600 5 8 0 0 0 0 1
+description=title block with attributes, size A0
+T 400 34400 5 8 0 0 0 0 1
+comment=the values of the attributes are not used anywhere else (yet)
+T 400 34000 5 8 0 0 0 0 1
+symversion=1.0
+T 400 33800 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 400 33600 5 8 0 0 0 0 1
+dist-license=GPL 3, http://www.gnu.org/licenses/gpl-3.0.txt
+T 400 33400 5 8 0 0 0 0 1
+use-license=free, no restrictions
