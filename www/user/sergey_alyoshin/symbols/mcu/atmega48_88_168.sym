@@ -4,7 +4,7 @@ P 3800 3400 3500 3400 1 0 0
 T 4000 3400 5 10 0 0 0 0 1
 pintype=unknown
 T 3445 3395 9 10 1 1 0 6 1
-pinlabel=PD3 (INT1/OC2B)
+pinlabel=(INT1/OC2B) PD3
 T 3595 3445 5 10 1 1 0 0 1
 pinnumber=1
 T 4000 3400 5 10 0 0 0 0 1
@@ -17,7 +17,7 @@ pintype=unknown
 T 4000 3000 5 10 0 0 0 0 1
 pinseq=2
 T 3445 2995 9 10 1 1 0 6 1
-pinlabel=PD4 (T0/XCK)
+pinlabel=(T0/XCK) PD4
 T 3595 3045 5 10 1 1 0 0 1
 pinnumber=2
 }
@@ -94,7 +94,7 @@ pintype=unknown
 T 4000 2600 5 10 0 0 0 0 1
 pinseq=9
 T 3445 2595 9 10 1 1 0 6 1
-pinlabel=PD5 (T1/OC0B)
+pinlabel=(T1/OC0B) PD5
 T 3595 2645 5 10 1 1 0 0 1
 pinnumber=9
 }
@@ -105,7 +105,7 @@ pintype=unknown
 T 4000 2200 5 10 0 0 0 0 1
 pinseq=10
 T 3445 2195 9 10 1 1 0 6 1
-pinlabel=PD6 (AIN0/OC0A)
+pinlabel=(AIN0/OC0A) PD6
 T 3595 2245 5 10 1 1 0 0 1
 pinnumber=10
 }
@@ -116,7 +116,7 @@ pintype=unknown
 T 4000 1800 5 10 0 0 0 0 1
 pinseq=11
 T 3445 1795 9 10 1 1 0 6 1
-pinlabel=PD7 (AIN1)
+pinlabel=(AIN1) PD7
 T 3595 1845 5 10 1 1 0 0 1
 pinnumber=11
 }
@@ -325,7 +325,7 @@ pintype=unknown
 T 4000 4600 5 10 0 0 0 0 1
 pinseq=30
 T 3445 4595 9 10 1 1 0 6 1
-pinlabel=PD0 (RxD)
+pinlabel=(RxD) PD0
 T 3595 4645 5 10 1 1 0 0 1
 pinnumber=30
 }
@@ -336,7 +336,7 @@ pintype=unknown
 T 4000 4200 5 10 0 0 0 0 1
 pinseq=31
 T 3445 4195 9 10 1 1 0 6 1
-pinlabel=PD1 (TxD)
+pinlabel=(TxD) PD1
 T 3595 4245 5 10 1 1 0 0 1
 pinnumber=31
 }
@@ -347,7 +347,7 @@ pintype=unknown
 T 4000 3800 5 10 0 0 0 0 1
 pinseq=32
 T 3445 3795 9 10 1 1 0 6 1
-pinlabel=PD2 (INT0)
+pinlabel=(INT0) PD2
 T 3595 3845 5 10 1 1 0 0 1
 pinnumber=32
 }
