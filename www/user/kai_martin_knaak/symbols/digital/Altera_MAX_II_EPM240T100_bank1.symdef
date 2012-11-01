@@ -1,0 +1,55 @@
+# This is a the symbol definition for Altera MAX II, model EPM240T100. It is
+# to be read by djboxsym.
+# -<)kmk(>---(2012)
+
+[labels]
+
+refdes=U?
+value=EPM240T100C5N
+footprint=TFQP100
+! description=EPM240T100, bank B1
+! comment=EPM240T100, CPLD by Altera, TQFP-100
+! documentation=http://www.altera.com/literature/lit-max2.jsp
+! version=1.0
+! author=Kai-Martin Knaak, kmk@lilalaser.de
+! uselicense=no restrictions
+! distlicense=GPL3, see http://www.gnu.org/licenses/gpl-3.0.txt
+
+[left]
+2 IO01
+3 IO02
+4 IO03
+5 IO04
+6 IO05
+7 IO06
+8 IO07
+15 IO8
+16 IO09
+17 IO10
+
+18 IO11
+19 IO12
+20 IO13
+21 IO14
+26 IO15
+27 IO16
+28 IO17
+29 IO18
+30 IO19
+33 IO20
+
+34 IO21
+35 IO22
+36 IO23
+37 IO24
+38 IO25
+39 IO26
+40 IO27
+41 IO28
+42 IO29
+47 IO30
+
+48 IO31
+49 IO32
+50 IO33
+51 IO34

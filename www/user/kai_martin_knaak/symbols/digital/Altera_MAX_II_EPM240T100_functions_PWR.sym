@@ -1,0 +1,256 @@
+v 20060123 1
+B 300 300 2900 8200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 3200 8600 9 10 0 0 0 0 1
+distlicense=GPL3, see http://www.gnu.org/licenses/gpl-3.0.txt
+T 3200 8800 9 10 0 0 0 0 1
+uselicense=no restrictions
+T 3200 9000 9 10 0 0 0 0 1
+author=Kai-Martin Knaak, kmk@lilalaser.de
+T 3200 9200 9 10 0 0 0 0 1
+version=1.0
+T 3200 9400 9 10 0 0 0 0 1
+documentation=http://www.altera.com/literature/lit-max2.jsp
+T 3200 9600 9 10 0 0 0 0 1
+comment=EPM240T100, CPLD by Altera, TQFP-100
+T 3200 9800 9 10 0 0 0 0 1
+description=EPM240T100, functions and power
+T 1800 7300 9 10 1 1 0 3 1
+footprint=TFQP100
+T 1800 7600 9 10 1 1 0 3 1
+value=EPM240T100C5N
+T 1800 7900 9 10 1 1 0 3 1
+refdes=U?
+P 200 2100 300 2100 1 0 0
+{
+T 350 2100 9 10 1 1 0 1 1
+pinlabel=VCCIO1
+T 200 2150 5 8 1 1 0 6 1
+pinnumber=9
+T 200 2150 5 8 0 1 0 6 1
+pinseq=9
+}
+P 200 4500 300 4500 1 0 0
+{
+T 350 4500 9 10 1 1 0 1 1
+pinlabel=GNDIO
+T 200 4550 5 8 1 1 0 6 1
+pinnumber=10
+T 200 4550 5 8 0 1 0 6 1
+pinseq=10
+}
+P 200 5100 300 5100 1 0 0
+{
+T 350 5100 9 10 1 1 0 1 1
+pinlabel=GNDINT
+T 200 5150 5 8 1 1 0 6 1
+pinnumber=11
+T 200 5150 5 8 0 1 0 6 1
+pinseq=11
+}
+P 200 8100 300 8100 1 0 0
+{
+T 350 8100 9 10 1 1 0 1 1
+pinlabel=GCLK0
+T 200 8150 5 8 1 1 0 6 1
+pinnumber=12
+T 200 8150 5 8 0 1 0 6 1
+pinseq=12
+}
+P 200 2700 300 2700 1 0 0
+{
+T 350 2700 9 10 1 1 0 1 1
+pinlabel=VCCINT
+T 200 2750 5 8 1 1 0 6 1
+pinnumber=13
+T 200 2750 5 8 0 1 0 6 1
+pinseq=13
+}
+P 200 7800 300 7800 1 0 0
+{
+T 350 7800 9 10 1 1 0 1 1
+pinlabel=GCLK1
+T 200 7850 5 8 1 1 0 6 1
+pinnumber=14
+T 200 7850 5 8 0 1 0 6 1
+pinseq=14
+}
+P 200 6000 300 6000 1 0 0
+{
+T 350 6000 9 10 1 1 0 1 1
+pinlabel=TMS
+T 200 6050 5 8 1 1 0 6 1
+pinnumber=22
+T 200 6050 5 8 0 1 0 6 1
+pinseq=22
+}
+P 200 6300 300 6300 1 0 0
+{
+T 350 6300 9 10 1 1 0 1 1
+pinlabel=TDI
+T 200 6350 5 8 1 1 0 6 1
+pinnumber=23
+T 200 6350 5 8 0 1 0 6 1
+pinseq=23
+}
+P 200 5700 300 5700 1 0 0
+{
+T 350 5700 9 10 1 1 0 1 1
+pinlabel=TCK
+T 200 5750 5 8 1 1 0 6 1
+pinnumber=24
+T 200 5750 5 8 0 1 0 6 1
+pinseq=24
+}
+P 200 5400 300 5400 1 0 0
+{
+T 350 5400 9 10 1 1 0 1 1
+pinlabel=TDO
+T 200 5450 5 8 1 1 0 6 1
+pinnumber=25
+T 200 5450 5 8 0 1 0 6 1
+pinseq=25
+}
+P 200 1800 300 1800 1 0 0
+{
+T 350 1800 9 10 1 1 0 1 1
+pinlabel=VCCIO1
+T 200 1850 5 8 1 1 0 6 1
+pinnumber=31
+T 200 1850 5 8 0 1 0 6 1
+pinseq=31
+}
+P 200 4200 300 4200 1 0 0
+{
+T 350 4200 9 10 1 1 0 1 1
+pinlabel=GNDIO
+T 200 4250 5 8 1 1 0 6 1
+pinnumber=32
+T 200 4250 5 8 0 1 0 6 1
+pinseq=32
+}
+P 200 6900 300 6900 1 0 0
+{
+T 350 6900 9 10 1 1 0 1 1
+pinlabel=DEV_OE
+T 200 6950 5 8 1 1 0 6 1
+pinnumber=43
+T 200 6950 5 8 0 1 0 6 1
+pinseq=43
+}
+P 200 6600 300 6600 1 0 0
+{
+T 350 6600 9 10 1 1 0 1 1
+pinlabel=DEVCLRN
+T 200 6650 5 8 1 1 0 6 1
+pinnumber=44
+T 200 6650 5 8 0 1 0 6 1
+pinseq=44
+}
+P 200 1500 300 1500 1 0 0
+{
+T 350 1500 9 10 1 1 0 1 1
+pinlabel=VCCIO1
+T 200 1550 5 8 1 1 0 6 1
+pinnumber=45
+T 200 1550 5 8 0 1 0 6 1
+pinseq=45
+}
+P 200 3900 300 3900 1 0 0
+{
+T 350 3900 9 10 1 1 0 1 1
+pinlabel=GNDIO
+T 200 3950 5 8 1 1 0 6 1
+pinnumber=46
+T 200 3950 5 8 0 1 0 6 1
+pinseq=46
+}
+P 200 1200 300 1200 1 0 0
+{
+T 350 1200 9 10 1 1 0 1 1
+pinlabel=VCCIO2
+T 200 1250 5 8 1 1 0 6 1
+pinnumber=59
+T 200 1250 5 8 0 1 0 6 1
+pinseq=59
+}
+P 200 3600 300 3600 1 0 0
+{
+T 350 3600 9 10 1 1 0 1 1
+pinlabel=GNDIO
+T 200 3650 5 8 1 1 0 6 1
+pinnumber=60
+T 200 3650 5 8 0 1 0 6 1
+pinseq=60
+}
+P 200 7500 300 7500 1 0 0
+{
+T 350 7500 9 10 1 1 0 1 1
+pinlabel=GCLK2
+T 200 7550 5 8 1 1 0 6 1
+pinnumber=62
+T 200 7550 5 8 0 1 0 6 1
+pinseq=62
+}
+P 200 2400 300 2400 1 0 0
+{
+T 350 2400 9 10 1 1 0 1 1
+pinlabel=VCCINT
+T 200 2450 5 8 1 1 0 6 1
+pinnumber=63
+T 200 2450 5 8 0 1 0 6 1
+pinseq=63
+}
+P 200 7200 300 7200 1 0 0
+{
+T 350 7200 9 10 1 1 0 1 1
+pinlabel=GCLK3
+T 200 7250 5 8 1 1 0 6 1
+pinnumber=64
+T 200 7250 5 8 0 1 0 6 1
+pinseq=64
+}
+P 200 4800 300 4800 1 0 0
+{
+T 350 4800 9 10 1 1 0 1 1
+pinlabel=GNDINT
+T 200 4850 5 8 1 1 0 6 1
+pinnumber=65
+T 200 4850 5 8 0 1 0 6 1
+pinseq=65
+}
+P 200 3300 300 3300 1 0 0
+{
+T 350 3300 9 10 1 1 0 1 1
+pinlabel=GNDIO
+T 200 3350 5 8 1 1 0 6 1
+pinnumber=79
+T 200 3350 5 8 0 1 0 6 1
+pinseq=79
+}
+P 200 900 300 900 1 0 0
+{
+T 350 900 9 10 1 1 0 1 1
+pinlabel=VCCIO2
+T 200 950 5 8 1 1 0 6 1
+pinnumber=80
+T 200 950 5 8 0 1 0 6 1
+pinseq=80
+}
+P 200 3000 300 3000 1 0 0
+{
+T 350 3000 9 10 1 1 0 1 1
+pinlabel=GNDIO
+T 200 3050 5 8 1 1 0 6 1
+pinnumber=93
+T 200 3050 5 8 0 1 0 6 1
+pinseq=93
+}
+P 200 600 300 600 1 0 0
+{
+T 350 600 9 10 1 1 0 1 1
+pinlabel=VCCIO2
+T 200 650 5 8 1 1 0 6 1
+pinnumber=94
+T 200 650 5 8 0 1 0 6 1
+pinseq=94
+}

@@ -1,10 +1,10 @@
-v 20100214 2
-B 300 300 4200 14100 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+v 20111231 2
+B 300 300 4200 14100 3 10 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 500 14800 9 10 0 0 0 0 1
+distlicense=GPL3,  see http://www.gnu.org/licenses/gpl-3.0.txt
 T 500 15000 9 10 0 0 0 0 1
-distlicense=GPL3
-T 500 15200 9 10 0 0 0 0 1
 uselicense=no restrictions
-T 500 15400 9 10 0 0 0 0 1
+T 500 15200 9 10 0 0 0 0 1
 author=Kai-Martin Knaak, kmk@lilalaser.de
 T 500 15800 9 10 0 0 0 0 1
 description=ATXmegaA1, TQFP-100
@@ -918,3 +918,5 @@ pinseq=100
 }
 T 500 15600 9 10 0 0 0 0 1
 documentation=http://www.atmel.com/dyn/resources/prod_documents/doc8067.pdf
+T 500 15400 9 10 0 0 0 0 1
+symversion=1.0

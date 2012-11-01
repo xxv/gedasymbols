@@ -1,0 +1,44 @@
+# This is a symbol definition for Altera MAX II, model EPM240T100. It is
+# to be read by djboxsym.
+# -<)kmk(>---(2012)
+
+[labels]
+
+refdes=U?
+value=EPM240T100C5N
+footprint=TFQP100
+! description=EPM240T100, functions and power
+! comment=EPM240T100, CPLD by Altera, TQFP-100
+! documentation=http://www.altera.com/literature/lit-max2.jsp
+! version=1.0
+! author=Kai-Martin Knaak, kmk@lilalaser.de
+! uselicense=no restrictions
+! distlicense=GPL3, see http://www.gnu.org/licenses/gpl-3.0.txt
+
+[left]
+12 GCLK0
+14 GCLK1
+62 GCLK2
+64 GCLK3
+43 DEV_OE
+44 DEVCLRN
+23 TDI
+22 TMS
+24 TCK
+25 TDO
+11 GNDINT
+65 GNDINT
+10 GNDIO
+32 GNDIO
+46 GNDIO
+60 GNDIO
+79 GNDIO
+93 GNDIO
+13 VCCINT
+63 VCCINT
+9 VCCIO1
+31 VCCIO1
+45 VCCIO1
+59 VCCIO2
+80 VCCIO2
+94 VCCIO2
