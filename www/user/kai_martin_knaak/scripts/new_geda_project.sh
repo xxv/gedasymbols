@@ -186,28 +186,16 @@ echo \
 " > gschem-colors
 
 
-echo "Add a script that creates gerber files and zips them for the fab"
+echo "Add a script to create gerber files and zip them for the fab"
 echo \
-"#!/bin/sh
-# produce gerber files, packages them in a zip file and open 
+'#!/bin/sh
+# produce gerber files, packages them in a zip file and open gerbv
 
-NAME="$NAME"
-VERSION="$VERSION"
-LAYOUT="../$NAME.pcb"
+NAME='$NAME'
+VERSION='$VERSION'
+LAYOUT='../$NAME.pcb'
 
-pcb -x gerber --gerberfile $NAME_$VERSION.pcb --name-style first $LAYOUT
-
-zip $NAME_$VERSION.zip \
-$NAME.README \
-$NAME_$VERSION*.gbr \
-$NAME_$VERSION*.cnc
-
-# open the gerbers with gerbv
-gerbv $NAME_$VERSION*.gbr
-
-" > gerber/do_$NAME"_gerbers.sh"
-chmod u+x gerber/do_$NAME"_gerbers.sh"
-
+pcb -x gerber --gerberfile $NAME"_"$VERSION".pcb" --name-style first $LAYOUT
 
 echo "Add a README for the fab"
 echo \
@@ -227,7 +215,20 @@ Inhaltliche Bedeutung der Dateien
 "$NAME"_"$VERSION".outline.gbr		-- Umriss der Leiterplatte
 "$NAME"_"$VERSION".plated-drill.cnc	-- Koordinaten metallisierter Löcher
 "$NAME"_"$VERSION".unplated-drill.cnc	-- Koordinaten unmetallisierter Löcher
-" > gerber/$NAME"_"$VERSION".README"
+" > gerberdaten_"$NAME"_"$VERSION".README
+
+# compress the gerbers into a zip file
+zip $NAME"_"$VERSION.zip \
+gerberdaten_$NAME"_"$VERSION".README" \
+$NAME"_"$VERSION*.gbr \
+$NAME"_"$VERSION*.cnc
+
+# open the gerbers with gerbv
+gerbv $NAME"_"$VERSION*.gbr
+
+' > gerber/do_$NAME"_gerbers.sh"
+chmod u+x gerber/do_$NAME"_gerbers.sh"
+
 
 
 echo "add a gafrc to the versions folder"

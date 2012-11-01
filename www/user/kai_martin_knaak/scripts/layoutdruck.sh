@@ -128,16 +128,16 @@ $PCB -x eps \
   $PCBFILE
 
 ## rectify broken eps syntax: make bounding box parameters integers ##
-awk -F [\ \.] '
-  {
-  if ( $1 == "%%BoundingBox:" )
-     { print $1" "$2" "$3" "$4" "$6 }
-     else { print $0 }
-  }
-' $TMPDIR"/bottomrefdes_tmp.eps" > $TMPDIR"/bottomrefdes_tmp2.eps"
+#awk -F [\ \.] '
+#  {
+#  if ( $1 == "%%BoundingBox:" )
+#     { print $1" "$2" "$3" "$4" "$6 }
+#     else { print $0 }
+#  }
+#' $TMPDIR"/bottomrefdes_tmp.eps" > $TMPDIR"/bottomrefdes_tmp2.eps"
 
 ## crop eps ##
-epstool --bbox --copy  $TMPDIR"/bottomrefdes_tmp2.eps" $TMPDIR"/bottomrefdes.eps"
+epstool --bbox --copy  $TMPDIR"/bottomrefdes_tmp.eps" $TMPDIR"/bottomrefdes.eps"
 
 ## make a decently sized postscript page
 poster -m$PAPERSIZE -p$SIZE -c12x12mm -o $TMPDIR"/bottomrefdes.ps" $TMPDIR"/bottomrefdes.eps"
@@ -165,16 +165,16 @@ $PCB -x eps \
 
 
 ## rectify broken eps syntax: make bounding box parameters integers ##
-awk -F [\ \.] '
-  {
-  if ( $1 == "%%BoundingBox:" )
-     { print $1" "$2" "$3" "$4" "$6 }
-     else { print $0 }
-  }
-' $TMPDIR"/bottomvalue_tmp.eps" > $TMPDIR"/bottomvalue_tmp2.eps"
+#awk -F [\ \.] '
+#  {
+#  if ( $1 == "%%BoundingBox:" )
+#     { print $1" "$2" "$3" "$4" "$6 }
+#     else { print $0 }
+#  }
+#' $TMPDIR"/bottomvalue_tmp.eps" > $TMPDIR"/bottomvalue_tmp2.eps"
 
 ## crop eps ##
-epstool --bbox --copy  $TMPDIR"/bottomvalue_tmp2.eps" $TMPDIR"/bottomvalue.eps"
+epstool --bbox --copy  $TMPDIR"/bottomvalue_tmp.eps" $TMPDIR"/bottomvalue.eps"
 
 ## make a decently sized postscript page
 poster -m$PAPERSIZE -p$SIZE -c12x12mm -o $TMPDIR"/bottomvalue.ps" $TMPDIR"/bottomvalue.eps"
