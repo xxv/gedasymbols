@@ -796,7 +796,7 @@ Symbol['~' 12.00mil]
 )
 Attribute("PCB::grid::unit" "mil")
 
-Element["" "ATXMEGA_TFQP100" "ATXMEGA_TFQP100" "ATXMEGA_TFQP100" 37.9999mm 15.0000mm -236.22mil -413.39mil 0 100 ""]
+Element["" "TQFP100" "TQFP100" "TQFP100" 38.mm 15.0000mm -236.22mil -413.39mil 0 100 ""]
 (
 	Pad[-236.22mil -328.75mil -236.22mil -261.81mil 11.81mil 39.37mil 15.75mil "" "100" "square"]
 	Pad[-216.54mil -328.75mil -216.54mil -261.81mil 11.81mil 39.37mil 15.75mil "" "99" "square"]
@@ -1019,7 +1019,7 @@ Layer(2 "bottom")
 Layer(3 "comment")
 (
 	Text[58.9999mm 19.69mil 0 214 "grid is mm" ""]
-	Text[374.02mil 39.38mil 0 214 "ATXMEGA_TFQP100.fp" ""]
+	Text[374.02mil 39.38mil 0 214 "TFQP100.fp" ""]
 )
 Layer(4 "bottom silk")
 (

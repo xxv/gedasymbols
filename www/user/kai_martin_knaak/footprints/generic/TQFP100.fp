@@ -1,4 +1,4 @@
-Element["" "ATXMEGA_TFQP100" "ATXMEGA_TFQP100" "ATXMEGA_TFQP100" 37.9999mm 15.0000mm -236.22mil -413.39mil 0 100 ""]
+Element["" "TQFP100" "TQFP100" "TQFP100" 38.mm 15.0000mm -236.22mil -413.39mil 0 100 ""]
 (
 	Pad[-236.22mil -328.75mil -236.22mil -261.81mil 11.81mil 39.37mil 15.75mil "" "100" "square"]
 	Pad[-216.54mil -328.75mil -216.54mil -261.81mil 11.81mil 39.37mil 15.75mil "" "99" "square"]
