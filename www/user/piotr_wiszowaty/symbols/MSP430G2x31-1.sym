@@ -1,0 +1,168 @@
+v 20111231 2
+P 0 2700 300 2700 1 0 0
+{
+T 0 2700 5 10 0 0 0 0 1
+pintype=power
+T 355 2695 5 10 1 1 0 0 1
+pinlabel=DVCC
+T 205 2745 5 10 1 1 0 6 1
+pinnumber=1
+T 0 2700 5 10 0 0 0 0 1
+pinseq=1
+}
+P 0 2300 300 2300 1 0 0
+{
+T 0 2300 5 10 0 0 0 0 1
+pintype=io
+T 355 2295 5 10 1 1 0 0 1
+pinlabel=P1.0/TA0CLK/ACLK/A0
+T 205 2345 5 10 1 1 0 6 1
+pinnumber=2
+T 0 2300 5 10 0 0 0 0 1
+pinseq=2
+}
+P 0 1900 300 1900 1 0 0
+{
+T 0 1900 5 10 0 0 0 0 1
+pintype=io
+T 355 1895 5 10 1 1 0 0 1
+pinlabel=P1.1/TA0.0/A1
+T 205 1945 5 10 1 1 0 6 1
+pinnumber=3
+T 0 1900 5 10 0 0 0 0 1
+pinseq=3
+}
+P 0 1500 300 1500 1 0 0
+{
+T 0 1500 5 10 0 0 0 0 1
+pintype=io
+T 355 1495 5 10 1 1 0 0 1
+pinlabel=P1.2/TA0.1/A2
+T 205 1545 5 10 1 1 0 6 1
+pinnumber=4
+T 0 1500 5 10 0 0 0 0 1
+pinseq=4
+}
+P 0 1100 300 1100 1 0 0
+{
+T 0 1100 5 10 0 0 0 0 1
+pintype=io
+T 355 1095 5 10 1 1 0 0 1
+pinlabel=P1.3/ADC10CLK/A3/VREF-/VEREF-
+T 205 1145 5 10 1 1 0 6 1
+pinnumber=5
+T 0 1100 5 10 0 0 0 0 1
+pinseq=6
+}
+P 0 700 300 700 1 0 0
+{
+T 0 700 5 10 0 0 0 0 1
+pintype=io
+T 355 695 5 10 1 1 0 0 1
+pinlabel=P1.4/SMCLK/A4/VREF+/VEREF+/TCK
+T 205 745 5 10 1 1 0 6 1
+pinnumber=6
+T 0 700 5 10 0 0 0 0 1
+pinseq=6
+}
+P 0 300 300 300 1 0 0
+{
+T 0 300 5 10 0 0 0 0 1
+pintype=io
+T 355 295 5 10 1 1 0 0 1
+pinlabel=P1.5/TA0.0/A5/SCLK/TMS
+T 205 345 5 10 1 1 0 6 1
+pinnumber=7
+T 0 300 5 10 0 0 0 0 1
+pinseq=7
+}
+P 7100 300 6800 300 1 0 0
+{
+T 7100 300 5 10 0 0 0 0 1
+pintype=io
+T 6745 295 5 10 1 1 0 6 1
+pinlabel=P1.6/TA0.1/A6/SDO/SCL/TDI/TCLK
+T 6895 345 5 10 1 1 0 0 1
+pinnumber=8
+T 7100 300 5 10 0 0 0 0 1
+pinseq=8
+}
+P 7100 700 6800 700 1 0 0
+{
+T 7100 700 5 10 0 0 0 0 1
+pintype=io
+T 6745 695 5 10 1 1 0 6 1
+pinlabel=P1.7/A7/SDI/SDA/TDO/TDI
+T 6895 745 5 10 1 1 0 0 1
+pinnumber=9
+T 7100 700 5 10 0 0 0 0 1
+pinseq=9
+}
+P 7100 1100 6800 1100 1 0 0
+{
+T 7100 1100 5 10 0 0 0 0 1
+pintype=io
+T 6745 1095 5 10 1 1 0 6 1
+pinlabel=\_RST\_/NMI/SBWTDIO
+T 6895 1145 5 10 1 1 0 0 1
+pinnumber=10
+T 7100 1100 5 10 0 0 0 0 1
+pinseq=10
+}
+P 7100 1500 6800 1500 1 0 0
+{
+T 7100 1500 5 10 0 0 0 0 1
+pintype=io
+T 6745 1495 5 10 1 1 0 6 1
+pinlabel=TEST/SBWTCK
+T 6895 1545 5 10 1 1 0 0 1
+pinnumber=11
+T 7100 1500 5 10 0 0 0 0 1
+pinseq=11
+}
+P 7100 1900 6800 1900 1 0 0
+{
+T 7100 1900 5 10 0 0 0 0 1
+pintype=io
+T 6745 1895 5 10 1 1 0 6 1
+pinlabel=XOUT/P2.7
+T 6895 1945 5 10 1 1 0 0 1
+pinnumber=12
+T 7100 1900 5 10 0 0 0 0 1
+pinseq=12
+}
+P 7100 2300 6800 2300 1 0 0
+{
+T 7100 2300 5 10 0 0 0 0 1
+pintype=io
+T 6745 2295 5 10 1 1 0 6 1
+pinlabel=XIN/P2.6/TA0.1
+T 6895 2345 5 10 1 1 0 0 1
+pinnumber=13
+T 7100 2300 5 10 0 0 0 0 1
+pinseq=13
+}
+P 7100 2700 6800 2700 1 0 0
+{
+T 7100 2700 5 10 0 0 0 0 1
+pintype=power
+T 6745 2695 5 10 1 1 0 6 1
+pinlabel=DVSS
+T 6895 2745 5 10 1 1 0 0 1
+pinnumber=14
+T 7100 2700 5 10 0 0 0 0 1
+pinseq=14
+}
+B 300 0 6500 3000 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 6600 3100 8 10 1 1 0 0 1
+refdes=U?
+T 300 3100 8 10 1 1 0 0 1
+device=MSP430G2x31
+T 300 3300 8 10 0 0 0 0 1
+footprint=DIL 14
+T 300 3500 8 10 0 0 0 0 1
+use-license=unlimited
+T 300 3700 8 10 0 0 0 0 1
+dist-license=GPL 2
+T 300 3900 8 10 0 0 0 0 1
+author=Piotr Wiszowaty pwiszowaty458@gmail.com
