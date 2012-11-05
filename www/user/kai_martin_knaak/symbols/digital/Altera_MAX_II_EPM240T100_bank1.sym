@@ -1,24 +1,24 @@
-v 20060123 1
-B 300 300 2700 11200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 3000 11600 9 10 0 0 0 0 1
+v 20111231 2
+B 300 300 1000 11100 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 300 12500 9 10 0 0 0 0 1
 distlicense=GPL3, see http://www.gnu.org/licenses/gpl-3.0.txt
-T 3000 11800 9 10 0 0 0 0 1
+T 300 12700 9 10 0 0 0 0 1
 uselicense=no restrictions
-T 3000 12000 9 10 0 0 0 0 1
+T 300 12900 9 10 0 0 0 0 1
 author=Kai-Martin Knaak, kmk@lilalaser.de
-T 3000 12200 9 10 0 0 0 0 1
+T 300 13100 9 10 0 0 0 0 1
 version=1.0
-T 3000 12400 9 10 0 0 0 0 1
+T 300 13300 9 10 0 0 0 0 1
 documentation=http://www.altera.com/literature/lit-max2.jsp
-T 3000 12600 9 10 0 0 0 0 1
+T 300 13500 9 10 0 0 0 0 1
 comment=EPM240T100, CPLD by Altera, TQFP-100
-T 3000 12800 9 10 0 0 0 0 1
+T 300 13700 9 10 0 0 0 0 1
 description=EPM240T100, bank B1
-T 1700 10300 9 10 1 1 0 3 1
+T 300 11500 8 8 1 1 0 0 1
 footprint=TFQP100
-T 1700 10600 9 10 1 1 0 3 1
+T 300 11700 8 10 1 1 0 0 1
 value=EPM240T100C5N
-T 1700 10900 9 10 1 1 0 3 1
+T 300 11900 8 10 1 1 0 0 1
 refdes=U?
 P 200 11100 300 11100 1 0 0
 {
