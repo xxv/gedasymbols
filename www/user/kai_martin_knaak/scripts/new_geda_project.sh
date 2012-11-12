@@ -27,8 +27,6 @@ shift 1
 
 SELF=$0
 NAME=$1
-# A low case only version of the name -- better for dokuwiki integration
-name=`echo $NAME | tr [:upper:] [:lower:]`
 USER=`whoami`
 AUTHOR=`finger $USER | awk 'BEGIN {FS = ": "} ; $0 ~ /Name/ {print $3}'`
 AUTHORSHORT=$USER
@@ -37,9 +35,12 @@ DATE=`date +%d.%m.%Y`
 VERSION="v1"      # The version string to be used in gerber- and print scripts"
 
 # Absolute path of the Script.
-# Note, this requires GNU readlink and might not work for Mac and BSD users 
+# Note, this requires GNU readlink. So it might not work for Mac and BSD users.
 PFAD=`dirname $(readlink -f $0)`
 #PFAD="/afs/iqo.uni-hannover.de/products/gedasymbols/www/user/kai_martin_knaak"
+
+# derive a low case only version of the user name. (e.g. for dokuwiki integration)
+name=`echo $NAME | tr [:upper:] [:lower:]`
 
 ################################################################################
 skel () {
@@ -523,17 +524,20 @@ git config color.ui true
 # add the branch "origin"
 git config branch.master.remote origin
 git config branch.master.merge refs/heads/master
+
 # let origin point to where a bare repo is going to be installed
 git remote add origin git://localhost/git/$NAME.git
 git remote set-url origin git://localhost/git/$NAME.git
-git remote set-url --push origin ssh://localhost/var/cache/git/$NAME.git
+
+# allow push via http. Needs git-http-backend configured in apache config.
+git remote set-url --push origin http://localhost/git/$NAME.git
 
 # install a bare clone in /var/cache/git
 sudo git clone --bare . /var/cache/git/$NAME.git
 sudo touch /var/cache/git/$NAME.git/git-daemon-export-ok
 sudo echo "geda project "$NAME > /var/cache/git/$NAME".git"/description
 
-# the bare repo needs to be writeable by ssh users
+# the bare repo needs to be writeable by apache
 sudo chown www-data:iqo /var/cache/git/$NAME".git" -R
 sudo chmod g+w /var/cache/git/$NAME".git" -R
 
