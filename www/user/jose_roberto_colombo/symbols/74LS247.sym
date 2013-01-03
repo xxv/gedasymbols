@@ -128,7 +128,7 @@ footprint=DIP16
 T 1600 3500 8 10 1 1 180 6 1
 refdes=U?
 T 300 3950 5 10 0 0 0 0 1
-description=4-bit shift register with parallel load
+description=7 segments driver/decoder
 T 300 4550 5 10 0 0 0 0 1
 numslots=0
 T 500 3340 9 10 1 0 0 0 1
@@ -195,8 +195,6 @@ pintype=pwr
 }
 T 95 0 8 10 0 1 0 0 1
 author=José Roberto Colombo Junior colombojrj@gmail.com
-T 95 0 8 10 0 1 0 0 1
-comment=7 segments driver/decoder
 T 4100 2100 8 10 0 1 0 0 1
 dist-license=GPL3
 T 3100 3000 8 10 0 1 0 0 1
