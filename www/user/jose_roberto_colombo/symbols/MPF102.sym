@@ -34,7 +34,7 @@ pintype=pas
 }
 T 750 500 8 10 1 1 0 6 1
 refdes=Q?
-T 0 2050 5 10 0 0 0 0 1
+T 500 250 5 10 1 1 0 0 1
 device=MPF102
 T 0 1050 5 10 0 0 0 0 1
 author=José Roberto Colombo Junior
