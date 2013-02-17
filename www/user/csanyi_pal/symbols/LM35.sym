@@ -1,0 +1,37 @@
+v 20060113 1
+P 2100 800 1800 800 1 0 0
+{
+T 1900 850 5 8 1 1 0 0 1
+pinnumber=3
+T 1900 750 5 8 0 1 0 2 1
+pinseq=1
+T 1750 800 9 8 1 1 0 6 1
+pinlabel=Adj
+T 1750 800 5 8 0 1 0 8 1
+pintype=out
+}
+B 400 400 1400 800 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 1800 1300 8 10 1 1 0 6 1
+refdes=U?
+T 900 700 9 10 1 0 0 0 1
+LM35
+T 900 1000 5 10 0 0 0 0 1
+device=LM35
+T 900 1200 5 10 0 0 0 0 1
+footprint=TO92
+T 900 1400 5 10 0 0 0 0 1
+author=Csányi Pál
+T 900 1600 5 10 0 0 0 0 1
+documentation=http://www.ti.com/lit/ds/symlink/lm35.pdf
+T 900 1800 5 10 0 0 0 0 1
+description=Precision Centigrade Temperature Sensor
+T 900 2000 5 10 0 0 0 0 1
+numslots=0
+T 900 2200 5 10 0 0 0 0 1
+dist-license=Creative Commons Share Alike
+T 900 2400 5 10 0 0 0 0 1
+use-license=Creative Commons Share Alike
+T 900 2600 5 10 0 0 0 0 1
+net=Vcc:2
+T 900 2800 5 10 0 0 0 0 1
+net=GND:1
