@@ -1,0 +1,51 @@
+v 20121123 2
+P 600 900 600 700 1 0 0
+{
+T 500 750 5 6 1 1 0 0 1
+pinnumber=1
+T 800 1050 5 6 0 0 0 0 1
+pinseq=1
+T 700 750 5 6 0 1 0 0 1
+pinlabel=+
+T 800 950 5 6 0 0 0 0 1
+pintype=pas
+}
+P 600 300 600 100 1 0 1
+{
+T 500 150 5 6 1 1 0 0 1
+pinnumber=3
+T 800 250 5 6 0 0 0 0 1
+pinseq=3
+T 700 150 5 6 0 1 0 0 1
+pinlabel=-
+T 800 150 5 6 0 0 0 0 1
+pintype=pas
+}
+P 200 500 400 500 1 0 0
+{
+T 300 550 5 6 1 1 0 0 1
+pinnumber=2
+T 100 1050 5 6 0 0 0 0 1
+pinseq=2
+T 200 350 5 6 0 1 0 0 1
+pinlabel=Out
+T 100 950 5 6 0 0 0 0 1
+pintype=out
+}
+T 900 500 8 10 1 1 0 0 1
+refdes=U?
+T 1500 1100 9 10 0 0 0 0 1
+device=SS34x
+T 1500 900 9 10 0 0 0 0 1
+description=Hall-effect sensor
+T 1500 300 9 10 0 0 0 0 1
+footprint=SOT-23
+T 1500 700 9 10 0 0 0 0 1
+author=Jan "Yenya" Kasprzak <kas@fi.muni.cz>
+T 1500 100 9 10 0 0 0 0 1
+datasheet=http://sensing.honeywell.com/honeywell-sensing-ss340rt-ss440r%20series-productsheet.pdf
+T 1500 500 9 10 0 0 0 0 1
+dist-license=GPL 2
+B 400 300 400 400 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+L 500 600 700 400 3 0 0 0 -1 -1
+L 700 600 500 400 3 0 0 0 -1 -1
