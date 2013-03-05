@@ -115,6 +115,7 @@ sub download {
 
 sub download_attr {
     print "Content-type: text/plain\n";
+    print "Content-Disposition: attachment; filename=$symbol\n";
     ($filesize,$filetime) = (stat($file))[7,9];
     $outline = "T 100 100 0 1 0 0 0 0 1\ngedasymbols::url=http://".$ENV{'HTTP_HOST'}.$ENV{'PATH_INFO'}."\n";
     $filesize += length($outline);
