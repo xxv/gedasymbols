@@ -1,0 +1,71 @@
+v 20121118 2
+P 1500 1300 1200 1300 1 0 0
+{
+T 1500 1300 5 10 0 0 0 0 1
+pintype=unknown
+T 1145 1295 5 10 1 1 0 7 1
+pinlabel=SW
+T 1500 1300 5 10 0 0 0 0 1
+pinseq=1
+T 1295 1345 5 10 1 1 0 0 1
+pinnumber=1
+}
+B 300 200 900 1300 3 0 1 0 -1 -1 0 -1 -1 -1 -1 -1
+T 275 1595 8 10 1 1 0 0 1
+refdes=DA?
+T 300 95 8 10 1 1 0 2 1
+device=LMR64010XMF
+T 1000 1800 8 10 0 0 0 2 1
+dist-license=GPL
+T 1000 2000 8 10 0 0 0 2 1
+author=Sergey Alyoshin
+T 1000 1600 8 10 0 0 0 2 1
+use-license=unlimited
+T 983 1264 8 10 0 1 0 0 1
+footprint=SOT23-5
+P 1500 400 1200 400 1 0 0
+{
+T 1500 400 5 10 0 0 0 0 1
+pintype=unknown
+T 1145 395 5 10 1 1 0 7 1
+pinlabel=Gnd
+T 1500 400 5 10 0 0 0 0 1
+pinseq=2
+T 1295 445 5 10 1 1 0 0 1
+pinnumber=2
+}
+P 1500 1000 1200 1000 1 0 0
+{
+T 1500 1000 5 10 0 0 0 0 1
+pintype=unknown
+T 1145 995 5 10 1 1 0 7 1
+pinlabel=FB
+T 1500 1000 5 10 0 0 0 0 1
+pinseq=3
+T 1295 1045 5 10 1 1 0 0 1
+pinnumber=3
+}
+P 0 1300 300 1300 1 0 0
+{
+T 0 1300 5 10 0 0 0 6 1
+pintype=unknown
+T 355 1295 5 10 1 1 0 1 1
+pinlabel=Vin
+T 0 1300 5 10 0 0 0 6 1
+pinseq=5
+T 205 1345 5 10 1 1 0 6 1
+pinnumber=5
+}
+P 0 700 300 700 1 0 0
+{
+T 0 700 5 10 0 0 0 6 1
+pintype=unknown
+T 355 695 5 10 1 1 0 1 1
+pinlabel=nSHDN
+T 0 700 5 10 0 0 0 6 1
+pinseq=4
+T 205 745 5 10 1 1 0 6 1
+pinnumber=4
+}
+T 995 1062 8 10 0 1 0 0 1
+description=Voltage regulator, 40V out, 1A step-up

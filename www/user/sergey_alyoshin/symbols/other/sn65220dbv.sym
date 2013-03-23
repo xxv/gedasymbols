@@ -1,0 +1,84 @@
+v 20121118 2
+B 0 300 1000 800 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 1100 1200 8 10 1 1 0 0 1
+refdes=DA?
+T 1100 195 8 10 1 1 0 2 1
+device=SN65220DBV
+T 1095 -305 8 10 0 0 0 0 1
+top-mark=SADI
+T 1095 395 8 10 0 1 0 2 1
+description=Full speed USB host transient suppressors
+P 800 0 800 300 1 0 0
+{
+T 800 0 5 10 0 0 90 0 1
+pintype=unknown
+T 800 355 5 10 1 1 90 0 1
+pinlabel=NC
+T 750 205 5 10 1 1 90 6 1
+pinnumber=1
+T 800 0 5 10 0 0 90 0 1
+pinseq=1
+}
+P 200 0 200 300 1 0 0
+{
+T 200 0 5 10 0 0 90 0 1
+pintype=unknown
+T 200 355 5 10 1 1 90 0 1
+pinlabel=Gnd
+T 150 205 5 10 1 1 90 6 1
+pinnumber=2
+T 200 0 5 10 0 0 90 0 1
+pinseq=2
+}
+P 800 1400 800 1100 1 0 0
+{
+T 800 1400 5 10 0 0 270 0 1
+pintype=unknown
+T 800 1045 5 10 1 1 90 6 1
+pinlabel=NC
+T 750 1195 5 10 1 1 90 0 1
+pinnumber=3
+T 800 1400 5 10 0 0 270 0 1
+pinseq=3
+}
+P 500 1400 500 1100 1 0 0
+{
+T 500 1400 5 10 0 0 270 0 1
+pintype=unknown
+T 500 1045 5 10 1 1 90 6 1
+pinlabel=B
+T 450 1195 5 10 1 1 90 0 1
+pinnumber=4
+T 500 1400 5 10 0 0 270 0 1
+pinseq=4
+}
+P 500 0 500 300 1 0 0
+{
+T 500 0 5 10 0 0 90 0 1
+pintype=unknown
+T 500 355 5 10 1 1 90 0 1
+pinlabel=Gnd
+T 450 205 5 10 1 1 90 6 1
+pinnumber=5
+T 500 0 5 10 0 0 90 0 1
+pinseq=5
+}
+P 200 1400 200 1100 1 0 0
+{
+T 200 1400 5 10 0 0 270 0 1
+pintype=unknown
+T 200 1045 5 10 1 1 90 6 1
+pinlabel=A
+T 150 1195 5 10 1 1 90 0 1
+pinnumber=6
+T 200 1400 5 10 0 0 270 0 1
+pinseq=6
+}
+T 1100 1000 8 10 0 0 0 2 1
+author=Sergey Alyoshin
+T 1100 800 8 10 0 0 0 2 1
+dist-license=GPL
+T 1100 600 8 10 0 0 0 2 1
+use-license=unlimited
+T 1098 -142 8 10 0 1 0 0 1
+footprint=SOT23-6
