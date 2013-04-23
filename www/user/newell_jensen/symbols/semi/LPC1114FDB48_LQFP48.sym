@@ -1,0 +1,550 @@
+v 20060123 1
+B 300 300 6700 10800 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 7000 11200 9 10 0 0 0 0 1
+footprint=LQFP48_7
+T 7000 11400 9 10 0 0 0 0 1
+description=NXP 32-bit ARM Cortex-M0 microcontroller
+T 7000 11600 9 10 0 0 0 0 1
+device=LPC1114FDB48/301,1
+T 7000 11800 9 10 0 0 0 0 1
+distlicense=GPL
+T 7000 12000 9 10 0 0 0 0 1
+uselicense=unlimited
+T 7000 12200 9 10 0 0 0 0 1
+author=Newell Jensen
+T 7000 12400 9 10 0 0 0 0 1
+copyright=2010 Newell Jensen
+T 3700 10500 9 10 1 1 0 3 1
+LPC1114
+T 3700 10100 9 10 1 1 0 3 1
+refdes=U?
+P 7300 3500 7000 3500 1 0 0
+{
+T 6950 3500 9 10 1 1 0 7 1
+pinlabel=PIO2_6
+T 7100 3550 5 8 1 1 0 0 1
+pinnumber=1
+T 7100 3550 5 8 0 1 0 0 1
+pinseq=1
+T 6900 3550 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 4700 7000 4700 1 0 0
+{
+T 6950 4700 9 10 1 1 0 7 1
+pinlabel=PIO2_0/DTR/SSEL1
+T 7100 4750 5 8 1 1 0 0 1
+pinnumber=2
+T 7100 4750 5 8 0 1 0 0 1
+pinseq=2
+T 6900 4750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 10700 7000 10700 1 0 0
+{
+T 6950 10700 9 10 1 1 0 7 1
+pinlabel=RESET/PIO0_0
+T 7100 10750 5 8 1 1 0 0 1
+pinnumber=3
+T 7100 10750 5 8 0 1 0 0 1
+pinseq=3
+T 6900 10750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 10500 7000 10500 1 0 0
+{
+T 6950 10500 9 10 1 1 0 7 1
+pinlabel=PIO0_1/CLKOUT/CT32B0_MAT2
+T 7100 10550 5 8 1 1 0 0 1
+pinnumber=4
+T 7100 10550 5 8 0 1 0 0 1
+pinseq=4
+T 6900 10550 9 10 0 1 0 6 1
+pintype=pas
+}
+P 0 8300 300 8300 1 0 0
+{
+T 350 8300 9 10 1 1 0 1 1
+pinlabel=VSSIO
+T 200 8350 5 8 1 1 0 6 1
+pinnumber=5
+T 200 8350 5 8 0 1 0 6 1
+pinseq=5
+T 200 8350 9 10 0 1 0 6 1
+pintype=pas
+}
+L 300 10650 400 10700 3 0 0 0 0 0
+L 400 10700 300 10750 3 0 0 0 0 0
+P 0 10700 300 10700 1 0 0
+{
+T 450 10700 9 10 1 1 0 1 1
+pinlabel=XTALIN
+T 200 10750 5 8 1 1 0 6 1
+pinnumber=6
+T 200 10750 5 8 0 1 0 6 1
+pinseq=6
+T 200 10750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 0 10300 300 10300 1 0 0
+{
+T 350 10300 9 10 1 1 0 1 1
+pinlabel=XTALOUT
+T 200 10350 5 8 1 1 0 6 1
+pinnumber=7
+T 200 10350 5 8 0 1 0 6 1
+pinseq=7
+T 200 10350 9 10 0 1 0 6 1
+pintype=pas
+}
+P 0 9500 300 9500 1 0 0
+{
+T 350 9500 9 10 1 1 0 1 1
+pinlabel=VDDIO
+T 200 9550 5 8 1 1 0 6 1
+pinnumber=8
+T 200 9550 5 8 0 1 0 6 1
+pinseq=8
+T 200 9550 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 6100 7000 6100 1 0 0
+{
+T 6950 6100 9 10 1 1 0 7 1
+pinlabel=PIO1_8/CT16B1_CAP0
+T 7100 6150 5 8 1 1 0 0 1
+pinnumber=9
+T 7100 6150 5 8 0 1 0 0 1
+pinseq=9
+T 6900 6150 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 10300 7000 10300 1 0 0
+{
+T 6950 10300 9 10 1 1 0 7 1
+pinlabel=PIO0_2/SSEL0/CT16B_CAP0
+T 7100 10350 5 8 1 1 0 0 1
+pinnumber=10
+T 7100 10350 5 8 0 1 0 0 1
+pinseq=10
+T 6900 10350 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 3300 7000 3300 1 0 0
+{
+T 6950 3300 9 10 1 1 0 7 1
+pinlabel=PIO2_7
+T 7100 3350 5 8 1 1 0 0 1
+pinnumber=11
+T 7100 3350 5 8 0 1 0 0 1
+pinseq=11
+T 6900 3350 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 3100 7000 3100 1 0 0
+{
+T 6950 3100 9 10 1 1 0 7 1
+pinlabel=PIO2_8
+T 7100 3150 5 8 1 1 0 0 1
+pinnumber=12
+T 7100 3150 5 8 0 1 0 0 1
+pinseq=12
+T 6900 3150 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 4500 7000 4500 1 0 0
+{
+T 6950 4500 9 10 1 1 0 7 1
+pinlabel=PIO2_1/DSR/SCK1
+T 7100 4550 5 8 1 1 0 0 1
+pinnumber=13
+T 7100 4550 5 8 0 1 0 0 1
+pinseq=13
+T 6900 4550 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 10100 7000 10100 1 0 0
+{
+T 6950 10100 9 10 1 1 0 7 1
+pinlabel=PIO0_3
+T 7100 10150 5 8 1 1 0 0 1
+pinnumber=14
+T 7100 10150 5 8 0 1 0 0 1
+pinseq=14
+T 6900 10150 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 9900 7000 9900 1 0 0
+{
+T 6950 9900 9 10 1 1 0 7 1
+pinlabel=PIO0_4/SCL
+T 7100 9950 5 8 1 1 0 0 1
+pinnumber=15
+T 7100 9950 5 8 0 1 0 0 1
+pinseq=15
+T 6900 9950 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 9700 7000 9700 1 0 0
+{
+T 6950 9700 9 10 1 1 0 7 1
+pinlabel=PIO0_5/SDA
+T 7100 9750 5 8 1 1 0 0 1
+pinnumber=16
+T 7100 9750 5 8 0 1 0 0 1
+pinseq=16
+T 6900 9750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 5900 7000 5900 1 0 0
+{
+T 6950 5900 9 10 1 1 0 7 1
+pinlabel=PIO1_9/CT16B1_MAT0
+T 7100 5950 5 8 1 1 0 0 1
+pinnumber=17
+T 7100 5950 5 8 0 1 0 0 1
+pinseq=17
+T 6900 5950 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 900 7000 900 1 0 0
+{
+T 6950 900 9 10 1 1 0 7 1
+pinlabel=PIO3_4
+T 7100 950 5 8 1 1 0 0 1
+pinnumber=18
+T 7100 950 5 8 0 1 0 0 1
+pinseq=18
+T 6900 950 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 3900 7000 3900 1 0 0
+{
+T 6950 3900 9 10 1 1 0 7 1
+pinlabel=POI2_4
+T 7100 3950 5 8 1 1 0 0 1
+pinnumber=19
+T 7100 3950 5 8 0 1 0 0 1
+pinseq=19
+T 6900 3950 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 3700 7000 3700 1 0 0
+{
+T 6950 3700 9 10 1 1 0 7 1
+pinlabel=PIO2_5
+T 7100 3750 5 8 1 1 0 0 1
+pinnumber=20
+T 7100 3750 5 8 0 1 0 0 1
+pinseq=20
+T 6900 3750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 700 7000 700 1 0 0
+{
+T 6950 700 9 10 1 1 0 7 1
+pinlabel=PIO3_5
+T 7100 750 5 8 1 1 0 0 1
+pinnumber=21
+T 7100 750 5 8 0 1 0 0 1
+pinseq=21
+T 6900 750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 9500 7000 9500 1 0 0
+{
+T 6950 9500 9 10 1 1 0 7 1
+pinlabel=PIO0_6/SCK0
+T 7100 9550 5 8 1 1 0 0 1
+pinnumber=22
+T 7100 9550 5 8 0 1 0 0 1
+pinseq=22
+T 6900 9550 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 9300 7000 9300 1 0 0
+{
+T 6950 9300 9 10 1 1 0 7 1
+pinlabel=PIO0_7/CTS
+T 7100 9350 5 8 1 1 0 0 1
+pinnumber=23
+T 7100 9350 5 8 0 1 0 0 1
+pinseq=23
+T 6900 9350 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 2900 7000 2900 1 0 0
+{
+T 6950 2900 9 10 1 1 0 7 1
+pinlabel=PIO2_9
+T 7100 2950 5 8 1 1 0 0 1
+pinnumber=24
+T 7100 2950 5 8 0 1 0 0 1
+pinseq=24
+T 6900 2950 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 2700 7000 2700 1 0 0
+{
+T 6950 2700 9 10 1 1 0 7 1
+pinlabel=PIO2_10
+T 7100 2750 5 8 1 1 0 0 1
+pinnumber=25
+T 7100 2750 5 8 0 1 0 0 1
+pinseq=25
+T 6900 2750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 4300 7000 4300 1 0 0
+{
+T 6950 4300 9 10 1 1 0 7 1
+pinlabel=PIO2_2/DCD/MISO1
+T 7100 4350 5 8 1 1 0 0 1
+pinnumber=26
+T 7100 4350 5 8 0 1 0 0 1
+pinseq=26
+T 6900 4350 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 9100 7000 9100 1 0 0
+{
+T 6950 9100 9 10 1 1 0 7 1
+pinlabel=PIO0_8/MISO0/CT16B0_MAT0
+T 7100 9150 5 8 1 1 0 0 1
+pinnumber=27
+T 7100 9150 5 8 0 1 0 0 1
+pinseq=27
+T 6900 9150 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 8900 7000 8900 1 0 0
+{
+T 6950 8900 9 10 1 1 0 7 1
+pinlabel=PIO0_9/MOSI0/CT16B0_MAT1
+T 7100 8950 5 8 1 1 0 0 1
+pinnumber=28
+T 7100 8950 5 8 0 1 0 0 1
+pinseq=28
+T 6900 8950 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 8700 7000 8700 1 0 0
+{
+T 6950 8700 9 10 1 1 0 7 1
+pinlabel=SWCLK/PIO0_10/SCK0/CT16B0_MAT2
+T 7100 8750 5 8 1 1 0 0 1
+pinnumber=29
+T 7100 8750 5 8 0 1 0 0 1
+pinseq=29
+T 6900 8750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 5700 7000 5700 1 0 0
+{
+T 6950 5700 9 10 1 1 0 7 1
+pinlabel=PIO1_10/AD6/CT16B1_MAT1
+T 7100 5750 5 8 1 1 0 0 1
+pinnumber=30
+T 7100 5750 5 8 0 1 0 0 1
+pinseq=30
+T 6900 5750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 2500 7000 2500 1 0 0
+{
+T 6950 2500 9 10 1 1 0 7 1
+pinlabel=PIO2_11/SCK0
+T 7100 2550 5 8 1 1 0 0 1
+pinnumber=31
+T 7100 2550 5 8 0 1 0 0 1
+pinseq=31
+T 6900 2550 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 8500 7000 8500 1 0 0
+{
+T 6950 8500 9 10 1 1 0 7 1
+pinlabel=TDI/PIO0_11/AD0/CT32B0_MAT3
+T 7100 8550 5 8 1 1 0 0 1
+pinnumber=32
+T 7100 8550 5 8 0 1 0 0 1
+pinseq=32
+T 6900 8550 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 7700 7000 7700 1 0 0
+{
+T 6950 7700 9 10 1 1 0 7 1
+pinlabel=TMS/PIO1_0/AD1/CT32B1_CAP0
+T 7100 7750 5 8 1 1 0 0 1
+pinnumber=33
+T 7100 7750 5 8 0 1 0 0 1
+pinseq=33
+T 6900 7750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 7500 7000 7500 1 0 0
+{
+T 6950 7500 9 10 1 1 0 7 1
+pinlabel=TDO/PIO1_1/AD2/CT32B1_MAT0
+T 7100 7550 5 8 1 1 0 0 1
+pinnumber=34
+T 7100 7550 5 8 0 1 0 0 1
+pinseq=34
+T 6900 7550 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 7300 7000 7300 1 0 0
+{
+T 6950 7300 9 10 1 1 0 7 1
+pinlabel=TRST/PIO1_2/AD3/CT32B1_MAT1
+T 7100 7350 5 8 1 1 0 0 1
+pinnumber=35
+T 7100 7350 5 8 0 1 0 0 1
+pinseq=35
+T 6900 7350 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 1700 7000 1700 1 0 0
+{
+T 6950 1700 9 10 1 1 0 7 1
+pinlabel=PIO3_0/DTR
+T 7100 1750 5 8 1 1 0 0 1
+pinnumber=36
+T 7100 1750 5 8 0 1 0 0 1
+pinseq=36
+T 6900 1750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 1500 7000 1500 1 0 0
+{
+T 6950 1500 9 10 1 1 0 7 1
+pinlabel=PIO3_1/DSR
+T 7100 1550 5 8 1 1 0 0 1
+pinnumber=37
+T 7100 1550 5 8 0 1 0 0 1
+pinseq=37
+T 6900 1550 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 4100 7000 4100 1 0 0
+{
+T 6950 4100 9 10 1 1 0 7 1
+pinlabel=PIO2_3/RI/MOSI1
+T 7100 4150 5 8 1 1 0 0 1
+pinnumber=38
+T 7100 4150 5 8 0 1 0 0 1
+pinseq=38
+T 6900 4150 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 7100 7000 7100 1 0 0
+{
+T 6950 7100 9 10 1 1 0 7 1
+pinlabel=SWDIO/PIO1_3/AD4/CT32B1_MAT2
+T 7100 7150 5 8 1 1 0 0 1
+pinnumber=39
+T 7100 7150 5 8 0 1 0 0 1
+pinseq=39
+T 6900 7150 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 6900 7000 6900 1 0 0
+{
+T 6950 6900 9 10 1 1 0 7 1
+pinlabel=PIO1_4/AD5/CT32B1_MAT3/WAKEUP
+T 7100 6950 5 8 1 1 0 0 1
+pinnumber=40
+T 7100 6950 5 8 0 1 0 0 1
+pinseq=40
+T 6900 6950 9 10 0 1 0 6 1
+pintype=pas
+}
+P 0 7900 300 7900 1 0 0
+{
+T 350 7900 9 10 1 1 0 1 1
+pinlabel=VSS
+T 200 7950 5 8 1 1 0 6 1
+pinnumber=41
+T 200 7950 5 8 0 1 0 6 1
+pinseq=41
+T 200 7950 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 5500 7000 5500 1 0 0
+{
+T 6950 5500 9 10 1 1 0 7 1
+pinlabel=PIO1_11/AD7
+T 7100 5550 5 8 1 1 0 0 1
+pinnumber=42
+T 7100 5550 5 8 0 1 0 0 1
+pinseq=42
+T 6900 5550 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 1300 7000 1300 1 0 0
+{
+T 6950 1300 9 10 1 1 0 7 1
+pinlabel=PIO3_2/DCD
+T 7100 1350 5 8 1 1 0 0 1
+pinnumber=43
+T 7100 1350 5 8 0 1 0 0 1
+pinseq=43
+T 6900 1350 9 10 0 1 0 6 1
+pintype=pas
+}
+P 0 9100 300 9100 1 0 0
+{
+T 350 9100 9 10 1 1 0 1 1
+pinlabel=VDDCORE
+T 200 9150 5 8 1 1 0 6 1
+pinnumber=44
+T 200 9150 5 8 0 1 0 6 1
+pinseq=44
+T 200 9150 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 6700 7000 6700 1 0 0
+{
+T 6950 6700 9 10 1 1 0 7 1
+pinlabel=PIO1_5/RTS/CT32B0_CAP0
+T 7100 6750 5 8 1 1 0 0 1
+pinnumber=45
+T 7100 6750 5 8 0 1 0 0 1
+pinseq=45
+T 6900 6750 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 6500 7000 6500 1 0 0
+{
+T 6950 6500 9 10 1 1 0 7 1
+pinlabel=PIO1_6/RXD/CT32B0_MAT0
+T 7100 6550 5 8 1 1 0 0 1
+pinnumber=46
+T 7100 6550 5 8 0 1 0 0 1
+pinseq=46
+T 6900 6550 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 6300 7000 6300 1 0 0
+{
+T 6950 6300 9 10 1 1 0 7 1
+pinlabel=PIO1_7/TXD/CT32B0_MAT1
+T 7100 6350 5 8 1 1 0 0 1
+pinnumber=47
+T 7100 6350 5 8 0 1 0 0 1
+pinseq=47
+T 6900 6350 9 10 0 1 0 6 1
+pintype=pas
+}
+P 7300 1100 7000 1100 1 0 0
+{
+T 6950 1100 9 10 1 1 0 7 1
+pinlabel=PIO3_3/RI
+T 7100 1150 5 8 1 1 0 0 1
+pinnumber=48
+T 7100 1150 5 8 0 1 0 0 1
+pinseq=48
+T 6900 1150 9 10 0 1 0 6 1
+pintype=pas
+}
