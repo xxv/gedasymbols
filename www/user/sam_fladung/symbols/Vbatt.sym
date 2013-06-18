@@ -1,0 +1,23 @@
+v 20081231 1
+P 200 0 200 200 1 0 0
+{
+T 250 50 5 6 0 1 0 0 1
+pinnumber=1
+T 250 50 5 6 0 0 0 0 1
+pinseq=1
+T 250 50 5 6 0 1 0 0 1
+pinlabel=1
+T 250 50 5 6 0 1 0 0 1
+pintype=pwr
+}
+L 50 200 350 200 3 0 0 0 -1 -1
+T -25 250 9 8 1 0 0 0 1
+Vbatt
+T 300 0 8 8 0 0 0 0 1
+net=Vbatt:1
+T 0 450 8 10 0 0 0 0 1
+author=Sam Fladung
+T 0 650 8 10 0 0 0 0 1
+dist-license=GPL V3 or later
+T 0 850 8 10 0 0 0 0 1
+use-license=unlimited

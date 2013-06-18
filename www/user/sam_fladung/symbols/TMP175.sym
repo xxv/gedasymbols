@@ -1,0 +1,108 @@
+v 20080127 1
+B 300 300 1500 1500 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 1500 1900 8 10 1 1 0 0 1
+refdes=U?
+T 1100 1500 9 10 1 0 270 0 1
+TMP175
+T 0 2500 8 10 0 0 0 0 1
+device=TMP175
+T 0 2800 8 10 0 0 0 0 1
+description=I2C Temperature Sensor
+T 0 3000 8 10 0 0 0 0 1
+author=Sam Fladung
+T 0 3200 8 10 0 0 0 0 1
+numslots=0
+T 0 3400 8 10 0 0 0 0 1
+documentation=http://focus.ti.com/docs/prod/folders/print/tmp175.html
+P 0 1000 300 1000 1 0 0
+{
+T 0 1000 5 10 0 0 180 0 1
+pintype=io
+T 355 995 9 10 1 1 0 0 1
+pinlabel=SDA
+T 205 1045 5 10 1 1 0 6 1
+pinnumber=1
+T 0 1000 5 10 0 0 180 0 1
+pinseq=1
+}
+P 1000 0 1000 300 1 0 0
+{
+T 1000 0 5 10 0 0 90 6 1
+pintype=pwr
+T 1245 500 9 10 1 1 180 0 1
+pinlabel=GND
+T 950 205 5 10 1 1 90 6 1
+pinnumber=4
+T 1000 0 5 10 0 0 90 6 1
+pinseq=4
+}
+P 0 1300 300 1300 1 0 0
+{
+T 0 1300 5 10 0 0 180 0 1
+pintype=in
+T 355 1295 9 10 1 1 0 0 1
+pinlabel=SCLK
+T 205 1345 5 10 1 1 0 6 1
+pinnumber=2
+T 0 1300 5 10 0 0 180 0 1
+pinseq=2
+}
+P 1100 2100 1100 1800 1 0 0
+{
+T 1100 2100 5 10 0 0 270 6 1
+pintype=pwr
+T 855 1700 9 10 1 1 180 6 1
+pinlabel=Vdd
+T 1050 1895 5 10 1 1 90 0 1
+pinnumber=8
+T 1100 2100 5 10 0 0 270 6 1
+pinseq=8
+}
+P 0 700 300 700 1 0 0
+{
+T 0 700 5 10 0 0 180 0 1
+pintype=in
+T 355 695 9 10 1 1 0 0 1
+pinlabel=ALERT
+T 205 745 5 10 1 1 0 6 1
+pinnumber=3
+T 0 700 5 10 0 0 180 0 1
+pinseq=3
+}
+P 2100 1400 1800 1400 1 0 0
+{
+T 2100 1400 5 10 0 0 180 6 1
+pintype=in
+T 1745 1395 9 10 1 1 0 6 1
+pinlabel=A0
+T 1895 1445 5 10 1 1 0 0 1
+pinnumber=7
+T 2100 1400 5 10 0 0 180 6 1
+pinseq=7
+}
+P 2100 1100 1800 1100 1 0 0
+{
+T 2100 1100 5 10 0 0 180 6 1
+pintype=in
+T 1745 1095 9 10 1 1 0 6 1
+pinlabel=A1
+T 1895 1145 5 10 1 1 0 0 1
+pinnumber=6
+T 2100 1100 5 10 0 0 180 6 1
+pinseq=6
+}
+P 2100 800 1800 800 1 0 0
+{
+T 2100 800 5 10 0 0 180 6 1
+pintype=in
+T 1745 795 9 10 1 1 0 6 1
+pinlabel=A2
+T 1895 845 5 10 1 1 0 0 1
+pinnumber=5
+T 2100 800 5 10 0 0 180 6 1
+pinseq=5
+}
+T 0 3600 8 10 0 0 0 0 1
+dist-license=GPL V3 or later
+T 0 3800 8 10 0 0 0 0 1
+use-license=unlimited

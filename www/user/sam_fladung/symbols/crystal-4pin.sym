@@ -1,0 +1,67 @@
+v 20081231 1
+P 0 300 200 300 1 0 0
+{
+T 150 354 5 8 0 1 0 6 1
+pinnumber=1
+T 150 254 5 8 0 1 0 8 1
+pinseq=1
+T 250 304 9 8 0 1 0 0 1
+pinlabel=1
+T 250 304 5 8 0 1 0 2 1
+pintype=pas
+}
+P 500 300 700 300 1 0 1
+{
+T 550 354 5 8 0 1 0 0 1
+pinnumber=3
+T 550 254 5 8 0 1 0 2 1
+pinseq=3
+T 450 304 9 8 0 1 0 6 1
+pinlabel=3
+T 450 304 5 8 0 1 0 8 1
+pintype=pas
+}
+B 250 204 200 246 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T -500 -496 5 10 0 0 0 0 1
+device=CRYSTAL
+L 200 444 200 204 3 0 0 0 -1 -1
+L 500 444 500 204 3 0 0 0 -1 -1
+T 600 504 8 10 1 1 0 0 1
+refdes=X?
+T -500 104 5 10 0 0 0 0 1
+description=crystal
+T -500 -96 5 10 0 0 0 0 1
+numslots=0
+T -500 -296 5 10 0 0 0 0 1
+symversion=0.1
+P 500 200 500 0 1 0 1
+{
+T 450 105 5 8 0 1 90 6 1
+pinnumber=2
+T 450 146 5 8 0 1 270 2 1
+pinseq=2
+T 500 255 9 8 0 1 90 0 1
+pinlabel=GND
+T 500 246 5 8 0 1 270 8 1
+pintype=pas
+}
+P 200 200 200 0 1 0 1
+{
+T 150 105 5 8 0 1 90 6 1
+pinnumber=4
+T 150 146 5 8 0 1 270 2 1
+pinseq=4
+T 200 255 9 8 0 1 90 0 1
+pinlabel=GND
+T 200 246 5 8 0 1 270 8 1
+pintype=pas
+}
+L 287 154 412 154 3 0 0 0 -1 -1
+L 312 129 387 129 3 0 0 0 -1 -1
+L 337 104 362 104 3 0 0 0 -1 -1
+T 0 704 8 10 0 0 0 0 1
+author=Sam Fladung
+T 0 904 8 10 0 0 0 0 1
+dist-license=GPL V3 or later
+T 0 1104 8 10 0 0 0 0 1
+use-license=unlimited

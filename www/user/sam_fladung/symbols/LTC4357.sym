@@ -1,0 +1,75 @@
+v 20080127 1
+B 0 300 1900 1300 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 1600 1700 8 10 1 1 0 0 1
+refdes=U?
+T 1400 900 9 10 1 0 180 0 1
+LTC4357
+T -300 2500 8 10 0 0 0 0 1
+device=LTC4357
+T -300 2800 8 10 0 0 0 0 1
+description=Ideal Diode
+T -300 3000 8 10 0 0 0 0 1
+author=Sam Fladung
+T -300 3200 8 10 0 0 0 0 1
+numslots=0
+T -300 3400 8 10 0 0 0 0 1
+documentation=http://www.linear.com/pc/productDetail.jsp?navId=H0,C1,C1003,C1142,C1079,P38529
+P 900 1900 900 1600 1 0 0
+{
+T 900 1900 5 10 0 0 90 0 1
+pintype=out
+T 755 1500 9 10 1 1 180 6 1
+pinlabel=Gate
+T 850 1695 5 10 1 1 90 0 1
+pinnumber=4
+T 900 1900 5 10 0 0 90 0 1
+pinseq=4
+}
+P 900 0 900 300 1 0 0
+{
+T 900 0 5 10 0 0 90 6 1
+pintype=pwr
+T 1145 500 9 10 1 1 180 0 1
+pinlabel=GND
+T 850 205 5 10 1 1 90 6 1
+pinnumber=5
+T 900 0 5 10 0 0 90 6 1
+pinseq=5
+}
+P 1400 1900 1400 1600 1 0 0
+{
+T 1400 1900 5 10 0 0 90 0 1
+pintype=pwr
+T 1255 1500 9 10 1 1 180 6 1
+pinlabel=Out
+T 1350 1695 5 10 1 1 90 0 1
+pinnumber=8
+T 1400 1900 5 10 0 0 90 0 1
+pinseq=8
+}
+P 500 1900 500 1600 1 0 0
+{
+T 500 1900 5 10 0 0 270 6 1
+pintype=pwr
+T 255 1500 9 10 1 1 180 6 1
+pinlabel=In
+T 450 1695 5 10 1 1 90 0 1
+pinnumber=1
+T 500 1900 5 10 0 0 270 6 1
+pinseq=1
+}
+P 2200 1100 1900 1100 1 0 0
+{
+T 2200 1100 5 10 0 0 0 0 1
+pintype=pwr
+T 1845 1095 9 10 1 1 0 6 1
+pinlabel=Vdd
+T 1995 1145 5 10 1 1 0 0 1
+pinnumber=7
+T 2200 1100 5 10 0 0 0 0 1
+pinseq=7
+}
+T 0 3600 8 10 0 0 0 0 1
+dist-license=GPL V3 or later
+T 0 3800 8 10 0 0 0 0 1
+use-license=unlimited

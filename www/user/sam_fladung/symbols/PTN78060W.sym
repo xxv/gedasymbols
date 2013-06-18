@@ -1,0 +1,96 @@
+v 20081231 1
+P 2000 900 1700 900 1 0 0
+{
+T 2000 900 5 10 0 0 0 0 1
+pintype=pas
+T 1645 895 5 10 1 1 0 6 1
+pinlabel=VoAdj
+T 1795 945 5 10 1 1 0 0 1
+pinnumber=4
+T 2000 900 5 10 0 0 0 0 1
+pinseq=4
+}
+P 2000 1100 1700 1100 1 0 0
+{
+T 2000 1100 5 10 0 0 0 0 1
+pintype=in
+T 1645 1095 5 10 1 1 0 6 1
+pinlabel=VoSense
+T 1795 1145 5 10 1 1 0 0 1
+pinnumber=5
+T 2000 1100 5 10 0 0 0 0 1
+pinseq=5
+}
+P 1100 0 1100 300 1 0 0
+{
+T 1100 0 5 10 0 0 270 0 1
+pintype=pwr
+T 1345 500 5 10 1 1 180 0 1
+pinlabel=gnd
+T 1195 250 5 10 1 1 180 6 1
+pinnumber=1
+T 1100 0 5 10 0 0 270 0 1
+pinseq=1
+}
+P 900 0 900 300 1 0 0
+{
+T 900 0 5 10 0 0 270 0 1
+pintype=pwr
+T 945 500 5 10 1 1 180 0 1
+pinlabel=gnd
+T 795 250 5 10 1 1 180 6 1
+pinnumber=7
+T 900 0 5 10 0 0 270 0 1
+pinseq=7
+}
+P 0 900 300 900 1 0 0
+{
+T 0 900 5 10 0 0 0 6 1
+pintype=in
+T 355 895 5 10 1 1 0 0 1
+pinlabel=Inhibit
+T 205 945 5 10 1 1 0 6 1
+pinnumber=3
+T 0 900 5 10 0 0 0 6 1
+pinseq=3
+}
+P 0 1200 300 1200 1 0 0
+{
+T 0 1200 5 10 0 0 0 6 1
+pintype=pwr
+T 355 1195 5 10 1 1 0 0 1
+pinlabel=Vin
+T 205 1245 5 10 1 1 0 6 1
+pinnumber=2
+T 0 1200 5 10 0 0 0 6 1
+pinseq=2
+}
+P 2000 1300 1700 1300 1 0 0
+{
+T 2000 1300 5 10 0 0 0 0 1
+pintype=pwr
+T 1645 1295 5 10 1 1 0 6 1
+pinlabel=Vout
+T 1795 1345 5 10 1 1 0 0 1
+pinnumber=6
+T 2000 1300 5 10 0 0 0 0 1
+pinseq=6
+}
+B 300 300 1400 1200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 400 600 9 10 1 0 0 0 1
+PTN78060W
+L 350 1050 850 1050 5 0 0 0 -1 -1
+T 50 2250 8 10 0 0 0 0 1
+device=PTN78060W
+T 50 2550 8 10 0 0 0 0 1
+description=DC-DC Converter
+T 50 2750 8 10 0 0 0 0 1
+author=Sam Fladung
+T 50 2950 8 10 0 0 0 0 1
+numslots=0
+T 50 3150 8 10 0 0 0 0 1
+documentation=http://focus.ti.com/docs/prod/folders/print/ptn78060w.html
+T 0 3350 8 10 0 0 0 0 1
+dist-license=GPL V3 or later
+T 0 3550 8 10 0 0 0 0 1
+use-license=unlimited

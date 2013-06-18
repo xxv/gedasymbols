@@ -1,0 +1,228 @@
+v 20081231 1
+B 300 0 1900 6300 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+P 0 5400 300 5400 1 0 0
+{
+T 200 5450 5 8 0 1 180 2 1
+pinseq=51
+T 355 5395 5 8 1 1 0 0 1
+pinlabel=PCLK
+T 350 5400 5 8 0 1 180 8 1
+pintype=io
+T 0 5400 5 10 0 1 0 0 1
+pinnumber=LD18
+}
+P 0 5700 300 5700 1 0 0
+{
+T 200 5750 5 8 0 1 180 2 1
+pinseq=50
+T 355 5695 5 8 1 1 0 0 1
+pinlabel=BIAS
+T 350 5700 5 8 0 1 180 8 1
+pintype=io
+T 0 5700 5 10 0 1 0 0 1
+pinnumber=LD19
+}
+P 0 5100 300 5100 1 0 0
+{
+T 200 5150 5 8 0 1 180 2 1
+pinseq=52
+T 355 5095 5 8 1 1 0 0 1
+pinlabel=FCLK
+T 350 5100 5 8 0 1 180 8 1
+pintype=io
+T 0 5100 5 10 0 1 0 0 1
+pinnumber=LD17
+}
+P 0 6000 300 6000 1 0 0
+{
+T 200 6050 5 8 0 1 180 2 1
+pinseq=49
+T 355 5995 5 8 1 1 0 0 1
+pinlabel=LCLK
+T 350 6000 5 8 0 1 180 8 1
+pintype=io
+T 0 6000 5 10 0 1 0 0 1
+pinnumber=LD20
+}
+P 0 4800 300 4800 1 0 0
+{
+T 200 4850 5 8 0 1 180 2 1
+pinseq=53
+T 355 4795 5 8 1 1 0 0 1
+pinlabel=LDD15
+T 350 4800 5 8 0 1 180 8 1
+pintype=io
+T 0 4800 5 10 0 1 0 0 1
+pinnumber=LD16
+}
+P 0 4500 300 4500 1 0 0
+{
+T 200 4550 5 8 0 1 180 2 1
+pinseq=54
+T 355 4495 5 8 1 1 0 0 1
+pinlabel=LDD14
+T 350 4500 5 8 0 1 180 8 1
+pintype=io
+T 0 4500 5 10 0 1 0 0 1
+pinnumber=LD15
+}
+P 0 4200 300 4200 1 0 0
+{
+T 200 4250 5 8 0 1 180 2 1
+pinseq=55
+T 355 4195 5 8 1 1 0 0 1
+pinlabel=LDD13
+T 350 4200 5 8 0 1 180 8 1
+pintype=io
+T 0 4200 5 10 0 1 0 0 1
+pinnumber=LD14
+}
+P 0 3900 300 3900 1 0 0
+{
+T 200 3950 5 8 0 1 180 2 1
+pinseq=56
+T 355 3895 5 8 1 1 0 0 1
+pinlabel=LDD12
+T 350 3900 5 8 0 1 180 8 1
+pintype=io
+T 0 3900 5 10 0 1 0 0 1
+pinnumber=LD13
+}
+P 0 3600 300 3600 1 0 0
+{
+T 200 3650 5 8 0 1 180 2 1
+pinseq=57
+T 355 3595 5 8 1 1 0 0 1
+pinlabel=LDD11
+T 350 3600 5 8 0 1 180 8 1
+pintype=io
+T 0 3600 5 10 0 1 0 0 1
+pinnumber=LD12
+}
+P 0 3300 300 3300 1 0 0
+{
+T 200 3350 5 8 0 1 180 2 1
+pinseq=58
+T 355 3295 5 8 1 1 0 0 1
+pinlabel=LDD10
+T 350 3300 5 8 0 1 180 8 1
+pintype=io
+T 0 3300 5 10 0 1 0 0 1
+pinnumber=LD11
+}
+P 0 3000 300 3000 1 0 0
+{
+T 200 3050 5 8 0 1 180 2 1
+pinseq=59
+T 355 2995 5 8 1 1 0 0 1
+pinlabel=LDD9
+T 350 3000 5 8 0 1 180 8 1
+pintype=io
+T 0 3000 5 10 0 1 0 0 1
+pinnumber=LD10
+}
+P 0 2700 300 2700 1 0 0
+{
+T 200 2750 5 8 0 1 180 2 1
+pinseq=60
+T 355 2695 5 8 1 1 0 0 1
+pinlabel=LDD8
+T 350 2700 5 8 0 1 180 8 1
+pintype=io
+T 0 2700 5 10 0 1 0 0 1
+pinnumber=LD9
+}
+P 0 2400 300 2400 1 0 0
+{
+T 200 2450 5 8 0 1 180 2 1
+pinseq=61
+T 355 2395 5 8 1 1 0 0 1
+pinlabel=LDD7
+T 350 2400 5 8 0 1 180 8 1
+pintype=io
+T 0 2400 5 10 0 1 0 0 1
+pinnumber=LD8
+}
+P 0 2100 300 2100 1 0 0
+{
+T 200 2150 5 8 0 1 180 2 1
+pinseq=62
+T 355 2095 5 8 1 1 0 0 1
+pinlabel=LDD6
+T 350 2100 5 8 0 1 180 8 1
+pintype=io
+T 0 2100 5 10 0 1 0 0 1
+pinnumber=LD7
+}
+P 0 1800 300 1800 1 0 0
+{
+T 200 1850 5 8 0 1 180 2 1
+pinseq=63
+T 355 1795 5 8 1 1 0 0 1
+pinlabel=LDD5
+T 350 1800 5 8 0 1 180 8 1
+pintype=io
+T 0 1800 5 10 0 1 0 0 1
+pinnumber=LD6
+}
+P 0 1500 300 1500 1 0 0
+{
+T 200 1550 5 8 0 1 180 2 1
+pinseq=64
+T 355 1495 5 8 1 1 0 0 1
+pinlabel=LDD4
+T 350 1500 5 8 0 1 180 8 1
+pintype=io
+T 0 1500 5 10 0 1 0 0 1
+pinnumber=LD5
+}
+P 0 1200 300 1200 1 0 0
+{
+T 200 1250 5 8 0 1 180 2 1
+pinseq=65
+T 355 1195 5 8 1 1 0 0 1
+pinlabel=LDD3
+T 350 1200 5 8 0 1 180 8 1
+pintype=io
+T 0 1200 5 10 0 1 0 0 1
+pinnumber=LD4
+}
+P 0 900 300 900 1 0 0
+{
+T 200 950 5 8 0 1 180 2 1
+pinseq=66
+T 355 895 5 8 1 1 0 0 1
+pinlabel=LDD2
+T 350 900 5 8 0 1 180 8 1
+pintype=io
+T 0 900 5 10 0 1 0 0 1
+pinnumber=LD3
+}
+P 0 600 300 600 1 0 0
+{
+T 200 650 5 8 0 1 180 2 1
+pinseq=67
+T 355 595 5 8 1 1 0 0 1
+pinlabel=LDD1
+T 350 600 5 8 0 1 180 8 1
+pintype=io
+T 0 600 5 10 0 1 0 0 1
+pinnumber=LD2
+}
+P 0 300 300 300 1 0 0
+{
+T 200 350 5 8 0 1 180 2 1
+pinseq=68
+T 355 295 5 8 1 1 0 0 1
+pinlabel=LDD0
+T 350 300 5 8 0 1 180 8 1
+pintype=io
+T 0 300 5 10 0 1 0 0 1
+pinnumber=LD1
+}
+T 1900 6400 8 10 1 1 0 0 1
+refdes=U?
+T 1100 4850 9 10 1 0 0 0 1
+Audiostix
+T 1100 4600 9 10 1 0 0 0 1
+LCD/GPIO

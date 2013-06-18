@@ -1,0 +1,74 @@
+v 20080127 1
+B 300 300 1800 1200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+P 0 1000 300 1000 1 0 0
+{
+T 200 1050 5 8 0 1 180 2 1
+pinseq=45
+T 355 995 5 8 1 1 0 0 1
+pinlabel=FRAME
+T 350 1000 5 8 0 1 180 8 1
+pintype=out
+T 0 1000 5 10 0 1 0 0 1
+pinnumber=NSSP4
+}
+P 1200 1800 1200 1500 1 0 0
+{
+T 1250 1600 5 8 0 1 90 2 1
+pinseq=44
+T 1055 1400 5 8 1 1 180 6 1
+pinlabel=VCC
+T 1200 1450 5 8 0 1 90 8 1
+pintype=pwr
+T 1150 1595 5 10 0 1 90 0 1
+pinnumber=NSSP5
+}
+P 0 700 300 700 1 0 0
+{
+T 200 750 5 8 0 1 180 2 1
+pinseq=46
+T 355 695 5 8 1 1 0 0 1
+pinlabel=MISO
+T 350 700 5 8 0 1 180 8 1
+pintype=in
+T 0 700 5 10 0 1 0 0 1
+pinnumber=NSSP3
+}
+P 0 1300 300 1300 1 0 0
+{
+T 200 1350 5 8 0 1 180 2 1
+pinseq=43
+T 355 1295 5 8 1 1 0 0 1
+pinlabel=CLOCK
+T 350 1300 5 8 0 1 180 8 1
+pintype=pwr
+T 0 1300 5 10 0 1 0 0 1
+pinnumber=NSSP6
+}
+P 0 400 300 400 1 0 0
+{
+T 200 450 5 8 0 1 180 2 1
+pinseq=47
+T 355 395 5 8 1 1 0 0 1
+pinlabel=MOSI
+T 350 400 5 8 0 1 180 8 1
+pintype=in
+T 0 400 5 10 0 1 0 0 1
+pinnumber=NSSP2
+}
+P 1200 0 1200 300 1 0 0
+{
+T 1150 200 5 8 0 1 270 2 1
+pinseq=48
+T 1345 500 5 8 1 1 180 0 1
+pinlabel=GND
+T 1200 350 5 8 0 1 270 8 1
+pintype=in
+T 1150 205 5 10 0 1 90 6 1
+pinnumber=NSSP1
+}
+T 1900 1600 8 10 1 1 0 0 1
+refdes=U?
+T 1100 950 9 10 1 0 0 0 1
+Audiostix
+T 1100 700 9 10 1 0 0 0 1
+NSSP

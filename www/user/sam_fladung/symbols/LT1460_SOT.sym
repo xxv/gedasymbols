@@ -1,0 +1,53 @@
+v 20080127 1
+P 1800 700 1500 700 1 0 0
+{
+T 1800 700 5 10 0 0 0 0 1
+pintype=pwr
+T 1445 695 9 10 1 1 0 6 1
+pinlabel=Vout
+T 1595 745 5 10 1 1 0 0 1
+pinnumber=2
+T 1800 700 5 10 0 0 0 0 1
+pinseq=2
+}
+P 0 700 300 700 1 0 0
+{
+T 0 700 5 10 0 0 0 6 1
+pintype=pwr
+T 355 695 9 10 1 1 0 0 1
+pinlabel=Vin
+T 205 745 5 10 1 1 0 6 1
+pinnumber=1
+T 0 700 5 10 0 0 0 6 1
+pinseq=1
+}
+P 900 0 900 300 1 0 0
+{
+T 900 0 5 10 0 0 90 6 1
+pintype=pwr
+T 1145 500 9 10 1 1 180 0 1
+pinlabel=GND
+T 850 205 5 10 1 1 90 6 1
+pinnumber=3
+T 900 0 5 10 0 0 90 6 1
+pinseq=3
+}
+B 300 300 1200 700 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 1200 1100 8 10 1 1 0 0 1
+refdes=U?
+T 200 1100 9 10 1 0 0 0 1
+LT1460
+T 200 1300 8 10 0 0 0 0 1
+device=LT1460
+T 200 1600 8 10 0 0 0 0 1
+description=Precision Voltage Reference
+T 200 1800 8 10 0 0 0 0 1
+author=Sam Fladung
+T 200 2000 8 10 0 0 0 0 1
+numslots=0
+T 200 2200 8 10 0 0 0 0 1
+documentation=http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1154,C1002,C1243,P1001,D1010
+T 0 2400 8 10 0 0 0 0 1
+dist-license=GPL V3 or later
+T 0 2600 8 10 0 0 0 0 1
+use-license=unlimited
