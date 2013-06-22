@@ -1,0 +1,92 @@
+v 20110115 2
+P 1800 700 1600 700 1 0 0
+{
+T 1620 720 5 8 1 1 0 0 1
+pinnumber=2
+T 1700 725 5 10 0 0 0 6 1
+pinseq=2
+T 1570 645 5 8 1 1 0 6 1
+pinlabel=EN
+T 1800 700 5 10 0 0 0 6 1
+pintype=in
+}
+P 0 900 200 900 1 0 0
+{
+T 175 925 5 8 1 1 0 6 1
+pinnumber=3
+T 100 925 5 10 0 0 0 0 1
+pinseq=3
+T 225 850 5 8 1 1 0 0 1
+pinlabel=FREQ
+}
+P 1600 500 1800 500 1 0 1
+{
+T 1625 525 5 8 1 1 0 0 1
+pinnumber=6
+T 1700 500 5 10 0 0 0 0 1
+pinseq=6
+T 1575 450 5 8 1 1 0 6 1
+pinlabel=VDD
+T 1600 500 5 10 0 0 0 0 1
+pintype=pwr
+}
+P 800 0 800 200 1 0 0
+{
+T 820 175 5 8 1 1 180 6 1
+pinnumber=5
+T 925 -675 5 10 0 0 270 0 1
+pinseq=5
+T 850 230 5 8 1 1 90 0 1
+pinlabel=SGND
+T 800 0 5 10 0 0 0 0 1
+pintype=pwr
+}
+P 1600 300 1800 300 1 0 1
+{
+T 1620 320 5 8 1 1 0 0 1
+pinnumber=4
+T 1600 250 5 10 0 0 0 6 1
+pinseq=4
+T 1570 245 5 8 1 1 0 6 1
+pinlabel=FB
+}
+T 1600 1050 8 10 0 1 0 6 1
+refdes=U?
+P 1600 900 1800 900 1 0 1
+{
+T 1625 925 5 8 1 1 0 0 1
+pinnumber=7
+T 1700 900 5 10 0 0 0 0 1
+pinseq=7
+T 1575 850 5 8 1 1 0 6 1
+pinlabel=BOOT
+}
+T 200 1050 5 8 1 1 0 0 1
+device=LM2623MM
+T 200 1650 8 10 0 0 0 0 1
+author=Tobias Nadler
+P 0 300 200 300 1 0 0
+{
+T 175 325 5 8 1 1 0 6 1
+pinnumber=1
+T 100 325 5 10 0 0 0 0 1
+pinseq=1
+T 225 250 5 8 1 1 0 0 1
+pinlabel=PGND
+T 0 300 5 10 0 0 0 0 1
+pintype=pwr
+}
+P 1000 1000 1000 1200 1 0 1
+{
+T 1020 1025 5 8 1 1 0 0 1
+pinnumber=8
+T 1000 1100 5 10 0 0 0 0 1
+pinseq=8
+T 1050 970 5 8 1 1 90 6 1
+pinlabel=SW
+}
+B 200 200 1400 800 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 200 1450 8 10 0 0 0 0 1
+description=General purpose, gated oscillator based, DC/DC boost converter
+T 200 1250 8 10 0 0 0 0 1
+footprint=MSOP8

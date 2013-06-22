@@ -1,0 +1,31 @@
+# author: Tobias Nadler
+# email: ot dot an at gmx dot net
+# dist-license: GPL 2 or CC BY-SA 3.0 (you can choose)
+# use-license: unlimited
+
+Element["" "" "" "" 12500 3500 0 0 0 100 ""]
+(
+	Pin[37500 5500 6000 2000 6600 3500 "" "1" "edge2"]
+	Pin[37500 50500 6000 2000 6600 3500 "" "2" "edge2"]
+	ElementLine [-10000 -2000 30000 -2000 1000]
+	ElementLine [30000 -2000 37500 5500 1000]
+	ElementLine [37500 5500 45000 -2000 1000]
+	ElementLine [45000 -2000 85000 -2000 1000]
+	ElementLine [85000 -2000 85000 58000 1000]
+	ElementLine [85000 58000 45000 58000 1000]
+	ElementLine [45000 58000 37500 50500 1000]
+	ElementLine [37500 50500 30000 58000 1000]
+	ElementLine [30000 58000 -10000 58000 1000]
+	ElementLine [-10000 58000 -10000 -2000 1000]
+	ElementLine [-3500 1500 78500 1500 1000]
+	ElementLine [78500 1500 78500 54500 1000]
+	ElementLine [78500 54500 -3500 54500 1000]
+	ElementLine [-3500 54500 -3500 1500 1000]
+	ElementLine [6500 1500 6500 54500 1000]
+	ElementLine [16500 54500 16500 1500 1000]
+	ElementLine [26500 1500 26500 54500 1000]
+	ElementLine [68500 54500 68500 1500 1000]
+	ElementLine [58500 1500 58500 54500 1000]
+	ElementLine [48500 54500 48500 1500 1000]
+
+	)
