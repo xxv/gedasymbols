@@ -32,7 +32,7 @@ pinlabel=FB
 T 1600 500 5 10 0 0 0 0 1
 pintype=in
 }
-T 1600 1050 8 10 0 1 0 6 1
+T 1600 1050 8 10 1 1 0 6 1
 refdes=U?
 T 650 550 5 8 1 1 0 0 1
 device=LT1946
