@@ -1,0 +1,58 @@
+v 20110115 2
+P 1300 400 1100 400 1 0 0
+{
+T 1120 420 5 8 1 1 0 0 1
+pinnumber=3
+T 1100 400 5 8 0 0 0 6 1
+pinseq=3
+T 1045 395 5 8 1 1 0 6 1
+pinlabel=OUT
+T 1250 450 5 8 0 1 0 6 1
+pintype=out
+}
+T 200 1025 5 10 1 1 0 0 1
+device=BTS4140N
+P 1100 800 1300 800 1 0 1
+{
+T 1120 845 5 8 1 1 0 0 1
+pinnumber=2
+T 1100 800 5 8 0 0 0 6 1
+pinseq=2
+T 1045 695 5 8 1 1 0 6 1
+pinlabel=Vbb
+T 1100 850 5 8 0 1 0 0 1
+pintype=pwr
+}
+P 400 200 400 0 1 0 1
+{
+T 425 175 5 8 1 1 180 6 1
+pinnumber=1
+T 400 200 5 8 0 0 0 0 1
+pinseq=1
+T 500 225 5 8 1 1 0 6 1
+pinlabel=IN
+T 400 200 5 8 0 1 0 0 1
+pintype=pwr
+}
+T 1100 1225 8 10 1 1 0 6 1
+refdes=U?
+P 1300 700 1100 700 1 0 0
+{
+T 1120 720 5 8 1 1 0 0 1
+pinnumber=4
+T 1100 700 5 8 0 0 0 6 1
+pinseq=4
+T 1095 695 5 8 0 1 0 6 1
+pinlabel=Vbb
+T 1100 750 5 8 0 1 0 0 1
+pintype=pwr
+}
+B 200 200 900 800 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 200 1595 8 10 0 0 0 0 1
+footprint=SOT223
+T 200 1995 8 10 0 0 0 0 1
+author=Tobias Nadler
+T 200 1795 8 10 0 0 0 0 1
+dist-license=GPL or CC_BY-SA_3.0
+T 200 1395 8 10 0 0 0 0 1
+use-license=unlimited
