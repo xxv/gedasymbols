@@ -1,0 +1,60 @@
+v 20121203 2
+T 100 2500 5 8 0 0 0 0 1
+description=optocoupler with two photodiodes, sender LED
+T 100 2100 5 8 0 0 0 0 1
+values=HCNR200, HCNR201
+T 100 1900 5 8 0 0 0 0 1
+documentation=http://www.avagotech.com/docs/AV02-0886EN
+T 100 1700 5 8 0 0 0 0 1
+symversion=1.0
+T 100 1500 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 100 1300 5 8 0 0 0 0 1
+dist-license=GPL 3, http://www.gnu.org/licenses/gpl-3.0.txt
+P 200 100 200 200 1 0 0
+{
+T 150 125 5 8 1 1 0 8 1
+pinnumber=1
+T 250 150 5 8 0 1 0 2 1
+pintype=pas
+}
+P 200 900 200 800 1 0 0
+{
+T 150 875 5 8 1 1 0 6 1
+pinnumber=2
+T 250 950 5 8 0 1 0 2 1
+pintype=pas
+}
+T 100 1100 5 8 0 0 0 0 1
+use-license=free, no restrictions
+H 3 0 0 0 -1 -1 1 -1 -1 -1 -1 -1 4
+M 100,600
+L 300,600
+L 200,400
+z
+L 100 400 300 400 3 10 1 0 -1 -1
+L 200 450 200 300 3 10 1 0 -1 -1
+L 200 700 200 550 3 10 1 0 -1 -1
+T 650 700 8 10 1 1 0 0 1
+refdes=U?
+T 650 500 8 10 1 1 0 0 1
+value=HCNR200
+T 650 300 8 8 1 1 0 0 1
+footprint=DIP8
+H 3 0 0 0 -1 -1 1 -1 -1 -1 -1 -1 4
+M 550,550
+L 450,525
+L 450,575
+z
+L 450 550 325 550 3 10 1 0 -1 -1
+L 450 475 300 475 3 10 1 0 -1 -1
+H 3 0 0 0 -1 -1 1 -1 -1 -1 -1 -1 4
+M 550,475
+L 450,450
+L 450,500
+z
+L 200 700 200 800 3 10 1 0 -1 -1
+L 200 300 200 200 3 10 1 0 -1 -1
+B 0 200 600 600 3 10 1 0 -1 -1 0 -1 -1 -1 -1 -1
+T 100 2300 5 8 0 0 0 0 1
+comment=see optocoupler_HCNR20_PD.sym for the photo diodes

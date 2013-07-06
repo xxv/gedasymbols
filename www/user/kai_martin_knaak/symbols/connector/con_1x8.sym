@@ -1,0 +1,100 @@
+v 20121203 2
+T 0 400 8 10 1 1 0 0 1
+refdes=CONN?
+T 0 0 8 8 1 1 0 0 1
+footprint=PS-8
+P 500 2000 300 2000 1 0 0
+{
+T 300 2050 5 8 0 1 0 0 1
+pinnumber=5
+T 150 2000 9 8 1 1 0 6 1
+pinlabel=5
+T 350 1900 5 8 0 1 0 8 1
+pintype=pas
+}
+V 250 2000 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+P 500 1600 300 1600 1 0 0
+{
+T 300 1650 5 8 0 1 0 0 1
+pinnumber=6
+T 150 1600 9 8 1 1 0 6 1
+pinlabel=6
+T 350 1500 5 8 0 1 0 8 1
+pintype=pas
+}
+V 250 1600 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+P 500 1200 300 1200 1 0 0
+{
+T 300 1250 5 8 0 1 0 0 1
+pinnumber=7
+T 150 1200 9 8 1 1 0 6 1
+pinlabel=7
+T 350 1100 5 8 0 1 0 8 1
+pintype=pas
+}
+V 250 1200 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+P 500 800 300 800 1 0 0
+{
+T 300 850 5 8 0 1 0 0 1
+pinnumber=8
+T 150 800 9 8 1 1 0 6 1
+pinlabel=8
+T 350 700 5 8 0 1 0 8 1
+pintype=pas
+}
+V 250 800 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+B 0 600 400 3200 3 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+T 0 200 8 10 1 1 0 0 1
+value=XXX
+T 0 4900 5 8 0 0 0 0 1
+description=generic 8 pin connector
+T 0 4700 5 8 0 0 0 0 1
+footprints=PS-8, 1x8PIN, RJ45_8P9C_lay, RJ45_8P8C_vert
+T 0 4500 5 8 0 0 0 0 1
+symversion=1.0
+T 0 4300 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 0 4100 5 8 0 0 0 0 1
+dist-license=GPL 3, http://www.gnu.org/licenses/gpl-3.0.txt
+T 0 3900 5 8 0 0 0 0 1
+use-license=free, no restrictions
+P 500 3600 300 3600 1 0 0
+{
+T 300 3650 5 8 0 1 0 0 1
+pinnumber=1
+T 150 3600 9 8 1 1 0 6 1
+pinlabel=1
+T 350 3500 5 8 0 1 0 8 1
+pintype=pas
+}
+V 250 3600 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+P 500 3200 300 3200 1 0 0
+{
+T 300 3250 5 8 0 1 0 0 1
+pinnumber=2
+T 150 3200 9 8 1 1 0 6 1
+pinlabel=2
+T 350 3100 5 8 0 1 0 8 1
+pintype=pas
+}
+V 250 3200 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+P 500 2800 300 2800 1 0 0
+{
+T 300 2850 5 8 0 1 0 0 1
+pinnumber=3
+T 150 2800 9 8 1 1 0 6 1
+pinlabel=3
+T 350 2700 5 8 0 1 0 8 1
+pintype=pas
+}
+V 250 2800 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+P 500 2400 300 2400 1 0 0
+{
+T 300 2450 5 8 0 1 0 0 1
+pinnumber=4
+T 150 2400 9 8 1 1 0 6 1
+pinlabel=4
+T 350 2300 5 8 0 1 0 8 1
+pintype=pas
+}
+V 250 2400 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1

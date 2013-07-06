@@ -1,0 +1,75 @@
+v 20121203 2
+T 100 3500 5 8 0 0 0 0 1
+description=configurable divider, ICS674-01, power pins
+T 100 3100 5 8 0 0 0 0 1
+comment=Use symbol ICS674-01_B.sym for the 9 bit divider
+T 100 2700 5 8 0 0 0 0 1
+documentation=http://www.idt.com/document/674-01-datasheet
+T 100 2500 5 8 0 0 0 0 1
+footprints=SSOP28, DIP28
+T 100 2300 5 8 0 0 0 0 1
+symversion=1.0
+T 100 2100 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 100 1900 5 8 0 0 0 0 1
+dist-license=GPL 3, http://www.gnu.org/licenses/gpl-3.0.txt
+T 1250 800 8 10 1 1 0 0 1
+refdes=U?
+T 1250 600 8 10 1 1 0 0 1
+value=ICS674-01
+T 1250 400 8 8 1 1 0 0 1
+footprint=DIP28
+T 100 1700 5 8 0 0 0 0 1
+use-license=free, no restrictions
+T 100 3300 5 8 0 0 0 0 1
+comment=Use symbol ICS674-01_A.sym for the 7 bit divider.
+T 100 2900 5 8 0 0 0 0 1
+comment=DIP28 footprint with SSOP-to-DIP adapter
+B 0 300 1200 700 3 10 0 0 -1 -1 0 -1 -1 -1 -1 -1
+P 400 1100 400 1000 1 0 0
+{
+T 350 1050 5 8 1 1 0 6 1
+pinnumber=23
+T 200 1050 5 8 0 1 0 7 1
+pintype=pwr
+T 400 900 5 20 1 1 0 4 1
+pinlabel=+
+}
+P 200 200 200 300 1 0 0
+{
+T 150 250 5 8 1 1 0 8 1
+pinnumber=9
+T 50 150 5 8 0 1 0 2 1
+pintype=pwr
+T 200 400 5 8 0 1 0 4 1
+pinlabel=GND
+}
+P 800 1100 800 1000 1 0 0
+{
+T 750 1050 5 8 1 1 0 6 1
+pinnumber=6
+T 900 1050 5 8 0 1 0 0 1
+pintype=pwr
+T 800 900 5 20 1 1 0 4 1
+pinlabel=+
+}
+P 600 200 600 300 1 0 0
+{
+T 550 250 5 8 1 1 0 8 1
+pinnumber=19
+T 450 150 5 8 0 1 0 2 1
+pintype=pwr
+T 600 400 5 8 1 1 0 4 1
+pinlabel=GND
+}
+P 1000 200 1000 300 1 0 0
+{
+T 950 250 5 8 1 1 0 8 1
+pinnumber=20
+T 850 150 5 8 0 1 0 2 1
+pintype=pwr
+T 1000 400 5 8 1 1 0 4 1
+pinlabel=GND
+}
+T 600 650 9 12 1 1 0 4 1
+label=divider

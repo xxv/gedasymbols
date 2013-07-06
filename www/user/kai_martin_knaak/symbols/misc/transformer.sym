@@ -1,0 +1,55 @@
+v 20121203 2
+L 300 600 300 200 3 10 0 0 -1 -1
+L 400 600 400 200 3 10 0 0 -1 -1
+P 100 200 0 200 1 0 1
+{
+T 0 250 5 8 1 1 0 0 1
+pinnumber=4
+T 0 50 5 8 0 1 0 0 1
+pintype=pas
+}
+P 100 600 0 600 1 0 1
+{
+T 0 450 5 8 1 1 0 0 1
+pinnumber=3
+T 0 650 5 8 0 1 0 0 1
+pintype=pas
+}
+T 300 1100 8 10 1 1 0 0 1
+refdes=T?
+T 100 2400 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 300 900 8 10 1 1 0 0 1
+value=xxx
+T 300 700 8 8 1 1 0 0 1
+footprint=AKL_RM5_4PIN
+A 600 500 100 90 180 3 10 0 0 -1 -1
+A 600 300 100 90 180 3 10 0 0 -1 -1
+A 100 300 100 270 180 3 10 0 0 -1 -1
+P 700 600 600 600 1 0 0
+{
+T 600 450 5 8 1 1 0 0 1
+pinnumber=1
+T 500 650 5 8 0 1 0 0 1
+pintype=pas
+}
+P 700 200 600 200 1 0 0
+{
+T 600 250 5 8 1 1 0 0 1
+pinnumber=2
+T 500 50 5 8 0 1 0 0 1
+pintype=pas
+}
+T 100 2800 5 8 0 0 0 0 1
+description=generic transformer with single pick-up
+A 100 500 100 270 180 3 10 0 0 -1 -1
+T 100 2600 5 8 0 0 0 0 1
+footprints=AKL_RM5_2PIN, RIACON_383_2PIN, RIACON_383_2PIN_LAY
+T 100 2200 5 8 0 0 0 0 1
+symversion=1.0
+T 100 2000 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 100 1800 5 8 0 0 0 0 1
+dist-license=GPL 3, http://www.gnu.org/licenses/gpl-3.0.txt
+T 100 1600 5 8 0 0 0 0 1
+use-license=free, no restrictions

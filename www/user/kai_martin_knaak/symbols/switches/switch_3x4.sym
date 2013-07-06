@@ -1,0 +1,80 @@
+v 20121203 2
+T 650 1500 8 10 1 1 0 0 1
+refdes=S?
+P 200 1400 50 1400 1 0 1
+{
+T 250 1350 5 8 1 1 0 0 1
+pinnumber=1
+T 250 1350 5 8 0 1 0 0 1
+pinseq=1
+T 450 1250 5 8 0 1 0 7 1
+pintype=pas
+}
+P 200 1000 50 1000 1 0 1
+{
+T 250 950 5 8 1 1 0 0 1
+pinnumber=2
+T 250 950 5 8 0 1 0 0 1
+pinseq=2
+T 450 850 5 8 0 1 0 7 1
+pintype=pas
+}
+P 200 600 50 600 1 0 1
+{
+T 250 550 5 8 1 1 0 0 1
+pinnumber=3
+T 250 550 5 8 0 1 0 0 1
+pinseq=3
+T 450 450 5 8 0 1 0 7 1
+pintype=pas
+}
+P 200 200 50 200 1 0 1
+{
+T 250 150 5 8 1 1 0 0 1
+pinnumber=4
+T 250 150 5 8 0 1 0 0 1
+pinseq=4
+T 450 50 5 8 0 1 0 7 1
+pintype=pas
+}
+P 500 800 650 800 1 0 1
+{
+T 500 850 5 8 1 1 0 6 1
+pinnumber=A
+T 600 650 5 8 0 1 0 0 1
+pintype=pas
+T 450 600 5 8 0 1 0 0 1
+pinseq=5
+}
+T 650 1300 8 10 1 1 0 0 1
+value=Lorlin_CK-1051
+T 650 1100 8 8 1 1 0 0 1
+footprint=LORLIN_3x4
+B 150 0 400 1600 3 10 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 150 3600 5 8 0 0 0 0 1
+description=Switch 3x4
+T 150 3000 5 8 0 0 0 0 1
+author=K-M. Knaak, kmk@lilalaser.de
+T 150 2800 5 8 0 0 0 0 1
+dist-license=GPL3
+T 150 2600 5 8 0 0 0 0 1
+use-license=free, no restrictions
+L 300 400 500 800 3 10 0 0 -1 -1
+V 200 200 20 3 0 0 0 -1 -1 1 -1 -1 -1 -1 -1
+V 200 600 20 3 0 0 0 -1 -1 1 -1 -1 -1 -1 -1
+V 200 1000 20 3 0 0 0 -1 -1 1 -1 -1 -1 -1 -1
+V 200 1400 20 3 0 0 0 -1 -1 1 -1 -1 -1 -1 -1
+T 150 3400 5 8 0 0 0 0 1
+documentation=http://www.lorlin.co.uk/pdf/CK.pdf
+T 150 3200 5 8 0 0 0 0 1
+symversion=2.0
+T 150 2400 5 8 0 0 0 0 1
+numslots=3
+T 1650 1100 8 10 1 0 0 0 1
+slot=1
+T 150 2200 5 8 0 0 0 0 1
+slotdef=1:1,2,3,4,A
+T 150 2000 5 8 0 0 0 0 1
+slotdef=2:5,6,7,8,B
+T 150 1800 5 8 0 0 0 0 1
+slotdef=3:9,10,11,12,C

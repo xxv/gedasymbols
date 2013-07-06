@@ -1,0 +1,25 @@
+v 20121203 2
+V 300 250 50 3 10 0 0 -1 -1 0 -1 -1 -1 -1 -1
+P 300 300 300 400 1 0 1
+{
+T 200 300 5 8 0 1 0 6 1
+pinnumber=1
+T 400 300 5 8 0 1 0 0 1
+pintype=pwr
+}
+T 200 2000 5 8 0 0 0 0 1
+description=customizable negative supply voltage
+T 200 1200 5 8 0 0 0 0 1
+author= Kai-Martin Knaak, kmk@lilalaser.de
+T 200 1600 5 8 0 0 0 0 1
+footprint=none
+T 200 1400 5 8 0 0 0 0 1
+symversion=1.0
+T 200 800 5 8 0 0 0 0 1
+use-license=free, no restrictions
+T 200 1000 5 8 0 0 0 0 1
+dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
+T 200 1800 5 8 0 0 0 0 1
+comment=you can edit the string of the net attribute. The postfix ":1" must be preserved.
+T 300 0 8 10 1 1 0 3 1
+net=custom_minus:1

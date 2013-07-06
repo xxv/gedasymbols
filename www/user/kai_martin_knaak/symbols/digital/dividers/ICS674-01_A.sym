@@ -1,0 +1,109 @@
+v 20121203 2
+T 100 3600 5 8 0 0 0 0 1
+description=configurable divider, ICS674-01, 7 bit
+T 100 3400 5 8 0 0 0 0 1
+comment=Use symbol ICS674-01_B.sym for the 9 bit divider
+T 100 2800 5 8 0 0 0 0 1
+documentation=http://www.idt.com/document/674-01-datasheet
+T 100 2600 5 8 0 0 0 0 1
+footprints=SSOP28, DIP28
+T 100 2400 5 8 0 0 0 0 1
+symversion=1.0
+T 100 2200 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 100 2000 5 8 0 0 0 0 1
+dist-license=GPL 3, http://www.gnu.org/licenses/gpl-3.0.txt
+T 2950 1100 8 10 1 1 0 0 1
+refdes=U?
+T 2950 900 8 10 1 1 0 0 1
+value=ICS674-01
+T 100 1800 5 8 0 0 0 0 1
+use-license=free, no restrictions
+T 100 3200 5 8 0 0 0 0 1
+comment=Use symbol ICS674-01_pwr.sym to connect power pins.
+T 100 3000 5 8 0 0 0 0 1
+comment=DIP28 footprint with SSOP-to-DIP adapter
+P 600 1300 600 1200 1 0 0
+{
+T 600 1150 9 10 1 1 270 1 1
+pinlabel=A0
+T 650 1250 5 10 1 1 270 6 1
+pinnumber=24
+T 500 1150 5 8 0 1 270 2 1
+pintype=in
+}
+P 0 600 100 600 1 0 0
+{
+T 150 600 9 10 1 1 0 1 1
+pinlabel=inA
+T 50 650 5 10 1 1 0 6 1
+pinnumber=7
+T 150 500 5 8 0 1 0 2 1
+pintype=pas
+}
+P 3000 600 2900 600 1 0 0
+{
+T 2850 600 9 10 1 1 0 7 1
+pinlabel=outA
+T 2950 650 5 10 1 1 0 0 1
+pinnumber=22
+T 2850 500 5 8 0 1 0 8 1
+pintype=out
+}
+P 900 1300 900 1200 1 0 0
+{
+T 900 1150 9 10 1 1 270 1 1
+pinlabel=A1
+T 950 1250 5 10 1 1 270 6 1
+pinnumber=25
+T 800 1150 5 8 0 1 270 2 1
+pintype=in
+}
+P 1200 1300 1200 1200 1 0 0
+{
+T 1200 1150 9 10 1 1 270 1 1
+pinlabel=A2
+T 1250 1250 5 10 1 1 270 6 1
+pinnumber=26
+T 1100 1150 5 8 0 1 270 2 1
+pintype=in
+}
+P 1500 1300 1500 1200 1 0 0
+{
+T 1500 1150 9 10 1 1 270 1 1
+pinlabel=A3
+T 1550 1250 5 10 1 1 270 6 1
+pinnumber=27
+T 1400 1150 5 8 0 1 270 2 1
+pintype=in
+}
+P 1800 1300 1800 1200 1 0 0
+{
+T 1800 1150 9 10 1 1 270 1 1
+pinlabel=A4
+T 1850 1250 5 10 1 1 270 6 1
+pinnumber=28
+T 1700 1150 5 8 0 1 270 2 1
+pintype=in
+}
+P 2100 1300 2100 1200 1 0 0
+{
+T 2100 1150 9 10 1 1 270 1 1
+pinlabel=A5
+T 2150 1250 5 10 1 1 270 6 1
+pinnumber=1
+T 2000 1150 5 8 0 1 270 2 1
+pintype=in
+}
+P 2400 1300 2400 1200 1 0 0
+{
+T 2400 1150 9 10 1 1 270 1 1
+pinlabel=A6
+T 2450 1250 5 10 1 1 270 6 1
+pinnumber=2
+T 2300 1150 5 8 0 1 270 2 1
+pintype=in
+}
+T 1500 300 9 16 1 0 0 3 1
+7 bit divider
+B 100 0 2800 1200 3 10 1 0 -1 -1 0 -1 -1 -1 -1 -1
