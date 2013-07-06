@@ -1,4 +1,4 @@
-v 20111231 2
+v 20121203 2
 P 400 700 250 700 1 0 0
 {
 T 350 750 5 8 0 1 0 0 1
@@ -45,7 +45,7 @@ author=Kai-Martin Knaak, kmk@lilalaser.de
 T 100 900 8 10 1 1 0 0 1
 value=JMP
 T 100 0 8 8 1 1 0 0 1
-footprint=1x3PIN
+footprint=JMP_3PIN
 L 100 725 175 800 3 10 0 0 -1 -1
 T 200 1600 5 8 0 0 0 0 1
 dist-license=GPL3, http://www.gnu.org/licenses/gpl-3.0.txt
@@ -56,4 +56,4 @@ symversion=1.0
 T 200 2400 5 8 0 0 0 0 1
 comment=use jumper_default.sym to mark a closed jumper
 T 200 2000 5 8 0 0 0 0 1
-footprints=JMP_3PIN, JMP_3PIN_SMD
+footprints=JMP_3PIN, JMP_3PIN_SMD, 1x3PIN

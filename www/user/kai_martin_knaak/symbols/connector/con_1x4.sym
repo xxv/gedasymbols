@@ -1,4 +1,4 @@
-v 20111231 2
+v 20121203 2
 T 0 400 8 10 1 1 0 0 1
 refdes=CONN?
 T 0 0 8 8 1 1 0 0 1
@@ -49,7 +49,7 @@ value=XXX
 T 0 3400 5 8 0 0 0 0 1
 description=generic 4 pin connector
 T 0 3200 5 8 0 0 0 0 1
-footprints=1x4PIN
+footprints=1x4PIN, AKL_4PIN, PS_4PIN, PS_4PIN_LAY, RIACON_383_4PIN, RIACON_383_4PIN_LAY
 T 0 3000 5 8 0 0 0 0 1
 symversion=1.0
 T 0 2800 5 8 0 0 0 0 1

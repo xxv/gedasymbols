@@ -1,4 +1,4 @@
-v 20110116 2
+v 20121203 2
 T 300 900 8 10 1 1 0 0 1
 refdes=S?
 P 100 200 250 200 1 0 0
@@ -35,7 +35,7 @@ L 395 355 395 286 3 0 0 0 -1 -1
 T 300 2600 5 8 0 0 0 0 1
 description=generic button
 T 300 500 8 8 1 1 0 0 1
-footprint=Tyco_FSMJ
+footprint=TYCO_FSMJ
 T 300 700 8 10 1 1 0 0 1
 value=Button Tyco FSMJ
 T 300 2000 5 8 0 0 0 0 1

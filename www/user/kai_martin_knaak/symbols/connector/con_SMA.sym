@@ -35,7 +35,7 @@ pintype=pas
 }
 L 100 400 340 400 3 0 0 0 -1 -1
 T 100 1500 5 8 0 0 0 0 1
-footprints=SMA_VERT, SMA_LAY, SMA_EDGE, HF_MULTI
+footprints=SMA_VERT, SMA_LAY, SMA_edge, SMA_edge2, HF_multi
 T 100 900 5 8 0 0 0 0 1
 use-license=free, no restrictions
 V 400 90 24 3 0 0 0 -1 -1 1 -1 -1 -1 -1 -1

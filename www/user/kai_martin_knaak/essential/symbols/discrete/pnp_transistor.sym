@@ -1,4 +1,4 @@
-v 20111231 2
+v 20121203 2
 T 100 2800 5 8 0 0 0 0 1
 description=generic pnp transistor, TUP
 T 100 2600 5 8 0 0 0 0 1
@@ -15,7 +15,7 @@ T 900 400 8 10 1 1 0 0 1
 value=BC857C
 T 900 600 8 10 1 1 0 0 1
 refdes=Q?
-P 600 1000 600 800 1 0 0
+P 600 900 600 800 1 0 0
 {
 T 500 850 5 6 1 1 0 0 1
 pinnumber=C
@@ -26,7 +26,7 @@ pinlabel=C
 T 700 850 5 6 0 1 0 0 1
 pintype=pas
 }
-P 600 200 600 0 1 0 1
+P 600 200 600 100 1 0 1
 {
 T 500 50 5 6 1 1 0 0 1
 pinnumber=E
@@ -37,7 +37,7 @@ pinlabel=E
 T 700 50 5 6 0 1 0 0 1
 pintype=pas
 }
-P 0 500 200 500 1 0 0
+P 100 500 200 500 1 0 0
 {
 T 100 550 5 6 1 1 0 0 1
 pinnumber=B
@@ -58,7 +58,7 @@ footprints=SOT23_BEC, TO92_ECB
 T 100 2400 5 8 0 0 0 0 1
 values=BC857C, BC327C
 T 100 2000 5 8 0 0 0 0 1
-symversion=1.0
+symversion=2.0
 H 3 0 0 0 -1 -1 1 -1 -1 -1 -1 -1 4
 M 400,400
 L 500,350

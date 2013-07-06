@@ -26,152 +26,196 @@ Some convenience templates for symbol creation.
 <li> <a href="symbols/templates/subsheet-2.sym">subsheet-2.sym</a> - subsheet template with pins 400 units apart</li>
 </ul>
 
-<h3>Analog</h3>
-	<h4>Generic Analog</h4>
+<h3>Discretes</h3>
+	<h4>Various Discretes</h4>
 	<ul>
-	<li><a href="symbols/analog/inductor.sym">inductor.sym</a> - inductor </li>
-	<li><a href="symbols/analog/inductor_vert.sym">inductor_vert.sym</a> - inductor, drawn vertically</li>
-	<li><a href="symbols/analog/cap_horiz.sym">cap_horiz.sym</a> - generic capacitor, drawn horizontally </li>
-	<li><a href="symbols/analog/cap_vert.sym">cap_vert.sym</a> - generic capacitor, drawn vertically </li>
-	<li><a href="symbols/analog/elko.sym">elko.sym</a> - electolytic capacitor</li>
-	<li><a href="symbols/analog/res_SMD.sym">res_SMD.sym</a> - resistor with 0805 SMD footprint</li>
-	<li><a href="symbols/analog/res_SMD_vert.sym">res_SMD_vert.sym</a> - SMD resistor, drawn vertically</li>
-	<li><a href="symbols/analog/res_ref.sym">res_ref.sym</a> - reference resistor</li>
-	<li><a href="symbols/analog/res_socket.sym">res_socket.sym</a> - resistor in socket</li>
-	<li><a href="symbols/analog/res_horiz.sym">res_horiz.sym</a> - resistor, drawn horizontally</li>
-	<li><a href="symbols/analog/res_thru_vert.sym">res_vert.sym</a> - resistor, drawn vertically</li>
-	<li><a href="symbols/analog/res_zero.sym">res_zero.sym</a> - 0 ohm resistor</li>
-	<li><a href="symbols/analog/potentiometer.sym">potentiometer.sym</a></li>
-	<li><a href="symbols/analog/potentiometer_vert.sym">potenntiometer_vert.sym</a></li>
+	<li><a href="symbols/discretes/inductor.sym">inductor.sym</a> - inductor, drawn horizontally</li>
+	<li><a href="symbols/discretes/inductor_vert.sym">inductor_vert.sym</a> - inductor, drawn vertically</li>
+	<li><a href="symbols/discretes/cap_horiz.sym">cap_horiz.sym</a> - bipolar capacitor, drawn horizontally</li>
+	<li><a href="symbols/discretes/cap_vert.sym">cap_vert.sym</a> - bipolar capacitor, drawn vertically</li>
+	<li><a href="symbols/discretes/elko.sym">elko.sym</a> - electrolytic capacitor</li>
+	<li><a href="symbols/discretes/res_SMD.sym">res_SMD.sym</a> - resistor with 0805 SMD footprint</li>
+	<li><a href="symbols/discretes/res_SMD_vert.sym">res_SMD_vert.sym</a> - SMD resistor, drawn vertically</li>
+	<li><a href="symbols/discretes/res_ref.sym">res_ref.sym</a> - reference resistor</li>
+	<li><a href="symbols/discretes/res_socket.sym">res_socket.sym</a> - resistor in socket</li>
+	<li><a href="symbols/discretes/res_horiz.sym">res_horiz.sym</a> - resistor, drawn horizontally</li>
+	<li><a href="symbols/discretes/res_thru_vert.sym">res_vert.sym</a> - resistor, drawn vertically</li>
+	<li><a href="symbols/discretes/res_zero.sym">res_zero.sym</a> - 0 Ohm resistor</li>
+	<li><a href="symbols/discretes/potentiometer.sym">potentiometer.sym</a> - potentiometer, drawn horizontally </li>
+	<li><a href="symbols/discretes/potentiometer_vert.sym">potentiometer_vert.sym</a> - potentiometer, drawn vertically</li>
+	<li><a href="symbols/discretes/varistor.sym">varistor.sym</a> - varistor</li>
 	</ul>
 
 	<h4>Diodes</h4>
-	<li><a href="symbols/discrete/diodes/bridge_rectifier_SMD.sym">bridge_rectifier_SMD.sym</a> - bridge rectifier, value preset to DIOTEC B40S</li>
-	<li><a href="symbols/discrete/diodes/dus.sym">dus.sym</a> - garden variety silicon diode, value preset to 1N4001</li>
-	<li><a href="symbols/discrete/diodes/flyback_SOT23.sym">flyback_SOT23.sym</a> - A pair of schottky diodes for flyback protection in SOT23, e.g. BAT64-04</li>
-	<li><a href="symbols/discrete/diodes/laserdiode.sym">laserdiode.sym</a> - three pin laser diode </li>
-	<li><a href="symbols/discrete/diodes/led_3mm.sym">led_3mm.sym</a> - LED, thru hole, 3mm diameter</li>
-	<li><a href="symbols/discrete/diodes/led_SMD.sym">led_SMD.sym</a> - LED, SMD footprint, 1210.fp</li>
-	<li><a href="symbols/discrete/diodes/photodiode.sym">photodiode.sym</a> - garden variety photo diode, value preset to BPW34</li>
-	<li><a href="symbols/discrete/diodes/photodiode_TO18.sym">photodiode_TO18.sym</a> - three pin photo diode, value preset to S5972 </li>
-	<li><a href="symbols/discrete/diodes/schottky.sym">schottky.sym</a> - schottky diode, SMD minimelf, value preset to LL4148</li>
-	<li><a href="symbols/discrete/diodes/tvs.sym">tvs.sym</a> - transient voltage suppressor diode (TVS), value preset to P6SMB18AC</li>
-	<li><a href="symbols/discrete/diodes/tvs_vert.sym">tvs_vert.sym</a> - TVS diode, vertical orientation</li>
-	<li><a href="symbols/discrete/diodes/zener_minimelf.sym">zener_minimelf.sym</a> - zener diode, SMD minimelf, value preset to BZV55-Cxx</li>
-	<li><a href="symbols/discrete/diodes/zener_SOT23.sym">zener_SOT23.sym</a> - zener diode, SMD SOT23, value preset to BZX84-Cxx</li>
-	<li><a href="symbols/discrete/diodes/zener_thru.sym">zener_thru.sym</a> - zener diode, thru hole, value preset to ZPY-xx</li>
-	</h4>
+	<ul>
+	<li><a href="symbols/discretes/diodes/bridge_rectifier_SMD.sym">bridge_rectifier_SMD.sym</a> - bridge rectifier, value preset to DIOTEC B40S</li>
+	<li><a href="symbols/discretes/diodes/dus.sym">dus.sym</a> - garden variety silicon diode, value preset to 1N4001</li>
+	<li><a href="symbols/discretes/diodes/flyback_SOT23.sym">flyback_SOT23.sym</a> - A pair of schottky diodes for flyback protection in SOT23, e.g. BAT64-04</li>
+	<li><a href="symbols/discretes/diodes/laserdiode.sym">laserdiode.sym</a> - three pin laser diode </li>
+	<li><a href="symbols/discretes/diodes/led_3mm.sym">led_3mm.sym</a> - LED, thru hole, 3mm diameter</li>
+	<li><a href="symbols/discretes/diodes/led_SMD.sym">led_SMD.sym</a> - LED, SMD footprint, 1210.fp</li>
+	<li><a href="symbols/discretes/diodes/photodiode.sym">photodiode.sym</a> - garden variety photo diode, value preset to BPW34</li>
+	<li><a href="symbols/discretes/diodes/photodiode_TO18.sym">photodiode_TO18.sym</a> - three pin photo diode, value preset to S5972 </li>
+	<li><a href="symbols/discretes/diodes/schottky.sym">schottky.sym</a> - schottky diode, SMD minimelf, value preset to LL4148</li>
+	<li><a href="symbols/discretes/diodes/tvs.sym">tvs.sym</a> - transient voltage suppressor diode (TVS), value preset to P6SMB18AC</li>
+	<li><a href="symbols/discretes/diodes/tvs_vert.sym">tvs_vert.sym</a> - TVS diode, vertical orientation</li>
+	<li><a href="symbols/discretes/diodes/zener_minimelf.sym">zener_minimelf.sym</a> - zener diode, SMD minimelf, value preset to BZV55-Cxx</li>
+	<li><a href="symbols/discretes/diodes/zener_SOT23.sym">zener_SOT23.sym</a> - zener diode, SMD SOT23, value preset to BZX84-Cxx</li>
+	<li><a href="symbols/discretes/diodes/zener_thru.sym">zener_thru.sym</a> - zener diode, thru hole, value preset to ZPY-xx</li>
+	</ul>
 
 	<h4>Transistors</h4>
-	<li><a href="symbols/discrete/transistors/npn_transistor.sym">npn_transistor.sym</a> - npn transistor</li>
-	<li><a href="symbols/discrete/transistors/pnp_transistor.sym">pnp_transistor.sym</a> - pnp transistor</li>
-	<li><a href="symbols/discrete/transistors/njfet.sym">njfet.sym</a></li>
-	<li><a href="symbols/discrete/transistors/nmosfet.sym">nmosfet.sym</a> - NMOSFET</li>
-	<li><a href="symbols/discrete/transistors/nmosfet_power.sym">nmosfet_power.sym</a></li>
-	<li><a href="symbols/discrete/transistors/pmosfet.sym">pmosfet.sym</a> - PMOSFET</li>
-	<li><a href="symbols/discrete/transistors/pmosfet_power.sym">pmosfet_power.sym</a></li>
-	<li><a href="symbols/discrete/transistors/igbt.sym">igbt.sym</a> - IGBT </li>
-	<li><a href="symbols/discrete/transistors/igbt_diode.sym">igbt_diode.sym</a> - IGBT with free wheeling diode </li>
+	<ul>
+	<li><a href="symbols/discretes/transistors/npn_transistor.sym">npn_transistor.sym</a> - npn transistor</li>
+	<li><a href="symbols/discretes/transistors/pnp_transistor.sym">pnp_transistor.sym</a> - pnp transistor</li>
+	<li><a href="symbols/discretes/transistors/njfet.sym">njfet.sym</a></li>
+	<li><a href="symbols/discretes/transistors/nmosfet.sym">nmosfet.sym</a> - NMOSFET</li>
+	<li><a href="symbols/discretes/transistors/nmosfet_power.sym">nmosfet_power.sym</a></li>
+	<li><a href="symbols/discretes/transistors/pmosfet.sym">pmosfet.sym</a> - PMOSFET</li>
+	<li><a href="symbols/discretes/transistors/pmosfet_power.sym">pmosfet_power.sym</a></li>
+	<li><a href="symbols/discretes/transistors/igbt.sym">igbt.sym</a> - IGBT </li>
+	<li><a href="symbols/discretes/transistors/igbt_diode.sym">igbt_diode.sym</a> - IGBT with free wheeling diode </li>
 	</ul>
 
-	<h4>Opamps and Comparators</h4>
+
+<h3>Generic integrated analogs</h3>
+	<h4>Amplifiers</h4>
 	<ul>
-	<li><a href="symbols/analog/comparator.sym">comparator.sym</a></li>
-	<li><a href="symbols/analog/comparator_pwr.sym">comparator_pwr.sym</a></li>
-	<li><a href="symbols/analog/comparator_dual.sym">comparator_dual.sym</a></li>
-	<li><a href="symbols/analog/comparator_dual_pwr.sym">comparator_dual_pwr.sym</a></li>
-	<li><a href="symbols/analog/comparator_quad.sym">comparator_quad.sym</a> - quad comparator, pin-out like LM339</li>
-	<li><a href="symbols/analog/comparator_quad_pwr.sym">comparator_quad_pwr.sym</a></li>
-	<li><a href="symbols/analog/comparator_quad_b.sym">comparator_quad_b.sym</a> - quad comparator, pin-out like quad opamp, e.g. TLV3494</li>
-	<li><a href="symbols/analog/comparator_quad_b_pwr.sym">comparator_quad_b_pwr.sym</a></li>
-	<li><a href="symbols/analog/comparator_LT1719.sym">comparator_LT1719.sym</a> - fast comparator LT1719</li>
-	<li><a href="symbols/analog/instr_amp_8pin.sym">instr_amp_8pin.sym</a> - generic eight pin instrumentation amplifier, defaults to LT1167</li>
-	<li><a href="symbols/analog/instr_amp_INA163.sym">instr_amp_INA163.sym</a> - instrumentation amplifier INA163, SO14</li>
-	<li><a href="symbols/analog/instr_amp_INA163_pwr.sym">instr_amp_INA163_pwr.sym</a> - power symbol for INA163</li>
-	<li><a href="symbols/analog/L165-1.sym">L165-1.sym</a>power opamp, 5A maximum current</li>
-	<li><a href="symbols/analog/L165_pwr-1.sym">L165_pwr-1.sym</a>power symbol or L165</li>
-	<li><a href="symbols/analog/L165-2.sym">L165-2.sym</a>L165 symbol with local power pins</li>
-	<li><a href="symbols/analog/opamp_offset.sym">opamp_offset.sym</a></li>
-	<li><a href="symbols/analog/opamp.sym">opamp.sym</a></li>
-	<li><a href="symbols/analog/opamp_pwr.sym">opamp_pwr.sym</a></li>
-	<li><a href="symbols/analog/opamp_dual.sym">opamp_dual.sym</a></li>
-	<li><a href="symbols/analog/opamp_dual_pwr.sym">opamp_dual_pwr.sym</a></li>
-	<li><a href="symbols/analog/opamp_quad.sym">opamp_quad.sym</a></li>
-	<li><a href="symbols/analog/opamp_quad_pwr.sym">opamp_quad_pwr.sym</a></li>
+	<li><a href="symbols/analog/amplifiers/instr_amp_8pin.sym">instr_amp_8pin.sym</a> - generic eight pin instrumentation amplifier, defaults to LT1167</li>
+	<li><a href="symbols/analog/amplifiers/instr_amp_INA163.sym">instr_amp_INA163.sym</a> - instrumentation amplifier INA163, SO14</li>
+	<li><a href="symbols/analog/amplifiers/instr_amp_INA163_pwr.sym">instr_amp_INA163_pwr.sym</a> - power symbol for INA163</li>
+	<li><a href="symbols/analog/amplifiers/driver_TDA2030.sym">driver_TDA2030.sym</a>power opamp in PENTAWATT package. Pin compatible models TDA2030, TDA2050, LM675, L165 </li>
+	<li><a href="symbols/analog/amplifiers/driver_BUF634.sym">driver_BUF634.sym</a> - BUF634, 250 mA analog line driver</li>
+	<li><a href="symbols/analog/amplifiers/mmic-BGA427.sym">mmic-BGA427.sym</a> - MMIC amplifier, footprint SO343, BGA427, BGA420 </li>
+	<li><a href="symbols/analog/amplifiers/mmic-ERA.sym">mmic-ERA.sym</a> - MMIC amplifier, four pin style by Minicircuits </li>
+	<li><a href="symbols/analog/amplifiers/opamp_offset.sym">opamp_offset.sym</a></li>
+	<li><a href="symbols/analog/amplifiers/opamp_with_pwr_pins.sym">opamp_with_pwr_pins.sym</a> - generic operational amplifier with explicit power pins</li>
+	<li><a href="symbols/analog/amplifiers/opamp_single.sym">opamp_single.sym</a> - generic operational amplifier</li>
+	<li><a href="symbols/analog/amplifiers/opamp_single_pwr.sym"> opamp_single_pwr.sym</a> - power pins for operational amplifier</li>
+	<li><a href="symbols/analog/amplifiers/opamp_dual.sym">opamp_dual.sym</a> - generic dual operational amplifier</li>
+	<li><a href="symbols/analog/amplifiers/opamp_dual_pwr.sym">opamp_dual_pwr.sym</a> - power pins for dual operational amplifier</li>
+	<li><a href="symbols/analog/amplifiers/opamp_quad.sym">opamp_quad.sym</a> - generic quad operational amplifier</li>
+	<li><a href="symbols/analog/amplifiers/opamp_quad_pwr.sym">opamp_quad_pwr.sym</a> - power pins for quad operational amplifier</li>
 	</ul>
+
+
+	<h4>Comparators</h4>
+	<ul>
+	<li><a href="symbols/analog/comparators/comparator.sym">comparator.sym</a></li>
+	<li><a href="symbols/analog/comparators/comparator_pwr.sym">comparator_pwr.sym</a></li>
+	<li><a href="symbols/analog/comparators/comparator_dual.sym">comparator_dual.sym</a></li>
+	<li><a href="symbols/analog/comparators/comparator_dual_pwr.sym">comparator_dual_pwr.sym</a></li>
+	<li><a href="symbols/analog/comparators/comparator_quad.sym">comparator_quad.sym</a> - quad comparator, pin-out like LM339</li>
+	<li><a href="symbols/analog/comparators/comparator_quad_pwr.sym">comparator_quad_pwr.sym</a></li>
+	<li><a href="symbols/analog/comparators/comparator_quad_b.sym">comparator_quad_b.sym</a> - quad comparator, pin-out like quad opamp, e.g. TLV3494</li>
+	<li><a href="symbols/analog/comparators/comparator_quad_b_pwr.sym">comparator_quad_b_pwr.sym</a></li>
+	<li><a href="symbols/analog/comparators/comparator_LT1719.sym">comparator_LT1719.sym</a> - fast comparator LT1719</li>
+	</ul>
+
 
 	<h4>Regulators</h4>
 	<ul>
-	<li><a href="symbols/analog/regulator_positive_fixed.sym">regulator_positive_fixed.sym</a> - linear voltage regulator with fixed positive output. E.g LM7805</li>
-	<li><a href="symbols/analog/regulator_positive_variable.sym">regulator_positive_variable.sym</a> - linear voltage regulator with adjustable positive output. E.g LM317</li>
-	<li><a href="symbols/analog/regulator_negative_fixed.sym">regulator_negative_fixed.sym</a> - linear voltage regulator with fixed negative output. E.g LM7905</li>
-	<li><a href="symbols/analog/regulator_negative_variable.sym">regulator_negative_fixed.sym</a> - linear voltage regulator with adjustable negative output. E.g LM337</li>
-	<li><a href="symbols/analog/refgerence_SO8.sym">reference_SO8.sym</a> - precision voltage reference, e.g. REF02, AD780</li>
+	<li><a href="symbols/analog/lm399.sym">lm399.sym</a></li>
+	<li><a href="symbols/analog/regulators/regulator_positive_fixed.sym">regulator_positive_fixed.sym</a> - linear voltage regulator with fixed positive output. E.g LM7805</li>
+	<li><a href="symbols/analog/regulators/regulator_positive_variable.sym">regulator_positive_variable.sym</a> - linear voltage regulator with adjustable positive output. E.g LM317</li>
+	<li><a href="symbols/analog/regulators/regulator_negative_fixed.sym">regulator_negative_fixed.sym</a> - linear voltage regulator with fixed negative output. E.g LM7905</li>
+	<li><a href="symbols/analog/regulators/regulator_negative_variable.sym">regulator_negative_fixed.sym</a> - linear voltage regulator with adjustable negative output. E.g LM337</li>
+	<li><a href="symbols/analog/regulators/refgerence_SO8.sym">reference_SO8.sym</a> - precision voltage reference, e.g. REF02, AD780</li>
 	</ul>
 
 
-	<h4>Specific Analog</h4>
+	<h4>Specific integrated analogs</h4>
 	<ul>
 	<li><a href="symbols/analog/EL7222.sym">EL7222.sym</a> dual video driver, inverting/non-inverting</li>
-	<li><a href="symbols/analog/lm399.sym">lm399.sym</a></li>
-	<li><a href="symbols/analog/phase_detector_HMC439QS16G.sym">phase_detector_HMC439QS16G.sym</a> low drift phase detector by Hittite</li>
-	<li><a href="symbols/analog/phase_detector_MCH12140.sym">phase_detector_MCH12140.sym</a> phase detector by ON-Semi</li>
+	<li><a href="symbols/analog/phase_detectors/phase_detector_HMC439QS16G.sym">phase_detector_HMC439QS16G.sym</a> low drift phase detector by Hittite</li>
+	<li><a href="symbols/analog/phase_detectors/phase_detector_MCH12140.sym">phase_detector_MCH12140.sym</a> phase detector by ON-Semi</li>
 	<li><a href="symbols/analog/poti_Alps_RK11K112.sym">poti_Alps_RK11K112.sym</a> - potentiometer with footprint for Alps, horizontal mount</li>
 	<li><a href="symbols/analog/poti_Spectrol_534.sym">poti_Spectrol_534.sym</a> - precision wirewound ptentiometer</li>
 	<li><a href="symbols/analog/ntc.sym">ntc.sym</a> temperature sensor, NTC type </li>
-	<li><a href="symbols/analog/mmic-BGA427.sym">mmic-BGA427.sym</a> MMIC amplifier, footprint SO343, BGA427, BGA420 </li>
-	<li><a href="symbols/analog/mmic-ERA.sym">mmic-ERA.sym</a> MMIC amplifier, four pin style by Minicircuits </li>
+	<li><a href="symbols/analog/minicircuits/low_pass_filter_minicircuits_PLP-xxx.sym">low_pass_filter_minicircuits_PLP-xxx.sym</a> Minicicuits RF low pass filter, model PLP-***</li>
+	<li><a href="symbols/analog/minicircuits/oscillator_minicircuits_POS-xxx.sym">oscillator_minicircuits_POS-xxx.sym</a> Minicicuits oscillator, model POS-***</li>
+	<li><a href="symbols/analog/minicircuits/rf_switch_minicircuits_PSW-1211.sym">rf_switch_minicircuits_PSW-1211.sym</a> Minicicuits RF switch, model PSW-1211</li>
+	<li><a href="symbols/analog/minicircuits/variable_attenuator_minicircuits_TFAS-1.sym">variable_attenuator_minicircuits_TFAS-1.sym</a> Minicicuits variable attenuator, model TFAS-1</li>
 	</ul>
 
 
-<h3>Digital</h3>
+<h3>Digitals</h3>
 I don't do much digital electronics except for some basic 74xxx components...
 <ul>
 <li><a href="symbols/digital/555.sym">555.sym</a> - general purpose timer, NE555, TS555, TLC555, LMC555, LM555,  SA555, ICM7555, etc.</li>
 <li><a href="symbols/digital/556.sym">556.sym</a> - dual general purpose timer </li>
-<li><a href="symbols/digital/7400_4xNAND.sym">7400_4xNAND.sym</a></li>
-<li><a href="symbols/digital/7402_4xNOR.sym">7402_4xNOR.sym</a></li>
-<li><a href="symbols/digital/7404_6xNOT.sym">7404_6xNOT.sym</a> - 6x NOT gate</li>
-<li><a href="symbols/digital/7409_4xNAND.sym">7409_4xNAND.sym</a> - 4x NAND with open collector</li>
-<li><a href="symbols/digital/7414_6xNOT_schmitt_trigger.sym">7414_6xNOT_schmitt_trigger.sym </a> - 6x NOT gate with schmitt trigger</li>
-<li><a href="symbols/digital/7432_4xOR.sym">7432_4xOR.sym</a> - 4x two input OR gate </li>
-<li><a href="symbols/digital/7486_4xXOR.sym">7486_4xXOR.sym</a> - 4x two input XOR gate </li>
-<li><a href="symbols/digital/74112_2xJK.sym">74112_2xJK.sym</a> - 2x JK flip-flop</li>
-<li><a href="symbols/digital/74123_2xMONOFLOP.sym">74123_2xMONOFLOP.sym</a> - 2x mono-flop, retriggerable</li>
-<li><a href="symbols/digital/74132_4xNAND_schmitt_trigger.sym">74132_4xNAND_schmitt_trigger.sym</a> - 4x NAND, schmitt trigger on input</li>
-<li><a href="symbols/digital/74161_COUNTER.sym">74161_COUNTER.sym</a> - 4 bit binary counter</li>
-<li><a href="symbols/digital/74163_COUNTER_DECIMAL.sym">74163_COUNTER_DECIMAL.sym</a> - 4 bit decimal counter</li>
-<li><a href="symbols/digital/7420_2x4NAND.sym">7420_2x4NAND.sym</a> - 2x NAND with 4 inputs</li>
-<li><a href="symbols/digital/divider_MC12093.sym">divider_MC12093.sym</a> divide by 2, by 4, by 8, by ON-Semi </li>
-<li><a href="symbols/digital/74_pwr16.sym">74_pwr16.sym</a> - power symbol for 16 pin package</li>
-<li><a href="symbols/digital/74_pwr.sym">74_pwr.sym</a> - power symbol for 14 pin package, Vcc on pin 14</li>
-<li><a href="symbols/digital/Altera_MAX_II_EPM240T100_bank1.sym">Altera_MAX_II_EPM240T100_bank1.sym</a> - CPLD Altera MAX II EPM240T100, first bank of IO signals</li>
-<li><a href="symbols/digital/Altera_MAX_II_EPM240T100_bank2.sym">Altera_MAX_II_EPM240T100_bank2.sym</a> - CPLD Altera MAX II EPM240T100, second bank of IO signals</li>
-<li><a href="symbols/digital/Altera_MAX_II_EPM240T100_functions_PWR.sym">Altera_MAX_II_EPM240T100_functions_PWR.sym</a> - CPLD Altera MAX II EPM240T100, function pins and power connections</li>
-<li><a href="symbols/digital/ATmega32TQFP.sym">ATmega32TQFP.sym</a> - micro controler ATmega32, TQFP-44</li>
-<li><a href="symbols/digital/ATXmegaA1.sym">ATXmegaA1.sym</a> - micro controler, ATXmega_A1, TQFP-100</li>
-<li><a href="symbols/digital/analog_switch_TS5A3157.sym">analog_switch_TS5A3157.sym</a> - single analog switch TS5A3157, or TSA53159 </li>
-<li><a href="symbols/digital/analog_switch_TS5A3157_pwr.sym">analog_switch_TS5A3157_pwr.sym</a> - single analog switch, power symbol </li>
-<li><a href="symbols/digital/analog_switch_DG467.sym">analog_switch_DG467.sym</a> - single analog switch in TSOP6 package, like DG467, or DG447</li>
-<li><a href="symbols/digital/analog_switch_DG468.sym">analog_switch_DG468.sym</a> - single analog switch in TSOP6 package, like DG468, or DG448</li>
-<li><a href="symbols/digital/analog_switch_TSOP6_pwr.sym">analog_switch_TSOP6_pwr.sym</a> - single analog switch, power symbol, TSOP6 </li>
-<li><a href="symbols/digital/multiplexer_DG406.sym">multiplexer_DG406.sym</a> - multiplexer 4 bit to 16 bipolar channels, SO28 </li>
-<li><a href="symbols/digital/quad_analog_switch.sym">quad_analog_switch.sym</a> - quad analog closing switch like DG201, DG211, or ADG1311 </li>
-<li><a href="symbols/digital/quad_analog_switch_closed.sym">quad_analog_switch_closed.sym</a> - quad analog opening switch like DG202, DG212, or ADG1312 </li>
-<li><a href="symbols/digital/quad_analog_switch_pwr.sym">quad_analog_switch_pwr.sym</a> - power pins for quad analog switch </li>
 <li><a href="symbols/digital/max232.sym">max232.sym</a> - RS232 driver</li>
 </ul>
 
+	<h4> 74xxx </h4>
+	<ul>
+	<li><a href="symbols/digital/74xxx/7400_4xNAND.sym">7400_4xNAND.sym</a></li>
+	<li><a href="symbols/digital/74xxx/7402_4xNOR.sym">7402_4xNOR.sym</a></li>
+	<li><a href="symbols/digital/74xxx/7404_6xNOT.sym">7404_6xNOT.sym</a> - 6x NOT gate</li>
+	<li><a href="symbols/digital/74xxx/7409_4xNAND.sym">7409_4xNAND.sym</a> - 4x NAND with open collector</li>
+	<li><a href="symbols/digital/74xxx/7414_6xNOT_schmitt_trigger.sym">7414_6xNOT_schmitt_trigger.sym </a> - 6x NOT gate with schmitt trigger</li>
+	<li><a href="symbols/digital/74xxx/7432_4xOR.sym">7432_4xOR.sym</a> - 4x two input OR gate </li>
+	<li><a href="symbols/digital/74xxx/7486_4xXOR.sym">7486_4xXOR.sym</a> - 4x two input XOR gate </li>
+	<li><a href="symbols/digital/74xxx/74112_2xJK.sym">74112_2xJK.sym</a> - 2x JK flip-flop</li>
+	<li><a href="symbols/digital/74xxx/74123_2xMONOFLOP.sym">74123_2xMONOFLOP.sym</a> - 2x mono-flop, retriggerable</li>
+	<li><a href="symbols/digital/74xxx/74132_4xNAND_schmitt_trigger.sym">74132_4xNAND_schmitt_trigger.sym</a> - 4x NAND, schmitt trigger on input</li>
+	<li><a href="symbols/digital/74xxx/74161_COUNTER.sym">74161_COUNTER.sym</a> - 4 bit binary counter</li>
+	<li><a href="symbols/digital/74xxx/74163_COUNTER_DECIMAL.sym">74163_COUNTER_DECIMAL.sym</a> - 4 bit decimal counter</li>
+	<li><a href="symbols/digital/74xxx/7420_2x4NAND.sym">7420_2x4NAND.sym</a> - 2x NAND with 4 inputs</li>
+	<li><a href="symbols/digital/74xxx/74_pwr16.sym">74_pwr16.sym</a> - power symbol for 16 pin package</li>
+	<li><a href="symbols/digital/74xxx/74_pwr.sym">74_pwr.sym</a> - power symbol for 14 pin package, Vcc on pin 14</li>
+	</ul>
+
+	<h4> Processors </h4>
+	<ul>
+	<li><a href="symbols/digital/processors/ATmega32TQFP.sym">ATmega32TQFP.sym</a> - ATmega32, TQFP-44</li>
+	<li><a href="symbols/digital/processors/ATXmegaA1.sym">ATXmegaA1.sym</a> - ATXmega_A1, TQFP-100</li>
+	<li><a href="symbols/digital/processors/ATXmegaA1.symdef">ATXmegaA1.symdef</a> - input file for djboxsym </li>
+	<ul>
+
+	<h4> CPLD Altera MAX II EPM240T100 </h4>
+	<ul>
+	<li><a href="symbols/digital/altera/Altera_MAX_II_EPM240T100_bank1.sym">Altera_MAX_II_EPM240T100_bank1.sym</a> - first bank of IO signals</li>
+	<li><a href="symbols/digital/altera/Altera_MAX_II_EPM240T100_bank1.symdef">Altera_MAX_II_EPM240T100_bank1.symdef</a> - first bank, input file for djboxsym</li>
+	<li><a href="symbols/digital/altera/Altera_MAX_II_EPM240T100_bank2.sym">Altera_MAX_II_EPM240T100_bank2.sym</a> - second bank of IO signals</li>
+	<li><a href="symbols/digital/altera/Altera_MAX_II_EPM240T100_bank2.symdef">Altera_MAX_II_EPM240T100_bank2.symdef</a> - second bank of IO signals, input file for djboxsym</li>
+	<li><a href="symbols/digital/altera/Altera_MAX_II_EPM240T100_functions_PWR.sym">Altera_MAX_II_EPM240T100_functions_PWR.sym</a> - function pins and power connections</li>
+	<li><a href="symbols/digital/altera/Altera_MAX_II_EPM240T100_functions_PWR.symdef">Altera_MAX_II_EPM240T100_functions_PWR.symdef</a> - function pins and power connections, input file for djboxsym</li>
+	</ul>
+
+	<h4> Clock Dividers </h4>
+	<ul>
+	<li><a href="symbols/digital/dividers/divider_MC12093.sym">divider_MC12093.sym</a> divide by 2, by 4, by 8, by ON-Semi </li>
+	<li><a href="symbols/digital/dividers/ICS674-01_A.sym">ICS674-01_A.sym</a> versertile divider by IDT, 7 bit component </li>
+	<li><a href="symbols/digital/dividers/ICS674-01_B.sym">ICS674-01_B.sym</a> versertile divider by IDT, 9 bit component </li>
+	<li><a href="symbols/digital/dividers/ICS674-01_pwr.sym">ICS674-01_pwr.sym</a> versertile divider by IDT, power pins </li>
+	</ul>
+
+
+	<h4> Analog Switches</h4>
+	<ul>
+	<li><a href="symbols/digital/analog_switches/analog_switch_TS5A3157.sym">analog_switch_TS5A3157.sym</a> - single analog switch TS5A3157, or TSA53159 </li>
+	<li><a href="symbols/digital/analog_switches/analog_switch_TS5A3157_pwr.sym">analog_switch_TS5A3157_pwr.sym</a> - single analog switch, power symbol </li>
+	<li><a href="symbols/digital/analog_switches/analog_switch_DG467.sym">analog_switch_DG467.sym</a> - single analog switch in TSOP6 package, like DG467, or DG447</li>
+	<li><a href="symbols/digital/analog_switches/analog_switch_DG468.sym">analog_switch_DG468.sym</a> - single analog switch in TSOP6 package, like DG468, or DG448</li>
+	<li><a href="symbols/digital/analog_switches/analog_switch_TSOP6_pwr.sym">analog_switch_TSOP6_pwr.sym</a> - single analog switch, power symbol, TSOP6 </li>
+	<li><a href="symbols/digital/analog_switches/multiplexer_DG406.sym">multiplexer_DG406.sym</a> - multiplexer 4 bit to 16 bipolar channels, SO28 </li>
+	<li><a href="symbols/digital/analog_switches/quad_analog_switch.sym">quad_analog_switch.sym</a> - quad analog closing switch like DG201, DG211, or ADG1311 </li>
+	<li><a href="symbols/digital/analog_switches/quad_analog_switch_closed.sym">quad_analog_switch_closed.sym</a> - quad analog opening switch like DG202, DG212, or ADG1312 </li>
+	<li><a href="symbols/digital/analog_switches/quad_analog_switch_pwr.sym">quad_analog_switch_pwr.sym</a> - power pins for quad analog switch </li>
+	</ul>
 
 <h3>Connectors</h3>
 <ul>
+<li><a href="symbols/connector/con_1x1.sym">con_1x1.sym</a> - generic one pin connector</li>
+<li><a href="symbols/connector/con_1x2.sym">con_1x2.sym</a> - generic two pin connector</li>
+<li><a href="symbols/connector/con_1x3.sym">con_1x3.sym</a> - generic three pin connector</li>
+<li><a href="symbols/connector/con_1x4.sym">con_1x4.sym</a> - generic four pin connector</li>
+<li><a href="symbols/connector/con_1x4.sym">con_1x5.sym</a> - generic five pin connector</li>
+<li><a href="symbols/connector/con_1x8.sym">con_1x8.sym</a> e.g. for RJ45-8P8C </li>
 <li><a href="symbols/connector/con_1x10.sym">con_1x10.sym</a></li>
 <li><a href="symbols/connector/con_1x12.sym">con_1x12.sym</a></li>
 <li><a href="symbols/connector/con_1x14.sym">con_1x14.sym</a></li>
-<li><a href="symbols/connector/con_1x1.sym">con_1x1.sym</a></li>
-<li><a href="symbols/connector/con_1x2.sym">con_1x2.sym</a></li>
-<li><a href="symbols/connector/con_1x3.sym">con_1x3.sym</a></li>
-<li><a href="symbols/connector/con_1x4.sym">con_1x4.sym</a></li>
 <li><a href="symbols/connector/con_2x3.sym">con_2x3.sym</a></li>
 <li><a href="symbols/connector/con_2x3_side.sym">con_2x3_side.sym</a></li>
 <li><a href="symbols/connector/con_2x5.sym">con_2x5.sym</a></li>
@@ -188,7 +232,8 @@ I don't do much digital electronics except for some basic 74xxx components...
 <li><a href="symbols/connector/con_RIACON_2pin.sym">con_RIACON_2pin.sym</a> - connector by RIA connect, 2 pin</li>
 <li><a href="symbols/connector/con_RIACON_3pin.sym">con_RIACON_3pin.sym</a> - connector by RIA connect, 3 pin</li>
 <li><a href="symbols/connector/con_SCSI68.sym">con_SCSI68.sym</a> - SCSI connector, 68 pins</li>
-<li><a href="symbols/connector/con_XLR3_power.sym">con_XLR3_power.sym</a> - microphone connector for microphones</li>
+<li><a href="symbols/connector/con_XLR3.sym">con_XR3.sym</a> - three pin XLR connector </li>
+<li><a href="symbols/connector/con_3pin_supply.sym">con_3pin_supply.sym</a> - 3 pin connector for power supply</li>
 <li><a href="symbols/connector/PS-2.sym"> PS-2.sym</a>connector by JAE, IL-G series, 2 pins, model IL-G-2S-S3C2-SA </li>
 <li><a href="symbols/connector/PS-3.sym"> PS-3.sym</a>connector by JAE, IL-G series, 3 pins, model IL-G-3S-S3C2-SA </li>
 <li><a href="symbols/connector/PS-5.sym"> PS-5.sym</a>connector by JAE, IL-G series, 5 pins, model IL-G-5S-S3C2-SA </li>
@@ -200,7 +245,8 @@ I don't do much digital electronics except for some basic 74xxx components...
 <li><a href="symbols/connector/subD25.sym">subD25.sym</a> - SubD25, aka DB25</li>
 </ul>
 
-<h3>power symbols</h3>
+
+<h3>Power symbols</h3>
 <ul>
 <li><a href="symbols/power/5V-.sym">5V-.sym</a></li>
 <li><a href="symbols/power/5V+.sym">5V+.sym</a></li>
@@ -208,6 +254,9 @@ I don't do much digital electronics except for some basic 74xxx components...
 <li><a href="symbols/power/12V+.sym">12V+.sym</a></li>
 <li><a href="symbols/power/15V-.sym">15V-.sym</a></li>
 <li><a href="symbols/power/15V+.sym">15V+.sym</a></li>
+<li><a href="symbols/power/custom_GND.sym">custom_GND.sym</a> - GND symbol with customizable net attribute</li>
+<li><a href="symbols/power/custom_minus.sym">custom_minus.sym</a> - negative power symbol with customizable net attribute</li>
+<li><a href="symbols/power/custom_plus.sym">custom_plus.sym</a> - positive power symbol with customizable net attribute</li>
 <li><a href="symbols/power/gnd.sym">gnd.sym</a> - ground </li>
 <li><a href="symbols/power/nc.sym">nc.sym</a> - a symbol to mark deliberately not connected pins</li>
 <li><a href="symbols/power/rGND.sym">rGND.sym</a> - referece ground</li>
@@ -219,6 +268,26 @@ I don't do much digital electronics except for some basic 74xxx components...
 <li><a href="symbols/power/vref.sym">vref.sym</a></li>
 </ul>
 
+<h3> Switches </h3>
+<ul>
+<li><a href="symbols/switch/dipswitch_2x.sym">dipswitch_2x.sym</a> - two channel dipswitch</li>
+<li><a href="symbols/switch/dipswitch_4x.sym">dipswitch_4x.sym</a> - four channel dipswitch</li>
+<li><a href="symbols/switch/dipswitch_6x.sym">dipswitch_6x.sym</a> - six channel dipswitch</li>
+<li><a href="symbols/switch/dipswitch_8x.sym">dipswitch_8x.sym</a> - eight channel dipswitch</li>
+<li><a href="symbols/switch/dipswitch_10x.sym">dipswitch_10x.sym</a> - ten channel dipswitch</li>
+<li><a href="symbols/switch/relay-SPDT.sym">relay-SPDT.sym</a> - single pole double throw relay, defaults to Tyco T7CV5D</li>
+<li><a href="symbols/switch/relay-DPDT.sym">relay-DPDT.sym</a> - double pole double throw relay, defaults to a Axicom FP2</li>
+<li><a href="symbols/switch/switch_SPST.sym">switch_SPST.sym</a> - switch, 1 pole, on - off</li>
+<li><a href="symbols/switch/switch_SPDT.sym">switch_SPDT.sym</a> -  switch 1 pole, on - on</li>
+<li><a href="symbols/switch/switch_SPDT_on-off-on.sym">switch_SPDT_on-off-on.sym</a> -  switch 1 pole, on - off - on</li>
+<li><a href="symbols/switch/switch_DPDT.sym">switch_DPDT.sym</a> - switch, 2 pole, on - on</li>
+<li><a href="symbols/switch/switch_1x12.sym">switch_1x12.sym</a> - switch, 1 pole, 12 positions</li>
+<li><a href="symbols/switch/switch_1x4.sym">switch_1x4.sym</a> - switch, 1 pole, 4 positions</li>
+<li><a href="symbols/switch/switch_2x6.sym">switch_2x6.sym</a> - switch, 2 pole, 6 positions</li>
+<li><a href="symbols/switch/switch_3x4.sym">switch_3x4.sym</a> - switch, 3 pole, 4 positions</li>
+<li><a href="symbols/switch/switch_4x3.sym">switch_4x3.sym</a> - switch, 4 pole, 3 positions</li>
+<li><a href="symbols/switch/coded_switch_4bit.sym">coded_switch_4bit.sym</a> - 4 bit coded switch, defaults to ELMA C08</li>
+</ul>
 
 <h3>Misc</h3>
 <ul>
@@ -228,7 +297,6 @@ I don't do much digital electronics except for some basic 74xxx components...
 <li><a href="symbols/misc/button.sym">button.sym</a></li>
 <li><a href="symbols/misc/cuboid.sym">cuboid.sym</a> - a cuboid to be soldered to the pcb </li>
 <li><a href="symbols/misc/crystal.sym ">crystal.sym </a> </li>
-<li><a href="symbols/misc/dipswitch_4x.sym">dipswitch_4x.sym</a> - four channel dipswitch</li>
 <li><a href="symbols/misc/enclosing.sym">enclosing.sym</a> enclosing </li>
 <li><a href="symbols/misc/hole_plated.sym">hole_plated.sym</a></li>
 <li><a href="symbols/misc/hole_unplated.sym">hole_unplated.sym</a></li>
@@ -238,28 +306,21 @@ I don't do much digital electronics except for some basic 74xxx components...
 <li><a href="symbols/misc/jumper-2x2.sym">jumper-2x2.sym</a></li>
 <li><a href="symbols/misc/osc-crystek.sym">osc-crystek.sym</a> - fixed frequency oscillator by Crystek </li>
 <li><a href="symbols/misc/osc-minicircuits.sym">osc-minicircuits.sym</a> - voltage controlled oscillator by MiniCircuits</li>
+<li><a href="symbols/misc/optocpoupler/optocoupler_HCNR20_LED.sym">optocoupler_HCNR20_LED.sym</a>optocoupler with two photodiodes, sender</li>
+<li><a href="symbols/misc/optocpoupler/optocoupler_HCNR20_PD.sym">optocoupler_HCNR20_PD.sym</a>optocoupler with two photodiodes, receivers</li>
+<li><a href="symbols/misc/optocpoupler/optocoupler_photoFET_H11F.sym">optocoupler_photoFET_H11F.sym</a>optocoupler with photo FET output</li>
+<li><a href="symbols/misc/optocpoupler/optocoupler_schmitt_trigger_PC900.sym">optocoupler_schmitt_trigger_PC900.sym</a>optocoupler with schmitt trigger output</li>
+<li><a href="symbols/misc/optocpoupler/optocoupler_PVI1050.sym">optocoupler_PVI1050.sym</a> IRF PVI1050, dual photovoltaic MOSFET driver</li>
+<li><a href="symbols/misc/optocpoupler/optocoupler_VOM1271.sym">optocoupler_VOM1271.sym</a> VISHAY VOM1271, photovoltaic MOSFET driver</li>
 <li><a href="symbols/misc/pad_2.sym">pad_2.sym</a></li>
 <li><a href="symbols/misc/pad.sym">pad.sym</a></li>
 <li><a href="symbols/misc/perfboard.sym">perfboard.sym</a> - a symbol to provide a perfboard footprint</li>
 <li><a href="symbols/misc/PLL_TLC2932.sym">PLL_TLC2932.sym</a></li>
-<li><a href="symbols/misc/relay-SPDT.sym">relay-SPDT.sym</a> - single pole double throw relay, defaults to Tyco T7CV5D</li>
-<li><a href="symbols/misc/relay-DPDT.sym">relay-DPDT.sym</a> - double pole double throw relay, defaults to a Axicom FP2</li>
-<li><a href="symbols/misc/schalter_1x_ein.sym">schalter_1x_ein.sym</a> - switch, 1 pole, on - off</li>
-<li><a href="symbols/misc/schalter_1x_um.sym">schalter_1x_um.sym</a> -  switch 1 pole, on - on</li>
-<li><a href="symbols/misc/schalter_1x_mittel.sym">schalter_1x_mittel.sym</a> -  switch 1 pole, on - off - on</li>
-<li><a href="symbols/misc/schalter_2x_um.sym">schalter_2x_um.sym</a> - switch, 2 pole, on - on</li>
-<li><a href="symbols/misc/switch_1x12.sym">switch_1x12.sym</a> - switch, 1 pole, 12 positions</li>
-<li><a href="symbols/misc/switch_1x4.sym">switch_1x4.sym</a> - switch, 1 pole, 4 positions</li>
-<li><a href="symbols/misc/switch_2x6.sym">switch_2x6.sym</a> - switch, 2 pole, 6 positions</li>
-<li><a href="symbols/misc/switch_3x4.sym">switch_3x4.sym</a> - switch, 3 pole, 4 positions</li>
-<li><a href="symbols/misc/switch_4x3.sym">switch_4x3.sym</a> - switch, 4 pole, 3 positions</li>
-<li><a href="symbols/misc/coded_switch_4bit.sym">coded_switch_4bit.sym</a> - 4 bit coded switch, defaults to ELMA C08</li>
 <li><a href="symbols/misc/transformer_3pickups.sym">transformer_3pickups.sym</a> - transformer with three pick-ups</li>
 </ul>
 
 
-<h3>block</h3>
-
+<h3>Block</h3>
 These are blocks of subcircuits I frequently use. They contain some of the above symbols. Add them to a circuit with the option "Include-as-individual-objects" checked. See the <a href=" http://geda.seul.org/wiki/geda:faq-gschem#can_my_local_library_cover_frequently_needed_sub_circuits">wiki</a> for details.
 For some blocks preview does not work correctly because I did not embed the symbols. This is deliberate, because I want the blocks to track my changes to symbols in the library. Consequently, there is no way for gschem running on the geda-symbols server to find the symbols contained in the blocks. However, these blocks will work, if you have installed my symbols locally.
 

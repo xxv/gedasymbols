@@ -1,4 +1,4 @@
-v 20110619 2
+v 20121203 2
 T 300 2200 5 8 0 0 0 0 1
 device=POLARIZED_CAPACITOR
 T 300 2000 5 8 0 0 0 0 1
@@ -40,6 +40,6 @@ B 0 300 400 100 3 10 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 500 300 8 10 1 1 0 0 1
 value=XXX
 T 300 1800 5 8 0 0 0 0 1
-footprints=elko_RM5_D10, elko_RM25_D6, elko_RM35_D8, elko_RM5_D10, elko_RM5_D13, elko_RM75_D16, elko_RM75_D18, elko_RM10_D22, elko_BC_D35
+footprints=elko_RM5_D10, tantal_7x4mm, elko_RM25_D6, elko_RM35_D8, elko_RM5_RM35, elko_RM5_D10, elko_RM5_D13, elko_RM75_D16, elko_RM75_D16_lay, elko_RM75_D16_tyrap, elko_RM75_D18, elko_RM10_D22, elko_BC_D35
 T 300 1600 5 8 0 0 0 0 1
 symversion=2

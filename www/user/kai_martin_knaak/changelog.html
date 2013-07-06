@@ -1,10 +1,216 @@
 <!--- Change log of Kai-Martin's section in gedasymbols.org
 
-<h4> / /2012</h4>
+<h4> / /2013</h4>
 <ol>
 <li>
 </ol>
  --->
+
+<h4> 06/july/2013</h4>
+<ol>
+<li> more subdirectories
+</ol>
+
+<h4> 04/july/2013</h4>
+<ol>
+<li> set nopaste for the pads of the SMA edge connector footprints
+<li> renamed SMA_EDGE* back to SMA_edge*
+<li> corrected RIANCON*.fp to RIACON*.fp
+</ol>
+
+<h4> 01/july/2013</h4>
+<ol>
+<li> added RIACON_383_4PIN.fp 
+<li> added RIACON_383_4PIN_LAY.fp
+<li> added RIACON_383_5PIN.fp
+<li> added RIACON_383_5PIN_LAY.fp
+<li> added con_1x5.sym
+</ol>
+
+<h4> 13/may/2013</h4>
+<ol>
+<li> renamed SMA_edge.fp to SMA_EDGE for consistency with the other connectors
+<li> add SMA_EDGE2.fp -- Same as SMA_EDGE.fp, but no GND pads on top layer
+</ol>
+
+
+<h4> 08/may/2013</h4>
+<ol>
+<li> fixed schaltplandruck.sh.
+</ol>
+
+
+<h4> 30/april/2013</h4>
+<ol>
+<li> add opamp_with_pwr_pins.sym
+</ol>
+
+
+<h4> 29/april/2013</h4>
+<ol>
+<li> corrected the slots of optocoupler_HCNR20_PD.sym
+<li> obsoleted L165*.sym -- replaced by driver_TDA2030
+<li> add symbol driver_BUF634.sym
+</ol>
+
+
+<h4> 16/april/2013</h4>
+<ol>
+<li> add symbol varistor.sym
+<li> add footprints 
+   <ol> 
+      <li> var_8mm.fp
+      <li> var_8mm_lay.fp
+      <li> var_10mm.fp
+      <li> var_10mm_lay.fp
+   </ol>
+<li> add optocoupler_HCNR20_PD.sym, optocoupler_HCNR20_LED.sym
+</ol>
+
+
+<h4> 11/april/2013</h4>
+<ol>
+<li> add customizable power symbols 
+   <ol>
+    <li> custom_plus.sym
+    <li> custom_minus.sym
+    <li> custom_GND.sym
+   </ol>
+</ol>
+
+
+<h4> 05/april/2013</h4>
+<ol>
+<li> add link XLR3_AC3FDZ.fp to XLR3_NC3FDL.fp
+<li> renamed con_XLR_power.fp to con_3pin_supply.fp
+</ol>
+
+
+<h4> 20/march/2013</h4>
+<ol>
+<li> moved scripts to a dedicated folder
+<li> updated schaltplandruck.sh to use the new "gaf export" facility
+<li> layoutdruck.sh now emits *.eps for use in lyx documentation
+<li> added schematic and layout stubs to lyx template
+</ol>
+
+
+<h4> 18/march/2013</h4>
+<ol>
+<li> add elko_RM5_RM35.fp
+</ol>
+
+
+<h4> 15/march/2013</h4>
+<ol>
+<li> add XLR3_NC3FDL.fp
+<li> add con_XLR3.sym
+</ol>
+
+
+<h4> 13/march/2013</h4>
+<ol>
+<li> add elko_RM75_D16_lay.fp
+<li> add elko_RM75_D16_tyrap.fp
+<li> add elko_RM5_D10_lay.fp
+<li> add elko_RM5_D10_tyrap.fp
+<li> homolugated elko_*.fp
+<li> tweaked set_linewidth.sh
+<li> tweaked PS-3.sym
+<li> made pin numbers visible of optocoupler_schmitt_trigger_PC900.sym
+</ol>
+
+
+<h4> 07/march/2013</h4>
+<ol>
+<li> add MINICIRCUITS_4PIN.fp
+<li> increased hole diameter of MINICIRCUITS_8PIN.fp
+<li> made SMA_edge.fp fit actual connectors
+</ol>
+
+
+<h4> 22/february/2013</h4>
+<ol>
+<li> add COPAL_CHS02B.fp
+<li> add COPAL_CHS04B.fp
+<li> add COPAL_CHS08B.fp
+<li> add COPAL_CHS10B.fp
+<li> add dipswitch_2x.sym
+<li> add dipswitch_6x.sym
+<li> add dipswitch_8x.sym
+<li> add dipswitch_10x.sym
+<li> modified dipswitch_4x.sym
+</ol>
+
+
+<h4> 21/february/2013</h4>
+<ol>
+<li> add rf_switch_minicircuits_PSW-1211.sym
+<li> add low_pass_filter_minicircuits_PLP-xxx.sym
+<li> add oscillator_minicircuits_POS-xxx.sym
+<li> add variable_attenuator_minicircuits_TFAS-1
+<li> add MINICIRCUITS_4PIN_SMD.fp
+</ol>
+
+
+<h4> 14/february/2013</h4>
+<ol>
+<li> add ALPS_RK11K113.fp
+<li> linewidth of silk in potentiometer footprint set to 0.2 mm.
+</ol>
+
+
+<h4> 12/february/2013</h4>
+<ol>
+<li> add MIYAMA_MS500A.fp, aka MTS-1.fp
+<li> corrected set_linewidth.sh for regular lines
+<li> renamed schalter*.sym to switch_*.sym
+</ol>
+
+
+<h4> 07/february/2013</h4>
+<ol>
+<li> add optocoupler_VOM1271.sym and VOM1271.fp
+<li> add optocoupler_PVI1050.sym
+</ol>
+
+
+<h4>04/february/2013</h4>
+<ol>
+<li> more generous holes for jumper footprints
+<li> add LORLIN_1x12.fp, LORLIN_2x6.fp, LORLIN_3x4.fp, LORLIN_4x3.fp
+<li> add slotting to switch_2x6.sym, switch_3x4.sym and switch_4x3.sym
+</ol>
+
+
+<h4> 03/february/2013</h4>
+<ol>
+<li> add banana-jack.fp
+<li> add RJ45_8P8C_lay.fp and RJ45_8P8C_vert.fp
+<li> add con_1x8.sym
+<li> minor bug in set_linewidth.sh
+</ol>
+
+
+<h4> 28/january/2013</h4>
+<ol>
+<li> add DIP28.fp
+<li> add DIP28_wide.fp
+</ol>
+
+
+<h4> 21/january/2013</h4>
+<ol>
+<li> more subdirectiories for symbols
+<li> add configurable divider ICS674-01 (ICS674-01_A.sym, ICS674-01_B.sym, ICS674-01_pwr.sym)
+<li> add optocouplers 
+ <ol>
+   <li> optocoupler_darlington.sym
+   <li> optocoupler_photoFET_H11F.sym
+   <li> optocoupler_schmitt_trigger_PC900.sym
+ </ol>
+</ol>
+
 
 <h4> 1/november/2012</h4>
 <ol>
