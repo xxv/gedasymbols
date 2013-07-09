@@ -7,4 +7,4 @@ gedit changelog.html \
       essential/changelog.html \
       essential/footprints.html \
       essential/symbols.html \
-      copy-to-essential.sh &
+      scripts/copy-to-essential.sh &

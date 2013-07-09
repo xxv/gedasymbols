@@ -45,9 +45,10 @@ shift $(($OPTIND - 1))   # go to next argument
 
 
 PCBFILE=$1
-OUTPDF=`basename $PCBFILE .pcb`"_layout_"`date +%F`".pdf"
-OUTPNG=`basename $PCBFILE .pcb`"_layout_"`date +%F`".png"
-OUTPNG_BOTTOM=`basename $PCBFILE .pcb`"_layout_bottom_"`date +%F`".png"
+NAME=`basename $PCBFILE .pcb`
+OUTPDF=$NAME"_layout_"`date +%F`".pdf"
+OUTPNG=$NAME"_layout_"`date +%F`".png"
+OUTPNG_BOTTOM=$NAME"_layout_bottom_"`date +%F`".png"
 PCB=/usr/local/bin/pcb
 PDFVIEWER=/usr/bin/okular
 PNGVIEWER=/usr/bin/gthumb
@@ -233,6 +234,11 @@ fi
 psmerge -o$TMPDIR/out.ps $PAGES
  
 ps2pdf $TMPDIR/out.ps $OUTPDF
+
+## save the eps files for use in lyx documentation
+for i in $PAGES; do 
+     cp $TMPDIR/`basename $i .ps`.eps  $PWD/$NAME"_"`basename $i .ps`.eps
+ done
 
 ### optionally start viewer.###
 if [ $STARTVIEWER == "1" ]

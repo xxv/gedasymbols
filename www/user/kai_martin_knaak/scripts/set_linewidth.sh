@@ -73,7 +73,10 @@ BEGIN { FS = "[ \\[\\]]+"   # field separator is space or tab or square bracket
    {
 
    ###################### lines ###############################################
-   case /^\t?+ElementLine/ : {                 # if the current line is a line
+   ## assumed syntax: 
+   ##   Line [X1 Y1 X2 Y2 Thickness Clearance SFlags]
+
+   case /^\t?+Line/ : {                        # if the current line is a line
     ++numlines                                 # increment line count
 
     ## parse the sixth column
@@ -98,27 +101,30 @@ BEGIN { FS = "[ \\[\\]]+"   # field separator is space or tab or square bracket
        exit 1;
        }
 
-    #### do not change the width if it is more than two times larger or smaller
-    if ( orig_width[1] / width > 2 ) {
-       printf("linewidth larger than 2 * %s %s found in line %s --> not changed.\n",
+    #### do not change the width if it is more than four times larger or smaller
+    if ( orig_width[1] / width > 4 ) {
+       printf("linewidth larger than 4 * %s %s found in line %s --> not changed.\n",
                width, unit, NR );
        width = orig_width[1];
        }
-    else if ( width / orig_width[1] > 2 ) {
+    else if ( width / orig_width[1] > 4 ) {
        printf("linewidth smaller than 0.5 * %s %s found in line %s --> not changed.\n",
                width, unit, NR );
        width = orig_width[1];
        }
 
-    printf("%s [%s %s %s %s %.2f%s]\n",
-             $1, $2, $3, $4, $5, width, unit, %7, %8 ) > filename;
+    printf("%s [%s %s %s %s %.2f%s %s %s]\n",
+             $1, $2, $3, $4, $5, width, unit, $7, $8, $9) > filename;
     break
     } 
 
 
    ###################### element lines #######################################
+   ## assumed syntax: 
+   ##    ElementLine [X1 Y1 X2 Y2 Thickness]
+
    case /^\t?+ElementLine/ : {         # if the current line is an element line
-    ++numelementlines                         # increment line count
+    ++numelementlines                  # increment line count
 
     ## parse the sixth column
     split($6, orig_width, "[[:alpha:]]")
@@ -142,9 +148,9 @@ BEGIN { FS = "[ \\[\\]]+"   # field separator is space or tab or square bracket
        exit 1;
        }
 
-    #### do not change the width if it is more than two times larger or smaller
-    if ( orig_width[1] / width > 2 ) {
-       printf("elementline width larger than 2 * %s %s found in line %s --> not changed.\n",
+    #### do not change the width if it is more than four times larger or smaller
+    if ( orig_width[1] / width > 4 ) {
+       printf("elementline width larger than 4 * %s %s found in line %s --> not changed.\n",
                width, unit, NR );
        width = orig_width[1];
        }
@@ -157,13 +163,64 @@ BEGIN { FS = "[ \\[\\]]+"   # field separator is space or tab or square bracket
     printf("%s [%s %s %s %s %.2f%s]\n",
              $1, $2, $3, $4, $5, width, unit) > filename;
     break
-    } 
+    }
 
-   ###################### element arcs ########################################
-   case /^\t?+ElementArc/ : {         # if the current line is an element arc
+   ###################### arcs ########################################
+   ## assumed syntax: 
+   ##   Arc [X Y Width Height Thickness Clearance StartAngle DeltaAngle SFlags]
+
+   case /^\t?+Arc/ : {                # if the current line is an arc
     ++numarcs                         # increment arc count
 
+    ## parse the sixth column
+    split($6, orig_width, "[[:alpha:]]")
+    unitpos = match($6, "[[:alpha:]]")
+    unit = substr($6, unitpos, 5)
+
+    if ( unit == "mil" ) {
+       width = width_mil
+       }
+    else if ( unit == "mm" ){
+       width = width_mm
+       }
+    else if ( unit == "" ){
+       printf("element-arc width with no unit encountered: %s --> stop.\n", $6);
+       print $0
+       exit 1;
+       }
+    else {
+       printf("element-arc width with unknown unit encountered: %s --> stop.\n", unit);
+       print $0
+       exit 1;
+       }
+
+    #### do not change the width if it is more than four times larger or smaller
+    if ( orig_width[1] / width > 4 ) {
+       printf("arc linewidth larger than 4 * %s %s found in line %s --> not changed.\n",
+               width, unit, NR );
+       width = orig_width[1];
+       }
+    else if ( width / orig_width[1] > 2 ) {
+       printf("arc linewidth smaller than 0.5 * %s %s found in line %s --> not changed.\n",
+               width, unit, NR );
+       width = orig_width[1];
+       }
+
+    printf("%s [%s %s %s %s %.2f%s %s %s %s %s]\n",
+             $1, $2, $3, $4, $5, width, unit, $7, $8, $9, $10) > filename;
+    break
+    } 
+
+
+   ###################### element arcs ########################################
+   ## assumed syntax: 
+   ##   ElementArc [X Y Width Height StartAngle DeltaAngle Thickness]
+
+   case /^\t?+ElementArc/ : {         # if the current line is an element arc
+    ++numelementarcs                         # increment arc count
+
     ## parse the eigth column
+    ## syntax: ElementArc [-0.01mil 0.0000 688.97mil 688.97mil 270 90 7.87mil]
     split($8, orig_width, "[[:alpha:]]")
     unitpos = match($8, "[[:alpha:]]")
     unit = substr($8, unitpos, 5)
@@ -185,9 +242,9 @@ BEGIN { FS = "[ \\[\\]]+"   # field separator is space or tab or square bracket
        exit 1;
        }
 
-    #### do not change the width if it is more than two times larger or smaller
-    if ( orig_width[1] / width > 2 ) {
-       printf("arc linewidth larger than 2 * %s %s found in line %s --> not changed.\n",
+    #### do not change the width if it is more than four times larger or smaller
+    if ( orig_width[1] / width > 4 ) {
+       printf("arc linewidth larger than 4 * %s %s found in line %s --> not changed.\n",
                width, unit, NR );
        width = orig_width[1];
        }
@@ -214,9 +271,11 @@ BEGIN { FS = "[ \\[\\]]+"   # field separator is space or tab or square bracket
 
 } # main
 
-END {       
+END {
+  printf("number of lines found: %s\n", numlines)
   printf("number of element lines found: %s\n", numelementlines)
-  printf("number of element arcs found: %s\n", numarcs)
+  printf("number of arcs found: %s\n", numarcs)
+  printf("number of element arcs found: %s\n", numelementarcs)
   }
 ' $INFILE
 AWK_EXITSTATUS=$?

@@ -26,7 +26,7 @@ action=$1
 shift 1
 
 SELF=$0
-NAME=$1
+NAME=${1%/}		# This strips leading slashes from the project name
 USER=`whoami`
 AUTHOR=`finger $USER | awk 'BEGIN {FS = ": "} ; $0 ~ /Name/ {print $3}'`
 AUTHORSHORT=$USER
@@ -101,11 +101,9 @@ echo \
 # Add a local gschemrc
 echo \
 ";  This is a local 
-; gschemrc automatically installed on "$DATE" for project "$name".
+; gschemrc automatically installed on "$DATE" for project "$NAME".
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(load (build-path (getenv \"PWD\") \"gschem-colors\"))    ; localized colors 
- 
 (text-size 10)						; Default text size
 (undo-levels 50)
 
@@ -121,82 +119,16 @@ echo \
 " > gschemrc
 
 
-# add localized color file to be loaded by gschemrc
-echo \
-"
-; This is a color map for project \"$name\"
-; automatically installed by \"$SELF\" on \"$DATE\"
-
-; Colors may be specified in \"#RRGGBB\" or \"#RRGGBBAA\" format. If the alpha
-; value is not specified, full opacity is assumed.
-; If a color is #f, then objects of that color will never be drawn.
-
-(display-color-map
- '((background         \"#ffffff\")
-   (pin                \"#000000\")
-   (net-endpoint       \"#ff0000\")
-   (graphic            \"#008b00\")
-   (net                \"#0000ee\")
-   (attribute          \"#000000\")
-   (logic-bubble       \"#008b8b\")
-   (dots-grid          \"#7f7f7f\")
-   (mesh-grid-major    \"#d8d8d8\")
-   (mesh-grid-minor    \"#eaeaea\")
-   (detached-attribute \"#ff0000\")
-   (text               \"#008b00\")
-   (bus                \"#00ee00\")
-   (select             \"#b22222\")
-   (bounding-box       \"#ffa500\")
-   (stroke             \"#a020f0\")
-   (zoom-box           \"#008b8b\")
-   (lock               \"#666666\")
-   (output-background  #f)
-   (junction           \"#a020f0\")
-   (freestyle1         #f)
-   (freestyle2         #f)
-   (freestyle3         #f)
-   (freestyle4         #f)
-   ))
-
-(display-outline-color-map
-  '((background         #f)
-   (pin                \"#4d4d4d\")
-   (net-endpoint       \"#cdcdcd\")
-   (graphic            \"#008b00\")
-   (net                \"#0000cd\")
-   (attribute          \"#4d4d4d\")
-   (logic-bubble       \"#008b8b\")
-   (dots-grid          #f)
-   (mesh-grid-major    #f)
-   (mesh-grid-minor    #f)
-   (detached-attribute \"#cd0000\")
-   (text               \"#008b00\")
-   (bus                \"#00cd00\")
-   (select             \"#b22222\")
-   (bounding-box       \"#ffa500\")
-   (zoom-box           \"#008b8b\")
-   (stroke             \"#a020f0\")
-   (lock               \"#a9a9a9\")
-   (output-background  #f)
-   (junction           \"#7e26cd\")
-   (freestyle1         #f)
-   (freestyle2         #f)
-   (freestyle3         #f)
-   (freestyle4         #f)
-   ))
-" > gschem-colors
-
-
 echo "Add a script to create gerber files and zip them for the fab"
 echo \
 '#!/bin/sh
 # produce gerber files, packages them in a zip file and open gerbv
 
-NAME='$NAME'
+NAME='$name'
 VERSION='$VERSION'
 LAYOUT='../$NAME.pcb'
 
-pcb -x gerber --gerberfile $NAME"_"$VERSION".pcb" --name-style first $LAYOUT
+pcb -x gerber --gerberfile $NAME"_"$VERSION --name-style first $LAYOUT
 
 echo "Add a README for the fab"
 echo \
@@ -219,7 +151,7 @@ Inhaltliche Bedeutung der Dateien
 " > gerberdaten_"$NAME"_"$VERSION".README
 
 # compress the gerbers into a zip file
-zip $NAME"_"$VERSION.zip \
+zip "gerberdaten_"$NAME"_"$VERSION.zip \
 gerberdaten_$NAME"_"$VERSION".README" \
 $NAME"_"$VERSION*.gbr \
 $NAME"_"$VERSION*.cnc
@@ -249,7 +181,7 @@ echo \
 #########################Create an empty schematic###########################
 echo "Create a schematic with a title block filled with name and current date."
 echo \
-"v 20090328 2
+"v 20121118 2
 C 40000 40000 0 0 0 title-block.sym
 {
 T 52300 41300 5 30 1 1 0 4 1
@@ -266,6 +198,8 @@ T 55850 40850 5 12 1 1 0 4 1
 date="`date +%d.%m.%y`"
 T 54450 40450 5 16 1 1 0 4 1
 author="$AUTHORSHORT"
+T 49000 42900 5 8 0 0 0 0 1
+symversion=1.0
 }" > $name.sch
 
 #########################Create an empty layout##############################
@@ -526,20 +460,20 @@ git config branch.master.remote origin
 git config branch.master.merge refs/heads/master
 
 # let origin point to where a bare repo is going to be installed
-git remote add origin git://localhost/git/$NAME.git
-git remote set-url origin git://localhost/git/$NAME.git
+git remote add origin 'git://localhost/git/'$NAME'.git'
+git remote set-url origin git://localhost/git/$NAME'.git'
 
 # allow push via http. Needs git-http-backend configured in apache config.
-git remote set-url --push origin http://localhost/git/$NAME.git
+git remote set-url --push origin http://localhost/git/$NAME'.git'
 
 # install a bare clone in /var/cache/git
-sudo git clone --bare . /var/cache/git/$NAME.git
-sudo touch /var/cache/git/$NAME.git/git-daemon-export-ok
-sudo echo "geda project "$NAME > /var/cache/git/$NAME".git"/description
+sudo git clone --bare . "/var/cache/git/"$NAME'.git'
+sudo touch '/var/cache/git/'$NAME'.git/git-daemon-export-ok'
+sudo echo 'geda project '$NAME' > /var/cache/git/'$NAME'.git/description'
 
 # the bare repo needs to be writeable by apache
-sudo chown www-data:iqo /var/cache/git/$NAME".git" -R
-sudo chmod g+w /var/cache/git/$NAME".git" -R
+sudo chown www-data:iqo '/var/cache/git/'$NAME'.git' -R
+sudo chmod g+w '/var/cache/git/'$NAME'.git' -R
 
 } #end git related stuff########################################################
 
