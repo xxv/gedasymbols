@@ -1,0 +1,10 @@
+Element(0x00 "Bottom lead polar circular component (typically capacitor)" "" "RCY50P" 100 0 0 50 0x00)
+(
+	Pin(25 50 30 15 "1" 0x101)
+	Pin(75 50 30 15 "2" 0x01)
+	ElementArc(50 50 50 50 0 360 10)
+	ElementLine(-30 50 -10 50 5)
+	ElementLine(-20 40 -20 60 5)
+	ElementLine(110 50 130 50 5)
+	Mark (25 50)
+)
