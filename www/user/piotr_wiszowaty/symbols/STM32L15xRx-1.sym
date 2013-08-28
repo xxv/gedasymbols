@@ -709,7 +709,7 @@ refdes=U?
 T 2800 12000 8 10 1 1 0 0 1
 device=STM32L15xRx
 T 300 12300 8 10 0 0 0 0 1
-footprint=VQFP64
+footprint=LQFP64_10
 T 300 12500 8 10 0 0 0 0 1
 author=Piotr Wiszowaty pwiszowaty458@gmail.com
 T 300 12700 8 10 0 0 0 0 1
