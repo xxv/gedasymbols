@@ -1,0 +1,47 @@
+v 20121203 2
+P 600 1700 600 1400 1 0 0
+{
+T 600 1700 5 10 0 0 0 0 1
+pintype=unknown
+T 555 1300 5 10 1 1 180 6 1
+pinlabel=V+
+T 695 1450 5 10 1 1 0 0 1
+pinnumber=1
+T 600 1700 5 10 0 0 0 0 1
+pinseq=0
+}
+P 600 0 600 300 1 0 0
+{
+T 600 0 5 10 0 0 0 0 1
+pintype=unknown
+T 555 400 5 10 1 1 0 0 1
+pinlabel=V-
+T 695 250 5 10 1 1 180 6 1
+pinnumber=3
+T 600 0 5 10 0 0 0 0 1
+pinseq=0
+}
+P 0 800 300 800 1 0 0
+{
+T 0 800 5 10 0 0 0 0 1
+pintype=unknown
+T 355 795 5 10 1 1 0 0 1
+pinlabel=R
+T 205 845 5 10 1 1 0 6 1
+pinnumber=2
+T 0 800 5 10 0 0 0 0 1
+pinseq=0
+}
+B 300 300 600 1100 3 0 1 0 -1 -1 0 -1 -1 -1 -1 -1
+T 300 1500 8 10 1 1 0 0 1
+refdes=U?
+T 900 1500 8 10 1 1 0 0 1
+device=LM334
+T 300 1900 8 10 0 0 0 0 1
+footprint=TO92
+T 300 2100 8 10 0 0 0 0 1
+dist-license=GPL 2
+T 300 2300 8 10 0 0 0 0 1
+use-license=unlimited
+T 300 2500 8 10 0 0 0 0 1
+author=Piotr Wiszowaty
