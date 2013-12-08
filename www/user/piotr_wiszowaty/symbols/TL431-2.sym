@@ -1,0 +1,102 @@
+v 20121203 2
+P 0 1100 300 1100 1 0 0
+{
+T 0 1100 5 10 0 0 0 0 1
+pintype=unknown
+T 355 1095 5 10 1 1 0 0 1
+pinlabel=Cathode
+T 205 1145 5 10 1 1 0 6 1
+pinnumber=1
+T 0 1100 5 10 0 0 0 0 1
+pinseq=0
+}
+P 0 800 300 800 1 0 0
+{
+T 0 800 5 10 0 0 0 0 1
+pintype=unknown
+T 355 795 5 10 1 1 0 0 1
+pinlabel=Anode
+T 205 845 5 10 1 1 0 6 1
+pinnumber=2
+T 0 800 5 10 0 0 0 0 1
+pinseq=0
+}
+P 0 500 300 500 1 0 0
+{
+T 0 500 5 10 0 0 0 0 1
+pintype=unknown
+T 355 495 5 10 1 1 0 0 1
+pinlabel=Anode
+T 205 545 5 10 1 1 0 6 1
+pinnumber=3
+T 0 500 5 10 0 0 0 0 1
+pinseq=0
+}
+P 0 200 300 200 1 0 0
+{
+T 0 200 5 10 0 0 0 0 1
+pintype=unknown
+T 355 195 5 10 1 1 0 0 1
+pinlabel=N.C.
+T 205 245 5 10 1 1 0 6 1
+pinnumber=4
+T 0 200 5 10 0 0 0 0 1
+pinseq=0
+}
+P 2500 200 2200 200 1 0 0
+{
+T 2500 200 5 10 0 0 0 0 1
+pintype=unknown
+T 2145 195 5 10 1 1 0 6 1
+pinlabel=N.C.
+T 2295 245 5 10 1 1 0 0 1
+pinnumber=5
+T 2500 200 5 10 0 0 0 0 1
+pinseq=0
+}
+P 2500 500 2200 500 1 0 0
+{
+T 2500 500 5 10 0 0 0 0 1
+pintype=unknown
+T 2145 495 5 10 1 1 0 6 1
+pinlabel=Anode
+T 2295 545 5 10 1 1 0 0 1
+pinnumber=6
+T 2500 500 5 10 0 0 0 0 1
+pinseq=0
+}
+P 2500 800 2200 800 1 0 0
+{
+T 2500 800 5 10 0 0 0 0 1
+pintype=unknown
+T 2145 795 5 10 1 1 0 6 1
+pinlabel=Anode
+T 2295 845 5 10 1 1 0 0 1
+pinnumber=7
+T 2500 800 5 10 0 0 0 0 1
+pinseq=0
+}
+P 2500 1100 2200 1100 1 0 0
+{
+T 2500 1100 5 10 0 0 0 0 1
+pintype=unknown
+T 2145 1095 5 10 1 1 0 6 1
+pinlabel=Reference
+T 2295 1145 5 10 1 1 0 0 1
+pinnumber=8
+T 2500 1100 5 10 0 0 0 0 1
+pinseq=0
+}
+B 300 0 1900 1300 3 0 1 0 -1 -1 0 -1 -1 -1 -1 -1
+T 300 1400 8 10 1 1 0 0 1
+refdes=U?
+T 1700 1400 8 10 1 1 0 0 1
+device=TL431
+T 300 1600 8 10 0 0 0 0 1
+author=Piotr Wiszowaty pwiszowaty458@gmail.com
+T 300 1800 8 10 0 0 0 0 1
+dist-license=GPL 2
+T 300 2000 8 10 0 0 0 0 1
+use-license=unlimited
+T 300 2200 8 10 0 0 0 0 1
+footprint=SO8
