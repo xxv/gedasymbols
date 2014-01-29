@@ -1,0 +1,51 @@
+<!--#set var="title" value="DJ Delorie" -->
+<!--#include virtual="/header.html" -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 4.1.4.2 (Linux)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGED" CONTENT="20140129;62743629275829">
+	<STYLE TYPE="text/css">
+	<!--
+		H2.cjk { font-family: "Adobe Heiti Std R" }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="ru-RU" DIR="LTR">
+<P>Alexey Kharikovsky <BR>email: <A HREF="mailto:svetonomer@gmail.com">svetonomer@gmail.com</A>
+<BR>email: <A HREF="mailto:leha2000@list.ru">leha2000@list.ru</A> 
+</P>
+<H2 CLASS="western">Tools</H2>
+<P><A HREF="tools/refdes_renum.py">REFDES_RENUM.PY</A> is a renumber
+tool for projects. 
+</P>
+<P>This python script performs renumber of REFDES attributes of
+symbols and footprints of whole project simultaneously. 
+</P>
+<P>This tool is nessesary when exist the .sch and the .pcb files of
+development project and We forced add some components to project and
+then renumber it.</P>
+<P><BR><BR>
+</P>
+<P><U>Features: </U>
+</P>
+<P>1. This script completely compatible (input,output,errors) with
+official &quot;refdes_renum&quot; script of geda project and writen
+for replacing him.</P>
+<P>2. This script can take list of .sch files Example:
+refdes_renum.py mysch_1.sch mysch_2.sch ... mysch_N.sch or list of
+.sch and list of .pcb files refdes_renum.py mysch_1.sch ...
+mysch_N.sch mypcb_1.pcb ... mypcb_N.pcb or project file
+refdes_renum.py pathto/projectfile</P>
+<P>3. --sort option allows to use defferent directions of renumber
+(Top to bottom, diagonal, left to right and other). For details see
+--help option</P>
+<P>4. --component option allows to use component coordinates for
+renumber instead REFDES coordinates.</P>
+<P><A HREF="tools/refdes_renum.py">DOWNLO<U>AD SCRIPT</U></A></P>
+</BODY>
+</HTML>
+<!--#include virtual="/trailer.html" -->
