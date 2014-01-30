@@ -47,6 +47,8 @@ refdes_renum.py accepts the following options:
 	--component Renumber refdes with component coordinates
 				By default refdes_renum.py program using coordinates of "refdes" attributes
 
+	--attr Name	Set attribute name for renumbering. At default REFDES
+
     --verbose   Enables verbose output.
 
     --version   Shows the version of this program.
@@ -178,6 +180,12 @@ if '--attr'  in sys.argv:
 else:
 	attr = 'refdes'
 
+if '--attr-prefix' in sys.argv:
+	attr_prefix = sys.argv[sys.argv.index('--attr-prefix')+1] #attr method
+	sys.argv = sys.argv[:sys.argv.index('--attr_prefix')] + sys.argv[sys.argv.index('--attr')+2:]
+else:
+	attr_prefix = ''
+
 pcbnames = []
 pcbcontent = []
 schem_names = []
@@ -203,12 +211,12 @@ for i in sys.argv[1:]:
 #When in project file "output-name foo.pcb", gsch2pcb create  foo.pcb.pcb, therefore this file IS main PCB.
 				if temp not in pcbnames:
 					pcbnames.append(temp)
-# Read contect of PCB files 
+# Read content of PCB files 
 for i in pcbnames:
 	file=open(i,'rt')
 	pcbcontent.append(file.read())
 	file.close()
-# Read contect of PCB files 
+# Read content of PCB files 
 
 page_num = 0
 for filename in schem_names: 
