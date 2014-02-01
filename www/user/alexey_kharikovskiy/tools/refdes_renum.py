@@ -290,16 +290,11 @@ for filename in schem_names: # This
 	# Sorting the replaced component/refdes list with REFDESs prefix and after with selected sort algorithm
 	comp_list = sorted(comp_list)
 	
-<<<<<<< refdes_renum.py
 	ref_curr_pref='0' #This is NON alphabetic for available renumber of empty refdess (e.g. "1", "2", "234")
-=======
-	ref_curr_pref='0' #This is NON alfabetic for available renumber of empty refdess (e.g. "1", "2", "234")
->>>>>>> 1.3
 	if 'ref_last_nums' not in locals():
 		ref_last_nums={} #Lasts numbers for REFDESs previous schematic (For discontinuous renumber (without --pgskip)) 
 		#Example of this dict content: {'DD':5, 'R':14, 'C':45}
 
-<<<<<<< refdes_renum.py
 	for i in range(len(comp_list)): #Replacing sorted attributes
 		#Complex calculate of current number of attribute
 		if ref_curr_pref == comp_list[i][0]: # This Attribute (with current prefix) is not first in this Schematic file
@@ -308,16 +303,6 @@ for filename in schem_names: # This
 			else: #Next number attribute
 				ref_curr_num += 1
 				comp_list[i].append(str(ref_curr_num)) #Add current number to component list
-=======
-	for i in range(len(comp_list)): #Replacing sorted attributes
-		#Complex calculate of current number of attribute
-		if ref_curr_pref == comp_list[i][0]: # This Attribure (with current prefix) is not first in this Schematic file
-			if comp_list[i][~0]!='?' and comp_list[i][~0] in map(lambda x:x[~1],comp_list[i_first_prefix:i]): #Repeating attribute, e.g New SLOT of existing REFDES)
-				comp_list[i].append(str(comp_list[i_first_prefix+map(lambda x:x[~1],comp_list[i_first_prefix:i]).index(comp_list[i][~0])][~0])) #Add previous number of this symbol for this SLOT or PART(for many symbols component)
-			else: #Next number attribute
-				ref_curr_num += 1
-				comp_list[i].append(str(ref_curr_num)) #Add current number to component list
->>>>>>> 1.3
 		else:
 			try:ref_curr_num = page_num + 1 if page_num != 0 else ref_last_nums[comp_list[i][0]] + 1 
 			except:ref_curr_num=1
@@ -337,13 +322,8 @@ for filename in schem_names: # This
 			print '------------------------------------'
 
 		if attr=='refdes':
-<<<<<<< refdes_renum.py
 			for pcb_index in range(0,len(pcbcontent)): #Search current REFDES in pcb files and ADD context of REFDES (appropriate element context completely) to list of replaces
 				elem = re.search('Element\[[^[\]]*"%s"[^[\]]*\]' %(comp_list[i][0]+comp_list[i][~1]),pcbcontent[pcb_index] ,flags=re.DOTALL)
-=======
-			for pcb_index in range(0,len(pcbcontent)): #Search current REFDES in pcb files and ADD context of REFDES (appropriate element ontex completely) to list of replaces
-				elem = re.search('Element\[[^[\]]*"%s"[^[\]]*\]' %(comp_list[i][0]+comp_list[i][~1]),pcbcontent[pcb_index] ,flags=re.DOTALL)
->>>>>>> 1.3
 				if elem:
 					try:
 						pcb_replaces.append([pcb_index,elem.group(),elem.group().replace(comp_list[i][0]+comp_list[i][~1],comp_list[i][0]+comp_list[i][~0])]) 
