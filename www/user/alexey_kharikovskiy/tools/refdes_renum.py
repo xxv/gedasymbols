@@ -45,7 +45,7 @@ refdes_renum.py accepts the following options:
 		righttoleft - Renumber refdes contrariwise as lefttoright
 		file		- Renumber refdes as text file order
 
-	--log		Print renumber informathion to stdout
+	--log		Print information about renumber to stdout
 
 	--component Renumber refdes with component coordinates
 				By default refdes_renum.py program using coordinates of "refdes" attributes
@@ -102,9 +102,11 @@ Usage examples:
 
 
 refdes_renum.py was written by Kharkovsky Alexey <svetonomer@gmail.com>
+
+Licensed under the GPL v2.
 """
 
-version='refdes_renum.py v1.0 by Kharkovsky Alexey :)'
+version='refdes_renum.py v1.1 by Kharkovsky Alexey :)'
 sort_method = ['diag','toptobot','bottotop','lefttoright','righttoleft','file']
 
 import sys,os
@@ -139,7 +141,7 @@ else:
 if '--gentle'  in sys.argv:
 	sys.argv.remove('--gentle')
 	if '--force'  in sys.argv:
-		print 'Do not use \"--gentle\" and \"--force\" sumaltenuously'
+		print 'Do not use --gentle and --force simultaneously'
 		exit(0)
 
 if '--force'  in sys.argv:
@@ -203,12 +205,12 @@ for i in sys.argv[1:]:
 		file=open(i,'rt')
 		content = file.read()
 		file.close()
-		for temp1 in re.findall('schematics\s+.*\.sch',content,flags=re.DOTALL): #This string are contaning the schematic file names
+		for temp1 in re.findall('schematics\s+.*\.sch',content,flags=re.DOTALL): #This string are containing the schematic file names
 			for temp in temp1.split()[1:]:
 				temp = os.path.dirname(i)+'/'+ temp # Add path to file (Useful if project file not in current directory)
 				if temp not in schem_names:
 					schem_names.append(temp)
-		for temp1 in re.findall('output-name\s+.*\.pcb',content,flags=re.DOTALL):#This string are contaning the schematic file names
+		for temp1 in re.findall('output-name\s+.*\.pcb',content,flags=re.DOTALL):#This string are containing the schematic file names
 			for temp in temp1.split()[1:]:
 				temp = os.path.dirname(i)+'/'+ temp + '.pcb'# Add path to file (Useful if project file not in current directory). After add .pcb (actual for project file) 
 #When in project file "output-name foo.pcb", gsch2pcb create  foo.pcb.pcb, therefore this file IS main PCB.
@@ -279,7 +281,7 @@ for filename in schem_names: # This
 		#Find the replaced REFDES letter prefix and number suffix and ADD to component list 
 		refdes=re.search('(.*)%s=([a-zA-Z]*)(\d+|\?*)' %(attr) ,comp_list[i][-1],flags=re.DOTALL)
 		comp_list[i].insert(0,refdes.group(2))
-		comp_list[i].append(refdes.group(3) if refdes.group(3) else '') #For letters only REFDESs (in future We can remove they from recplacing list)
+		comp_list[i].append(refdes.group(3) if refdes.group(3) else '') #For letters only REFDESs (in future We can remove they from replacing list)
 
 		#comp_list content: ['REFDES prefix', coord1, coord2, 'replaced string of file'								,'Old NUMBER of REFDES']
 		#Example:			[  'R'			, -50800 , 65100 , 'C 65100 50800 ... resistor-1.sym {....refdes=R12...},'12']
@@ -288,11 +290,25 @@ for filename in schem_names: # This
 	# Sorting the replaced component/refdes list with REFDESs prefix and after with selected sort algorithm
 	comp_list = sorted(comp_list)
 	
+<<<<<<< refdes_renum.py
+	ref_curr_pref='0' #This is NON alphabetic for available renumber of empty refdess (e.g. "1", "2", "234")
+=======
 	ref_curr_pref='0' #This is NON alfabetic for available renumber of empty refdess (e.g. "1", "2", "234")
+>>>>>>> 1.3
 	if 'ref_last_nums' not in locals():
 		ref_last_nums={} #Lasts numbers for REFDESs previous schematic (For discontinuous renumber (without --pgskip)) 
 		#Example of this dict content: {'DD':5, 'R':14, 'C':45}
 
+<<<<<<< refdes_renum.py
+	for i in range(len(comp_list)): #Replacing sorted attributes
+		#Complex calculate of current number of attribute
+		if ref_curr_pref == comp_list[i][0]: # This Attribute (with current prefix) is not first in this Schematic file
+			if comp_list[i][~0]!='?' and comp_list[i][~0] in map(lambda x:x[~1],comp_list[i_first_prefix:i]): #Repeating attribute, e.g New SLOT of existing REFDES)
+				comp_list[i].append(str(comp_list[i_first_prefix+map(lambda x:x[~1],comp_list[i_first_prefix:i]).index(comp_list[i][~0])][~0])) #Add previous number of this symbol for this SLOT or PART(for many symbols component)
+			else: #Next number attribute
+				ref_curr_num += 1
+				comp_list[i].append(str(ref_curr_num)) #Add current number to component list
+=======
 	for i in range(len(comp_list)): #Replacing sorted attributes
 		#Complex calculate of current number of attribute
 		if ref_curr_pref == comp_list[i][0]: # This Attribure (with current prefix) is not first in this Schematic file
@@ -301,6 +317,7 @@ for filename in schem_names: # This
 			else: #Next number attribute
 				ref_curr_num += 1
 				comp_list[i].append(str(ref_curr_num)) #Add current number to component list
+>>>>>>> 1.3
 		else:
 			try:ref_curr_num = page_num + 1 if page_num != 0 else ref_last_nums[comp_list[i][0]] + 1 
 			except:ref_curr_num=1
@@ -320,8 +337,13 @@ for filename in schem_names: # This
 			print '------------------------------------'
 
 		if attr=='refdes':
+<<<<<<< refdes_renum.py
+			for pcb_index in range(0,len(pcbcontent)): #Search current REFDES in pcb files and ADD context of REFDES (appropriate element context completely) to list of replaces
+				elem = re.search('Element\[[^[\]]*"%s"[^[\]]*\]' %(comp_list[i][0]+comp_list[i][~1]),pcbcontent[pcb_index] ,flags=re.DOTALL)
+=======
 			for pcb_index in range(0,len(pcbcontent)): #Search current REFDES in pcb files and ADD context of REFDES (appropriate element ontex completely) to list of replaces
 				elem = re.search('Element\[[^[\]]*"%s"[^[\]]*\]' %(comp_list[i][0]+comp_list[i][~1]),pcbcontent[pcb_index] ,flags=re.DOTALL)
+>>>>>>> 1.3
 				if elem:
 					try:
 						pcb_replaces.append([pcb_index,elem.group(),elem.group().replace(comp_list[i][0]+comp_list[i][~1],comp_list[i][0]+comp_list[i][~0])]) 
@@ -341,7 +363,7 @@ for filename in schem_names: # This
 	file.write(content)
 	file.close()
 
-#Write all PCB replaced contents to corresponing PCB file
+#Write all PCB replaced contents to corresponding PCB file
 for i in range(0,len(pcbcontent)):
 	file=open(pcbnames[i]+Suffix,'wt')
 	file.write(pcbcontent[i])
