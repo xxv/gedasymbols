@@ -97,3 +97,5 @@ T 900 1300 8 10 0 1 0 0 1
 dist-license=GPL3, see http://www.gnu.org/licenses/gpl-3.0.txt
 T 1000 1300 8 10 0 1 0 0 1
 use-license=unlimited
+T 1500 1100 8 10 0 1 0 0 1
+documentation=https://www.sparkfun.com/datasheets/Components/TW-700198.pdf
