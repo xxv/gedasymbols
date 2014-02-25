@@ -1,0 +1,64 @@
+v 20121203 2
+P 800 800 1100 800 1 0 0
+{
+T 0 850 5 8 0 0 0 0 1
+pintype=out
+T 1155 745 9 8 1 1 0 0 1
+pinlabel=SO
+T 1005 845 5 8 1 1 0 6 1
+pinnumber=3
+T 0 750 5 8 0 0 0 0 1
+pinseq=3
+}
+P 800 1200 1100 1200 1 0 0
+{
+T 0 1250 5 8 0 0 0 0 1
+pintype=out
+T 1155 1145 9 8 1 1 0 0 1
+pinlabel=NO
+T 1005 1245 5 8 1 1 0 6 1
+pinnumber=2
+T 0 1150 5 8 0 0 0 0 1
+pinseq=2
+}
+B 1100 200 1300 1600 3 0 1 0 -1 -1 0 -1 -1 -1 -1 -1
+T 1600 1200 9 6 1 0 0 0 4
+Hall Effect
+sensor with
+integrated
+motor driver
+L 1800 700 1900 600 3 0 1 0 -1 -1
+L 1800 600 1900 700 3 0 1 0 -1 -1
+B 1700 500 300 300 3 0 1 0 -1 -1 0 -1 -1 -1 -1 -1
+L 1850 900 1850 800 3 0 1 0 -1 -1
+L 1600 650 1700 650 3 0 1 0 -1 -1
+L 1850 400 1850 500 3 0 1 0 -1 -1
+L 2000 650 2100 650 3 0 1 0 -1 -1
+T 1195 1900 8 8 1 1 0 0 1
+refdes=U?
+T 1200 3800 5 8 0 0 0 0 1
+footprint=TO92-4L
+T 1200 4200 5 8 0 0 0 0 1
+value=FS310
+T 1195 3200 5 8 0 0 0 0 1
+documentation=http://www.feeling-tech.com.tw/km-master/ezcatfiles/cust/img/img/26/fs310lfv04.pdf
+T 1195 100 8 8 1 1 180 6 1
+value=FS310
+T 1195 2997 5 8 0 0 0 0 1
+numslots=0
+T 1195 3997 5 8 0 0 0 0 1
+description=Hall Effect sensor with integrated motor driver
+T 1195 2597 5 8 0 0 0 0 1
+symversion=1.0
+T 1195 2797 5 8 0 0 0 0 1
+author=Jiri Cejka
+T 1200 4400 5 8 0 0 0 0 1
+device=SENSOR_HALL
+T 1200 2400 5 8 0 0 0 0 1
+dist-license=GPLv3
+T 1200 2200 5 8 0 0 0 0 1
+use-license=unlimited
+T 1200 3600 5 8 0 0 0 0 1
+net=VCC:1
+T 1200 3400 5 8 0 0 0 0 1
+net=GND:4

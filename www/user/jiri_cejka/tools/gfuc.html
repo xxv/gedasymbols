@@ -1,0 +1,85 @@
+<h3>gEDA Footprint Unit Convertor</h3>
+
+<ul>Content
+<li><a href="#about">About</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#download">Download</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#build_from_source">Build from source</a></li>
+</ul>
+
+<h4><a name="about">About</a></h4>
+<pre>
+	When you need to use this program?
+	
+	There is a situation when you need to manually update some parameters within the gEDA PCB
+	footprint file like Pad clearance or solder mask opening. Thus you open that fp file but
+	values stored in that file uses imperial units and you live at Europe where metric units
+	are commonly used. That situation is the right one to download and use this program. Also
+	if the values within the file is metric and you live at USA, GB etc. where the imperial units
+	are commonly used, the situation is also right one to download and use this program.   
+	
+	What the program does?
+	
+	Program converts gEDA PCB fp file (footprint) from imperial to metric units and vice versa.
+	The program checks if input and output files exists. Program skips all values within
+	the input file with the same units the program is going to converts into. In the other words
+	if the input file includes some metric values and user request conversion in that metric units
+	the program converts all values included in the input file except that already metric.  
+	
+	IMPORTANT NOTES
+	* Program can convert only mm-to-mil and mil-to-mm values when semantics of a fp file use 'mm' or 'mil' as value suffix.
+	* The input file is neither changed during conversion nor after.
+	* Unfortunately if the output file specified by it's filename exists the program will immediately exit.
+	  Solution is either to use another name of output file or rename or delete the existing output file on your hdd.
+	* Program should work on any GNU/Linux distributions and *nix like systems as well as on Mac OSX and Windows, see section <a href="#build_from_source">Build from source</a>. 
+</pre>
+
+<h4><a name="license">License</a></h4>
+<pre>
+	GPLv3, see attached LICENSE file.
+</pre>
+
+<h4><a name="download">Download</a></h4>
+<pre>
+	gfuc v0.1 (2014/02/24): <a href="tools/gfuc/gfuc-0.1-source.tar.gz">source code</a> (C++) | binary: <a href="tools/gfuc/gfuc-0.1-binary-linux-amd64.tar.gz">GNU/Linux, amd64</a> (Note: compiled and tested using GNU/Linux Debian Wheezy, amd64)
+</pre>
+<h4><a name="usage">Usage</a></h4>
+<pre>
+	$ ./gfuc --in filename.fp --out filename-converted.fp --[mil2mm|mm2mil]
+	
+	--in filename.fp 		- input filename to be converted from
+	--out filename-converted.fp	- output filename to be stored converted format to
+	--[mil2mm|mm2mil] 		- use one of given option
+	
+	Usage example
+	
+	$ ./gfuc --in dhvqfn16.fp --out dhvqfn16-converted.fp --mil2mm
+    
+	...also see example directory and README file
+</pre>
+
+<h4><a name="build_from_source">Build from source</a></h4>
+<h5>GNU/Linux</h5>
+<pre>
+	Prerequisities
+	
+	* g++ >= 4.7.2-1
+	* make >= 3.81-8.2
+	
+	Note: build from source has not been tested on older versions of above tools, it may work though.
+
+	
+	Then on terminal
+	
+	$ tar xvzf gfuc-&lt;version&gt;.tar.gz
+	$ cd gfuc/src
+	$ make 
+</pre>
+
+<h5>Mac OSX</h5>
+TBD
+<h5>Windows</h5>
+TBD
+<h5>Others</h5>
+TBD
