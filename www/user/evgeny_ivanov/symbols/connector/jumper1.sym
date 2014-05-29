@@ -1,0 +1,27 @@
+v 20130925 2
+T 1000 -600 5 8 0 0 0 0 1
+device=JUMPER1
+T 400 500 8 10 1 1 0 0 1
+refdes=J?
+T 1000 -400 5 8 0 0 0 0 1
+class=IO
+T 1000 -200 5 8 0 0 0 0 1
+pins=5
+B 300 0 400 400 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 1000 -800 5 8 0 0 0 0 1
+footprint=JUMPER1
+T 1000 -1200 5 8 0 0 0 0 1
+dist-license=GPL
+T 1000 -1000 5 8 0 0 0 0 1
+use-license=unlimited
+P 0 200 300 200 1 0 0
+{
+T 100 250 5 8 1 1 0 0 1
+pinnumber=1
+T 100 250 5 8 0 0 0 0 1
+pinseq=1
+T 100 250 5 8 1 1 0 0 1
+pinlabel=1
+T 100 250 5 8 0 1 0 0 1
+pintype=pas
+}
