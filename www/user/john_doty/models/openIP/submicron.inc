@@ -20,6 +20,33 @@
 * Rough model parameters for getting representive results 
 * from ngspice using openIP
 *
-.model nch nmos ( level=51 vth0=0.5 tox=1e-8 cj=1e-3 )
-.model pch pmos ( level=51 vth0=-1 tox=1e-8 cj=1e-3 )
+.model nch nmos ( 
++level=6 
++vto=0.5 
++tox=8n 
++gamma=0.5
++cgso=300p
++cgdo=300p
++cgbo=300p
++rsh=0.1
++cj=1m
++cjsw=400p
++nsub=1e17
++uo=400 )
+.model pch pmos ( 
++level=6 
++vto=-0.8 
++tox=8n 
++gamma=0.5
++cgso=300p
++cgdo=300p
++cgbo=300p
++rsh=20
++cj=1m
++cjsw=400p
++nsub=1e17
++uo=200 )
 * $Log$
+* Revision 1.1  2010/05/03 01:33:10  john_doty
+* Open-IP models.
+*
