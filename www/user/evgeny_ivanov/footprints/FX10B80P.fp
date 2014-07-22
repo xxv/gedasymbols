@@ -3,7 +3,7 @@
 # use-license: unlimited
 
 #FX10B80P Hirose board-to-board connector
-Element["" "fX10B80P" "Name" "Val" 16600um 3600um 1000um 0 0 100 ""]
+Element["" "" "FX10B80P" "" 16600um 3600um 1000um 0 0 100 ""]
 (
 	Pad[-14950um -750um -14950um 750um 1600um 400um 2000um "" "" "square"]
 	Pad[14950um -750um 14950um 750um 1600um 400um 2000um "" "" "square"]
