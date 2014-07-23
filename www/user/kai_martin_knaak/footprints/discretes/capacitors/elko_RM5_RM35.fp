@@ -1,0 +1,22 @@
+Element["" "elko_RM5_RM35" "elko_RM5_RM35" "elko_RM5_RM35" 27.0000mm 26.0000mm -4.0000mm 5.0000mm 0 100 ""]
+(
+	Pin[0.0000 1.7500mm 80.00mil 39.37mil 83.94mil 40.00mil "2" "2" ""]
+	Pin[0.0000 -1.7501mm 80.00mil 39.37mil 83.94mil 40.00mil "1" "1" "square"]
+	Pin[-0.0001mm -3.2501mm 80.00mil 39.37mil 83.94mil 40.00mil "1" "1" "square"]
+	ElementLine [1.9240mm -2.3239mm 1.9240mm -1.3079mm 7.87mil]
+	ElementLine [1.4160mm -1.8159mm 2.4320mm -1.8159mm 7.87mil]
+	ElementLine [-50.00mil -0.0158mm 50.00mil -0.0158mm 7.87mil]
+	ElementLine [-50.00mil -0.4001mm -50.00mil 0.0000 7.87mil]
+	ElementLine [50.00mil -0.4001mm 50.00mil 0.0000 7.87mil]
+	ElementLine [-50.00mil -10.00mil 50.00mil -10.00mil 7.87mil]
+	ElementLine [0.0000 20.00mil 0.0000 0.7500mm 7.87mil]
+	ElementLine [-50.00mil -0.4001mm 50.00mil -0.4001mm 7.87mil]
+	ElementLine [0.0000 -10.00mil 0.0000 0.0000 7.87mil]
+	ElementLine [-50.00mil 20.00mil 50.00mil 20.00mil 7.87mil]
+	ElementLine [-50.00mil 0.0000 50.00mil 0.0000 7.87mil]
+	ElementLine [0.0000 -0.7501mm 0.0000 -8.50mil 7.87mil]
+	ElementLine [-1.2500mm -0.1500mm 1.2500mm -0.1500mm 0.2000mm]
+	ElementArc [-0.0003mm -0.7498mm 196.86mil 196.86mil 270 360 7.87mil]
+	ElementArc [0.0000 0.0000 3.9529mm 3.9529mm 289 323 0.2000mm]
+
+	)
