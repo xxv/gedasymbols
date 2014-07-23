@@ -34,5 +34,5 @@ L 250 400 250 800 3 10 0 0 -1 -1
 L 250 600 200 600 3 10 0 0 -1 -1
 L 350 600 400 600 3 10 0 0 -1 -1
 T 300 1850 5 8 0 0 0 0 1
-footprints=0805, 0603, 0402, cap_100mil, cap_200mil, cap_200mil_a, cap_200_mil_b, cap_200mil_c, cap_1100mil
+footprints=0805, 0603, 0402, cap_100mil, cap_200mil, cap_200mil_a, cap_200mil_b, cap_200mil_c, cap_1100mil
 L 400 600 350 650 3 10 0 0 -1 -1
