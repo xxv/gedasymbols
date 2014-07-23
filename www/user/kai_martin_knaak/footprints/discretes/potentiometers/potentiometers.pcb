@@ -1,0 +1,1218 @@
+# release: pcb 1.99z
+
+# To read pcb files, the pcb version (or the git source date) must be >= the file version
+FileVersion[20091103]
+
+PCB["potentiometers.pcb" 152.4000mm 400.0000mm]
+
+Grid[1968.503937 0.0000 0.0000 1]
+PolyArea[200000000.000000]
+Thermal[0.500000]
+DRC[0.1524mm 0.1016mm 0.2032mm 0.1521mm 0.3810mm 0.2540mm]
+Flags("showdrc,nameonpcb,alldirection,clearnew,showmask")
+Groups("1,c:2,s:3")
+Styles["Signal,0.2000mm,1.0000mm,0.5000mm,0.5000mm:Power,0.5000mm,2.2000mm,1.0000mm,0.5000mm:Fat,1.0000mm,3.0000mm,2.0000mm,0.5500mm:Skinny,0.2000mm,1.0000mm,0.5000mm,0.5000mm"]
+
+Symbol[' ' 0.4572mm]
+(
+)
+Symbol['!' 0.3048mm]
+(
+	SymbolLine[0.0000 1.1430mm 0.0000 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.2540mm 0.0000 0.8890mm 0.2032mm]
+)
+Symbol['"' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.0000 0.5080mm 0.2032mm]
+	SymbolLine[0.2540mm 0.2540mm 0.2540mm 0.5080mm 0.2032mm]
+)
+Symbol['#' 0.3048mm]
+(
+	SymbolLine[0.0000 0.8890mm 0.5080mm 0.8890mm 0.2032mm]
+	SymbolLine[0.0000 0.6350mm 0.5080mm 0.6350mm 0.2032mm]
+	SymbolLine[0.3810mm 0.5080mm 0.3810mm 1.0160mm 0.2032mm]
+	SymbolLine[0.1270mm 0.5080mm 0.1270mm 1.0160mm 0.2032mm]
+)
+Symbol['$' 0.3048mm]
+(
+	SymbolLine[0.3810mm 0.3810mm 0.5080mm 0.5080mm 0.2032mm]
+	SymbolLine[0.1270mm 0.3810mm 0.3810mm 0.3810mm 0.2032mm]
+	SymbolLine[0.0000 0.5080mm 0.1270mm 0.3810mm 0.2032mm]
+	SymbolLine[0.0000 0.5080mm 0.0000 0.6350mm 0.2032mm]
+	SymbolLine[0.0000 0.6350mm 0.1270mm 0.7620mm 0.2032mm]
+	SymbolLine[0.1270mm 0.7620mm 0.3810mm 0.7620mm 0.2032mm]
+	SymbolLine[0.3810mm 0.7620mm 0.5080mm 0.8890mm 0.2032mm]
+	SymbolLine[0.5080mm 0.8890mm 0.5080mm 1.0160mm 0.2032mm]
+	SymbolLine[0.3810mm 1.1430mm 0.5080mm 1.0160mm 0.2032mm]
+	SymbolLine[0.1270mm 1.1430mm 0.3810mm 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 1.0160mm 0.1270mm 1.1430mm 0.2032mm]
+	SymbolLine[0.2540mm 0.2540mm 0.2540mm 1.2700mm 0.2032mm]
+)
+Symbol['%' 0.3048mm]
+(
+	SymbolLine[0.0000 0.3810mm 0.0000 0.5080mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.1270mm 0.2540mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.2540mm 0.2540mm 0.2032mm]
+	SymbolLine[0.2540mm 0.2540mm 0.3810mm 0.3810mm 0.2032mm]
+	SymbolLine[0.3810mm 0.3810mm 0.3810mm 0.5080mm 0.2032mm]
+	SymbolLine[0.2540mm 0.6350mm 0.3810mm 0.5080mm 0.2032mm]
+	SymbolLine[0.1270mm 0.6350mm 0.2540mm 0.6350mm 0.2032mm]
+	SymbolLine[0.0000 0.5080mm 0.1270mm 0.6350mm 0.2032mm]
+	SymbolLine[0.0000 1.2700mm 1.0160mm 0.2540mm 0.2032mm]
+	SymbolLine[0.8890mm 1.2700mm 1.0160mm 1.1430mm 0.2032mm]
+	SymbolLine[1.0160mm 1.0160mm 1.0160mm 1.1430mm 0.2032mm]
+	SymbolLine[0.8890mm 0.8890mm 1.0160mm 1.0160mm 0.2032mm]
+	SymbolLine[0.7620mm 0.8890mm 0.8890mm 0.8890mm 0.2032mm]
+	SymbolLine[0.6350mm 1.0160mm 0.7620mm 0.8890mm 0.2032mm]
+	SymbolLine[0.6350mm 1.0160mm 0.6350mm 1.1430mm 0.2032mm]
+	SymbolLine[0.6350mm 1.1430mm 0.7620mm 1.2700mm 0.2032mm]
+	SymbolLine[0.7620mm 1.2700mm 0.8890mm 1.2700mm 0.2032mm]
+)
+Symbol['&' 0.3048mm]
+(
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.0000 0.6350mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.1270mm 0.2540mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.3810mm 0.5080mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.2540mm 1.2700mm 0.2032mm]
+	SymbolLine[0.2540mm 1.2700mm 0.5080mm 1.0160mm 0.2032mm]
+	SymbolLine[0.0000 0.6350mm 0.6350mm 1.2700mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.2540mm 0.2540mm 0.2032mm]
+	SymbolLine[0.2540mm 0.2540mm 0.3810mm 0.3810mm 0.2032mm]
+	SymbolLine[0.3810mm 0.3810mm 0.3810mm 0.5080mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.0000 1.1430mm 0.2032mm]
+)
+Symbol[''' 0.3048mm]
+(
+	SymbolLine[0.0000 0.5080mm 0.2540mm 0.2540mm 0.2032mm]
+)
+Symbol['(' 0.3048mm]
+(
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.1270mm 0.2540mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.0000 1.1430mm 0.2032mm]
+)
+Symbol[')' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.1270mm 0.3810mm 0.2032mm]
+	SymbolLine[0.1270mm 0.3810mm 0.1270mm 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 1.2700mm 0.1270mm 1.1430mm 0.2032mm]
+)
+Symbol['*' 0.3048mm]
+(
+	SymbolLine[0.0000 0.5080mm 0.5080mm 1.0160mm 0.2032mm]
+	SymbolLine[0.0000 1.0160mm 0.5080mm 0.5080mm 0.2032mm]
+	SymbolLine[0.0000 0.7620mm 0.5080mm 0.7620mm 0.2032mm]
+	SymbolLine[0.2540mm 0.5080mm 0.2540mm 1.0160mm 0.2032mm]
+)
+Symbol['+' 0.3048mm]
+(
+	SymbolLine[0.0000 0.7620mm 0.5080mm 0.7620mm 0.2032mm]
+	SymbolLine[0.2540mm 0.5080mm 0.2540mm 1.0160mm 0.2032mm]
+)
+Symbol[',' 0.3048mm]
+(
+	SymbolLine[0.0000 1.5240mm 0.2540mm 1.2700mm 0.2032mm]
+)
+Symbol['-' 0.3048mm]
+(
+	SymbolLine[0.0000 0.7620mm 0.5080mm 0.7620mm 0.2032mm]
+)
+Symbol['.' 0.3048mm]
+(
+	SymbolLine[0.0000 1.2700mm 0.1270mm 1.2700mm 0.2032mm]
+)
+Symbol['/' 0.3048mm]
+(
+	SymbolLine[0.0000 1.1430mm 0.7620mm 0.3810mm 0.2032mm]
+)
+Symbol['0' 0.3048mm]
+(
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.0000 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.1270mm 0.2540mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.3810mm 0.2540mm 0.2032mm]
+	SymbolLine[0.3810mm 0.2540mm 0.5080mm 0.3810mm 0.2032mm]
+	SymbolLine[0.5080mm 0.3810mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.3810mm 1.2700mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.3810mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.0160mm 0.5080mm 0.5080mm 0.2032mm]
+)
+Symbol['1' 0.3048mm]
+(
+	SymbolLine[0.1270mm 1.2700mm 0.3810mm 1.2700mm 0.2032mm]
+	SymbolLine[0.2540mm 0.2540mm 0.2540mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.5080mm 0.2540mm 0.2540mm 0.2032mm]
+)
+Symbol['2' 0.3048mm]
+(
+	SymbolLine[0.0000 0.3810mm 0.1270mm 0.2540mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.5080mm 0.2540mm 0.2032mm]
+	SymbolLine[0.5080mm 0.2540mm 0.6350mm 0.3810mm 0.2032mm]
+	SymbolLine[0.6350mm 0.3810mm 0.6350mm 0.6350mm 0.2032mm]
+	SymbolLine[0.0000 1.2700mm 0.6350mm 0.6350mm 0.2032mm]
+	SymbolLine[0.0000 1.2700mm 0.6350mm 1.2700mm 0.2032mm]
+)
+Symbol['3' 0.3048mm]
+(
+	SymbolLine[0.0000 0.3810mm 0.1270mm 0.2540mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.3810mm 0.2540mm 0.2032mm]
+	SymbolLine[0.3810mm 0.2540mm 0.5080mm 0.3810mm 0.2032mm]
+	SymbolLine[0.5080mm 0.3810mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.3810mm 1.2700mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.3810mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.1270mm 0.7620mm 0.5080mm 0.7620mm 0.2032mm]
+)
+Symbol['4' 0.3048mm]
+(
+	SymbolLine[0.0000 0.7620mm 0.5080mm 0.2540mm 0.2032mm]
+	SymbolLine[0.0000 0.7620mm 0.6350mm 0.7620mm 0.2032mm]
+	SymbolLine[0.5080mm 0.2540mm 0.5080mm 1.2700mm 0.2032mm]
+)
+Symbol['5' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.5080mm 0.2540mm 0.2032mm]
+	SymbolLine[0.0000 0.2540mm 0.0000 0.7620mm 0.2032mm]
+	SymbolLine[0.0000 0.7620mm 0.1270mm 0.6350mm 0.2032mm]
+	SymbolLine[0.1270mm 0.6350mm 0.3810mm 0.6350mm 0.2032mm]
+	SymbolLine[0.3810mm 0.6350mm 0.5080mm 0.7620mm 0.2032mm]
+	SymbolLine[0.5080mm 0.7620mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.3810mm 1.2700mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.3810mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+)
+Symbol['6' 0.3048mm]
+(
+	SymbolLine[0.3810mm 0.2540mm 0.5080mm 0.3810mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.3810mm 0.2540mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.1270mm 0.2540mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.0000 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.3810mm 0.7620mm 0.5080mm 0.8890mm 0.2032mm]
+	SymbolLine[0.0000 0.7620mm 0.3810mm 0.7620mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.3810mm 1.2700mm 0.2032mm]
+	SymbolLine[0.3810mm 1.2700mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.5080mm 0.8890mm 0.5080mm 1.1430mm 0.2032mm]
+)
+Symbol['7' 0.3048mm]
+(
+	SymbolLine[0.0000 1.2700mm 0.6350mm 0.6350mm 0.2032mm]
+	SymbolLine[0.6350mm 0.2540mm 0.6350mm 0.6350mm 0.2032mm]
+	SymbolLine[0.0000 0.2540mm 0.6350mm 0.2540mm 0.2032mm]
+)
+Symbol['8' 0.3048mm]
+(
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.0000 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.1270mm 0.7620mm 0.2032mm]
+	SymbolLine[0.1270mm 0.7620mm 0.3810mm 0.7620mm 0.2032mm]
+	SymbolLine[0.3810mm 0.7620mm 0.5080mm 0.8890mm 0.2032mm]
+	SymbolLine[0.5080mm 0.8890mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.3810mm 1.2700mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.3810mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.6350mm 0.1270mm 0.7620mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.0000 0.6350mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.1270mm 0.2540mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.3810mm 0.2540mm 0.2032mm]
+	SymbolLine[0.3810mm 0.2540mm 0.5080mm 0.3810mm 0.2032mm]
+	SymbolLine[0.5080mm 0.3810mm 0.5080mm 0.6350mm 0.2032mm]
+	SymbolLine[0.3810mm 0.7620mm 0.5080mm 0.6350mm 0.2032mm]
+)
+Symbol['9' 0.3048mm]
+(
+	SymbolLine[0.0000 1.2700mm 0.5080mm 0.7620mm 0.2032mm]
+	SymbolLine[0.5080mm 0.3810mm 0.5080mm 0.7620mm 0.2032mm]
+	SymbolLine[0.3810mm 0.2540mm 0.5080mm 0.3810mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.3810mm 0.2540mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.1270mm 0.2540mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.0000 0.6350mm 0.2032mm]
+	SymbolLine[0.0000 0.6350mm 0.1270mm 0.7620mm 0.2032mm]
+	SymbolLine[0.1270mm 0.7620mm 0.5080mm 0.7620mm 0.2032mm]
+)
+Symbol[':' 0.3048mm]
+(
+	SymbolLine[0.0000 0.6350mm 0.1270mm 0.6350mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.1270mm 0.8890mm 0.2032mm]
+)
+Symbol[';' 0.3048mm]
+(
+	SymbolLine[0.0000 1.2700mm 0.2540mm 1.0160mm 0.2032mm]
+	SymbolLine[0.2540mm 0.6350mm 0.2540mm 0.7620mm 0.2032mm]
+)
+Symbol['<' 0.3048mm]
+(
+	SymbolLine[0.0000 0.7620mm 0.2540mm 0.5080mm 0.2032mm]
+	SymbolLine[0.0000 0.7620mm 0.2540mm 1.0160mm 0.2032mm]
+)
+Symbol['=' 0.3048mm]
+(
+	SymbolLine[0.0000 0.6350mm 0.5080mm 0.6350mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.5080mm 0.8890mm 0.2032mm]
+)
+Symbol['>' 0.3048mm]
+(
+	SymbolLine[0.0000 0.5080mm 0.2540mm 0.7620mm 0.2032mm]
+	SymbolLine[0.0000 1.0160mm 0.2540mm 0.7620mm 0.2032mm]
+)
+Symbol['?' 0.3048mm]
+(
+	SymbolLine[0.2540mm 0.7620mm 0.2540mm 0.8890mm 0.2032mm]
+	SymbolLine[0.2540mm 1.1430mm 0.2540mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.0000 0.5080mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.1270mm 0.2540mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.3810mm 0.2540mm 0.2032mm]
+	SymbolLine[0.3810mm 0.2540mm 0.5080mm 0.3810mm 0.2032mm]
+	SymbolLine[0.5080mm 0.3810mm 0.5080mm 0.5080mm 0.2032mm]
+	SymbolLine[0.2540mm 0.7620mm 0.5080mm 0.5080mm 0.2032mm]
+)
+Symbol['@' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.0000 1.0160mm 0.2032mm]
+	SymbolLine[0.0000 1.0160mm 0.2540mm 1.2700mm 0.2032mm]
+	SymbolLine[0.2540mm 1.2700mm 1.0160mm 1.2700mm 0.2032mm]
+	SymbolLine[1.2700mm 0.8890mm 1.2700mm 0.2540mm 0.2032mm]
+	SymbolLine[1.2700mm 0.2540mm 1.0160mm 0.0000 0.2032mm]
+	SymbolLine[1.0160mm 0.0000 0.2540mm 0.0000 0.2032mm]
+	SymbolLine[0.2540mm 0.0000 0.0000 0.2540mm 0.2032mm]
+	SymbolLine[0.3810mm 0.5080mm 0.3810mm 0.7620mm 0.2032mm]
+	SymbolLine[0.3810mm 0.7620mm 0.5080mm 0.8890mm 0.2032mm]
+	SymbolLine[0.5080mm 0.8890mm 0.7620mm 0.8890mm 0.2032mm]
+	SymbolLine[0.7620mm 0.8890mm 0.8890mm 0.7620mm 0.2032mm]
+	SymbolLine[0.8890mm 0.7620mm 1.0160mm 0.8890mm 0.2032mm]
+	SymbolLine[0.8890mm 0.7620mm 0.8890mm 0.3810mm 0.2032mm]
+	SymbolLine[0.8890mm 0.5080mm 0.7620mm 0.3810mm 0.2032mm]
+	SymbolLine[0.5080mm 0.3810mm 0.7620mm 0.3810mm 0.2032mm]
+	SymbolLine[0.5080mm 0.3810mm 0.3810mm 0.5080mm 0.2032mm]
+	SymbolLine[1.0160mm 0.8890mm 1.2700mm 0.8890mm 0.2032mm]
+)
+Symbol['A' 0.3048mm]
+(
+	SymbolLine[0.0000 0.3810mm 0.0000 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.1270mm 0.2540mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.5080mm 0.2540mm 0.2032mm]
+	SymbolLine[0.5080mm 0.2540mm 0.6350mm 0.3810mm 0.2032mm]
+	SymbolLine[0.6350mm 0.3810mm 0.6350mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.7620mm 0.6350mm 0.7620mm 0.2032mm]
+)
+Symbol['B' 0.3048mm]
+(
+	SymbolLine[0.0000 1.2700mm 0.5080mm 1.2700mm 0.2032mm]
+	SymbolLine[0.5080mm 1.2700mm 0.6350mm 1.1430mm 0.2032mm]
+	SymbolLine[0.6350mm 0.8890mm 0.6350mm 1.1430mm 0.2032mm]
+	SymbolLine[0.5080mm 0.7620mm 0.6350mm 0.8890mm 0.2032mm]
+	SymbolLine[0.1270mm 0.7620mm 0.5080mm 0.7620mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.2540mm 0.5080mm 0.2540mm 0.2032mm]
+	SymbolLine[0.5080mm 0.2540mm 0.6350mm 0.3810mm 0.2032mm]
+	SymbolLine[0.6350mm 0.3810mm 0.6350mm 0.6350mm 0.2032mm]
+	SymbolLine[0.5080mm 0.7620mm 0.6350mm 0.6350mm 0.2032mm]
+)
+Symbol['C' 0.3048mm]
+(
+	SymbolLine[0.1270mm 1.2700mm 0.5080mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.0000 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.1270mm 0.2540mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.5080mm 0.2540mm 0.2032mm]
+)
+Symbol['D' 0.3048mm]
+(
+	SymbolLine[0.1270mm 0.2540mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.5080mm 0.2540mm 0.6350mm 0.3810mm 0.2032mm]
+	SymbolLine[0.6350mm 0.3810mm 0.6350mm 1.1430mm 0.2032mm]
+	SymbolLine[0.5080mm 1.2700mm 0.6350mm 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 1.2700mm 0.5080mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.2540mm 0.5080mm 0.2540mm 0.2032mm]
+)
+Symbol['E' 0.3048mm]
+(
+	SymbolLine[0.0000 0.7620mm 0.3810mm 0.7620mm 0.2032mm]
+	SymbolLine[0.0000 1.2700mm 0.5080mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.2540mm 0.0000 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.2540mm 0.5080mm 0.2540mm 0.2032mm]
+)
+Symbol['F' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.0000 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.2540mm 0.5080mm 0.2540mm 0.2032mm]
+	SymbolLine[0.0000 0.7620mm 0.3810mm 0.7620mm 0.2032mm]
+)
+Symbol['G' 0.3048mm]
+(
+	SymbolLine[0.5080mm 0.2540mm 0.6350mm 0.3810mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.5080mm 0.2540mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.1270mm 0.2540mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.0000 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.5080mm 1.2700mm 0.2032mm]
+	SymbolLine[0.5080mm 1.2700mm 0.6350mm 1.1430mm 0.2032mm]
+	SymbolLine[0.6350mm 0.8890mm 0.6350mm 1.1430mm 0.2032mm]
+	SymbolLine[0.5080mm 0.7620mm 0.6350mm 0.8890mm 0.2032mm]
+	SymbolLine[0.2540mm 0.7620mm 0.5080mm 0.7620mm 0.2032mm]
+)
+Symbol['H' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.0000 1.2700mm 0.2032mm]
+	SymbolLine[0.6350mm 0.2540mm 0.6350mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.7620mm 0.6350mm 0.7620mm 0.2032mm]
+)
+Symbol['I' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.2540mm 0.2540mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.2700mm 0.2540mm 1.2700mm 0.2032mm]
+)
+Symbol['J' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.3810mm 0.2540mm 0.2032mm]
+	SymbolLine[0.3810mm 0.2540mm 0.3810mm 1.1430mm 0.2032mm]
+	SymbolLine[0.2540mm 1.2700mm 0.3810mm 1.1430mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.2540mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+)
+Symbol['K' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.0000 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.7620mm 0.5080mm 0.2540mm 0.2032mm]
+	SymbolLine[0.0000 0.7620mm 0.5080mm 1.2700mm 0.2032mm]
+)
+Symbol['L' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.0000 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.2700mm 0.5080mm 1.2700mm 0.2032mm]
+)
+Symbol['M' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.0000 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.2540mm 0.3810mm 0.6350mm 0.2032mm]
+	SymbolLine[0.3810mm 0.6350mm 0.7620mm 0.2540mm 0.2032mm]
+	SymbolLine[0.7620mm 0.2540mm 0.7620mm 1.2700mm 0.2032mm]
+)
+Symbol['N' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.0000 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.2540mm 0.0000 0.3810mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.6350mm 1.0160mm 0.2032mm]
+	SymbolLine[0.6350mm 0.2540mm 0.6350mm 1.2700mm 0.2032mm]
+)
+Symbol['O' 0.3048mm]
+(
+	SymbolLine[0.0000 0.3810mm 0.0000 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.1270mm 0.2540mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.3810mm 0.2540mm 0.2032mm]
+	SymbolLine[0.3810mm 0.2540mm 0.5080mm 0.3810mm 0.2032mm]
+	SymbolLine[0.5080mm 0.3810mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.3810mm 1.2700mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.3810mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+)
+Symbol['P' 0.3048mm]
+(
+	SymbolLine[0.1270mm 0.2540mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.2540mm 0.5080mm 0.2540mm 0.2032mm]
+	SymbolLine[0.5080mm 0.2540mm 0.6350mm 0.3810mm 0.2032mm]
+	SymbolLine[0.6350mm 0.3810mm 0.6350mm 0.6350mm 0.2032mm]
+	SymbolLine[0.5080mm 0.7620mm 0.6350mm 0.6350mm 0.2032mm]
+	SymbolLine[0.1270mm 0.7620mm 0.5080mm 0.7620mm 0.2032mm]
+)
+Symbol['Q' 0.3048mm]
+(
+	SymbolLine[0.0000 0.3810mm 0.0000 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.1270mm 0.2540mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.3810mm 0.2540mm 0.2032mm]
+	SymbolLine[0.3810mm 0.2540mm 0.5080mm 0.3810mm 0.2032mm]
+	SymbolLine[0.5080mm 0.3810mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.3810mm 1.2700mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.3810mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.2540mm 1.0160mm 0.5080mm 1.2700mm 0.2032mm]
+)
+Symbol['R' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.5080mm 0.2540mm 0.2032mm]
+	SymbolLine[0.5080mm 0.2540mm 0.6350mm 0.3810mm 0.2032mm]
+	SymbolLine[0.6350mm 0.3810mm 0.6350mm 0.6350mm 0.2032mm]
+	SymbolLine[0.5080mm 0.7620mm 0.6350mm 0.6350mm 0.2032mm]
+	SymbolLine[0.1270mm 0.7620mm 0.5080mm 0.7620mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.1270mm 0.7620mm 0.6350mm 1.2700mm 0.2032mm]
+)
+Symbol['S' 0.3048mm]
+(
+	SymbolLine[0.5080mm 0.2540mm 0.6350mm 0.3810mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.5080mm 0.2540mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.1270mm 0.2540mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.0000 0.6350mm 0.2032mm]
+	SymbolLine[0.0000 0.6350mm 0.1270mm 0.7620mm 0.2032mm]
+	SymbolLine[0.1270mm 0.7620mm 0.5080mm 0.7620mm 0.2032mm]
+	SymbolLine[0.5080mm 0.7620mm 0.6350mm 0.8890mm 0.2032mm]
+	SymbolLine[0.6350mm 0.8890mm 0.6350mm 1.1430mm 0.2032mm]
+	SymbolLine[0.5080mm 1.2700mm 0.6350mm 1.1430mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.5080mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+)
+Symbol['T' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.5080mm 0.2540mm 0.2032mm]
+	SymbolLine[0.2540mm 0.2540mm 0.2540mm 1.2700mm 0.2032mm]
+)
+Symbol['U' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.0000 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.3810mm 1.2700mm 0.2032mm]
+	SymbolLine[0.3810mm 1.2700mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.5080mm 0.2540mm 0.5080mm 1.1430mm 0.2032mm]
+)
+Symbol['V' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.0000 1.0160mm 0.2032mm]
+	SymbolLine[0.0000 1.0160mm 0.2540mm 1.2700mm 0.2032mm]
+	SymbolLine[0.2540mm 1.2700mm 0.5080mm 1.0160mm 0.2032mm]
+	SymbolLine[0.5080mm 0.2540mm 0.5080mm 1.0160mm 0.2032mm]
+)
+Symbol['W' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.0000 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.2700mm 0.3810mm 0.8890mm 0.2032mm]
+	SymbolLine[0.3810mm 0.8890mm 0.7620mm 1.2700mm 0.2032mm]
+	SymbolLine[0.7620mm 0.2540mm 0.7620mm 1.2700mm 0.2032mm]
+)
+Symbol['X' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.0000 0.3810mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.6350mm 1.0160mm 0.2032mm]
+	SymbolLine[0.6350mm 1.0160mm 0.6350mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.0160mm 0.0000 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.0160mm 0.6350mm 0.3810mm 0.2032mm]
+	SymbolLine[0.6350mm 0.2540mm 0.6350mm 0.3810mm 0.2032mm]
+)
+Symbol['Y' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.0000 0.3810mm 0.2032mm]
+	SymbolLine[0.0000 0.3810mm 0.2540mm 0.6350mm 0.2032mm]
+	SymbolLine[0.2540mm 0.6350mm 0.5080mm 0.3810mm 0.2032mm]
+	SymbolLine[0.5080mm 0.2540mm 0.5080mm 0.3810mm 0.2032mm]
+	SymbolLine[0.2540mm 0.6350mm 0.2540mm 1.2700mm 0.2032mm]
+)
+Symbol['Z' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.6350mm 0.2540mm 0.2032mm]
+	SymbolLine[0.6350mm 0.2540mm 0.6350mm 0.3810mm 0.2032mm]
+	SymbolLine[0.0000 1.0160mm 0.6350mm 0.3810mm 0.2032mm]
+	SymbolLine[0.0000 1.0160mm 0.0000 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.2700mm 0.6350mm 1.2700mm 0.2032mm]
+)
+Symbol['[' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.1270mm 0.2540mm 0.2032mm]
+	SymbolLine[0.0000 0.2540mm 0.0000 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.2700mm 0.1270mm 1.2700mm 0.2032mm]
+)
+Symbol['\' 0.3048mm]
+(
+	SymbolLine[0.0000 0.3810mm 0.7620mm 1.1430mm 0.2032mm]
+)
+Symbol[']' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.1270mm 0.2540mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.2700mm 0.1270mm 1.2700mm 0.2032mm]
+)
+Symbol['^' 0.3048mm]
+(
+	SymbolLine[0.0000 0.3810mm 0.1270mm 0.2540mm 0.2032mm]
+	SymbolLine[0.1270mm 0.2540mm 0.2540mm 0.3810mm 0.2032mm]
+)
+Symbol['_' 0.3048mm]
+(
+	SymbolLine[0.0000 1.2700mm 0.5080mm 1.2700mm 0.2032mm]
+)
+Symbol['a' 0.3048mm]
+(
+	SymbolLine[0.3810mm 0.7620mm 0.5080mm 0.8890mm 0.2032mm]
+	SymbolLine[0.1270mm 0.7620mm 0.3810mm 0.7620mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.1270mm 0.7620mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.0000 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.5080mm 0.7620mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.5080mm 1.1430mm 0.6350mm 1.2700mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.3810mm 1.2700mm 0.2032mm]
+	SymbolLine[0.3810mm 1.2700mm 0.5080mm 1.1430mm 0.2032mm]
+)
+Symbol['b' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.0000 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.3810mm 1.2700mm 0.2032mm]
+	SymbolLine[0.3810mm 1.2700mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.5080mm 0.8890mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.3810mm 0.7620mm 0.5080mm 0.8890mm 0.2032mm]
+	SymbolLine[0.1270mm 0.7620mm 0.3810mm 0.7620mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.1270mm 0.7620mm 0.2032mm]
+)
+Symbol['c' 0.3048mm]
+(
+	SymbolLine[0.1270mm 0.7620mm 0.5080mm 0.7620mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.1270mm 0.7620mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.0000 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.5080mm 1.2700mm 0.2032mm]
+)
+Symbol['d' 0.3048mm]
+(
+	SymbolLine[0.5080mm 0.2540mm 0.5080mm 1.2700mm 0.2032mm]
+	SymbolLine[0.3810mm 1.2700mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.3810mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.0000 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.1270mm 0.7620mm 0.2032mm]
+	SymbolLine[0.1270mm 0.7620mm 0.3810mm 0.7620mm 0.2032mm]
+	SymbolLine[0.3810mm 0.7620mm 0.5080mm 0.8890mm 0.2032mm]
+)
+Symbol['e' 0.3048mm]
+(
+	SymbolLine[0.1270mm 1.2700mm 0.5080mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.0000 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.1270mm 0.7620mm 0.2032mm]
+	SymbolLine[0.1270mm 0.7620mm 0.3810mm 0.7620mm 0.2032mm]
+	SymbolLine[0.3810mm 0.7620mm 0.5080mm 0.8890mm 0.2032mm]
+	SymbolLine[0.0000 1.0160mm 0.5080mm 1.0160mm 0.2032mm]
+	SymbolLine[0.5080mm 1.0160mm 0.5080mm 0.8890mm 0.2032mm]
+)
+Symbol['f' 0.2540mm]
+(
+	SymbolLine[0.1270mm 0.3810mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.1270mm 0.3810mm 0.2540mm 0.2540mm 0.2032mm]
+	SymbolLine[0.2540mm 0.2540mm 0.3810mm 0.2540mm 0.2032mm]
+	SymbolLine[0.0000 0.7620mm 0.2540mm 0.7620mm 0.2032mm]
+)
+Symbol['g' 0.3048mm]
+(
+	SymbolLine[0.3810mm 0.7620mm 0.5080mm 0.8890mm 0.2032mm]
+	SymbolLine[0.1270mm 0.7620mm 0.3810mm 0.7620mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.1270mm 0.7620mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.0000 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.3810mm 1.2700mm 0.2032mm]
+	SymbolLine[0.3810mm 1.2700mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 1.5240mm 0.1270mm 1.6510mm 0.2032mm]
+	SymbolLine[0.1270mm 1.6510mm 0.3810mm 1.6510mm 0.2032mm]
+	SymbolLine[0.3810mm 1.6510mm 0.5080mm 1.5240mm 0.2032mm]
+	SymbolLine[0.5080mm 0.7620mm 0.5080mm 1.5240mm 0.2032mm]
+)
+Symbol['h' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.0000 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.1270mm 0.7620mm 0.2032mm]
+	SymbolLine[0.1270mm 0.7620mm 0.3810mm 0.7620mm 0.2032mm]
+	SymbolLine[0.3810mm 0.7620mm 0.5080mm 0.8890mm 0.2032mm]
+	SymbolLine[0.5080mm 0.8890mm 0.5080mm 1.2700mm 0.2032mm]
+)
+Symbol['i' 0.2540mm]
+(
+	SymbolLine[0.0000 0.5080mm 0.0000 0.6350mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.0000 1.2700mm 0.2032mm]
+)
+Symbol['j' 0.2540mm]
+(
+	SymbolLine[0.1270mm 0.5080mm 0.1270mm 0.6350mm 0.2032mm]
+	SymbolLine[0.1270mm 0.8890mm 0.1270mm 1.5240mm 0.2032mm]
+	SymbolLine[0.0000 1.6510mm 0.1270mm 1.5240mm 0.2032mm]
+)
+Symbol['k' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.0000 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.3810mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.2540mm 0.6350mm 0.2032mm]
+)
+Symbol['l' 0.2540mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.0000 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+)
+Symbol['m' 0.3048mm]
+(
+	SymbolLine[0.1270mm 0.8890mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.1270mm 0.8890mm 0.2540mm 0.7620mm 0.2032mm]
+	SymbolLine[0.2540mm 0.7620mm 0.3810mm 0.7620mm 0.2032mm]
+	SymbolLine[0.3810mm 0.7620mm 0.5080mm 0.8890mm 0.2032mm]
+	SymbolLine[0.5080mm 0.8890mm 0.5080mm 1.2700mm 0.2032mm]
+	SymbolLine[0.5080mm 0.8890mm 0.6350mm 0.7620mm 0.2032mm]
+	SymbolLine[0.6350mm 0.7620mm 0.7620mm 0.7620mm 0.2032mm]
+	SymbolLine[0.7620mm 0.7620mm 0.8890mm 0.8890mm 0.2032mm]
+	SymbolLine[0.8890mm 0.8890mm 0.8890mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.7620mm 0.1270mm 0.8890mm 0.2032mm]
+)
+Symbol['n' 0.3048mm]
+(
+	SymbolLine[0.1270mm 0.8890mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.1270mm 0.8890mm 0.2540mm 0.7620mm 0.2032mm]
+	SymbolLine[0.2540mm 0.7620mm 0.3810mm 0.7620mm 0.2032mm]
+	SymbolLine[0.3810mm 0.7620mm 0.5080mm 0.8890mm 0.2032mm]
+	SymbolLine[0.5080mm 0.8890mm 0.5080mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.7620mm 0.1270mm 0.8890mm 0.2032mm]
+)
+Symbol['o' 0.3048mm]
+(
+	SymbolLine[0.0000 0.8890mm 0.0000 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.1270mm 0.7620mm 0.2032mm]
+	SymbolLine[0.1270mm 0.7620mm 0.3810mm 0.7620mm 0.2032mm]
+	SymbolLine[0.3810mm 0.7620mm 0.5080mm 0.8890mm 0.2032mm]
+	SymbolLine[0.5080mm 0.8890mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.3810mm 1.2700mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.3810mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+)
+Symbol['p' 0.3048mm]
+(
+	SymbolLine[0.1270mm 0.8890mm 0.1270mm 1.6510mm 0.2032mm]
+	SymbolLine[0.0000 0.7620mm 0.1270mm 0.8890mm 0.2032mm]
+	SymbolLine[0.1270mm 0.8890mm 0.2540mm 0.7620mm 0.2032mm]
+	SymbolLine[0.2540mm 0.7620mm 0.5080mm 0.7620mm 0.2032mm]
+	SymbolLine[0.5080mm 0.7620mm 0.6350mm 0.8890mm 0.2032mm]
+	SymbolLine[0.6350mm 0.8890mm 0.6350mm 1.1430mm 0.2032mm]
+	SymbolLine[0.5080mm 1.2700mm 0.6350mm 1.1430mm 0.2032mm]
+	SymbolLine[0.2540mm 1.2700mm 0.5080mm 1.2700mm 0.2032mm]
+	SymbolLine[0.1270mm 1.1430mm 0.2540mm 1.2700mm 0.2032mm]
+)
+Symbol['q' 0.3048mm]
+(
+	SymbolLine[0.5080mm 0.8890mm 0.5080mm 1.6510mm 0.2032mm]
+	SymbolLine[0.3810mm 0.7620mm 0.5080mm 0.8890mm 0.2032mm]
+	SymbolLine[0.1270mm 0.7620mm 0.3810mm 0.7620mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.1270mm 0.7620mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.0000 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.3810mm 1.2700mm 0.2032mm]
+	SymbolLine[0.3810mm 1.2700mm 0.5080mm 1.1430mm 0.2032mm]
+)
+Symbol['r' 0.3048mm]
+(
+	SymbolLine[0.1270mm 0.8890mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.1270mm 0.8890mm 0.2540mm 0.7620mm 0.2032mm]
+	SymbolLine[0.2540mm 0.7620mm 0.5080mm 0.7620mm 0.2032mm]
+	SymbolLine[0.0000 0.7620mm 0.1270mm 0.8890mm 0.2032mm]
+)
+Symbol['s' 0.3048mm]
+(
+	SymbolLine[0.1270mm 1.2700mm 0.5080mm 1.2700mm 0.2032mm]
+	SymbolLine[0.5080mm 1.2700mm 0.6350mm 1.1430mm 0.2032mm]
+	SymbolLine[0.5080mm 1.0160mm 0.6350mm 1.1430mm 0.2032mm]
+	SymbolLine[0.1270mm 1.0160mm 0.5080mm 1.0160mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.1270mm 1.0160mm 0.2032mm]
+	SymbolLine[0.0000 0.8890mm 0.1270mm 0.7620mm 0.2032mm]
+	SymbolLine[0.1270mm 0.7620mm 0.5080mm 0.7620mm 0.2032mm]
+	SymbolLine[0.5080mm 0.7620mm 0.6350mm 0.8890mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+)
+Symbol['t' 0.2540mm]
+(
+	SymbolLine[0.1270mm 0.2540mm 0.1270mm 1.1430mm 0.2032mm]
+	SymbolLine[0.1270mm 1.1430mm 0.2540mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 0.6350mm 0.2540mm 0.6350mm 0.2032mm]
+)
+Symbol['u' 0.3048mm]
+(
+	SymbolLine[0.0000 0.7620mm 0.0000 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.3810mm 1.2700mm 0.2032mm]
+	SymbolLine[0.3810mm 1.2700mm 0.5080mm 1.1430mm 0.2032mm]
+	SymbolLine[0.5080mm 0.7620mm 0.5080mm 1.1430mm 0.2032mm]
+)
+Symbol['v' 0.3048mm]
+(
+	SymbolLine[0.0000 0.7620mm 0.0000 1.0160mm 0.2032mm]
+	SymbolLine[0.0000 1.0160mm 0.2540mm 1.2700mm 0.2032mm]
+	SymbolLine[0.2540mm 1.2700mm 0.5080mm 1.0160mm 0.2032mm]
+	SymbolLine[0.5080mm 0.7620mm 0.5080mm 1.0160mm 0.2032mm]
+)
+Symbol['w' 0.3048mm]
+(
+	SymbolLine[0.0000 0.7620mm 0.0000 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.2540mm 1.2700mm 0.2032mm]
+	SymbolLine[0.2540mm 1.2700mm 0.3810mm 1.1430mm 0.2032mm]
+	SymbolLine[0.3810mm 0.7620mm 0.3810mm 1.1430mm 0.2032mm]
+	SymbolLine[0.3810mm 1.1430mm 0.5080mm 1.2700mm 0.2032mm]
+	SymbolLine[0.5080mm 1.2700mm 0.6350mm 1.2700mm 0.2032mm]
+	SymbolLine[0.6350mm 1.2700mm 0.7620mm 1.1430mm 0.2032mm]
+	SymbolLine[0.7620mm 0.7620mm 0.7620mm 1.1430mm 0.2032mm]
+)
+Symbol['x' 0.3048mm]
+(
+	SymbolLine[0.0000 0.7620mm 0.5080mm 1.2700mm 0.2032mm]
+	SymbolLine[0.0000 1.2700mm 0.5080mm 0.7620mm 0.2032mm]
+)
+Symbol['y' 0.3048mm]
+(
+	SymbolLine[0.0000 0.7620mm 0.0000 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 1.1430mm 0.1270mm 1.2700mm 0.2032mm]
+	SymbolLine[0.5080mm 0.7620mm 0.5080mm 1.5240mm 0.2032mm]
+	SymbolLine[0.3810mm 1.6510mm 0.5080mm 1.5240mm 0.2032mm]
+	SymbolLine[0.1270mm 1.6510mm 0.3810mm 1.6510mm 0.2032mm]
+	SymbolLine[0.0000 1.5240mm 0.1270mm 1.6510mm 0.2032mm]
+	SymbolLine[0.1270mm 1.2700mm 0.3810mm 1.2700mm 0.2032mm]
+	SymbolLine[0.3810mm 1.2700mm 0.5080mm 1.1430mm 0.2032mm]
+)
+Symbol['z' 0.3048mm]
+(
+	SymbolLine[0.0000 0.7620mm 0.5080mm 0.7620mm 0.2032mm]
+	SymbolLine[0.0000 1.2700mm 0.5080mm 0.7620mm 0.2032mm]
+	SymbolLine[0.0000 1.2700mm 0.5080mm 1.2700mm 0.2032mm]
+)
+Symbol['{' 0.3048mm]
+(
+	SymbolLine[0.1270mm 0.3810mm 0.2540mm 0.2540mm 0.2032mm]
+	SymbolLine[0.1270mm 0.3810mm 0.1270mm 0.6350mm 0.2032mm]
+	SymbolLine[0.0000 0.7620mm 0.1270mm 0.6350mm 0.2032mm]
+	SymbolLine[0.0000 0.7620mm 0.1270mm 0.8890mm 0.2032mm]
+	SymbolLine[0.1270mm 0.8890mm 0.1270mm 1.1430mm 0.2032mm]
+	SymbolLine[0.1270mm 1.1430mm 0.2540mm 1.2700mm 0.2032mm]
+)
+Symbol['|' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.0000 1.2700mm 0.2032mm]
+)
+Symbol['}' 0.3048mm]
+(
+	SymbolLine[0.0000 0.2540mm 0.1270mm 0.3810mm 0.2032mm]
+	SymbolLine[0.1270mm 0.3810mm 0.1270mm 0.6350mm 0.2032mm]
+	SymbolLine[0.1270mm 0.6350mm 0.2540mm 0.7620mm 0.2032mm]
+	SymbolLine[0.1270mm 0.8890mm 0.2540mm 0.7620mm 0.2032mm]
+	SymbolLine[0.1270mm 0.8890mm 0.1270mm 1.1430mm 0.2032mm]
+	SymbolLine[0.0000 1.2700mm 0.1270mm 1.1430mm 0.2032mm]
+)
+Symbol['~' 0.3048mm]
+(
+	SymbolLine[0.0000 0.8890mm 0.1270mm 0.7620mm 0.2032mm]
+	SymbolLine[0.1270mm 0.7620mm 0.2540mm 0.7620mm 0.2032mm]
+	SymbolLine[0.2540mm 0.7620mm 0.3810mm 0.8890mm 0.2032mm]
+	SymbolLine[0.3810mm 0.8890mm 0.5080mm 0.8890mm 0.2032mm]
+	SymbolLine[0.5080mm 0.8890mm 0.6350mm 0.7620mm 0.2032mm]
+)
+Attribute("PCB::grid::unit" "mm")
+Attribute("PCB::grid::size" "0.5000mm")
+Via[12.7000mm 12.7000mm 1.8288mm 0.5080mm 2.0828mm 0.7620mm "1" ""]
+Via[12.7000mm 25.4000mm 1.8288mm 0.5080mm 2.0828mm 0.7620mm "3" ""]
+Via[10.1600mm 20.3200mm 1.8288mm 0.5080mm 2.0828mm 0.7620mm "2" ""]
+Via[12.7000mm 50.8000mm 1.7780mm 0.5080mm 2.0320mm 0.8890mm "1" ""]
+Via[12.7000mm 55.8800mm 1.7780mm 0.5080mm 2.0320mm 0.8890mm "3" ""]
+Via[15.2400mm 53.3400mm 1.7780mm 0.5080mm 2.0320mm 0.8890mm "2" ""]
+Via[12.7000mm 78.7400mm 1.7780mm 0.5080mm 1.9304mm 0.8890mm "2" ""]
+Via[12.7000mm 81.2800mm 1.7780mm 0.5080mm 1.9304mm 0.8890mm "3" ""]
+Via[12.7000mm 76.2000mm 1.5240mm 0.5080mm 1.6764mm 0.8890mm "1" ""]
+Via[19.9390mm 170.1800mm 5.5880mm 0.5080mm 5.7404mm 3.5560mm "3" ""]
+Via[19.9390mm 163.8300mm 5.5880mm 0.5080mm 5.7404mm 3.5560mm "2" ""]
+Via[25.7810mm 158.2420mm 5.5880mm 0.5080mm 5.7404mm 3.5560mm "1" ""]
+Via[10.3000mm 123.7000mm 3.4544mm 0.5080mm 3.7084mm 2.2860mm "" ""]
+Via[22.2000mm 123.7000mm 3.4544mm 0.5080mm 3.7084mm 2.2860mm "" ""]
+Via[12.5000mm 127.0000mm 2.2000mm 1.0000mm 0.0000 1.0000mm "1" ""]
+Via[15.0000mm 127.0000mm 2.2000mm 1.0000mm 0.0000 1.0000mm "2" ""]
+Via[17.5000mm 127.0000mm 2.2000mm 1.0000mm 0.0000 1.0000mm "3" ""]
+Via[20.0000mm 127.0000mm 2.2000mm 1.0000mm 0.0000 1.0000mm "" ""]
+Via[9.5000mm 99.0000mm 3.4544mm 0.5080mm 3.7084mm 2.2860mm "" ""]
+Via[19.7500mm 112.0000mm 2.2000mm 1.0000mm 0.0000 1.0000mm "" ""]
+Via[17.2500mm 112.0000mm 2.2000mm 1.0000mm 0.0000 1.0000mm "3" ""]
+Via[14.7500mm 112.0000mm 2.2000mm 1.0000mm 0.0000 1.0000mm "2" ""]
+Via[12.2500mm 112.0000mm 2.2000mm 1.0000mm 0.0000 1.0000mm "1" ""]
+Via[22.5000mm 99.0000mm 3.4544mm 0.5080mm 3.7084mm 2.2860mm "" ""]
+Via[23.0000mm 214.0000mm 2.0000mm 1.0000mm 0.0000 1.0000mm "2" ""]
+Via[25.5000mm 214.0000mm 2.0000mm 1.0000mm 0.0000 1.0000mm "3" ""]
+Via[20.5000mm 214.0000mm 2.0000mm 1.0000mm 0.0000 1.0000mm "1" ""]
+Via[18.0000mm 211.0000mm 3.0000mm 1.1000mm 0.0000 2.0000mm "" ""]
+Via[28.0000mm 211.0000mm 3.0000mm 1.1000mm 0.0000 2.0000mm "" ""]
+
+Element["" "VISHAY_T18" "VISHAY_T18" "VISHAY_T18" 38.1000mm 12.7000mm -3.8100mm -5.0800mm 0 100 ""]
+(
+	Pin [0.0000 0.0000 1.8288mm 1.00mm 1.93mm 0.7620mm "1" "1" "square"]
+	Pin [0.0000 12.7000mm 1.8288mm 1.00mm 1.93mm 0.7620mm "3" "3" ""]
+	Pin [-2.5400mm 7.6200mm 1.8288mm 1.00mm 1.93mm 0.7620mm "2" "2" ""]
+	ElementLine [-0.1270mm 17.3990mm -0.1270mm 15.8750mm 0.20mm]
+	ElementLine [-2.5400mm 17.3990mm -0.1270mm 17.3990mm 0.20mm]
+	ElementLine [-2.5400mm 15.8750mm -2.5400mm 17.3990mm 0.20mm]
+	ElementLine [-3.8100mm 15.8750mm -3.8100mm -3.1750mm 0.20mm]
+	ElementLine [1.2700mm 15.8750mm -3.8100mm 15.8750mm 0.20mm]
+	ElementLine [1.2700mm -3.1750mm 1.2700mm 15.8750mm 0.20mm]
+	ElementLine [-3.8100mm -3.1750mm 1.2700mm -3.1750mm 0.20mm]
+
+	)
+
+Element["" "VISHAY_T93YB" "VISHAY_T93YB" "VISHAY_T93YB" 38.1000mm 50.8000mm -1.2700mm -4.4450mm 0 100 ""]
+(
+	Pin [0.0000 0.0000 1.7780mm 1.00mm 1.88mm 0.8890mm "1" "1" "square"]
+	Pin [0.0000 5.0800mm 1.7780mm 1.00mm 1.88mm 0.8890mm "3" "3" ""]
+	Pin [2.5400mm 2.5400mm 1.7780mm 1.00mm 1.88mm 0.8890mm "2" "2" ""]
+	ElementLine [1.5240mm -1.2700mm 2.5400mm -0.2540mm 0.20mm]
+	ElementLine [0.2540mm 1.7780mm -0.2540mm 1.7780mm 0.20mm]
+	ElementLine [0.2540mm 3.5560mm -0.2540mm 3.5560mm 0.20mm]
+	ElementLine [0.0000 3.5560mm 0.0000 4.0640mm 0.20mm]
+	ElementLine [0.2540mm 1.7780mm 0.2540mm 3.5560mm 0.20mm]
+	ElementLine [-0.2540mm 3.5560mm -0.2540mm 1.7780mm 0.20mm]
+	ElementLine [0.0000 1.0160mm 0.0000 1.7780mm 0.20mm]
+	ElementLine [1.0160mm 2.7940mm 0.5080mm 2.5400mm 0.20mm]
+	ElementLine [1.0160mm 2.2860mm 1.0160mm 2.7940mm 0.20mm]
+	ElementLine [0.5080mm 2.5400mm 1.0160mm 2.2860mm 0.20mm]
+	ElementLine [1.5240mm 2.5400mm 0.5080mm 2.5400mm 0.20mm]
+	ElementLine [-1.2700mm 7.6200mm -1.2700mm -2.5400mm 0.20mm]
+	ElementLine [3.8100mm 7.6200mm -1.2700mm 7.6200mm 0.20mm]
+	ElementLine [3.8100mm -2.5400mm 3.8100mm 7.6200mm 0.20mm]
+	ElementLine [-1.2700mm -2.5400mm 3.8100mm -2.5400mm 0.20mm]
+	ElementArc [2.0325mm -0.7615mm 1.0165mm 1.0165mm 270 90 0.20mm]
+	ElementArc [2.0315mm -0.7615mm 1.0155mm 1.0155mm 0 90 0.20mm]
+	ElementArc [2.0317mm -0.7623mm 1.0163mm 1.0163mm 90 90 0.20mm]
+	ElementArc [2.0320mm -0.7620mm 1.0160mm 1.0160mm 180 90 0.20mm]
+
+	)
+
+Element["" "VISHAY_T93YA" "VISHAY_T93YA" "VISHAY_T93YA" 38.1000mm 76.2000mm -2.5400mm -4.4450mm 0 100 ""]
+(
+	Pin [0.0000 2.5400mm 1.7780mm 1.00mm 1.88mm 0.8890mm "2" "2" ""]
+	Pin [0.0000 5.0800mm 1.7780mm 1.00mm 1.88mm 0.8890mm "3" "3" ""]
+	Pin [0.0000 0.0000 1.5240mm 1.00mm 1.62mm 0.8890mm "1" "1" "square"]
+	ElementLine [-1.2700mm 2.5400mm -1.0160mm 2.5400mm 0.20mm]
+	ElementLine [-1.2700mm 1.7780mm -1.2700mm 3.5560mm 0.20mm]
+	ElementLine [-1.7780mm 3.5560mm -1.7780mm 1.7780mm 0.20mm]
+	ElementLine [-1.5240mm 0.0000 -1.5240mm 1.7780mm 0.20mm]
+	ElementLine [-1.2700mm 3.5560mm -1.7780mm 3.5560mm 0.20mm]
+	ElementLine [-1.2700mm 1.7780mm -1.7780mm 1.7780mm 0.20mm]
+	ElementLine [-1.5240mm 3.5560mm -1.5240mm 5.0800mm 0.20mm]
+	ElementLine [-1.5240mm 5.0800mm -1.0160mm 5.0800mm 0.20mm]
+	ElementLine [-1.5240mm 0.0000 -1.0160mm 0.0000 0.20mm]
+	ElementLine [0.2540mm -1.2700mm 1.2700mm -0.2540mm 0.20mm]
+	ElementLine [-2.5400mm 7.6200mm -2.5400mm -2.5400mm 0.20mm]
+	ElementLine [2.5400mm 7.6200mm -2.5400mm 7.6200mm 0.20mm]
+	ElementLine [2.5400mm -2.5400mm 2.5400mm 7.6200mm 0.20mm]
+	ElementLine [-2.5400mm -2.5400mm 2.5400mm -2.5400mm 0.20mm]
+	ElementArc [0.7617mm -0.7623mm 1.0163mm 1.0163mm 90 90 0.20mm]
+	ElementArc [0.7625mm -0.7615mm 1.0165mm 1.0165mm 270 90 0.20mm]
+	ElementArc [0.7620mm -0.7620mm 1.0160mm 1.0160mm 180 90 0.20mm]
+
+	)
+
+Element["" "ALPS_RK11K112" "ALPS_RK11K112" "ALPS_RK11K112" 38.1000mm 127.0000mm 0.7620mm 6.0960mm 0 100 ""]
+(
+	Pin [0.0000 0.0000 1.8034mm 1.00mm 1.90mm 1.0160mm "1" "1" "square"]
+	Pin [2.5400mm 0.0000 1.9304mm 1.00mm 2.03mm 1.0160mm "2" "2" ""]
+	Pin [5.0800mm 0.0000 1.9304mm 1.00mm 2.03mm 1.0160mm "3" "3" ""]
+	Pin [7.6200mm 0.0000 1.9304mm 1.00mm 2.03mm 1.0160mm "" "" ""]
+	Pin [-2.1199mm -3.2400mm 3.4544mm 1.00mm 3.55mm 2.2860mm "" "" ""]
+	Pin [9.7599mm -3.2019mm 3.4544mm 1.00mm 3.55mm 2.2860mm "" "" ""]
+	Pad[9.7599mm 1.7780mm 9.7599mm 4.0640mm 1.6510mm 1.00mm 1.75mm "" "" ""]
+	Pad[-2.1399mm 1.7780mm -2.1399mm 4.0640mm 1.6510mm 1.00mm 1.75mm "" "" ""]
+	Pad[-2.1399mm -5.8420mm -2.1399mm -3.3020mm 1.6510mm 1.00mm 1.75mm "" "" ""]
+	Pad[9.7599mm -5.8420mm 9.7599mm -3.3020mm 1.6510mm 1.00mm 1.75mm "" "" ""]
+	ElementLine [3.8100mm 2.5400mm 3.8100mm 3.8100mm 0.20mm]
+	ElementLine [3.8100mm 0.0000 3.8100mm 1.2700mm 0.20mm]
+	ElementLine [0.7620mm 9.3980mm 0.7620mm 20.5740mm 0.20mm]
+	ElementLine [8.3820mm 9.3980mm 8.3820mm 4.3180mm 0.20mm]
+	ElementLine [-0.7620mm 9.3980mm 8.3820mm 9.3980mm 0.20mm]
+	ElementLine [-0.7620mm 4.3180mm -0.7620mm 9.3980mm 0.20mm]
+	ElementLine [-0.5080mm -2.0320mm 8.1280mm -2.0320mm 0.20mm]
+	ElementLine [9.7599mm 0.6350mm 9.7599mm -1.1430mm 0.20mm]
+	ElementLine [-1.0160mm 4.3180mm 8.6360mm 4.3180mm 0.20mm]
+	ElementLine [6.8580mm 13.7160mm 6.8580mm 9.3980mm 0.20mm]
+	ElementLine [3.8100mm 13.7160mm 3.8100mm 21.8440mm 0.20mm]
+	ElementLine [2.0320mm 21.8440mm 3.8100mm 21.8440mm 0.20mm]
+	ElementLine [6.8580mm 13.7160mm 3.8100mm 13.7160mm 0.20mm]
+	ElementLine [-2.1590mm -1.2700mm -2.1590mm 0.6350mm 0.20mm]
+	ElementLine [0.7620mm 20.5740mm 2.0320mm 21.8440mm 0.20mm]
+
+	)
+
+Element["" "SPECTROL_534" "SPECTROL_534" "SPECTROL_534" 60.9600mm 175.2600mm -11.4300mm -21.5900mm 0 133 ""]
+(
+	Pin [-2.9210mm -5.0800mm 5.5880mm 1.00mm 5.69mm 3.5560mm "3" "3" ""]
+	Pin [-2.9210mm -11.4300mm 5.5880mm 1.00mm 5.69mm 3.5560mm "2" "2" ""]
+	Pin [2.9210mm -17.0180mm 5.5880mm 1.00mm 5.69mm 3.5560mm "1" "1" ""]
+	ElementLine [0.0000 -1.2700mm 0.0000 -2.5400mm 0.20mm]
+	ElementLine [0.0000 0.0000 0.0000 2.5400mm 0.20mm]
+	ElementLine [5.0800mm -19.0500mm 11.4300mm -19.0500mm 0.20mm]
+	ElementLine [-4.1910mm 1.5240mm -4.1910mm 7.8740mm 0.20mm]
+	ElementLine [-2.4130mm 20.4470mm 2.5400mm 20.4470mm 0.20mm]
+	ElementLine [2.5400mm 20.4470mm 3.1750mm 19.8120mm 0.20mm]
+	ElementLine [-3.1750mm 7.8740mm -3.1750mm 19.6850mm 0.20mm]
+	ElementLine [3.1750mm 19.8120mm 3.1750mm 7.8740mm 0.20mm]
+	ElementLine [4.1910mm 7.8740mm 4.1910mm 1.5240mm 0.20mm]
+	ElementLine [-4.1910mm 7.8740mm 4.1910mm 7.8740mm 0.20mm]
+	ElementLine [-3.1750mm 19.6850mm -2.4130mm 20.4470mm 0.20mm]
+	ElementLine [5.0800mm 1.5240mm 5.0800mm 0.0000 0.20mm]
+	ElementLine [-5.0800mm 1.5240mm 5.0800mm 1.5240mm 0.20mm]
+	ElementLine [-5.0800mm 0.0000 -5.0800mm 1.5240mm 0.20mm]
+	ElementLine [11.4300mm -19.0500mm 11.4300mm 0.0000 0.20mm]
+	ElementLine [-11.4300mm -19.0500mm 0.7620mm -19.0500mm 0.20mm]
+	ElementLine [-11.4300mm 0.0000 -11.4300mm -19.0500mm 0.20mm]
+	ElementLine [-11.4300mm 0.0000 11.4300mm 0.0000 0.20mm]
+
+	)
+
+Element["" "ALPS_RK11K113" "ALPS_RK11K113" "ALPS_RK11K113" 42.0000mm 99.0000mm -5.0000mm 6.0000mm 0 100 ""]
+(
+	Pin [-6.5000mm 0.0000 3.4544mm 1.00mm 3.55mm 2.2860mm "" "" ""]
+	Pin [3.7500mm 13.0000mm 2.2000mm 1.00mm 2.30mm 1.0000mm "" "" ""]
+	Pin [1.2500mm 13.0000mm 2.2000mm 1.00mm 2.30mm 1.0000mm "3" "3" ""]
+	Pin [-1.2500mm 13.0000mm 2.2000mm 1.00mm 2.30mm 1.0000mm "2" "2" ""]
+	Pin [-3.7500mm 13.0000mm 2.2000mm 1.00mm 2.30mm 1.0000mm "1" "1" ""]
+	Pin [6.5000mm 0.0000 3.4544mm 1.00mm 3.55mm 2.2860mm "" "" ""]
+	Pad[-6.5000mm -4.5000mm -6.5000mm 4.5000mm 1.6510mm 1.00mm 1.75mm "" "" ""]
+	Pad[6.5000mm -4.5000mm 6.5000mm 4.5000mm 1.6510mm 1.00mm 1.75mm "" "" ""]
+	ElementLine [-6.5000mm 5.5000mm -6.5000mm 11.2500mm 0.20mm]
+	ElementLine [1.7500mm 11.2500mm 6.5000mm 11.2500mm 0.20mm]
+	ElementLine [6.5000mm 11.2500mm 6.5000mm 5.5000mm 0.20mm]
+	ElementLine [-5.5000mm -5.0000mm 5.5000mm -5.0000mm 0.20mm]
+	ElementLine [1.0000mm 0.0000 -1.0000mm 0.0000 0.20mm]
+	ElementLine [0.0000 -1.0000mm 0.0000 1.0000mm 0.20mm]
+	ElementLine [-1.2500mm 9.5000mm -1.2500mm 11.5000mm 0.20mm]
+	ElementLine [-3.7500mm 8.5000mm -3.7500mm 11.5000mm 0.20mm]
+	ElementLine [1.2500mm 8.5000mm 1.2500mm 11.5000mm 0.20mm]
+	ElementLine [-3.0000mm 8.0000mm -3.0000mm 9.2500mm 0.20mm]
+	ElementLine [-3.0000mm 9.2500mm 0.2500mm 9.2500mm 0.20mm]
+	ElementLine [0.2500mm 9.2500mm 0.2500mm 8.0000mm 0.20mm]
+	ElementLine [0.2500mm 8.0000mm -3.0000mm 8.0000mm 0.20mm]
+	ElementLine [-1.2500mm 9.2500mm -1.5000mm 10.0000mm 0.20mm]
+	ElementLine [-1.5000mm 10.0000mm -1.0000mm 10.0000mm 0.20mm]
+	ElementLine [-1.0000mm 10.0000mm -1.2500mm 9.2500mm 0.20mm]
+	ElementLine [-3.0000mm 8.5000mm -3.7500mm 8.5000mm 0.20mm]
+	ElementLine [0.2500mm 8.5000mm 1.2500mm 8.5000mm 0.20mm]
+	ElementLine [0.7500mm 11.2500mm -0.7500mm 11.2500mm 0.20mm]
+	ElementLine [-1.7500mm 11.2500mm -3.2500mm 11.2500mm 0.20mm]
+	ElementLine [-4.2500mm 11.2500mm -6.5000mm 11.2500mm 0.20mm]
+	ElementArc [0.0000 0.0000 3.0000mm 3.0000mm 90 360 0.20mm]
+
+	)
+
+Element["" "ALPS_RK09K111" "ALPS_RK09K111" "ALPS_RK09K111" 61.5000mm 214.0000mm -3.0000mm -5.0000mm 0 100 ""]
+(
+	Pin [0.0000 0.0000 2.0000mm 1.00mm 2.10mm 1.0000mm "2" "2" ""]
+	Pin [2.5000mm 0.0000 2.0000mm 1.00mm 2.10mm 1.0000mm "3" "3" ""]
+	Pin [-2.5000mm 0.0000 2.0000mm 1.00mm 2.10mm 1.0000mm "1" "1" ""]
+	Pin [-5.0000mm -3.0000mm 3.0000mm 1.00mm 3.10mm 2.0000mm "" "" ""]
+	Pin [5.0000mm -3.0000mm 3.0000mm 1.00mm 3.10mm 2.0000mm "" "" ""]
+	Pad[-5.0000mm -5.5000mm -5.0000mm 3.0000mm 1.1000mm 1.00mm 1.20mm "" "" ""]
+	Pad[5.0000mm -5.5000mm 5.0000mm 3.0000mm 1.1000mm 1.00mm 1.20mm "" "" ""]
+	ElementLine [-5.0000mm 4.0000mm 5.0000mm 4.0000mm 0.20mm]
+	ElementLine [-3.0000mm 4.0000mm -3.0000mm 20.5000mm 0.20mm]
+	ElementLine [-3.0000mm 20.5000mm -2.5000mm 21.0000mm 0.20mm]
+	ElementLine [-2.5000mm 21.0000mm 2.5000mm 21.0000mm 0.20mm]
+	ElementLine [2.5000mm 21.0000mm 3.0000mm 20.5000mm 0.20mm]
+	ElementLine [3.0000mm 20.5000mm 3.0000mm 4.0000mm 0.20mm]
+	ElementLine [-3.0000mm -3.0000mm 3.0000mm -3.0000mm 0.20mm]
+
+	)
+
+Element["" "" "BI_MODEL35" "" 30.0000mm 242.0000mm -2.0000mm -3.5000mm 0 100 ""]
+(
+	Pad[-1.6000mm -1.1000mm -1.6000mm -1.1000mm 1.2000mm 1.00mm 1.30mm "1" "1" "square"]
+	Pad[1.6500mm -0.0500mm 1.6500mm 0.0500mm 1.5000mm 1.00mm 1.60mm "2" "2" "square,edge2"]
+	Pad[-1.6000mm 1.0000mm -1.6000mm 1.0000mm 1.2000mm 1.00mm 1.30mm "3" "3" "square"]
+	ElementLine [0.7000mm 0.0000 -0.7000mm 0.0000 0.20mm]
+	ElementLine [0.0000 -0.7000mm 0.0000 0.7000mm 0.20mm]
+	ElementLine [-0.8000mm -1.5000mm 1.5000mm -1.5000mm 0.20mm]
+	ElementLine [1.5000mm -1.5000mm 1.5000mm -1.0000mm 0.20mm]
+	ElementLine [1.5000mm 1.0000mm 1.5000mm 1.4000mm 0.20mm]
+	ElementLine [1.5000mm 1.4000mm -0.8000mm 1.4000mm 0.20mm]
+	ElementLine [-1.8000mm -0.3000mm -1.8000mm 0.2000mm 0.20mm]
+
+	)
+Layer(1 "top")
+(
+	Line [22.2000mm 121.1580mm 22.2000mm 123.6980mm 1.65mm 0.5080mm ""]
+	Line [10.3001mm 121.1580mm 10.3001mm 123.6980mm 1.65mm 0.5080mm ""]
+	Line [10.3001mm 128.7780mm 10.3001mm 131.0640mm 1.65mm 0.5080mm ""]
+	Line [22.2000mm 128.7780mm 22.2000mm 131.0640mm 1.65mm 0.5080mm ""]
+	Line [9.5000mm 94.5000mm 9.5000mm 103.5000mm 1.65mm 0.5080mm ""]
+	Line [22.5000mm 94.5000mm 22.5000mm 103.5000mm 1.65mm 0.5080mm ""]
+	Line [18.0000mm 217.0000mm 18.0000mm 208.5000mm 1.10mm 1.0000mm "clearline"]
+	Line [28.0000mm 217.0000mm 28.0000mm 208.5000mm 1.10mm 1.0000mm "clearline"]
+	Polygon("clearpoly")
+	(
+		[25.4000mm 2.5400mm] [50.8000mm 2.5400mm] [50.8000mm 86.3600mm] [25.4000mm 86.3600mm] 
+	)
+	Polygon("clearpoly")
+	(
+		[30.4800mm 116.8400mm] [58.4200mm 116.8400mm] [58.4200mm 149.8600mm] [30.4800mm 149.8600mm] 
+	)
+	Polygon("clearpoly")
+	(
+		[43.1800mm 152.4000mm] [78.7400mm 152.4000mm] [78.7400mm 200.6600mm] [43.1800mm 200.6600mm] 
+	)
+	Polygon("clearpoly")
+	(
+		[31.0000mm 91.0000mm] [54.0000mm 91.0000mm] [54.0000mm 115.0000mm] [31.0000mm 115.0000mm] 
+	)
+	Polygon("clearpoly")
+	(
+		[49.0000mm 206.0000mm] [76.5000mm 206.0000mm] [76.5000mm 242.5000mm] [49.0000mm 242.5000mm] 
+	)
+	Polygon("clearpoly")
+	(
+		[16.8000mm 240.3000mm] [18.0000mm 240.3000mm] [18.0000mm 241.5000mm] [16.8000mm 241.5000mm] 
+	)
+	Polygon("clearpoly")
+	(
+		[19.9000mm 241.2000mm] [21.4000mm 241.2000mm] [21.4000mm 242.8000mm] [19.9000mm 242.8000mm] 
+	)
+	Polygon("clearpoly")
+	(
+		[16.8000mm 242.4000mm] [18.0000mm 242.4000mm] [18.0000mm 243.6000mm] [16.8000mm 243.6000mm] 
+	)
+	Polygon("clearpoly")
+	(
+		[25.5000mm 237.0000mm] [36.5000mm 237.0000mm] [36.5000mm 247.5000mm] [25.5000mm 247.5000mm] 
+	)
+)
+Layer(2 "bottom")
+(
+	Polygon("clearpoly")
+	(
+		[29.0000mm 89.0000mm] [52.0000mm 89.0000mm] [52.0000mm 114.0000mm] [29.0000mm 114.0000mm] 
+	)
+	Polygon("clearpoly")
+	(
+		[44.0000mm 237.5000mm] [70.5000mm 237.5000mm] [70.5000mm 206.5000mm] [44.0000mm 206.5000mm] 
+	)
+)
+Layer(3 "comment")
+(
+	Line [10.0000mm 205.0000mm 130.0000mm 205.0000mm 0.20mm 1.0000mm "clearline"]
+	Text[78.7400mm 157.4800mm 0 464 "SPECTROL_534.fp" ""]
+	Text[58.4200mm 124.4600mm 0 485 "ALPS_RK11K112.fp" ""]
+	Text[58.4200mm 73.6600mm 0 485 "VISHAY_T93YA.fp" ""]
+	Text[58.4200mm 48.2600mm 0 485 "VISHAY_T93YB.fp" ""]
+	Text[58.4200mm 15.2400mm 0 485 "VISHAY_T18.fp" ""]
+	Text[58.4200mm 97.4600mm 0 485 "ALPS_RK11K113.fp" ""]
+	Text[108.0000mm 205.0000mm 0 313 "grid is mm" "clearline"]
+	Text[74.2400mm 212.9800mm 0 464 "ALPS_RK09K111.fp" ""]
+	Text[121.0000mm 2.5000mm 0 313 "grid is mil" "clearline"]
+)
+Layer(4 "silk")
+(
+)
+Layer(5 "silk")
+(
+	Line [8.8900mm 9.5250mm 13.9700mm 9.5250mm 0.20mm 0.0000 ""]
+	Line [13.9700mm 9.5250mm 13.9700mm 28.5750mm 0.20mm 0.0000 ""]
+	Line [13.9700mm 28.5750mm 8.8900mm 28.5750mm 0.20mm 0.0000 ""]
+	Line [8.8900mm 28.5750mm 8.8900mm 9.5250mm 0.20mm 0.0000 ""]
+	Line [10.1600mm 28.5750mm 10.1600mm 30.0990mm 0.20mm 0.0000 ""]
+	Line [10.1600mm 30.0990mm 12.5730mm 30.0990mm 0.20mm 0.0000 ""]
+	Line [12.5730mm 30.0990mm 12.5730mm 28.5750mm 0.20mm 0.0000 ""]
+	Line [11.4300mm 48.2600mm 16.5100mm 48.2600mm 0.20mm 0.0000 ""]
+	Line [16.5100mm 48.2600mm 16.5100mm 58.4200mm 0.20mm 0.0000 ""]
+	Line [16.5100mm 58.4200mm 11.4300mm 58.4200mm 0.20mm 0.0000 ""]
+	Line [11.4300mm 58.4200mm 11.4300mm 48.2600mm 0.20mm 0.0000 ""]
+	Line [14.2240mm 53.3400mm 13.2080mm 53.3400mm 0.20mm 0.0000 ""]
+	Line [13.2080mm 53.3400mm 13.7160mm 53.0860mm 0.20mm 0.0000 ""]
+	Line [13.7160mm 53.0860mm 13.7160mm 53.5940mm 0.20mm 0.0000 ""]
+	Line [13.7160mm 53.5940mm 13.2080mm 53.3400mm 0.20mm 0.0000 ""]
+	Line [12.7000mm 51.8160mm 12.7000mm 52.5780mm 0.20mm 0.0000 ""]
+	Line [12.4460mm 54.3560mm 12.4460mm 52.5780mm 0.20mm 0.0000 ""]
+	Line [12.9540mm 52.5780mm 12.9540mm 54.3560mm 0.20mm 0.0000 ""]
+	Line [12.7000mm 54.3560mm 12.7000mm 54.8640mm 0.20mm 0.0000 ""]
+	Line [12.9540mm 54.3560mm 12.4460mm 54.3560mm 0.20mm 0.0000 ""]
+	Line [12.9540mm 52.5780mm 12.4460mm 52.5780mm 0.20mm 0.0000 ""]
+	Line [14.2240mm 49.5300mm 15.2400mm 50.5460mm 0.20mm 0.0000 ""]
+	Line [10.1600mm 73.6600mm 15.2400mm 73.6600mm 0.20mm 0.0000 ""]
+	Line [15.2400mm 73.6600mm 15.2400mm 83.8200mm 0.20mm 0.0000 ""]
+	Line [15.2400mm 83.8200mm 10.1600mm 83.8200mm 0.20mm 0.0000 ""]
+	Line [10.1600mm 83.8200mm 10.1600mm 73.6600mm 0.20mm 0.0000 ""]
+	Line [12.9540mm 74.9300mm 13.9700mm 75.9460mm 0.20mm 0.0000 ""]
+	Line [11.1760mm 76.2000mm 11.6840mm 76.2000mm 0.20mm 0.0000 ""]
+	Line [11.1760mm 81.2800mm 11.6840mm 81.2800mm 0.20mm 0.0000 ""]
+	Line [11.1760mm 79.7560mm 11.1760mm 81.2800mm 0.20mm 0.0000 ""]
+	Line [11.4300mm 77.9780mm 10.9220mm 77.9780mm 0.20mm 0.0000 ""]
+	Line [11.4300mm 79.7560mm 10.9220mm 79.7560mm 0.20mm 0.0000 ""]
+	Line [11.1760mm 76.2000mm 11.1760mm 77.9780mm 0.20mm 0.0000 ""]
+	Line [10.9220mm 79.7560mm 10.9220mm 77.9780mm 0.20mm 0.0000 ""]
+	Line [11.4300mm 77.9780mm 11.4300mm 79.7560mm 0.20mm 0.0000 ""]
+	Line [11.4300mm 78.7400mm 11.6840mm 78.7400mm 0.20mm 0.0000 ""]
+	Line [11.4300mm 175.2600mm 34.2900mm 175.2600mm 0.20mm 0.0000 ""]
+	Line [11.4300mm 175.2600mm 11.4300mm 156.2100mm 0.20mm 0.0000 ""]
+	Line [11.4300mm 156.2100mm 22.8600mm 156.2100mm 0.20mm 0.0000 ""]
+	Line [34.2900mm 156.2100mm 34.2900mm 175.2600mm 0.20mm 0.0000 ""]
+	Line [17.7800mm 175.2600mm 17.7800mm 176.7840mm 0.20mm 0.0000 ""]
+	Line [17.7800mm 176.7840mm 27.9400mm 176.7840mm 0.20mm 0.0000 ""]
+	Line [27.9400mm 176.7840mm 27.9400mm 175.2600mm 0.20mm 0.0000 ""]
+	Line [19.6850mm 194.9450mm 20.4470mm 195.7070mm 0.20mm 0.0000 ""]
+	Line [18.6690mm 183.1340mm 27.0510mm 183.1340mm 0.20mm 0.0000 ""]
+	Line [27.0510mm 183.1340mm 27.0510mm 176.7840mm 0.20mm 0.0000 ""]
+	Line [26.0350mm 195.0720mm 26.0350mm 183.1340mm 0.20mm 0.0000 ""]
+	Line [19.6850mm 183.1340mm 19.6850mm 194.9450mm 0.20mm 0.0000 ""]
+	Line [25.4000mm 195.7070mm 26.0350mm 195.0720mm 0.20mm 0.0000 ""]
+	Line [20.4470mm 195.7070mm 25.4000mm 195.7070mm 0.20mm 0.0000 ""]
+	Line [18.6690mm 176.7840mm 18.6690mm 183.1340mm 0.20mm 0.0000 ""]
+	Line [29.2100mm 156.2100mm 34.2900mm 156.2100mm 0.20mm 0.0000 ""]
+	Line [22.8600mm 175.2600mm 22.8600mm 177.8000mm 0.20mm 0.5080mm "clearline"]
+	Line [22.8600mm 173.9900mm 22.8600mm 172.7200mm 0.20mm 0.3048mm "clearline"]
+	Line [13.2020mm 147.5740mm 14.4720mm 148.8440mm 0.20mm 0.0000 ""]
+	Line [10.2810mm 125.9300mm 10.2810mm 127.6350mm 0.20mm 0.0000 ""]
+	Line [19.2980mm 140.7160mm 16.2500mm 140.7160mm 0.20mm 0.0000 ""]
+	Line [14.4720mm 148.8440mm 16.2500mm 148.8440mm 0.20mm 0.0000 ""]
+	Line [16.2500mm 140.7160mm 16.2500mm 148.8440mm 0.20mm 0.0000 ""]
+	Line [19.2980mm 140.7160mm 19.2980mm 136.3980mm 0.20mm 0.0000 ""]
+	Line [11.4240mm 131.3180mm 21.0760mm 131.3180mm 0.20mm 0.0000 ""]
+	Line [22.2000mm 127.6350mm 22.2000mm 125.8570mm 0.20mm 0.0000 ""]
+	Line [11.9320mm 124.9680mm 20.5680mm 124.9680mm 0.20mm 0.0000 ""]
+	Line [11.6780mm 131.3180mm 11.6780mm 136.3980mm 0.20mm 0.0000 ""]
+	Line [11.6780mm 136.3980mm 20.8220mm 136.3980mm 0.20mm 0.0000 ""]
+	Line [20.8220mm 136.3980mm 20.8220mm 131.3180mm 0.20mm 0.0000 ""]
+	Line [13.2020mm 136.3980mm 13.2020mm 147.5740mm 0.20mm 0.0000 ""]
+	Line [16.2500mm 127.0000mm 16.2500mm 127.7500mm 0.20mm 0.0000 ""]
+	Line [15.0000mm 128.2500mm 15.0000mm 129.0000mm 0.20mm 1.0000mm "clearline"]
+	Line [17.5000mm 128.2500mm 17.5000mm 130.0000mm 0.20mm 1.0000mm "clearline"]
+	Line [12.5000mm 128.2500mm 12.5000mm 130.0000mm 0.20mm 1.0000mm "clearline"]
+	Line [16.7500mm 129.2500mm 16.7500mm 130.5000mm 0.20mm 1.0000mm "clearline"]
+	Line [13.5000mm 129.2500mm 16.7500mm 129.2500mm 0.20mm 1.0000mm "clearline"]
+	Line [13.5000mm 129.2500mm 13.5000mm 130.5000mm 0.20mm 1.0000mm "clearline"]
+	Line [13.5000mm 130.5000mm 16.7500mm 130.5000mm 0.20mm 1.0000mm "clearline"]
+	Line [15.0000mm 129.2500mm 15.2500mm 128.5000mm 0.20mm 1.0000mm "clearline"]
+	Line [14.7500mm 128.5000mm 15.2500mm 128.5000mm 0.20mm 1.0000mm "clearline"]
+	Line [14.7500mm 128.5000mm 15.0000mm 129.2500mm 0.20mm 1.0000mm "clearline"]
+	Line [16.7500mm 130.0000mm 17.5000mm 130.0000mm 0.20mm 1.0000mm "clearline"]
+	Line [12.5000mm 130.0000mm 13.5000mm 130.0000mm 0.20mm 1.0000mm "clearline"]
+	Line [9.5000mm 104.5000mm 9.5000mm 110.2500mm 0.20mm 1.0000mm "clearline"]
+	Line [17.7500mm 110.2500mm 22.5000mm 110.2500mm 0.20mm 1.0000mm "clearline"]
+	Line [22.5000mm 110.2500mm 22.5000mm 104.5000mm 0.20mm 1.0000mm "clearline"]
+	Line [10.5000mm 94.0000mm 21.5000mm 94.0000mm 0.20mm 1.0000mm "clearline"]
+	Line [17.0000mm 99.0000mm 15.0000mm 99.0000mm 0.20mm 1.0000mm "clearline"]
+	Line [16.0000mm 98.0000mm 16.0000mm 100.0000mm 0.20mm 1.0000mm "clearline"]
+	Line [14.7500mm 108.5000mm 14.7500mm 110.5000mm 0.20mm 1.0000mm "clearline"]
+	Line [12.2500mm 107.5000mm 12.2500mm 110.5000mm 0.20mm 1.0000mm "clearline"]
+	Line [17.2500mm 107.5000mm 17.2500mm 110.5000mm 0.20mm 1.0000mm "clearline"]
+	Line [13.0000mm 107.0000mm 13.0000mm 108.2500mm 0.20mm 1.0000mm "clearline"]
+	Line [13.0000mm 108.2500mm 16.2500mm 108.2500mm 0.20mm 1.0000mm "clearline"]
+	Line [16.2500mm 108.2500mm 16.2500mm 107.0000mm 0.20mm 1.0000mm "clearline"]
+	Line [16.2500mm 107.0000mm 13.0000mm 107.0000mm 0.20mm 1.0000mm "clearline"]
+	Line [14.7500mm 108.2500mm 14.5000mm 109.0000mm 0.20mm 1.0000mm "clearline"]
+	Line [14.5000mm 109.0000mm 15.0000mm 109.0000mm 0.20mm 1.0000mm "clearline"]
+	Line [15.0000mm 109.0000mm 14.7500mm 108.2500mm 0.20mm 1.0000mm "clearline"]
+	Line [13.0000mm 107.5000mm 12.2500mm 107.5000mm 0.20mm 1.0000mm "clearline"]
+	Line [16.2500mm 107.5000mm 17.2500mm 107.5000mm 0.20mm 1.0000mm "clearline"]
+	Line [16.7500mm 110.2500mm 15.2500mm 110.2500mm 0.20mm 1.0000mm "clearline"]
+	Line [14.2500mm 110.2500mm 12.7500mm 110.2500mm 0.20mm 1.0000mm "clearline"]
+	Line [11.7500mm 110.2500mm 9.5000mm 110.2500mm 0.20mm 1.0000mm "clearline"]
+	Line [18.0000mm 218.0000mm 28.0000mm 218.0000mm 0.20mm 1.0000mm "clearline"]
+	Line [20.0000mm 218.0000mm 20.0000mm 234.5000mm 0.20mm 1.0000mm "clearline"]
+	Line [20.0000mm 234.5000mm 20.5000mm 235.0000mm 0.20mm 1.0000mm "clearline"]
+	Line [20.5000mm 235.0000mm 25.5000mm 235.0000mm 0.20mm 1.0000mm "clearline"]
+	Line [25.5000mm 235.0000mm 26.0000mm 234.5000mm 0.20mm 1.0000mm "clearline"]
+	Line [26.0000mm 234.5000mm 26.0000mm 218.0000mm 0.20mm 1.0000mm "clearline"]
+	Line [20.0000mm 211.0000mm 26.0000mm 211.0000mm 0.20mm 1.0000mm "clearline"]
+	Line [19.7000mm 242.0000mm 18.3000mm 242.0000mm 0.20mm 1.0000mm "clearline"]
+	Line [19.0000mm 241.3000mm 19.0000mm 242.7000mm 0.20mm 1.0000mm "clearline"]
+	Line [18.2000mm 240.5000mm 20.5000mm 240.5000mm 0.20mm 1.0000mm "clearline"]
+	Line [20.5000mm 240.5000mm 20.5000mm 241.0000mm 0.20mm 1.0000mm "clearline"]
+	Line [20.5000mm 243.0000mm 20.5000mm 243.4000mm 0.20mm 1.0000mm "clearline"]
+	Line [20.5000mm 243.4000mm 18.2000mm 243.4000mm 0.20mm 1.0000mm "clearline"]
+	Line [17.2000mm 241.7000mm 17.2000mm 242.2000mm 0.20mm 1.0000mm "clearline"]
+	Arc [14.7320mm 50.0380mm 1.0160mm 1.0160mm 0.20mm 0.0000 180 90 ""]
+	Arc [14.7317mm 50.0377mm 1.0163mm 1.0163mm 0.20mm 0.0000 90 90 ""]
+	Arc [14.7315mm 50.0385mm 1.0155mm 1.0155mm 0.20mm 0.0000 0 90 ""]
+	Arc [14.7325mm 50.0385mm 1.0165mm 1.0165mm 0.20mm 0.0000 270 90 ""]
+	Arc [13.4620mm 75.4380mm 1.0160mm 1.0160mm 0.20mm 0.0000 180 90 ""]
+	Arc [13.4625mm 75.4385mm 1.0165mm 1.0165mm 0.20mm 0.0000 270 90 ""]
+	Arc [13.4617mm 75.4377mm 1.0163mm 1.0163mm 0.20mm 0.0000 90 90 ""]
+	Arc [16.0000mm 99.0000mm 3.0000mm 3.0000mm 0.20mm 1.0000mm 90 360 "clearline"]
+)
