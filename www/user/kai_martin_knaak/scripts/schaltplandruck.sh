@@ -1,26 +1,22 @@
 #!/bin/bash
 # A script to print all sheets of a hierarchical gschem schematic to PDF
-#################################################-<(kmk)>- 2010 ########
+#################################################-<(kmk)>- 2013 ########
 
 
 function shorthelp {
   echo ""
   echo "Collects all sub sheets of a hierarchical design and prints them to multi"
   echo "page postscript and PDF. Schematics are sorted according to page attribute."
-  echo "Uses awk, psmerge, ps2pdf poster and optionally evince"
-  echo "Usage: `basename $0` [-V] foobar.sch"
+  echo "If no file name is given on the command line, the script assumes that the"
+  echo "name of the script contains the file name of the schematic prefixed with"
+  echo "the string \"schaltplandruck_\"."
+  echo "This script uses awk, psmerge, ps2pdf poster and optionally evince"
+  echo " "
+  echo "Usage: `basename $0` [-V] [-?] [foobar.sch]"
   echo "-V     launch viewer on produced output"
+  echo "-?     print this help message and exit"
   echo ""
 }
-
-
-if [ $# -eq 0 ]    # If script invoked with no command-line args
-then
-     echo "No schematic file given... --> exit"
-     exit
-     SCHFILE=XXXX
-     SCHEMDIR=..
-fi  
 
 STARTVIEWER=0
 while getopts ":V?" Option
@@ -28,16 +24,26 @@ do
   case $Option in
     V     ) echo "will start PDF viewer "; STARTVIEWER=1 ;;
     ?     ) shorthelp; exit ;;
-    *     ) echo "Unknown option: "$Option ;;   # Default.
+    *     ) echo "Unknown option: "$Option ; shorthelp; exit ;;   # Default.
   esac
 done
 shift $(($OPTIND - 1))   # go to next argument
 
-###########
-# Some shell variables
 
-SCHFILE=`basename $1`
-SCHEMDIR=`dirname $1`
+###########
+# set some shell variables
+
+if [ $# -eq 0 ]    # If script invoked with no command-line args
+then
+  SCRIPTNAME=`basename $0 ".sh"`
+  SCHFILE=${SCRIPTNAME##schaltplandruck_}".sch"
+  echo "No schematic file given... --> try to guess from name of the script: ../"$SCHFILE
+  SCHEMDIR=..
+else               # If script invoked with more than one argument
+  SCHFILE=`basename $1`
+  SCHEMDIR=`dirname $1`
+fi
+
 WORKINGDIR=$PWD
 PREFIX="/tmp/out_schaltplandruck"
 
@@ -45,7 +51,7 @@ OUTPDF=`basename $SCHFILE .sch`"_schematic_"`date +%F`".pdf"
 OUTPS=`basename $SCHFILE .sch`"_schematic_"`date +%F`".ps"
 
 ##########
-# This function is called for every subsheet 
+# this function is called for every subsheet 
 
 function subsheet {
   # Check for source attributes sort and drop duplicates
@@ -79,7 +85,7 @@ poster $PREFIX"_001.eps" > $PREFIX"_001.ps"
 subsheet $SCHFILE
  
 ## Combine to a single document
-psmerge -o$PREFIX"_merged.ps" $PREFIX"_"*".ps"
+psmerge -o$PREFIX"_merged.ps" $PREFIX"_"[0-9]*".ps"
 
 ## Convert to PDF
 ps2pdf $PREFIX"_merged.ps" $WORKINGDIR/$OUTPDF

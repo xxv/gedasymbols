@@ -2,7 +2,7 @@
 # Ein einfaches Script, das ein geda-Projekt nach dem Geschmack von
 # ---<(kaimartin)>--- anlegt. 
 
-# This program is copyright (C) 2009-2012, Kai-Martin Knaak
+# This program is copyright (C) 2009-2014, Kai-Martin Knaak
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License version 3 as
@@ -128,7 +128,7 @@ NAME='$name'
 VERSION='$VERSION'
 LAYOUT='../$NAME.pcb'
 
-pcb -x gerber --gerberfile $NAME"_"$VERSION --name-style first $LAYOUT
+pcb -x gerber --metric --gerberfile $NAME"_"$VERSION --name-style first $LAYOUT
 
 echo "Add a README for the fab"
 echo \
@@ -202,8 +202,9 @@ T 49000 42900 5 8 0 0 0 0 1
 symversion=1.0
 }" > $name.sch
 
+
 #########################Create an empty layout##############################
-# This actually starts pcb and executes a couple of commands through a pipe.
+# This starts pcb and executes a couple of actions through a pipe.
 echo "Create an empty layout"
 echo \
 "ChangeName(Layout) "\
@@ -211,6 +212,17 @@ echo \
 "Quit() "\
 | pcb --listen \
  --fab-author \"$AUTHOR\" \
+ --grid "0.5mm" \
+ --grid-units "mm" \
+ --draw-grid "no" \
+ --clear-line "yes" \
+ --full-poly "yes" \
+ --unique-name "no" \
+ --snap-pin "yes" \
+ --save-in-tmp  "yes" \
+ --all-direction-lines "no" \
+ --show-number "no" \
+ --text-scale "100" \
  --groups "1,2,3,c:4,5,5,s:7:8" \
  --layer-name-1 "top" \
  --layer-name-2 "top-polyg." \
@@ -220,28 +232,27 @@ echo \
  --layer-name-6 "bott.-GND" \
  --layer-name-7 "comment" \
  --layer-name-8 "outline" \
- --bloat 600 \
- --shrink 1000 \
- --min-width 600 \
- --min-silk 600 \
- --min-drill 1500 \
- --min-ring 1000 \
+ --bloat 0.15mm \
+ --shrink 0.1mm \
+ --min-width 0.4mm \
+ --min-silk 0.3mm \
+ --min-drill 0.3mm \
+ --min-ring 0.15mm \
  --route-styles \
-"Signal,1000,3600,2000,1000\
-:Power,2500,6000,3500,1000\
-:Fat,4000,6000,3500,1000\
-:Skinny,600,2402,1181,600" \
- --default-PCB-width 600000 \
- --default-PCB-height 600000 \
- --grid-increment-mm 1.000000 \
- --grid-increment-mil 20.000000 \
- --size-increment-mm 0.200000 \
- --size-increment-mil 10.000000 \
- --line-increment-mm 0.100000 \
- --line-increment-mil 8.000000 \
- --clear-increment-mm 0.500000 \
- --clear-increment-mil 2.000000
-
+"Skinny,0.1500mm,0.6000mm,0.4mm,0.5000mm\
+:Signal,0.3000mm,1.0000mm,0.6000mm,0.5000mm\
+:Power,0.6000mm,1.0000mm,0.6000mm,0.5000mm\
+:Fat,1.2000mm,1.5000mm,1.000mm,0.5000mm" \
+ --default-PCB-width 10cm \
+ --default-PCB-height 10cm \
+ --grid-increment-mm 1mm \
+ --grid-increment-mil 20mil \
+ --size-increment-mm 0.2mm \
+ --size-increment-mil 10mil \
+ --line-increment-mm 0.1mm \
+ --line-increment-mil 10mil \
+ --clear-increment-mm 0.5mm \
+ --clear-increment-mil 10mil
 
 
 ###############begin LyX template###################################
@@ -436,7 +447,7 @@ PCB.*.backup
 if [ -d gerber ]; then
 echo \
 "
-\# Do not include gerber files in git repo. 
+\# Do not include gerber files in git repo.
 \# They can readily be reproduced when needed.
 *.gbr
 *.cnc
@@ -460,8 +471,8 @@ git config branch.master.remote origin
 git config branch.master.merge refs/heads/master
 
 # let origin point to where a bare repo is going to be installed
-git remote add origin 'git://localhost/git/'$NAME'.git'
-git remote set-url origin git://localhost/git/$NAME'.git'
+git remote add origin 'http://localhost/git/'$NAME'.git'
+git remote set-url origin http://localhost/git/$NAME'.git'
 
 # allow push via http. Needs git-http-backend configured in apache config.
 git remote set-url --push origin http://localhost/git/$NAME'.git'

@@ -25,31 +25,31 @@ cp symbols/analog/regulators/regulator_negative_fixed.sym $PRE/analog
 cp symbols/analog/regulators/regulator_negative_variable.sym $PRE/analog
 
 ### discretes ###
-cp symbols/discrete/diodes/diode.sym $PRE/discrete
-cp symbols/discrete/diodes/zener.sym $PRE/discrete
-cp symbols/discrete/diodes/photodiode_BPW34.sym $PRE/discrete
-cp symbols/discrete/diodes/led.sym $PRE/discrete
-cp symbols/discrete/transistors/nmosfet.sym $PRE/discrete
-cp symbols/discrete/transistors/nmosfet_power.sym $PRE/discrete
-cp symbols/discrete/transistors/pmosfet.sym $PRE/discrete
-cp symbols/discrete/transistors/pmosfet_power.sym $PRE/discrete
-cp symbols/discrete/transistors/npn_transistor.sym $PRE/discrete
-cp symbols/discrete/transistors/pnp_transistor.sym $PRE/discrete
-cp symbols/discrete/transistors/igbt.sym $PRE/discrete
+cp symbols/discretes/diodes/diode.sym $PRE/discrete
+cp symbols/discretes/diodes/zener.sym $PRE/discrete
+cp symbols/discretes/diodes/photodiode_BPW34.sym $PRE/discrete
+cp symbols/discretes/diodes/led.sym $PRE/discrete
+cp symbols/discretes/transistors/nmosfet.sym $PRE/discrete
+cp symbols/discretes/transistors/nmosfet_power.sym $PRE/discrete
+cp symbols/discretes/transistors/pmosfet.sym $PRE/discrete
+cp symbols/discretes/transistors/pmosfet_power.sym $PRE/discrete
+cp symbols/discretes/transistors/npn_transistor.sym $PRE/discrete
+cp symbols/discretes/transistors/pnp_transistor.sym $PRE/discrete
+cp symbols/discretes/transistors/igbt.sym $PRE/discrete
 
-cp symbols/discrete/cap_horiz.sym $PRE/discrete
-cp symbols/discrete/cap_vert.sym $PRE/discrete
-cp symbols/discrete/elko.sym $PRE/discrete
-cp symbols/discrete/potentiometer.sym $PRE/discrete
-cp symbols/discrete/potentiometer_vert.sym $PRE/discrete
-cp symbols/discrete/varistor.sym $PRE/discrete
+cp symbols/discretes/cap_horiz.sym $PRE/discrete
+cp symbols/discretes/cap_vert.sym $PRE/discrete
+cp symbols/discretes/elko.sym $PRE/discrete
+cp symbols/discretes/potentiometer.sym $PRE/discrete
+cp symbols/discretes/potentiometer_vert.sym $PRE/discrete
+cp symbols/discretes/varistor.sym $PRE/discrete
 
-cp symbols/discrete/inductor.sym $PRE/discrete
+cp symbols/discretes/inductor.sym $PRE/discrete
 
 # slightly different in essential-lib compared to kaimartin-lib
 # cp symbols/analog/res.sym $PRE/discrete
 # cp symbols/analog/res2.sym $PRE/discrete
-# cp symbols/discrete/res_vert.sym $PRE/discrete
+# cp symbols/discretes/res_vert.sym $PRE/discrete
 
 
 ### digital ###
@@ -64,9 +64,9 @@ cp symbols/digital/74xxx/74_pwr16.sym $PRE/digital
 
 
 ### titleblock ###
-cp symbols/titleblock/title-block.sym $PRE/titleblock/titleblock.sym
-cp symbols/titleblock/in.sym $PRE/titleblock
-cp symbols/titleblock/out.sym $PRE/titleblock
+cp symbols/titleblocks/title-block.sym $PRE/titleblock/titleblock.sym
+cp symbols/titleblocks/in.sym $PRE/titleblock
+cp symbols/titleblocks/out.sym $PRE/titleblock
 
 
 ### power ###
@@ -79,7 +79,7 @@ cp symbols/power/5V+.sym $PRE/power
 cp symbols/power/nc.sym $PRE/power
 
 ### connectors ###
-###### FIXME #####
+###### FIXME, addme #####
 
 ### misc ###
 cp symbols/misc/jumper.sym $PRE/misc
@@ -101,38 +101,38 @@ cp footprints/discretes/res_400mil.fp $PRE/discrete
 cp footprints/discretes/res_800mil.fp $PRE/discrete
 cp footprints/discretes/res_vert.fp $PRE/discrete
 
-cp footprints/discretes/cap_100mil.fp $PRE/discrete
-cp footprints/discretes/cap_200mil.fp $PRE/discrete
-cp footprints/discretes/cap_200mil_a.fp $PRE/discrete
-cp footprints/discretes/cap_200mil_b.fp $PRE/discrete
-cp footprints/discretes/cap_200mil_c.fp $PRE/discrete
-cp footprints/discretes/cap_1100mil.fp $PRE/discrete
+cp footprints/discretes/capacitors/cap_100mil.fp $PRE/discrete
+cp footprints/discretes/capacitors/cap_200mil.fp $PRE/discrete
+cp footprints/discretes/capacitors/cap_200mil_a.fp $PRE/discrete
+cp footprints/discretes/capacitors/cap_200mil_b.fp $PRE/discrete
+cp footprints/discretes/capacitors/cap_200mil_c.fp $PRE/discrete
+cp footprints/discretes/capacitors/cap_1100mil.fp $PRE/discrete
 
-cp footprints/discretes/elko_RM25_D6.fp $PRE/discrete
-cp footprints/discretes/elko_RM35_D8.fp $PRE/discrete
-cp footprints/discretes/elko_RM5_D6.fp $PRE/discrete
-cp footprints/discretes/elko_RM5_D10.fp $PRE/discrete
-cp footprints/discretes/elko_RM5_D13.fp $PRE/discrete
-cp footprints/discretes/elko_RM75_D16.fp $PRE/discrete
-cp footprints/discretes/elko_RM75_D18.fp $PRE/discrete
-cp footprints/discretes/elko_RM10_D22.fp $PRE/discrete
-cp footprints/discretes/elko_BC_D35.fp $PRE/discrete
+cp footprints/discretes/capacitors/elko_RM25_D6.fp $PRE/discrete
+cp footprints/discretes/capacitors/elko_RM35_D8.fp $PRE/discrete
+cp footprints/discretes/capacitors/elko_RM5_D6.fp $PRE/discrete
+cp footprints/discretes/capacitors/elko_RM5_D10.fp $PRE/discrete
+cp footprints/discretes/capacitors/elko_RM5_D13.fp $PRE/discrete
+cp footprints/discretes/capacitors/elko_RM75_D16.fp $PRE/discrete
+cp footprints/discretes/capacitors/elko_RM75_D18.fp $PRE/discrete
+cp footprints/discretes/capacitors/elko_RM10_D22.fp $PRE/discrete
+cp footprints/discretes/capacitors/elko_BC_D35.fp $PRE/discrete
 
-cp footprints/discretes/dio_minimelf.fp $PRE/discrete
-cp footprints/discretes/dio_1812.fp $PRE/discrete
-cp footprints/discretes/dio_400mil.fp $PRE/discrete
+cp footprints/discretes/diodes/dio_minimelf.fp $PRE/discrete
+cp footprints/discretes/diodes/dio_1812.fp $PRE/discrete
+cp footprints/discretes/diodes/dio_400mil.fp $PRE/discrete
 
-cp footprints/discretes/LED_1206.fp $PRE/discrete
-cp footprints/discretes/LED_3mm.fp $PRE/discrete
-cp footprints/discretes/LED_5mm.fp $PRE/discrete
+cp footprints/discretes/diodes/LED_1206.fp $PRE/discrete
+cp footprints/discretes/diodes/LED_3mm.fp $PRE/discrete
+cp footprints/discretes/diodes/LED_5mm.fp $PRE/discrete
 
-cp footprints/discretes/ind_300mil.fp $PRE/discrete
-cp footprints/discretes/ind_400mil.fp $PRE/discrete
+cp footprints/discretes/inductors/ind_300mil.fp $PRE/discrete
+cp footprints/discretes/inductors/ind_400mil.fp $PRE/discrete
 
-cp footprints/discretes/var_8mm.fp $PRE/discrete
-cp footprints/discretes/var_8mm_lay.fp $PRE/discrete
-cp footprints/discretes/var_10mm.fp $PRE/discrete
-cp footprints/discretes/var_10mm_lay.fp $PRE/discrete
+cp footprints/discretes/varistors/var_8mm.fp $PRE/discrete
+cp footprints/discretes/varistors/var_8mm_lay.fp $PRE/discrete
+cp footprints/discretes/varistors/var_10mm.fp $PRE/discrete
+cp footprints/discretes/varistors/var_10mm_lay.fp $PRE/discrete
 
 ########### generic footprints for discretes #######
 cp footprints/generic/SOT23_BEC.fp $PRE/discrete
@@ -188,10 +188,10 @@ cp footprints/specific/BPW34.fp $PRE/specific
 cp footprints/specific/BPW34S.fp $PRE/specific
 cp footprints/specific/BPW34_upsidedown.fp $PRE/specific
 cp footprints/specific/BPW34S_upsidedown.fp $PRE/specific
-cp footprints/potentiometers/VISHAY_T93YA.fp $PRE/specific
-cp footprints/potentiometers/VISHAY_T93YB.fp $PRE/specific
-cp footprints/potentiometers/VISHAY_T18.fp $PRE/specific
-cp footprints/potentiometers/ALPS_RK11K112.fp $PRE/specific
+cp footprints/discretes/potentiometers/VISHAY_T93YA.fp $PRE/specific
+cp footprints/discretes/potentiometers/VISHAY_T93YB.fp $PRE/specific
+cp footprints/discretes/potentiometers/VISHAY_T18.fp $PRE/specific
+cp footprints/discretes/potentiometers/ALPS_RK11K112.fp $PRE/specific
 
 
 ### specific SMD ###

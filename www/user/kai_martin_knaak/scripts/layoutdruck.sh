@@ -30,11 +30,13 @@ fi
 BOTTOMTHRU=0
 PHOTOOUTPUT=0
 STARTVIEWER=0
+EPS=0
 while getopts ":spV" Option
 do
   case $Option in
     s     ) echo "add a page with mirrored top silk on bottom layer"; BOTTOMTHRU=1 ;;
     p     ) echo "produce photorealistic image "; PHOTOOUTPUT=1 ;;
+    e     ) echo "produce EPS files for inclusion in LyX documentation" EPS=1 ;;
     V     ) echo "automatically start viewers "; STARTVIEWER=1 ;;
     *     ) echo "unknown option: \""$Option"\"" ; exit;   # Default.
   esac
@@ -51,7 +53,7 @@ OUTPNG=$NAME"_layout_"`date +%F`".png"
 OUTPNG_BOTTOM=$NAME"_layout_bottom_"`date +%F`".png"
 PCB=/usr/local/bin/pcb
 PDFVIEWER=/usr/bin/okular
-PNGVIEWER=/usr/bin/gthumb
+PNGVIEWER=/usr/bin/okular
 SIZE="20x30cm"
 PAPERSIZE="A4"
 TMPDIR=/tmp/layoutdruck
@@ -236,9 +238,13 @@ psmerge -o$TMPDIR/out.ps $PAGES
 ps2pdf $TMPDIR/out.ps $OUTPDF
 
 ## save the eps files for use in lyx documentation
-for i in $PAGES; do 
-     cp $TMPDIR/`basename $i .ps`.eps  $PWD/$NAME"_"`basename $i .ps`.eps
- done
+if [ $EPS == "1" ]
+then
+  echo "Save EPS files in current working directory"
+  for i in $PAGES; do 
+       cp $TMPDIR/`basename $i .ps`.eps  $PWD/$NAME"_"`basename $i .ps`.eps
+  done
+fi
 
 ### optionally start viewer.###
 if [ $STARTVIEWER == "1" ]
