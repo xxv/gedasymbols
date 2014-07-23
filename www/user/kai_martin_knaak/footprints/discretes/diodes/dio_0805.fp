@@ -1,0 +1,22 @@
+Element["" "dio_0805" "dio_0805" "dio_0805" 28.0000mm 61.0000mm -2.5000mm -2.7500mm 0 100 ""]
+(
+	Pad[50.79mil 0.0000 50.79mil 0.0000 60.00mil 39.37mil 63.94mil "anode" "2" "square,edge2"]
+	Pad[-49.21mil 0.0000 -49.21mil 0.0000 60.00mil 39.37mil 63.94mil "cathode" "1" "square"]
+	ElementLine [-89.21mil -1.0000mm -89.21mil 40.00mil 8.00mil]
+	ElementLine [-2.4500mm -40.00mil 90.79mil -40.00mil 8.00mil]
+	ElementLine [90.79mil -40.00mil 90.79mil 40.00mil 8.00mil]
+	ElementLine [-2.4500mm 40.00mil 90.79mil 40.00mil 8.00mil]
+	ElementLine [-0.3501mm -0.5999mm -0.3501mm 0.6002mm 8.00mil]
+	ElementLine [-2.4500mm -40.00mil -2.4500mm 1.0010mm 8.00mil]
+	ElementLine [-0.3501mm 0.0001mm 0.2001mm 0.0000 8.00mil]
+	ElementLine [0.1500mm -0.2499mm 0.1500mm 0.2502mm 8.00mil]
+	ElementLine [0.1500mm -0.2499mm 0.3999mm -0.2499mm 8.00mil]
+	ElementLine [0.1500mm 0.2502mm 0.3999mm 0.2502mm 8.00mil]
+	ElementLine [0.2501mm -0.3000mm 0.2501mm 0.2002mm 8.00mil]
+	ElementLine [0.0499mm -0.1999mm 0.0499mm 0.2002mm 8.00mil]
+	ElementLine [-0.3501mm 0.0000 0.3999mm -0.5000mm 8.00mil]
+	ElementLine [0.3999mm -0.5000mm 0.3999mm 0.5001mm 8.00mil]
+	ElementLine [0.3999mm 0.5001mm -0.3501mm 0.0000 8.00mil]
+	ElementLine [-85.27mil -1.0000mm -85.27mil 40.00mil 8.00mil]
+
+	)
