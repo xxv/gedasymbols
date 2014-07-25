@@ -145,81 +145,81 @@ pintype=in
 P 4200 10500 3900 10500 1 0 0
 {
 T 4000 10550 5 8 1 1 0 0 1
-pinnumber=21
+pinnumber=22
 T 4000 10450 5 8 0 1 0 2 1
 pinseq=14
 T 3850 10500 9 8 1 1 0 6 1
-pinlabel=TXEN
+pinlabel=TXD0
 T 3850 10500 5 8 0 1 0 8 1
 pintype=in
 }
 P 4200 10100 3900 10100 1 0 0
 {
 T 4000 10150 5 8 1 1 0 0 1
-pinnumber=22
+pinnumber=23
 T 4000 10050 5 8 0 1 0 2 1
 pinseq=15
 T 3850 10100 9 8 1 1 0 6 1
-pinlabel=TXD0
+pinlabel=TXD1
 T 3850 10100 5 8 0 1 0 8 1
 pintype=in
 }
 P 4200 9700 3900 9700 1 0 0
 {
 T 4000 9750 5 8 1 1 0 0 1
-pinnumber=23
+pinnumber=24
 T 4000 9650 5 8 0 1 0 2 1
 pinseq=16
 T 3850 9700 9 8 1 1 0 6 1
-pinlabel=TXD1
+pinlabel=TXD2
 T 3850 9700 5 8 0 1 0 8 1
 pintype=in
 }
 P 4200 9300 3900 9300 1 0 0
 {
 T 4000 9350 5 8 1 1 0 0 1
-pinnumber=24
+pinnumber=25
 T 4000 9250 5 8 0 1 0 2 1
 pinseq=17
 T 3850 9300 9 8 1 1 0 6 1
-pinlabel=TXD2
+pinlabel=TXD3
 T 3850 9300 5 8 0 1 0 8 1
 pintype=in
 }
-P 4200 8900 3900 8900 1 0 0
+P 4200 8900 4000 8900 1 0 0
 {
 T 4000 8950 5 8 1 1 0 0 1
-pinnumber=25
+pinnumber=18
 T 4000 8850 5 8 0 1 0 2 1
 pinseq=18
 T 3850 8900 9 8 1 1 0 6 1
-pinlabel=TXD3
+pinlabel=nINT/TXER/TXD4
 T 3850 8900 5 8 0 1 0 8 1
-pintype=in
+pintype=out
 }
+V 3950 8900 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 P 4200 8500 3900 8500 1 0 0
 {
 T 4000 8550 5 8 1 1 0 0 1
-pinnumber=20
+pinnumber=21
 T 4000 8450 5 8 0 1 0 2 1
 pinseq=19
 T 3850 8500 9 8 1 1 0 6 1
-pinlabel=TXCLK
+pinlabel=TXEN
 T 3850 8500 5 8 0 1 0 8 1
 pintype=in
 }
-P 4200 8100 4000 8100 1 0 0
+P 4200 8100 3900 8100 1 0 0
 {
 T 4000 8150 5 8 1 1 0 0 1
-pinnumber=18
+pinnumber=20
 T 4000 8050 5 8 0 1 0 2 1
 pinseq=20
 T 3850 8100 9 8 1 1 0 6 1
-pinlabel=nINT/TXER/TXD4
+pinlabel=TXCLK
 T 3850 8100 5 8 0 1 0 8 1
-pintype=out
+pintype=in
 }
-V 3950 8100 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
 P 4200 7300 3900 7300 1 0 0
 {
 T 4000 7350 5 8 1 1 0 0 1
@@ -256,44 +256,44 @@ pintype=out
 P 4200 6100 3900 6100 1 0 0
 {
 T 4000 6150 5 8 1 1 0 0 1
-pinnumber=8
+pinnumber=13
 T 4000 6050 5 8 0 1 0 2 1
 pinseq=24
 T 3850 6100 9 8 1 1 0 6 1
-pinlabel=RXD3/PHYAD2
+pinlabel=RXER/RXD4/PHYAD0
 T 3850 6100 5 8 0 1 0 8 1
-pintype=out
+pintype=in
 }
 P 4200 5700 3900 5700 1 0 0
 {
 T 4000 5750 5 8 1 1 0 0 1
-pinnumber=26
+pinnumber=7
 T 4000 5650 5 8 0 1 0 2 1
 pinseq=25
 T 3850 5700 9 8 1 1 0 6 1
-pinlabel=RXDV
+pinlabel=RXCLK/PHYAD1
 T 3850 5700 5 8 0 1 0 8 1
 pintype=in
 }
 P 4200 5300 3900 5300 1 0 0
 {
 T 4000 5350 5 8 1 1 0 0 1
-pinnumber=7
+pinnumber=8
 T 4000 5250 5 8 0 1 0 2 1
 pinseq=26
 T 3850 5300 9 8 1 1 0 6 1
-pinlabel=RXCLK//PHYAD1
+pinlabel=RXD3/PHYAD2
 T 3850 5300 5 8 0 1 0 8 1
-pintype=in
+pintype=out
 }
 P 4200 4900 3900 4900 1 0 0
 {
 T 4000 4950 5 8 1 1 0 0 1
-pinnumber=13
+pinnumber=26
 T 4000 4850 5 8 0 1 0 2 1
 pinseq=27
 T 3850 4900 9 8 1 1 0 6 1
-pinlabel=RXER/RXD4/PHYAD0
+pinlabel=RXDV
 T 3850 4900 5 8 0 1 0 8 1
 pintype=in
 }
