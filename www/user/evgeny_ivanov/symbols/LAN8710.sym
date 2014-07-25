@@ -256,35 +256,35 @@ pintype=out
 P 4200 6100 3900 6100 1 0 0
 {
 T 4000 6150 5 8 1 1 0 0 1
-pinnumber=13
+pinnumber=8
 T 4000 6050 5 8 0 1 0 2 1
 pinseq=24
 T 3850 6100 9 8 1 1 0 6 1
-pinlabel=RXER/RXD4/PHYAD0
+pinlabel=RXD3/PHYAD2
 T 3850 6100 5 8 0 1 0 8 1
-pintype=in
+pintype=out
 }
 P 4200 5700 3900 5700 1 0 0
 {
 T 4000 5750 5 8 1 1 0 0 1
-pinnumber=7
+pinnumber=13
 T 4000 5650 5 8 0 1 0 2 1
 pinseq=25
 T 3850 5700 9 8 1 1 0 6 1
-pinlabel=RXCLK/PHYAD1
+pinlabel=RXER/RXD4/PHYAD0
 T 3850 5700 5 8 0 1 0 8 1
 pintype=in
 }
 P 4200 5300 3900 5300 1 0 0
 {
 T 4000 5350 5 8 1 1 0 0 1
-pinnumber=8
+pinnumber=7
 T 4000 5250 5 8 0 1 0 2 1
 pinseq=26
 T 3850 5300 9 8 1 1 0 6 1
-pinlabel=RXD3/PHYAD2
+pinlabel=RXCLK/PHYAD1
 T 3850 5300 5 8 0 1 0 8 1
-pintype=out
+pintype=in
 }
 P 4200 4900 3900 4900 1 0 0
 {
