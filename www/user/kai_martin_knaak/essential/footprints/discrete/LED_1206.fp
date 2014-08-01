@@ -1,5 +1,4 @@
-
-Element["" "LED_1206" "LED_1206" "LED_1206" 28.0000mm 59.0000mm -118.11mil -118.11mil 0 100 ""]
+Element["" "LED_1206" "LED_1206" "LED_1206" 28.0000mm 67.0000mm -118.11mil -118.11mil 0 100 ""]
 (
 	Pad[-68.90mil 0.0000 -68.90mil 0.0000 80.00mil 39.37mil 83.94mil "cathode" "1" "square"]
 	Pad[68.90mil 0.0000 68.90mil 0.0000 80.00mil 39.37mil 83.94mil "anode" "2" "square,edge2"]

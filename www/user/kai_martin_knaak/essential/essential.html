@@ -26,11 +26,10 @@ context of the geda library debate.
 (see a recap of the debate <a href="http://geda.seul.org/wiki/geda:faq-gschem#what_s_this_business_about_heavy_vs_light_symbols"> in the gschem-FAQ</a>).
 
 The set of symbols tries to deliver a look and feel consistent with 
-accepted standard practice in electronics. It does not strictly ahere to
-an IEC standard, though. The choice of symbols is by no means complete. 
-But they should allow for simple projects.
+accepted standard practice in electronics. The choice of symbols is by no 
+means complete. But they should allow for simple projects.
 
-<h3> Visible Attributes</h3>
+<h3> Visible attributes</h3>
 With a few exceptions, all symbols contain these three visible symbols:
 <ol>
 	<li>refdes
@@ -45,7 +44,7 @@ attribute, which is size 8. These three attributes are generally placed on
 top of each other somewhere near the graphics. For slotted symbols, 
 the slot attribute is also visible in the canvas.
 
-<h3> Hidden Attributes </h3>
+<h3> Hidden attributes </h3>
 All symbols in the lib contain these standard attributes in a hidden way:
 <ol>
 	<li>description
@@ -65,7 +64,19 @@ replaced with the instance in the schematic, their value is set to the
 string "unknown". If no value is the intended value, then the value is 
 set to the string "none".
 
-<h3>List Attributes</h3>
+<h3>Additional Attributes</h3>
+There are some attributes which are not (yet) in the set of standard 
+attributes hard coded in source of gschem.
+
+<h4>IEC number</h4>
+If symbols comply with IEC 60617, they may contain a pair of attributes who
+point to the number and name of the symbol in the standard. Example:
+<ol>
+	<li>IEC-name=noiseless ground
+	<li>IEC-number=02-15-02
+</ol>
+
+<h4>List attributes</h4>
 For some symbols there is more than one reasonable footprint in the lib.
 Most notably, many components come in SMD and thru hole variants. Other
 symbols may most likely be attributed with one of a small set of standard
@@ -81,7 +92,7 @@ attributes" in the attribute editor to get them displayed. Future versions
 of the attribute editor may put the items in a drop-down list so you can
 choose from them with a simple mouse click.
 
-<h3> Design </h3>
+<h4> Design </h4>
 In addition to the standard attributes, the symbols meet the following
 design criteria:
 <ul>

@@ -1,7 +1,7 @@
 Element["" "elko_BC_D35" "elko_BC_D35" "elko_BC_D35" 65.0001mm 75.0001mm -157.48mil 13.0000mm 0 100 ""]
 (
 	Pin[-3.7498mm -295.27mil 196.85mil 39.37mil 200.79mil 59.06mil "3" "3" "edge2"]
-	Pin[-3.7498mm 295.28mil 3.8000mm 1.00mm 3.90mm 59.06mil "1" "1" "square,edge2"]
+	Pin[-3.7498mm 295.28mil 3.8000mm 1.0000mm 3.9000mm 59.06mil "1" "1" "square,edge2"]
 	Pin[-442.91mil 0.0000 196.85mil 39.37mil 200.79mil 59.06mil "2" "2" "edge2"]
 	Pin[246.07mil 0.0000 196.85mil 39.37mil 200.79mil 59.06mil "4" "4" "edge2"]
 	ElementLine [-482.28mil 177.16mil -442.90mil 137.80mil 7.87mil]

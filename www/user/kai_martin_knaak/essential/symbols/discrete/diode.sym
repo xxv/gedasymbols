@@ -12,9 +12,9 @@ use-license=free, no restrictions
 T 400 400 8 10 1 1 0 0 1
 refdes=D?
 T 400 200 8 10 1 1 0 0 1
-value=LL4148
+value=CD4148
 T 400 0 8 8 1 1 0 0 1
-footprint=dio_minimelf
+footprint=dio_0805
 P 300 800 400 800 1 0 0
 {
 T 300 850 5 8 0 1 0 6 1
@@ -39,9 +39,9 @@ pintype=pas
 }
 L 700 1000 700 600 3 10 0 0 -1 -1
 T 400 2600 5 8 0 0 0 0 1
-values=LL4148, 1N4148, 1N4001, 1N4004, 1N4005, 1N4007
+values=CD4148, 1N4148, 1N4001, 1N4004, 1N4005, 1N4007, LL4148
 T 400 2400 5 8 0 0 0 0 1
-footprints=dio_minimelf, dio_1206, dio_1812, dio_300mil, dio_400mil
+footprints=dio_0805, dio_1206, dio_1812, dio_300mil, dio_400mil, dio_minimelf
 T 400 2200 5 8 0 0 0 0 1
 symversion=1.0
 T 400 3200 5 8 0 0 0 0 1

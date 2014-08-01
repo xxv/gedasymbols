@@ -71,6 +71,7 @@ cp symbols/titleblocks/out.sym $PRE/titleblock
 
 ### power ###
 cp symbols/power/gnd.sym $PRE/power
+cp symbols/power/rGND.sym $PRE/power
 cp symbols/power/vcc.sym $PRE/power
 cp symbols/power/vee.sym $PRE/power
 cp symbols/power/Ub+.sym $PRE/power
@@ -96,10 +97,10 @@ cp symbols/switches/switch_DPDT.sym $PRE/misc
 PRE=essential/footprints
 
 ### discrete thru hole ###
-cp footprints/discretes/res_300mil.fp $PRE/discrete
-cp footprints/discretes/res_400mil.fp $PRE/discrete
-cp footprints/discretes/res_800mil.fp $PRE/discrete
-cp footprints/discretes/res_vert.fp $PRE/discrete
+cp footprints/discretes/resistors/res_300mil.fp $PRE/discrete
+cp footprints/discretes/resistors/res_400mil.fp $PRE/discrete
+cp footprints/discretes/resistors/res_800mil.fp $PRE/discrete
+cp footprints/discretes/resistors/res_vert.fp $PRE/discrete
 
 cp footprints/discretes/capacitors/cap_100mil.fp $PRE/discrete
 cp footprints/discretes/capacitors/cap_200mil.fp $PRE/discrete
@@ -169,18 +170,18 @@ cp footprints/generic/TO220.fp $PRE/generic
 cp footprints/generic/TO247.fp $PRE/generic
 cp footprints/generic/TO247_LAY.fp $PRE/generic
 
-cp footprints/generic/DIP6.fp $PRE/generic
-cp footprints/generic/DIP8.fp $PRE/generic
-cp footprints/generic/DIP12.fp $PRE/generic
-cp footprints/generic/DIP14.fp $PRE/generic
-cp footprints/generic/DIP16.fp $PRE/generic
-cp footprints/generic/DIP18.fp $PRE/generic
-cp footprints/generic/DIP20.fp $PRE/generic
-cp footprints/generic/DIP24.fp $PRE/generic
-cp footprints/generic/DIP24_wide.fp $PRE/generic
-cp footprints/generic/DIP28.fp $PRE/generic
-cp footprints/generic/DIP28_wide.fp $PRE/generic
-cp footprints/generic/DIP40_wide.fp $PRE/generic
+cp footprints/generic/DIP/DIP6.fp $PRE/generic
+cp footprints/generic/DIP/DIP8.fp $PRE/generic
+cp footprints/generic/DIP/DIP12.fp $PRE/generic
+cp footprints/generic/DIP/DIP14.fp $PRE/generic
+cp footprints/generic/DIP/DIP16.fp $PRE/generic
+cp footprints/generic/DIP/DIP18.fp $PRE/generic
+cp footprints/generic/DIP/DIP20.fp $PRE/generic
+cp footprints/generic/DIP/DIP24.fp $PRE/generic
+cp footprints/generic/DIP/DIP24_wide.fp $PRE/generic
+cp footprints/generic/DIP/DIP28.fp $PRE/generic
+cp footprints/generic/DIP/DIP28_wide.fp $PRE/generic
+cp footprints/generic/DIP/DIP40_wide.fp $PRE/generic
 
 
 ### specific thru hole ###
@@ -203,8 +204,8 @@ cp footprints/generic/SO8_LM337.fp $PRE/specific
 cp footprints/generic/SOT89_79Lxx.fp $PRE/specific
 
 ### connectors ###
-cp footprints/connectors/AKL_2PIN.fp $PRE/connector
-cp footprints/connectors/AKL_3PIN.fp $PRE/connector
+cp footprints/connectors/pin_headers/AKL_2PIN.fp $PRE/connector
+cp footprints/connectors/pin_headers/AKL_3PIN.fp $PRE/connector
 
 ### switches ###
 cp footprints/switches/APEM_5646.fp $PRE/switches

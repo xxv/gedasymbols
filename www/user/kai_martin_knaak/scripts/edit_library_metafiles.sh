@@ -1,7 +1,7 @@
 #!/bin/sh
 # a mini convenience script to 
 cd $HOME/geda/gedasymbols/kai_martin_knaak
-gedit changelog.html \
+editor changelog.html \
       symbols.html \
       footprints.html \
       essential/changelog.html \
