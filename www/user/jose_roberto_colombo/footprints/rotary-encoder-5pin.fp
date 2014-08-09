@@ -1,5 +1,5 @@
 
-Element["" "" "" "" 38189 288189 0 0 0 100 ""]
+Element["" "rotary-encoder-5pin" "" "" 38189 288189 0 0 0 100 ""]
 (
 	Pin[0 0 6000 3938 6600 3500 "" "1" ""]
 	Pin[9055 0 6000 3938 6600 3500 "" "2" ""]
@@ -24,5 +24,12 @@ Element["" "" "" "" 38189 288189 0 0 0 100 ""]
 	ElementArc [8661 23228 11024 11024 270 90 600]
 	ElementArc [8661 20079 4724 4724 0 90 600]
 	ElementArc [8661 20079 4724 4724 90 90 600]
+	Attribute("name" "rotary-encoder-5pin")
+	Attribute("author" "Jose Roberto Colombo Junior")
+	Attribute("email" "colombojrj@gmail.com")
+	Attribute("dist-license" "GPL")
+	Attribute("use-license" "unlimited")
+	Attribute("date" "09-08-2014")
+	Attribute("description" "Rotary encoder with swith")
 
 	)
