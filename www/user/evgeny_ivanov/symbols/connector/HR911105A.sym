@@ -385,8 +385,8 @@ T 300 100 5 10 0 1 0 0 1
 pinseq=11
 }
 T 395 4700 8 10 1 1 0 0 1
-device=HR911105
+device=HR911105A
 T 2595 4700 8 10 1 1 0 0 1
 refdes=U?
 T 395 5000 8 10 0 1 0 0 1
-footprint=HR911105
+footprint=HR911105A
