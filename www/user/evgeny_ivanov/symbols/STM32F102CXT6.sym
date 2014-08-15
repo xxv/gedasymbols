@@ -149,7 +149,7 @@ pinnumber=34
 T 300 3950 5 8 0 1 0 8 1
 pinseq=14
 T 450 4000 9 8 1 1 0 0 1
-pinlabel=PA13
+pinlabel=PA13/JTMS-SWDIO
 T 450 4000 5 8 0 1 0 2 1
 pintype=io
 }
@@ -160,7 +160,7 @@ pinnumber=37
 T 300 3550 5 8 0 1 0 8 1
 pinseq=15
 T 450 3600 9 8 1 1 0 0 1
-pinlabel=PA14
+pinlabel=PA14/JTCK-SWCLK
 T 450 3600 5 8 0 1 0 2 1
 pintype=io
 }
