@@ -315,7 +315,7 @@ pinnumber=45
 T 6500 5950 5 8 0 1 0 2 1
 pinseq=29
 T 6350 6000 9 8 1 1 0 6 1
-pinlabel=PB8/I2C1_SCL
+pinlabel=PB8/TIM4_CH3/I2C1_SCL
 T 6350 6000 5 8 0 1 0 8 1
 pintype=io
 }
@@ -326,7 +326,7 @@ pinnumber=46
 T 6500 5550 5 8 0 1 0 2 1
 pinseq=30
 T 6350 5600 9 8 1 1 0 6 1
-pinlabel=PB9/I2C1_SDA
+pinlabel=PB9/TIM4_CH4/I2C1_SDA
 T 6350 5600 5 8 0 1 0 8 1
 pintype=io
 }
