@@ -1,3 +1,8 @@
+# author: Evgeny Ivanov
+# dist-license: GPL
+# use-license: unlimited
+
+# SSG series 32.768 KHz Surface Mount Crystal
 Element["" "" "SSG" "" 0 0 0um -1000um 0 100 ""]
 (
     Pad[-2750um -1300um -2750um -1950um 1300um 1000um 2300um "1" "1" "square"]
