@@ -329,23 +329,39 @@ footprint=dio_1812
 N 1600 3200 6700 3200 4
 C 6600 2900 1 0 0 EMBEDDEDgnd.sym
 [
-T 6900 2950 8 10 0 0 0 0 1
-net=GND:1
-L 6680 3010 6720 3010 3 0 0 0 -1 -1
-L 6655 3050 6745 3050 3 0 0 0 -1 -1
-L 6600 3100 6800 3100 3 0 0 0 -1 -1
 P 6700 3100 6700 3200 1 0 1
 {
-T 6758 3061 5 4 0 1 0 0 1
+T 6800 3000 5 8 0 1 0 0 1
 pinnumber=1
-T 6758 3061 5 4 0 1 0 0 1
-pinseq=1
-T 6758 3061 5 4 0 1 0 0 1
+T 6800 3000 5 8 0 1 0 0 1
 pinlabel=1
-T 6558 3061 5 4 0 1 0 0 1
+T 6758 3161 5 8 0 1 0 0 1
 pintype=pwr
 }
+L 6600 3100 6800 3100 3 10 0 0 -1 -1
+L 6635 3055 6765 3055 3 10 0 0 -1 -1
+L 6665 3010 6735 3010 3 10 0 0 -1 -1
+T 6700 3500 5 8 0 0 0 0 1
+net=GND:1
+T 6700 4100 5 8 0 0 0 0 1
+author=Kai-Martin Knaak, kmk@lilalaser.de
+T 6700 4700 5 8 0 0 0 0 1
+description=ground symbol
+T 6700 3900 5 8 0 0 0 0 1
+dist-license=GPL 3, see http://www.gnu.org/licenses/gpl.txt
+T 6700 3700 5 8 0 0 0 0 1
+use-license=free, no restrictions
+T 6700 4300 5 8 0 0 0 0 1
+symversion=1.0
+T 6700 4500 5 8 0 0 0 0 1
+footprint=none
 ]
+{
+T 6700 4300 5 8 0 0 0 0 1
+symversion=1.0
+T 6700 4500 5 8 0 0 0 0 1
+footprint=none
+}
 N 2200 4300 2000 4300 4
 N 2000 4300 2000 3600 4
 N 2000 3600 1600 3600 4

@@ -100,22 +100,11 @@ echo \
 
 # Add a local gschemrc
 echo \
-";  This is a local 
-; gschemrc automatically installed on "$DATE" for project "$NAME".
+";  This is a local gschemrc automatically installed on "$DATE" for 
+; project "$NAME".
+; Add any configuration details specific to this project here.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(text-size 10)						; Default text size
-(undo-levels 50)
-
-; Autonumber components on insert.
-(load-from-path \"auto-uref.scm\")
-(define auto-uref-set-page-offset 100)
-(add-hook! add-component-hook auto-uref)
-(add-hook! copy-component-hook auto-uref)
-
-
-; default titleblock for new schematics
-(define default-titleblock \"title-block.sym\")
 " > gschemrc
 
 
@@ -181,22 +170,22 @@ echo \
 #########################Create an empty schematic###########################
 echo "Create a schematic with a title block filled with name and current date."
 echo \
-"v 20121118 2
+"v 20140308 2
 C 40000 40000 0 0 0 title-block.sym
 {
-T 52300 41300 5 30 1 1 0 4 1
+T 52100 41300 5 30 1 1 0 4 1
 Title="$NAME"
 T 51400 40300 5 16 1 1 0 4 1
 filename="$name".sch
 T 55850 41500 5 16 1 1 0 4 1
-revision=0.1
+revision=revision
 T 56050 40100 5 16 1 1 0 6 1
 page=1
 T 56200 40100 5 16 1 1 0 0 1
 number_of_pages=1
 T 55850 40850 5 12 1 1 0 4 1
 date="`date +%d.%m.%y`"
-T 54450 40450 5 16 1 1 0 4 1
+T 54350 40450 5 16 1 1 0 4 1
 author="$AUTHORSHORT"
 T 49000 42900 5 8 0 0 0 0 1
 symversion=1.0

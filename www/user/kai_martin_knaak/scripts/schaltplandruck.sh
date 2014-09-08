@@ -98,4 +98,4 @@ then
 fi
 
 # remove temporary files
-rm $PREFIX"_"*.*ps
+#rm $PREFIX"_"*.*ps

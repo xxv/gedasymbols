@@ -96,7 +96,7 @@ cp symbols/switches/switch_DPDT.sym $PRE/misc
 
 PRE=essential/footprints
 
-### discrete thru hole ###
+### discrete ###
 cp footprints/discretes/resistors/res_300mil.fp $PRE/discrete
 cp footprints/discretes/resistors/res_400mil.fp $PRE/discrete
 cp footprints/discretes/resistors/res_800mil.fp $PRE/discrete
@@ -127,6 +127,7 @@ cp footprints/discretes/diodes/LED_1206.fp $PRE/discrete
 cp footprints/discretes/diodes/LED_3mm.fp $PRE/discrete
 cp footprints/discretes/diodes/LED_5mm.fp $PRE/discrete
 
+cp footprints/discretes/inductors/ind_1812.fp $PRE/discrete
 cp footprints/discretes/inductors/ind_300mil.fp $PRE/discrete
 cp footprints/discretes/inductors/ind_400mil.fp $PRE/discrete
 
