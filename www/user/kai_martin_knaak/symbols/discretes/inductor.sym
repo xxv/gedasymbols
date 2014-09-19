@@ -1,4 +1,4 @@
-v 20111231 2
+v 20140308 2
 T 200 2400 5 8 0 0 0 0 1
 description=inductor
 T 200 700 8 10 1 1 0 0 1
@@ -6,7 +6,7 @@ refdes=L?
 T 200 500 8 10 1 1 0 0 1
 value=XXX
 T 200 300 8 8 1 1 0 0 1
-footprint=ind_400mil
+footprint=ind_1812
 P 800 100 700 100 1 0 0
 {
 T 550 -50 5 8 0 1 0 0 1
@@ -45,4 +45,4 @@ use-license=free, no restrictions
 T 200 1800 5 8 0 0 0 0 1
 symversion=1.0
 T 200 2000 5 8 0 0 0 0 1
-footprints=ind_400mil, ind_300mil
+footprints=ind_1812, 0805,, ind_400mil, ind_300mil, FASTRON_PISR, FASTRON_PISG

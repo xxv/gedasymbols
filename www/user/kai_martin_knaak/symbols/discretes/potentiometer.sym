@@ -1,10 +1,10 @@
 v 20121203 2
 T 300 2600 5 8 0 0 0 0 1
-device=potentiometer
+device=multi turn potentiometer
 T 300 2400 5 8 0 0 0 0 1
 description=potentiometer
 T 500 300 8 8 1 1 0 0 1
-footprint=VISHAY_T18
+footprint=panel_mount_BI898
 T 300 2200 5 8 0 0 0 0 1
 documentation=www.vishay.com/docs/51027/t18.pdf
 T 300 2000 5 8 0 0 0 0 1
@@ -52,4 +52,4 @@ L 400 200 360 280 3 10 2 0 -1 -1
 L 400 200 440 280 3 10 2 0 -1 -1
 L 360 280 440 280 3 10 2 0 -1 -1
 T 300 1800 5 8 0 0 0 0 1
-footprints=VISHAY_T18, VISHAY_T93YB, VISHAY_T93YA, ALPS_RK11K112, ALPS_RK11K113, ALPS_RK09K111, SPECTROL_534
+footprints=panel_mount_BI898, VISHAY_T18, VISHAY_T93YB, VISHAY_T93YA, ALPS_RK11K112, ALPS_RK11K113, ALPS_RK09K111, SPECTROL_534

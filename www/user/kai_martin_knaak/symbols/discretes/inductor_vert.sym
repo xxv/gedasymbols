@@ -8,7 +8,7 @@ dist-license=GPL , see http://www.gnu.org/licenses/gpl.txt
 T 300 1600 5 8 0 0 0 0 1
 use-license=free, no restrictions
 T 300 2400 5 8 0 0 0 0 1
-footprints=ind_400mil, ind_300mil, ind_1812, 0805 
+footprints=ind_1812, ind_400mil, ind_300mil, 0805, FASTRON_PISR, FASTRON_PISG
 T 450 600 8 10 1 1 0 0 1
 refdes=L?
 T 450 400 8 10 1 1 0 0 1

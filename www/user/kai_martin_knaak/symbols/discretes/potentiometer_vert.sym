@@ -4,7 +4,7 @@ device=potentiometer
 T 100 2800 5 8 0 0 0 0 1
 description=potentiometer
 T 300 600 8 8 1 1 0 0 1
-footprint=VISHAY_T18
+footprint=panel_mount_BI898
 T 100 2600 5 8 0 0 0 0 1
 documentation=www.vishay.com/docs/51027/t18.pdf
 T 100 2400 5 8 0 0 0 0 1
@@ -52,4 +52,4 @@ L 200 500 280 540 3 10 2 0 -1 -1
 L 200 500 280 460 3 10 2 0 -1 -1
 L 280 540 280 460 3 10 2 0 -1 -1
 T 100 2200 5 8 0 0 0 0 1
-footprints=VISHAY_T18, VISHAY_T93YB, VISHAY_T93YA, ALPS_RK11K112, ALPS_RK11K113, SPECTROL_534
+footprints=panel_mount_BI898, VISHAY_T18, VISHAY_T93YB, VISHAY_T93YA, ALPS_RK11K112, ALPS_RK11K113, SPECTROL_534

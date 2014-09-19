@@ -349,7 +349,7 @@ footprints=0805, 0603, 0402, cap_100mil, cap_200mil, cap_200mil_a, cap_200mil_b,
 ]
 {
 T 4900 600 5 10 1 1 0 0 1
-value=XXX
+value=100n
 T 4900 400 5 8 1 1 0 0 1
 footprint=0805
 T 5100 2250 5 8 0 0 0 0 1
@@ -402,7 +402,7 @@ footprints=0805, 0603, 0402, cap_100mil, cap_200mil, cap_200mil_a, cap_200mil_b,
 ]
 {
 T 5000 2800 5 10 1 1 0 0 1
-value=XXX
+value=100n
 T 5000 2600 5 8 1 1 0 0 1
 footprint=0805
 T 5100 3350 5 8 0 0 0 0 1

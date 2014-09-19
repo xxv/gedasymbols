@@ -1,4 +1,4 @@
-v 20090328 2
+v 20140308 2
 L 380 300 200 200 3 0 0 0 -1 -1
 P 400 200 500 200 1 0 1
 {
@@ -21,7 +21,7 @@ pintype=pas
 T 500 700 8 10 1 1 0 0 1
 refdes=U?
 V 200 200 20 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 300 3900 5 8 0 0 0 0 1
+T 300 4300 5 8 0 0 0 0 1
 description=quad analog switch, 16 pin
 T 300 3300 5 8 0 0 0 0 1
 author=K-M. Knaak, kmk@lilalaser.de
@@ -31,10 +31,10 @@ T 300 2900 5 8 0 0 0 0 1
 use-license=free, no restrictions
 T 300 2700 5 8 0 0 0 0 1
 numslots=4
-T 300 3700 5 8 0 0 0 0 1
+T 300 3900 5 8 0 0 0 0 1
 comment=Use quad_analog_switch_pwr.sym for power pins
-T 300 3500 5 8 0 0 0 0 1
-comment=pin compatible models: ADG1312, DG201 and DG211
+T 300 3700 5 8 0 0 0 0 1
+footprints=ADG1312, DG201 and DG211
 T 300 2500 5 8 0 0 0 0 1
 slotdef=1:1,2,3
 V 400 200 20 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
@@ -56,4 +56,6 @@ slotdef=4:16,15,14
 T 500 500 8 10 1 0 0 0 1
 slot=1
 T 300 4100 5 8 0 0 0 0 1
-device=quad_analog_switch
+documentation=http://www.vishay.com/doc?70102
+T 300 3500 5 8 0 0 0 0 1
+values=ADG1312, DG201 and DG211

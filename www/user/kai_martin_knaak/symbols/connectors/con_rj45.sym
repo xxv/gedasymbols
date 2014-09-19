@@ -1,0 +1,112 @@
+v 20140308 2
+T 50 400 8 10 1 1 0 0 1
+refdes=CONN?
+T 50 0 8 8 1 1 0 0 1
+footprint=RJ45_8P8C_lay.fp
+P 600 2400 400 2400 1 0 0
+{
+T 400 2450 5 8 0 1 0 0 1
+pinnumber=5
+T 250 2400 9 8 1 1 0 6 1
+pinlabel=5
+T 450 2300 5 8 0 1 0 8 1
+pintype=pas
+}
+V 350 2400 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+P 600 2000 400 2000 1 0 0
+{
+T 400 2050 5 8 0 1 0 0 1
+pinnumber=6
+T 250 2000 9 8 1 1 0 6 1
+pinlabel=6
+T 450 1900 5 8 0 1 0 8 1
+pintype=pas
+}
+V 350 2000 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+P 600 1600 400 1600 1 0 0
+{
+T 400 1650 5 8 0 1 0 0 1
+pinnumber=7
+T 250 1600 9 8 1 1 0 6 1
+pinlabel=7
+T 450 1500 5 8 0 1 0 8 1
+pintype=pas
+}
+V 350 1600 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+P 600 1200 400 1200 1 0 0
+{
+T 400 1250 5 8 0 1 0 0 1
+pinnumber=8
+T 250 1200 9 8 1 1 0 6 1
+pinlabel=8
+T 450 1100 5 8 0 1 0 8 1
+pintype=pas
+}
+V 350 1200 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+B 50 600 450 3600 3 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+T 50 200 8 10 1 1 0 0 1
+value=Assmann A-20042
+T 100 5600 5 8 0 0 0 0 1
+description=rj45 connector with 8 pins and shield
+T 100 5400 5 8 0 0 0 0 1
+footprints=RJ45_8P9C_lay, RJ45_8P8C_vert
+T 100 5000 5 8 0 0 0 0 1
+symversion=1.0
+T 100 4800 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 100 4600 5 8 0 0 0 0 1
+dist-license=GPL 3, http://www.gnu.org/licenses/gpl-3.0.txt
+T 100 4400 5 8 0 0 0 0 1
+use-license=free, no restrictions
+P 600 4000 400 4000 1 0 0
+{
+T 400 4050 5 8 0 1 0 0 1
+pinnumber=1
+T 250 4000 9 8 1 1 0 6 1
+pinlabel=1
+T 450 3900 5 8 0 1 0 8 1
+pintype=pas
+}
+V 350 4000 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+P 600 3600 400 3600 1 0 0
+{
+T 400 3650 5 8 0 1 0 0 1
+pinnumber=2
+T 250 3600 9 8 1 1 0 6 1
+pinlabel=2
+T 450 3500 5 8 0 1 0 8 1
+pintype=pas
+}
+V 350 3600 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+P 600 3200 400 3200 1 0 0
+{
+T 400 3250 5 8 0 1 0 0 1
+pinnumber=3
+T 250 3200 9 8 1 1 0 6 1
+pinlabel=3
+T 450 3100 5 8 0 1 0 8 1
+pintype=pas
+}
+V 350 3200 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+P 600 2800 400 2800 1 0 0
+{
+T 400 2850 5 8 0 1 0 0 1
+pinnumber=4
+T 250 2800 9 8 1 1 0 6 1
+pinlabel=4
+T 450 2700 5 8 0 1 0 8 1
+pintype=pas
+}
+V 350 2800 50 6 10 2 0 -1 -1 0 -1 -1 -1 -1 -1
+P 600 800 500 800 1 0 0
+{
+T 400 850 5 8 0 1 0 0 1
+pinnumber=0
+T 450 700 5 8 0 1 0 8 1
+pintype=pas
+T 450 900 9 8 1 1 0 6 1
+pinlabel=shield
+}
+V 500 800 25 3 10 2 0 -1 -1 1 -1 -1 -1 -1 -1
+T 100 5200 5 8 0 0 0 0 1
+values=ASSMANN A-20042, ADAM MTJ-88GX1, TE  5555141, Ninigi RJ45GE
