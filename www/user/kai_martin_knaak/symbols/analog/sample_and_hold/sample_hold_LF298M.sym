@@ -1,0 +1,85 @@
+v 20140308 2
+T 400 3200 5 8 0 0 0 0 1
+description=sample and hold amplifier
+T 400 3000 5 8 0 0 0 0 1
+comment=Use symbol samplehold_pwr.sym to connect power pins.
+T 400 2800 5 8 0 0 0 0 1
+documentation=http://www.ti.com/lit/ds/symlink/lf198-n.pdf
+T 400 2600 5 8 0 0 0 0 1
+values=LF398M, LF298M
+T 400 2200 5 8 0 0 0 0 1
+symversion=1.0
+T 400 2000 5 8 0 0 0 0 1
+author=Klaus Zipfel, zipfel@iqo.uni-hannover.de / Kai-Martin Knaak
+T 400 1800 5 8 0 0 0 0 1
+dist-license=GPL 3, http://www.gnu.org/licenses/gpl-3.0.txt
+T 961 1289 8 10 1 1 0 0 1
+refdes=U?
+T 961 1089 8 10 1 1 0 0 1
+value=LF398
+T 961 889 8 8 1 1 0 0 1
+footprint=SO14
+P 293 800 393 800 1 0 0
+{
+T 338 850 5 8 1 1 0 6 1
+pinnumber=3
+T 343 750 9 8 1 1 0 8 1
+pinlabel=in
+T 343 750 5 8 0 1 0 8 1
+pintype=in
+}
+P 1200 500 1300 500 1 0 1
+{
+T 1255 552 5 8 1 1 0 0 1
+pinnumber=5
+T 1150 350 5 8 0 1 0 0 1
+pintype=out
+T 1350 400 9 8 0 1 0 7 1
+pinlabel=out
+}
+T 400 1600 5 8 0 0 0 0 1
+use-license=free, no restrictions
+L 400 900 1200 500 3 10 0 0 -1 -1
+L 400 100 1200 500 3 10 0 0 -1 -1
+L 400 900 400 100 3 10 2 0 -1 -1
+P 801 806 801 706 1 0 0
+{
+T 763 780 5 8 1 1 0 6 1
+pinnumber=2
+T 851 699 9 8 1 1 0 0 1
+pinlabel=offset
+T 751 756 5 8 0 1 270 8 1
+pintype=in
+}
+P 800 195 800 295 1 0 0
+{
+T 768 248 5 8 1 1 0 8 1
+pinnumber=6
+T 850 300 9 8 1 1 0 2 1
+pinlabel=cap.
+T 850 245 5 8 0 1 90 8 1
+pintype=in
+}
+P 293 402 393 402 1 0 0
+{
+T 329 453 5 8 1 1 0 6 1
+pinnumber=8
+T 348 347 9 8 1 1 0 8 1
+pinlabel=L
+T 343 352 5 8 0 1 0 8 1
+pintype=in
+}
+T 434 489 9 8 1 0 0 1 2
+sample
+'n hold
+P 293 202 393 202 1 0 0
+{
+T 429 203 5 8 1 1 0 0 1
+pinnumber=7
+T 348 147 9 8 1 1 0 8 1
+pinlabel=L_ref
+T 343 152 5 8 0 1 0 8 1
+pintype=in
+}
+T 400 2400 5 8 0 0 0 0 1
+footprints=SO14
