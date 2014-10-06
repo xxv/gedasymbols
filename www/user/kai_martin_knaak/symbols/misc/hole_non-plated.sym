@@ -1,0 +1,22 @@
+v 20140308 2
+V 200 300 200 3 10 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 100 2200 5 8 0 0 0 0 1
+footprints=hole_1mm.fp, hole_1.9mm.fp, hole_2mm.fp, hole_2.5mm.fp, hole_3mm.fp, hole_3.5mm.fp, hole_4mm.fp, hole_4.5mm.fp, hole_5mm.fp, hole_6mm.fp
+T 100 1600 5 8 0 0 0 0 1
+nobom=1
+T 500 400 8 10 1 1 0 0 1
+refdes=H?
+T 100 2400 5 8 0 0 0 0 1
+description=non-plated hole
+T 100 1400 5 8 0 0 0 0 1
+author=Kai-Martin Knaak, kmk@lilalaser.de
+T 100 1200 5 8 0 0 0 0 1
+license=GPL2
+T 500 200 8 10 1 1 0 0 1
+value=D3mm
+T 100 1800 5 8 0 0 0 0 1
+symversion=1.0
+T 500 0 8 8 1 1 0 0 1
+footprint=hole_3mm
+T 100 2000 5 8 0 0 0 0 1
+footprints=hole_M1.8.fp, hole_M2.fp, hole_M2.5.fp, hole_M3.fp, hole_M4.fp, hole_M5.fp, hole_M6.fp, hole_M8.fp, hole_M10.fp
