@@ -1,0 +1,47 @@
+v 20140308 2
+T 100 2600 5 8 0 0 0 0 1
+description=Power pins for LM13700
+T 100 1800 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 100 1600 5 8 0 0 0 0 1
+dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
+T 100 1400 5 8 0 0 0 0 1
+use-license=free, no restrictions
+T 100 2000 5 8 0 0 0 0 1
+symversion=1.0
+T 650 650 8 10 1 1 0 0 1
+refdes=U?
+B 0 200 600 700 3 10 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 50 500 9 9 1 0 0 2 1
+13700
+T 50 550 9 10 1 0 0 0 1
+LM
+P 300 1000 300 900 1 0 0
+{
+T 250 950 5 8 0 1 0 6 1
+pinseq=11
+T 250 950 5 8 1 1 0 6 1
+pinnumber=11
+T 250 1100 5 8 0 1 0 6 1
+pintype=pwr
+T 300 800 5 20 0 1 0 4 1
+pinlabel=+
+}
+P 300 100 300 200 1 0 0
+{
+T 250 150 5 8 0 1 0 8 1
+pinseq=6
+T 250 150 5 8 1 1 0 8 1
+pinnumber=6
+T 350 175 5 8 0 1 0 2 1
+pintype=pwr
+T 300 300 5 20 0 1 0 4 1
+pinlabel=-
+}
+L 250 800 350 800 3 10 0 0 -1 -1
+L 300 850 300 750 3 10 0 0 -1 -1
+L 250 300 350 300 3 10 0 0 -1 -1
+T 100 2200 5 8 0 0 0 0 1
+documentation=http://www.ti.com/lit/gpn/lm13700
+T 100 2400 5 8 0 0 0 0 1
+comment=set footprint and value with ota_LM13700.sym

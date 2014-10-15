@@ -1,0 +1,108 @@
+v 20140308 2
+T 200 3600 5 8 0 0 0 0 1
+comment=Use symbol ota_LM13700_buffer.sym to connect the buffer
+T 200 3400 5 8 0 0 0 0 1
+documentation=http://www.ti.com/lit/gpn/lm13700
+T 200 2000 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de
+T 200 1800 5 8 0 0 0 0 1
+dist-license=GPL , see http://www.gnu.org/licenses/gpl.txt
+T 200 1600 5 8 0 0 0 0 1
+use-license=free, no restrictions
+T 200 1400 5 8 0 0 0 0 1
+symversion=1.0
+T 600 400 8 10 1 1 0 0 1
+refdes=U?
+T 600 200 8 10 1 1 0 0 1
+value=LM13700M
+T 600 0 8 8 1 1 0 0 1
+footprint=SO16
+L 200 1200 200 1000 3 10 2 0 -1 -1
+L 200 1200 950 825 3 10 2 0 -1 -1
+L 200 400 950 775 3 10 2 0 -1 -1
+P 100 500 200 500 1 0 0
+{
+T 150 450 5 8 1 1 0 8 1
+pinnumber=4
+T 150 450 5 8 0 1 0 8 1
+pinseq=4
+T 325 550 9 16 0 1 0 4 1
+pinlabel=-
+T 125 525 5 8 0 1 0 6 1
+pintype=pas
+}
+P 100 1100 200 1100 1 0 0
+{
+T 175 1150 5 8 1 1 0 6 1
+pinnumber=3
+T 175 1150 5 8 0 1 0 6 1
+pinseq=3
+T 325 1050 9 12 0 1 0 4 1
+pinlabel=+
+T 200 1000 5 8 0 1 0 6 1
+pintype=pas
+}
+P 1250 800 1400 800 1 0 1
+{
+T 1275 750 5 8 1 1 0 2 1
+pinnumber=5
+T 1275 750 5 8 0 1 0 2 1
+pinseq=5
+T 1400 650 5 8 0 1 0 0 1
+pintype=out
+T 1525 850 9 8 0 1 0 0 1
+pinlabel=Vout
+}
+P 1100 900 1100 1000 1 0 1
+{
+T 1150 950 5 8 1 1 0 0 1
+pinnumber=1
+T 1150 950 5 8 0 1 0 0 1
+pinseq=1
+T 950 600 5 8 0 1 0 0 1
+pintype=pas
+T 975 1000 9 8 0 1 0 6 1
+pinlabel=Bias
+}
+L 325 1100 325 1000 3 10 0 0 -1 -1
+L 275 1050 375 1050 3 10 0 0 -1 -1
+L 275 550 375 550 3 10 0 0 -1 -1
+T 200 4000 5 8 0 0 0 0 1
+description=dual transconductance amplifier LM13700
+T 200 3200 5 8 0 0 0 0 1
+values=LM13700M, LM1370N
+T 200 3000 5 8 0 0 0 0 1
+footprints=SO16, DIP16
+P 100 800 200 800 1 0 0
+{
+T 100 850 5 8 1 1 0 6 1
+pinnumber=2
+T 100 850 5 8 0 1 0 6 1
+pinseq=2
+T 250 800 9 6 0 1 0 1 1
+pinlabel=Diode Bias
+T 100 700 5 8 0 1 0 6 1
+pintype=pas
+}
+V 1150 800 100 3 10 1 0 -1 -1 0 -1 -1 -1 -1 -1
+V 1050 800 100 3 10 1 0 -1 -1 0 -1 -1 -1 -1 -1
+L 125 1000 275 1000 3 10 2 0 -1 -1
+L 200 1000 125 875 3 10 2 0 -1 -1
+L 125 875 275 875 3 10 2 0 -1 -1
+L 275 875 200 1000 3 10 2 0 -1 -1
+L 200 875 200 725 3 10 0 0 -1 -1
+L 125 725 275 725 3 10 2 0 -1 -1
+L 275 600 200 725 3 10 2 0 -1 -1
+L 200 725 125 600 3 10 2 0 -1 -1
+L 125 600 275 600 3 10 2 0 -1 -1
+L 200 600 200 400 3 10 2 0 -1 -1
+T 200 3800 5 8 0 0 0 0 1
+comment=Use symbol ota_LM13700_pwr.sym to connect power pins.
+T 200 2700 5 8 0 0 0 0 1
+numslots=2
+T 200 2500 5 8 0 0 0 0 1
+slotdef=1:1,2,3,4,5
+T 200 2300 5 8 0 0 0 0 1
+slotdef=2:16,15,14,13,12
+T 1100 0 8 8 1 0 0 0 1
+slot=1
