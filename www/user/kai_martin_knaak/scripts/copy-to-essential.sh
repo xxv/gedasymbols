@@ -18,6 +18,9 @@ cp symbols/analog/amplifiers/opamp_single_pwr.sym $PRE/analog
 cp symbols/analog/amplifiers/opamp_dual.sym $PRE/analog
 cp symbols/analog/amplifiers/opamp_dual_pwr.sym $PRE/analog
 cp symbols/analog/amplifiers/opamp_offset.sym $PRE/analog
+cp symbols/analog/amplifiers/ota_LM13700.sym $PRE/analog
+cp symbols/analog/amplifiers/ota_LM13700_buffer.sym $PRE/analog
+cp symbols/analog/amplifiers/ota_LM13700_pwr.sym $PRE/analog
 
 cp symbols/analog/regulators/regulator_positive_fixed.sym $PRE/analog
 cp symbols/analog/regulators/regulator_positive_variable.sym $PRE/analog
