@@ -1,0 +1,165 @@
+v 20140308 2
+C 1200 4200 1 90 0 dipswitch_6x.sym
+{
+T -2500 4500 5 8 0 0 90 0 1
+symversion=1.0
+T 1200 4800 5 10 1 1 0 0 1
+refdes=S?
+T 1200 4600 5 10 1 1 0 0 1
+value=COPAL CHS-06
+T 1200 4400 5 8 1 1 0 0 1
+footprint=COPAL_CHS06B
+T 1200 4200 5 10 1 0 0 0 1
+slot=1
+}
+C 1200 3400 1 90 0 dipswitch_6x.sym
+{
+T -2500 3700 5 8 0 0 90 0 1
+symversion=1.0
+T 1200 3600 5 10 1 1 0 0 1
+refdes=S?
+T 1200 4600 5 10 1 1 0 0 1
+value=COPAL CHS-06
+T 1200 4400 5 8 1 1 0 0 1
+footprint=COPAL_CHS06B
+T 1200 3400 5 10 1 0 0 0 1
+slot=2
+}
+C 1200 2600 1 90 0 dipswitch_6x.sym
+{
+T -2500 2900 5 8 0 0 90 0 1
+symversion=1.0
+T 1200 2800 5 10 1 1 0 0 1
+refdes=S?
+T 1200 4600 5 10 1 1 0 0 1
+value=COPAL CHS-06
+T 1200 4400 5 8 1 1 0 0 1
+footprint=COPAL_CHS06B
+T 1200 2600 5 10 1 0 0 0 1
+slot=3
+}
+C 1200 1800 1 90 0 dipswitch_6x.sym
+{
+T -2500 2100 5 8 0 0 90 0 1
+symversion=1.0
+T 1200 2000 5 10 1 1 0 0 1
+refdes=S?
+T 1200 4600 5 10 1 1 0 0 1
+value=COPAL CHS-06
+T 1200 4400 5 8 1 1 0 0 1
+footprint=COPAL_CHS06B
+T 1200 1800 5 10 1 0 0 0 1
+slot=4
+}
+C 600 4000 1 0 1 res_SMD_vert.sym
+{
+T 500 6600 5 8 0 0 0 6 1
+device=resistor
+T 300 4250 5 8 1 1 0 6 1
+footprint=0805
+T 300 4650 5 10 1 1 0 6 1
+refdes=R?
+T 300 4450 5 10 1 1 0 6 1
+value=xxx
+}
+N 500 4000 500 4200 4
+N 500 4100 1000 4100 4
+N 1000 4000 1000 4200 4
+C 600 3200 1 0 1 res_SMD_vert.sym
+{
+T 500 5800 5 8 0 0 0 6 1
+device=resistor
+T 300 3450 5 8 1 1 0 6 1
+footprint=0805
+T 300 3850 5 10 1 1 0 6 1
+refdes=R?
+T 300 3650 5 10 1 1 0 6 1
+value=xxx
+}
+N 500 3200 500 3400 4
+N 500 3300 1000 3300 4
+N 1000 3200 1000 3400 4
+C 600 2400 1 0 1 res_SMD_vert.sym
+{
+T 300 2650 5 8 1 1 0 6 1
+footprint=0805
+T 500 5000 5 8 0 0 0 6 1
+device=resistor
+T 300 3050 5 10 1 1 0 6 1
+refdes=R?
+T 300 2850 5 10 1 1 0 6 1
+value=xxx
+}
+N 500 2400 500 2600 4
+N 500 2500 1000 2500 4
+N 1000 2400 1000 2600 4
+C 600 1600 1 0 1 res_SMD_vert.sym
+{
+T 300 1850 5 8 1 1 0 6 1
+footprint=0805
+T 500 4200 5 8 0 0 0 6 1
+device=resistor
+T 300 2250 5 10 1 1 0 6 1
+refdes=R?
+T 300 2050 5 10 1 1 0 6 1
+value=xxx
+}
+N 500 1600 500 1800 4
+N 500 1700 1000 1700 4
+N 1000 1600 1000 1800 4
+N 500 4800 500 5200 4
+N 500 4900 1000 4900 4
+N 1000 4900 1000 4800 4
+C 1200 1000 1 90 0 dipswitch_6x.sym
+{
+T -2500 1300 5 8 0 0 90 0 1
+symversion=1.0
+T 1200 1600 5 10 1 1 0 0 1
+refdes=S?
+T 1200 4600 5 10 1 1 0 0 1
+value=COPAL CHS-06
+T 1200 4400 5 8 1 1 0 0 1
+footprint=COPAL_CHS06B
+T 1200 1000 5 10 1 0 0 0 1
+slot=5
+}
+C 1200 200 1 90 0 dipswitch_6x.sym
+{
+T -2500 500 5 8 0 0 90 0 1
+symversion=1.0
+T 1200 400 5 10 1 1 0 0 1
+refdes=S?
+T 1200 4600 5 10 1 1 0 0 1
+value=COPAL CHS-06
+T 1200 4400 5 8 1 1 0 0 1
+footprint=COPAL_CHS06B
+T 1200 200 5 10 1 0 0 0 1
+slot=6
+}
+C 600 800 1 0 1 res_SMD_vert.sym
+{
+T 500 3400 5 8 0 0 0 6 1
+device=resistor
+T 300 1050 5 8 1 1 0 6 1
+footprint=0805
+T 300 1450 5 10 1 1 0 6 1
+refdes=R?
+T 300 1250 5 10 1 1 0 6 1
+value=xxx
+}
+N 500 800 500 1000 4
+N 500 900 1000 900 4
+N 1000 800 1000 1000 4
+C 600 0 1 0 1 res_SMD_vert.sym
+{
+T 500 2600 5 8 0 0 0 6 1
+device=resistor
+T 300 250 5 8 1 1 0 6 1
+footprint=0805
+T 300 650 5 10 1 1 0 6 1
+refdes=R?
+T 300 450 5 10 1 1 0 6 1
+value=xxx
+}
+N 500 0 500 200 4
+N 1000 0 1000 200 4
