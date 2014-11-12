@@ -75,16 +75,16 @@ function subsheet {
 
 cd $SCHEMDIR
 
-# print the top schematic
-gaf export -l auto -o $PREFIX"_001.eps" $SCHFILE
+# print the top schematic to EPS
+gaf export -l auto -o $PREFIX"_000.eps" $SCHFILE
 
-# use poster utility to rotate the eps to upright portrait view
-poster $PREFIX"_001.eps" > $PREFIX"_001.ps"
+# use poster utility to rotate the EPS to upright portrait view
+poster $PREFIX"_000.eps" > $PREFIX"_000.ps"
 
 # recursively descend into subsheets
 subsheet $SCHFILE
  
-## Combine to a single document
+## Combine to a single document. This implicitely sorts according to page number
 psmerge -o$PREFIX"_merged.ps" $PREFIX"_"[0-9]*".ps"
 
 ## Convert to PDF

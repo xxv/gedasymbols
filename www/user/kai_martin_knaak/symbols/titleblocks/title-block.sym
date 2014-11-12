@@ -48,7 +48,7 @@ dist-license=GPL 3, http://www.gnu.org/licenses/gpl-3.0.txt
 T 9000 2300 5 8 0 0 0 0 1
 use-license=free, no restrictions
 T 9100 800 15 8 1 0 0 0 1
-PROJECT
+PROJECT:
 L 9000 1000 15200 1000 15 0 0 0 -1 -1
 T 12100 850 5 12 1 1 0 4 1
 project=Project
