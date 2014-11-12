@@ -3,14 +3,13 @@
 # To read pcb files, the pcb version (or the git source date) must be >= the file version
 FileVersion[20091103]
 
-PCB["MxN_PIN.pcb" 150.0000mm 150.0000mm]
+PCB["MxN_PIN.pcb" 200.0000mm 200.0000mm]
 
-Grid[7874.000000 0.0000 0.0000 1]
-Cursor[0.0000 33.9999mm 0.000000]
+Grid[10000.000000 0.0000 0.0000 1]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 4.00mil 8.00mil 5.99mil 15.00mil 10.00mil]
-Flags("nameonpcb,clearnew,snappin")
+Flags("nameonpcb,clearnew,snappin,onlynames")
 Groups("1,2,s:c:3")
 Styles["Signal,10.00mil,59.06mil,35.43mil,10.00mil:Power,25.00mil,98.43mil,59.06mil,10.00mil:Fat,40.00mil,100.00mil,80.00mil,10.00mil:Skinny,6.00mil,24.02mil,11.81mil,6.00mil"]
 
@@ -795,6 +794,7 @@ Symbol['~' 12.00mil]
 	SymbolLine[20.00mil 35.00mil 25.00mil 30.00mil 8.00mil]
 )
 Attribute("PCB::grid::unit" "mm")
+Attribute("PCB::grid::size" "100.00mil")
 Via[500.00mil 500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "1" ""]
 Via[500.00mil 1000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "1" ""]
 Via[600.00mil 1000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "2" ""]
@@ -828,6 +828,66 @@ Via[1000.00mil 3500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "6" ""]
 Via[900.00mil 3500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "5" ""]
 Via[800.00mil 3500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "4" ""]
 Via[500.00mil 3500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "1" ""]
+Via[1300.00mil 4000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "9" ""]
+Via[1400.00mil 4000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "10" ""]
+Via[700.00mil 4000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "3" ""]
+Via[1200.00mil 4000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "8" ""]
+Via[1100.00mil 4000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "7" ""]
+Via[600.00mil 4000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "2" ""]
+Via[1000.00mil 4000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "6" ""]
+Via[900.00mil 4000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "5" ""]
+Via[800.00mil 4000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "4" ""]
+Via[500.00mil 4000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "1" ""]
+Via[1600.00mil 4000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "12" ""]
+Via[1500.00mil 4000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "11" ""]
+Via[1300.00mil 4500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "9" ""]
+Via[1400.00mil 4500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "10" ""]
+Via[700.00mil 4500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "3" ""]
+Via[1200.00mil 4500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "8" ""]
+Via[1100.00mil 4500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "7" ""]
+Via[600.00mil 4500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "2" ""]
+Via[1000.00mil 4500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "6" ""]
+Via[900.00mil 4500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "5" ""]
+Via[800.00mil 4500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "4" ""]
+Via[500.00mil 4500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "1" ""]
+Via[1700.00mil 4500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "13" ""]
+Via[1600.00mil 4500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "12" ""]
+Via[1800.00mil 4500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "14" ""]
+Via[1500.00mil 4500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "11" ""]
+Via[1300.00mil 5000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "9" ""]
+Via[1400.00mil 5000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "10" ""]
+Via[700.00mil 5000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "3" ""]
+Via[1200.00mil 5000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "8" ""]
+Via[1100.00mil 5000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "7" ""]
+Via[600.00mil 5000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "2" ""]
+Via[1000.00mil 5000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "6" ""]
+Via[900.00mil 5000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "5" ""]
+Via[800.00mil 5000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "4" ""]
+Via[500.00mil 5000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "1" ""]
+Via[1700.00mil 5000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "13" ""]
+Via[1600.00mil 5000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "12" ""]
+Via[2000.00mil 5000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "16" ""]
+Via[1900.00mil 5000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "15" ""]
+Via[1800.00mil 5000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "14" ""]
+Via[1500.00mil 5000.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "11" ""]
+Via[1300.00mil 5500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "9" ""]
+Via[1400.00mil 5500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "10" ""]
+Via[700.00mil 5500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "3" ""]
+Via[1200.00mil 5500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "8" ""]
+Via[1100.00mil 5500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "7" ""]
+Via[600.00mil 5500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "2" ""]
+Via[1000.00mil 5500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "6" ""]
+Via[900.00mil 5500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "5" ""]
+Via[800.00mil 5500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "4" ""]
+Via[500.00mil 5500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "1" ""]
+Via[1700.00mil 5500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "13" ""]
+Via[2200.00mil 5500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "18" ""]
+Via[2100.00mil 5500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "17" ""]
+Via[1600.00mil 5500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "12" ""]
+Via[2000.00mil 5500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "16" ""]
+Via[1900.00mil 5500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "15" ""]
+Via[1800.00mil 5500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "14" ""]
+Via[1500.00mil 5500.00mil 81.00mil 28.00mil 97.00mil 1.1000mm "11" ""]
 
 Element["" "1x8PIN" "1x8PIN" "1x8PIN" 1500.00mil 3000.00mil -39.37mil -118.11mil 0 100 ""]
 (
@@ -924,6 +984,102 @@ Element["" "1x10PIN" "1x10PIN" "1x10PIN" 2000.00mil 3500.00mil -40.94mil -118.11
 	ElementLine [954.73mil -49.21mil 954.73mil 49.22mil 10.00mil]
 
 	)
+
+Element["" "1x12PIN" "1x12PIN" "1x12PIN" 2400.00mil 4000.00mil -45.00mil -120.00mil 0 100 ""]
+(
+	Pin[800.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "9" "9" "edge2"]
+	Pin[900.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "10" "10" "edge2"]
+	Pin[200.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "3" "3" "edge2"]
+	Pin[700.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "8" "8" "edge2"]
+	Pin[600.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "7" "7" "edge2"]
+	Pin[100.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "2" "2" "edge2"]
+	Pin[500.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "6" "6" "edge2"]
+	Pin[400.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "5" "5" "edge2"]
+	Pin[300.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "4" "4" "edge2"]
+	Pin[0.0000 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "1" "1" "square,edge2"]
+	Pin[1100.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "12" "12" "edge2"]
+	Pin[1000.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "11" "11" "edge2"]
+	ElementLine [-49.21mil -1.2502mm 29.3301mm -1.2499mm 10.00mil]
+	ElementLine [-49.21mil 1.2499mm -49.21mil -1.2502mm 10.00mil]
+	ElementLine [29.3301mm 1.2502mm -49.21mil 1.2499mm 10.00mil]
+	ElementLine [29.3301mm -1.2499mm 29.3301mm 1.2502mm 10.00mil]
+
+	)
+
+Element["" "1x14PIN" "1x14PIN" "1x14PIN" 2400.00mil 4500.00mil -50.00mil -120.00mil 0 100 ""]
+(
+	Pin[800.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "9" "9" "edge2"]
+	Pin[900.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "10" "10" "edge2"]
+	Pin[200.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "3" "3" "edge2"]
+	Pin[700.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "8" "8" "edge2"]
+	Pin[600.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "7" "7" "edge2"]
+	Pin[100.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "2" "2" "edge2"]
+	Pin[500.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "6" "6" "edge2"]
+	Pin[400.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "5" "5" "edge2"]
+	Pin[300.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "4" "4" "edge2"]
+	Pin[0.0000 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "1" "1" "square,edge2"]
+	Pin[1200.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "13" "13" "edge2"]
+	Pin[1100.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "12" "12" "edge2"]
+	Pin[1300.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "14" "14" "edge2"]
+	Pin[1000.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "11" "11" "edge2"]
+	ElementLine [-49.21mil -1.2502mm 34.4101mm -1.2499mm 10.00mil]
+	ElementLine [-49.21mil 1.2499mm -49.21mil -1.2502mm 10.00mil]
+	ElementLine [34.4101mm 1.2502mm -49.21mil 1.2499mm 10.00mil]
+	ElementLine [34.4101mm -1.2499mm 34.4101mm 1.2502mm 10.00mil]
+
+	)
+
+Element["" "1x16PIN" "1x16PIN" "1x16PIN" 2400.00mil 5000.00mil -50.00mil -120.00mil 0 100 ""]
+(
+	Pin[800.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "9" "9" "edge2"]
+	Pin[900.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "10" "10" "edge2"]
+	Pin[200.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "3" "3" "edge2"]
+	Pin[700.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "8" "8" "edge2"]
+	Pin[600.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "7" "7" "edge2"]
+	Pin[100.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "2" "2" "edge2"]
+	Pin[500.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "6" "6" "edge2"]
+	Pin[400.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "5" "5" "edge2"]
+	Pin[300.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "4" "4" "edge2"]
+	Pin[0.0000 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "1" "1" "square,edge2"]
+	Pin[1200.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "13" "13" "edge2"]
+	Pin[1100.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "12" "12" "edge2"]
+	Pin[1500.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "16" "16" "edge2"]
+	Pin[1400.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "15" "15" "edge2"]
+	Pin[1300.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "14" "14" "edge2"]
+	Pin[1000.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "11" "11" "edge2"]
+	ElementLine [-49.21mil -1.2502mm 39.4901mm -1.2499mm 10.00mil]
+	ElementLine [-49.21mil 1.2499mm -49.21mil -1.2502mm 10.00mil]
+	ElementLine [39.4901mm 1.2502mm -49.21mil 1.2499mm 10.00mil]
+	ElementLine [39.4901mm -1.2499mm 39.4901mm 1.2502mm 10.00mil]
+
+	)
+
+Element["" "1x18PIN" "1x18PIN" "1x18PIN" 2400.00mil 5500.00mil -40.00mil -125.00mil 0 100 ""]
+(
+	Pin[800.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "9" "9" "edge2"]
+	Pin[900.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "10" "10" "edge2"]
+	Pin[200.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "3" "3" "edge2"]
+	Pin[700.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "8" "8" "edge2"]
+	Pin[600.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "7" "7" "edge2"]
+	Pin[100.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "2" "2" "edge2"]
+	Pin[500.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "6" "6" "edge2"]
+	Pin[400.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "5" "5" "edge2"]
+	Pin[300.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "4" "4" "edge2"]
+	Pin[0.0000 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "1" "1" "square,edge2"]
+	Pin[1200.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "13" "13" "edge2"]
+	Pin[1700.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "18" "18" "edge2"]
+	Pin[1600.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "17" "17" "edge2"]
+	Pin[1100.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "12" "12" "edge2"]
+	Pin[1500.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "16" "16" "edge2"]
+	Pin[1400.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "15" "15" "edge2"]
+	Pin[1300.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "14" "14" "edge2"]
+	Pin[1000.00mil 0.0000 81.00mil 39.37mil 84.94mil 1.1000mm "11" "11" "edge2"]
+	ElementLine [-49.21mil -1.2502mm 44.5701mm -50.00mil 10.00mil]
+	ElementLine [-49.21mil 1.2499mm -49.21mil -1.2502mm 10.00mil]
+	ElementLine [44.5701mm 1.2502mm -49.21mil 1.2499mm 10.00mil]
+	ElementLine [44.5701mm -1.2499mm 44.5701mm 1.2502mm 10.00mil]
+
+	)
 Layer(1 "top")
 (
 	Polygon("clearpoly")
@@ -933,6 +1089,22 @@ Layer(1 "top")
 	Polygon("clearpoly")
 	(
 		[43.9999mm 81.9998mm] [3149.60mil 81.9998mm] [3149.60mil 95.9998mm] [43.9999mm 95.9998mm] 
+	)
+	Polygon("clearpoly")
+	(
+		[2200.00mil 3800.00mil] [3700.00mil 3800.00mil] [3700.00mil 4200.00mil] [2200.00mil 4200.00mil] 
+	)
+	Polygon("clearpoly")
+	(
+		[2200.00mil 4300.00mil] [3900.00mil 4300.00mil] [3900.00mil 4700.00mil] [2200.00mil 4700.00mil] 
+	)
+	Polygon("clearpoly")
+	(
+		[2200.00mil 4800.00mil] [4100.00mil 4800.00mil] [4100.00mil 5200.00mil] [2200.00mil 5200.00mil] 
+	)
+	Polygon("clearpoly")
+	(
+		[2300.00mil 5300.00mil] [4200.00mil 5300.00mil] [4200.00mil 5700.00mil] [2300.00mil 5700.00mil] 
 	)
 )
 Layer(2 "bottom")
@@ -947,6 +1119,11 @@ Layer(3 "comment")
 	Text[60.6199mm 59.8200mm 0 522 "1x5PIN.fp" ""]
 	Text[60.6199mm 72.5200mm 0 522 "1x8PIN.fp" ""]
 	Text[88.5599mm 85.2200mm 0 522 "1x10PIN.fp" ""]
+	Text[100.00mil 20.00mil 0 298 "grid is mil" "clearline"]
+	Text[101.2599mm 95.3800mm 0 522 "1x12PIN.fp" ""]
+	Text[106.3399mm 108.0800mm 0 522 "1x14PIN.fp" ""]
+	Text[108.8799mm 120.7800mm 0 522 "1x16PIN.fp" ""]
+	Text[108.8799mm 133.4800mm 0 522 "1x18PIN.fp" ""]
 )
 Layer(4 "bottom silk")
 (
@@ -981,4 +1158,20 @@ Layer(5 "top silk")
 	Line[450.79mil 87.6498mm 36.9501mm 87.6501mm 10.00mil 0.0000 ""]
 	Line[450.79mil 90.1499mm 450.79mil 87.6498mm 10.00mil 0.0000 ""]
 	Line[36.9501mm 90.1499mm 450.79mil 90.1499mm 10.00mil 0.0000 ""]
+	Line[450.79mil 100.3498mm 42.0301mm 100.3501mm 10.00mil 0.0000 ""]
+	Line[450.79mil 102.8499mm 450.79mil 100.3498mm 10.00mil 0.0000 ""]
+	Line[42.0301mm 102.8502mm 450.79mil 102.8499mm 10.00mil 0.0000 ""]
+	Line[450.79mil 113.0498mm 47.1101mm 113.0501mm 10.00mil 0.0000 ""]
+	Line[450.79mil 115.5499mm 450.79mil 113.0498mm 10.00mil 0.0000 ""]
+	Line[47.1101mm 115.5502mm 450.79mil 115.5499mm 10.00mil 0.0000 ""]
+	Line[450.79mil 125.7498mm 52.1901mm 125.7501mm 10.00mil 0.0000 ""]
+	Line[450.79mil 128.2499mm 450.79mil 125.7498mm 10.00mil 0.0000 ""]
+	Line[52.1901mm 128.2502mm 450.79mil 128.2499mm 10.00mil 0.0000 ""]
+	Line[450.79mil 138.4498mm 57.2701mm 5450.00mil 10.00mil 0.0000 ""]
+	Line[450.79mil 140.9499mm 450.79mil 138.4498mm 10.00mil 0.0000 ""]
+	Line[57.2701mm 140.9502mm 450.79mil 140.9499mm 10.00mil 0.0000 ""]
+	Line[57.2701mm 138.4501mm 57.2701mm 140.9502mm 10.00mil 0.0000 ""]
+	Line[42.0301mm 100.3501mm 42.0301mm 102.8502mm 10.00mil 0.0000 ""]
+	Line[47.1101mm 113.0501mm 47.1101mm 115.5502mm 10.00mil 0.0000 ""]
+	Line[52.1901mm 125.7501mm 52.1901mm 128.2502mm 10.00mil 0.0000 ""]
 )
