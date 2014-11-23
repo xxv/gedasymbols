@@ -185,10 +185,14 @@ use-license=unlimited
 T 2500 2100 8 10 0 1 0 0 1
 documentation=http://pdf.datasheetcatalog.com/datasheet/philips/TDA1526.pdf
 T 350 2800 9 8 1 1 0 0 1
-pinlabel=LEFT INPUT
-T 2650 2900 9 8 1 1 180 0 1
 pinlabel=RIGHT INPUT
+T 2650 2900 9 8 1 1 180 0 1
+pinlabel=LEFT INPUT
 T 2650 4400 9 8 1 1 180 0 1
 pinlabel=GND
 T 350 3300 9 8 1 1 0 0 1
 pinlabel=VCC
+T 2650 400 9 8 1 1 180 0 1
+pinlabel=LEFT OUTPUT
+T 350 800 9 8 1 1 0 0 1
+pinlabel=RIGHT OUTPUT
