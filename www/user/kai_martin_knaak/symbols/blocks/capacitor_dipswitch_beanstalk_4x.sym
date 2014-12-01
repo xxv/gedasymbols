@@ -1,0 +1,111 @@
+v 20140308 2
+C 900 600 1 0 0 dipswitch_4x.sym
+{
+T 1200 3600 5 8 0 0 0 0 1
+symversion=1.0
+T 1300 600 5 10 1 1 0 0 1
+refdes=S?
+T 2100 3200 5 10 1 1 0 0 1
+value=COPAL CHS-04
+T 2100 3000 5 8 1 1 0 0 1
+footprint=SO8
+T 1300 400 5 10 1 0 0 0 1
+slot=4
+}
+N 2000 800 1500 800 4
+N 200 800 0 800 4
+C 200 200 1 0 0 cap_horiz.sym
+{
+T 500 1850 5 8 0 0 0 0 1
+symversion=1.0
+T 600 400 5 10 1 1 0 0 1
+value=XXX
+T 600 200 5 8 1 1 0 0 1
+footprint=0805
+T 600 600 5 10 1 1 0 0 1
+refdes=C?
+}
+N 800 800 900 800 4
+C 900 1400 1 0 0 dipswitch_4x.sym
+{
+T 1200 4400 5 8 0 0 0 0 1
+symversion=1.0
+T 1300 1400 5 10 1 1 0 0 1
+refdes=S?
+T 2100 3200 5 10 1 1 0 0 1
+value=COPAL CHS-04
+T 2100 3000 5 8 1 1 0 0 1
+footprint=SO8
+T 1300 1200 5 10 1 0 0 0 1
+slot=3
+}
+N 2000 1600 1500 1600 4
+N 200 1600 0 1600 4
+C 200 1000 1 0 0 cap_horiz.sym
+{
+T 500 2650 5 8 0 0 0 0 1
+symversion=1.0
+T 600 1200 5 10 1 1 0 0 1
+value=XXX
+T 600 1000 5 8 1 1 0 0 1
+footprint=0805
+T 600 1400 5 10 1 1 0 0 1
+refdes=C?
+}
+N 800 1600 900 1600 4
+C 900 2200 1 0 0 dipswitch_4x.sym
+{
+T 1200 5200 5 8 0 0 0 0 1
+symversion=1.0
+T 1300 2200 5 10 1 1 0 0 1
+refdes=S?
+T 1300 2000 5 10 1 0 0 0 1
+slot=2
+T 2100 3200 5 10 1 1 0 0 1
+value=COPAL CHS-04
+T 2100 3000 5 8 1 1 0 0 1
+footprint=SO8
+}
+N 2000 2400 1500 2400 4
+N 200 2400 0 2400 4
+N 800 2400 900 2400 4
+C 200 1800 1 0 0 cap_horiz.sym
+{
+T 500 3450 5 8 0 0 0 0 1
+symversion=1.0
+T 600 2000 5 10 1 1 0 0 1
+value=XXX
+T 600 1800 5 8 1 1 0 0 1
+footprint=0805
+T 600 2200 5 10 1 1 0 0 1
+refdes=C?
+}
+C 900 3000 1 0 0 dipswitch_4x.sym
+{
+T 1200 6000 5 8 0 0 0 0 1
+symversion=1.0
+T 1300 3000 5 10 1 1 0 0 1
+refdes=S?
+T 1300 2800 5 10 1 0 0 0 1
+slot=1
+T 2100 3200 5 10 1 1 0 0 1
+value=COPAL CHS-04
+T 2100 3000 5 8 1 1 0 0 1
+footprint=SO8
+}
+N 2000 3200 1500 3200 4
+N 200 3200 0 3200 4
+N 800 3200 900 3200 4
+C 200 2600 1 0 0 cap_horiz.sym
+{
+T 500 4250 5 8 0 0 0 0 1
+symversion=1.0
+T 600 2800 5 10 1 1 0 0 1
+value=XXX
+T 600 2600 5 8 1 1 0 0 1
+footprint=0805
+T 600 3000 5 10 1 1 0 0 1
+refdes=C?
+}
+N 2000 0 2000 3200 4
+N 0 0 0 3200 4
