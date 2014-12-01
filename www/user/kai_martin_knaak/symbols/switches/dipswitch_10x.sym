@@ -21,10 +21,10 @@ pintype=pas
 T 300 1000 8 10 1 1 0 0 1
 refdes=S?
 T 300 800 8 10 1 1 0 0 1
-value=COPAL CHS-10
+value=ten way piano dipswitch
 T 300 600 8 8 1 1 0 0 1
-footprint=COPAL_CHS10B
-T 300 4900 5 8 0 0 0 0 1
+footprint=DIPSWITCH_10P
+T 300 5100 5 8 0 0 0 0 1
 description=dipswitch 10x
 T 300 4100 5 8 0 0 0 0 1
 author=K-M. Knaak, kmk@lilalaser.de
@@ -46,11 +46,11 @@ T 300 400 8 10 1 0 0 0 1
 slot=1
 V 200 200 20 3 0 0 0 -1 -1 1 -1 -1 -1 -1 -1
 V 400 200 20 3 0 0 0 -1 -1 1 -1 -1 -1 -1 -1
-T 300 4500 5 8 0 0 0 0 1
-footprints=COPAL_CHS10B, DIP20
+T 300 4700 5 8 0 0 0 0 1
+values=ten way piano dipswitch, ten way dipswitch, COPAL_CHS10B, DIP20
 T 300 4300 5 8 0 0 0 0 1
 symversion=1.0
-T 300 4700 5 8 0 0 0 0 1
+T 300 4900 5 8 0 0 0 0 1
 documentation=http://media.digikey.com/pdf/Data%20Sheets/COPAL%20Electronics%20PDFs/CHS.pdf
 T 300 2500 5 8 0 0 0 0 1
 slotdef=5:5,16
@@ -64,3 +64,5 @@ T 300 1700 5 8 0 0 0 0 1
 slotdef=9:9,12
 T 300 1500 5 8 0 0 0 0 1
 slotdef=10:10,11
+T 300 4500 5 8 0 0 0 0 1
+footprints=DIPSWITCH_10, DIPSWITCH_10P, COPAL_CHS10B, DIP20

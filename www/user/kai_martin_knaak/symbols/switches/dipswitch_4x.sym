@@ -21,10 +21,10 @@ pintype=pas
 T 300 1000 8 10 1 1 0 0 1
 refdes=S?
 T 300 800 8 10 1 1 0 0 1
-value=COPAL CHS-04
+value=four way piano dipswitch
 T 300 600 8 8 1 1 0 0 1
-footprint=COPAL_CHS04B
-T 300 3400 5 8 0 0 0 0 1
+footprint=DIPSWITCH_4P
+T 300 3600 5 8 0 0 0 0 1
 description=dipswitch 4x
 T 300 2800 5 8 0 0 0 0 1
 author=K-M. Knaak, kmk@lilalaser.de
@@ -47,6 +47,8 @@ slot=1
 V 200 200 20 3 0 0 0 -1 -1 1 -1 -1 -1 -1 -1
 V 400 200 20 3 0 0 0 -1 -1 1 -1 -1 -1 -1 -1
 T 300 3200 5 8 0 0 0 0 1
-footprints=COPAL_CHS04B, DIP8
+footprints=DIPSWITCH_4, DIPSWITCH_4P, COPAL_CHS04B, DIP8
 T 300 3000 5 8 0 0 0 0 1
 symversion=1.0
+T 300 3400 5 8 0 0 0 0 1
+values=four way piano dipswitch, four way dipswitch, COPAL CHS-04

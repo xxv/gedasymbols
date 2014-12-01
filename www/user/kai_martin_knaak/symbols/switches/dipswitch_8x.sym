@@ -21,10 +21,10 @@ pintype=pas
 T 300 1000 8 10 1 1 0 0 1
 refdes=S?
 T 300 800 8 10 1 1 0 0 1
-value=COPAL CHS-08
+value=eight way piano dipswitch
 T 300 600 8 8 1 1 0 0 1
-footprint=COPAL_CHS08B
-T 300 4300 5 8 0 0 0 0 1
+footprint=DIPSWITCH_08P
+T 300 4500 5 8 0 0 0 0 1
 description=dipswitch 8x
 T 300 3500 5 8 0 0 0 0 1
 author=K-M. Knaak, kmk@lilalaser.de
@@ -46,11 +46,11 @@ T 300 400 8 10 1 0 0 0 1
 slot=1
 V 200 200 20 3 0 0 0 -1 -1 1 -1 -1 -1 -1 -1
 V 400 200 20 3 0 0 0 -1 -1 1 -1 -1 -1 -1 -1
-T 300 3900 5 8 0 0 0 0 1
-footprints=COPAL_CHS08B, DIP16
+T 300 4100 5 8 0 0 0 0 1
+values=eight way piano dipswitch, eight way dipswitch, COPAL CHS-08
 T 300 3700 5 8 0 0 0 0 1
 symversion=1.0
-T 300 4100 5 8 0 0 0 0 1
+T 300 4300 5 8 0 0 0 0 1
 documentation=http://media.digikey.com/pdf/Data%20Sheets/COPAL%20Electronics%20PDFs/CHS.pdf
 T 300 1900 5 8 0 0 0 0 1
 slotdef=5:5,12
@@ -60,3 +60,5 @@ T 300 1500 5 8 0 0 0 0 1
 slotdef=7:7,10
 T 300 1300 5 8 0 0 0 0 1
 slotdef=8:8,9
+T 300 3900 5 8 0 0 0 0 1
+footprints=DIPSWITCH_8, DIPSWITCH_8P, COPAL_CHS08B, DIP16
