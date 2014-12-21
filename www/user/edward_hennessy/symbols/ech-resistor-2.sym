@@ -37,16 +37,16 @@ refdes=R?
 T 500 400 8 10 1 1 0 5 1
 value=$(Resistance)
 T 500 200 8 10 1 1 0 5 1
-Package=$(Package)
-T 510 1010 8 10 0 0 0 3 1
+package=$(Package)
+T 500 1000 8 10 0 0 0 3 1
 footprint=$(Footprint)
-T 510 1210 8 10 0 0 0 3 1
+T 500 1200 8 10 0 0 0 3 1
 device=RESISTOR
-T 510 1510 8 10 0 0 0 3 1
+T 500 1500 8 10 0 0 0 3 1
 use-license=Unlimited
-T 510 1710 8 10 0 0 0 3 1
+T 500 1700 8 10 0 0 0 3 1
 dist-license=GPL
-T 510 1910 8 10 0 0 0 3 1
+T 500 1900 8 10 0 0 0 3 1
 copyright=(C) 2014 Edward Hennessy
-T 510 2110 8 10 0 0 0 3 1
+T 500 2100 8 10 0 0 0 3 1
 author=Edward Hennessy
