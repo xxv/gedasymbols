@@ -1,0 +1,52 @@
+v 20140308 2
+P 1010 610 860 610 1 0 0
+{
+T 860 160 5 10 0 0 0 2 1
+pintype=pas
+T 860 560 9 10 0 1 0 2 1
+pinlabel=1
+T 860 660 5 10 0 1 0 0 1
+pinnumber=1
+T 860 360 5 10 0 0 0 2 1
+pinseq=1
+}
+P 10 610 160 610 1 0 0
+{
+T 160 160 5 10 0 0 0 8 1
+pintype=pas
+T 165 560 9 10 0 1 0 8 1
+pinlabel=2
+T 165 660 5 10 0 1 0 6 1
+pinnumber=2
+T 160 360 5 10 0 0 0 8 1
+pinseq=2
+}
+H 3 10 0 0 -1 -1 0 -1 -1 -1 -1 -1 10
+M 160,610
+L 210,610
+L 260,710
+L 360,510
+L 460,710
+L 560,510
+L 660,710
+L 760,510
+L 810,610
+L 860,610
+T 510 810 8 10 1 1 0 3 1
+refdes=R?
+T 510 410 8 10 1 1 0 5 1
+value=$(Resistance)
+T 510 210 8 10 1 1 0 5 1
+Package=$(Package)
+T 510 1010 8 10 0 0 0 3 1
+footprint=$(Footprint)
+T 510 1210 8 10 0 0 0 3 1
+device=RESISTOR
+T 510 1510 8 10 0 0 0 3 1
+use-license=Unlimited
+T 510 1710 8 10 0 0 0 3 1
+dist-license=GPL
+T 510 1910 8 10 0 0 0 3 1
+copyright=(C) 2014 Edward Hennessy
+T 510 2110 8 10 0 0 0 3 1
+author=Edward Hennessy
