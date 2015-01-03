@@ -1,0 +1,88 @@
+<!--#set var="title" value="Edward Hennessy" -->
+<!--#include virtual="/header.html" -->
+
+Edward Hennessy<br>
+
+<h1>Footprint Generator</h1>
+
+<p>This footprint generator allows the user to quickly generate two pad SMD device footprints for use with PCB.</p>
+
+<img src="footgen.png"/>
+
+<h2>Installation</h2>
+
+<p>Currently, the footprint generator is packaged as a single Ruby source file.</p>
+
+<a href="footgen.rb.tar.gz">footgen.rb.tar.gz</a>
+
+<p>Here are the packages that should be installed.</p>
+
+<ul>
+<li>ruby-atk</li>
+<li>ruby-cairo</li>
+<li>ruby-gdk3</li>
+<li>ruby-gdk-pixbuf</li>
+<li>ruby-gio2</li>
+<li>ruby-glib2</li>
+<li>ruby-gtk3</li>
+<li>ruby-pango</li>
+</ul>
+
+<h2>Usage</h2>
+
+<p>Adjust the footprint parameters at the left.</p>
+
+<p>Numeric parameters accept both mm and mil for units. Any parsing errors will default to mm.</p>
+
+<table>
+    <tr>
+        <td>Package Length</td>
+        <td>The width of the package (along the x axis). Used to calculate the silkscreen border.</td>
+    </tr>
+    <tr>
+        <td>Package Width</td>
+        <td>The width of the package (along the y axis). Used to calculate the silkscreen border.</td>
+    </tr>
+    <tr>
+        <td>Pad Length</td>
+        <td>The length of the copper pad. (x axis)</td>
+    </tr>
+    <tr>
+        <td>Pad Width</td>
+        <td>The width of the copper pad. (y axis)</td>
+    </tr>
+    <tr>
+        <td>Pad Spacing (BSC)</td>
+        <td>The spacing between the pads, from center to center.</td>
+    </tr>
+    <tr>
+        <td>Pad Clearance</td>
+        <td>The minimum distance from the copper pad to surrounding copper.</td>
+    </tr>
+    <tr>
+        <td>Pad Soldermask Relief</td>
+        <td>The minimum distance from the copper pad to the soldermask opening.</td>
+    </tr>
+    <tr>
+        <td>Silkscreen Package Offset</td>
+        <td>The additional distance from the edge of the package to the centerline of the silkscreen.</td>
+    </tr>
+    <tr>
+        <td>Silkscreen Pad Offset</td>
+        <td>The additional distance from the edge of the pad copper to the centerline of the silkscreen.</td>
+    </tr>
+    <tr>
+        <td>Silkscreen Thickness</td>
+        <td>The silkscreen line thickness.</td>
+    </tr>
+    <tr>
+        <td>Silkscreen Outline</td>
+        <td>Selects the type of outline for the footprint (e.g. polarized, non-polarized).</td>
+    </tr>
+</table>
+
+<p>The footprint generator provides both a graphic and text preview of the footprint, allowing the user a preliminary check for correctness.</p>
+
+<p>When complete, click the Export button and save the footprint to a file.</p>
+
+<!--#include virtual="/trailer.html" -->
