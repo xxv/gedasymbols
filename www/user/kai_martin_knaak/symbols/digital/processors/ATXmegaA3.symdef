@@ -1,0 +1,97 @@
+# This is a the symbol definition for ATXmegaA3 to be read by djboxsym.
+# -<)kmk(>-
+
+[labels]
+
+refdes=U?
+value=ATXmega128A3U-AU
+footprint=TQFP64-08
+description=ATXmega128A3U-AU
+! documentation=http://www.atmel.com/images/Atmel-8385-8-and-16-bit-AVR-Microcontroller-ATxmega64A1U-ATxmega128A1U_datasheet.pdf
+! values=ATXmega16A3U-AU, ATXmega128A3U-AU, ATXmega192A3U-AU, ATXmega192A3U-AU, ATXmega256A3U-AU
+! footprints=TQFP64-08, QFN64
+! symversion=1.0
+! author=Kai-Martin Knaak, kmk@lilalaser.de
+! uselicense=no restrictions
+! distlicense=GPL3
+
+[left]
+62 PA0
+63 PA1
+64 PA2
+1 PA3
+2 PA4
+3 PA5
+4 PA6
+5 PA7
+
+6 PB0
+7 PB1
+8 PB2
+9 PB3
+10 PB4
+11 PB5
+12 PB6
+13 PB7
+
+16 PC0
+17 PC1
+18 PC2
+19 PC3
+20 PC4
+21 PC5
+22 PC6
+23 PC7
+
+
+56 PDI
+57 \_RESET\_
+58 PR0
+59 PR1
+
+[right]
+26 PD0
+27 PD1
+28 PD2
+29 PD3
+30 PD4
+31 PD5
+32 PD6
+33 PD7
+
+36 PE0
+37 PE1
+38 PE2
+39 PE3
+40 PE4
+41 PE5
+42 PE6
+43 PE7
+
+46 PF0
+47 PF1
+48 PF2
+49 PF3
+50 PF4
+51 PF5
+54 PF6
+55 PF7
+
+
+[top]
+61 AVCC
+
+15 VCC
+25 VCC
+35 VCC
+45 VCC
+53 VCC
+
+[bottom]
+14 GND
+24 GND
+34 GND
+44 GND
+52 GND
+60 GND
+
