@@ -1,0 +1,58 @@
+# This is a the symbol definition for ATXmegaE5 to be read by djboxsym.
+# -<)kmk(>-
+
+[labels]
+
+refdes=U?
+value=ATXmega32E5-AU
+footprint=TQFP32-08
+description=ATXmegaE5
+! documentation=http://www.atmel.com/Images/Atmel-8153-8-and-16-bit-AVR-Microcontroller-XMEGA-E-ATxmega8E5-ATxmega16E5-ATxmega32E5_Datasheet.pdf
+! footprints=TQFP32-08, QFN32-05, QFN32-04
+! values=ATXmega32E5-AU, ATXmega16E5-AU, ATXmega8E5-AU
+! symversion=1.0
+! author=Kai-Martin Knaak, kmk@lilalaser.de
+! uselicense=no restrictions
+! distlicense=GPL3
+
+[left]
+6 PA0
+5 PA1
+4 PA2
+3 PA3
+2 PA4
+31 PA5
+30 PA6
+29 PA7
+
+7 PDI
+8 \_RESET\_
+20 PR0
+19 PR1
+
+[right]
+16 PC0
+15 PC1
+14 PC2
+13 PC3
+12 PC4
+11 PC5
+10 PC6
+9 PC7
+
+28 PD0
+27 PD1
+26 PD2
+25 PD3
+24 PD4
+23 PD5
+22 PD6
+21 PD7
+
+[top]
+32 AVCC
+17 VCC
+
+[bottom]
+1 GND
+18 GND

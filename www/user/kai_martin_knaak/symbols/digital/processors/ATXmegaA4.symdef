@@ -5,10 +5,10 @@
 
 refdes=U?
 value=ATXmega32A4U-AU
-footprint=TQFP44
+footprint=TQFP44-08
 description=ATXmegaA4
 ! documentation=http://www.atmel.com/images/Atmel-8387-8-and16-bit-AVR-Microcontroller-XMEGA-A4U_Datasheet.pdf
-! footprints=TQFP44, QFN44
+! footprints=TQFP44-08, QFN44
 ! values=ATXmega16A4U-AU, ATXmega32A4U-AU, ATXmega128A4U-AU
 ! symversion=1.0
 ! author=Kai-Martin Knaak, kmk@lilalaser.de
