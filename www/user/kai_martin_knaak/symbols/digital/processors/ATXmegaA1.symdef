@@ -5,7 +5,7 @@
 
 refdes=U?
 value=ATXmega128A1-AU
-footprint=TFQP100
+footprint=TQFP100
 ! device=ATXmegaA1
 ! documentation=http://www.atmel.com/dyn/resources/prod_documents/doc8067.pdf
 ! description=ATXmegaA1, TQFP-100 

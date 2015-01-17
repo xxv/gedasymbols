@@ -34,7 +34,7 @@ numslots=4
 T 300 3900 5 8 0 0 0 0 1
 comment=Use quad_analog_switch_pwr.sym for power pins
 T 300 3700 5 8 0 0 0 0 1
-footprints=ADG1312, DG201 and DG211
+footprints=SO16, DIP16
 T 300 2500 5 8 0 0 0 0 1
 slotdef=1:1,2,3
 V 400 200 20 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1

@@ -1,4 +1,4 @@
-v 20121203 2
+v 20140308 2
 V 300 250 50 3 10 0 0 -1 -1 0 -1 -1 -1 -1 -1
 P 300 300 300 400 1 0 1
 {
@@ -21,5 +21,5 @@ T 200 1000 5 8 0 0 0 0 1
 dist-license=GPL 3, see http://www.gnu.org/licenses/gpl-3.0.txt
 T 200 1800 5 8 0 0 0 0 1
 comment=you can edit the string of the net attribute. The postfix ":1" must be preserved.
-T 300 0 8 10 1 1 0 3 1
+T 300 150 8 10 1 1 0 5 1
 net=custom_minus:1

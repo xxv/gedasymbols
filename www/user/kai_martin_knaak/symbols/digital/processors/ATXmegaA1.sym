@@ -1,4 +1,4 @@
-v 20111231 2
+v 20140308 2
 B 300 300 4200 14100 3 10 0 0 -1 -1 0 -1 -1 -1 -1 -1
 T 500 14800 9 10 0 0 0 0 1
 distlicense=GPL3,  see http://www.gnu.org/licenses/gpl-3.0.txt
@@ -6,15 +6,13 @@ T 500 15000 9 10 0 0 0 0 1
 uselicense=no restrictions
 T 500 15200 9 10 0 0 0 0 1
 author=Kai-Martin Knaak, kmk@lilalaser.de
-T 500 15800 9 10 0 0 0 0 1
-description=ATXmegaA1, TQFP-100
-T 500 16000 9 10 0 0 0 0 1
-device=ATXmegaA1
-T 4600 14400 8 8 1 1 0 0 1
-footprint=ATXMEGA_TQFP100
+T 4600 14100 8 8 0 1 0 0 1
+value=ATXmegaA1U-AU
+T 4600 13900 8 8 1 1 0 0 1
+footprint=TQFP100-05
 T 2000 13300 8 36 1 1 270 0 1
-value=ATXmega128A1-AU
-T 4600 14600 8 10 1 1 0 0 1
+description=ATXmega128A1-AU
+T 4600 14300 8 10 1 1 0 0 1
 refdes=U?
 P 200 11700 300 11700 1 0 0
 {
@@ -916,7 +914,11 @@ pinnumber=100
 T 200 12050 5 8 0 1 0 6 1
 pinseq=100
 }
-T 500 15600 9 10 0 0 0 0 1
+T 500 16000 9 10 0 0 0 0 1
 documentation=http://www.atmel.com/dyn/resources/prod_documents/doc8067.pdf
 T 500 15400 9 10 0 0 0 0 1
 symversion=1.0
+T 500 15600 9 10 0 0 0 0 1
+footprints=TQFP100-05
+T 500 15800 9 10 0 0 0 0 1
+values=ATXmegaA64A1U, ATXmegaA128A1U, ATXmegaA64A1, ATXmegaA128A1
