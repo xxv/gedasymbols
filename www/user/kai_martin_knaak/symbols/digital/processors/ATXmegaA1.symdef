@@ -4,11 +4,12 @@
 [labels]
 
 refdes=U?
-value=ATXmega128A1-AU
-footprint=TQFP100
-! device=ATXmegaA1
+value=ATXmega128A1U-AU
+footprint=TQFP100-05
 ! documentation=http://www.atmel.com/dyn/resources/prod_documents/doc8067.pdf
+! values=ATXmega128A1U-AU, ATXmega64A1U-AU
 ! description=ATXmegaA1, TQFP-100 
+! symversion=1.0
 ! author=Kai-Martin Knaak, kmk@lilalaser.de
 ! uselicense=no restrictions
 ! distlicense=GPL3
@@ -101,7 +102,7 @@ footprint=TQFP100
 87 PQ2
 88 PQ3
 89 PDI
-90 RESET
+90 \_RESET\_
 91 PR0
 92 PR1
 

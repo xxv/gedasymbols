@@ -818,7 +818,7 @@ pinseq=89
 P 4600 1600 4500 1600 1 0 0
 {
 T 4450 1600 9 10 1 1 0 7 1
-pinlabel=RESET
+pinlabel=\_RESET\_
 T 4600 1650 5 8 1 1 0 0 1
 pinnumber=90
 T 4600 1650 5 8 0 1 0 0 1
