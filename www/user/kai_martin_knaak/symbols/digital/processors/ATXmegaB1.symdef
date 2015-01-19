@@ -1,0 +1,137 @@
+# This is a the symbol definition for ATXmegaA3 to be read by djboxsym.
+# -<)kmk(>-
+
+[labels]
+
+refdes=U?
+value=ATXmega128B1-AU
+footprint=TQFP100-05
+description=ATXmega128B1
+! documentation=http://www.atmel.com/Images/Atmel-8330-8-and-16-bit-AVR-Microcontroller-XMEGA-B-ATxmega64B1-ATxmega128B1_Datasheet.pdf
+! values=ATXmega64B1-AU, ATXmega128B1-AU, ATXmega64B1-AN, ATXmega128B1-AN
+! footprints=TQFP100-05
+! symversion=1.0
+! author=Kai-Martin Knaak, kmk@lilalaser.de
+! uselicense=no restrictions
+! distlicense=GPL3
+
+[left]
+82 PA0
+83 PA1
+84 PA2
+85 PA3
+86 PA4
+87 PA5
+88 PA6
+89 PA7
+
+92 PB0
+93 PB1
+94 PB2
+95 PB3
+96 PB4
+97 PB5
+98 PB6
+99 PB7
+
+2 PC0
+3 PC1
+4 PC2
+5 PC3
+6 PC4
+7 PC5
+8 PC6
+9 PC7
+
+12 PD0
+13 PD1
+14 PD2
+
+19 PE0
+20 PE1
+21 PE2
+22 PE3
+23 PE4
+24 PE5
+25 PE6
+26 PE7
+
+76 COM0
+77 COM1
+78 COM2
+79 COM3
+
+16 PDI
+15 \_RESET\_
+80 PR0
+81 PR1
+
+[right]
+71 BIAS1
+72 BIAS2
+
+75 CAPH
+74 CAPL
+
+68 SEG0
+67 SEG1
+66 SEG2
+65 SEG3
+64 SEG4
+63 SEG5
+62 SEG6
+61 SEG7
+60 SEG8
+59 SEG9
+
+58 SEG10
+57 SEG11
+56 SEG12
+55 SEG13
+54 SEG14
+53 SEG15
+52 SEG16
+51 SEG17
+50 SEG18
+49 SEG19
+
+48 SEG20
+47 SEG21
+46 SEG22
+45 SEG23
+44 SEG24
+43 SEG25
+42 SEG26
+41 SEG27
+40 SEG28
+39 SEG29
+
+38 SEG30
+37 SEG31
+36 SEG32
+35 SEG33
+34 SEG34
+33 SEG35
+32 SEG36
+31 SEG37
+30 SEG38
+29 SEG39
+
+[top]
+91 AVCC
+
+11 VCC
+18 VCC
+28 VCC
+70 VCC
+
+73 VLCD
+
+[bottom]
+90 AGND
+
+10 GND
+17 GND
+27 GND
+69 GND
+100 GND

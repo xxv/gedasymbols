@@ -1,0 +1,97 @@
+# This is a the symbol definition for ATXmegaA3 to be read by djboxsym.
+# -<)kmk(>-
+
+[labels]
+
+refdes=U?
+value=ATXmega128B3-AU
+footprint=TQFP64-08
+description=ATXmega128B3
+! documentation=http://www.atmel.com/images/Atmel-8074-8-and-16-bit-AVR-Microcontroller-XMEGA-B-ATxmega64B3-ATxmega128B3_Datasheet.pdf
+! values=ATXmega64B3-AU, ATXmega128B3-AU, ATXmega64B3-MH, ATXmega128B3-MH
+! footprints=TQFP64-08, QFN64-05
+! symversion=1.0
+! author=Kai-Martin Knaak, kmk@lilalaser.de
+! uselicense=no restrictions
+! distlicense=GPL3
+
+[left]
+57 PB0
+58 PB1
+59 PB2
+60 PB3
+61 PB4
+62 PB5
+63 PB6
+64 PB7
+
+1 PC0
+2 PC1
+3 PC2
+4 PC3
+5 PC4
+6 PC5
+7 PC6
+8 PC7
+
+11 PD0
+12 PD1
+
+49 COM0
+50 COM1
+51 COM2
+
+14 PDI
+13 \_RESET\_
+53 PR0
+54 PR1
+
+[right]
+45 BIAS1
+44 BIAS2
+
+48 CAPH
+47 CAPL
+
+41 SEG0
+40 SEG1
+39 SEG2
+38 SEG3
+37 SEG4
+36 SEG5
+35 SEG6
+34 SEG7
+33 SEG8
+32 SEG9
+
+31 SEG10
+30 SEG11
+29 SEG12
+28 SEG13
+27 SEG14
+26 SEG15
+25 SEG16
+24 SEG17
+23 SEG18
+22 SEG19
+
+21 SEG20
+20 SEG21
+19 SEG22
+18 SEG23
+17 SEG24
+
+[top]
+56 AVCC
+10 VCC
+16 VCC
+43 VCC
+
+46 VLCD
+
+[bottom]
+55 AGND
+
+9 GND
+15 GND
+42 GND
