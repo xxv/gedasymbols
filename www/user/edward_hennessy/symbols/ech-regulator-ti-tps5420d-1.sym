@@ -1,0 +1,108 @@
+v 20140308 2
+P 2400 2500 2100 2500 1 0 0
+{
+T 3150 2550 5 10 0 0 0 0 1
+pintype=pas
+T 2045 2495 3 10 1 1 0 7 1
+pinlabel=PH
+T 2145 2545 5 10 1 1 0 0 1
+pinnumber=8
+T 2350 2550 5 10 0 0 0 0 1
+pinseq=8
+}
+P 2400 1500 2100 1500 1 0 0
+{
+T 3150 1550 5 10 0 0 0 0 1
+pintype=pas
+T 2045 1495 3 10 1 1 0 7 1
+pinlabel=BOOT
+T 2145 1545 5 10 1 1 0 0 1
+pinnumber=1
+T 2350 1550 5 10 0 0 0 0 1
+pinseq=1
+}
+P 2400 500 2100 500 1 0 0
+{
+T 3150 550 5 10 0 0 0 0 1
+pintype=pas
+T 2045 495 3 10 1 1 0 7 1
+pinlabel=VSNS
+T 2145 545 5 10 1 1 0 0 1
+pinnumber=4
+T 2350 550 5 10 0 0 0 0 1
+pinseq=4
+}
+P 1200 0 1200 300 1 0 0
+{
+T 1200 0 5 10 0 0 0 0 1
+pintype=unknown
+T 1200 355 3 10 1 1 90 0 1
+pinlabel=GND
+T 1150 205 5 10 1 1 90 6 1
+pinnumber=6
+T 1200 0 5 10 0 0 0 0 1
+pinseq=0
+}
+P 0 2500 300 2500 1 0 0
+{
+T -800 2550 5 10 0 0 0 6 1
+pintype=unknown
+T 355 2495 3 10 1 1 0 1 1
+pinlabel=VIN
+T 255 2545 5 10 1 1 0 6 1
+pinnumber=7
+T 0 2550 5 10 0 0 0 6 1
+pinseq=0
+}
+P 0 500 300 500 1 0 0
+{
+T -800 550 5 10 0 0 0 6 1
+pintype=unknown
+T 355 495 3 10 1 1 0 1 1
+pinlabel=ENA
+T 255 545 5 10 1 1 0 6 1
+pinnumber=5
+T 0 550 5 10 0 0 0 6 1
+pinseq=0
+}
+P 0 1700 300 1700 1 0 0
+{
+T -800 1750 5 10 0 0 0 6 1
+pintype=unknown
+T 355 1695 3 10 1 1 0 1 1
+pinlabel=N/C
+T 255 1745 5 10 1 1 0 6 1
+pinnumber=2
+T 0 1750 5 10 0 0 0 6 1
+pinseq=0
+}
+P 0 1300 300 1300 1 0 0
+{
+T -800 1350 5 10 0 0 0 6 1
+pintype=unknown
+T 355 1295 3 10 1 1 0 1 1
+pinlabel=N/C
+T 255 1345 5 10 1 1 0 6 1
+pinnumber=3
+T 0 1350 5 10 0 0 0 6 1
+pinseq=0
+}
+B 300 300 1800 2400 3 10 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 300 2950 9 10 1 1 0 0 1
+value=TPS5420D
+T 300 3150 8 10 1 1 0 0 1
+refdes=U?
+T 295 3695 8 10 0 0 0 0 1
+description=2-A, Wide Input Range, Step-Down SWIFT™ Converter
+T 295 2745 8 10 1 1 0 0 1
+package=SOIC-8
+T 295 4000 8 10 0 0 0 0 1
+use-license=Unlimited
+T 295 4200 8 10 0 0 0 0 1
+dist-license=GPL
+T 295 4400 8 10 0 0 0 0 1
+copyright=(C) 2015 Edward Hennessy
+T 295 4600 8 10 0 0 0 0 1
+author=Edward Hennessy
+T 295 3495 8 10 0 0 0 0 1
+footprint=$(Footprint)

@@ -5,19 +5,20 @@ Edward Hennessy<br>
 
 <h2>Footprint Generator</h2>
 
-<p>This footprint generator allows the user to quickly generate two pad SMD device footprints for use with PCB.</p>
+<p>This footprint generator allows the user to quickly generate footprints for use with PCB.</p>
 
 <img src="footgen.png"/>
 
 <h3>Installation</h3>
 
-<p>Currently, the footprint generator is packaged as a single Ruby source file.</p>
+<p>Currently, the footprint generator is packaged as a Ruby Gem.</p>
 
-<a href="footgen.rb.tar.gz">footgen.rb.tar.gz</a>
+<a href="footgen.tar.gz">footgen.tar.gz</a>
 
 <p>Here are the packages that should be installed.</p>
 
 <ul>
+<li>ruby</li>
 <li>ruby-atk</li>
 <li>ruby-cairo</li>
 <li>ruby-gdk3</li>
@@ -28,7 +29,17 @@ Edward Hennessy<br>
 <li>ruby-pango</li>
 </ul>
 
+Download and decompress the archive. Enter the top level directory and build the gem.
+
+<p><code>gem build footgen.gemspec</code></p>
+
+<p>After building the gem, install the gem.</p>
+
+<p><code>sudo gem install footgen-0.0.1.gem</code></p>
+
 <h3>Usage</h3>
+
+<p>Select Change button to select the type of footprint to construct.</p>
 
 <p>Adjust the footprint parameters at the left.</p>
 
@@ -37,23 +48,31 @@ Edward Hennessy<br>
 <table>
     <tr>
         <td>Package Length</td>
-        <td>The length of the package (along the x axis). Used to calculate the silkscreen border.</td>
+        <td>The dimension of the package on the x axis. Used to calculate the silkscreen border.</td>
     </tr>
     <tr>
         <td>Package Width</td>
-        <td>The width of the package (along the y axis). Used to calculate the silkscreen border.</td>
+        <td>The dimension of the package on the y axis. Used to calculate the silkscreen border.</td>
     </tr>
     <tr>
         <td>Pad Length</td>
-        <td>The length of the copper pad. (x axis)</td>
+        <td>The dimension of the copper pad on the x axis.</td>
     </tr>
     <tr>
         <td>Pad Width</td>
-        <td>The width of the copper pad. (y axis)</td>
+        <td>The dimension of the copper pad on the y axis.</td>
     </tr>
     <tr>
         <td>Pad Spacing (BSC)</td>
-        <td>The spacing between the pads, from center to center.</td>
+        <td>The dimension between pads on opposite sides of the device, from center to center. Negative values will flip the device horizontally.</td>
+    </tr>
+    <tr>
+        <td>Pad Pitch (BSC)</td>
+        <td>The dimension between pads in the same row, from center to center. Negative values will flip the device vertically.</td>
+    </tr>
+    <tr>
+        <td>Pin Count</td>
+        <td>The total number of pins/pads on the device.</td>
     </tr>
     <tr>
         <td>Pad Clearance</td>
