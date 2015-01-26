@@ -1,16 +1,16 @@
 v 20140308 2
 B 300 300 2000 7700 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
-T 300 8600 9 8 0 0 0 0 1
+T 300 8600 5 8 0 0 0 0 1
 distlicense=GPL3
-T 300 8800 9 8 0 0 0 0 1
+T 300 8800 5 8 0 0 0 0 1
 uselicense=no restrictions
-T 300 9000 9 8 0 0 0 0 1
+T 300 9000 5 8 0 0 0 0 1
 author=Kai-Martin Knaak, kmk@lilalaser.de
-T 300 9400 9 8 0 0 0 0 1
+T 300 9400 5 8 0 0 0 0 1
 values=ATXmega16D4-AU, ATXmega32D4-AU, ATXmega64D4-AU, ATXmega128D4U-AU, ATXmega16D4-MH, ATXmega32D4-MH, ATXmega64D4-MH, ATXmega128D4U-MH
-T 300 9200 9 8 0 0 0 0 1
+T 300 9200 5 8 0 0 0 0 1
 footprints=TQFP44-08, QFN44-05
-T 300 9600 9 8 0 0 0 0 1
+T 300 9600 5 8 0 0 0 0 1
 documentation=http://www.atmel.com/images/Atmel-8135-8-and-16-bit-AVR-microcontroller-ATxmega16D4-32D4-64D4-128D4_datasheet.pdf
 T 2400 7500 9 8 1 1 0 0 1
 footprint=TQFP44-08
@@ -407,5 +407,5 @@ pinseq=44
 }
 T 1000 7300 8 36 1 1 270 0 1
 description=ATXmega128D4
-T 300 9800 9 8 0 0 0 0 1
+T 300 9800 5 8 0 0 0 0 1
 comment=the ATXmegaD4 is pin compatible with the ATXmegaA4 

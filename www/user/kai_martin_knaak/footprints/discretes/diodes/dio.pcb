@@ -5,7 +5,7 @@ FileVersion[20091103]
 
 PCB["dio.pcb" 3000.00mil 5000.00mil]
 
-Grid[1968.503937 0.0000 0.0000 1]
+Grid[393.700787 0.0000 0.0000 1]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 4.00mil 8.00mil 5.99mil 15.00mil 10.00mil]
@@ -794,7 +794,7 @@ Symbol['~' 12.00mil]
 	SymbolLine[20.00mil 35.00mil 25.00mil 30.00mil 8.00mil]
 )
 Attribute("PCB::grid::unit" "mm")
-Attribute("PCB::grid::size" "0.5000mm")
+Attribute("PCB::grid::size" "0.1000mm")
 Via[550.00mil 1550.00mil 80.00mil 30.00mil 86.00mil 33.00mil "2" ""]
 Via[450.00mil 1550.00mil 75.00mil 30.00mil 81.00mil 33.00mil "1" ""]
 Via[450.00mil 2050.00mil 75.00mil 30.00mil 81.00mil 33.00mil "1" ""]
@@ -808,8 +808,8 @@ Via[650.00mil 700.00mil 90.00mil 20.00mil 0.0000 40.00mil "2" ""]
 
 Element["" "LED_5mm" "LED_5mm" "LED_5mm" 1200.00mil 2050.00mil -100.00mil -200.00mil 0 100 ""]
 (
-	Pin [-50.00mil 0.0000 75.00mil 39.37mil 78.94mil 33.00mil "1" "1" "square"]
-	Pin [50.00mil 0.0000 80.00mil 39.37mil 83.94mil 33.00mil "2" "2" ""]
+	Pin[-50.00mil 0.0000 75.00mil 39.37mil 78.94mil 33.00mil "1" "1" "square"]
+	Pin[50.00mil 0.0000 80.00mil 39.37mil 83.94mil 33.00mil "2" "2" ""]
 	ElementLine [-5.00mil 5.00mil 10.00mil 5.00mil 10.00mil]
 	ElementLine [-5.00mil -5.00mil 10.00mil -5.00mil 10.00mil]
 	ElementLine [15.00mil -20.00mil -15.00mil 0.0000 10.00mil]
@@ -831,8 +831,8 @@ Element["" "LED_5mm" "LED_5mm" "LED_5mm" 1200.00mil 2050.00mil -100.00mil -200.0
 
 Element["" "dio_400mil" "dio_400mil" "dio_400mil" 1200.00mil 400.00mil -100.00mil -150.00mil 0 100 ""]
 (
-	Pin [-200.00mil 0.0000 90.00mil 39.37mil 93.94mil 40.00mil "1" "1" "square,edge2"]
-	Pin [200.00mil 0.0000 90.00mil 39.37mil 93.94mil 40.00mil "2" "2" "edge2"]
+	Pin[-200.00mil 0.0000 90.00mil 39.37mil 93.94mil 40.00mil "1" "1" "square,edge2"]
+	Pin[200.00mil 0.0000 90.00mil 39.37mil 93.94mil 40.00mil "2" "2" "edge2"]
 	ElementLine [-60.00mil 0.0000 150.00mil 0.0000 25.00mil]
 	ElementLine [50.00mil 20.00mil -10.00mil 20.00mil 25.00mil]
 	ElementLine [20.00mil -40.00mil 50.00mil -40.00mil 25.00mil]
@@ -848,8 +848,8 @@ Element["" "dio_400mil" "dio_400mil" "dio_400mil" 1200.00mil 400.00mil -100.00mi
 
 Element["" "tvs_400mil" "tvs_400mil" "tvs_400mil" 1200.00mil 1000.00mil -100.00mil -150.00mil 0 100 ""]
 (
-	Pin [-200.00mil 0.0000 90.00mil 39.37mil 93.94mil 40.00mil "1" "1" "square,edge2"]
-	Pin [200.00mil 0.0000 90.00mil 39.37mil 93.94mil 40.00mil "2" "2" "edge2"]
+	Pin[-200.00mil 0.0000 90.00mil 39.37mil 93.94mil 40.00mil "1" "1" "square,edge2"]
+	Pin[200.00mil 0.0000 90.00mil 39.37mil 93.94mil 40.00mil "2" "2" "edge2"]
 	ElementLine [150.00mil 0.0000 -150.00mil 0.0000 25.00mil]
 	ElementLine [10.00mil 0.0000 110.00mil 60.00mil 25.00mil]
 	ElementLine [110.00mil 20.00mil 50.00mil 20.00mil 25.00mil]
@@ -873,8 +873,8 @@ Element["" "tvs_400mil" "tvs_400mil" "tvs_400mil" 1200.00mil 1000.00mil -100.00m
 
 Element["" "dio_300mil" "dio_300mil" "dio_300mil" 1200.00mil 700.00mil -100.00mil -150.00mil 0 100 ""]
 (
-	Pin [-150.00mil 0.0000 90.00mil 39.37mil 93.94mil 40.00mil "1" "1" "square,edge2"]
-	Pin [150.00mil 0.0000 90.00mil 39.37mil 93.94mil 40.00mil "2" "2" "edge2"]
+	Pin[-150.00mil 0.0000 90.00mil 39.37mil 93.94mil 40.00mil "1" "1" "square,edge2"]
+	Pin[150.00mil 0.0000 90.00mil 39.37mil 93.94mil 40.00mil "2" "2" "edge2"]
 	ElementLine [-100.00mil 0.0000 100.00mil 0.0000 25.00mil]
 	ElementLine [20.00mil -40.00mil 50.00mil -40.00mil 25.00mil]
 	ElementLine [50.00mil -20.00mil -10.00mil -20.00mil 25.00mil]
@@ -889,8 +889,8 @@ Element["" "dio_300mil" "dio_300mil" "dio_300mil" 1200.00mil 700.00mil -100.00mi
 
 Element["" "LED_3mm" "LED_3mm" "LED_3mm" 1200.00mil 1550.00mil -100.00mil -150.00mil 0 100 ""]
 (
-	Pin [50.00mil 0.0000 80.00mil 39.37mil 83.94mil 33.00mil "2" "2" "edge2"]
-	Pin [-50.00mil 0.0000 75.00mil 39.37mil 78.94mil 33.00mil "1" "1" "square,edge2"]
+	Pin[50.00mil 0.0000 80.00mil 39.37mil 83.94mil 33.00mil "2" "2" "edge2"]
+	Pin[-50.00mil 0.0000 75.00mil 39.37mil 78.94mil 33.00mil "1" "1" "square,edge2"]
 	ElementLine [15.00mil 0.0000 50.00mil 0.0000 10.00mil]
 	ElementLine [-50.00mil 0.0000 -15.00mil 0.0000 10.00mil]
 	ElementLine [-15.00mil -25.00mil -15.00mil 25.00mil 10.00mil]
@@ -975,8 +975,8 @@ Element["" "dio_0805" "dio_0805" "dio_0805" 28.0000mm 61.0000mm -2.5000mm -2.750
 
 Element["" "" "dio_1210" "" 28.0000mm 79.0000mm -3.5000mm -3.5000mm 0 100 ""]
 (
-	Pad[-2.0000mm -0.4998mm -2.0000mm 0.5001mm 84.80mil 39.37mil 88.74mil "cathode" "1" "square"]
-	Pad[2.0000mm -0.4998mm 2.0000mm 0.5001mm 84.80mil 39.37mil 88.74mil "anode" "2" "square"]
+	Pad[-2.0000mm -0.4998mm -2.0000mm 0.5001mm 84.80mil 39.37mil 2.2540mm "cathode" "1" "square"]
+	Pad[2.0000mm -0.4998mm 2.0000mm 0.5001mm 84.80mil 39.37mil 2.2540mm "anode" "2" "square"]
 	ElementLine [0.0000 -0.2498mm 0.0000 0.2502mm 8.00mil]
 	ElementLine [0.0000 -0.2498mm 0.2499mm -0.2498mm 8.00mil]
 	ElementLine [0.0000 0.2502mm 0.2499mm 0.2502mm 8.00mil]
@@ -999,7 +999,7 @@ Element["" "" "dio_1210" "" 28.0000mm 79.0000mm -3.5000mm -3.5000mm 0 100 ""]
 Element["" "" "dio_1812" "" 28.0000mm 87.0000mm -5.0000mm -3.5000mm 0 100 ""]
 (
 	Pad[3.0000mm -0.2498mm 3.0000mm 0.2502mm 98.42mil 39.37mil 102.36mil "anode" "2" "square,edge2"]
-	Pad[-3.0000mm -0.2498mm -3.0000mm 0.2499mm 98.43mil 39.37mil 102.37mil "cathode" "1" "square"]
+	Pad[-3.0000mm -0.2498mm -3.0000mm 0.2499mm 98.43mil 39.37mil 2.6002mm "cathode" "1" "square"]
 	ElementLine [-4.7999mm -1.7499mm 4.5001mm -1.7500mm 8.00mil]
 	ElementLine [4.5001mm -1.7500mm 4.5004mm 1.7497mm 8.00mil]
 	ElementLine [-4.4999mm 1.7500mm -4.4999mm -1.7500mm 8.00mil]
@@ -1022,7 +1022,7 @@ Element["" "" "dio_1812" "" 28.0000mm 87.0000mm -5.0000mm -3.5000mm 0 100 ""]
 Element["" "" "tvs_1812" "" 28.0000mm 94.0000mm -4.5000mm -3.5000mm 0 100 ""]
 (
 	Pad[3.0000mm -0.2499mm 3.0000mm 0.2502mm 98.42mil 39.37mil 102.36mil "2" "2" "square,edge2"]
-	Pad[-3.0000mm -0.2499mm -3.0000mm 0.2499mm 98.43mil 39.37mil 102.37mil "1" "1" "square"]
+	Pad[-3.0000mm -0.2499mm -3.0000mm 0.2499mm 98.43mil 39.37mil 2.6002mm "1" "1" "square"]
 	ElementLine [4.5001mm -1.7500mm 4.5001mm 1.7500mm 8.00mil]
 	ElementLine [4.5001mm 1.7500mm -4.4999mm 1.7500mm 8.00mil]
 	ElementLine [-4.4998mm 1.7500mm -4.4999mm -1.4999mm 8.00mil]
@@ -1081,7 +1081,7 @@ Layer(3 "comment")
 	Text[38.6999mm 23.0000mm 0 232 "tvs_400mil.fp" ""]
 	Text[38.6999mm 15.3800mm 0 232 "dio_300mil.fp" ""]
 	Text[58.9600mm 59.2700mm 0 200 "grid is mm" "clearline"]
-	Text[33.0000mm 65.0000mm 0 210 "LED_1206.fp" ""]
+	Text[33.0000mm 65.0000mm 0 210 "dio_1206.fp" ""]
 	Text[34.0000mm 92.0000mm 0 210 "tvs_1812.fp" ""]
 	Text[35.0000mm 85.0000mm 0 210 "dio_1812.fp" ""]
 	Text[32.9138mm 2984.90mil 0 210 "dio_1210.fp" ""]
@@ -1176,7 +1176,6 @@ Layer(5 "top silk")
 	Line[500.00mil 73.2501mm 19.0000mm 73.2501mm 8.00mil 0.0000 ""]
 	Line[19.0000mm 73.2501mm 19.0000mm 70.7501mm 8.00mil 0.0000 ""]
 	Line[19.0000mm 70.7501mm 500.00mil 70.7501mm 8.00mil 0.0000 ""]
-	Line[13.0000mm 70.7500mm 13.0000mm 73.2501mm 8.00mil 0.0000 ""]
 	Line[16.0000mm 71.7501mm 16.0000mm 2844.50mil 8.00mil 0.0000 ""]
 	Line[16.0000mm 71.7501mm 639.76mil 71.7501mm 8.00mil 0.0000 ""]
 	Line[16.0000mm 2844.50mil 639.76mil 2844.50mil 8.00mil 0.0000 ""]
@@ -1217,7 +1216,6 @@ Layer(5 "top silk")
 	Line[16.3999mm 61.5001mm 15.6499mm 61.0000mm 8.00mil 0.0000 ""]
 	Line[544.65mil 60.0000mm 544.65mil 62.0160mm 8.00mil 0.0000 ""]
 	Line[12.8500mm 70.7500mm 12.8500mm 73.2501mm 8.00mil 0.0000 ""]
-	Line[500.00mil 70.7500mm 500.00mil 73.2501mm 8.00mil 0.0000 ""]
 	Line[12.7002mm 80.8000mm 12.7001mm 77.2000mm 8.00mil 0.0000 ""]
 	Line[12.4002mm 80.8000mm 12.4001mm 77.2000mm 8.00mil 0.0000 ""]
 	Line[11.3501mm 88.7500mm 11.3501mm 85.2500mm 8.00mil 0.0000 ""]
@@ -1249,6 +1247,8 @@ Layer(5 "top silk")
 	Line[12.8500mm 65.7500mm 12.8500mm 2687.00mil 8.00mil 0.0000 ""]
 	Line[500.00mil 65.7500mm 500.00mil 2687.00mil 8.00mil 0.0000 ""]
 	Line[15.2500mm 79.0000mm 16.7500mm 79.0000mm 8.00mil 0.0000 ""]
+	Line[13.0000mm 70.7500mm 13.0000mm 73.2501mm 8.00mil 0.0000 ""]
+	Line[500.00mil 70.7500mm 500.00mil 73.2501mm 8.00mil 0.0000 ""]
 	Arc[500.00mil 2050.00mil 100.00mil 100.00mil 10.00mil 20.00mil 90 -90 "clearline"]
 	Arc[500.01mil 52.0703mm 100.01mil 100.01mil 10.00mil 20.00mil 0 -90 "clearline"]
 	Arc[500.01mil 52.0703mm 99.99mil 99.99mil 10.00mil 20.00mil 180 -90 "clearline"]

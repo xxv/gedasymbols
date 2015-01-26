@@ -1,14 +1,12 @@
-v 20100214 2
+v 20140308 2
 T 0 3500 5 8 0 0 0 0 1
-device=comparator_quad
-T 0 3300 5 8 0 0 0 0 1
 description=generic comparator, pinout like opamp. Defaults to TLV3494, SO14
-T 0 3100 5 8 0 0 0 0 1
+T 0 3300 5 8 0 0 0 0 1
 comment=Opamp-like pin-out. Use comparator_quad_b_pwr.sym to connect power pins.
-T 0 2900 5 8 0 0 0 0 1
+T 0 3100 5 8 0 0 0 0 1
 documentation=http://focus.ti.com/lit/ds/symlink/tlv3494.pdf
 T 0 2700 5 8 0 0 0 0 1
-author=Kai-Martin Knaak kmk@lilalaser.de
+symversion=2.0
 T 0 2500 5 8 0 0 0 0 1
 dist-license=GPL , see http://www.gnu.org/licenses/gpl.txt
 T 0 2300 5 8 0 0 0 0 1
@@ -23,17 +21,13 @@ T 0 1500 5 8 0 0 0 0 1
 slotdef=3:8,9,10
 T 0 1300 5 8 0 0 0 0 1
 slotdef=4:14,13,12
-T 1050 600 8 8 1 0 0 0 1
+T 600 600 8 10 1 0 0 0 1
 slot=1
-T 575 1025 8 10 1 1 0 0 1
-refdes=U?
 T 600 800 8 10 1 1 0 0 1
-value=TLV3494
-T 600 600 8 8 1 1 0 0 1
-footprint=SO14
-L 100 800 100 0 3 0 0 0 -1 -1
-L 100 800 900 400 3 0 0 0 -1 -1
-L 100 0 900 400 3 0 0 0 -1 -1
+refdes=U?
+L 100 800 100 0 3 10 2 0 -1 -1
+L 100 800 900 400 3 10 2 0 -1 -1
+L 100 0 900 400 3 10 2 0 -1 -1
 P 900 400 1000 400 1 0 1
 {
 T 925 450 5 8 1 1 0 0 1
@@ -67,11 +61,13 @@ pinlabel=+
 T -50 500 5 8 0 1 0 0 1
 pintype=in
 }
-L 500 350 600 350 3 0 0 0 -1 -1
-L 600 350 600 450 3 0 0 0 -1 -1
-L 600 450 700 450 3 0 0 0 -1 -1
-L 160 600 280 600 3 0 0 0 -1 -1
-L 220 660 220 540 3 0 0 0 -1 -1
-L 160 200 280 200 3 0 0 0 -1 -1
+L 500 350 600 350 3 10 2 0 -1 -1
+L 600 350 600 450 3 10 2 0 -1 -1
+L 600 450 700 450 3 10 2 0 -1 -1
+L 160 600 280 600 3 10 2 0 -1 -1
+L 220 660 220 540 3 10 2 0 -1 -1
+L 160 200 280 200 3 10 2 0 -1 -1
 T 450 400 8 10 1 1 0 7 1
 component_label=4x
+T 0 2900 5 8 0 0 0 0 1
+author=Kai-Martin Knaak kmk@lilalaser.de

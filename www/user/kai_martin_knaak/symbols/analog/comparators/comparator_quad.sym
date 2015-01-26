@@ -1,9 +1,9 @@
-v 20121203 2
-T 0 3900 5 8 0 0 0 0 1
-description=generic quad comparator, LM339 style
-T 0 3700 5 8 0 0 0 0 1
-comment=pin-out like LM339. Use comparator_quad_pwr.sym to connect power pins.
+v 20140308 2
 T 0 3500 5 8 0 0 0 0 1
+description=generic quad comparator, LM339 style
+T 0 3300 5 8 0 0 0 0 1
+comment=pin-out like LM339. Use comparator_quad_pwr.sym to connect power pins.
+T 0 3100 5 8 0 0 0 0 1
 documentation=http://www.ti.com/lit/gpn/lm339
 T 0 2700 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
@@ -12,7 +12,7 @@ dist-license=GPL3 , see http://www.gnu.org/licenses/gpl.txt
 T 0 2300 5 8 0 0 0 0 1
 use-license=free, no restrictions
 T 0 2900 5 8 0 0 0 0 1
-symversion=1.0
+symversion=2.0
 T 0 1900 5 8 0 0 0 0 1
 slotdef=1:2,4,5
 T 0 1700 5 8 0 0 0 0 1
@@ -21,14 +21,10 @@ T 0 1500 5 8 0 0 0 0 1
 slotdef=3:14,8,9
 T 0 1300 5 8 0 0 0 0 1
 slotdef=4:13,10,11
-T 1050 600 8 8 1 0 0 0 1
+T 600 600 8 10 1 0 0 0 1
 slot=1
-T 575 1025 8 10 1 1 0 0 1
-refdes=U?
 T 600 800 8 10 1 1 0 0 1
-value=LM339
-T 600 600 8 8 1 1 0 0 1
-footprint=SO14
+refdes=U?
 L 100 800 100 0 3 10 2 0 -1 -1
 L 100 800 900 400 3 10 2 0 -1 -1
 L 100 0 900 400 3 10 2 0 -1 -1
@@ -73,9 +69,5 @@ L 200 650 200 550 3 10 2 0 -1 -1
 L 150 200 250 200 3 10 2 0 -1 -1
 T 450 400 9 10 1 1 0 7 1
 component_label=4x
-T 0 3100 5 8 0 0 0 0 1
-footprints=SO14, DIP14
-T 0 3300 5 8 0 0 0 0 1
-values=LM339, LP339
 T 0 2100 5 8 0 0 0 0 1
 numslots=4
