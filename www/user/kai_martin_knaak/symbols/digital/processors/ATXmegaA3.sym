@@ -13,7 +13,7 @@ footprints=TQFP64-08, QFN64
 T 400 12300 5 8 0 0 0 0 1
 values=ATXmega16A3U-AU, ATXmega128A3U-AU, ATXmega192A3U-AU, ATXmega192A3U-AU, ATXmega256A3U-AU
 T 400 12500 5 8 0 0 0 0 1
-documentation=http://www.atmel.com/images/Atmel-8385-8-and-16-bit-AVR-Microcontroller-ATxmega64A1U-ATxmega128A1U_datasheet.pdf
+documentation=http://www.atmel.com/Images/Atmel-8386-8-and-16-bit-AVR-Microcontroller-ATxmega64A3U-128A3U-192A3U-256A3U_datasheet.pdf
 T 1200 9800 8 26 1 1 270 0 1
 description=Atmel ATXmega128A3U-AU
 T 2800 10200 8 8 1 1 0 0 1
