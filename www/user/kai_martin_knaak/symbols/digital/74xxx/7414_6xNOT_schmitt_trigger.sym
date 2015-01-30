@@ -1,11 +1,11 @@
-v 20110116 2
-T 200 4100 5 8 0 0 0 0 1
-device=7414
-T 200 3900 5 8 0 0 0 0 1
-description=6 NOT gates with Schmitt trigger
+v 20140308 2
 T 200 3500 5 8 0 0 0 0 1
-comment=use 74_pwr.sym for power supply
+symversion=1.0
+T 200 4100 5 8 0 0 0 0 1
+description=6 NOT gates with Schmitt trigger
 T 200 3700 5 8 0 0 0 0 1
+comment=use 74_pwr.sym for power supply
+T 200 3900 5 8 0 0 0 0 1
 documentation=http://www-s.ti.com/sc/ds/sn74hc14.pdf
 T 200 3300 5 8 0 0 0 0 1
 author=Kai-Martin Knaak kmk@lilalaser.de
@@ -35,29 +35,29 @@ P 600 300 700 300 1 0 1
 {
 T 700 350 5 8 1 1 0 0 1
 pinnumber=2
-T 700 150 5 8 0 1 0 0 1
-pinseq=2
 T 650 200 5 8 0 1 0 8 1
 pintype=out
+T 700 350 5 8 1 1 0 0 1
+pinseq=2
 }
 P 100 300 0 300 1 0 1
 {
 T 50 350 5 8 1 1 0 6 1
 pinnumber=1
-T 50 150 5 8 0 1 0 6 1
-pinseq=1
 T 150 500 5 8 0 1 0 2 1
 pintype=in
+T 0 350 5 10 1 1 0 6 1
+pinseq=1
 }
-L 100 50 100 550 3 0 0 0 -1 -1
-L 100 550 600 300 3 0 0 0 -1 -1
-L 100 50 600 300 3 0 0 0 -1 -1
+L 100 50 100 550 3 10 2 0 -1 -1
+L 100 550 600 300 3 10 2 0 -1 -1
+L 100 50 600 300 3 10 2 0 -1 -1
 T 200 1700 5 8 0 0 0 0 1
 slotdef=5:11,10
 T 200 1500 5 8 0 0 0 0 1
 slotdef=6:13,12
-L 175 200 300 225 3 0 0 0 -1 -1
-L 300 365 300 225 3 0 0 0 -1 -1
-L 225 210 225 350 3 0 0 0 -1 -1
-L 225 350 350 375 3 0 0 0 -1 -1
+L 175 200 300 225 3 10 2 0 -1 -1
+L 300 365 300 225 3 10 2 0 -1 -1
+L 225 210 225 350 3 10 2 0 -1 -1
+L 225 350 350 375 3 10 2 0 -1 -1
 V 600 300 40 6 0 0 0 -1 -1 1 -1 -1 -1 -1 -1
