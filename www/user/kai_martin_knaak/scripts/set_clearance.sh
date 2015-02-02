@@ -13,37 +13,47 @@
 # For details see http://www.gnu.org/licenses/gpl.txt
 
 help () {
-    echo -e \\n"Usage: set_clearance.sh [-a|-b|-c] [-1|-2|-3] foobar"
-    echo "This script uses awk to set polygon clearance and solder stop mask"
-    echo "clearance for pads and pins. Output replaces the file given by foobar."
-    echo "A backup copy of the original is written to /tmp."
-    echo "Clearance distance can be chosen with options:"
+    echo -e \\n"Usage: set_clearance.sh [-a|-b|-c|-d] [-1|-2|-3|-4|-5|-6|-7] foobar"
+    echo "This script uses awk to set polygon clearance and solder stop mask clearance for pads"
+    echo "and pins. It works on files in pcb footprint format (*.fp), or layout format (*.pcb)."
+    echo "The output replaces the file given by foobar. A backup copy of the original is written"
+    echo "to /tmp."
+    echo "The amount of clearance distance can be chosen with options:"
     echo "-a --> mask clearance 0.05 mm"
     echo "-b --> mask clearance 0.1 mm"
     echo "-c --> mask clearance 0.2 mm"
+    echo "-d --> mask clearance 0.3 mm"
     echo "-1 --> polygon clearance 0.2 mm"
     echo "-2 --> polygon clearance 0.5 mm"
-    echo "-3 --> polygon clearance 1.0 mm"
-    echo "default is 0.1 mm for mask, 0.5 mm for polygons"
+    echo "-3 --> polygon clearance 0.7 mm"
+    echo "-4 --> polygon clearance 1.0 mm"
+    echo "-5 --> polygon clearance 1.5 mm"
+    echo "-6 --> polygon clearance 2.0 mm"
+    echo "-7 --> polygon clearance 3.0 mm"
+    echo "default is 0.1 mm for mask clearance, 0.7 mm for polygon clearance"
     exit 1;
 }
 [ $# -lt 1 ] && help
 if [ $1 = "-h" ]; then help; fi
 if [ $1 = "--help" ]; then help; fi
 
-
-POLY_DIST="1.0"
 MASK_DIST="0.1"
+POLY_DIST="0.7"
 
-while getopts ":123abc" Option
+while getopts ":abcd123567" Option
 do
   case $Option in
+    a     ) echo "mask clearance 0.05 mm"; MASK_DIST="0.05" ;;
+    b     ) echo "mask clearance 0.1 mm"; MASK_DIST="0.1" ;;
+    c     ) echo "mask clearance 0.2 mm"; MASK_DIST="0.2" ;;
+    d     ) echo "mask clearance 0.3 mm"; MASK_DIST="0.3" ;;
     1     ) echo "polygon clearance 0.2 mm"; POLY_DIST="0.2" ;;
     2     ) echo "polygon clearance 0.5 mm"; POLY_DIST="0.5" ;;
-    3     ) echo "polygon clearance 1.0 mm"; POLY_DIST="1.0" ;;
-    a     ) echo "mask clearance 0.05 mm"; MASK_DIST="0.05" ;;
-    a     ) echo "mask clearance 0.1 mm"; MASK_DIST="0.1" ;;
-    a     ) echo "mask clearance 0.2 mm"; MASK_DIST="0.2" ;;
+    3     ) echo "polygon clearance 0.7 mm"; POLY_DIST="0.7" ;;
+    4     ) echo "polygon clearance 1.0 mm"; POLY_DIST="1.0" ;;
+    5     ) echo "polygon clearance 1.5 mm"; POLY_DIST="1.5" ;;
+    6     ) echo "polygon clearance 2.0 mm"; POLY_DIST="2.0" ;;
+    7     ) echo "polygon clearance 3.0 mm"; POLY_DIST="3.0" ;;
     *     ) echo "unknown option"; help; exit;                      # Default.
   esac
 done
@@ -71,9 +81,11 @@ gawk -v filename="$OUTFILE" \
 BEGIN { FS = "[ \\[\\]]+"   # field separator is space or tab or square bracket
         IGNORECASE = 1      # do not be case sensitive
       }
-{ 
-  mask_dist_mil = mask_dist_mm / 0.0254
-  clear_dist_mil = clear_dist_mm / 0.0254
+{
+  mask_inc_mm = mask_dist_mm * 2.0   # The file format gives the diameter. So
+  clear_inc_mm = clear_dist_mm * 2.0 # the increment must be twice the distance
+  mask_inc_mil = mask_inc_mm / 0.0254
+  clear_inc_mil = clear_inc_mm / 0.0254
 
   switch ( $1 )
    {
@@ -88,12 +100,12 @@ BEGIN { FS = "[ \\[\\]]+"   # field separator is space or tab or square bracket
     unit = substr($4, unitpos, 5)
 
     if ( unit == "mil" ) {
-       mask_dist = mask_dist_mil
-       clear_dist = clear_dist_mil
+       mask_inc = mask_inc_mil
+       clear_inc = clear_inc_mil
        }
     else if ( unit == "mm" ){
-       mask_dist = mask_dist_mm
-       clear_dist = clear_dist_mm
+       mask_inc = mask_inc_mm
+       clear_inc = clear_inc_mm
        }
     else if ( unit == "" ){
        printf("pin width with no unit encountered: %s --> stop.\n", $4);
@@ -106,8 +118,8 @@ BEGIN { FS = "[ \\[\\]]+"   # field separator is space or tab or square bracket
        exit 1;
        }
 
-    mask = pinwidth[1] + mask_dist ;
-    clear = clear_dist ;
+    mask = pinwidth[1] + mask_inc ;
+    clear = clear_inc ;
     printf("%s [%s %s %s %.2f%s %.2f%s %s %s %s %s]\n",
              $1, $2, $3, $4, clear, unit, mask, unit, $7, $8, $9, $10) > filename;
     break
@@ -123,12 +135,12 @@ BEGIN { FS = "[ \\[\\]]+"   # field separator is space or tab or square bracket
     unit = substr($6, unitpos, 5)
 
     if ( unit == "mil" ) {
-       mask_dist = mask_dist_mil
-       clear_dist = clear_dist_mil
+       mask_inc = mask_inc_mil
+       clear_inc = clear_inc_mil
        }
     else if ( unit == "mm" ){
-       mask_dist = mask_dist_mm
-       clear_dist = clear_dist_mm
+       mask_inc = mask_inc_mm
+       clear_inc = clear_inc_mm
        }
     else if ( unit == "" ){
        printf("pad width with no unit encountered: %s --> stop.\n", $6);
@@ -141,8 +153,8 @@ BEGIN { FS = "[ \\[\\]]+"   # field separator is space or tab or square bracket
        }
 
 
-    mask = padwidth[1] + mask_dist ;
-    clear = clear_dist ;
+    mask = padwidth[1] + mask_inc ;
+    clear = clear_inc ;
     printf("%s[%s %s %s %s %s %.2f%s %.2f%s %s %s %s]\n",
              $1, $2, $3, $4, $5, $6, clear, unit, mask, unit, $9, $10, $11) > filename;
     break
